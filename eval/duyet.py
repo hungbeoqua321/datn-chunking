@@ -101,7 +101,20 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--xuat", action="store_true")
     ap.add_argument("--chot", action="store_true")
+    ap.add_argument("--in", dest="in_qid", nargs="*", metavar="QID", help="in câu hỏi + nguyên văn gold (để kiểm)")
     a = ap.parse_args()
+    if a.in_qid:
+        docs = {d.doc_id: d for d in nap_van_ban()}
+        for x in map(json.loads, NHAP.read_text().splitlines()):
+            if x["qid"] in a.in_qid:
+                print(f"=== {x['qid']} [{x['loai']}/{x['nguon_chon']}] CÂU HỎI: {x.get('question')}")
+                print(f"    đáp án nháp: {x.get('dap_an_nhap')}")
+                for g in x["gold"]:
+                    print(f"--- GOLD {nhan(g)} vai={g.get('vai')}:\n{docs[g['doc_id']].text[g['start']:g['end']]}")
+                for g in x.get("phien_ban_cu", []):
+                    print(f"--- BẢN CŨ {nhan(g)}:\n{docs[g['doc_id']].text[g['start']:g['end']]}")
+                print(f"--- văn bản: {docs[x['gold'][0]['doc_id']].trich_yeu}")
+        raise SystemExit
     if a.xuat:
         xuat_duyet()
     if a.chot:

@@ -15,9 +15,9 @@ from chunking import fixed, structural
 from chunking.base import ghi_jsonl, nap_van_ban
 
 PHUONG_PHAP = {
-    "A": (fixed.chunk, (0,) + ch.SEEDS),
-    "A+": (fixed.chunk_a_cong, (0,) + ch.SEEDS),
-    "B": (structural.chunk, (0,) + ch.SEEDS),
+    "A": (fixed.chunk, (0,) + ch.SEEDS),            # 4 seed: đo truy hồi
+    "A+": (fixed.chunk_a_cong, (0,)),
+    "B": (structural.chunk, (0,) + ch.SEEDS),       # 4 seed chỉ để đếm; nhúng seed 0
     "A_H": (structural.chunk_ah, (0,)),
     "B-": (structural.chunk_b_tru, (0,)),
 }

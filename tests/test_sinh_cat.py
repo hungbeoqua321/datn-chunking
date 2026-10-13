@@ -1,4 +1,5 @@
 """Bộ chặn cắt dữ liệu khi gọi mô hình sinh: mọi dấu hiệu bị cắt phải DỪNG (LoiCat), không lặng lẽ trả lời."""
+import json
 from types import SimpleNamespace as NS
 
 import pytest
@@ -24,15 +25,21 @@ def gia_lap(monkeypatch, tmp_path):
     monkeypatch.setattr(sinh, "dem_token", lambda s, base=None: 100)  # system + user = 200 token nội dung
     monkeypatch.setattr(sinh, "n_ctx", lambda: 1000)
     monkeypatch.setattr(sinh, "NHAT_KY", tmp_path / "nhat_ky.jsonl")
+    monkeypatch.setattr(sinh, "THONG_KE_TOKEN", tmp_path / "thong_ke_token.md")
 
 
 KHOI = [{"so_hieu": "1/2020/QH14", "text": "Điều 1. Nội dung."}]
 
 
 def test_binh_thuong_ghi_nhat_ky():
-    r = sinh.tra_loi("hỏi?", KHOI, ClientGia((230, 50, "stop")), nhan={"pp": "A", "qid": "q1"})
+    r = sinh.tra_loi("hỏi?", KHOI, ClientGia((230, 50, "stop")), nhan={"qid": "q1", "bien_the": "A", "seed": 0})
     assert r["usage"]["prompt_tokens"] == 230 and r["n_ctx"] == 1000
-    assert '"qid": "q1"' in sinh.NHAT_KY.read_text()
+    d = json.loads(sinh.NHAT_KY.read_text())
+    assert {k: d[k] for k in ("qid", "bien_the", "seed", "token_prompt", "token_tra_loi", "n_ctx", "ly_do_dung",
+                              "so_khoi", "so_tu_ngu_canh")} == \
+        {"qid": "q1", "bien_the": "A", "seed": 0, "token_prompt": 230, "token_tra_loi": 50, "n_ctx": 1000,
+         "ly_do_dung": "stop", "so_khoi": 1, "so_tu_ngu_canh": 4}
+    assert isinstance(d["thoi_gian_giay"], float)
 
 
 def test_server_cat_prompt_thi_dung():
@@ -51,12 +58,14 @@ def test_vuot_truoc_khi_goi_thi_dung(monkeypatch):
         sinh.tra_loi("hỏi?", KHOI, ClientGia((230, 50, "stop")))
 
 
-def test_tra_loi_bi_cat_thu_lai_mot_lan_roi_dung(monkeypatch):
+def test_tra_loi_bi_cat_thi_dung_ngay_khong_thu_lai(monkeypatch):
     monkeypatch.setattr(sinh, "n_ctx", lambda: 4096)
-    r = sinh.tra_loi("hỏi?", KHOI, ClientGia((230, 384, "length"), (230, 500, "stop")))
-    assert r["lan_goi"] == 2 and r["tham_so"]["max_tokens"] == 768
+    cl = ClientGia((230, 384, "length"), (230, 50, "stop"))
     with pytest.raises(sinh.LoiCat, match="hết max_tokens"):
-        sinh.tra_loi("hỏi?", KHOI, ClientGia((230, 384, "length"), (230, 768, "length")))
+        sinh.tra_loi("hỏi?", KHOI, cl, nhan={"qid": "q2", "bien_the": "B", "seed": 0})
+    assert cl.lan == 1  # không gọi lại lần thứ hai
+    tk = sinh.THONG_KE_TOKEN.read_text()  # thống kê token được xuất cả khi job bị dừng
+    assert "| B | 1 | 230 | 230 | 614 | 4096 | 3482 | 0 | 1 |" in tk
 
 
 def test_ngu_canh_chi_lay_chunk_nguyen():

@@ -26,5 +26,7 @@ Tập: 80 văn bản (`data/manifest.csv`). Seed 0 = cửa sổ bắt đầu t�
 | Phương pháp | seed 0 | seed 1 | seed 2 | seed 3 |
 |---|---|---|---|---|
 | A | 5.172 | 5.215 | 5.215 | 5.206 |
-| A+ | 5.172 | 5.215 | 5.215 | 5.206 |
 | B | 13.035 | 13.041 | 13.040 | 13.038 |
+
+- **B không phụ thuộc seed:** số chunk qua 4 seed chỉ lệch 6 trên 13.035; seed 1: 12.988/13.041 chunk trùng nguyên văn seed 0, 53 chunk khác (53/53 là cửa sổ fallback của văn bản không có Điều); seed 2: 12.989/13.040 chunk trùng nguyên văn seed 0, 51 chunk khác (51/51 là cửa sổ fallback của văn bản không có Điều); seed 3: 12.989/13.038 chunk trùng nguyên văn seed 0, 49 chunk khác (49/49 là cửa sổ fallback của văn bản không có Điều). Vì vậy B và B− chỉ nhúng một lần (seed 0).
+- **A trần** chạy 4 seed, chỉ đo truy hồi (không sinh câu trả lời), để chứng minh dịch điểm bắt đầu cửa sổ chỉ là nhiễu. A+, A_H, B−, B+ và khâu sinh: một seed (0).

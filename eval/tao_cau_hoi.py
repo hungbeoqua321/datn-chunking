@@ -325,10 +325,13 @@ def viet_cau_hoi(ds: list[dict]) -> None:
         if x["qid"] in xong:
             x.update({k: xong[x["qid"]][k] for k in ("question", "dap_an_nhap", "co")})
             continue
-        r = cl.chat.completions.create(messages=tin_nhan(x, docs), model=sinh.tham_so()["model"], temperature=0,
-                                       seed=42, max_tokens=300, extra_body={"cache_prompt": False},
-                                       response_format={"type": "json_schema",
-                                                        "json_schema": {"name": "cau_hoi", "schema": SCHEMA}})
+        # qua sinh.goi: ghi nhật ký token + DỪNG nếu bị cắt (một nháp bị cắt sẽ thành JSON hỏng mà không ai biết)
+        tu = sum(len(docs[g["doc_id"]].text[g["start"]:g["end"]].split()) for g in x["gold"])
+        r, _ = sinh.goi(tin_nhan(x, docs), {"qid": x["qid"], "bien_the": "nhap_cau_hoi", "seed": 0,
+                                           "so_khoi": len(x["gold"]), "so_tu_ngu_canh": tu}, cl,
+                        model=sinh.tham_so()["model"], temperature=0, seed=42, max_tokens=300,
+                        extra_body={"cache_prompt": False},
+                        response_format={"type": "json_schema", "json_schema": {"name": "cau_hoi", "schema": SCHEMA}})
         try:
             o = json.loads(r.choices[0].message.content)
         except json.JSONDecodeError:
@@ -365,7 +368,10 @@ def main() -> None:
     print(len(ds), "gold:", dem)
     if a.chon:
         return
-    viet_cau_hoi(ds)
+    try:
+        viet_cau_hoi(ds)
+    finally:
+        sinh.xuat_thong_ke_token()
     from eval.duyet import xuat_duyet
     xuat_duyet()
 

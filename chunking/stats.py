@@ -74,6 +74,13 @@ def main() -> None:
                     f"{r['tb_tu_tien_to']:.0f} | {thieu} |")
     # độ dao động theo seed (số chunk)
     seeds = {pp: {s: len(doc_jsonl(ten_tep(pp, s))) for s in sd} for pp, (_, sd) in PHUONG_PHAP.items() if len(sd) > 1}
+    # B chỉ được nhúng một lần: bằng chứng là các seed chỉ khác seed 0 ở cửa sổ fallback
+    b0 = {c.text for c in doc_jsonl(ten_tep("B", 0))}
+    b_khac = {}
+    for s in ch.SEEDS:
+        cs = doc_jsonl(ten_tep("B", s))
+        k = [c for c in cs if c.text not in b0]
+        b_khac[s] = {"so_chunk": len(cs), "trung_seed0": len(cs) - len(k), "khac": len(k), "khac_fallback": sum(c.fallback for c in k)}
     b = js["B"]
     L = ["# Thống kê chunk (bước 3)", "",
          f"Tập: {len(docs)} văn bản (`data/manifest.csv`). Seed 0 = cửa sổ bắt đầu từ từ đầu tiên (đúng đề).", "",
@@ -96,9 +103,15 @@ def main() -> None:
          "## Số chunk theo seed", "", "| Phương pháp | " + " | ".join(f"seed {s}" for s in (0,) + ch.SEEDS) + " |",
          "|---|" + "---|" * (1 + len(ch.SEEDS))]
     L += [f"| {pp} | " + " | ".join(so(v) for v in d.values()) + " |" for pp, d in seeds.items()]
+    L += ["", f"- **B không phụ thuộc seed:** số chunk qua 4 seed chỉ lệch {max(seeds['B'].values()) - min(seeds['B'].values())} "
+          f"trên {so(seeds['B'][0])}; " + "; ".join(f"seed {s}: {so(v['trung_seed0'])}/{so(v['so_chunk'])} chunk trùng nguyên văn "
+          f"seed 0, {v['khac']} chunk khác ({v['khac_fallback']}/{v['khac']} là cửa sổ fallback của văn bản không có Điều)"
+          for s, v in b_khac.items()) + ". Vì vậy B và B− chỉ nhúng một lần (seed 0).",
+          "- **A trần** chạy 4 seed, chỉ đo truy hồi (không sinh câu trả lời), để chứng minh dịch điểm bắt đầu cửa sổ "
+          "chỉ là nhiễu. A+, A_H, B−, B+ và khâu sinh: một seed (0)."]
     RA.mkdir(parents=True, exist_ok=True)
     (RA / "thong_ke_chunk.md").write_text("\n".join(L) + "\n")
-    (RA / "thong_ke_chunk.json").write_text(json.dumps({"seed0": js, "theo_seed": seeds}, ensure_ascii=False, indent=1))
+    (RA / "thong_ke_chunk.json").write_text(json.dumps({"seed0": js, "theo_seed": seeds, "b_khac_seed0": b_khac}, ensure_ascii=False, indent=1))
     print("\n".join(L))
 
 

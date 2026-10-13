@@ -111,16 +111,19 @@ def test_du_lieu_that_khong_mat_van_ban():
     for ten in ("A_s0", "Acong_s0", "B_s0", "A_H_s0", "Btru_s0"):
         cs = doc_jsonl(ch.CHUNKS / f"{ten}.jsonl")
         assert {d.doc_id for d in docs} == {c.doc_id for c in cs}, ten
-    # A+ và B trùng khớp ở nhóm không có Điều (cùng seed)
+    # A+ và B trùng khớp ở nhóm không có Điều (seed 0 — seed duy nhất được nhúng)
     nhom = {d.doc_id: d.nhom for d in docs}
-    for s in (0, 1, 2, 3):
-        a = [(c.doc_id, c.start, c.end, c.text) for c in doc_jsonl(ch.CHUNKS / f"Acong_s{s}.jsonl") if nhom[c.doc_id] == "khong_dieu"]
-        b = [(c.doc_id, c.start, c.end, c.text) for c in doc_jsonl(ch.CHUNKS / f"B_s{s}.jsonl") if nhom[c.doc_id] == "khong_dieu"]
-        assert a == b, s
+    a = [(c.doc_id, c.start, c.end, c.text) for c in doc_jsonl(ch.CHUNKS / "Acong_s0.jsonl") if nhom[c.doc_id] == "khong_dieu"]
+    b = [(c.doc_id, c.start, c.end, c.text) for c in doc_jsonl(ch.CHUNKS / "B_s0.jsonl") if nhom[c.doc_id] == "khong_dieu"]
+    assert a == b
+    # B qua các seed chỉ khác nhau ở cửa sổ fallback → nhúng một lần là đủ
+    b0 = {c.text for c in doc_jsonl(ch.CHUNKS / "B_s0.jsonl")}
+    for s in ch.SEEDS:
+        assert all(c.fallback for c in doc_jsonl(ch.CHUNKS / f"B_s{s}.jsonl") if c.text not in b0), s
     # mọi chunk con của một Điều đã tách đều mang tên Điều trong tiền tố
     for c in doc_jsonl(ch.CHUNKS / "B_s0.jsonl"):
         if c.dieu_so is not None:
-            assert re.search(rf"> Điều {c.dieu_so}\b", c.tien_to)
+            assert re.search(rf"> Điều {c.dieu_so}[a-zđ]?\b", c.tien_to)  # "Điều 29b" (điều bổ sung)
 
 
 # ── hồi quy cho các lỗi cài đặt do kiểm định ca biên tìm ra (results/buoc3/kiem_dinh_ca_bien.md) ──
