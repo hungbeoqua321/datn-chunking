@@ -1,0 +1,230 @@
+[
+ {
+  "q": "Thời gian thử việc tối đa đối với công việc của người quản lý doanh nghiệp là bao lâu?",
+  "gold": 25,
+  "tra_loi": "180 ngày đối với công việc của người quản lý doanh nghiệp theo quy định của Luật Doanh nghiệp, Luật Quản lý, sử dụng vốn nhà nước đầu tư vào sản xuất, kinh doanh tại doanh nghiệp.  \nĐiều 25 khoản 1 của 45/2019/QH14.",
+  "giay": 37.4,
+  "usage": {
+   "completion_tokens": 74,
+   "prompt_tokens": 788,
+   "total_tokens": 862,
+   "completion_tokens_details": null,
+   "prompt_tokens_details": {
+    "audio_tokens": null,
+    "cache_write_tokens": null,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null
+   }
+  }
+ },
+ {
+  "q": "Người lao động làm việc đủ 12 tháng cho một người sử dụng lao động được nghỉ hằng năm bao nhiêu ngày trong điều kiện bình thường?",
+  "gold": 113,
+  "tra_loi": "12 ngày làm việc đối với người làm công việc trong điều kiện bình thường.  \nĐiều 113 khoản 1 a của 45/2019/QH14.",
+  "giay": 48.3,
+  "usage": {
+   "completion_tokens": 44,
+   "prompt_tokens": 1170,
+   "total_tokens": 1214,
+   "completion_tokens_details": null,
+   "prompt_tokens_details": {
+    "audio_tokens": null,
+    "cache_write_tokens": null,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null
+   }
+  }
+ },
+ {
+  "q": "Thời giờ làm việc bình thường của người lao động tối đa là bao nhiêu giờ trong một ngày?",
+  "gold": 105,
+  "tra_loi": "Thời giờ làm việc bình thường của người lao động không quá 08 giờ trong 01 ngày theo Điều 105 khoản 1 của 45/2019/QH14.",
+  "giay": 46.2,
+  "usage": {
+   "completion_tokens": 48,
+   "prompt_tokens": 1094,
+   "total_tokens": 1142,
+   "completion_tokens_details": null,
+   "prompt_tokens_details": {
+    "audio_tokens": null,
+    "cache_write_tokens": null,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null
+   }
+  }
+ },
+ {
+  "q": "Số giờ làm thêm của người lao động không được vượt quá bao nhiêu giờ trong một tháng?",
+  "gold": 107,
+  "tra_loi": "Không quá 40 giờ trong 01 tháng.  \nĐiều 107 khoản 2 của 45/2019/QH14.",
+  "giay": 50.8,
+  "usage": {
+   "completion_tokens": 38,
+   "prompt_tokens": 1245,
+   "total_tokens": 1283,
+   "completion_tokens_details": null,
+   "prompt_tokens_details": {
+    "audio_tokens": null,
+    "cache_write_tokens": null,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null
+   }
+  }
+ },
+ {
+  "q": "Lao động nữ được nghỉ thai sản trước và sau khi sinh con bao lâu?",
+  "gold": 139,
+  "tra_loi": "6 tháng.  \nCăn cứ: Điều 139 khoản 1 của 45/2019/QH14.",
+  "giay": 36.5,
+  "usage": {
+   "completion_tokens": 31,
+   "prompt_tokens": 943,
+   "total_tokens": 974,
+   "completion_tokens_details": null,
+   "prompt_tokens_details": {
+    "audio_tokens": null,
+    "cache_write_tokens": null,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null
+   }
+  }
+ },
+ {
+  "q": "Hợp đồng lao động phải được giao kết theo những loại nào?",
+  "gold": 20,
+  "tra_loi": "Hợp đồng lao động phải được giao kết theo một trong các loại sau đây:  \na) Hợp đồng lao động không xác định thời hạn;  \nb) Hợp đồng lao động xác định thời hạn.  \n\nCăn cứ: Điều 20 khoản 1 của 45/2019/QH14.",
+  "giay": 67.3,
+  "usage": {
+   "completion_tokens": 79,
+   "prompt_tokens": 1450,
+   "total_tokens": 1529,
+   "completion_tokens_details": null,
+   "prompt_tokens_details": {
+    "audio_tokens": null,
+    "cache_write_tokens": null,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null
+   }
+  }
+ },
+ {
+  "q": "Người lao động có quyền đơn phương chấm dứt hợp đồng lao động không cần báo trước trong những trường hợp nào?",
+  "gold": 35,
+  "tra_loi": "Người lao động có quyền đơn phương chấm dứt hợp đồng lao động không cần báo trước trong các trường hợp sau:\n\n- Không được bố trí theo đúng công việc, địa điểm làm việc hoặc không được bảo đảm điều kiện làm việc theo thỏa thuận, trừ trường hợp quy định tại Điều 29 của Bộ luật này;  \n- Không được trả đủ lương hoặc trả lương không đúng thời hạn, trừ trường hợp quy định tại khoản 4 Điều 97 của Bộ luật này;  \n- Bị người sử dụng lao động ngược đãi, đánh đập hoặc có lời nói, hành vi nhục mạ, hành vi làm ảnh hưởng đến sức khỏe, nhân phẩm, danh dự; bị cưỡng bức lao động;  \n- Bị quấy rối tình dục tại nơi làm việc;  \n- Lao động nữ mang thai phải nghỉ việc theo quy định tại khoản 1 Điều 138 của Bộ luật này;  \n- Đủ tuổi nghỉ hưu theo quy định tại Điều 169 của Bộ luật này, trừ trường hợp các bên có thỏa thuận khác;  \n- Người sử dụng lao động cung cấp thông tin không trung thực theo quy định tại khoản 1 Điều 16 của Bộ luật này làm ảnh hưởng đến việc thực hiện hợp đồng lao động.  \n\nCăn cứ: Điều 35 khoản 2 của 45/2019/QH14.",
+  "giay": 128.1,
+  "usage": {
+   "completion_tokens": 306,
+   "prompt_tokens": 1728,
+   "total_tokens": 2034,
+   "completion_tokens_details": null,
+   "prompt_tokens_details": {
+    "audio_tokens": null,
+    "cache_write_tokens": null,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null
+   }
+  }
+ },
+ {
+  "q": "Người sử dụng lao động có trách nhiệm chi trả trợ cấp thôi việc cho người lao động đã làm việc thường xuyên từ bao lâu trở lên?",
+  "gold": 46,
+  "tra_loi": "Người sử dụng lao động có trách nhiệm chi trả trợ cấp thôi việc cho người lao động đã làm việc thường xuyên từ đủ 12 tháng trở lên.  \nCăn cứ: Điều 46 khoản 1 của 45/2019/QH14.",
+  "giay": 57.4,
+  "usage": {
+   "completion_tokens": 62,
+   "prompt_tokens": 1297,
+   "total_tokens": 1359,
+   "completion_tokens_details": null,
+   "prompt_tokens_details": {
+    "audio_tokens": null,
+    "cache_write_tokens": null,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null
+   }
+  }
+ },
+ {
+  "q": "Mức lương tối thiểu được xác lập theo đâu?",
+  "gold": 91,
+  "tra_loi": "Mức lương tối thiểu được xác lập theo vùng, ấn định theo tháng, giờ.  \nĐiều 91 khoản 2 của 45/2019/QH14",
+  "giay": 37.4,
+  "usage": {
+   "completion_tokens": 45,
+   "prompt_tokens": 911,
+   "total_tokens": 956,
+   "completion_tokens_details": null,
+   "prompt_tokens_details": {
+    "audio_tokens": null,
+    "cache_write_tokens": null,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null
+   }
+  }
+ },
+ {
+  "q": "Tuổi nghỉ hưu của người lao động trong điều kiện lao động bình thường được điều chỉnh theo lộ trình như thế nào?",
+  "gold": 169,
+  "tra_loi": "Tuổi nghỉ hưu của người lao động trong điều kiện lao động bình thường được điều chỉnh theo lộ trình như sau:  \nKể từ năm 2021, tuổi nghỉ hưu là đủ 60 tuổi 03 tháng đối với lao động nam và đủ 55 tuổi 04 tháng đối với lao động nữ; sau đó, cứ mỗi năm tăng thêm 03 tháng đối với lao động nam và 04 tháng đối với lao động nữ.  \nCăn cứ: Điều 169 khoản 2 của 45/2019/QH14.",
+  "giay": 58.8,
+  "usage": {
+   "completion_tokens": 134,
+   "prompt_tokens": 1047,
+   "total_tokens": 1181,
+   "completion_tokens_details": null,
+   "prompt_tokens_details": {
+    "audio_tokens": null,
+    "cache_write_tokens": null,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null
+   }
+  }
+ },
+ {
+  "q": "Thuế suất thuế giá trị gia tăng đối với hàng xuất khẩu là bao nhiêu?",
+  "gold": null,
+  "tra_loi": "Không đủ căn cứ trong ngữ cảnh được cung cấp.",
+  "giay": 24.5,
+  "usage": {
+   "completion_tokens": 13,
+   "prompt_tokens": 703,
+   "total_tokens": 716,
+   "completion_tokens_details": null,
+   "prompt_tokens_details": {
+    "audio_tokens": null,
+    "cache_write_tokens": null,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null
+   }
+  }
+ },
+ {
+  "q": "Mức phạt khi vượt đèn đỏ đối với xe máy là bao nhiêu?",
+  "gold": null,
+  "tra_loi": "Không đủ căn cứ trong ngữ cảnh được cung cấp.",
+  "giay": 24.2,
+  "usage": {
+   "completion_tokens": 13,
+   "prompt_tokens": 701,
+   "total_tokens": 714,
+   "completion_tokens_details": null,
+   "prompt_tokens_details": {
+    "audio_tokens": null,
+    "cache_write_tokens": null,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null
+   }
+  }
+ }
+]
