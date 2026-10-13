@@ -176,11 +176,13 @@ DUOI_TAI = {".md": "text/plain; charset=utf-8", ".csv": "text/csv; charset=utf-8
 
 
 def _ds_tai() -> dict[str, Path]:
-    """{đường dẫn công khai: tệp} — mọi tệp trong results/ (trừ câu trả lời thô results/gen/) + bộ câu hỏi trong eval/."""
+    """{đường dẫn công khai: tệp} — mọi tệp trong results/ (trừ câu trả lời thô results/gen/, chỉ mở thống kê và nhật ký
+    token) + bộ câu hỏi, gold và cờ sàng lọc trong eval/."""
     ra = {str(p.relative_to(R)): p for p in sorted(R.rglob("*")) if p.is_file() and p.suffix in DUOI_TAI
-          and "gen" not in p.parts and not p.name.startswith(".") and not p.name.endswith(".tmp")}
+          and ("gen" not in p.parts or p.name in ("thong_ke_token.md", "nhat_ky_goi.jsonl"))
+          and not p.name.startswith(".") and not p.name.endswith(".tmp")}
     for p in sorted((ch.GOC / "eval").glob("*")):
-        if p.is_file() and p.suffix in DUOI_TAI and (p.name.startswith("questions") or p.name.startswith("gold")):
+        if p.is_file() and p.suffix in DUOI_TAI and (p.name.startswith(("questions", "gold", "san_loc"))):
             ra[f"eval/{p.name}"] = p
     return ra
 
