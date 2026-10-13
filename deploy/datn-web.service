@@ -1,0 +1,18 @@
+[Unit]
+Description=ĐATN phân đoạn VBQPPL — web (uvicorn)
+After=network.target datn-llm.service
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/datn-chunking
+Environment=TOKENIZERS_PARALLELISM=false OMP_NUM_THREADS=1 MPLBACKEND=Agg
+ExecStart=/home/ubuntu/datn-chunking/.venv/bin/uvicorn web.app:app --host 127.0.0.1 --port 8081 --workers 1 --proxy-headers --forwarded-allow-ips 127.0.0.1
+Restart=always
+RestartSec=3
+CPUWeight=20
+MemoryMax=3G
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

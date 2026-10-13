@@ -1,0 +1,60 @@
+<h1>Hỏi đáp văn bản quy phạm pháp luật</h1>
+<p class="meta">Demo đồ án: cùng một mô hình nhúng, cùng cách truy hồi, cùng mô hình sinh và prompt —
+chỉ khác <b>cách phân đoạn</b>. Gạt công tắc để so sánh. Mô hình sinh chạy trên CPU nên mỗi câu trả lời mất khoảng 1–2 phút.</p>
+
+<form id="f">
+  <textarea id="q" maxlength="500" placeholder="Ví dụ: Thời gian thử việc tối đa đối với người quản lý doanh nghiệp là bao lâu?" required></textarea>
+  <div class="o cong-tac" style="margin:10px 0" role="radiogroup" aria-label="Phương pháp phân đoạn">
+    <label><input type="radio" name="pp" value="A">A — cửa sổ 300 từ</label>
+    <label><input type="radio" name="pp" value="A+">A+ — cửa sổ + tiêu đề văn bản</label>
+    <label><input type="radio" name="pp" value="B" checked>B — theo Điều/khoản/điểm</label>
+    <label><input type="radio" name="pp" value="B+">B+ — B, mở rộng lên cả Điều</label>
+    <button id="nut" type="submit">Hỏi</button>
+  </div>
+</form>
+
+<h2>Câu trả lời</h2>
+<div id="tt" class="meta"></div>
+<div id="tra-loi" aria-live="polite"></div>
+
+<h2>Các đoạn truy hồi được (căn cứ hệ thống dùng)</h2>
+<div id="bang"><p class="meta">Chưa có.</p></div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+$("#f").addEventListener("submit", async e => {
+  e.preventDefault();
+  const q = $("#q").value.trim(), pp = document.querySelector("input[name=pp]:checked").value;
+  if (!q) return;
+  $("#nut").disabled = true; $("#tra-loi").textContent = ""; $("#bang").innerHTML = "<p class='meta'>Đang truy hồi…</p>";
+  $("#tt").textContent = "Đang xử lý (" + pp + ")…";
+  const t0 = Date.now();
+  try {
+    const r = await fetch("/api/hoi", {method: "POST", headers: {"Content-Type": "application/json"},
+                                       body: JSON.stringify({cau_hoi: q, phuong_phap: pp})});
+    if (!r.ok) { const j = await r.json().catch(() => ({})); throw new Error(j.loi || ("Lỗi " + r.status)); }
+    const rd = r.body.getReader(), dec = new TextDecoder(); let buf = "";
+    for (;;) {
+      const {value, done} = await rd.read(); if (done) break;
+      buf += dec.decode(value, {stream: true});
+      let i;
+      while ((i = buf.indexOf("\n\n")) >= 0) {
+        const ev = buf.slice(0, i); buf = buf.slice(i + 2);
+        const ten = (ev.match(/^event: (.*)$/m) || [, "message"])[1], d = JSON.parse((ev.match(/^data: (.*)$/m) || [, "{}"])[1]);
+        if (ten === "chunks") {
+          $("#bang").innerHTML = "<table><tr><th>#</th><th>Điểm</th><th>Số hiệu</th><th>Điều</th><th>Khoản</th><th>Điểm</th><th>Đoạn văn bản</th></tr>" +
+            d.map(c => `<tr><td>${c.hang}</td><td>${c.diem}</td><td>${esc(c.so_hieu)}</td><td>${esc(c.dieu ?? "—")}</td><td>${esc(c.khoan ?? "—")}</td><td>${esc(c.diem_chu ?? "—")}</td><td>${c.tien_to ? "<b>" + esc(c.tien_to) + "</b><br>" : ""}${esc(c.trich)}</td></tr>`).join("") + "</table>";
+          $("#tt").textContent = "Đã truy hồi, mô hình đang viết câu trả lời…";
+        } else if (ten === "xong") {
+          $("#tt").textContent = `Xong sau ${d.giay} giây` + (d.cache ? " (câu trả lời đã sinh sẵn trong lần đánh giá)" : "") + ` · phương pháp ${pp}` +
+            (d.token_vao ? ` · ngữ cảnh ${d.token_vao}/${d.n_ctx} token` : "") + (d.bi_cat ? " · CẢNH BÁO: câu trả lời bị cắt vì hết độ dài cho phép" : "");
+        } else if (ten === "loi") { throw new Error(d.loi); }
+        else if (d.t) { $("#tra-loi").textContent += d.t; }
+      }
+    }
+  } catch (err) {
+    $("#tt").innerHTML = "<span class='loi'>" + esc(err.message) + "</span>";
+  } finally { $("#nut").disabled = false; }
+});
+</script>

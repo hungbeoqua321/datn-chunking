@@ -74,3 +74,21 @@ def test_cong_van_khong_bo_can_cu():
     t = "Kính gửi: Các Bộ\nCăn cứ ý kiến của Thủ tướng, đề nghị các Bộ thực hiện.\nKT. BỘ TRƯỞNG\nNguyễn Văn C\n"
     sach, bo = bo_dau_cuoi(t, [])
     assert "Căn cứ ý kiến" in sach and bo["can_cu"] == 0
+
+
+def test_khong_xoa_cau_noi_dung_giong_chuc_danh():
+    t = "\n".join(["NGHỊ ĐỊNH", "Điều 1. Phạm vi", "Nội dung một.", "Điều 2. Trách nhiệm thi hành",
+                   "Bộ trưởng, Thủ trưởng cơ quan ngang bộ chịu trách nhiệm thi hành Nghị định này./.",
+                   "TM. CHÍNH PHỦ", "THỦ TƯỚNG", "Nguyễn Văn A"]) + "\n"
+    sach, _ = bo_dau_cuoi(t, [1, 2])
+    assert dong(sach)[-1].startswith("Bộ trưởng, Thủ trưởng")
+
+
+def test_dieu_trong_mau_phu_luc_khong_phai_dieu_that():
+    t = "\n".join(["Điều 1. Phạm vi", "Nội dung.", "Điều 2. Hiệu lực", "Có hiệu lực.", "Phụ lục I", "Mẫu quyết định",
+                   "Điều 1. Giao nhiệm vụ cho …", "Điều 2. Quyết định này có hiệu lực …"]) + "\n"
+    sach, _ = bo_dau_cuoi(t, [1, 2])
+    assert dong(sach) == ["Điều 1. Phạm vi", "Nội dung.", "Điều 2. Hiệu lực", "Có hiệu lực."]
+    # quy chế kèm theo đánh số lại từ 1 (KHÔNG có tiêu đề phụ lục) vẫn là Điều thật
+    t2 = "\n".join(["Điều 1. Ban hành Quy chế", "Điều 2. Hiệu lực", "QUY CHẾ", "Điều 1. Phạm vi", "Nội dung quy chế."]) + "\n"
+    assert "Nội dung quy chế." in bo_dau_cuoi(t2, [1, 2])[0]

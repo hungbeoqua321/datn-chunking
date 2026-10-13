@@ -42,6 +42,14 @@ def dung_tin_nhan(cau_hoi: str, khoi: list[dict]) -> list[dict]:
     ]
 
 
+class LoiCat(RuntimeError):
+    """Có dấu hiệu dữ liệu bị cắt khi gọi mô hình sinh — phải DỪNG, không được ra số liệu từ lần gọi này."""
+
+
+NHAT_KY = ch.RESULTS / "gen" / "nhat_ky_goi.jsonl"
+_N_CTX: int | None = None
+
+
 def client():
     from openai import OpenAI
 
@@ -55,12 +63,64 @@ def tham_so() -> dict:
             "max_tokens": ch.MAX_TOKENS_TRA_LOI, "extra_body": {"cache_prompt": False}}
 
 
-def tra_loi(cau_hoi: str, khoi: list[dict], cl=None) -> dict:
+def n_ctx() -> int:
+    """Cửa sổ ngữ cảnh THẬT của llama-server đang chạy (đọc từ /props, không giả định)."""
+    global _N_CTX
+    if _N_CTX is None:
+        import requests
+
+        base = os.environ["LLM_BASE_URL"].rstrip("/").removesuffix("/v1")
+        p = requests.get(base + "/props", timeout=30).json()
+        _N_CTX = int((p.get("default_generation_settings") or {}).get("n_ctx") or p.get("n_ctx"))
+    return _N_CTX
+
+
+def tra_loi(cau_hoi: str, khoi: list[dict], cl=None, nhan: dict | None = None) -> dict:
+    """Gọi mô hình sinh MỘT lần, kiểm chặt việc cắt dữ liệu, ghi nhật ký số token thật.
+
+    Dừng (LoiCat) khi:
+      1. TRƯỚC khi gọi: số token prompt (đếm bằng tokenizer của chính mô hình) + max_tokens > n_ctx;
+      2. SAU khi gọi: usage.prompt_tokens nhỏ hơn số token nội dung đã đếm (prompt bị cắt bớt ở phía server),
+         hoặc prompt_tokens + completion_tokens chạm n_ctx;
+      3. câu trả lời dừng vì hết max_tokens (finish_reason = "length") — thử lại MỘT lần với max_tokens gấp đôi nếu vẫn
+         nằm trong n_ctx, vẫn bị cắt thì dừng.
+    """
+    import time
+
     cl = cl or client()
     ts = tham_so()
-    r = cl.chat.completions.create(messages=dung_tin_nhan(cau_hoi, khoi), **ts)
-    return {"tra_loi": r.choices[0].message.content, "usage": r.usage.model_dump() if r.usage else None,
-            "tham_so": {k: v for k, v in ts.items() if k != "extra_body"}}
+    tn = dung_tin_nhan(cau_hoi, khoi)
+    noi_dung = sum(dem_token(m["content"]) for m in tn)  # chưa tính vài token khung chat template
+    ctx = n_ctx()
+    if noi_dung + ts["max_tokens"] > ctx:
+        raise LoiCat(f"prompt {noi_dung} token + trả lời {ts['max_tokens']} > n_ctx {ctx} — sẽ bị cắt; giảm ngân sách")
+    for lan in range(2):
+        t0 = time.monotonic()
+        r = cl.chat.completions.create(messages=tn, **ts)
+        giay = time.monotonic() - t0
+        u = r.usage
+        ly_do = r.choices[0].finish_reason
+        ghi = {"thoi_diem": time.strftime("%Y-%m-%dT%H:%M:%S"), **(nhan or {}), "lan": lan + 1,
+               "prompt_tokens": u.prompt_tokens, "completion_tokens": u.completion_tokens, "token_noi_dung": noi_dung,
+               "n_ctx": ctx, "max_tokens": ts["max_tokens"], "finish_reason": ly_do, "giay": round(giay, 1),
+               "so_khoi": len(khoi), "ngu_canh_tu": sum(len(k["text"].split()) for k in khoi),
+               "khoi_bi_cat": sum(bool(k.get("bi_cat")) for k in khoi)}
+        NHAT_KY.parent.mkdir(parents=True, exist_ok=True)
+        with open(NHAT_KY, "a") as f:
+            f.write(json.dumps(ghi, ensure_ascii=False) + "\n")
+        if u.prompt_tokens < noi_dung:
+            raise LoiCat(f"server chỉ nhận {u.prompt_tokens}/{noi_dung} token prompt — prompt bị cắt: {ghi}")
+        if u.prompt_tokens + u.completion_tokens >= ctx:
+            raise LoiCat(f"chạm n_ctx {ctx} — có thể đã bị cắt: {ghi}")
+        if ly_do == "length":
+            if lan == 0 and u.prompt_tokens + 2 * ts["max_tokens"] < ctx:
+                ts = {**ts, "max_tokens": 2 * ts["max_tokens"]}
+                continue
+            raise LoiCat(f"câu trả lời bị cắt vì hết max_tokens: {ghi}")
+        return {"tra_loi": r.choices[0].message.content, "usage": u.model_dump(), "finish_reason": ly_do,
+                "n_ctx": ctx, "token_noi_dung": noi_dung, "lan_goi": lan + 1,
+                "tham_so": {k: v for k, v in ts.items() if k != "extra_body"}}
+    raise LoiCat("không thể xảy ra")
 
 
 def dem_token(van_ban: str, base: str | None = None) -> int:

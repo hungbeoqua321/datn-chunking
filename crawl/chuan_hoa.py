@@ -204,11 +204,28 @@ def chuan_hoa(html: str) -> str:
 # ── bỏ phần "Căn cứ" đầu văn bản và "Nơi nhận"/chữ ký cuối văn bản ──────────
 RE_CAN_CU = re.compile(r"^(Căn cứ|Theo đề nghị|Xét đề nghị|Thực hiện|Theo đề xuất)\b", re.I)
 RE_NOI_NHAN = re.compile(r"^Nơi nhận\s*:?", re.I)
-RE_CHU_KY = re.compile(r"^(TM\.|T\.M\.|KT\.|K\.T\.|Q\.|TL\.|TUQ\.|TM |KT |\(?\[?Đã ký\]?\)?|\(ký\b|Chữ ký|"
-                       r"XÁC THỰC VĂN BẢN HỢP NHẤT|CHỦ TỊCH|THỦ TƯỚNG|PHÓ THỦ TƯỚNG|BỘ TRƯỞNG|THỨ TRƯỞNG|"
-                       r"CHỦ NHIỆM|PHÓ CHỦ NHIỆM|TỔNG KIỂM TOÁN|CHÁNH ÁN|VIỆN TRƯỞNG|THỐNG ĐỐC|PHÓ THỐNG ĐỐC|"
-                       r"TỔNG GIÁM ĐỐC|GIÁM ĐỐC|CHÁNH VĂN PHÒNG|VỤ TRƯỞNG|CỤC TRƯỞNG|TỔNG CỤC TRƯỞNG|"
-                       r"BỘ TRƯỞNG, CHỦ NHIỆM|PHÓ CHÁNH|CHÁNH THANH TRA)", re.I)
+# Chức danh ký (viết HOA, không dùng re.I: câu nội dung "Bộ trưởng, Thủ trưởng … chịu trách nhiệm thi hành" không được
+# coi là chữ ký) + các dấu hiệu chữ ký không phân biệt hoa thường ("(Đã ký)", "Chữ ký").
+RE_CHUC_DANH = re.compile(r"^(TM\.|T\.M\.|KT\.|K\.T\.|Q\.|TL\.|TUQ\.|TM |KT |XÁC THỰC VĂN BẢN HỢP NHẤT|CHỦ TỊCH|THỦ TƯỚNG|"
+                          r"PHÓ THỦ TƯỚNG|BỘ TRƯỞNG|THỨ TRƯỞNG|CHỦ NHIỆM|PHÓ CHỦ NHIỆM|TỔNG KIỂM TOÁN|CHÁNH ÁN|"
+                          r"VIỆN TRƯỞNG|THỐNG ĐỐC|PHÓ THỐNG ĐỐC|TỔNG GIÁM ĐỐC|GIÁM ĐỐC|CHÁNH VĂN PHÒNG|VỤ TRƯỞNG|"
+                          r"CỤC TRƯỞNG|TỔNG CỤC TRƯỞNG|PHÓ CHÁNH|CHÁNH THANH TRA)")
+RE_DA_KY = re.compile(r"^(\(?\[?Đã ký\]?\)?|\(ký\b|Chữ ký)", re.I)
+
+
+class _ChuKy:
+    """Dòng chữ ký: dấu hiệu "(Đã ký)" bất kể hoa thường, hoặc chức danh khi CẢ DÒNG viết hoa (≤ 12 từ)."""
+
+    @staticmethod
+    def match(x: str):
+        if RE_DA_KY.match(x) or (RE_CHUC_DANH.match(x) and _in_hoa(x) and len(x.split()) <= 12):
+            return True
+        # chức danh viết thường ("Chủ tịch Quốc hội"): chỉ khi dòng NGẮN và không kết thúc bằng dấu câu — câu nội dung
+        # ("Bộ trưởng, Thủ trưởng … chịu trách nhiệm thi hành Nghị định này.") luôn dài và có dấu câu cuối
+        return bool(re.match(RE_CHUC_DANH.pattern, x, re.I)) and len(x.split()) <= 6 and not re.search(r"[.;:,]$", x)
+
+
+RE_CHU_KY = _ChuKy()
 RE_KY_MANH = re.compile(r"^(TM\.|T\.M\.|KT\.|K\.T\.|TL\.|TUQ\.|Q\.\s?[A-ZĐ]|TM |KT )|"
                         r"^(CHỦ TỊCH QUỐC HỘI|XÁC THỰC VĂN BẢN HỢP NHẤT)\s*$")
 RE_PHU_LUC = re.compile(r"^(PHỤ LỤC|Phụ lục|Mẫu số|MẪU SỐ)\b")
@@ -362,14 +379,18 @@ def phan_loai_tieu_de(dong: list[str], ky_vong: list[int] | None = None) -> list
     """
     kv = sorted(set(ky_vong or []))
     q = trong_ngoac(dong)
-    ra, mo, vi_tri, truoc = [], False, 0, 0
+    ra, mo, vi_tri, truoc, trong_phu_luc = [], False, 0, 0, False
     for i, x in enumerate(dong):
+        if kv and vi_tri >= len(kv) and RE_PHU_LUC.match(x) and len(x.split()) <= 12:
+            trong_phu_luc = True
         m = RE_TIEU_DE_B.match(x)
         if m:
             n = int(m.group(1))
             ke = kv[vi_tri] if vi_tri < len(kv) else None
             dung_thu_tu = (n == ke) if kv else (n == truoc + 1)
             that = not x.startswith('"') and (dung_thu_tu or not (mo or q[i]))
+            if kv and vi_tri >= len(kv) and trong_phu_luc:
+                that = False  # đã đủ Điều theo cây vbpl VÀ đang ở sau tiêu đề Phụ lục/Mẫu → mẫu văn bản trong phụ lục
             ra.append((i, n, that))
             if that:
                 mo, truoc = False, n

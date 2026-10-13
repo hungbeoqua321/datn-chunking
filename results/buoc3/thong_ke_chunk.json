@@ -1,0 +1,123 @@
+{
+ "seed0": {
+  "A": {
+   "so_chunk": 5172,
+   "trung_vi_tu": 300.0,
+   "max_tu": 300,
+   "min_tu": 6,
+   "tb_tu": 297.79156999226603,
+   "ti_le_fallback": 0.0,
+   "vb_mat_chunk": 0,
+   "vuot_512": 6,
+   "ti_le_vuot_512": 0.001160092807424594,
+   "trung_vi_token": 343.0,
+   "max_token": 760,
+   "tb_tu_tien_to": 0.0,
+   "ky_tu_khong_phu": 0,
+   "ky_tu_tong": 5403246,
+   "chunk_duoi_50_tu": 16
+  },
+  "A+": {
+   "so_chunk": 5172,
+   "trung_vi_tu": 300.0,
+   "max_tu": 300,
+   "min_tu": 6,
+   "tb_tu": 297.79156999226603,
+   "ti_le_fallback": 0.0,
+   "vb_mat_chunk": 0,
+   "vuot_512": 17,
+   "ti_le_vuot_512": 0.0032869296210363496,
+   "trung_vi_token": 374.0,
+   "max_token": 824,
+   "tb_tu_tien_to": 15.808197989172466,
+   "ky_tu_khong_phu": 0,
+   "ky_tu_tong": 5403246,
+   "chunk_duoi_50_tu": 16
+  },
+  "B": {
+   "so_chunk": 13035,
+   "trung_vi_tu": 94,
+   "max_tu": 372,
+   "min_tu": 3,
+   "tb_tu": 118.15711545838128,
+   "ti_le_fallback": 0.0036056770233985425,
+   "vb_mat_chunk": 0,
+   "vuot_512": 41,
+   "ti_le_vuot_512": 0.0031453778289221327,
+   "trung_vi_token": 172,
+   "max_token": 856,
+   "tb_tu_tien_to": 38.06543920214806,
+   "ky_tu_khong_phu": 0,
+   "ky_tu_tong": 5403246,
+   "chunk_duoi_50_tu": 2996,
+   "theo_nhom_fallback": {
+    "khong_dieu": "47/47",
+    "luat": "0/8185",
+    "nd_tt": "0/3252",
+    "sua_doi": "0/878",
+    "vbhn": "0/673"
+   },
+   "tang": {
+    "ca_dieu": 4785,
+    "khoan": 6190,
+    "diem": 1927,
+    "ngoai_dieu": 86,
+    "fallback": 47
+   }
+  },
+  "A_H": {
+   "so_chunk": 5172,
+   "trung_vi_tu": 300.0,
+   "max_tu": 300,
+   "min_tu": 6,
+   "tb_tu": 297.79156999226603,
+   "ti_le_fallback": 0.0,
+   "vb_mat_chunk": 0,
+   "vuot_512": 64,
+   "ti_le_vuot_512": 0.01237432327919567,
+   "trung_vi_token": 396.0,
+   "max_token": 904,
+   "tb_tu_tien_to": 35.977958236658935,
+   "ky_tu_khong_phu": 0,
+   "ky_tu_tong": 5403246,
+   "chunk_duoi_50_tu": 16
+  },
+  "B-": {
+   "so_chunk": 13035,
+   "trung_vi_tu": 94,
+   "max_tu": 372,
+   "min_tu": 3,
+   "tb_tu": 118.15711545838128,
+   "ti_le_fallback": 0.0036056770233985425,
+   "vb_mat_chunk": 0,
+   "vuot_512": 4,
+   "ti_le_vuot_512": 0.00030686612965093976,
+   "trung_vi_token": 109,
+   "max_token": 706,
+   "tb_tu_tien_to": 0.0,
+   "ky_tu_khong_phu": 0,
+   "ky_tu_tong": 5403246,
+   "chunk_duoi_50_tu": 2996
+  }
+ },
+ "theo_seed": {
+  "A": {
+   "0": 5172,
+   "1": 5215,
+   "2": 5215,
+   "3": 5206
+  },
+  "A+": {
+   "0": 5172,
+   "1": 5215,
+   "2": 5215,
+   "3": 5206
+  },
+  "B": {
+   "0": 13035,
+   "1": 13041,
+   "2": 13040,
+   "3": 13038
+  }
+ }
+}

@@ -27,9 +27,17 @@ SEEDS = (1, 2, 3)   # seed = độ lệch điểm bắt đầu cửa sổ cho m�
 MO_HINH_NHUNG = MODELS / "halong_embedding"
 NHUNG_REPO = "contextboxai/halong_embedding"   # trước đây là hiieu/halong_embedding
 NHUNG_REVISION = "b57776031035f70ed2030d2e35ecc533eb0f8f71"
-KS = (1, 3, 5, 10)
-K_SINH = 5                 # số chunk tối đa đưa cho mô hình sinh
-NGAN_SACH_NGU_CANH = 2000  # token (tokenizer của LLM), như nhau cho mọi phương pháp
+KS = (1, 3, 5, 10)           # trục 1: cố định số chunk k
+NGAN_SACH_TU = (300, 600, 1200)  # trục 2: cố định ngân sách TỪ nội dung (Recall@W) — so công bằng giữa chunk to/nhỏ
+# Ngữ cảnh đưa cho mô hình sinh: KHÔNG cố định số chunk (k=5 cho A ≈ 1.500 từ nhưng cho B chỉ ≈ 465 từ), mà lấy
+# CHUNK NGUYÊN theo thứ hạng tới khi chunk kế tiếp không còn vừa CÙNG MỘT ngân sách từ (tính cả tiền tố — đó là chữ
+# mô hình thật sự đọc). 1.200 từ ≈ 1.700 token: cộng prompt hệ thống + câu hỏi + 384 token trả lời vẫn dưới
+# n_ctx = 4096 của llama-server (1.500 từ thì chạm trần). Mỗi lần gọi đều kiểm số token thật — xem rag/sinh.py.
+NGAN_SACH_NGU_CANH_TU = 1200
+K_UNG_VIEN = 50            # số chunk ứng viên lấy ra để lấp ngân sách
+PP_SINH = ("A", "B", "B+")  # sinh câu trả lời, 1 seed (seed 0)
+A_SEED_PHU = (1, 2)        # sinh thêm cho riêng A với 2 seed lệch cửa sổ, trên tập con phân tầng
+TAP_CON_A = 30
 MAX_TOKENS_TRA_LOI = 384
 
 # ── đánh giá ─────────────────────────────────────────────────────────────

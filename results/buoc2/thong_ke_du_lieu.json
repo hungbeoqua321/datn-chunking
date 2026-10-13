@@ -1,6 +1,6 @@
 {
  "so_van_ban": 80,
- "tong_tu": 1549507,
+ "tong_tu": 1540178,
  "dieu_ky_vong": 5850,
  "vo_truoc": 30,
  "vo_sau": 0,
@@ -1183,13 +1183,13 @@
     "dieu_duoc_trich": 0,
     "bat_ngoai_ky_vong": 0
    },
-   "so_tu": 33893,
+   "so_tu": 33929,
    "so_dieu": 140,
    "dieu_dai_nhat": 1689,
    "da_bo": {
     "can_cu": 4,
     "noi_nhan": 17,
-    "chu_ky": 5,
+    "chu_ky": 4,
     "khac": 0,
     "khoi_giua": 0,
     "phu_luc_tu": 31594
@@ -1217,13 +1217,13 @@
     "dieu_duoc_trich": 0,
     "bat_ngoai_ky_vong": 0
    },
-   "so_tu": 8213,
+   "so_tu": 8253,
    "so_dieu": 23,
    "dieu_dai_nhat": 1016,
    "da_bo": {
     "can_cu": 5,
     "noi_nhan": 17,
-    "chu_ky": 5,
+    "chu_ky": 4,
     "khac": 0,
     "khoi_giua": 0,
     "phu_luc_tu": 0
@@ -1421,13 +1421,13 @@
     "dieu_duoc_trich": 0,
     "bat_ngoai_ky_vong": 0
    },
-   "so_tu": 9385,
+   "so_tu": 9431,
    "so_dieu": 21,
    "dieu_dai_nhat": 1122,
    "da_bo": {
     "can_cu": 3,
     "noi_nhan": 17,
-    "chu_ky": 5,
+    "chu_ky": 4,
     "khac": 0,
     "khoi_giua": 0,
     "phu_luc_tu": 0
@@ -1442,7 +1442,7 @@
     "bat_duoc": 48,
     "thieu": 0,
     "ti_le_vo": 0.0,
-    "dieu_trong_ngoac": 0,
+    "dieu_trong_ngoac": 1,
     "dieu_duoc_trich": 0,
     "bat_ngoai_ky_vong": 0
    },
@@ -1451,20 +1451,20 @@
     "bat_duoc": 48,
     "thieu": 0,
     "ti_le_vo": 0.0,
-    "dieu_trong_ngoac": 0,
+    "dieu_trong_ngoac": 1,
     "dieu_duoc_trich": 0,
     "bat_ngoai_ky_vong": 0
    },
-   "so_tu": 30490,
-   "so_dieu": 49,
-   "dieu_dai_nhat": 4994,
+   "so_tu": 25518,
+   "so_dieu": 48,
+   "dieu_dai_nhat": 2979,
    "da_bo": {
     "can_cu": 5,
-    "noi_nhan": 20,
-    "chu_ky": 2,
+    "noi_nhan": 0,
+    "chu_ky": 4,
     "khac": 0,
     "khoi_giua": 0,
-    "phu_luc_tu": 0
+    "phu_luc_tu": 5525
    }
   },
   {
@@ -1693,13 +1693,13 @@
     "dieu_duoc_trich": 0,
     "bat_ngoai_ky_vong": 0
    },
-   "so_tu": 7179,
+   "so_tu": 7217,
    "so_dieu": 14,
    "dieu_dai_nhat": 1124,
    "da_bo": {
     "can_cu": 5,
     "noi_nhan": 0,
-    "chu_ky": 4,
+    "chu_ky": 3,
     "khac": 0,
     "khoi_giua": 0,
     "phu_luc_tu": 0
@@ -1761,13 +1761,13 @@
     "dieu_duoc_trich": 0,
     "bat_ngoai_ky_vong": 0
    },
-   "so_tu": 1880,
+   "so_tu": 1930,
    "so_dieu": 11,
    "dieu_dai_nhat": 438,
    "da_bo": {
     "can_cu": 4,
     "noi_nhan": 0,
-    "chu_ky": 5,
+    "chu_ky": 4,
     "khac": 0,
     "khoi_giua": 0,
     "phu_luc_tu": 0
@@ -1931,13 +1931,13 @@
     "dieu_duoc_trich": 0,
     "bat_ngoai_ky_vong": 0
    },
-   "so_tu": 2473,
+   "so_tu": 2553,
    "so_dieu": 12,
    "dieu_dai_nhat": 340,
    "da_bo": {
     "can_cu": 5,
     "noi_nhan": 23,
-    "chu_ky": 4,
+    "chu_ky": 3,
     "khac": 0,
     "khoi_giua": 0,
     "phu_luc_tu": 0
@@ -2122,7 +2122,7 @@
     "bat_duoc": 18,
     "thieu": 0,
     "ti_le_vo": 0.0,
-    "dieu_trong_ngoac": 0,
+    "dieu_trong_ngoac": 4,
     "dieu_duoc_trich": 0,
     "bat_ngoai_ky_vong": 0
    },
@@ -2131,20 +2131,20 @@
     "bat_duoc": 18,
     "thieu": 0,
     "ti_le_vo": 0.0,
-    "dieu_trong_ngoac": 0,
+    "dieu_trong_ngoac": 4,
     "dieu_duoc_trich": 0,
     "bat_ngoai_ky_vong": 0
    },
-   "so_tu": 14219,
-   "so_dieu": 22,
-   "dieu_dai_nhat": 4518,
+   "so_tu": 9572,
+   "so_dieu": 18,
+   "dieu_dai_nhat": 2585,
    "da_bo": {
     "can_cu": 5,
-    "noi_nhan": 27,
-    "chu_ky": 5,
+    "noi_nhan": 20,
+    "chu_ky": 2,
     "khac": 0,
-    "khoi_giua": 1,
-    "phu_luc_tu": 287
+    "khoi_giua": 0,
+    "phu_luc_tu": 5031
    }
   },
   {
@@ -2700,7 +2700,7 @@
     "bat_duoc": 12,
     "thieu": 0,
     "ti_le_vo": 0.0,
-    "dieu_trong_ngoac": 2,
+    "dieu_trong_ngoac": 3,
     "dieu_duoc_trich": 1,
     "bat_ngoai_ky_vong": 3
    },

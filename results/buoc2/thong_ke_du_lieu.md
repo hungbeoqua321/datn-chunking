@@ -1,17 +1,17 @@
 # Thống kê tập dữ liệu (bước 2)
 
-Nguồn: vbpl.vn (CSDL quốc gia về pháp luật). Tập chọn: `data/manifest.csv` — **80 văn bản**, 1.549.507 từ (sau chuẩn hoá, đã bỏ Căn cứ/Nơi nhận/chữ ký/Phụ lục).
+Nguồn: vbpl.vn (CSDL quốc gia về pháp luật). Tập chọn: `data/manifest.csv` — **80 văn bản**, 1.540.178 từ (sau chuẩn hoá, đã bỏ Căn cứ/Nơi nhận/chữ ký/Phụ lục).
 
 ## Theo nhóm
 
 | Nhóm | Số VB | Tổng từ | Trung vị từ/VB | Số Điều | VB có Chương | VB có Điều > 1500 từ |
 |---|---|---|---|---|---|---|
 | Luật, Bộ luật | 20 | 953.732 | 37.645 | 4.623 | 20 | 8 |
-| Nghị định, Thông tư | 35 | 409.683 | 7.754 | 1.018 | 29 | 10 |
+| Nghị định, Thông tư | 35 | 400.354 | 7.754 | 1.013 | 29 | 10 |
 | Không có "Điều" | 10 | 12.731 | 910 | 0 | 0 | 0 |
 | Sửa đổi, bổ sung | 10 | 88.795 | 6.019 | 124 | 0 | 0 |
 | Văn bản hợp nhất | 5 | 84.566 | 10.999 | 167 | 5 | 3 |
-| **Tổng** | **80** | **1.549.507** | 9.510 | 5.932 | 54 | 21 |
+| **Tổng** | **80** | **1.540.178** | 9.502 | 5.927 | 54 | 21 |
 
 Nhãn phụ: **Điều dài** = có ít nhất một Điều > 1500 từ (không tính văn bản sửa đổi, vì Điều 1 của chúng dài do trích nguyên văn điều bị sửa); **họ phiên bản** = VBHN + văn bản gốc + văn bản sửa đổi được hợp nhất.
 
@@ -74,7 +74,7 @@ Văn bản sửa đổi trích nguyên văn điều mới của luật bị sử
 ## Phần đã bỏ khi chuẩn hoá (data/clean/ so với data/clean_full/)
 
 - Dòng "Căn cứ …/Theo đề nghị …" ở đầu: 246 dòng (68 VB)
-- Nơi nhận: 632 dòng; khối chữ ký: 259 dòng (73 VB)
-- Khối Nơi nhận/chữ ký nằm GIỮA văn bản (quyết định ban hành kèm quy chế, khối xác thực VBHN): 2 khối
-- Trong đó Phụ lục (mẫu đơn, bảng biểu sau chữ ký): 72.721 từ (15 VB) — không thuộc phạm vi thực nghiệm
+- Nơi nhận: 605 dòng; khối chữ ký: 252 dòng (73 VB)
+- Khối Nơi nhận/chữ ký nằm GIỮA văn bản (quyết định ban hành kèm quy chế, khối xác thực VBHN): 1 khối
+- Trong đó Phụ lục (mẫu đơn, bảng biểu sau chữ ký): 82.990 từ (16 VB) — không thuộc phạm vi thực nghiệm
 - Văn bản không có Phần/Chương/Điều (công văn, chỉ thị…): KHÔNG bỏ dòng "Căn cứ" vì ở đây nó là nội dung.
