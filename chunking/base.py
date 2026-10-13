@@ -49,6 +49,7 @@ class Chunk:
     seed: int = 0                  # seed độ lệch cửa sổ (0 = không lệch, đúng như đề)
     dieu_start: int | None = None  # B+: vị trí của cả Điều cha (để mở rộng khi sinh)
     dieu_end: int | None = None
+    kem_theo: str | None = None    # Điều thuộc văn bản ban hành kèm theo (Quy chế…) có số Điều riêng
 
     def dict(self) -> dict:
         return asdict(self)

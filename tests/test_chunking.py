@@ -171,3 +171,17 @@ def test_nhay_can_bang_trong_luat_thuong_khong_anh_huong():
                    '1. "Doanh nghiệp" là tổ chức ' + "y " * 100, "2. Khoản hai " + "z " * 100])
     cs = [c for c in structural.chunk(doc(t), 0) if c.dieu_so == 3]
     assert [c.khoan_so for c in cs] == [1, 2]
+
+
+def test_dieu_trong_van_ban_kem_theo_co_khong_gian_so_rieng():
+    # VBHN 56/VBHN-BCT: Quyết định 3 Điều + "QUY CHẾ … (Ban hành kèm theo …)" đánh số lại từ Điều 1
+    t = "\n".join(["Điều 1. Ban hành kèm theo Quyết định này Quy chế.", "Điều 2. Hiệu lực.", "Điều 3. Trách nhiệm thi hành.",
+                   "QUY CHẾ", "Xây dựng, quản lý và thực hiện Chương trình", "(Ban hành kèm theo Quyết định số 72/2010/QĐ-TTg)",
+                   "Chương I", "QUY ĐỊNH CHUNG", "Điều 1. Phạm vi điều chỉnh", "Nội dung.", "Điều 2. Mục tiêu", "Nội dung."])
+    cs = structural.chunk(doc(t, trich="Quyết định ban hành Quy chế"), 0)
+    qd = [c for c in cs if c.kem_theo is None and c.dieu_so is not None]
+    qc = [c for c in cs if c.kem_theo]
+    assert [c.dieu_so for c in qd] == [1, 2, 3] and [c.dieu_so for c in qc] == [1, 2]
+    assert all("> Quy chế Xây dựng, quản lý và thực hiện Chương trình > Chương I > Điều" in c.tien_to for c in qc)
+    assert "QUY CHẾ" in qc[0].text and "QUY CHẾ" not in qd[-1].text  # tiêu đề văn bản kèm theo đi với Điều 1 của nó
+    assert len({(c.kem_theo, c.dieu_so) for c in cs if c.dieu_so}) == 5   # không còn nhãn trùng

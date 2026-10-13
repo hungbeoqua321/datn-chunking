@@ -35,6 +35,8 @@ RE_KHOAN = re.compile(r"^(\d+)[.)]\s")
 RE_DIEM = re.compile(r"^([a-zđ])\)\s")
 RE_PHAN = re.compile(r"^(?:Phần|PHẦN)\s+(thứ\s+\S+|THỨ\s+\S+|[IVXLC\d]+)\b")
 RE_CHUONG = re.compile(r"^(?:Chương|CHƯƠNG)\s+([IVXLC\d]+[a-z]?)\b")
+# tiêu đề văn bản ban hành kèm theo (Quy chế, Quy định, Điều lệ…): dòng viết hoa, vài dòng sau có "kèm theo"
+RE_KEM_THEO = re.compile(r"^(QUY CHẾ|QUY ĐỊNH|ĐIỀU LỆ|QUY TRÌNH|HƯỚNG DẪN|CHƯƠNG TRÌNH|KẾ HOẠCH|DANH MỤC)\b")
 RE_MUC = re.compile(r"^(?:Mục|MỤC)\s+(\d+|[IVXLC]+|[A-ZĐ])\b")
 
 
@@ -50,6 +52,7 @@ class Khoi:
     muc: str | None = None
     dong_dieu: int | None = None   # vị trí dòng "Điều N" (khối có thể bắt đầu sớm hơn ở dòng tiêu đề Chương/Mục)
     nhan: str | None = None        # nhãn Điều đầy đủ, vd "51a" (dieu_so vẫn là số nguyên 51)
+    kem_theo: str | None = None    # Điều thuộc văn bản "ban hành kèm theo" (Quy chế…) — đánh số lại từ Điều 1
 
 
 def _dong(text: str) -> list[tuple[int, int, str]]:
@@ -97,12 +100,21 @@ def phan_tich(text: str) -> list[Khoi]:
     khoi: list[Khoi] = []
     chuong = muc = None
     cho = None  # vị trí dòng tiêu đề Chương/Mục đang chờ gắn vào Điều kế tiếp
+    kem_theo = None  # tên văn bản kèm theo đang mở: Điều trong đó có không gian số riêng
     dau_dieu = []
     for k, (a, b, x) in enumerate(dong):
         if a >= het_than:
             break
         if a in trich:
             continue  # dòng trong khối trích dẫn: không phải tiêu đề Chương/Mục/Điều của văn bản này
+        if RE_KEM_THEO.match(x.strip()) and dau_dieu and \
+                any("kèm theo" in y.lower() for _, _, y in dong[k + 1:k + 6]):
+            ten = x.strip().capitalize()
+            if k + 1 < len(dong) and "kèm theo" not in dong[k + 1][2].lower():
+                ten += " " + dong[k + 1][2].strip()  # dòng tên ngay sau tiêu đề
+            kem_theo, chuong, muc = ten, None, None
+            cho = a if cho is None else cho
+            continue
         if x.strip() in ("Chương", "CHƯƠNG", "Mục", "MỤC") and k + 1 < len(dong):
             x = x.strip() + " " + dong[k + 1][2]  # tiêu đề "Chương ⏎ VIII TÊN" bị ngắt dòng (chỉ để nhận dạng)
         if RE_PHAN.match(x) or RE_CHUONG.match(x) or RE_MUC.match(x):
@@ -126,15 +138,15 @@ def phan_tich(text: str) -> list[Khoi]:
             nhan = m.group(1)
             if mh:
                 nhan, ten = mh.group(1) + mh.group(2), mh.group(3).strip()
-            dau_dieu.append((cho if cho is not None else a, int(m.group(1)), ten, chuong, muc, a, nhan))
+            dau_dieu.append((cho if cho is not None else a, int(m.group(1)), ten, chuong, muc, a, nhan, kem_theo))
             cho = None
     if not dau_dieu:
         return []
     if dau_dieu[0][0] > 0:
         khoi.append(Khoi("dau", 0, dau_dieu[0][0]))
-    for i, (a, n, ten, c, mu, dd, nhan) in enumerate(dau_dieu):
+    for i, (a, n, ten, c, mu, dd, nhan, kt) in enumerate(dau_dieu):
         b = dau_dieu[i + 1][0] if i + 1 < len(dau_dieu) else het_than
-        khoi.append(Khoi("dieu", a, b, n, ten, c, mu, dd, nhan))
+        khoi.append(Khoi("dieu", a, b, n, ten, c, mu, dd, nhan, kt))
     if het_than < len(text):
         khoi.append(Khoi("chu_thich", het_than, len(text)))
     return khoi
@@ -144,6 +156,8 @@ def tien_to_khoi(doc: Document, k: Khoi, khoan: int | None = None, diem: str | N
     p = [tien_to_van_ban(doc)]
     if k.loai == "chu_thich":
         p.append("Chú thích")
+    if k.kem_theo:
+        p.append(k.kem_theo)
     if k.chuong:
         p.append(f"Chương {k.chuong}")
     if k.muc:
@@ -206,7 +220,7 @@ def chunk(doc: Document, seed: int = 0, co_tien_to: bool = True) -> list[Chunk]:
                         dieu_ten=k.dieu_ten if k else None, khoan_so=khoan, diem=diem,
                         n_words=n if n is not None else so_tu(body), method=ten, start=a, end=b, fallback=fallback,
                         tien_to=tt, seed=seed, dieu_start=k.start if k and k.loai == "dieu" else None,
-                        dieu_end=k.end if k and k.loai == "dieu" else None))
+                        dieu_end=k.end if k and k.loai == "dieu" else None, kem_theo=k.kem_theo if k else None))
 
     # Tầng 0: văn bản rỗng
     if not t.strip():

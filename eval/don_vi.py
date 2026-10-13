@@ -33,6 +33,7 @@ class DonVi:
     start: int
     end: int
     b_parse_ok: bool | None = None
+    kem_theo: str | None = None    # thuộc văn bản ban hành kèm theo (Quy chế…), số Điều đánh lại từ 1
 
     def nhan(self) -> str:
         if self.dieu is None:
@@ -42,7 +43,7 @@ class DonVi:
             s = f"khoản {self.khoan} " + s
         if self.diem is not None:
             s = f"điểm {self.diem} " + s
-        return s + f" của {self.so_hieu}"
+        return s + (f" {self.kem_theo}" if self.kem_theo else "") + f" của {self.so_hieu}"
 
     def dict(self) -> dict:
         return asdict(self)
@@ -109,19 +110,25 @@ def chi_muc(doc: Document) -> dict:
             if len(x.split()) >= 8 and vt < het:
                 ra["doan"].append(DonVi(doc.doc_id, doc.so_hieu, None, None, None, vt, vt + len(x)))
         return ra
+    # văn bản ban hành kèm theo: dòng viết hoa "QUY CHẾ|QUY ĐỊNH|…" mà vài dòng sau có "kèm theo" → Điều sau đó có
+    # không gian số riêng (dò riêng ở đây, không dùng bộ phân tích của B)
+    kem = [(vt, x.strip().capitalize()) for j, (vt, x) in enumerate(dong)
+           if re.match(r"^(QUY CHẾ|QUY ĐỊNH|ĐIỀU LỆ|QUY TRÌNH|HƯỚNG DẪN|CHƯƠNG TRÌNH|KẾ HOẠCH|DANH MỤC)\b", x.strip())
+           and that and vt > that[0][0] and any("kèm theo" in y.lower() for _, y in dong[j + 1:j + 6])]
     for i, (a, n) in enumerate(that):
         b = that[i + 1][0] if i + 1 < len(that) else het
+        kt = next((ten for vt, ten in reversed(kem) if vt < a), None)
         while b > a and t[b - 1].isspace():
             b -= 1
         dong_dieu = [(vt, x) for vt, x in dong if a < vt < b]
         mk = _day_lien_tiep([(vt, m.group(1)) for vt, x in dong_dieu if (m := RE_KHOAN.match(x))], lambda s: int(s) - 1)
         ok = (len(mk) == cay[n]) if n in cay and cay[n] else None
-        ra["dieu"].append(DonVi(doc.doc_id, doc.so_hieu, n, None, None, a, b, ok))
+        ra["dieu"].append(DonVi(doc.doc_id, doc.so_hieu, n, None, None, a, b, ok, kt))
         for j, (ka, so) in enumerate(mk):
             kb = mk[j + 1][0] if j + 1 < len(mk) else b
             while kb > ka and t[kb - 1].isspace():
                 kb -= 1
-            ra["khoan"].append(DonVi(doc.doc_id, doc.so_hieu, n, int(so), None, ka, kb, ok))
+            ra["khoan"].append(DonVi(doc.doc_id, doc.so_hieu, n, int(so), None, ka, kb, ok, kt))
             dong_k = [(vt, x) for vt, x in dong if ka < vt < kb]
             md = _day_lien_tiep([(vt, m.group(1)) for vt, x in dong_k if (m := RE_DIEM.match(x))],
                                 lambda s: THU_TU_DIEM.index(s) if s in THU_TU_DIEM else -9)
@@ -129,7 +136,7 @@ def chi_muc(doc: Document) -> dict:
                 db = md[h + 1][0] if h + 1 < len(md) else kb
                 while db > da and t[db - 1].isspace():
                     db -= 1
-                ra["diem"].append(DonVi(doc.doc_id, doc.so_hieu, n, int(so), chu, da, db, ok))
+                ra["diem"].append(DonVi(doc.doc_id, doc.so_hieu, n, int(so), chu, da, db, ok, kt))
     return ra
 
 

@@ -46,10 +46,10 @@
    "ti_le_vuot_512": 0.003459663469098915,
    "trung_vi_token": 173.0,
    "max_token": 856,
-   "tb_tu_tien_to": 37.23981758138072,
+   "tb_tu_tien_to": 37.53137285736751,
    "ky_tu_khong_phu": 0,
    "ky_tu_tong": 5403246,
-   "chunk_duoi_50_tu": 2780,
+   "chunk_duoi_50_tu": 2781,
    "theo_nhom_fallback": {
     "khong_dieu": "47/47",
     "luat": "0/8167",
@@ -73,11 +73,11 @@
    "tb_tu": 297.79156999226603,
    "ti_le_fallback": 0.0,
    "vb_mat_chunk": 0,
-   "vuot_512": 64,
-   "ti_le_vuot_512": 0.01237432327919567,
+   "vuot_512": 65,
+   "ti_le_vuot_512": 0.012567672080433101,
    "trung_vi_token": 396.0,
    "max_token": 904,
-   "tb_tu_tien_to": 35.980858468677496,
+   "tb_tu_tien_to": 36.2784222737819,
    "ky_tu_khong_phu": 0,
    "ky_tu_tong": 5403246,
    "chunk_duoi_50_tu": 16
@@ -97,7 +97,7 @@
    "tb_tu_tien_to": 0.0,
    "ky_tu_khong_phu": 0,
    "ky_tu_tong": 5403246,
-   "chunk_duoi_50_tu": 2780
+   "chunk_duoi_50_tu": 2781
   },
   "C": {
    "so_chunk": 5637,
@@ -115,6 +115,23 @@
    "ky_tu_khong_phu": 0,
    "ky_tu_tong": 5403246,
    "chunk_duoi_50_tu": 5
+  },
+  "D": {
+   "so_chunk": 7718,
+   "trung_vi_tu": 198.0,
+   "max_tu": 413,
+   "min_tu": 17,
+   "tb_tu": 199.55662088623995,
+   "ti_le_fallback": 0.0,
+   "vb_mat_chunk": 0,
+   "vuot_512": 5,
+   "ti_le_vuot_512": 0.000647836227001814,
+   "trung_vi_token": 229.0,
+   "max_token": 767,
+   "tb_tu_tien_to": 0.0,
+   "ky_tu_khong_phu": 0,
+   "ky_tu_tong": 5403246,
+   "chunk_duoi_50_tu": 21
   }
  },
  "theo_seed": {
@@ -153,10 +170,10 @@
  },
  "nhan_theo_cay": {
   "luat": {
-   "tong": 6126,
-   "sai": 13,
-   "ti_le": 0.0021221025138752855,
-   "khong_kiem": 1765,
+   "tong": 6124,
+   "sai": 12,
+   "ti_le": 0.001959503592423253,
+   "khong_kiem": 1767,
    "vi_du": [
     "42-LCT/HĐNN8 — Chương II > Điều 8. 1- Chỉ có tầu biển Việt Nam mới được mang cờ quốc tịch tầu biển Việt Nam: CHƯƠNG II\nTÀU BIỂN MỤC A TÀU BIỂN VIỆT NAM\nĐiều 8. 1- Chỉ có tầu biển ",
     "42-LCT/HĐNN8 — Chương II > Điều 12. 1- Tàu biển Việt Nam phải được đăng ký vào \"Sổ đăng ký tầu biển quốc gia\" của Việt Nam: Điều 12. 1- Tàu biển Việt Nam phải được đăng ký vào \"Sổ đăng ký tầu bi",
@@ -164,19 +181,17 @@
    ]
   },
   "nd_tt": {
-   "tong": 2404,
-   "sai": 1,
-   "ti_le": 0.00041597337770382697,
-   "khong_kiem": 813,
-   "vi_du": [
-    "48/2026/TT-BCT — Chương IV > Điều 16. Hồ sơ, quy trình cấp sửa đổi, bổ sung, cấp lại do mất, thất lạc, hư hỏng Giấy chứng nhận KP đối với kim cương thô xuất khẩu theo Quy chế Chứng nhận KP > Khoản 4: 4. Giấy chứng nhận KP sửa đổi, bổ sung, cấp lại có hiệu lực trong vòng"
-   ]
+   "tong": 2321,
+   "sai": 0,
+   "ti_le": 0.0,
+   "khong_kiem": 896,
+   "vi_du": []
   },
   "sua_doi": {
-   "tong": 311,
+   "tong": 272,
    "sai": 4,
-   "ti_le": 0.012861736334405145,
-   "khong_kiem": 258,
+   "ti_le": 0.014705882352941176,
+   "khong_kiem": 297,
    "vi_du": [
     "09/2025/TT-BXD — Điều 2. Sửa đổi, bổ sung một số điều của Thông tư số 05/2024/TT-BXD ngày 31 tháng 7 năm 2024 của Bộ trưởng Bộ Xây dựng quy định chi tiết một số điều của Luật Nhà ở > Khoản 5 > Điểm a: 5. Sửa đổi, bổ sung, thay thế, bãi bỏ một số nội dung tại Quy chế quản",
     "09/2025/TT-BXD — Điều 2. Sửa đổi, bổ sung một số điều của Thông tư số 05/2024/TT-BXD ngày 31 tháng 7 năm 2024 của Bộ trưởng Bộ Xây dựng quy định chi tiết một số điều của Luật Nhà ở > Khoản 5 > Điểm a: xét, giải quyết.\n9. Phối hợp, tạo điều kiện để đơn vị quản lý vận hành",
@@ -184,14 +199,14 @@
    ]
   },
   "vbhn": {
-   "tong": 368,
-   "sai": 43,
-   "ti_le": 0.11684782608695653,
-   "khong_kiem": 285,
+   "tong": 343,
+   "sai": 11,
+   "ti_le": 0.03206997084548105,
+   "khong_kiem": 310,
    "vi_du": [
     "114/VBHN-VPQH — Chương IV > Điều 17. Sửa đổi, bổ sung khoản 1 Điều 3 của Luật Thuế thu nhập cá nhân số 04/2007/QH12 đã được sửa đổi, bổ sung một số điều theo Luật số 26/2012/QH13 và Luật số 71/2014/QH13: Chương IV\nĐIỀU KHOẢN THI HÀNH[8]\nĐiều 17. Sửa đổi, bổ sung khoản 1 Điề",
-    "56/VBHN-BCT — Chương I > Điều 1. Phạm vi điều chỉnh và đối tượng áp dụng: Chương I\nQUY ĐỊNH CHUNG\nĐiều 1. Phạm vi điều chỉnh và đối tượng áp dụn",
-    "56/VBHN-BCT — Chương I > Điều 2. Mục tiêu Chương trình cấp quốc gia về xúc tiến thương mại: Điều 2. Mục tiêu Chương trình cấp quốc gia về xúc tiến thương mại\nChươ"
+    "10/2026/VBHN-NĐ-BNV — Chương II > Mục 4 > Điều 14. Thủ tục tiếp nhận vào làm công chức[6]: Điều 14. Thủ tục tiếp nhận vào làm công chức[6]\n1. Căn cứ nhu cầu sử d",
+    "10/2026/VBHN-NĐ-BNV — Chương II > Mục 5 > Điều 19. Quyết định tuyển dụng và nhận việc[8]: Điều 19. Quyết định tuyển dụng và nhận việc[8]\n1. Chậm nhất là 03 ngày"
    ]
   }
  },

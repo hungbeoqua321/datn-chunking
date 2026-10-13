@@ -95,6 +95,12 @@ def don_vi_theo_cay(doc) -> tuple[dict[tuple, tuple[int, int]], set] | None:
             i = None
             if dong1 and not dong1.startswith("$"):
                 i = next((a for a in dau_dong if a >= vt and chuan(t[a:a + 80]).startswith(dong1)), None)
+            if i is not None and lv in ("Clause", "Point"):
+                # khoản/điểm chỉ tính là định vị được khi dòng "Điều N" gần nhất phía trước đúng là Điều cha của nó
+                # (cây vbpl của VBHN có khi không khớp nội dung hợp nhất: Điều cha chỉ là tham chiếu "$n")
+                truoc = list(re.finditer(r"(?m)^Điều\s+(\d+[a-zđ]?)\b", t[:i]))
+                if not truoc or truoc[-1].group(1) != dieu:
+                    i = None
             nut.append((nhan, i))
             if i is not None:
                 vt = i + 1
@@ -122,6 +128,9 @@ def kiem_nhan_theo_cay(docs, cs, nhom: str = "sua_doi") -> dict:
     vi_du = []
     for c in cs:
         if c.doc_id not in vb or c.dieu_so is None or not dv[c.doc_id] or not dv[c.doc_id][1]:
+            continue
+        if getattr(c, "kem_theo", None):
+            khong_kiem += 1  # Điều của văn bản ban hành kèm theo: cây vbpl không có node riêng cho phần này
             continue
         nhan_dieu = c.tien_to.split("> Điều ", 1)[1].split(".")[0].split(" ")[0] if "> Điều " in c.tien_to else str(c.dieu_so)
         k = (nhan_dieu, None if c.khoan_so is None else str(c.khoan_so), c.diem)
@@ -275,7 +284,15 @@ def main() -> None:
     L += ["", f"- Văn bản sửa đổi, đo bằng bộ dò khối trích dẫn mở/đóng (cách thứ hai): {trich['sai']}/{trich['tong']} "
           f"chunk ({trich['ti_le']:.1%}) có nhãn lấy từ dòng nằm trong trích dẫn.",
           "- B bỏ qua dòng nằm trong khối trích dẫn nguyên văn khi dò Điều/khoản/điểm (chunking/structural.py, "
-          "dong_trich_dan). Trước khi sửa: sửa đổi 35,7% theo cây, 52,0% theo bộ dò mở/đóng (commit trước)."]
+          "dong_trich_dan). Trước khi sửa: sửa đổi 35,7% theo cây, 52,0% theo bộ dò mở/đóng (commit trước).",
+          "- Văn bản ban hành kèm theo (Quy chế… đánh số lại từ Điều 1): Điều trong đó mang không gian số riêng "
+          "(trường kem_theo, tiền tố \"> Quy chế … > Điều N\"); cây vbpl không có node cho phần này nên các chunk đó "
+          "ghi là không kiểm được. Trước khi sửa: VBHN 11,7% (43/368).",
+          "- Bộ đo theo cây tính là SAI cả khi nhãn Điều đúng với dòng \"Điều N\" trong văn bản nhưng cây vbpl thiếu node "
+          "(cây của VBHN không đồng bộ với nội dung hợp nhất ở các Điều đã sửa, có chú thích [n]) — tỉ lệ trên là cận trên.",
+          f"- Quyết định: VBHN {nhan['vbhn']['ti_le']:.1%} "
+          + ("≤ 10% → giữ trong phần chấm trích dẫn chính." if nhan['vbhn']['ti_le'] <= 0.10
+             else "> 10% → tách câu hỏi có gold ở VBHN khỏi phần chấm trích dẫn chính, báo cáo riêng.")]
     RA.mkdir(parents=True, exist_ok=True)
     (RA / "thong_ke_chunk.md").write_text("\n".join(L) + "\n")
     (RA / "thong_ke_chunk.json").write_text(json.dumps({"seed0": js, "theo_seed": seeds, "b_khac_seed0": b_khac, "nhan_theo_cay": nhan, "nhan_trich_dan": trich}, ensure_ascii=False, indent=1))
