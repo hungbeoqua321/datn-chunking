@@ -69,7 +69,10 @@ Mỗi bước ghi kết quả ra file và **tự bỏ qua nếu file đã có**;
 | 1 | `python -m rag.nhung --kiem` | smoke test mô hình nhúng (khớp model card) |
 | 1 | `python tools/thu_mo_hinh.py` (cần `tools/chay-llm.sh` đang chạy) | `results/buoc1/thu_mo_hinh.md` — thử định dạng trích dẫn |
 | 1 | `python tools/do_toc_do_nhung.py`; `llama-bench` | `results/buoc1/toc_do_nhung.md`, `llama-bench.md` |
-| 2 | *(bước 2)* | `data/raw`, `data/clean`, thống kê tập dữ liệu |
+| 2 | `python -m crawl.thu_thap` (+ `--bo-sung-khong-dieu 10`) | `data/raw/` — HTML gốc + metadata + cây cấu trúc vbpl |
+| 2 | `python -m crawl.chuan_hoa` | `data/clean/`, `data/clean_full/`, `data/thong_ke_chuan_hoa.jsonl` |
+| 2 | `python -m crawl.chon_van_ban` | `data/manifest.csv` (bản sao: `results/buoc2/manifest.csv`) |
+| 2 | `python -m crawl.thong_ke` | `results/buoc2/thong_ke_du_lieu.md` |
 
 *(Bảng được bổ sung theo từng bước.)*
 

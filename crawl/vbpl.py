@@ -44,7 +44,12 @@ LOAI = {
     "Công văn": "ecc6bbe0-5d0c-4916-836b-bb2f8146249c",
     "Văn bản hành chính liên quan": "25fad6ae-78f6-4acd-a70e-da19032729af",
     "Văn bản khác": "39a344bd-d086-4fd9-880c-9ecefdb19a40",
+    "Chỉ thị": "0045710b-eb54-4ce5-b511-76aa23f3021b",
+    "Thông báo": "ed938c9b-e50d-42f8-80b9-e945f207bd04",
 }
+# mã quan hệ trong "lược đồ" văn bản (enum N8 trong JS của vbpl.vn)
+QUAN_HE = {1: "Bãi bỏ", 3: "Căn cứ", 4: "Dẫn chiếu", 6: "Đính chính", 7: "Hợp nhất", 8: "Hướng dẫn áp dụng",
+           9: "Quy định chi tiết", 10: "Sửa đổi, bổ sung", 12: "Thay thế", 13: "Bổ sung", 16: "Sửa đổi"}
 
 
 class LoiAction(RuntimeError):
@@ -127,11 +132,11 @@ class Vbpl:
         build = ",".join(sorted(chunk_co_action))
         tim = {"pageNumber": 1, "pageSize": 1, "sortBy": "issueDate", "sortDirection": "desc", "groupVbpl": True,
                "agencyLevel": "TRUNG_UONG", "optionDoc": "all", "matchMode": "all_words", "docType": [LOAI["Luật"]]}
-        ket = {"build": build, "chi_tiet": None, "tim": None}
+        ket = {"build": build, "chi_tiet": None, "tim": None, "cay": None, "luoc_do": None}
         for aid in sorted(ung_vien):
-            if ket["chi_tiet"] and ket["tim"]:
+            if all(ket[k] for k in ("chi_tiet", "tim", "cay", "luoc_do")):
                 break
-            for vai, args in (("chi_tiet", [DOC_MAU]), ("tim", [tim])):
+            for vai, args in (("chi_tiet", [DOC_MAU]), ("tim", [tim]), ("cay", [DOC_MAU]), ("luoc_do", [DOC_MAU])):
                 if ket[vai]:
                     continue
                 try:
@@ -146,6 +151,11 @@ class Vbpl:
                       and (o["items"][0].get("docType") or {}).get("name") == "Luật"):
                     # phải đúng là tìm kiếm có lọc loại văn bản (có action khác cũng trả items/total)
                     ket["tim"] = aid
+                elif (vai == "cay" and isinstance(o, list) and o and isinstance(o[0], dict)
+                      and o[0].get("level") in ("Chapter", "Article", "Part", "Section")):
+                    ket["cay"] = aid  # cây Phần/Chương/Mục/Điều/Khoản do vbpl.vn biên tập
+                elif vai == "luoc_do" and isinstance(o, dict) and "documentNamesByType" in o:
+                    ket["luoc_do"] = aid  # quan hệ với văn bản khác (sửa đổi, hợp nhất, ...)
         if not (ket["chi_tiet"] and ket["tim"]):
             raise LoiAction(f"không dò được action id: {ket}")
         ch.RAW.mkdir(parents=True, exist_ok=True)
@@ -164,7 +174,7 @@ class Vbpl:
         o = json.loads(h.get("1", "null"))
         if o is None:
             raise RuntimeError("phản hồi rỗng")
-        return o if vai == "tim" else self._noi_chuoi(o, h)
+        return o if vai != "chi_tiet" else self._noi_chuoi(o, h)
 
     @staticmethod
     def _noi_chuoi(o, hang: dict[str, str]):
@@ -180,6 +190,13 @@ class Vbpl:
     # ── API dùng ở các bước sau ──────────────────────────────────────────
     def chi_tiet(self, doc_id: str) -> dict:
         return self._goi("chi_tiet", [str(doc_id)])
+
+    def cay(self, doc_id: str) -> list:
+        """Cây cấu trúc do vbpl.vn biên tập — nguồn ĐỘC LẬP với bộ phân đoạn B (đếm Điều kỳ vọng)."""
+        return self._goi("cay", [str(doc_id)])
+
+    def luoc_do(self, doc_id: str) -> dict:
+        return self._goi("luoc_do", [str(doc_id)])
 
     def tim(self, loai: str | None = None, tu_khoa: str | None = None, trang: int = 1, co: int = 50,
             theo_diem: bool = False) -> dict:
