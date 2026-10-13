@@ -14,7 +14,6 @@ import argparse
 import hashlib
 import json
 import os
-import shutil
 import sys
 import time
 
@@ -84,6 +83,34 @@ def nhung_bo_dem(van_ban: list[str], batch: int = 16, gioi_han_giay: float | Non
     return idx
 
 
+def cuoi_duoc_nhung(cs: list[dict]) -> list[int]:
+    """Vị trí ký tự (trong văn bản) nơi phần ĐƯỢC NHÚNG của mỗi chunk kết thúc. Mô hình chỉ đọc 512 token đầu (tính cả
+    <s></s>) của chuỗi tiền tố + nội dung; chunk dài hơn bị cắt đuôi → khi chấm độ phủ chỉ tính tới vị trí này."""
+    from transformers import AutoTokenizer
+
+    tok = AutoTokenizer.from_pretrained(str(ch.MO_HINH_NHUNG))
+    ra = []
+    for i in range(0, len(cs), 256):
+        lo = cs[i:i + 256]
+        enc = tok([c["text"] for c in lo], truncation=True, max_length=512, return_offsets_mapping=True)
+        for c, om in zip(lo, enc["offset_mapping"]):
+            het = max((b for _, b in om), default=0)  # ký tự cuối của token cuối cùng được giữ
+            if het >= len(c["text"].rstrip()):
+                ra.append(c["end"])  # không bị cắt
+                continue
+            dau_than = len(c["tien_to"]) + 1 if c.get("tien_to") else 0
+            ra.append(min(c["end"], c["start"] + max(0, het - dau_than)))
+    return ra
+
+
+def _ghi_chunks(p, cs: list[dict]) -> None:
+    for c, e in zip(cs, cuoi_duoc_nhung(cs)):
+        c["end_nhung"] = e
+    tam = p.with_suffix(".tmp")
+    tam.write_text("".join(json.dumps(c, ensure_ascii=False) + "\n" for c in cs))
+    tam.replace(p)
+
+
 def dung(ten: str, force: bool = False) -> None:
     src = ch.CHUNKS / f"{ten}.jsonl"
     out = ch.INDEX / ten
@@ -97,7 +124,7 @@ def dung(ten: str, force: bool = False) -> None:
     m = np.stack([bo[idx[sha(c["text"])]] for c in cs])
     out.mkdir(parents=True, exist_ok=True)
     m.tofile(out / "emb.f32.tmp")
-    shutil.copy(src, out / "chunks.jsonl")
+    _ghi_chunks(out / "chunks.jsonl", cs)
     (out / "emb.f32.tmp").replace(out / "emb.f32")
     print(f"→ {out} ({m.shape[0]}×{m.shape[1]})")
 
@@ -105,6 +132,8 @@ def dung(ten: str, force: bool = False) -> None:
 def nap(ten: str) -> tuple[np.ndarray, list[dict]]:
     d = ch.INDEX / ten
     cs = [json.loads(x) for x in open(d / "chunks.jsonl") if x.strip()]
+    if cs and "end_nhung" not in cs[0]:  # chỉ mục dựng trước khi có end_nhung → bổ sung một lần
+        _ghi_chunks(d / "chunks.jsonl", cs)
     m = np.fromfile(d / "emb.f32", dtype=np.float32).reshape(-1, DIM)
     assert m.shape[0] == len(cs), f"{ten}: lệch số dòng"
     return m, cs

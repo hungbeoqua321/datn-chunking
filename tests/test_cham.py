@@ -36,14 +36,26 @@ def test_tuong_duong_va_tim():
     van_ban = {"goc": "Điều 5. Mức phạt\n1. Phạt tiền từ 1.000.000 đồng đến 2.000.000 đồng đối với hành vi vi phạm quy định.",
                "vbhn": "Điều 5. Mức phạt[3]\n1. Phạt tiền từ 1.000.000 đồng đến 2.000.000 đồng đối với hành vi vi phạm quy định."}
     g = {"doc_id": "goc", "start": 17, "end": len(van_ban["goc"])}
-    r = tim_tuong_duong(g, van_ban)
+    # khác số hiệu (VBHN của luật gốc, hay bản cũ/bản sửa đổi) → KHÔNG tương đương
+    assert tim_tuong_duong(g, van_ban, {"goc": "1/2020/QH14", "vbhn": "5/VBHN-VPQH"}) == []
+    r = tim_tuong_duong(g, van_ban, {"goc": "1/2020/QH14", "vbhn": "1/2020/QH14"})
     assert r and r[0]["doc_id"] == "vbhn" and van_ban["vbhn"][r[0]["start"]:r[0]["end"]].startswith("1. Phạt tiền")
+    assert tim_tuong_duong(g, van_ban, {"goc": "x", "vbhn": "x"}, phien_ban=True) == []
 
 
 def test_recall_theo_ngan_sach_tu():
     kq = [c(0, 50, n=200), c(100, 200, n=200), c(300, 310, n=10)]
     assert len(cat_theo_tu(kq, 300)) == 1                # chunk thứ 2 không vừa → dừng, không cắt dở
     assert len(cat_theo_tu(kq, 410)) == 3 and do_phu(G, cat_theo_tu(kq, 400)) == 1.0
+    # đếm CẢ tiền tố (chữ mô hình thật sự đọc); chunk đầu luôn được lấy
+    tt = [dict(c(0, 50), text="[Số hiệu] [Trích yếu] > Điều 1\n" + " ".join(["x"] * 300)), dict(c(60, 90), text="y " * 5)]
+    assert [len(cat_theo_tu(tt, w)) for w in (300, 310, 320)] == [1, 1, 2]
+
+
+def test_do_phu_chi_tinh_phan_duoc_nhung():
+    # chunk dài bị cắt khi nhúng: phần đuôi sau end_nhung không được tính là đã truy hồi
+    ch = dict(c(0, 400), end_nhung=150)
+    assert do_phu(G, [ch]) == 0.5 and do_phu(G, [c(0, 400)]) == 1.0
 
 
 def test_bootstrap_va_kiem_dinh():

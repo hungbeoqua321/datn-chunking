@@ -1,8 +1,10 @@
 """Các phép chấm dùng chung (thuần Python, test được bằng dữ liệu giả).
 
 Độ phủ gold: cov_k(G) = |G ∩ ∪ span(top-k chunk cùng văn bản)| / |G| (theo VỊ TRÍ KÝ TỰ của phần nội dung,
-không tính tiền tố). Một đơn vị gold có thể có BẢN TƯƠNG ĐƯƠNG ở văn bản khác (VBHN chép lại khoản của văn bản gốc,
-văn bản sửa đổi trích nguyên văn điều mới…): lấy trúng bản tương đương vẫn tính là trúng → cov = max trên E(G).
+không tính tiền tố). Span của chunk chỉ tính tới chỗ mô hình nhúng THỰC SỰ đọc (end_nhung: chunk dài hơn 512 token bị
+cắt đuôi khi nhúng — phần đuôi đó không thể giúp chunk được truy hồi nên không được tính là "đã lấy về").
+Bản tương đương E(G): đoạn trùng nội dung ở văn bản khác CÙNG SỐ HIỆU (không bao giờ là bản cũ/bản sửa đổi của một
+văn bản khác); câu hỏi về phiên bản thì tắt hẳn → lấy trúng bản đã hết hiệu lực không bao giờ được tính là đúng.
 """
 import math
 import random
@@ -29,7 +31,7 @@ def do_phu(gold: dict, chunks: list[dict], tuong_duong: list[dict] | None = None
     """cov của MỘT đơn vị gold với tập chunk (mỗi chunk có doc_id, start, end)."""
     theo_vb = defaultdict(list)
     for c in chunks:
-        theo_vb[c["doc_id"]].append((c["start"], c["end"]))
+        theo_vb[c["doc_id"]].append((c["start"], c.get("end_nhung", c["end"])))
     tot = 0.0
     for g in [gold] + list(tuong_duong or []):
         n = g["end"] - g["start"]
@@ -54,13 +56,19 @@ def mrr(golds: list[dict], ket_qua: list[dict], k: int = 10, tau: float = TAU, t
     return 0.0
 
 
+def so_tu_doc(c: dict) -> int:
+    """Số từ mô hình thật sự đọc của một chunk = tiền tố + nội dung (tiền tố chiếm ngân sách thật khi gửi cho mô hình)."""
+    return len(c["text"].split()) if "text" in c else max(1, c.get("n_words", 1))
+
+
 def cat_theo_tu(ket_qua: list[dict], ngan_sach: int) -> list[dict]:
-    """Recall@W: lấy CHUNK NGUYÊN theo thứ hạng cho tới khi chunk kế tiếp làm vượt `ngan_sach` từ NỘI DUNG thì dừng
-    (không cắt dở chunk — như cách dựng ngữ cảnh cho mô hình sinh)."""
+    """Recall@W: lấy CHUNK NGUYÊN theo thứ hạng cho tới khi chunk kế tiếp làm vượt `ngan_sach` từ thì dừng — đếm CẢ
+    tiền tố, giống hệt cách dựng ngữ cảnh cho mô hình sinh. Chunk đầu tiên luôn được lấy (chunk A+ 316 từ, D tới 350 từ
+    vẫn có mặt ở W = 300)."""
     ra, con = [], ngan_sach
     for c in ket_qua:
-        n = max(1, c.get("n_words", 1))
-        if n > con:
+        n = so_tu_doc(c)
+        if n > con and ra:
             break
         ra.append(c)
         con -= n
@@ -103,8 +111,12 @@ def _ngram(s: str, n: int = 5) -> set:
     return {s[i:i + n] for i in range(max(0, len(s) - n + 1))}
 
 
-def tim_tuong_duong(gold: dict, van_ban: dict[str, str], nguong: float = 0.8, _cache: dict = {}) -> list[dict]:  # noqa: B006
-    """Các đoạn ở văn bản KHÁC có độ chứa 5-gram ký tự ≥ nguong so với gold (neo bằng 60 ký tự đầu/giữa/cuối)."""
+def tim_tuong_duong(gold: dict, van_ban: dict[str, str], so_hieu: dict[str, str], phien_ban: bool = False,
+                    nguong: float = 0.8, _cache: dict = {}) -> list[dict]:  # noqa: B006
+    """Các đoạn ở văn bản KHÁC nhưng CÙNG SỐ HIỆU với gold, có độ chứa 5-gram ký tự ≥ nguong (neo bằng 60 ký tự
+    đầu/giữa/cuối). Câu hỏi phiên bản (phien_ban=True) → không có bản tương đương."""
+    if phien_ban:
+        return []
     g, _ = _chuan(van_ban[gold["doc_id"]][gold["start"]:gold["end"]])
     if len(g) < 40:
         return []
@@ -112,7 +124,7 @@ def tim_tuong_duong(gold: dict, van_ban: dict[str, str], nguong: float = 0.8, _c
     neo = {g[:60], g[len(g) // 2:len(g) // 2 + 60], g[-60:]}
     ra = []
     for doc_id, t in van_ban.items():
-        if doc_id == gold["doc_id"]:
+        if doc_id == gold["doc_id"] or so_hieu.get(doc_id) != so_hieu.get(gold["doc_id"]):
             continue
         if doc_id not in _cache:
             _cache[doc_id] = _chuan(t)

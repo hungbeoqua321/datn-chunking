@@ -14,6 +14,11 @@ Gold lấy từ chỉ mục cấu trúc độc lập (eval/don_vi.py), ghi bằn
   khong_co_dieu    15    một đoạn của văn bản không chia Điều
 Thêm ~10% câu dự phòng (du_phong=true) để thay câu bị loại khi duyệt.
 
+GOLD TRUNG LẬP (trung_lap=true) — gold cố ý KHÔNG trùng ranh giới cấu trúc, để B không thắng chỉ vì đáp án được định
+nghĩa đúng bằng ranh giới chunk của nó: 1–3 câu liên tiếp mà câu đầu KHÔNG phải đầu một Điều/khoản/điểm/đoạn, có thể
+kéo sang khoản kế. Ít nhất 45/140 câu, rải theo nhóm (TRUNG_LAP); báo cáo lấy tập này làm số chính.
+    python -m eval.tao_cau_hoi --trung-lap   # bổ sung gold trung lập vào eval/gold.draft.jsonl đang có (giữ câu đã nháp)
+
     python -m eval.tao_cau_hoi --chon      # chỉ chọn gold → eval/gold.draft.jsonl (không cần LLM)
     python -m eval.tao_cau_hoi             # chọn gold (nếu chưa có) + gọi LLM viết câu hỏi → eval/questions.draft.jsonl
                                            #   (tiếp tục được nếu bị dừng giữa chừng) + eval/questions.review.md
@@ -33,6 +38,8 @@ SEED = 2026
 SO_CAU = {"don_gian_khoan": 20, "don_gian_trung_lap": 20, "don_gian_phien_ban": 10, "xuyen_khoan": 30,
           "dan_chieu": 25, "dieu_dai": 20, "khong_co_dieu": 15}
 DU_PHONG = 0.1
+CAN = {"don_gian": 50, "xuyen_khoan": 30, "dan_chieu": 25, "dieu_dai": 20, "khong_co_dieu": 15}
+TRUNG_LAP = {"don_gian": 16, "xuyen_khoan": 10, "dan_chieu": 8, "dieu_dai": 6, "khong_co_dieu": 5}
 GOLD = ch.GOC / "eval/gold.draft.jsonl"
 NHAP = ch.GOC / "eval/questions.draft.jsonl"
 DUYET = ch.GOC / "eval/questions.review.md"
@@ -219,10 +226,10 @@ def chon_gold() -> list[dict]:
             if not con:
                 continue
             x = rng.choice(con)
-            dau = _cau(docs[k].text, u.start, u.end)[:2]  # dòng tiêu đề + câu dẫn
             g = [_gold(x, "dich")]
-            if len(dau) > 1 and so_tu(docs[k].text[dau[1][0]:dau[1][1]]) <= 60 and not re.match(r"\d+[.)]", docs[k].text[dau[1][0]:]):
-                g.insert(0, _gold(DonVi(u.doc_id, u.so_hieu, u.dieu, None, None, dau[1][0], dau[1][1], u.b_parse_ok), "dan"))
+            cd = cau_dan(docs[k].text, cm[k], u, x)
+            if cd:
+                g.insert(0, _gold(_don_vi_span(cm[k], u, *cd), "dan"))
             dd.append(g)
     rng.shuffle(dd)
     da = {}
@@ -259,6 +266,258 @@ def chon_gold() -> list[dict]:
     return ra
 
 
+# ── gold trung lập ───────────────────────────────────────────────────────────
+def _dau_don_vi(cm_doc: dict) -> set[int]:
+    return {u.start for t in ("dieu", "khoan", "diem", "doan") for u in cm_doc.get(t, [])}
+
+
+RE_CHI_NHAN = re.compile(r"^\s*(?:Điều\s+\d+[a-zđ]?\s*[.:]?|\d+[a-zđ]?\s*[.)]|[a-zđ]\))?\s*$")
+
+
+def _la_dau(text: str, x: int, dau: set[int]) -> bool:
+    """x là đầu một Điều/khoản/điểm/đoạn — kể cả khi trước x trên cùng dòng chỉ có nhãn ("7. ", "a) ", "Điều 5.")."""
+    ld = text.rfind("\n", 0, x) + 1
+    return x in dau or (ld in dau and bool(RE_CHI_NHAN.match(text[ld:x])))
+
+
+def cau_dan(text: str, cm_doc: dict, dieu: DonVi, dich: DonVi | None) -> tuple[int, int] | None:
+    """Câu dẫn cho gold nhóm dieu_dai: đích là điểm → phần dẫn của khoản chứa nó (trước điểm đầu tiên, vd "Người lao
+    động có các quyền sau đây:"); ngược lại → dòng dẫn ngay sau tiêu đề Điều nếu dòng đó không phải khoản. Không có → None.
+    (KHÔNG lấy tên Điều: tên Điều nằm ở dòng tiêu đề, không phải câu dẫn.)"""
+    if dich is not None and dich.diem is not None:
+        kh = next((k for k in cm_doc["khoan"] if k.dieu == dieu.dieu and k.start <= dich.start < k.end), None)
+        d1 = min((d.start for d in cm_doc["diem"] if kh and kh.start <= d.start < kh.end), default=None)
+        if kh and d1 and 3 <= so_tu(text[kh.start:d1]) <= 60:
+            a, b = kh.start, d1
+            while b > a and text[b - 1].isspace():
+                b -= 1
+            return a, b
+    ld = text.find("\n", dieu.start) + 1  # dòng ngay sau dòng tiêu đề Điều
+    if 0 < ld < dieu.end:
+        le = text.find("\n", ld)
+        le = dieu.end if le < 0 or le > dieu.end else le
+        dong = text[ld:le]
+        if dong.strip() and not re.match(r"\s*(\d+[a-zđ]?[.)]|[a-zđ]\))\s", dong) and 3 <= so_tu(dong) <= 60:
+            return ld, le
+    return None
+
+
+def span_trung_lap(text: str, a: int, b: int, dau: set[int], rng, can: re.Pattern | None = None,
+                   so_cau: tuple = (1, 3), tu: tuple = (15, 90), tranh: list = ()) -> tuple[int, int] | None:
+    """1–3 câu liên tiếp trong text[a:b] mà câu đầu KHÔNG phải đầu một đơn vị cấu trúc; có thể kéo qua ranh giới
+    đơn vị kế (vẫn trong [a, b)). `can`: span phải chứa cụm khớp; `tranh`: các span đã dùng, không được chồng lên."""
+    cau = _cau(text, a, b)
+    ung = []
+    for i, (x, _) in enumerate(cau):
+        if _la_dau(text, x, dau):
+            continue
+        for n in range(so_cau[0], so_cau[1] + 1):
+            if i + n > len(cau):
+                break
+            y = cau[i + n - 1][1]
+            if tu[0] <= so_tu(text[x:y]) <= tu[1] and (can is None or can.search(text[x:y])) \
+                    and not any(p < y and x < q for p, q in tranh):
+                ung.append((x, y))
+    return rng.choice(ung) if ung else None
+
+
+def _don_vi_span(cm_doc: dict, u: DonVi, x: int, y: int) -> DonVi:
+    """Đơn vị gold cho span [x, y): nhãn khoản/điểm nơi span BẮT ĐẦU (khoan_den ghi riêng nếu span kéo sang khoản kế)."""
+    kh = next((k for k in cm_doc["khoan"] if k.dieu == u.dieu and k.start <= x < k.end), None)
+    di = next((k for k in cm_doc["diem"] if k.dieu == u.dieu and k.start <= x < k.end), None)
+    return DonVi(u.doc_id, u.so_hieu, u.dieu, kh.khoan if kh else None, di.diem if di else None, x, y, u.b_parse_ok)
+
+
+def chon_trung_lap(da_co: list[dict]) -> list[dict]:
+    """Gold trung lập cho cả 5 nhóm (TRUNG_LAP câu + ~10% dự phòng mỗi nhóm)."""
+    rng = random.Random(SEED + 1)
+    docs = {d.doc_id: d for d in nap_van_ban()}
+    cm = {k: chi_muc(d) for k, d in docs.items()}
+    dau = {k: _dau_don_vi(cm[k]) for k in docs}
+    goc = sorted(k for k in docs if docs[k].nhom in ("luat", "nd_tt"))
+    dung: dict[str, list] = {}
+    for x in da_co:
+        for g in x["gold"]:
+            dung.setdefault(g["doc_id"], []).append((g["start"], g["end"]))
+    ra: list[dict] = []
+
+    def them(loai, gold, nguon, toi_da_vb=2):
+        dk = gold[-1]["doc_id"]
+        if sum(1 for x in ra if x["loai"] == loai and x["gold"][-1]["doc_id"] == dk) >= toi_da_vb:
+            return False
+        ra.append({"loai": loai, "gold": gold, "nguon_chon": nguon, "trung_lap": True})
+        for g in gold:
+            dung.setdefault(g["doc_id"], []).append((g["start"], g["end"]))
+        return True
+
+    def du(loai):
+        return sum(x["loai"] == loai for x in ra) >= TRUNG_LAP[loai] + max(1, round(TRUNG_LAP[loai] * DU_PHONG))
+
+    # don_gian: 1–3 câu trong một Điều, câu đầu không phải đầu đơn vị (có thể kéo sang khoản kế); ≤ 1 câu/văn bản
+    dieu_ds = [(k, u) for k in goc for u in cm[k]["dieu"] if so_tu(doan(docs[k], u)) >= 60]
+    rng.shuffle(dieu_ds)
+    for k, u in dieu_ds:
+        if du("don_gian"):
+            break
+        sp = span_trung_lap(docs[k].text, u.start, u.end, dau[k], rng, tranh=dung.get(k, []))
+        if sp:
+            them("don_gian", [_gold(_don_vi_span(cm[k], u, *sp))], "trung_lap", toi_da_vb=1)
+    # xuyen_khoan: câu quy tắc (không phải câu đầu khoản) + câu ngoại lệ chứa cụm loại trừ (không phải câu đầu khoản)
+    cap = []
+    for k in goc:
+        theo: dict[int, list[DonVi]] = {}
+        for u in cm[k]["khoan"]:
+            theo.setdefault(u.dieu, []).append(u)
+        for dieu, ks in theo.items():
+            for j in ks[1:]:
+                tj = doan(docs[k], j)
+                if RE_NGOAI_LE.search(tj):
+                    ref = re.search(r"khoản\s+(\d+)\s+Điều này", tj)
+                    i = next((u for u in ks if ref and u.khoan == int(ref.group(1)) and u.khoan != j.khoan), ks[0])
+                    if i.khoan != j.khoan:
+                        cap.append((k, i, j))
+    rng.shuffle(cap)
+    for k, i, j in cap:
+        if du("xuyen_khoan"):
+            break
+        t = docs[k].text
+        sj = span_trung_lap(t, j.start, j.end, dau[k], rng, can=RE_NGOAI_LE, so_cau=(1, 2), tu=(8, 90), tranh=dung.get(k, []))
+        si = span_trung_lap(t, i.start, i.end, dau[k], rng, so_cau=(1, 2), tu=(8, 90), tranh=dung.get(k, []))
+        if not (si and sj):
+            continue
+        m = RE_NGOAI_LE.search(t[sj[0]:sj[1]])
+        them("xuyen_khoan", [_gold(_don_vi_span(cm[k], i, *si), "dieu_kien"),
+                             _gold(_don_vi_span(cm[k], j, *sj), "loai_tru", cum=m.group(0), cau_loai_tru=t[sj[0]:sj[1]].strip())],
+             "ngoai_le")
+    # dan_chieu: câu nguồn chứa dẫn chiếu (không phải câu đầu khoản) + 1–3 câu trong đơn vị đích (không phải câu đầu)
+    nguon = []
+    for k in goc:
+        for u in cm[k]["khoan"] + [x for x in cm[k]["dieu"] if not any(y.dieu == x.dieu for y in cm[k]["khoan"])]:
+            for m in RE_DAN_CHIEU.finditer(doan(docs[k], u)):
+                kd, nd = (int(m.group(1)) if m.group(1) else None), int(m.group(2))
+                if nd == u.dieu or abs(nd - u.dieu) < 2:
+                    continue
+                dich = next((x for x in cm[k]["khoan"] if x.dieu == nd and x.khoan == kd), None) if kd else \
+                    next((x for x in cm[k]["dieu"] if x.dieu == nd), None)
+                if dich and so_tu(doan(docs[k], dich)) >= 25:
+                    nguon.append((k, u, m.group(0), dich))
+    rng.shuffle(nguon)
+    for k, u, cum, dich in nguon:
+        if du("dan_chieu"):
+            break
+        t = docs[k].text
+        sn = span_trung_lap(t, u.start, u.end, dau[k], rng, can=re.compile(re.escape(cum)), so_cau=(1, 2), tu=(10, 90),
+                            tranh=dung.get(k, []))
+        sd = span_trung_lap(t, dich.start, dich.end, dau[k], rng, tranh=dung.get(k, []))
+        if sn and sd:
+            them("dan_chieu", [_gold(_don_vi_span(cm[k], u, *sn), "nguon", cum=cum), _gold(_don_vi_span(cm[k], dich, *sd), "dich")],
+                 "dan_chieu")
+    # dieu_dai: câu dẫn của Điều > 1500 từ + 1–3 câu nằm sâu bên trong (sau 40% chiều dài), không phải câu đầu đơn vị
+    dd = []
+    for k in goc:
+        for u in cm[k]["dieu"]:
+            if so_tu(doan(docs[k], u)) > 1500:
+                dd.append((k, u))
+    rng.shuffle(dd)
+    for k, u in dd * 3:
+        if du("dieu_dai"):
+            break
+        t = docs[k].text
+        sd = span_trung_lap(t, u.start + int(0.4 * (u.end - u.start)), u.end, dau[k], rng, tranh=dung.get(k, []))
+        if not sd:
+            continue
+        dv = _don_vi_span(cm[k], u, *sd)
+        g = [_gold(dv, "dich")]
+        cd = cau_dan(t, cm[k], u, dv)
+        if cd and not (cd[0] < sd[1] and sd[0] < cd[1]):
+            g.insert(0, _gold(_don_vi_span(cm[k], u, *cd), "dan"))
+        them("dieu_dai", g, "dieu_dai", toi_da_vb=3)
+    # khong_co_dieu: 1–3 câu bắt đầu giữa một đoạn (có thể kéo sang đoạn kế)
+    kd = sorted(k for k in docs if docs[k].nhom == "khong_dieu")
+    rng.shuffle(kd)
+    for k in kd * 3:
+        if du("khong_co_dieu"):
+            break
+        t = docs[k].text
+        than = min((u.start for u in cm[k].get("doan", []) if so_tu(doan(docs[k], u)) >= 20
+                    and not t[u.start:u.start + 10].lstrip().startswith(("V/v", "Số:", "Kính gửi"))), default=None)
+        if than is None:  # bỏ phần đầu văn bản (cơ quan, số, V/v, nơi gửi): bắt đầu từ đoạn thân đầu tiên ≥ 20 từ
+            continue
+        sp = span_trung_lap(t, than, len(t), dau[k], rng, tu=(20, 90), tranh=dung.get(k, []))
+        if sp:
+            them("khong_co_dieu", [_gold(DonVi(k, docs[k].so_hieu, None, None, None, *sp))], "doan")
+    for loai in TRUNG_LAP:
+        if loai != "don_gian" and sum(x["loai"] == loai for x in ra) < TRUNG_LAP[loai]:
+            print(f"CẢNH BÁO: {loai} chỉ có {sum(x['loai'] == loai for x in ra)} gold trung lập")
+    return ra
+
+
+def bo_sung_trung_lap() -> None:
+    """Sửa cơ cấu eval/gold.draft.jsonl theo TRUNG_LAP mà KHÔNG đụng câu đã nháp: đánh dấu gold trung lập sẵn có, bỏ gold
+    có nhãn lấy từ dòng trong khối trích dẫn (chưa nháp), cắt bớt gold cấu trúc thừa (chưa nháp), thêm gold trung lập mới."""
+    from chunking.structural import dong_trich_dan
+
+    ds = [json.loads(x) for x in GOLD.read_text().splitlines() if x.strip()]
+    da_nhap = {json.loads(x)["qid"] for x in NHAP.read_text().splitlines() if x.strip()} if NHAP.exists() else set()
+    docs = {d.doc_id: d for d in nap_van_ban()}
+    cm = {k: chi_muc(d) for k, d in docs.items()}
+    dau = {k: _dau_don_vi(cm[k]) for k in docs}
+    trich = {k: dong_trich_dan(d.text) for k, d in docs.items()}
+    giu = []
+    for x in ds:
+        if "trung_lap" not in x:
+            x["trung_lap"] = x["nguon_chon"] == "trung_lap" and not any(
+                _la_dau(docs[g["doc_id"]].text, g["start"], dau[g["doc_id"]]) for g in x["gold"])
+        sai_nhan = any(docs[g["doc_id"]].text.rfind("\n", 0, g["start"]) + 1 in trich[g["doc_id"]]
+                       for g in x["gold"] if g.get("khoan") is not None or g.get("diem") is not None)
+        if sai_nhan and x["qid"] not in da_nhap:
+            print("bỏ (nhãn lấy từ dòng trong khối trích dẫn):", x["qid"])
+            continue
+        if x["loai"] == "dieu_dai" and x["qid"] not in da_nhap:  # câu dẫn cũ là TÊN Điều (lỗi) → tính lại
+            d = docs[x["gold"][-1]["doc_id"]]
+            dich = x["gold"][-1]
+            u = next(v for v in cm[d.doc_id]["dieu"] if v.dieu == dich["dieu"] and v.start <= dich["start"] < v.end)
+            dv = DonVi(d.doc_id, d.so_hieu, dich["dieu"], dich["khoan"], dich["diem"], dich["start"], dich["end"])
+            cd = cau_dan(d.text, cm[d.doc_id], u, dv)
+            x["gold"] = ([_gold(_don_vi_span(cm[d.doc_id], u, *cd), "dan")] if cd else []) + [dich]
+        giu.append(x)
+    moi = chon_trung_lap(giu)
+    so = max(int(x["qid"][1:]) for x in giu)
+    for i, x in enumerate(moi, so + 1):
+        x["qid"] = f"q{i:03d}"
+        x["b_parse_ok"] = all(g.get("b_parse_ok", True) is not False for g in x["gold"])
+    ra = []
+    for loai in CAN:
+        tl = [x for x in giu + moi if x["loai"] == loai and x["trung_lap"]]
+        ct = [x for x in giu if x["loai"] == loai and not x["trung_lap"]]
+        if loai == "don_gian":  # 10 phiên bản + TRUNG_LAP trung lập + phần còn lại là gold cấu trúc đã nháp
+            pb = [x for x in giu if x["loai"] == loai and x["nguon_chon"] == "phien_ban"]
+            ct = [x for x in giu if x["loai"] == loai and not x["trung_lap"] and x["nguon_chon"] != "phien_ban"]
+            can_ct = CAN[loai] - TRUNG_LAP[loai] - SO_CAU["don_gian_phien_ban"]
+            for n, x in enumerate(pb):
+                x["du_phong"] = n >= SO_CAU["don_gian_phien_ban"]
+            for n, x in enumerate(ct):
+                x["du_phong"] = n >= can_ct
+            for n, x in enumerate(tl):
+                x["du_phong"] = n >= TRUNG_LAP[loai]
+            ra += ct + tl + pb
+            continue
+        can_ct = CAN[loai] - TRUNG_LAP[loai]
+        du_ct = can_ct + max(1, round(can_ct * DU_PHONG))
+        ct = [x for x in ct if x["qid"] in da_nhap] + [x for x in ct if x["qid"] not in da_nhap]
+        ct = ct[:max(du_ct, sum(x["qid"] in da_nhap for x in ct))]
+        for n, x in enumerate(ct):
+            x["du_phong"] = n >= can_ct
+        for n, x in enumerate(tl):
+            x["du_phong"] = n >= TRUNG_LAP[loai]
+        ra += ct + tl
+    GOLD.write_text("\n".join(json.dumps(x, ensure_ascii=False) for x in ra) + "\n")
+    for loai in CAN:
+        x = [y for y in ra if y["loai"] == loai]
+        print(f"{loai:14s} tổng {len(x):3d} | GIỮ {sum(not y['du_phong'] for y in x):3d} "
+              f"(trung lập {sum(not y['du_phong'] and y['trung_lap'] for y in x)}) | dự phòng {sum(y['du_phong'] for y in x)}")
+
+
 # ── viết câu hỏi bằng mô hình sinh ──────────────────────────────────────────
 HE_THONG_NHAP = (
     "Bạn soạn câu hỏi kiểm tra cho hệ thống hỏi đáp pháp luật Việt Nam. Viết MỘT câu hỏi tự nhiên bằng tiếng Việt, "
@@ -277,8 +536,9 @@ YEU_CAU = {
                  "\"…có được … không, nếu thuộc trường hợp …?\" — câu trả lời đúng phải nêu cả quy tắc lẫn ngoại lệ."),
     "dan_chieu": ("Đoạn NGUỒN dẫn chiếu sang đoạn ĐÍCH. Hỏi về nội dung của đoạn NGUỒN sao cho muốn trả lời đầy đủ "
                   "phải đọc thêm đoạn ĐÍCH (ví dụ: điều kiện, thủ tục, mức cụ thể nằm ở đoạn ĐÍCH)."),
-    "dieu_dai": ("Đoạn DẪN là câu mở đầu của một điều rất dài; đoạn ĐÍCH là một khoản/điểm nằm sâu bên trong. Hỏi về "
-                 "nội dung của đoạn ĐÍCH sao cho câu hỏi chỉ rõ nghĩa khi đặt trong ngữ cảnh của đoạn DẪN."),
+    "dieu_dai": ("Đoạn ĐÍCH nằm sâu bên trong một điều rất dài; đoạn DẪN (nếu có) là câu dẫn của điều hoặc của khoản chứa "
+                 "đoạn ĐÍCH. Hỏi về nội dung của đoạn ĐÍCH; nếu có đoạn DẪN thì câu hỏi phải nêu điều kiện/đối tượng "
+                 "lấy từ đoạn DẪN để rõ nghĩa."),
     "doan": "Hỏi về một nội dung cụ thể trong đoạn văn bản (văn bản hành chính, không chia Điều).",
 }
 TEN_VAI = {"dieu_kien": "ĐOẠN QUY TẮC", "loai_tru": "ĐOẠN NGOẠI LỆ", "nguon": "ĐOẠN NGUỒN", "dich": "ĐOẠN ĐÍCH",
@@ -354,7 +614,11 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--chon", action="store_true", help="chỉ chọn gold, không gọi LLM")
     ap.add_argument("--force", action="store_true", help="chọn lại gold từ đầu (xoá nháp cũ)")
+    ap.add_argument("--trung-lap", action="store_true", help="bổ sung gold trung lập vào gold.draft.jsonl đang có rồi dừng")
     a = ap.parse_args()
+    if a.trung_lap:
+        bo_sung_trung_lap()
+        return
     if a.force or not GOLD.exists():
         ds = chon_gold()
         GOLD.write_text("\n".join(json.dumps(x, ensure_ascii=False) for x in ds) + "\n")
