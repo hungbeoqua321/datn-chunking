@@ -7,7 +7,8 @@ Cách duyệt trong questions.review.md — mỗi câu là một mục "## qXXX"
   - dòng "Trạng thái: GIỮ"  → sửa thành XOÁ để loại câu này (câu DỰ PHÒNG mặc định là DỰ PHÒNG: đổi thành GIỮ để dùng);
   - dòng "Câu hỏi: …"       → sửa trực tiếp nội dung câu hỏi (một dòng);
   - gold (trích đoạn văn bản) chỉ để đọc; nếu gold sai thì XOÁ câu đó.
-Khi chốt, mỗi nhóm phải còn đủ số câu của đề (50/30/25/20/15); script báo nếu thiếu.
+Khi chốt, mỗi nhóm phải còn đủ số câu của đề (50/30/25/20/15) và đủ số câu gold TRUNG LẬP (16/10/8/6/5 — gold cố ý
+không trùng ranh giới khoản, là tập số chính của báo cáo); script báo nếu thiếu.
 """
 import argparse
 import json
@@ -20,6 +21,7 @@ NHAP = ch.GOC / "eval/questions.draft.jsonl"
 DUYET = ch.GOC / "eval/questions.review.md"
 CHOT = ch.GOC / "eval/questions.jsonl"
 CAN = {"don_gian": 50, "xuyen_khoan": 30, "dan_chieu": 25, "dieu_dai": 20, "khong_co_dieu": 15}
+TRUNG_LAP = {"don_gian": 16, "xuyen_khoan": 10, "dan_chieu": 8, "dieu_dai": 6, "khong_co_dieu": 5}
 TEN_VAI = {"dieu_kien": "QUY TẮC", "loai_tru": "NGOẠI LỆ", "nguon": "NGUỒN", "dich": "ĐÍCH", "dan": "DẪN"}
 
 
@@ -40,10 +42,29 @@ def xuat_duyet() -> None:
     L = ["# Duyệt bộ câu hỏi đánh giá (nháp)", "",
          "Mỗi câu: sửa `Trạng thái:` (GIỮ / XOÁ; câu dự phòng đổi DỰ PHÒNG → GIỮ nếu muốn dùng) và sửa thẳng dòng "
          "`Câu hỏi:`. Xong chạy `python -m eval.duyet --chot`.", "",
-         f"Tổng {len(ds)} câu nháp; cần giữ: " + ", ".join(f"{k} {v}" for k, v in CAN.items()) + ".", ""]
+         f"Tổng {len(ds)} câu nháp; cần giữ: " + ", ".join(f"{k} {v} (trung lập ≥ {TRUNG_LAP[k]})" for k, v in CAN.items())
+         + ".", "",
+         "**TRUNG LẬP** = gold cố ý KHÔNG trùng ranh giới cấu trúc (1–3 câu bắt đầu giữa khoản/điểm/đoạn, có thể vắt sang "
+         "khoản kế) — tập số chính của báo cáo. Câu không ghi TRUNG LẬP có gold trùng ranh giới khoản (B có lợi thế cấu "
+         "trúc), báo riêng. Câu DỰ PHÒNG: đổi thành GIỮ nếu muốn thay câu bị XOÁ cùng nhóm, cùng loại gold.", ""]
+    if any(x.get("san_loc_co") is not None for x in ds):  # tóm tắt cờ sàng lọc (agent chỉ gắn cờ, không xoá câu nào)
+        L += ["## Tóm tắt cờ sàng lọc tự động (chỉ để bạn biết xem kỹ chỗ nào — quyết định giữ/bỏ là của bạn)", "",
+              "| Nhóm | Câu GIỮ (trung lập) | Không cờ | Gold đáng ngờ | Không trả lời được | Sai ý đồ nhóm | Mơ hồ | Lộ đáp án |",
+              "|---|---|---|---|---|---|---|---|"]
+        for k in CAN:
+            g = [x for x in ds if x["loai"] == k and not x.get("du_phong")]
+            dem = lambda t: sum(any(c.startswith(t) for c in x.get("san_loc_co") or []) for x in g)
+            L.append(f"| {k} | {len(g)} ({sum(bool(x.get('trung_lap')) for x in g)}) | "
+                     f"{sum(not x.get('san_loc_co') for x in g)} | {dem('gold đáng ngờ')} | {dem('KHÔNG trả lời')} | "
+                     f"{dem('không đúng ý đồ')} | {dem('câu hỏi mơ hồ')} | {dem('lộ đáp án')} |")
+        L.append("")
     for x in ds:
         tt = "DỰ PHÒNG" if x.get("du_phong") else "GIỮ"
-        L += [f"## {x['qid']} · {x['loai']} · {x['nguon_chon']}" + (" · phiên bản" if x.get("phien_ban") else ""), "",
+        nguon = x["nguon_chon"]
+        if nguon == "trung_lap" and not x.get("trung_lap"):
+            nguon = "đầu khoản/điểm (không trung lập: span bắt đầu ngay đầu khoản hoặc điểm)"
+        L += [f"## {x['qid']} · {x['loai']} · {nguon}" + (" · TRUNG LẬP" if x.get("trung_lap") else "")
+              + (" · phiên bản" if x.get("phien_ban") else ""), "",
               f"Trạng thái: {tt}", f"Câu hỏi: {x.get('question', '')}", "",
               f"*Đáp án nháp của mô hình:* {x.get('dap_an_nhap', '')}", ""]
         if x.get("co"):
@@ -85,6 +106,10 @@ def chot() -> None:
     thieu = {k: f"{dem[k]}/{v}" for k, v in CAN.items() if dem[k] < v}
     if thieu:
         print("CHƯA ĐỦ số câu theo đề:", thieu, "— đổi thêm câu DỰ PHÒNG thành GIỮ")
+    tl = {k: sum(x["loai"] == k and bool(x.get("trung_lap")) for x in giu) for k in CAN}
+    thieu = {k: f"{tl[k]}/{v}" for k, v in TRUNG_LAP.items() if tl[k] < v}
+    if thieu:
+        print("CHƯA ĐỦ câu gold TRUNG LẬP:", thieu, "— đổi thêm câu DỰ PHÒNG có ghi TRUNG LẬP thành GIỮ")
     with open(CHOT, "w") as f:
         for x in giu:
             o = {"qid": x["qid"], "question": x["question"], "loai": x["loai"],
@@ -92,9 +117,10 @@ def chot() -> None:
                                                  "cum", "cau_loai_tru") if g.get(k) is not None or k in ("dieu", "khoan")}
                           for g in x["gold"]],
                  "phien_ban": bool(x.get("phien_ban")), "phien_ban_cu": x.get("phien_ban_cu", []),
-                 "nguon_chon": x["nguon_chon"], "b_parse_ok": x.get("b_parse_ok", True)}
+                 "nguon_chon": x["nguon_chon"], "trung_lap": bool(x.get("trung_lap")),
+                 "b_parse_ok": x.get("b_parse_ok", True)}
             f.write(json.dumps(o, ensure_ascii=False) + "\n")
-    print(f"→ {CHOT}: {len(giu)} câu", dem)
+    print(f"→ {CHOT}: {len(giu)} câu", dem, "| trung lập:", tl)
 
 
 if __name__ == "__main__":
