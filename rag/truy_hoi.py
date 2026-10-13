@@ -12,7 +12,8 @@ import numpy as np
 import cau_hinh as ch
 from rag import chi_muc, nhung, sinh
 
-TEP = {"A": "A_s0", "A+": "Acong_s0", "B": "B_s0", "B+": "B_s0", "A_H": "A_H_s0", "B-": "Btru_s0"}
+TEP = {"A": "A_s0", "A+": "Acong_s0", "B": "B_s0", "B+": "B_s0", "A_H": "A_H_s0", "B-": "Btru_s0",
+       "C": "C_s0", "D": "D_s0"}
 _CACHE: dict[str, tuple] = {}
 _VAN_BAN: dict[str, str] = {}
 

@@ -6,8 +6,13 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 export SO_LUONG=3 OMP_NUM_THREADS=3 OMP_WAIT_POLICY=PASSIVE TOKENIZERS_PARALLELISM=false
-# B, B−, A+, A_H: nhúng một lần (seed 0). A trần: thêm seed 1–3, chỉ để đo truy hồi.
-for t in A_s0 Acong_s0 B_s0 Btru_s0 A_H_s0 A_s1 A_s2 A_s3; do
+# Một seed cho mọi tệp, trừ A trần (seed 1–3, chỉ đo truy hồi). D: nhúng từng câu → dựng chunk D → nhúng chunk D.
+# Thứ tự có thể đổi bằng biến DS (vd. DS="B_s0 Btru_s0"); "D" = bước dựng D.
+for t in ${DS:-A_s0 C_s0 Acong_s0 D A_s1 A_s2 A_s3 B_s0 Btru_s0 A_H_s0}; do
+  if [ "$t" = D ]; then
+    .venv/bin/python -u -m chunking.chay --chi D
+    t=D_s0
+  fi
   .venv/bin/python -u -m rag.chi_muc "$t"
 done
 echo "XONG NHÚNG"

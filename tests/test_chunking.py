@@ -4,7 +4,7 @@ import re
 import pytest
 
 import cau_hinh as ch
-from chunking import fixed, structural
+from chunking import fixed, semantic, sentence, structural
 from chunking.base import Document, cua_so, do_lech
 
 LUAT = """QUỐC HỘI
@@ -40,8 +40,13 @@ def khong_trang_ngoai_chunk(d: Document, cs) -> int:
     return sum(1 for i, x in enumerate(d.text) if not x.isspace() and not co[i])
 
 
+def _d_gia(doc, seed):
+    import numpy as np
+    return semantic.chunk(doc, seed, vec=lambda cs: np.eye(len(cs), 8, k=0)[:, :8] + 0.1)
+
+
 @pytest.mark.parametrize("ham", [fixed.chunk, fixed.chunk_a_cong, structural.chunk, structural.chunk_b_tru,
-                                 structural.chunk_ah])
+                                 structural.chunk_ah, sentence.chunk, _d_gia])
 def test_phu_het_va_khong_rong(ham):
     d = doc(LUAT)
     cs = ham(d, 0)
@@ -108,7 +113,9 @@ def test_regex_cua_de():
 def test_du_lieu_that_khong_mat_van_ban():
     from chunking.base import doc_jsonl, nap_van_ban
     docs = nap_van_ban()
-    for ten in ("A_s0", "Acong_s0", "B_s0", "A_H_s0", "Btru_s0"):
+    for ten in ("A_s0", "Acong_s0", "B_s0", "A_H_s0", "Btru_s0", "C_s0", "D_s0"):
+        if not (ch.CHUNKS / f"{ten}.jsonl").exists():
+            continue  # D chỉ có sau khi đã nhúng câu
         cs = doc_jsonl(ch.CHUNKS / f"{ten}.jsonl")
         assert {d.doc_id for d in docs} == {c.doc_id for c in cs}, ten
     # A+ và B trùng khớp ở nhóm không có Điều (seed 0 — seed duy nhất được nhúng)

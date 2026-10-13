@@ -40,8 +40,11 @@ def _nap_cache() -> dict[str, int]:
     return {k: i for i, k in enumerate(keys)}
 
 
-def nhung_bo_dem(van_ban: list[str], batch: int = 16) -> dict[str, int]:
-    """Đảm bảo mọi chuỗi đã có trong bộ đệm; trả {sha1: dòng}."""
+def nhung_bo_dem(van_ban: list[str], batch: int = 16, gioi_han_giay: float | None = None) -> dict[str, int]:
+    """Đảm bảo mọi chuỗi đã có trong bộ đệm; trả {sha1: dòng}.
+
+    `gioi_han_giay`: sau 2 phút đầu, nếu tổng thời gian dự kiến (ngoại suy theo số KÝ TỰ đã nhúng / giây — chuỗi được
+    sắp từ ngắn tới dài nên ngoại suy theo số chuỗi sẽ đánh giá thấp) vượt giới hạn thì DỪNG, phần đã nhúng vẫn giữ."""
     from rag import nhung
 
     ch.INDEX.mkdir(parents=True, exist_ok=True)
@@ -58,7 +61,7 @@ def nhung_bo_dem(van_ban: list[str], batch: int = 16) -> dict[str, int]:
     # sắp theo độ dài để lô đều nhau (nhanh hơn), ghi theo từng lô
     can.sort(key=lambda x: len(x[1]))
     nap = nhung.nap(so_luong=int(os.environ.get("SO_LUONG", "3")))
-    t0, xong = time.monotonic(), 0
+    t0, xong, ky_tu, tong_ky_tu = time.monotonic(), 0, 0, sum(len(t) for _, t in can)
     with open(CACHE, "ab") as fv, open(KEYS, "a") as fk:
         for i in range(0, len(can), batch * 8):
             lo = can[i:i + batch * 8]
@@ -71,7 +74,11 @@ def nhung_bo_dem(van_ban: list[str], batch: int = 16) -> dict[str, int]:
             for k, _ in lo:
                 idx[k] = len(idx)
             xong += len(lo)
+            ky_tu += sum(len(t) for _, t in lo)
             dt = time.monotonic() - t0
+            if gioi_han_giay and dt > 120 and dt + (tong_ky_tu - ky_tu) / (ky_tu / dt) > gioi_han_giay:
+                raise RuntimeError(f"dự kiến {(dt + (tong_ky_tu - ky_tu) / (ky_tu / dt)) / 3600:.1f} h > giới hạn "
+                                   f"{gioi_han_giay / 3600:.1f} h — DỪNG để báo người dùng ({xong}/{len(can)} đã nhúng)")
             print(f"  nhúng {xong}/{len(can)}  {xong / dt:.2f} chunk/s  còn ~{(len(can) - xong) / (xong / dt) / 60:.0f} phút",
                   flush=True)
     return idx

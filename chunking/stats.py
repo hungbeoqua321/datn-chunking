@@ -48,6 +48,9 @@ def main() -> None:
     nhom = {d.doc_id: d.nhom for d in docs}
     bang, js = [], {}
     for pp in PHUONG_PHAP:
+        if not ten_tep(pp, 0).exists():
+            print("chưa có:", ten_tep(pp, 0).name)  # D chỉ có sau khi đã nhúng câu
+            continue
         cs = doc_jsonl(ten_tep(pp, 0))
         n = [c.n_words for c in cs]
         ntok = [len(x) for x in tok([c.text for c in cs], add_special_tokens=True)["input_ids"]]
@@ -89,7 +92,8 @@ def main() -> None:
          "- **Số từ** tính trên phần nội dung (không tính tiền tố). **Vượt 512 token**: đếm bằng tokenizer của "
          "halong_embedding trên chuỗi đem nhúng (tiền tố + nội dung) — phần vượt bị cắt mất khi nhúng.",
          "- **Ký tự không phủ** = ký tự không trắng của văn bản không thuộc chunk nào (phải = 0: không để mất văn bản).",
-         "- A_H, B− là đối chứng chỉ đo truy hồi; B+ dùng chính chunk của B.",
+         "- C (theo dấu câu) và D (theo ngữ nghĩa) là hai baseline của đề cương, cùng họ không nhìn cấu trúc với A; chỉ đo truy hồi.",
+         "- A+, A_H, B− là đối chứng chỉ đo truy hồi; B+ dùng chính chunk của B.",
          f"- B: ngưỡng {ch.DIEU_TOI_DA} từ đo từ dòng \"Điều N\"; dòng tiêu đề Chương/Mục đứng ngay trước được gắn vào đầu "
          "chunk (để không mất ký tự nào) nhưng không tính vào ngưỡng — vì vậy số từ lớn nhất của B có thể nhỉnh hơn ngưỡng.", "",
          "## B theo tầng", "",
