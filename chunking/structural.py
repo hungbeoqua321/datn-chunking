@@ -17,6 +17,11 @@ Biến thể dùng chung bộ phân tích (đối chứng, chỉ đo truy hồi)
   B− : chunk của B nhưng KHÔNG gắn tiền tố;
   A_H: ranh giới cửa sổ của A + tiền tố phân cấp của Điều chứa từ đầu tiên của cửa sổ.
 B+ dùng đúng chunk của B (mở rộng lên Điều cha xảy ra lúc sinh, nhờ dieu_start/dieu_end).
+
+Khối trích dẫn nguyên văn (văn bản sửa đổi, bổ sung): văn bản chỉ đặt dấu " ở dòng mở và dòng đóng, các dòng bên trong
+bắt đầu bằng "N. ", "a) ", thậm chí "Điều 29b." — regex của đề sẽ nhận chúng thành Điều/khoản/điểm THẬT của văn bản
+sửa đổi, gán nhãn của điều khoản bị sửa cho chunk. Vì vậy dòng nằm trong ngoặc kép (đếm dấu " chẵn/lẻ qua các dòng)
+không được làm ranh giới Điều/khoản/điểm; nội dung trích dẫn thuộc khoản/điểm của văn bản sửa đổi đang chứa nó.
 """
 import re
 from dataclasses import dataclass
@@ -55,10 +60,38 @@ def _dong(text: str) -> list[tuple[int, int, str]]:
     return ra
 
 
+RE_DONG_NHAY = re.compile(r'"[.;,:]*(?:\s*\./\.)?\s*$')
+
+
+def dong_trich_dan(text: str) -> set[int]:
+    """Vị trí đầu các dòng bắt đầu khi đang ở TRONG ngoặc kép. Trạng thái theo số dấu " chẵn/lẻ, nhưng tự đồng bộ lại
+    ở dòng mở trích dẫn (bắt đầu bằng ": trong ngoặc sau dòng này ⇔ dòng có số dấu nháy lẻ) và dòng đóng (kết thúc bằng
+    "[.;,:]: ra ngoài ngoặc) — để một dấu nháy lẻ bên trong nội dung trích dẫn không làm lệch cả phần còn lại. Thiếu dấu
+    đóng thì đặt lại ở tiêu đề Điều kế tiếp của chính văn bản (số = Điều trước + 1)."""
+    trong, ra, dieu = False, set(), 0
+    for a, _, x in _dong(text):
+        m = RE_DIEU.match(x)
+        if trong and m and int(m.group(1)) == dieu + 1:
+            trong = False
+        if trong:
+            ra.add(a)
+        elif m:
+            dieu = int(m.group(1))
+        s = x.strip()
+        if s.startswith('"'):
+            trong = bool(s.count('"') % 2)
+        elif RE_DONG_NHAY.search(s) and (trong or s.count('"') % 2):
+            trong = False
+        elif s.count('"') % 2:
+            trong = not trong
+    return ra
+
+
 def phan_tich(text: str) -> list[Khoi]:
     """Chia văn bản thành khối cấp Điều. Dòng tiêu đề Phần/Chương/Mục gắn vào ĐẦU Điều kế tiếp (để mọi ký tự đều
     thuộc một chunk) và cập nhật ngữ cảnh chương/mục cho tiền tố."""
     dong = _dong(text)
+    trich = dong_trich_dan(text)
     ct = vung_chu_thich([x for _, _, x in dong])
     het_than = dong[ct][0] if ct is not None else len(text)
     khoi: list[Khoi] = []
@@ -68,6 +101,8 @@ def phan_tich(text: str) -> list[Khoi]:
     for k, (a, b, x) in enumerate(dong):
         if a >= het_than:
             break
+        if a in trich:
+            continue  # dòng trong khối trích dẫn: không phải tiêu đề Chương/Mục/Điều của văn bản này
         if x.strip() in ("Chương", "CHƯƠNG", "Mục", "MỤC") and k + 1 < len(dong):
             x = x.strip() + " " + dong[k + 1][2]  # tiêu đề "Chương ⏎ VIII TÊN" bị ngắt dòng (chỉ để nhận dạng)
         if RE_PHAN.match(x) or RE_CHUONG.match(x) or RE_MUC.match(x):
@@ -123,11 +158,12 @@ def tien_to_khoi(doc: Document, k: Khoi, khoan: int | None = None, diem: str | N
     return " > ".join(p)
 
 
-def _moc(text: str, a: int, b: int, re_moc: re.Pattern, bo_dong_dau: bool) -> list[tuple[int, str]]:
-    """Vị trí đầu các dòng khớp re_moc trong text[a:b] → [(vị trí, nhãn)]."""
+def _moc(text: str, a: int, b: int, re_moc: re.Pattern, bo_dong_dau: bool, trich: set[int] = frozenset()
+         ) -> list[tuple[int, str]]:
+    """Vị trí đầu các dòng khớp re_moc trong text[a:b] → [(vị trí, nhãn)]; bỏ dòng nằm trong khối trích dẫn."""
     ra = []
     for s, _, x in _dong(text[a:b]):
-        if bo_dong_dau and s == 0:
+        if (bo_dong_dau and s == 0) or a + s in trich:
             continue
         m = re_moc.match(x)
         if m:
@@ -181,6 +217,7 @@ def chunk(doc: Document, seed: int = 0, co_tien_to: bool = True) -> list[Chunk]:
                         tien_to=tt, seed=seed))
         return ra
     khoi = phan_tich(t)
+    trich = dong_trich_dan(t)
     # Tầng 3: không có Điều → cửa sổ 300 từ (giống A+ cùng seed), đánh dấu fallback
     if not khoi:
         for a, b, n in cua_so(t, 0, len(t), ch.CUA_SO, do_lech(seed, doc.doc_id)):
@@ -198,7 +235,7 @@ def chunk(doc: Document, seed: int = 0, co_tien_to: bool = True) -> list[Chunk]:
             them(k.start, k.end, k)
             continue
         # Tầng 2: tách theo khoản
-        mk = _moc(t, k.start, k.end, RE_KHOAN, bo_dong_dau=True)
+        mk = _moc(t, k.start, k.end, RE_KHOAN, bo_dong_dau=True, trich=trich)
         if not mk:
             for a, b, n in cua_so(t, k.start, k.end):
                 them(a, b, k, n=n)
@@ -207,7 +244,7 @@ def chunk(doc: Document, seed: int = 0, co_tien_to: bool = True) -> list[Chunk]:
             if so_tu(t[max(a, dd):b]) <= ch.DIEU_TOI_DA:
                 them(a, b, k, khoan=int(so_khoan))
                 continue
-            md = _moc(t, max(a, dd), b, RE_DIEM, bo_dong_dau=True)
+            md = _moc(t, max(a, dd), b, RE_DIEM, bo_dong_dau=True, trich=trich)
             if not md:
                 for x, y, n in cua_so(t, a, b):
                     them(x, y, k, khoan=int(so_khoan), n=n)

@@ -146,3 +146,28 @@ def test_chuong_bi_ngat_dong_va_muc_la_ma():
     cs = structural.chunk(doc(t), 0)
     assert cs[0].chuong == "VIII" and cs[0].muc == "II"
     assert cs[1].muc == "A" and cs[1].dieu_so == 51 and "> Điều 51a. Bổ sung" in cs[1].tien_to
+
+
+def test_khoi_trich_dan_van_ban_sua_doi_khong_sinh_dieu_khoan_gia():
+    # A.3: văn bản sửa đổi chỉ có dấu " ở dòng mở/đóng; dòng bên trong ("Điều 29b.", "1.", "a)") không phải ranh giới
+    dai = " ".join(["nội dung"] * 100)
+    t = "\n".join([
+        "Điều 1. Sửa đổi, bổ sung một số điều của Luật Đấu thầu",
+        f"16. Sửa đổi, bổ sung khoản 1 Điều 29 như sau:", f'"1. Việc lựa chọn nhà thầu {dai}.";',
+        "17. Bổ sung Điều 29a và Điều 29b vào sau Điều 29 như sau:",
+        f'"Điều 29a. Đặt hàng', f"1. Đặt hàng là {dai};", f"a) Sản phẩm {dai};", f"2. Chính phủ {dai}.",
+        f"Điều 29b. Nguyên tắc", f"1. Chủ đầu tư {dai}.", '2. Chính phủ quy định chi tiết Điều này.".',
+        f"18. Sửa đổi điểm a khoản 1 Điều 30 như sau:", f'"a) Đấu thầu rộng rãi {dai}.";',
+        "Điều 2. Hiệu lực thi hành", "Luật này có hiệu lực từ ngày 01 tháng 7 năm 2025."])
+    cs = structural.chunk(doc(t), 0)
+    assert {c.dieu_so for c in cs} == {1, 2}                                  # không có "Điều 29b" giả
+    assert {c.khoan_so for c in cs if c.dieu_so == 1} == {16, 17, 18}          # nhãn là khoản của văn bản sửa đổi
+    assert all(c.diem is None for c in cs)                                      # "a)" trong ngoặc không phải điểm
+    assert any("Điều 29b. Nguyên tắc" in c.text and c.khoan_so == 17 for c in cs)
+
+
+def test_nhay_can_bang_trong_luat_thuong_khong_anh_huong():
+    t = "\n".join(["Điều 3. Giải thích từ ngữ", 'Trong Luật này, "người lao động" là người làm việc ' + "x " * 200,
+                   '1. "Doanh nghiệp" là tổ chức ' + "y " * 100, "2. Khoản hai " + "z " * 100])
+    cs = [c for c in structural.chunk(doc(t), 0) if c.dieu_so == 3]
+    assert [c.khoan_so for c in cs] == [1, 2]

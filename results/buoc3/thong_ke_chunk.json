@@ -35,32 +35,32 @@
    "chunk_duoi_50_tu": 16
   },
   "B": {
-   "so_chunk": 13035,
-   "trung_vi_tu": 94,
+   "so_chunk": 12718,
+   "trung_vi_tu": 97.0,
    "max_tu": 372,
    "min_tu": 3,
-   "tb_tu": 118.15711545838128,
-   "ti_le_fallback": 0.0036056770233985425,
+   "tb_tu": 121.10221732976883,
+   "ti_le_fallback": 0.0036955496147192957,
    "vb_mat_chunk": 0,
-   "vuot_512": 41,
-   "ti_le_vuot_512": 0.0031453778289221327,
-   "trung_vi_token": 172,
+   "vuot_512": 44,
+   "ti_le_vuot_512": 0.003459663469098915,
+   "trung_vi_token": 173.0,
    "max_token": 856,
-   "tb_tu_tien_to": 38.06543920214806,
+   "tb_tu_tien_to": 37.23981758138072,
    "ky_tu_khong_phu": 0,
    "ky_tu_tong": 5403246,
-   "chunk_duoi_50_tu": 2996,
+   "chunk_duoi_50_tu": 2780,
    "theo_nhom_fallback": {
     "khong_dieu": "47/47",
-    "luat": "0/8185",
+    "luat": "0/8167",
     "nd_tt": "0/3252",
-    "sua_doi": "0/878",
+    "sua_doi": "0/579",
     "vbhn": "0/673"
    },
    "tang": {
-    "ca_dieu": 4785,
-    "khoan": 6190,
-    "diem": 1927,
+    "ca_dieu": 4847,
+    "khoan": 5901,
+    "diem": 1837,
     "ngoai_dieu": 86,
     "fallback": 47
    }
@@ -77,27 +77,44 @@
    "ti_le_vuot_512": 0.01237432327919567,
    "trung_vi_token": 396.0,
    "max_token": 904,
-   "tb_tu_tien_to": 35.977958236658935,
+   "tb_tu_tien_to": 35.980858468677496,
    "ky_tu_khong_phu": 0,
    "ky_tu_tong": 5403246,
    "chunk_duoi_50_tu": 16
   },
   "B-": {
-   "so_chunk": 13035,
-   "trung_vi_tu": 94,
+   "so_chunk": 12718,
+   "trung_vi_tu": 97.0,
    "max_tu": 372,
    "min_tu": 3,
-   "tb_tu": 118.15711545838128,
-   "ti_le_fallback": 0.0036056770233985425,
+   "tb_tu": 121.10221732976883,
+   "ti_le_fallback": 0.0036955496147192957,
    "vb_mat_chunk": 0,
    "vuot_512": 4,
-   "ti_le_vuot_512": 0.00030686612965093976,
-   "trung_vi_token": 109,
+   "ti_le_vuot_512": 0.0003145148608271741,
+   "trung_vi_token": 113.0,
    "max_token": 706,
    "tb_tu_tien_to": 0.0,
    "ky_tu_khong_phu": 0,
    "ky_tu_tong": 5403246,
-   "chunk_duoi_50_tu": 2996
+   "chunk_duoi_50_tu": 2780
+  },
+  "C": {
+   "so_chunk": 5637,
+   "trung_vi_tu": 281,
+   "max_tu": 413,
+   "min_tu": 25,
+   "tb_tu": 273.226538939152,
+   "ti_le_fallback": 0.0,
+   "vb_mat_chunk": 0,
+   "vuot_512": 5,
+   "ti_le_vuot_512": 0.0008869966294128083,
+   "trung_vi_token": 321,
+   "max_token": 713,
+   "tb_tu_tien_to": 0.0,
+   "ky_tu_khong_phu": 0,
+   "ky_tu_tong": 5403246,
+   "chunk_duoi_50_tu": 5
   }
  },
  "theo_seed": {
@@ -108,30 +125,84 @@
    "3": 5206
   },
   "B": {
-   "0": 13035,
-   "1": 13041,
-   "2": 13040,
-   "3": 13038
+   "0": 12718,
+   "1": 12724,
+   "2": 12723,
+   "3": 12721
   }
  },
  "b_khac_seed0": {
   "1": {
-   "so_chunk": 13041,
-   "trung_seed0": 12988,
+   "so_chunk": 12724,
+   "trung_seed0": 12671,
    "khac": 53,
    "khac_fallback": 53
   },
   "2": {
-   "so_chunk": 13040,
-   "trung_seed0": 12989,
+   "so_chunk": 12723,
+   "trung_seed0": 12672,
    "khac": 51,
    "khac_fallback": 51
   },
   "3": {
-   "so_chunk": 13038,
-   "trung_seed0": 12989,
+   "so_chunk": 12721,
+   "trung_seed0": 12672,
    "khac": 49,
    "khac_fallback": 49
   }
+ },
+ "nhan_theo_cay": {
+  "luat": {
+   "tong": 6126,
+   "sai": 13,
+   "ti_le": 0.0021221025138752855,
+   "khong_kiem": 1765,
+   "vi_du": [
+    "42-LCT/HĐNN8 — Chương II > Điều 8. 1- Chỉ có tầu biển Việt Nam mới được mang cờ quốc tịch tầu biển Việt Nam: CHƯƠNG II\nTÀU BIỂN MỤC A TÀU BIỂN VIỆT NAM\nĐiều 8. 1- Chỉ có tầu biển ",
+    "42-LCT/HĐNN8 — Chương II > Điều 12. 1- Tàu biển Việt Nam phải được đăng ký vào \"Sổ đăng ký tầu biển quốc gia\" của Việt Nam: Điều 12. 1- Tàu biển Việt Nam phải được đăng ký vào \"Sổ đăng ký tầu bi",
+    "42-LCT/HĐNN8 — Chương II > Điều 13. Tàu biển chỉ được đăng ký vào \"Sổ đăng ký tầu biển quốc gia\" của Việt Nam sau khi không còn mang quốc tịch tầu biển của nước ngoài và được Đăng kiểm Việt Nam hoặc cơ quan đăng kiểm tầu biển nước ngoài mà Đăng kiểm Việt Nam uỷ quyền đã kiểm tra kỹ thuật, phân cấp tầu, đo đạc dung tích và cấp các giấy chứng nhận cần thiết: Điều 13.\nTàu biển chỉ được đăng ký vào \"Sổ đăng ký tầu biển quốc gia\" "
+   ]
+  },
+  "nd_tt": {
+   "tong": 2404,
+   "sai": 1,
+   "ti_le": 0.00041597337770382697,
+   "khong_kiem": 813,
+   "vi_du": [
+    "48/2026/TT-BCT — Chương IV > Điều 16. Hồ sơ, quy trình cấp sửa đổi, bổ sung, cấp lại do mất, thất lạc, hư hỏng Giấy chứng nhận KP đối với kim cương thô xuất khẩu theo Quy chế Chứng nhận KP > Khoản 4: 4. Giấy chứng nhận KP sửa đổi, bổ sung, cấp lại có hiệu lực trong vòng"
+   ]
+  },
+  "sua_doi": {
+   "tong": 311,
+   "sai": 4,
+   "ti_le": 0.012861736334405145,
+   "khong_kiem": 258,
+   "vi_du": [
+    "09/2025/TT-BXD — Điều 2. Sửa đổi, bổ sung một số điều của Thông tư số 05/2024/TT-BXD ngày 31 tháng 7 năm 2024 của Bộ trưởng Bộ Xây dựng quy định chi tiết một số điều của Luật Nhà ở > Khoản 5 > Điểm a: 5. Sửa đổi, bổ sung, thay thế, bãi bỏ một số nội dung tại Quy chế quản",
+    "09/2025/TT-BXD — Điều 2. Sửa đổi, bổ sung một số điều của Thông tư số 05/2024/TT-BXD ngày 31 tháng 7 năm 2024 của Bộ trưởng Bộ Xây dựng quy định chi tiết một số điều của Luật Nhà ở > Khoản 5 > Điểm a: xét, giải quyết.\n9. Phối hợp, tạo điều kiện để đơn vị quản lý vận hành",
+    "09/2025/TT-BXD — Điều 2. Sửa đổi, bổ sung một số điều của Thông tư số 05/2024/TT-BXD ngày 31 tháng 7 năm 2024 của Bộ trưởng Bộ Xây dựng quy định chi tiết một số điều của Luật Nhà ở > Khoản 5 > Điểm b: b) Thay thế cụm từ \"Ủy ban nhân dân huyện, quận, thị xã, thành phố thu"
+   ]
+  },
+  "vbhn": {
+   "tong": 368,
+   "sai": 43,
+   "ti_le": 0.11684782608695653,
+   "khong_kiem": 285,
+   "vi_du": [
+    "114/VBHN-VPQH — Chương IV > Điều 17. Sửa đổi, bổ sung khoản 1 Điều 3 của Luật Thuế thu nhập cá nhân số 04/2007/QH12 đã được sửa đổi, bổ sung một số điều theo Luật số 26/2012/QH13 và Luật số 71/2014/QH13: Chương IV\nĐIỀU KHOẢN THI HÀNH[8]\nĐiều 17. Sửa đổi, bổ sung khoản 1 Điề",
+    "56/VBHN-BCT — Chương I > Điều 1. Phạm vi điều chỉnh và đối tượng áp dụng: Chương I\nQUY ĐỊNH CHUNG\nĐiều 1. Phạm vi điều chỉnh và đối tượng áp dụn",
+    "56/VBHN-BCT — Chương I > Điều 2. Mục tiêu Chương trình cấp quốc gia về xúc tiến thương mại: Điều 2. Mục tiêu Chương trình cấp quốc gia về xúc tiến thương mại\nChươ"
+   ]
+  }
+ },
+ "nhan_trich_dan": {
+  "tong": 569,
+  "sai": 32,
+  "ti_le": 0.056239015817223195,
+  "vi_du": [
+   "56/2020/QH14 — Điều 1. Sửa đổi, bổ sung một số điều của Luật Giám định tư pháp > Khoản 23 > Điểm b",
+   "90/2025/QH15 — Điều 2. Sửa đổi, bổ sung một số điều của Luật Đầu tư theo phương thức đối tác công tư > Khoản 6",
+   "90/2025/QH15 — Điều 2. Sửa đổi, bổ sung một số điều của Luật Đầu tư theo phương thức đối tác công tư > Khoản 6"
+  ]
  }
 }
