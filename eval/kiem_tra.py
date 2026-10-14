@@ -3,6 +3,7 @@
   xuyen_khoan: hai đoạn gold có thật là quan hệ QUY TẮC – NGOẠI LỆ không (đoạn loai_tru có nêu ngoại lệ, giới hạn hay
                trường hợp loại trừ của chính quy tắc ở đoạn dieu_kien không)?
   dan_chieu  : câu hỏi có trả lời ĐẦY ĐỦ được chỉ bằng đoạn NGUỒN không (nếu được → không cần đoạn ĐÍCH → sai ý đồ nhóm)?
+  dan_chieu  : (máy móc, không dùng mô hình) đáp án nháp đã nằm gần trọn trong đoạn NGUỒN → gắn cờ (kiem_nguon_chua_dap_an)
   mọi nhóm   : gold nằm ở BẢN CŨ trong khi bản mới cũng có trong kho (BLHS 1999↔2015, BLLĐ 2012↔2019, BLHH 1990↔2015,
                văn bản gốc↔VBHN) — so nội dung đoạn gold với đơn vị khớp nhất của bản mới (tất định, không dùng mô hình).
 
@@ -102,6 +103,36 @@ def kiem_ban_cu(ds: list[dict]) -> dict[str, str]:
     return ra
 
 
+def kiem_nguon_chua_dap_an(ds: list[dict], nguong: float = 0.6) -> dict[str, str]:
+    """dan_chieu — kiểm tra MÁY MÓC (không dùng mô hình): đoạn nguồn một mình có chứa đáp án không. Đo tỉ lệ cặp từ liền
+    nhau (đã chuẩn hoá) của đáp án nháp nằm trong đoạn nguồn và trong đoạn đích; gắn cờ khi ≥ `nguong` đáp án đã có trong
+    nguồn và đoạn đích không đóng góp nhiều hơn. Giới hạn: dựa vào đáp án nháp của mô hình — câu hỏi sửa tay mà đáp án
+    nháp không còn khớp thì kết quả không còn ý nghĩa (khi đó dựa vào kiểm tra bằng giám khảo)."""
+    import re
+    import unicodedata
+
+    docs = {d.doc_id: d for d in nap_van_ban()}
+
+    def cap_tu(s: str) -> set:
+        w = re.sub(r"[^\w]+", " ", unicodedata.normalize("NFC", s).lower()).split()
+        return {(a, b) for a, b in zip(w, w[1:])}
+
+    ra = {}
+    for x in ds:
+        if x["loai"] != "dan_chieu":
+            continue
+        A = cap_tu(x.get("dap_an_nhap") or "")
+        if not A:
+            ra[x["qid"]] = "không có đáp án nháp để kiểm"
+            continue
+        t = {g.get("vai"): cap_tu(docs[g["doc_id"]].text[g["start"]:g["end"]]) for g in x["gold"]}
+        n, dch = len(A & t.get("nguon", set())) / len(A), len(A & t.get("dich", set())) / len(A)
+        if n >= nguong and dch <= n:
+            ra[x["qid"]] = (f"đoạn nguồn một mình đã chứa {n:.0%} đáp án nháp (đoạn đích {dch:.0%}) — "
+                            "câu hỏi có thể không cần đọc điều được dẫn chiếu")
+    return ra
+
+
 def _khoa(x: dict) -> str:
     return hashlib.sha1(json.dumps([x["qid"], x["loai"], x.get("question"), x["gold"]], ensure_ascii=False,
                                    sort_keys=True).encode()).hexdigest()
@@ -149,7 +180,9 @@ def main() -> None:
     ds = [json.loads(x) for x in NHAP.read_text().splitlines() if x.strip()]
     kq = kiem_tra(ds)
     bc = kiem_ban_cu(ds)
+    nc = kiem_nguon_chua_dap_an(ds)
     for x in ds:
+        x["nguon_chua_dap_an"] = nc.get(x["qid"], "")
         if x["qid"] in kq:
             x["kiem_tra"] = kq[x["qid"]]["co"]
         x["ban_cu"] = bc.get(x["qid"], "")
@@ -160,6 +193,7 @@ def main() -> None:
         v = [kq[x["qid"]] for x in ds if x["loai"] == loai]
         print(f"{loai}: {sum(bool(y['co']) for y in v)}/{len(v)} câu bị gắn cờ")
     print(f"gold ở bản cũ: {len(bc)} câu")
+    print(f"dan_chieu, đoạn nguồn một mình chứa đáp án (máy móc): {len(nc)}/{sum(x['loai'] == 'dan_chieu' for x in ds)} câu")
 
 
 if __name__ == "__main__":

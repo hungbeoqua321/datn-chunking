@@ -85,7 +85,7 @@ def xuat_duyet() -> None:
             L.append(f"| {k} | {len(g)} ({sum(bool(x.get('trung_lap')) for x in g)}) | "
                      f"{sum(not x.get('san_loc_co') for x in g)} | {dem('gold đáng ngờ')} | {dem('KHÔNG trả lời')} | "
                      f"{dem('không đúng ý đồ')} | {dem('câu hỏi mơ hồ')} | {dem('lộ đáp án')} | "
-                     f"{sum(bool(x.get('kiem_tra')) for x in g)} | {sum(bool(x.get('ban_cu')) for x in g)} |")
+                     f"{sum(bool(x.get('kiem_tra') or x.get('nguon_chua_dap_an')) for x in g)} | {sum(bool(x.get('ban_cu')) for x in g)} |")
         L.append("")
     for x in ds:
         tt = "XOÁ" if x.get("xoa") else "DỰ PHÒNG" if x.get("du_phong") else "GIỮ"
@@ -104,6 +104,8 @@ def xuat_duyet() -> None:
             L.append(f"**⚠ Bản cũ:** {x['ban_cu']}")
         if x.get("kiem_tra"):
             L.append(f"**⚠ Kiểm tra tự động:** {x['kiem_tra']}")
+        if x.get("nguon_chua_dap_an"):
+            L.append(f"**⚠ Kiểm tra máy móc:** {x['nguon_chua_dap_an']}")
         if x.get("san_loc"):
             L.append(f"**Sàng lọc:** {x['san_loc']}")
         L.append("")
@@ -148,9 +150,10 @@ def chot() -> None:
             hien["question"] = dong.split(":", 1)[1].strip()
     giu = [x for x in ra if x.get("trang_thai") in ("GIỮ", "GIU")]
     from eval.kiem_tra import kiem_ban_cu, kiem_tra
-    kt, bc = kiem_tra(giu), kiem_ban_cu(giu)
+    from eval.kiem_tra import kiem_nguon_chua_dap_an
+    kt, bc, nc = kiem_tra(giu), kiem_ban_cu(giu), kiem_nguon_chua_dap_an(giu)
     for x in giu:
-        x["co_kiem_tra"] = [c for c in (kt.get(x["qid"], {}).get("co"), bc.get(x["qid"])) if c]
+        x["co_kiem_tra"] = [c for c in (kt.get(x["qid"], {}).get("co"), bc.get(x["qid"]), nc.get(x["qid"])) if c]
     co = [x for x in giu if x["co_kiem_tra"]]
     print(f"Kiểm tra tự động: {len(co)} câu GIỮ bị gắn cờ (không xoá) — xem trường co_kiem_tra:")
     for x in co:

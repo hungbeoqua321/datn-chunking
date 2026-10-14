@@ -10,9 +10,9 @@ Tổng 175 câu nháp; cần giữ: don_gian 50 (trung lập ≥ 16), xuyen_khoa
 
 | Nhóm | Câu GIỮ (trung lập) | Không cờ | Gold đáng ngờ | Không trả lời được | Sai ý đồ nhóm | Mơ hồ | Lộ đáp án | Kiểm tra tự động | Gold ở bản cũ |
 |---|---|---|---|---|---|---|---|---|---|
-| don_gian | 44 (14) | 15 | 5 | 3 | 9 | 19 | 2 | 0 | 0 |
+| don_gian | 50 (16) | 21 | 5 | 3 | 9 | 19 | 2 | 0 | 0 |
 | xuyen_khoan | 18 (6) | 2 | 0 | 1 | 8 | 10 | 4 | 0 | 0 |
-| dan_chieu | 10 (4) | 4 | 0 | 0 | 4 | 1 | 1 | 2 | 0 |
+| dan_chieu | 10 (4) | 4 | 0 | 0 | 4 | 1 | 1 | 3 | 0 |
 | dieu_dai | 19 (6) | 7 | 0 | 0 | 0 | 6 | 7 | 0 | 0 |
 | khong_co_dieu | 15 (5) | 4 | 3 | 1 | 0 | 5 | 4 | 0 | 0 |
 
@@ -380,7 +380,7 @@ Câu hỏi: Ủy ban Thẩm phán Tòa án quân sự quân khu có những nhi�
 ---
 ## q028 · don_gian · đầu khoản/điểm (không trung lập: span bắt đầu ngay đầu khoản hoặc điểm)
 
-Trạng thái: DỰ PHÒNG
+Trạng thái: GIỮ
 Câu hỏi: Nếu phát hiện kiểm soát viên vi phạm nhiệm vụ, thì cần làm gì?
 
 *Đáp án nháp của mô hình:* Phải gửi văn bản thông báo đến ban kiểm soát, yêu cầu người vi phạm ngừng hành vi vi phạm và khắc phục hậu quả.
@@ -394,7 +394,7 @@ Câu hỏi: Nếu phát hiện kiểm soát viên vi phạm nhiệm vụ, thì c
 ---
 ## q029 · don_gian · đầu khoản/điểm (không trung lập: span bắt đầu ngay đầu khoản hoặc điểm)
 
-Trạng thái: DỰ PHÒNG
+Trạng thái: GIỮ
 Câu hỏi: Người đi vay có thể bị từ chối cấp tín dụng không?
 
 *Đáp án nháp của mô hình:* Có, tổ chức tín dụng có quyền từ chối yêu cầu cấp tín dụng nếu thấy không đủ điều kiện, không có hiệu quả hoặc không phù hợp với quy định của pháp luật.
@@ -465,7 +465,7 @@ Câu hỏi: Trong việc tuyển dụng và quản lý viên chức, cơ quan n�
 ---
 ## q035 · don_gian · đầu khoản/điểm (không trung lập: span bắt đầu ngay đầu khoản hoặc điểm)
 
-Trạng thái: DỰ PHÒNG
+Trạng thái: GIỮ
 Câu hỏi: Nếu một công trình xây dựng có nguy cơ mất an toàn thì có thể tiếp tục sử dụng không?
 
 *Đáp án nháp của mô hình:* Không, chỉ được tiếp tục sử dụng khi công trình đã khắc phục sự cố hoặc được loại bỏ các nguy cơ gây mất an toàn.
@@ -509,7 +509,7 @@ Câu hỏi: Nếu một người có trách nhiệm trong việc nhập khẩu, 
 ---
 ## q039 · don_gian · đầu khoản/điểm (không trung lập: span bắt đầu ngay đầu khoản hoặc điểm)
 
-Trạng thái: DỰ PHÒNG
+Trạng thái: GIỮ
 Câu hỏi: Nếu một cá nhân hoặc tổ chức có liên quan đến hóa chất bị chết, mất tích hoặc giải thể, và hóa chất đó không rõ nguồn gốc, thì chi phí xử lý sẽ lấy từ đâu?
 
 *Đáp án nháp của mô hình:* Chi phí xử lý sẽ lấy từ nguồn ngân sách dự phòng cấp cho cơ quan có thẩm quyền xử phạt.
@@ -797,7 +797,7 @@ Câu hỏi: Nếu một cuộc đình công là bất hợp pháp và gây thi�
 ---
 ## q217 · don_gian · trung_lap · TRUNG LẬP
 
-Trạng thái: DỰ PHÒNG
+Trạng thái: GIỮ
 Câu hỏi: Khi thành lập mới một thôn do sáp nhập các thôn cũ từ ngày 26 tháng 5 năm 2026, thì số người có uy tín của thôn mới được quyết định như thế nào?
 
 *Đáp án nháp của mô hình:* Chủ tịch Ủy ban nhân dân cấp xã quyết định số lượng người có uy tín của thôn mới, nhưng không được vượt quá tổng số người có uy tín của các thôn trước khi sáp nhập.
@@ -826,7 +826,7 @@ Câu hỏi: Hành vi phạm tội hoặc hậu quả của hành vi phạm tội
 ---
 ## q219 · don_gian · trung_lap · TRUNG LẬP
 
-Trạng thái: DỰ PHÒNG
+Trạng thái: GIỮ
 Câu hỏi: Khi thực hiện nghiệm thu dự án được hỗ trợ từ Quỹ hỗ trợ xây dựng chính sách, pháp luật, cần kiểm tra những nội dung gì để xác định việc thanh toán kinh phí?
 
 *Đáp án nháp của mô hình:* Cần xác định rõ sản phẩm và kết quả đã hoàn thành, mức độ đáp ứng mục tiêu và tiến độ, chất lượng, giá trị kinh phí đủ điều kiện thanh toán, số tiền còn lại để thanh toán và số tiền không sử dụng phải hoàn trả theo quy định.
@@ -2035,6 +2035,7 @@ Câu hỏi: Khi đình chỉ vụ án, cần ghi rõ những nội dung gì đ�
 *Đáp án nháp của mô hình:* Cần ghi rõ lý do và căn cứ đình chỉ vụ án, việc hủy bỏ biện pháp ngăn chặn hoặc cưỡng chế, xử lý vật chứng và tài liệu đã tạm giữ, cũng như các vấn đề liên quan khác. Nếu vụ án có nhiều bị can và lý do đình chỉ không liên quan đến tất cả, thì cần đình chỉ đối với từng bị can.
 
 **⚠ Kiểm tra tự động:** trả lời được chỉ bằng đoạn nguồn (Đoạn nguồn nêu rõ rằng quyết định đình chỉ vụ án phải ghi rõ lý do và căn cứ đình chỉ vụ án, việc hủy bỏ biện pháp ngăn chặn, biện pháp cưỡng chế, xử lý vật chứng, tài liệu, đồ vật đã tạm giữ (nếu có), các vấn đề khác có liên quan và các nội dung quy định tại khoản 2 Điều 132 Bộ luật. Do đó, nội dung cần ghi rõ được nêu cụ thể trong đoạn nguồn, không chỉ nhắc đến điều luật mà đã nêu rõ các nội dung cụ thể.)
+**⚠ Kiểm tra máy móc:** đoạn nguồn một mình đã chứa 65% đáp án nháp (đoạn đích 3%) — câu hỏi có thể không cần đọc điều được dẫn chiếu
 **Sàng lọc:** câu hỏi mơ hồ — Cần cả nguồn và đích nên đúng nhóm; nên nói rõ là vụ án hình sự vì tố tụng dân sự cũng có đình chỉ; đáp án nháp thiếu phần nội dung ở đoạn đích. · Gợi ý câu hỏi: Quyết định đình chỉ vụ án hình sự phải ghi rõ những nội dung gì?
 
 **Gold: 101/2015/QH13 Điều 248 khoản 2 — NGUỒN**
@@ -2059,6 +2060,7 @@ Câu hỏi: Nếu một hợp đồng lao động bị tuyên bố vô hiệu to
 
 **Cờ tự động:** trùng từ cao (87%)
 **⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 10/2012/QH13 Điều 52 ↔ 45/2019/QH14 Điều 51: KHÁC NHIỀU hoặc không còn (chứa 0.54); 10/2012/QH13 Điều 50 ↔ 45/2019/QH14 Điều 49 khoản 1: KHÁC NHIỀU hoặc không còn (chứa 0.44)
+**⚠ Kiểm tra máy móc:** đoạn nguồn một mình đã chứa 72% đáp án nháp (đoạn đích 17%) — câu hỏi có thể không cần đọc điều được dẫn chiếu
 **Sàng lọc:** không đúng ý đồ nhóm; lộ đáp án / nhắc văn bản — Câu hỏi đã nêu sẵn 'ký sai thẩm quyền' nên chỉ cần đoạn nguồn, không cần danh sách ở đoạn đích; câu chữ chép gần nguyên văn. · Gợi ý câu hỏi: Hợp đồng lao động do một người không có thẩm quyền đại diện bên sử dụng lao động ký thì có hiệu lực không, và được xử lý thế nào?
 
 **Gold: 10/2012/QH13 Điều 52 khoản 2 — NGUỒN**
@@ -2108,6 +2110,7 @@ Câu hỏi: Tại sao một kiểm sát viên hoặc kiểm tra viên lại ph�
 
 *Đáp án nháp của mô hình:* Vì họ đã từng tham gia vào vụ án đó với tư cách là điều tra viên, cán bộ điều tra, thẩm phán, hội thẩm, thẩm tra viên hoặc thư ký tòa án.
 
+**⚠ Kiểm tra máy móc:** đoạn nguồn một mình đã chứa 77% đáp án nháp (đoạn đích 20%) — câu hỏi có thể không cần đọc điều được dẫn chiếu
 **Sàng lọc:** không thấy vấn đề — Cần cả nguồn và đích nên đúng ý đồ; nên đổi 'tại sao' thành 'trong trường hợp nào'; đáp án nháp bỏ sót các trường hợp ở đoạn đích. · Gợi ý câu hỏi: Trong vụ án hình sự, khi nào Kiểm sát viên, Kiểm tra viên không được tiếp tục tham gia giải quyết vụ án?
 
 **Gold: 101/2015/QH13 Điều 52 khoản 1 — NGUỒN**
@@ -2249,6 +2252,7 @@ Câu hỏi: Người bị kết án về tội ít nghiêm trọng và đã đư
 **Cờ tự động:** trùng từ cao (97%)
 **⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 15/1999/QH10 Điều 57 ↔ 100/2015/QH13 Điều 62: KHÁC NHIỀU hoặc không còn (chứa 0.49); 15/1999/QH10 Điều 61 ↔ 100/2015/QH13 Điều 67: KHÁC ÍT (chứa 0.87)
 **⚠ Kiểm tra tự động:** trả lời được chỉ bằng đoạn nguồn (Đoạn nguồn nêu rõ rằng người bị kết án về tội ít nghiêm trọng đã được hoãn chấp hành hình phạt thì nếu trong thời gian được hoãn đã lập công, Toà án có thể quyết định miễn chấp hành hình phạt theo đề nghị của Viện trưởng Viện Kiểm sát, nên câu hỏi được trả lời đầy đủ và cụ thể dựa trên đoạn nguồn.)
+**⚠ Kiểm tra máy móc:** đoạn nguồn một mình đã chứa 94% đáp án nháp (đoạn đích 32%) — câu hỏi có thể không cần đọc điều được dẫn chiếu
 **Sàng lọc:** không đúng ý đồ nhóm; lộ đáp án / nhắc văn bản — Câu hỏi chép gần nguyên văn đoạn nguồn và trả lời được mà không cần đọc điều về hoãn chấp hành hình phạt tù. · Gợi ý câu hỏi: Người bị phạt tù về tội ít nghiêm trọng được hoãn chấp hành vì nhu cầu công vụ, nếu trong thời gian hoãn lập công thì có thể được miễn chấp hành hình phạt không, và theo đề nghị của ai?
 
 **Gold: 15/1999/QH10 Điều 57 khoản 3 — NGUỒN**
@@ -2275,6 +2279,7 @@ Câu hỏi: Nếu chủ sở hữu tài sản không yêu cầu nhận lại ho�
 
 **Cờ tự động:** trùng từ cao (86%)
 **⚠ Kiểm tra tự động:** trả lời được chỉ bằng đoạn nguồn (Đoạn nguồn nêu rõ rằng trong thời hạn 15 ngày kể từ ngày thông báo, nếu chủ sở hữu tài sản không yêu cầu nhận lại hoặc không thanh toán nợ thì người trục vớt phải giao nộp tài sản cho cơ quan nhà nước có thẩm quyền, nên trả lời đầy đủ và cụ thể theo nội dung đoạn nguồn.)
+**⚠ Kiểm tra máy móc:** đoạn nguồn một mình đã chứa 63% đáp án nháp (đoạn đích 8%) — câu hỏi có thể không cần đọc điều được dẫn chiếu
 **Sàng lọc:** không đúng ý đồ nhóm; lộ đáp án / nhắc văn bản — Câu hỏi chép gần nguyên văn và chỉ hỏi thời hạn nên trả lời bằng đoạn nguồn, không cần đoạn đích về cơ quan có thẩm quyền; đoạn đích còn dính tiêu đề 'Chương XV TAI NẠN ĐÂM VA'. · Gợi ý câu hỏi: Người trục vớt được tài sản chìm đắm là di sản văn hóa nhưng chủ sở hữu không đến nhận lại thì sau bao lâu phải giao nộp, và giao cho cơ quan nào chủ trì xử lý?
 
 **Gold: 95/2015/QH13 Điều 282 khoản 3 — NGUỒN**
@@ -2322,6 +2327,7 @@ Câu hỏi: Nếu một bên gửi đơn kháng cáo sau thời hạn quy địn
 *Đáp án nháp của mô hình:* Tòa án cấp sơ thẩm sẽ nhận đơn kháng cáo quá hạn và gửi đơn đó, cùng bản tường trình lý do và tài liệu, chứng cứ nếu có, cho Tòa án cấp phúc thẩm để xem xét.
 
 **⚠ Kiểm tra tự động:** trả lời được chỉ bằng đoạn nguồn (Đoạn nguồn nêu rõ rằng nếu đơn kháng cáo quá thời hạn, Tòa án cấp sơ thẩm sẽ phải gửi đơn kháng cáo, bản tường trình của người kháng cáo về lý do kháng cáo quá hạn và tài liệu, chứng cứ, nếu có cho Tòa án cấp phúc thẩm, nên trả lời đầy đủ và cụ thể theo nội dung đoạn nguồn.)
+**⚠ Kiểm tra máy móc:** đoạn nguồn một mình đã chứa 60% đáp án nháp (đoạn đích 14%) — câu hỏi có thể không cần đọc điều được dẫn chiếu
 **Sàng lọc:** không đúng ý đồ nhóm; câu hỏi mơ hồ — Trả lời được ngay từ đoạn nguồn (tòa sơ thẩm gửi đơn lên tòa phúc thẩm), không cần đoạn đích về thời hạn kháng cáo; câu hỏi không nói rõ là tố tụng dân sự nên dễ lẫn với tố tụng hình sự, hành chính. · Gợi ý câu hỏi: Trong vụ án dân sự, đương sự vắng mặt tại phiên tòa sơ thẩm, đến ngày thứ 20 kể từ khi được giao bản án mới nộp đơn kháng cáo; đơn này bị coi là gì và Tòa án cấp sơ thẩm phải xử lý ra sao?
 
 **Gold: 24/2004/QH11 Điều 247 khoản 1 — NGUỒN**
@@ -2415,6 +2421,7 @@ Câu hỏi: Khi có kháng cáo hoặc kháng nghị đối với quyết địn
 *Đáp án nháp của mô hình:* Thời hạn là một tháng, kể từ ngày nhận được hồ sơ, và thời hạn này có thể được kéo dài thêm không quá hai tháng nếu cần yêu cầu giải thích theo quy định tại Điều 353.
 
 **⚠ Kiểm tra tự động:** trả lời được chỉ bằng đoạn nguồn (Đoạn nguồn nêu rõ thời hạn để Toà án nhân dân tối cao xem xét là một tháng, kể từ ngày nhận được hồ sơ, và trong trường hợp cần yêu cầu giải thích thì thời hạn được kéo dài nhưng không quá hai tháng.)
+**⚠ Kiểm tra máy móc:** đoạn nguồn một mình đã chứa 67% đáp án nháp (đoạn đích 33%) — câu hỏi có thể không cần đọc điều được dẫn chiếu
 **Sàng lọc:** không đúng ý đồ nhóm; câu hỏi mơ hồ — Thời hạn nằm trọn ở đoạn nguồn, không cần đoạn đích về yêu cầu giải thích. Câu hỏi thiếu ngữ cảnh là thủ tục công nhận bản án dân sự của Tòa án nước ngoài, nên cụm 'quyết định của Tòa án cấp tỉnh' quá chung. · Gợi ý câu hỏi: Khi xét kháng cáo, kháng nghị quyết định của Tòa án cấp tỉnh về công nhận và cho thi hành bản án dân sự của Tòa án nước ngoài, nếu cần yêu cầu bên nước ngoài giải thích điểm chưa rõ thì văn bản yêu cầu phải gửi qua cơ quan nào và thời hạn xét được kéo dài tối đa bao lâu?
 
 **Gold: 24/2004/QH11 Điều 359 khoản 1 — NGUỒN**
@@ -2439,6 +2446,7 @@ Câu hỏi: Khi nào thì cổ phần được coi là đã bán theo quy địn
 *Đáp án nháp của mô hình:* Cổ phần được coi là đã bán khi được thanh toán đủ và thông tin về người mua được ghi đầy đủ vào sổ đăng ký cổ đông.
 
 **⚠ Kiểm tra tự động:** trả lời được chỉ bằng đoạn nguồn (Đoạn nguồn nêu rõ rằng cổ phần được coi là đã bán khi được thanh toán đủ và thông tin về người mua được ghi đầy đủ vào sổ đăng ký cổ đông, kể từ thời điểm đó người mua trở thành cổ đông. Điều này trả lời cụ thể và đầy đủ câu hỏi về thời điểm cổ phần được coi là đã bán theo quy định của Luật doanh nghiệp.)
+**⚠ Kiểm tra máy móc:** đoạn nguồn một mình đã chứa 93% đáp án nháp (đoạn đích 26%) — câu hỏi có thể không cần đọc điều được dẫn chiếu
 **Sàng lọc:** không đúng ý đồ nhóm; lộ đáp án / nhắc văn bản — Câu hỏi nêu tên Luật doanh nghiệp. Câu trả lời cho 'khi nào' lấy được ngay từ đoạn nguồn, không buộc phải đọc danh mục thông tin trong sổ đăng ký cổ đông ở đoạn đích. · Gợi ý câu hỏi: Người mua đã thanh toán đủ tiền mua cổ phần; công ty phải ghi những thông tin nào của người mua vào sổ đăng ký cổ đông thì cổ phần mới được coi là đã bán?
 
 **Gold: 59/2020/QH14 Điều 124 khoản 4 — NGUỒN**
@@ -2518,6 +2526,7 @@ Câu hỏi: Khi nào thì tòa án phải ra quyết định áp dụng biện p
 *Đáp án nháp của mô hình:* Khi người yêu cầu không cần thực hiện biện pháp bảo đảm hoặc đã thực hiện biện pháp bảo đảm theo quy định, thì Thẩm phán phải ra quyết định áp dụng biện pháp khẩn cấp tạm thời trong vòng ba ngày kể từ ngày nhận đơn.
 
 **⚠ Kiểm tra tự động:** trả lời được chỉ bằng đoạn nguồn (Đoạn nguồn nêu rõ điều kiện cụ thể khi nào tòa án phải ra quyết định áp dụng biện pháp khẩn cấp tạm thời: trong thời hạn ba ngày kể từ ngày nhận đơn, nếu người yêu cầu không phải thực hiện biện pháp bảo đảm hoặc ngay sau khi thực hiện biện pháp bảo đảm theo quy định tại Điều 120 Bộ luật Dân sự thì Thẩm phán phải ra quyết định áp dụng biện pháp khẩn cấp tạm thời.)
+**⚠ Kiểm tra máy móc:** đoạn nguồn một mình đã chứa 72% đáp án nháp (đoạn đích 0%) — câu hỏi có thể không cần đọc điều được dẫn chiếu
 **Sàng lọc:** không đúng ý đồ nhóm — Đoạn nguồn đã tự trả lời (thời hạn 03 ngày, Thẩm phán ra quyết định ngay); đoạn đích về việc Tòa án gửi tiền bảo đảm vào ngân hàng không được câu hỏi dùng tới. · Gợi ý câu hỏi: Khi người yêu cầu áp dụng biện pháp khẩn cấp tạm thời phải nộp một khoản tiền bảo đảm, Thẩm phán phải ra quyết định áp dụng biện pháp khi nào và Tòa án phải xử lý khoản tiền bảo đảm đó ra sao?
 
 **Gold: 24/2004/QH11 Điều 117 khoản 2 — NGUỒN**
@@ -2573,6 +2582,7 @@ Câu hỏi: Khi cần tạm đình chỉ hoạt động của một pháp nhân,
 
 *Đáp án nháp của mô hình:* Quyết định tạm đình chỉ hoạt động của pháp nhân phải được Viện kiểm sát cùng cấp phê chuẩn trước khi thi hành.
 
+**⚠ Kiểm tra máy móc:** đoạn nguồn một mình đã chứa 95% đáp án nháp (đoạn đích 55%) — câu hỏi có thể không cần đọc điều được dẫn chiếu
 **Sàng lọc:** không đúng ý đồ nhóm; câu hỏi mơ hồ — Đoạn nguồn đã tự trả lời (phải được Viện kiểm sát phê chuẩn); đoạn đích là mảnh 'Trường hợp này, lệnh bắt...' không nêu những người có thẩm quyền nên không bổ sung gì; câu hỏi thiếu bối cảnh tố tụng hình sự. · Gợi ý câu hỏi: Trong tố tụng hình sự đối với pháp nhân, quyết định tạm đình chỉ có thời hạn hoạt động của pháp nhân cần đáp ứng điều kiện gì trước khi thi hành?
 
 **Gold: 101/2015/QH13 Điều 439 khoản 1 — NGUỒN**

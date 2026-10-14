@@ -368,8 +368,9 @@ def api_duyet():
                    "trang_thai": d.get("Trạng thái") or ("XOÁ" if x.get("xoa") else "DỰ PHÒNG" if x.get("du_phong") else "GIỮ"),
                    "cau_hoi": d.get("Câu hỏi") or x.get("question", ""), "dap_an": x.get("dap_an_nhap", ""),
                    "co": (x.get("san_loc_co") or []) + (["kiểm tra tự động"] if x.get("kiem_tra") else [])
+                         + (["nguồn đã chứa đáp án"] if x.get("nguon_chua_dap_an") else [])
                          + (["gold ở bản cũ"] if x.get("ban_cu") else []),
-                   "ghi_chu": [v for v in (x.get("kiem_tra"), x.get("ban_cu"), x.get("san_loc")) if v],
+                   "ghi_chu": [v for v in (x.get("kiem_tra"), x.get("nguon_chua_dap_an"), x.get("ban_cu"), x.get("san_loc")) if v],
                    "gold": [{"nhan": nhan(g), "vai": g.get("vai"),
                              "text": docs[g["doc_id"]].text[g["start"]:g["end"]][:1500]} for g in x["gold"]]})
     return JSONResponse({"chi_tieu": CAN, "trung_lap": TRUNG_LAP, "cau": ra,
