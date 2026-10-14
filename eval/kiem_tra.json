@@ -1,0 +1,380 @@
+{
+ "bf7a3f035b80f12ca10de284612d066a4b9135c3": {
+  "qid": "q056",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B không nêu ra bất kỳ ngoại lệ, giới hạn hay trường hợp loại trừ nào đối với quy định ở đoạn A; hai đoạn là độc lập, không có mối quan hệ biện chứng hay ngoại lệ giữa chúng."
+ },
+ "2b137ab5cd7403d90d2c7e5ec69d7ac06835bbbd": {
+  "qid": "q057",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ các nghĩa vụ cam đoan của bị can, bị cáo khi đặt tiền bảo đảm, và trong trường hợp vi phạm thì bị tạm giam, số tiền bị tịch thu, điều này là ngoại lệ so với việc được thả tự do nếu tuân thủ, do đó là trường hợp giới hạn hoặc ngoại lệ của quy định ở đoạn A."
+ },
+ "8c0271692978827128f5e530e5c92cc1102fb8d0": {
+  "qid": "q058",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B nêu trường hợp có khả năng gây thiệt hại nhưng không được ngăn chặn kịp thời thì bị phạt nhẹ hơn, tức là là một ngoại lệ so với đoạn A, do đó có thể coi là trường hợp loại trừ hoặc giới hạn áp dụng quy định ở đoạn A."
+ },
+ "816a44d428f87f9d766af72a50e423cd1c930b7f": {
+  "qid": "q059",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ rằng không bao gồm dung môi mà khi tách ra thì tính chất của chất đó không thay đổi, tức là đưa ra một trường hợp loại trừ trong định nghĩa về chất, nên đây là một ngoại lệ hoặc giới hạn áp dụng cho quy định ở đoạn A."
+ },
+ "d8caf15f24ef1500c3e96b7b85c5b3909709660f": {
+  "qid": "q060",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ ngoại lệ với nguyên tắc quyết định theo đa số trong trường hợp quy định tại điểm c khoản 4 Điều này, tức là có trường hợp loại trừ việc áp dụng nguyên tắc đa số theo quy định ở đoạn A."
+ },
+ "234228d17538edc780396eec93dca02a9df3178e": {
+  "qid": "q061",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu trường hợp ngoại lệ đối với tổ chức không phải là pháp nhân, trong khi đoạn A áp dụng cho cá nhân đang tham gia tố tụng chết, do đó đoạn B là trường hợp giới hạn hoặc ngoại lệ so với quy định ở đoạn A."
+ },
+ "d358ff846230a980c716d4f807649086828d9482": {
+  "qid": "q062",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ ràng rằng lực lượng dự bị không phải là lực lượng chuyên trách, thường trực hoặc có tổ chức độc lập, và không làm phát sinh biên chế, chức danh, thẩm quyền công vụ, điều này là một giới hạn hoặc ngoại lệ so với việc huy động lực lượng để bảo vệ an ninh mạng theo quy định tại đoạn A."
+ },
+ "c4e46e73e3a938a5ec63f07409e11a5730c3a87e": {
+  "qid": "q063",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B không nêu ra bất kỳ ngoại lệ, giới hạn hoặc trường hợp loại trừ nào đối với quy định ở đoạn A; hai đoạn là song song, bổ sung nhau về yêu cầu đối với dữ liệu hàng không, chứ không phải một quy định là ngoại lệ của kia."
+ },
+ "65944bef47866075daf268d249731532916ba5c8": {
+  "qid": "q064",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B không nêu ra bất kỳ ngoại lệ, giới hạn hay trường hợp loại trừ nào cho quy định ở đoạn A; hai đoạn là song song, độc lập với nhau, không có mối quan hệ nào là ngoại lệ của bên kia."
+ },
+ "7118467bd0537b45e5818894f262d5815e14fe9d": {
+  "qid": "q065",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B nêu rõ trường hợp bất khả kháng khiến không thể lập, cấp mã hoặc truyền dữ liệu hóa đơn điện tử, trong đó người bán được phép thực hiện việc lập và gửi hóa đơn điện tử sau 03 ngày làm việc kể từ ngày sự cố được khắc phục, điều này là một ngoại lệ đối với quy trình trong đoạn A, tức là khi có sự cố do yếu tố bất khả kháng, người bán không cần phải liên hệ cơ quan thuế ngay lập tức hay phải sử dụng hóa đơn điện tử có mã của cơ quan thuế trong thời gian xử lý sự cố như quy định tại đoạn A."
+ },
+ "8017df879355a363fbdd01b1f8c9c750c8ace408": {
+  "qid": "q066",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ ngoại lệ đối với Tổng Liên đoàn Lao động Việt Nam, tức là không áp dụng quy định về quyết định đối với xe ô tô của các tổ chức chính trị - xã hội ở trung ương, trong khi đoạn A áp dụng cho các cơ quan, đơn vị thuộc phạm vi quản lý của Văn phòng Trung ương Đảng, do đó có sự giới hạn và ngoại lệ rõ ràng trong đoạn B so với quy định ở đoạn A."
+ },
+ "a7adc38ed4d93de5f780ab008660d01489ffebab": {
+  "qid": "q067",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B chỉ nêu điều kiện thông qua nghị quyết với tỷ lệ cổ đông sở hữu trên 50%, trong khi đoạn A yêu cầu 65% phiếu biểu quyết, nên đoạn B không phải là ngoại lệ hay giới hạn áp dụng cho đoạn A, mà là một quy định song song, không liên quan đến việc loại trừ hoặc áp dụng điều kiện của đoạn A."
+ },
+ "31b71254e00f2c7e91590e352e12ebb62bcc939d": {
+  "qid": "q068",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ ngoại lệ với các trường hợp quy định tại điểm b khoản này, tức là có trường hợp loại trừ khi phân bổ xe ô tô, do đó cần biết đoạn B để áp dụng đúng quy tắc ở đoạn A."
+ },
+ "6ff86d518d4bfd0bf8f7835867999b845aa353c6": {
+  "qid": "q069",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu trường hợp ngoại lệ (trừ trường hợp quy định tại khoản 3 Điều này) cho giới hạn 200 giờ trong 1 năm, do đó cho phép áp dụng quy định tại đoạn A khi đáp ứng điều kiện, tức là đoạn A là ngoại lệ được quy định trong đoạn B"
+ },
+ "29c1bce9258722b480eb838bd1a716b9460bd12f": {
+  "qid": "q070",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ các trường hợp ngoại lệ cho thành viên Hội đồng thành viên, trong đó có trường hợp là người quản lý công ty con hoặc công ty mẹ, hoặc trường hợp chuyển giao bắt buộc được phê duyệt, điều này có thể được xem như giới hạn hoặc ngoại lệ áp dụng cho quy định ở đoạn A, đặc biệt khi xét đến việc tránh xung đột lợi ích giữa các chức vụ trong tổ chức tín dụng."
+ },
+ "07ec72a83b2bf648f0d376267b20fa5631e661b8": {
+  "qid": "q071",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B không nêu ra bất kỳ ngoại lệ, giới hạn hay trường hợp loại trừ nào đối với quy định ở đoạn A; hai đoạn này là độc lập, không liên quan đến nhau về nội dung quy tắc hoặc ngoại lệ."
+ },
+ "f60173438453dabb18cbf07bd3d551537115e60b": {
+  "qid": "q072",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B quy định trường hợp ngoại lệ khi sử dụng phương tiện đưa nạn nhân đi cấp cứu, tức là có điều kiện cụ thể để được phép làm điều đó, nên đây là một ngoại lệ đối với quy định ở đoạn A về việc phải báo tin, bảo vệ hiện trường, v.v. do đó, để áp dụng đúng quy định ở đoạn A, người có mặt phải biết đến điều kiện ngoại lệ trong đoạn B."
+ },
+ "1eb7a5f9b5c1d6c13b8beaea54dc000ebab7fc32": {
+  "qid": "q073",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B không phải là ngoại lệ, giới hạn hoặc trường hợp loại trừ đối với quy định ở đoạn A; hai đoạn này là độc lập, không mâu thuẫn nhau về nội dung pháp lý, vì đoạn A nói về quyền có họ, tên theo khai sinh, còn đoạn B nói về việc sử dụng bí danh, bút danh không gây thiệt hại đến quyền lợi hợp pháp của người khác. Không có sự liên hệ hay loại trừ trực tiếp giữa hai quy định."
+ },
+ "6be5b383a58d19d9906a7c7ce78b836ba2162e47": {
+  "qid": "q074",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu trường hợp ngoại lệ là bên thuê vận chuyển thanh toán cước phí sau khi tài sản được chuyển lên phương tiện, trừ khi có thỏa thuận khác, tức là có điều kiện loại trừ áp dụng quy định ở đoạn A."
+ },
+ "d4329c4bb37f011f1a11a9f10b9582c4df2ac226": {
+  "qid": "q075",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ trường hợp có xung đột lợi ích thì thành viên không được tham gia biểu quyết, đây là một ngoại lệ đối với việc tham gia biểu quyết của thành viên trong quá trình thực hiện quyền, nghĩa vụ theo quy định ở đoạn A."
+ },
+ "a3050989260824f69ed7e0ab180b6adb5f9ee488": {
+  "qid": "q076",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ ngoại lệ cho trường hợp thành viên Hội đồng Thẩm phán hoặc Uỷ ban Thẩm phán vẫn được tham gia xét xử nhiều lần, tức là có giới hạn hoặc trường hợp loại trừ so với quy định chung ở đoạn A."
+ },
+ "4168f8116392883394e7b991fcf809ca2943f8c0": {
+  "qid": "q077",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu trường hợp ngoại lệ về lãi suất khi chậm trả tiền, trong khi đoạn A nói về việc thực hiện nghĩa vụ và bồi thường thiệt hại khi chậm thực hiện, nên đoạn B là ngoại lệ so với quy định chung ở đoạn A về việc thực hiện nghĩa vụ và bồi thường."
+ },
+ "aaa661da2d6ad93526f08898c36cbcb94e4d88d9": {
+  "qid": "q078",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ trường hợp ngoại lệ khi người có công việc đã biết hoặc người thực hiện công việc không biết nơi cư trú của người đó, tức là có giới hạn hoặc trừ trường hợp cho quy định ở đoạn A."
+ },
+ "50e7249d6c409be6affbcc0a196ba414653c1ccc": {
+  "qid": "q079",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ những trường hợp không được bào chữa, tức là là ngoại lệ đối với quy định ở đoạn A về quyền bào chữa, do đó cần biết đoạn B để áp dụng đúng quy định ở đoạn A."
+ },
+ "24d65b7a1267348a9fd9b2262a9af32468ab115f": {
+  "qid": "q224",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu trường hợp ngoại lệ (trừ trường hợp có thỏa thuận khác) khi rễ cây, cành cây vượt quá ranh giới, điều này có thể được xem là một giới hạn hoặc ngoại lệ áp dụng cho việc tuân thủ quy tắc về ranh giới trong đoạn A, vì vậy cần biết đoạn B để áp dụng đúng quy tắc ở đoạn A."
+ },
+ "27456a2f65b3307e67d8e5728d1ff8141f8ac351": {
+  "qid": "q225",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ rằng cấp trưởng và cấp phó không được ủy quyền cho cán bộ điều tra thực hiện nhiệm vụ, quyền hạn của mình, tức là giới hạn hoặc ngoại lệ đối với việc ủy quyền trong đoạn A, do đó cần biết đoạn B để áp dụng đúng quy tắc ở đoạn A."
+ },
+ "1dbc090329c6cf70dcd606995726093f2c7a8da1": {
+  "qid": "q226",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ rằng Viện trưởng, Phó Viện trưởng không được ủy quyền cho Kiểm sát viên, do đó là ngoại lệ so với việc ủy quyền cho Phó Viện trưởng như trong đoạn A."
+ },
+ "6366ee155f2789a97057ae14ba431ce830a749c9": {
+  "qid": "q227",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ ngoại lệ về trách nhiệm của bên dùng thử trong trường hợp hao mòn thông thường và hoa lợi, nên nó là một ngoại lệ đối với việc áp dụng quy định ở đoạn A, tức là để áp dụng đúng quy định đoạn A, cần biết đến nội dung của đoạn B."
+ },
+ "8a21e073ab57d90a7e07d0a16223c84c61ccdf57": {
+  "qid": "q228",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ trường hợp trừ khi các bên có thỏa thuận khác, tức là có ngoại lệ đối với quy định về thanh toán đúng thời hạn và đủ giá trị theo hợp đồng, nên đây là trường hợp loại trừ áp dụng cho quy định chung ở đoạn A."
+ },
+ "e5d834a0cf93a98b876df8070097ec33725e2cb9": {
+  "qid": "q229",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B nêu rõ giá hạch toán không được sử dụng cho các mục đích khác, tức là giới hạn việc sử dụng giá hạch toán như trong đoạn A, do đó đây là một ngoại lệ hoặc giới hạn đối với việc áp dụng quy tắc ở đoạn A, nên không phải là quy định song song hoặc độc lập."
+ },
+ "bb848f35dd5c2279d512853337b4090ac0c12a81": {
+  "qid": "q230",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B không nêu rõ ngoại lệ, giới hạn hoặc trường hợp loại trừ áp dụng cho quy định ở đoạn A, nên không thể kết luận rằng việc áp dụng đúng quy định đoạn A đòi hỏi phải biết đoạn B."
+ },
+ "a9ca2645de6d85f18c67cd02eb72206f4c252e5e": {
+  "qid": "q231",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B không đề cập đến điều kiện hoặc ngoại lệ nào liên quan đến việc thay đổi địa điểm hoạt động giáo dục như trong đoạn A, nên không có mối liên hệ hay giới hạn nào giữa hai đoạn về việc áp dụng quy tắc ở đoạn A"
+ },
+ "7e311ff8ac700c0302c09aa0e54245e49e3fc18c": {
+  "qid": "q232",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu trường hợp ngoại lệ khi cuộc họp không đủ số thành viên dự họp, và chỉ được triệu tập lần thứ hai trong thời hạn 7 ngày, trừ khi Điều lệ công ty quy định khác, tức là có ngoại lệ đối với việc triệu tập họp theo quy định tại đoạn A."
+ },
+ "d225d045e63751bbd97ea441d457a918e66bb6ce": {
+  "qid": "q234",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B không nêu rõ ngoại lệ, giới hạn hoặc trường hợp loại trừ nào đối với đoạn A, nên không thể coi là ngoại lệ của đoạn A."
+ },
+ "3aacc693cea10d6051bb6fc227a916dfe52d01f0": {
+  "qid": "q258",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ trường hợp cần tạm giam thì thời hạn tạm giam không được vượt quá thời hạn phục hồi điều tra, điều tra bổ sung, tức là có giới hạn cụ thể trong trường hợp đặc biệt, do đó là một ngoại lệ so với quy định chung ở đoạn A."
+ },
+ "44f2772b7c66712e4c8283b8536907e4dd313061": {
+  "qid": "q089",
+  "loai": "dan_chieu",
+  "dat": true,
+  "ly_do": "Đoạn nguồn nêu rõ rằng người vô ý làm lộ bí mật công tác hoặc làm mất tài liệu bí mật công tác gây hậu quả nghiêm trọng, rất nghiêm trọng hoặc đặc biệt nghiêm trọng sẽ bị phạt cảnh cáo, cải tạo không giam giữ đến hai năm hoặc phạt tù từ ba tháng đến hai năm, nên trả lời đầy đủ và cụ thể theo nội dung đoạn nguồn."
+ },
+ "9e0c8256d4bab7d744ad57823bd7f42d8c45dd5a": {
+  "qid": "q090",
+  "loai": "dan_chieu",
+  "dat": true,
+  "ly_do": "Đoạn nguồn nêu rõ rằng quyết định đình chỉ vụ án phải ghi rõ lý do và căn cứ đình chỉ vụ án, việc hủy bỏ biện pháp ngăn chặn, biện pháp cưỡng chế, xử lý vật chứng, tài liệu, đồ vật đã tạm giữ (nếu có), các vấn đề khác có liên quan và các nội dung quy định tại khoản 2 Điều 132 Bộ luật. Do đó, nội dung cần ghi rõ được nêu cụ thể trong đoạn nguồn, không chỉ nhắc đến điều luật mà đã nêu rõ các nội dung cụ thể."
+ },
+ "6a630e7150f02a9aac8147bc74abc1d156dfb206": {
+  "qid": "q091",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nói rằng quyền, nghĩa vụ và lợi ích của người lao động được giải quyết theo quy định của pháp luật, nhưng không cụ thể hóa cách xử lý trong trường hợp bị tuyên bố vô hiệu do ký sai thẩm quyền. Do đó, không thể trả lời đầy đủ và cụ thể câu hỏi chỉ dựa vào đoạn nguồn này."
+ },
+ "cc0f73b08267fa0ebee0c9435fa68435ca55fde4": {
+  "qid": "q092",
+  "loai": "dan_chieu",
+  "dat": true,
+  "ly_do": "Đoạn nguồn nêu rõ rằng pháp nhân thương mại phạm tội thuộc trường hợp quy định tại Điều 79 của Bộ luật này thì bị đình chỉ hoạt động vĩnh viễn, do đó điều kiện để bị đình chỉ hoạt động vĩnh viễn là phạm tội thuộc trường hợp quy định tại Điều 79 của Bộ luật."
+ },
+ "10a93873d1f229daf3f0dcf5a738e71b5adf8595": {
+  "qid": "q093",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nêu rằng kiểm sát viên hoặc kiểm tra viên phải từ chối hoặc bị thay đổi trong các trường hợp quy định tại Điều 49 và đã tham gia tố tụng với tư cách là điều tra viên, cán bộ điều tra, thẩm phán, hội thẩm, thẩm tra viên hoặc thư ký tòa án, nhưng không cung cấp nội dung cụ thể của Điều 49. Do đó, không thể trả lời đầy đủ và cụ thể câu hỏi chỉ dựa vào đoạn nguồn này."
+ },
+ "3cbc96d4bd3093aba6e98261ae6e43f986c0bd56": {
+  "qid": "q094",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nêu rằng bên thế chấp được thay thế tài sản khi có đồng ý của bên nhận thế chấp, trừ trường hợp quy định tại khoản 3 Điều 349, nhưng không cung cấp nội dung cụ thể của khoản đó, nên không thể xác định được thời điểm hoặc điều kiện cụ thể để bên thế chấp được thay thế tài sản mà không cần sự đồng ý của bên nhận thế chấp."
+ },
+ "3f5d7f867f36124e4390133ca8513222ff201d8a": {
+  "qid": "q095",
+  "loai": "dan_chieu",
+  "dat": true,
+  "ly_do": "Đoạn nguồn nêu rõ các trường hợp cụ thể dẫn đến việc đình chỉ hoạt động của nhóm lớp mầm non độc lập, bao gồm gian lận hồ sơ, không bảo đảm điều kiện thành lập, hoạt động không đúng địa điểm, không triển khai hoạt động trong 12 tháng, hoặc vi phạm pháp luật đến mức phải đình chỉ. Do đó, câu hỏi được trả lời đầy đủ và cụ thể dựa trên đoạn nguồn."
+ },
+ "ddc3d65a9d760eafcc43a64dc521fce83bc6cf2f": {
+  "qid": "q096",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nêu rằng cơ quan hải quan chỉ làm thủ tục thông quan khi có hồ sơ đầy đủ và chứng thư giám định ghi kết luận dây chuyền công nghệ đã qua sử dụng đáp ứng tiêu chí nhập khẩu, nhưng không nêu rõ các điều kiện cụ thể mà doanh nghiệp cần đáp ứng để được phép thông quan, vì vậy không trả lời đầy đủ và cụ thể câu hỏi."
+ },
+ "b837fed0f4ecf139da8dd6939ec5e947af6bde9b": {
+  "qid": "q097",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nói rằng người nhận hàng là người có quyền nhận hàng theo quy định tại Điều 162 và Điều 187, nhưng không nêu rõ ai là người đó, do đó không trả lời đầy đủ và cụ thể câu hỏi."
+ },
+ "7d26c08f9f1560d2f48c51105bff3a0bde03f11a": {
+  "qid": "q098",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nói rằng người được ủy quyền quản lý tài sản không thể trở thành chủ sở hữu theo thời hiệu quy định tại khoản 1 Điều 247, nhưng không cung cấp nội dung cụ thể của điều đó, do đó không thể trả lời đầy đủ và cụ thể câu hỏi chỉ dựa vào đoạn nguồn này."
+ },
+ "8864de2b21c7acfd953590f17f9ec3ab2bc4cd6f": {
+  "qid": "q099",
+  "loai": "dan_chieu",
+  "dat": true,
+  "ly_do": "Đoạn nguồn nêu rõ rằng người bị kết án về tội ít nghiêm trọng đã được hoãn chấp hành hình phạt thì nếu trong thời gian được hoãn đã lập công, Toà án có thể quyết định miễn chấp hành hình phạt theo đề nghị của Viện trưởng Viện Kiểm sát, nên câu hỏi được trả lời đầy đủ và cụ thể dựa trên đoạn nguồn."
+ },
+ "d868f38643b317277e09b9405e6b5085b06899f5": {
+  "qid": "q100",
+  "loai": "dan_chieu",
+  "dat": true,
+  "ly_do": "Đoạn nguồn nêu rõ rằng trong thời hạn 15 ngày kể từ ngày thông báo, nếu chủ sở hữu tài sản không yêu cầu nhận lại hoặc không thanh toán nợ thì người trục vớt phải giao nộp tài sản cho cơ quan nhà nước có thẩm quyền, nên trả lời đầy đủ và cụ thể theo nội dung đoạn nguồn."
+ },
+ "3606ffcdc3fdc56469b7759669fe38e018c3ac47": {
+  "qid": "q101",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nói rằng các thư viện được lưu giữ tài nguyên thông tin theo quy định tại điểm a khoản 1 Điều 7 của Luật, nhưng không nêu rõ nội dung cụ thể của những loại tài nguyên thông tin đó, nên không thể trả lời đầy đủ và cụ thể câu hỏi."
+ },
+ "1b2bee8753c1d54ea7a9e5dee7ee4339b669b741": {
+  "qid": "q102",
+  "loai": "dan_chieu",
+  "dat": true,
+  "ly_do": "Đoạn nguồn nêu rõ rằng nếu đơn kháng cáo quá thời hạn, Tòa án cấp sơ thẩm sẽ phải gửi đơn kháng cáo, bản tường trình của người kháng cáo về lý do kháng cáo quá hạn và tài liệu, chứng cứ, nếu có cho Tòa án cấp phúc thẩm, nên trả lời đầy đủ và cụ thể theo nội dung đoạn nguồn."
+ },
+ "fc0972f13f90c0a99a5c3e59ba7a4a14eac5bb25": {
+  "qid": "q103",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nói rằng công chức trong Tòa án được hưởng tiền lương và phụ cấp theo quy định tại Điều 142 của Luật này, nhưng không cung cấp nội dung cụ thể về mức tiền lương, phụ cấp hay cách tính. Do đó, không thể trả lời đầy đủ và cụ thể câu hỏi dựa vào đoạn nguồn hiện có."
+ },
+ "4aac21ff77723cf7a7199adaa045af094e04dc72": {
+  "qid": "q104",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nói đến việc phải trả trợ cấp mất việc làm theo quy định tại Điều 49, nhưng không cung cấp chi tiết về nội dung, điều kiện cụ thể để được tính trợ cấp, do đó không trả lời đầy đủ và cụ thể câu hỏi."
+ },
+ "4102c96725a09b32f64ba98eac5ef89e3cf21f76": {
+  "qid": "q105",
+  "loai": "dan_chieu",
+  "dat": true,
+  "ly_do": "Đoạn nguồn nêu rõ rằng nếu phát hiện khuyết điểm hoặc không trung thực làm cho kết quả xếp loại không chính xác, thì cấp có thẩm quyền có thể ban hành quyết định xếp loại mới thay thế quyết định trước đó, tức là có thể điều chỉnh lại xếp loại."
+ },
+ "73cad537ce075fdd4511d57afd88b286a6af9ff5": {
+  "qid": "q106",
+  "loai": "dan_chieu",
+  "dat": true,
+  "ly_do": "Đoạn nguồn nêu rõ thời hạn để Toà án nhân dân tối cao xem xét là một tháng, kể từ ngày nhận được hồ sơ, và trong trường hợp cần yêu cầu giải thích thì thời hạn được kéo dài nhưng không quá hai tháng."
+ },
+ "a012fcd54f290a664fdb69f1fb79bb4a980a7464": {
+  "qid": "q107",
+  "loai": "dan_chieu",
+  "dat": true,
+  "ly_do": "Đoạn nguồn nêu rõ rằng cổ phần được coi là đã bán khi được thanh toán đủ và thông tin về người mua được ghi đầy đủ vào sổ đăng ký cổ đông, kể từ thời điểm đó người mua trở thành cổ đông. Điều này trả lời cụ thể và đầy đủ câu hỏi về thời điểm cổ phần được coi là đã bán theo quy định của Luật doanh nghiệp."
+ },
+ "b23a2fe18da41d63590a5ee9abb9bfbcd758e932": {
+  "qid": "q235",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nêu rằng biên bản phải được lập theo quy định tại Điều 178 và đọc cho những người có mặt nghe, cùng ký tên, nhưng không cung cấp chi tiết cụ thể về các bước cần làm để đảm bảo biên bản hợp lệ và có thể sử dụng trong quá trình điều tra. Do đó, không thể trả lời đầy đủ và cụ thể câu hỏi dựa chỉ trên đoạn nguồn này."
+ },
+ "859603b8a184ba41d9486ae698e3502df6cce82f": {
+  "qid": "q236",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nêu rằng cơ quan, tổ chức thanh lý xe ô tô khi đủ điều kiện theo quy định tại khoản 2 Điều 4 hoặc thực hiện xử lý theo quy định của pháp luật về quản lý, sử dụng tài sản công, nhưng không nêu rõ nội dung cụ thể của điều kiện đó. Do đó, không thể trả lời đầy đủ và cụ thể câu hỏi chỉ dựa vào đoạn nguồn này."
+ },
+ "6dbddffead28904363b0a0a3da5b2a194603f41b": {
+  "qid": "q237",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nói rằng hóa đơn điện tử phải ghi đầy đủ nội dung theo quy định của pháp luật về thuế, kế toán và Điều 10 Nghị định, nhưng không nêu cụ thể nội dung nào cần đảm bảo để đảm bảo tính minh bạch và đúng với quy định pháp luật. Do đó, không thể trả lời đầy đủ và cụ thể dựa vào đoạn nguồn này."
+ },
+ "96b77077020723a8b61355614ee752f5d815e214": {
+  "qid": "q238",
+  "loai": "dan_chieu",
+  "dat": true,
+  "ly_do": "Đoạn nguồn nêu rõ điều kiện cụ thể khi nào tòa án phải ra quyết định áp dụng biện pháp khẩn cấp tạm thời: trong thời hạn ba ngày kể từ ngày nhận đơn, nếu người yêu cầu không phải thực hiện biện pháp bảo đảm hoặc ngay sau khi thực hiện biện pháp bảo đảm theo quy định tại Điều 120 Bộ luật Dân sự thì Thẩm phán phải ra quyết định áp dụng biện pháp khẩn cấp tạm thời."
+ },
+ "619cb6de9f9e014c2142ba5d8a957a7741245d20": {
+  "qid": "q239",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nêu rằng cơ quan có thẩm quyền yêu cầu bổ sung bản sao Giấy chứng nhận đăng ký doanh nghiệp và chứng thư giám định, nhưng không cung cấp nội dung cụ thể về việc bổ sung tài liệu khi doanh nghiệp không cung cấp đầy đủ thông tin. Việc đề cập đến 'theo quy định tại Điều 12' chỉ là tham chiếu, và nội dung thực tế về yêu cầu bổ sung tài liệu không được nêu rõ trong đoạn nguồn. Do đó, không thể trả lời đầy đủ và cụ thể chỉ dựa vào đoạn này."
+ },
+ "06c91fc109391bc4c6e9574e04ba1e3ae3732d75": {
+  "qid": "q240",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nói 'theo quy định tại khoản 2 Điều 5 Thông tư này' mà không nêu rõ cách thức cụ thể cơ quan thuế gửi kết quả giải đáp vướng mắc cho người nộp thuế, nên không trả lời đầy đủ và cụ thể câu hỏi."
+ },
+ "4be9d95877f95035faeaf1856f97d1aca76ee1a6": {
+  "qid": "q241",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nêu rõ điều kiện để ra quyết định tạm đình chỉ hoạt động của pháp nhân là phải có thẩm quyền quy định tại khoản 1 Điều 113 và phải được Viện kiểm sát cùng cấp phê chuẩn trước khi thi hành, nhưng không nêu rõ các điều kiện cụ thể để quyết định đó được thực hiện (ví dụ: căn cứ vào hành vi vi phạm, mức độ nghiêm trọng, v.v.). Do đó, không thể trả lời đầy đủ và cụ thể câu hỏi chỉ dựa vào đoạn nguồn này."
+ },
+ "44750dc5be029aaf14f7b457ecfbfbf1f71c6b08": {
+  "qid": "q243",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nêu rằng người đứng đầu cơ quan, đơn vị có thẩm quyền tuyển dụng sẽ quyết định người trúng tuyển theo quy định tại các khoản Điều 12 hoặc 14 của Nghị định, nhưng không cung cấp nội dung cụ thể của những quy định đó. Do đó, không thể trả lời đầy đủ và cụ thể về ai sẽ quyết định người trúng tuyển chỉ dựa vào đoạn nguồn hiện có."
+ },
+ "2025025a833c322d508622c78e00ed7c463e9a28": {
+  "qid": "q259",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nói rằng phiên họp xét lại được tiến hành theo quy định tại Điều 369, nhưng không cung cấp nội dung cụ thể về thời điểm tổ chức phiên họp đó, nên không trả lời đầy đủ và cụ thể câu hỏi."
+ }
+}

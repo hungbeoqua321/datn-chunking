@@ -7,8 +7,10 @@ Cách duyệt trong questions.review.md — mỗi câu là một mục "## qXXX"
   - dòng "Trạng thái: GIỮ"  → sửa thành XOÁ để loại câu này (câu DỰ PHÒNG mặc định là DỰ PHÒNG: đổi thành GIỮ để dùng);
   - dòng "Câu hỏi: …"       → sửa trực tiếp nội dung câu hỏi (một dòng);
   - gold (trích đoạn văn bản) chỉ để đọc; nếu gold sai thì XOÁ câu đó.
-Khi chốt, mỗi nhóm phải còn đủ số câu của đề (50/30/25/20/15) và đủ số câu gold TRUNG LẬP (16/10/8/6/5 — gold cố ý
-không trùng ranh giới khoản, là tập số chính của báo cáo); script báo nếu thiếu.
+Khi chốt, mỗi nhóm phải còn đủ số câu (50/18/12/20/15) và đủ số câu gold TRUNG LẬP (16/6/4/6/5 — gold cố ý không trùng
+ranh giới khoản, là tập số chính của báo cáo); script báo nếu thiếu. Trước khi ghi, --chot chạy eval/kiem_tra.py trên các
+câu GIỮ (đã sửa): quan hệ quy tắc–ngoại lệ (xuyen_khoan), trả lời được chỉ bằng đoạn nguồn (dan_chieu), gold ở bản cũ —
+chỉ GẮN CỜ vào questions.jsonl và in danh sách, không xoá câu nào.
 """
 import argparse
 import json
@@ -20,8 +22,9 @@ from chunking.base import nap_van_ban
 NHAP = ch.GOC / "eval/questions.draft.jsonl"
 DUYET = ch.GOC / "eval/questions.review.md"
 CHOT = ch.GOC / "eval/questions.jsonl"
-CAN = {"don_gian": 50, "xuyen_khoan": 30, "dan_chieu": 25, "dieu_dai": 20, "khong_co_dieu": 15}
-TRUNG_LAP = {"don_gian": 16, "xuyen_khoan": 10, "dan_chieu": 8, "dieu_dai": 6, "khong_co_dieu": 5}
+# chỉ tiêu hạ ngày 14/10: xuyen_khoan 30 → 18, dan_chieu 25 → 12; tỉ lệ gold trung lập giữ ~32%
+CAN = {"don_gian": 50, "xuyen_khoan": 18, "dan_chieu": 12, "dieu_dai": 20, "khong_co_dieu": 15}
+TRUNG_LAP = {"don_gian": 16, "xuyen_khoan": 6, "dan_chieu": 4, "dieu_dai": 6, "khong_co_dieu": 5}
 TEN_VAI = {"dieu_kien": "QUY TẮC", "loai_tru": "NGOẠI LỆ", "nguon": "NGUỒN", "dich": "ĐÍCH", "dan": "DẪN"}
 
 
@@ -49,17 +52,19 @@ def xuat_duyet() -> None:
          "trúc), báo riêng. Câu DỰ PHÒNG: đổi thành GIỮ nếu muốn thay câu bị XOÁ cùng nhóm, cùng loại gold.", ""]
     if any(x.get("san_loc_co") is not None for x in ds):  # tóm tắt cờ sàng lọc (agent chỉ gắn cờ, không xoá câu nào)
         L += ["## Tóm tắt cờ sàng lọc tự động (chỉ để bạn biết xem kỹ chỗ nào — quyết định giữ/bỏ là của bạn)", "",
-              "| Nhóm | Câu GIỮ (trung lập) | Không cờ | Gold đáng ngờ | Không trả lời được | Sai ý đồ nhóm | Mơ hồ | Lộ đáp án |",
-              "|---|---|---|---|---|---|---|---|"]
+              "| Nhóm | Câu GIỮ (trung lập) | Không cờ | Gold đáng ngờ | Không trả lời được | Sai ý đồ nhóm | Mơ hồ | Lộ đáp án "
+              "| Kiểm tra tự động | Gold ở bản cũ |",
+              "|---|---|---|---|---|---|---|---|---|---|"]
         for k in CAN:
             g = [x for x in ds if x["loai"] == k and not x.get("du_phong")]
             dem = lambda t: sum(any(c.startswith(t) for c in x.get("san_loc_co") or []) for x in g)
             L.append(f"| {k} | {len(g)} ({sum(bool(x.get('trung_lap')) for x in g)}) | "
                      f"{sum(not x.get('san_loc_co') for x in g)} | {dem('gold đáng ngờ')} | {dem('KHÔNG trả lời')} | "
-                     f"{dem('không đúng ý đồ')} | {dem('câu hỏi mơ hồ')} | {dem('lộ đáp án')} |")
+                     f"{dem('không đúng ý đồ')} | {dem('câu hỏi mơ hồ')} | {dem('lộ đáp án')} | "
+                     f"{sum(bool(x.get('kiem_tra')) for x in g)} | {sum(bool(x.get('ban_cu')) for x in g)} |")
         L.append("")
     for x in ds:
-        tt = "DỰ PHÒNG" if x.get("du_phong") else "GIỮ"
+        tt = "XOÁ" if x.get("xoa") else "DỰ PHÒNG" if x.get("du_phong") else "GIỮ"
         nguon = x["nguon_chon"]
         if nguon == "trung_lap" and not x.get("trung_lap"):
             nguon = "đầu khoản/điểm (không trung lập: span bắt đầu ngay đầu khoản hoặc điểm)"
@@ -69,6 +74,10 @@ def xuat_duyet() -> None:
               f"*Đáp án nháp của mô hình:* {x.get('dap_an_nhap', '')}", ""]
         if x.get("co"):
             L.append(f"**Cờ tự động:** {'; '.join(x['co'])}")
+        if x.get("ban_cu"):
+            L.append(f"**⚠ Bản cũ:** {x['ban_cu']}")
+        if x.get("kiem_tra"):
+            L.append(f"**⚠ Kiểm tra tự động:** {x['kiem_tra']}")
         if x.get("san_loc"):
             L.append(f"**Sàng lọc:** {x['san_loc']}")
         L.append("")
@@ -102,6 +111,14 @@ def chot() -> None:
         elif dong.startswith("Câu hỏi:"):
             hien["question"] = dong.split(":", 1)[1].strip()
     giu = [x for x in ra if x.get("trang_thai") in ("GIỮ", "GIU")]
+    from eval.kiem_tra import kiem_ban_cu, kiem_tra
+    kt, bc = kiem_tra(giu), kiem_ban_cu(giu)
+    for x in giu:
+        x["co_kiem_tra"] = [c for c in (kt.get(x["qid"], {}).get("co"), bc.get(x["qid"])) if c]
+    co = [x for x in giu if x["co_kiem_tra"]]
+    print(f"Kiểm tra tự động: {len(co)} câu GIỮ bị gắn cờ (không xoá) — xem trường co_kiem_tra:")
+    for x in co:
+        print(f"  {x['qid']} [{x['loai']}] " + " | ".join(c[:140] for c in x["co_kiem_tra"]))
     dem = {k: sum(x["loai"] == k for x in giu) for k in CAN}
     thieu = {k: f"{dem[k]}/{v}" for k, v in CAN.items() if dem[k] < v}
     if thieu:
@@ -118,6 +135,7 @@ def chot() -> None:
                           for g in x["gold"]],
                  "phien_ban": bool(x.get("phien_ban")), "phien_ban_cu": x.get("phien_ban_cu", []),
                  "nguon_chon": x["nguon_chon"], "trung_lap": bool(x.get("trung_lap")),
+                 "co_kiem_tra": x["co_kiem_tra"],
                  "b_parse_ok": x.get("b_parse_ok", True)}
             f.write(json.dumps(o, ensure_ascii=False) + "\n")
     print(f"→ {CHOT}: {len(giu)} câu", dem, "| trung lập:", tl)

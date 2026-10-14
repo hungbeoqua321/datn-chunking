@@ -2,19 +2,19 @@
 
 Mỗi câu: sửa `Trạng thái:` (GIỮ / XOÁ; câu dự phòng đổi DỰ PHÒNG → GIỮ nếu muốn dùng) và sửa thẳng dòng `Câu hỏi:`. Xong chạy `python -m eval.duyet --chot`.
 
-Tổng 175 câu nháp; cần giữ: don_gian 50 (trung lập ≥ 16), xuyen_khoan 30 (trung lập ≥ 10), dan_chieu 25 (trung lập ≥ 8), dieu_dai 20 (trung lập ≥ 6), khong_co_dieu 15 (trung lập ≥ 5).
+Tổng 175 câu nháp; cần giữ: don_gian 50 (trung lập ≥ 16), xuyen_khoan 18 (trung lập ≥ 6), dan_chieu 12 (trung lập ≥ 4), dieu_dai 20 (trung lập ≥ 6), khong_co_dieu 15 (trung lập ≥ 5).
 
 **TRUNG LẬP** = gold cố ý KHÔNG trùng ranh giới cấu trúc (1–3 câu bắt đầu giữa khoản/điểm/đoạn, có thể vắt sang khoản kế) — tập số chính của báo cáo. Câu không ghi TRUNG LẬP có gold trùng ranh giới khoản (B có lợi thế cấu trúc), báo riêng. Câu DỰ PHÒNG: đổi thành GIỮ nếu muốn thay câu bị XOÁ cùng nhóm, cùng loại gold.
 
 ## Tóm tắt cờ sàng lọc tự động (chỉ để bạn biết xem kỹ chỗ nào — quyết định giữ/bỏ là của bạn)
 
-| Nhóm | Câu GIỮ (trung lập) | Không cờ | Gold đáng ngờ | Không trả lời được | Sai ý đồ nhóm | Mơ hồ | Lộ đáp án |
-|---|---|---|---|---|---|---|---|
-| don_gian | 50 (16) | 16 | 8 | 3 | 9 | 21 | 4 |
-| xuyen_khoan | 30 (10) | 4 | 1 | 3 | 16 | 18 | 7 |
-| dan_chieu | 25 (8) | 4 | 1 | 0 | 15 | 11 | 8 |
-| dieu_dai | 20 (6) | 7 | 0 | 0 | 0 | 7 | 8 |
-| khong_co_dieu | 15 (5) | 4 | 4 | 1 | 0 | 5 | 4 |
+| Nhóm | Câu GIỮ (trung lập) | Không cờ | Gold đáng ngờ | Không trả lời được | Sai ý đồ nhóm | Mơ hồ | Lộ đáp án | Kiểm tra tự động | Gold ở bản cũ |
+|---|---|---|---|---|---|---|---|---|---|
+| don_gian | 50 (16) | 16 | 8 | 3 | 9 | 21 | 4 | 0 | 8 |
+| xuyen_khoan | 18 (6) | 2 | 0 | 1 | 8 | 10 | 4 | 0 | 0 |
+| dan_chieu | 12 (4) | 4 | 0 | 0 | 5 | 2 | 2 | 2 | 2 |
+| dieu_dai | 20 (6) | 7 | 0 | 0 | 0 | 7 | 8 | 0 | 6 |
+| khong_co_dieu | 15 (5) | 4 | 3 | 1 | 0 | 5 | 4 | 0 | 0 |
 
 ## q001 · don_gian · khoan
 
@@ -93,6 +93,7 @@ Câu hỏi: Nếu một hành vi phạm tội được thực hiện có tổ ch
 
 *Đáp án nháp của mô hình:* Sẽ bị phạt tù từ mười năm đến hai mươi năm hoặc tù chung thân.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 15/1999/QH10 Điều 118 ↔ 100/2015/QH13 Điều 149: KHÁC ÍT (chứa 0.69)
 **Sàng lọc:** câu hỏi mơ hồ; gold đáng ngờ — Gold là khoản 2 của tội cố ý truyền HIV cho người khác (theo tiêu đề Điều) nhưng không chứa tên tội. 'Có tổ chức, lợi dụng nghề nghiệp' là tình tiết tăng nặng của rất nhiều tội; Bộ luật Hình sự 2015, Điều 149 cũng có tội này. · Gợi ý câu hỏi: Người cố ý truyền HIV cho người khác mà phạm tội có tổ chức hoặc lợi dụng nghề nghiệp thì bị phạt như thế nào?
 
 **Gold: 15/1999/QH10 Điều 118 khoản 2**
@@ -158,6 +159,7 @@ Câu hỏi: Người thiết kế kiến trúc cần nộp hồ sơ gì để đ
 
 *Đáp án nháp của mô hình:* Cần nộp hồ sơ thiết kế kiến trúc, đây là một phần của hồ sơ thiết kế xây dựng được thẩm định và phê duyệt theo quy định của Luật xây dựng.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 03/2020/TT-BXD Điều 2 ↔ 83/2026/VBHN-TT-BXD Điều 2 khoản 1: GIỐNG (chứa 1.00)
 **Sàng lọc:** chỉ trả lời được một phần từ gold; không đúng ý đồ nhóm — Gold chỉ nói hồ sơ thiết kế kiến trúc là một phần của hồ sơ thiết kế xây dựng, không liệt kê cần nộp gì (danh mục nằm ở khoản 2) và không nói ai nộp. Đáp án nháp lặp lại ý trong câu hỏi. · Gợi ý câu hỏi: Hồ sơ thiết kế kiến trúc có vị trí như thế nào trong hồ sơ thiết kế xây dựng và được thẩm định, phê duyệt theo luật nào?
 
 **Gold: 03/2020/TT-BXD Điều 2 khoản 1**
@@ -186,6 +188,7 @@ Câu hỏi: Khi muốn thay đổi vị trí làm việc của một cán bộ l
 
 *Đáp án nháp của mô hình:* Phải có quyết định của cấp có thẩm quyền về công tác cán bộ.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 170/2025/NĐ-CP Điều 24 ↔ 10/2026/VBHN-NĐ-BNV Điều 23: KHÁC ÍT (chứa 0.84)
 **Sàng lọc:** gold đáng ngờ — Gold có thể đã hết hiệu lực: Điều 24 của 170/2025/NĐ-CP đã bị 300/2026/NĐ-CP thay toàn bộ (nay là xếp lương), câu gold không còn trong văn bản hợp nhất 10/2026/VBHN-NĐ-BNV; ý tương tự chuyển sang Điều 23 khoản 3 điểm a. Câu hỏi dùng 'cán bộ' thay vì 'công chức'.
 
 **Gold: 170/2025/NĐ-CP Điều 24 khoản 1**
@@ -200,6 +203,7 @@ Câu hỏi: Nếu người lao động yêu cầu thương lượng tập thể,
 
 *Đáp án nháp của mô hình:* Không được từ chối, doanh nghiệp phải tham gia thương lượng.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 10/2012/QH13 Điều 68 ↔ 45/2019/QH14 Điều 70 khoản 1: KHÁC ÍT (chứa 0.74)
 **Sàng lọc:** câu hỏi mơ hồ — Gold thuộc Bộ luật Lao động 2012 (đã bị thay thế). Bộ luật Lao động 2019, Điều 70 (có trong kho) cũng quy định 'bên nhận được yêu cầu không được từ chối việc thương lượng', nên câu hỏi khớp cả hai.
 
 **Gold: 10/2012/QH13 Điều 68 khoản 1**
@@ -229,6 +233,7 @@ Câu hỏi: Giao dịch thuế điện tử là gì?
 *Đáp án nháp của mô hình:* Là các giao dịch được thực hiện bằng phương thức điện tử giữa các cơ quan, tổ chức, cá nhân trong lĩnh vực thuế.
 
 **Cờ tự động:** trùng từ cao (86%)
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 19/2021/TT-BTC Điều 3 ↔ 21/VBHN-BTC Điều 3 khoản 1: GIỐNG (chứa 1.00)
 **Sàng lọc:** không thấy vấn đề
 
 **Gold: 19/2021/TT-BTC Điều 3 khoản 1**
@@ -257,6 +262,7 @@ Câu hỏi: Nếu một hộ kinh doanh không thực hiện hoặc thực hiệ
 
 *Đáp án nháp của mô hình:* Sẽ nộp thuế giá trị gia tăng theo phương pháp khoán thuế.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 48/2024/QH15 Điều 12 ↔ 114/VBHN-VPQH Điều 11: KHÁC NHIỀU hoặc không còn (chứa 0.52)
 **Sàng lọc:** lộ đáp án / nhắc văn bản; gold đáng ngờ — Gold có thể đã hết hiệu lực: khoản này đã bị Luật 149/2025/QH15 bãi bỏ (hiệu lực 01/01/2026) và không còn trong 114/VBHN-VPQH. Câu hỏi chép gần nguyên văn vế điều kiện của gold.
 
 **Gold: 48/2024/QH15 Điều 12 khoản 3**
@@ -441,6 +447,7 @@ Câu hỏi: Nếu một cán bộ đang thi hành nhiệm vụ và dùng vũ l�
 
 *Đáp án nháp của mô hình:* Sẽ bị phạt cải tạo không giam giữ đến ba năm hoặc phạt tù từ ba tháng đến ba năm.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 15/1999/QH10 Điều 107 ↔ 100/2015/QH13 Điều 137: KHÁC ÍT (chứa 0.63)
 **Sàng lọc:** câu hỏi mơ hồ — Gold thuộc Bộ luật Hình sự 1999. Bộ luật Hình sự 2015, Điều 137 (có trong kho) cùng tội nhưng ngưỡng là 31–60% và mức tù 6 tháng–3 năm, nên đáp án lệch theo bản luật. Câu hỏi bỏ điều kiện 'ngoài những trường hợp pháp luật cho phép'. · Gợi ý câu hỏi: Người trong khi thi hành công vụ dùng vũ lực ngoài những trường hợp pháp luật cho phép, gây thương tích cho người khác với tỷ lệ thương tật từ 31% trở lên thì bị phạt như thế nào?
 
 **Gold: 15/1999/QH10 Điều 107 khoản 1**
@@ -498,6 +505,7 @@ Câu hỏi: Nếu một người có trách nhiệm trong việc nhập khẩu, 
 
 *Đáp án nháp của mô hình:* Sẽ bị phạt tiền từ năm triệu đồng đến một trăm triệu đồng hoặc bị phạt tù từ một năm đến năm năm.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 15/1999/QH10 Điều 201 ↔ 100/2015/QH13 Điều 259: KHÁC NHIỀU hoặc không còn (chứa 0.36)
 **Sàng lọc:** câu hỏi mơ hồ — Gold thuộc Bộ luật Hình sự 1999. Kho còn có Bộ luật Hình sự 2015, trong đó tội tương ứng quy định khác (đòi hỏi đã bị xử lý trước, mức phạt khác), nên câu hỏi không nêu mốc thời gian sẽ mơ hồ. Câu hỏi chép khá sát phần điều kiện của gold. · Gợi ý câu hỏi: Theo quy định hình sự trước năm 2015, người có trách nhiệm trong việc xuất nhập khẩu, bảo quản hoặc sử dụng thuốc gây nghiện mà vi phạm quy định quản lý thì bị xử lý hình sự ra sao?
 
 **Gold: 15/1999/QH10 Điều 201 khoản 1**
@@ -568,6 +576,7 @@ Câu hỏi: Các điều kiện nào để bị coi là tội phạm có tổ ch
 
 *Đáp án nháp của mô hình:* Khi hành vi phạm tội được thực hiện có sự tổ chức, có tính chất chuyên nghiệp và người phạm tội có tiền án, tiền sự hoặc có dấu hiệu tái phạm nguy hiểm, thì sẽ được coi là tội phạm có tổ chức, có tính chất chuyên nghiệp hoặc tái phạm nguy hiểm.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 15/1999/QH10 Điều 157 ↔ 100/2015/QH13 Điều 195 khoản 2: GIỐNG (chứa 1.00)
 **Sàng lọc:** KHÔNG trả lời được từ gold; không đúng ý đồ nhóm; câu hỏi mơ hồ; gold đáng ngờ — Gold chỉ gồm 3 nhãn tình tiết a–c, tách khỏi câu dẫn khoản 2 (tên tội, khung hình phạt). Gold không định nghĩa 'tội phạm có tổ chức...', các tình tiết này lại lặp ở rất nhiều điều. Đáp án nháp là bịa. Gold còn thuộc Bộ luật Hình sự 1999, trùng với bộ luật năm 2015.
 
 **Gold: 15/1999/QH10 Điều 157 khoản 2**
@@ -669,6 +678,7 @@ Câu hỏi: Khi vận chuyển quân sự bằng tàu buôn thì có áp dụng 
 
 *Đáp án nháp của mô hình:* Không áp dụng quy định về vận chuyển hàng hóa, hành khách và hành lý khi vận chuyển quân sự bằng tàu buôn.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 42-LCT/HĐNN8 Điều 3 ↔ 95/2015/QH13 Điều 189: KHÁC NHIỀU hoặc không còn (chứa 0.25)
 **Sàng lọc:** lộ đáp án / nhắc văn bản — Câu hỏi có/không chép gần nguyên văn gold, đáp án gần như lộ ngay trong câu hỏi. · Gợi ý câu hỏi: Loại hình vận chuyển nào bằng tàu buôn không chịu sự điều chỉnh của các quy định về vận chuyển hàng hóa, hành khách và hành lý?
 
 **Gold: 42-LCT/HĐNN8 Điều 3**
@@ -783,6 +793,7 @@ Câu hỏi: Nếu một cuộc đình công là bất hợp pháp và gây thi�
 
 *Đáp án nháp của mô hình:* Tổ chức công đoàn lãnh đạo cuộc đình công phải bồi thường thiệt hại cho người sử dụng lao động.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 10/2012/QH13 Điều 233 ↔ 45/2019/QH14 Điều 217 khoản 2: KHÁC ÍT (chứa 0.89)
 **Sàng lọc:** không thấy vấn đề
 
 **Gold: 10/2012/QH13 Điều 233 khoản 1**
@@ -854,6 +865,7 @@ Câu hỏi: Người nộp thuế có thể tra cứu thông tin giao dịch đi
 
 *Đáp án nháp của mô hình:* Người nộp thuế có thể tra cứu thông tin giao dịch điện tử trước đó trên Cổng thông tin điện tử của Tổng cục Thuế, Cổng thông tin điện tử của cơ quan nhà nước có thẩm quyền, hoặc tổ chức cung cấp dịch vụ T-VAN bằng cách sử dụng tài khoản hoặc mã giao dịch thuế điện tử đã được cấp.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 19/2021/TT-BTC Điều 12 ↔ 21/VBHN-BTC Điều 12 khoản 2: GIỐNG (chứa 1.00)
 **Sàng lọc:** không thấy vấn đề
 
 **Gold: 19/2021/TT-BTC Điều 12 khoản 2**
@@ -1254,11 +1266,12 @@ Câu hỏi: Có quy định về việc bổ sung xe ô tô cho các tỉnh, th�
 ---
 ## q056 · xuyen_khoan · ngoai_le
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Một nhóm người muốn truyền lại kỹ năng làm nghề truyền thống như dệt lụa cho thế hệ sau, nhưng họ cũng cần sửa chữa một phần kiến trúc cổ để bảo vệ di tích lịch sử, thì việc này có được thực hiện không?
 
 *Đáp án nháp của mô hình:* Việc truyền lại kỹ năng làm nghề truyền thống như dệt lụa được coi là trao truyền di sản văn hóa phi vật thể, phù hợp với quy tắc bảo vệ và phát triển bản sắc văn hóa. Tuy nhiên, nếu cần sửa chữa phần kiến trúc cổ để ngăn chặn di tích khỏi sập đổ, thì chỉ được thực hiện trong phạm vi chống đỡ, gia cố tạm thời, không được tháo rời toàn bộ cấu kiện, và vẫn phải đảm bảo việc bảo tồn di sản văn hóa được thực hiện đúng cách.
 
+**⚠ Kiểm tra tự động:** hai gold không phải quan hệ quy tắc–ngoại lệ (Đoạn B không nêu ra bất kỳ ngoại lệ, giới hạn hay trường hợp loại trừ nào đối với quy định ở đoạn A; hai đoạn là độc lập, không có mối quan hệ biện chứng hay ngoại lệ giữa chúng.)
 **Sàng lọc:** KHÔNG trả lời được từ gold; không đúng ý đồ nhóm; câu hỏi mơ hồ — Hai gold là hai định nghĩa không liên quan nhau (di sản phi vật thể, tu sửa cấp thiết di tích), không phải quy tắc–ngoại lệ; câu hỏi gộp hai ý rời và hỏi 'có được thực hiện không' trong khi gold không quy định điều này. · Gợi ý câu hỏi: Khi cần gia cố tạm thời để ngăn một di tích lịch sử - văn hóa khỏi bị sập đổ thì có được tháo rời toàn bộ cấu kiện kiến trúc của di tích không?
 
 **Gold: 45/2024/QH15 Điều 3 khoản 1 — QUY TẮC**
@@ -1298,11 +1311,12 @@ Câu hỏi: Nếu một bị can bị tạm giam, có thể được thay thế 
 ---
 ## q058 · xuyen_khoan · ngoai_le
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Nếu một người gây cháy tại một khu dân cư và có nguy cơ làm chết hoặc gây thương tích cho người khác, nhưng chưa xảy ra thiệt hại thực tế, thì có bị xử lý theo quy định về phòng cháy, chữa cháy không?
 
 *Đáp án nháp của mô hình:* Có thể bị xử lý theo quy định ngoại lệ nếu có nguy cơ gây thiệt hại cho tính mạng, sức khỏe hoặc tài sản của người khác mà không được ngăn chặn kịp thời, với mức phạt từ cảnh cáo đến tù từ 3 tháng đến 1 năm. Tuy nhiên, nếu đã xảy ra thiệt hại về người hoặc tài sản theo quy định thì sẽ bị xử lý nghiêm theo quy tắc, với mức phạt tù từ 2 năm đến 5 năm hoặc cải tạo không giam giữ đến 3 năm.
 
+**⚠ Kiểm tra tự động:** hai gold không phải quan hệ quy tắc–ngoại lệ (Đoạn B nêu trường hợp có khả năng gây thiệt hại nhưng không được ngăn chặn kịp thời thì bị phạt nhẹ hơn, tức là là một ngoại lệ so với đoạn A, do đó có thể coi là trường hợp loại trừ hoặc giới hạn áp dụng quy định ở đoạn A.)
 **Sàng lọc:** câu hỏi mơ hồ — Các cụm 'gây cháy' và 'xử lý theo quy định về phòng cháy, chữa cháy' dễ bị hiểu sang xử phạt hành chính, nên nói rõ là trách nhiệm hình sự. · Gợi ý câu hỏi: Người vi phạm quy định về phòng cháy, chữa cháy tuy chưa gây thiệt hại về người hay tài sản nhưng có khả năng thực tế gây thiệt hại nếu không được ngăn chặn kịp thời thì có bị truy cứu trách nhiệm hình sự không và hình phạt ra sao?
 
 **Gold: 100/2015/QH13 Điều 313 khoản 1 — QUY TẮC**
@@ -1387,7 +1401,7 @@ Câu hỏi: Nếu một cá nhân đang tham gia tố tụng thì chết, nhưng
 ---
 ## q062 · xuyen_khoan · ngoai_le
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Có thể huy động tổ chức hoặc cá nhân để tham gia bảo vệ an ninh mạng không, nếu tổ chức đó không phải là lực lượng chuyên trách hay có tổ chức độc lập trong bộ máy nhà nước?
 
 *Đáp án nháp của mô hình:* Có thể huy động tổ chức hoặc cá nhân tham gia bảo vệ an ninh mạng nếu họ có năng lực, kinh nghiệm và điều kiện phù hợp, nhưng lực lượng này không phải là lực lượng chuyên trách, thường trực hay có tổ chức độc lập trong bộ máy nhà nước, cũng không phát sinh biên chế, chức danh hay thẩm quyền công vụ.
@@ -1407,11 +1421,12 @@ Câu hỏi: Có thể huy động tổ chức hoặc cá nhân để tham gia b�
 ---
 ## q063 · xuyen_khoan · ngoai_le
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Có được phép không cập nhật dữ liệu hàng không một cách nhanh chóng và không chính xác nếu tình huống đó thuộc trường hợp ngoại lệ?
 
 *Đáp án nháp của mô hình:* Có thể cập nhật dữ liệu hàng không nhanh chóng trong trường hợp ngoại lệ, nhưng vẫn phải đảm bảo dữ liệu chính xác, đầy đủ, kịp thời và có thể kiểm chứng, phù hợp với mục đích sử dụng, đồng thời vẫn phải tuân thủ yêu cầu quản lý nhà nước về an toàn và hiệu quả hoạt động bay.
 
+**⚠ Kiểm tra tự động:** hai gold không phải quan hệ quy tắc–ngoại lệ (Đoạn B không nêu ra bất kỳ ngoại lệ, giới hạn hoặc trường hợp loại trừ nào đối với quy định ở đoạn A; hai đoạn là song song, bổ sung nhau về yêu cầu đối với dữ liệu hàng không, chứ không phải một quy định là ngoại lệ của kia.)
 **Sàng lọc:** chỉ trả lời được một phần từ gold; không đúng ý đồ nhóm; câu hỏi mơ hồ — Gold là hai yêu cầu chung, không có ngoại lệ nào; câu hỏi nhắc tới một 'trường hợp ngoại lệ' không tồn tại và diễn đạt phủ định rối. · Gợi ý câu hỏi: Dữ liệu và tin tức hàng không phải được quản lý theo nguyên tắc nào và phải đáp ứng những yêu cầu chất lượng gì?
 
 **Gold: 222/2026/NĐ-CP Điều 111 khoản 1 — QUY TẮC**
@@ -1427,11 +1442,12 @@ Câu hỏi: Có được phép không cập nhật dữ liệu hàng không mộ
 ---
 ## q064 · xuyen_khoan · ngoai_le
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Nếu một người lái xe vi phạm quy định an toàn giao thông và có khả năng gây thiệt hại cho người khác nhưng chưa xảy ra tai nạn, thì có bị xử phạt không?
 
 *Đáp án nháp của mô hình:* Có, người đó có thể bị phạt tiền từ 10.000.000 đồng đến 50.000.000 đồng, hoặc phạt cải tạo không giam giữ đến 01 năm, hoặc phạt tù từ 03 tháng đến 01 năm, nếu hành vi của họ có khả năng thực tế gây thiệt hại cho tính mạng, sức khỏe hoặc tài sản của người khác mà không được ngăn chặn kịp thời. Tuy nhiên, nếu hành vi đó đã dẫn đến làm chết người hoặc gây thương tích nặng, hoặc gây thiệt hại về tài sản từ 100.000.000 đồng đến dưới 500.000.000 đồng, thì mức phạt sẽ nặng hơn, từ 30.000.000 đồng đến 100.000.000 đồng, hoặc phạt tù từ 01 năm đến 05 năm.
 
+**⚠ Kiểm tra tự động:** hai gold không phải quan hệ quy tắc–ngoại lệ (Đoạn B không nêu ra bất kỳ ngoại lệ, giới hạn hay trường hợp loại trừ nào cho quy định ở đoạn A; hai đoạn là song song, độc lập với nhau, không có mối quan hệ nào là ngoại lệ của bên kia.)
 **Sàng lọc:** câu hỏi mơ hồ — Cụm 'có bị xử phạt không' dễ lẫn với xử phạt hành chính; nên nói rõ là trách nhiệm hình sự và hỏi mức hình phạt. · Gợi ý câu hỏi: Người tham gia giao thông đường bộ vi phạm quy định an toàn giao thông, chưa gây tai nạn nhưng có khả năng thực tế gây thiệt hại nếu không được ngăn chặn kịp thời thì có bị truy cứu trách nhiệm hình sự không, hình phạt thế nào?
 
 **Gold: 100/2015/QH13 Điều 260 khoản 1 — QUY TẮC**
@@ -1451,11 +1467,12 @@ Câu hỏi: Nếu một người lái xe vi phạm quy định an toàn giao th�
 ---
 ## q065 · xuyen_khoan · ngoai_le
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Nếu một doanh nghiệp bán hàng hóa và gặp sự cố không thể sử dụng hóa đơn điện tử có mã của cơ quan thuế do lỗi kỹ thuật, thì doanh nghiệp đó có thể sử dụng hóa đơn điện tử có mã của cơ quan thuế trong thời gian xử lý sự cố không?
 
 *Đáp án nháp của mô hình:* Doanh nghiệp có thể đến cơ quan thuế để sử dụng hóa đơn điện tử có mã của cơ quan thuế trong thời gian xử lý sự cố. Tuy nhiên, nếu sự cố xảy ra do các tình huống bất khả kháng như chiến tranh, bạo loạn, đình công hoặc rủi ro không do lỗi chủ quan của doanh nghiệp, thì doanh nghiệp được phép tạm ngừng gửi hóa đơn điện tử và phải ghi chép sổ sách, lưu giữ tài liệu chứng minh tình hình đó trong vòng 03 ngày làm việc kể từ ngày sự cố được khắc phục.
 
+**⚠ Kiểm tra tự động:** hai gold không phải quan hệ quy tắc–ngoại lệ (Đoạn B nêu rõ trường hợp bất khả kháng khiến không thể lập, cấp mã hoặc truyền dữ liệu hóa đơn điện tử, trong đó người bán được phép thực hiện việc lập và gửi hóa đơn điện tử sau 03 ngày làm việc kể từ ngày sự cố được khắc phục, điều này là một ngoại lệ đối với quy trình trong đoạn A, tức là khi có sự cố do yếu tố bất khả kháng, người bán không cần phải liên hệ cơ quan thuế ngay lập tức hay phải sử dụng hóa đơn điện tử có mã của cơ quan thuế trong thời gian xử lý sự cố như quy định tại đoạn A.)
 **Sàng lọc:** không đúng ý đồ nhóm; lộ đáp án / nhắc văn bản — Câu hỏi chép gần nguyên văn khoản 1 và chỉ cần khoản 1, không dùng khoản 5 (bất khả kháng); đáp án nháp đọc sai khoản 5. · Gợi ý câu hỏi: Người bán đang dùng hóa đơn điện tử có mã của cơ quan thuế nhưng phải ngừng kinh doanh do đình công nên không lập, truyền được hóa đơn đúng hạn thì xử lý thế nào, và khác gì so với khi chỉ gặp sự cố kỹ thuật?
 
 **Gold: 254/2026/NĐ-CP Điều 14 khoản 1 — QUY TẮC**
@@ -1473,7 +1490,7 @@ Câu hỏi: Nếu một doanh nghiệp bán hàng hóa và gặp sự cố khôn
 ---
 ## q066 · xuyen_khoan · ngoai_le
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Chánh Văn phòng Trung ương Đảng có được quyết định sử dụng xe ô tô cho các cơ quan thuộc đơn vị trực thuộc mình không, nếu đó là các tổ chức chính trị - xã hội ở trung ương như Liên đoàn Lao động không?
 
 *Đáp án nháp của mô hình:* Chánh Văn phòng Trung ương Đảng có quyền quyết định sử dụng xe ô tô cho các cơ quan thuộc đơn vị trực thuộc, nhưng đối với các tổ chức chính trị - xã hội ở trung ương, việc quyết định thuộc về Ban Thường trực Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam, trừ trường hợp Tổng Liên đoàn Lao động Việt Nam.
@@ -1495,11 +1512,12 @@ Câu hỏi: Chánh Văn phòng Trung ương Đảng có được quyết định
 ---
 ## q067 · xuyen_khoan · ngoai_le
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Công ty muốn thay đổi ngành nghề kinh doanh, thì cần bao nhiêu cổ đông đồng ý, và có trường hợp nào ngoại lệ không?
 
 *Đáp án nháp của mô hình:* Cần ít nhất 65% cổ đông đại diện tại cuộc họp đồng ý, trừ các trường hợp được quy định trong Điều lệ công ty; tuy nhiên, nếu nội dung thay đổi ngành nghề thuộc các trường hợp được ngoại lệ, thì chỉ cần hơn 50% cổ đông đồng ý.
 
+**⚠ Kiểm tra tự động:** hai gold không phải quan hệ quy tắc–ngoại lệ (Đoạn B chỉ nêu điều kiện thông qua nghị quyết với tỷ lệ cổ đông sở hữu trên 50%, trong khi đoạn A yêu cầu 65% phiếu biểu quyết, nên đoạn B không phải là ngoại lệ hay giới hạn áp dụng cho đoạn A, mà là một quy định song song, không liên quan đến việc loại trừ hoặc áp dụng điều kiện của đoạn A.)
 **Sàng lọc:** chỉ trả lời được một phần từ gold; không đúng ý đồ nhóm; câu hỏi mơ hồ — Thiếu 'cổ phần' sau 'công ty'; tỷ lệ 65% chỉ cần khoản 1, còn các ngoại lệ thật (khoản 3, 4, 6) không có trong gold; vai bị đảo (khoản 2 mới là quy tắc chung); đáp án nháp sai. · Gợi ý câu hỏi: Tại cuộc họp Đại hội đồng cổ đông của công ty cổ phần, nghị quyết thay đổi ngành, nghề kinh doanh cần tỷ lệ tán thành bao nhiêu, và khác gì so với tỷ lệ thông qua các nghị quyết thông thường?
 
 **Gold: 59/2020/QH14 Điều 148 khoản 1 — QUY TẮC**
@@ -1595,11 +1613,12 @@ Câu hỏi: Chủ tịch Hội đồng quản trị của một tổ chức tín
 ---
 ## q071 · xuyen_khoan · ngoai_le
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Một công ty có được phép tham gia hoạt động bao thanh toán nếu công ty đó là công ty liên kết của một tổ chức tín dụng không?
 
 *Đáp án nháp của mô hình:* Công ty có thể tham gia hoạt động bao thanh toán nếu không phải là công ty con của tổ chức tín dụng và không vượt quá tỷ lệ sở hữu 11% vốn điều lệ hoặc cổ phần có quyền biểu quyết. Tuy nhiên, nếu công ty đó là công ty liên kết với tổ chức tín dụng và sở hữu trên 11% vốn hoặc cổ phần biểu quyết, thì không được tham gia hoạt động bao thanh toán theo quy định.
 
+**⚠ Kiểm tra tự động:** hai gold không phải quan hệ quy tắc–ngoại lệ (Đoạn B không nêu ra bất kỳ ngoại lệ, giới hạn hay trường hợp loại trừ nào đối với quy định ở đoạn A; hai đoạn này là độc lập, không liên quan đến nhau về nội dung quy tắc hoặc ngoại lệ.)
 **Sàng lọc:** KHÔNG trả lời được từ gold; không đúng ý đồ nhóm — Hai gold chỉ là định nghĩa (bao thanh toán, công ty liên kết), không quy định công ty nào được hoạt động bao thanh toán nên không trả lời được; đáp án nháp bịa. · Gợi ý câu hỏi: Một công ty mà tổ chức tín dụng nắm 15% vốn điều lệ nhưng không phải là công ty con thì có quan hệ gì với tổ chức tín dụng đó theo luật?
 
 **Gold: 32/2024/QH15 Điều 4 khoản 1 — QUY TẮC**
@@ -1615,7 +1634,7 @@ Câu hỏi: Một công ty có được phép tham gia hoạt động bao thanh 
 ---
 ## q072 · xuyen_khoan · ngoai_le
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Nếu xảy ra tai nạn giao thông và có người bị nạn, người có mặt tại hiện trường có được sử dụng phương tiện của mình để đưa nạn nhân đi cấp cứu không, nếu không có phương tiện nào khác?
 
 *Đáp án nháp của mô hình:* Có được sử dụng phương tiện để đưa nạn nhân đi cấp cứu nếu không có phương tiện nào khác, nhưng phải xác định rõ vị trí phương tiện và nạn nhân tại hiện trường, không được làm thay đổi hoặc mất dấu vết liên quan đến vụ tai nạn, và nếu có người chết phải giữ nguyên hiện trường và che đậy thi thể.
@@ -1641,11 +1660,12 @@ Câu hỏi: Nếu xảy ra tai nạn giao thông và có người bị nạn, ng
 ---
 ## q073 · xuyen_khoan · ngoai_le
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Một người có thể dùng bút danh để ký tên trong hợp đồng hay không, nếu việc đó làm ảnh hưởng đến quyền lợi của người khác?
 
 *Đáp án nháp của mô hình:* Có thể dùng bút danh trong hợp đồng nếu việc đó không gây thiệt hại đến quyền lợi hợp pháp của người khác, nhưng nếu gây thiệt hại thì không được phép.
 
+**⚠ Kiểm tra tự động:** hai gold không phải quan hệ quy tắc–ngoại lệ (Đoạn B không phải là ngoại lệ, giới hạn hoặc trường hợp loại trừ đối với quy định ở đoạn A; hai đoạn này là độc lập, không mâu thuẫn nhau về nội dung pháp lý, vì đoạn A nói về quyền có họ, tên theo khai sinh, còn đoạn B nói về việc sử dụng bí danh, bút danh không gây thiệt hại đến quyền lợi hợp pháp của người khác. Không có sự liên hệ hay loại trừ trực tiếp giữa hai quy định.)
 **Sàng lọc:** chỉ trả lời được một phần từ gold; không đúng ý đồ nhóm — Chỉ cần khoản 3 là trả lời được; khoản 1 không phải quy tắc mà khoản 3 loại trừ, và gold không nói gì về việc ký hợp đồng. · Gợi ý câu hỏi: Họ, tên của một cá nhân được xác định theo căn cứ nào, và cá nhân đó có được tùy ý dùng bút danh thay cho họ tên ấy không?
 
 **Gold: 33/2005/QH11 Điều 26 khoản 1 — QUY TẮC**
@@ -1721,7 +1741,7 @@ Câu hỏi: Một thẩm phán có được tham gia xét xử lại cùng một
 ---
 ## q077 · xuyen_khoan · ngoai_le
 
-Trạng thái: DỰ PHÒNG
+Trạng thái: GIỮ
 Câu hỏi: Nếu một doanh nghiệp chậm trả tiền cho một công ty cung cấp dịch vụ, thì công ty đó có được gia hạn thời gian trả tiền không, và nếu không trả kịp thời, có phải trả lãi không?
 
 *Đáp án nháp của mô hình:* Có, doanh nghiệp có thể được gia hạn thời gian trả tiền theo yêu cầu của bên có quyền. Nếu sau thời hạn gia hạn vẫn không trả, doanh nghiệp phải thực hiện nghĩa vụ và bồi thường thiệt hại. Ngoài ra, do trường hợp chậm trả tiền, doanh nghiệp phải trả lãi theo lãi suất cơ bản do Ngân hàng Nhà nước công bố tại thời điểm thanh toán, trừ khi có thỏa thuận khác hoặc pháp luật có quy định khác.
@@ -1741,7 +1761,7 @@ Câu hỏi: Nếu một doanh nghiệp chậm trả tiền cho một công ty cu
 ---
 ## q078 · xuyen_khoan · ngoai_le
 
-Trạng thái: DỰ PHÒNG
+Trạng thái: GIỮ
 Câu hỏi: Một người không có quyền ủy quyền thực hiện một công việc cho doanh nghiệp, họ có phải báo cáo cho người giao việc về kết quả nếu doanh nghiệp yêu cầu không?
 
 *Đáp án nháp của mô hình:* Có, người đó có nghĩa vụ thực hiện công việc phù hợp với khả năng của mình và phải báo cáo cho người có công việc nếu bị yêu cầu, trừ trường hợp người có công việc đã biết hoặc người thực hiện không biết nơi cư trú của người đó.
@@ -1761,7 +1781,7 @@ Câu hỏi: Một người không có quyền ủy quyền thực hiện một c
 ---
 ## q079 · xuyen_khoan · ngoai_le
 
-Trạng thái: DỰ PHÒNG
+Trạng thái: GIỮ
 Câu hỏi: Một người đang làm chứng trong một vụ án có được bào chữa cho người bị buộc tội không?
 
 *Đáp án nháp của mô hình:* Không, người đang làm chứng trong vụ án không được bào chữa vì đây là trường hợp ngoại lệ theo quy định, dù họ có thể được bào chữa trong các trường hợp khác, nhưng khi tham gia vụ án với tư cách là người làm chứng thì không được.
@@ -1887,11 +1907,12 @@ b) Bên giao thầu phải thanh toán đủ giá trị và đúng thời hạn 
 ---
 ## q229 · xuyen_khoan · ngoai_le · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Khi thực hiện thanh toán bằng ngoại tệ trong quá trình thi hành án dân sự, có được sử dụng tỷ giá hạch toán để tính toán thu chi và làm căn cứ bán đấu giá không?
 
 *Đáp án nháp của mô hình:* Có thể ghi sổ theo nguyên tệ và quy đổi ra đồng Việt Nam theo tỷ giá hạch toán thực tế tại ngày ghi sổ, nhưng tỷ giá hạch toán không được dùng làm căn cứ bán đấu giá, thu phí hoặc thanh toán bằng tiền thay thế như ngoại tệ, vàng, bạc, đồ cổ, kim khí quý, đá quý.
 
+**⚠ Kiểm tra tự động:** hai gold không phải quan hệ quy tắc–ngoại lệ (Đoạn B nêu rõ giá hạch toán không được sử dụng cho các mục đích khác, tức là giới hạn việc sử dụng giá hạch toán như trong đoạn A, do đó đây là một ngoại lệ hoặc giới hạn đối với việc áp dụng quy tắc ở đoạn A, nên không phải là quy định song song hoặc độc lập.)
 **Sàng lọc:** không thấy vấn đề — Đoạn ngoại lệ nói 'giá hạch toán' còn câu hỏi nói 'tỷ giá hạch toán'; cần kiểm tra hai cụm này có cùng nghĩa không.
 
 **Gold: 107/2026/TT-BTC Điều 4 khoản 1 — QUY TẮC**
@@ -1907,11 +1928,12 @@ Câu hỏi: Khi thực hiện thanh toán bằng ngoại tệ trong quá trình 
 ---
 ## q230 · xuyen_khoan · ngoai_le · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Công ty có thể miễn nhiệm thành viên Hội đồng thành viên trong một nhiệm kỳ dài hơn 5 năm không, nếu có quy định trong Điều lệ công ty?
 
 *Đáp án nháp của mô hình:* Không, thành viên Hội đồng thành viên chỉ được bổ nhiệm hoặc miễn nhiệm với nhiệm kỳ không quá 5 năm, trừ khi Điều lệ công ty có quy định khác.
 
+**⚠ Kiểm tra tự động:** hai gold không phải quan hệ quy tắc–ngoại lệ (Đoạn B không nêu rõ ngoại lệ, giới hạn hoặc trường hợp loại trừ áp dụng cho quy định ở đoạn A, nên không thể kết luận rằng việc áp dụng đúng quy định đoạn A đòi hỏi phải biết đoạn B.)
 **Sàng lọc:** chỉ trả lời được một phần từ gold; không đúng ý đồ nhóm; câu hỏi mơ hồ; gold đáng ngờ — Đoạn ngoại lệ (Điều lệ quy định khác về thời điểm nghị quyết có hiệu lực) không liên quan đến quy tắc nhiệm kỳ 05 năm, nên câu hỏi vô lý và đáp án nháp áp ngoại lệ sai chỗ; cũng không nói rõ loại công ty có chủ sở hữu bổ nhiệm thành viên Hội đồng thành viên. · Gợi ý câu hỏi: Trong công ty mà thành viên Hội đồng thành viên do chủ sở hữu bổ nhiệm, nhiệm kỳ tối đa của thành viên là bao lâu, và Điều lệ công ty có thể quy định khác về thời điểm nghị quyết của Hội đồng thành viên có hiệu lực không?
 
 **Gold: 59/2020/QH14 Điều 80 khoản 1 — QUY TẮC**
@@ -1927,11 +1949,12 @@ Câu hỏi: Công ty có thể miễn nhiệm thành viên Hội đồng thành 
 ---
 ## q231 · xuyen_khoan · ngoai_le · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Một trường chuyên biệt muốn chuyển địa điểm hoạt động có được không, nếu cơ quan có thẩm quyền đã có thông tin về cơ sở vật chất trong cơ sở dữ liệu quốc gia?
 
 *Đáp án nháp của mô hình:* Có được, nhưng chỉ được chuyển địa điểm nếu đáp ứng điều kiện về cơ sở vật chất theo quy định; nếu cơ quan có thẩm quyền có thể khai thác thông tin về cơ sở vật chất từ cơ sở dữ liệu quốc gia thì không cần nộp bản sao hồ sơ.
 
+**⚠ Kiểm tra tự động:** hai gold không phải quan hệ quy tắc–ngoại lệ (Đoạn B không đề cập đến điều kiện hoặc ngoại lệ nào liên quan đến việc thay đổi địa điểm hoạt động giáo dục như trong đoạn A, nên không có mối liên hệ hay giới hạn nào giữa hai đoạn về việc áp dụng quy tắc ở đoạn A)
 **Sàng lọc:** không thấy vấn đề — Câu hỏi 'có được không' lẫn lộn hai việc: dữ liệu quốc gia chỉ miễn nộp bản sao hồ sơ, không miễn điều kiện cơ sở vật chất. · Gợi ý câu hỏi: Khi trường chuyên biệt xin thay đổi địa điểm hoạt động giáo dục mà thông tin cơ sở vật chất đã có sẵn trong cơ sở dữ liệu quốc gia, trường có còn phải đáp ứng điều kiện về cơ sở vật chất và nộp bản sao giấy tờ không?
 
 **Gold: 360/2026/NĐ-CP Điều 6 khoản 1 điểm a — QUY TẮC**
@@ -1972,6 +1995,7 @@ Câu hỏi: Một đơn vị đề xuất hỗ trợ chi phí xây dựng chính
 
 *Đáp án nháp của mô hình:* Đơn vị phải nộp văn bản, tài liệu quy định rõ khối lượng dự kiến, đơn giá, chi phí thực tế thị trường và căn cứ lập dự toán, đồng thời thực hiện đầy đủ các bước theo quy định về hỗ trợ, tài trợ trong trường hợp không áp dụng phương thức khoán chi.
 
+**⚠ Kiểm tra tự động:** hai gold không phải quan hệ quy tắc–ngoại lệ (Đoạn B không nêu rõ ngoại lệ, giới hạn hoặc trường hợp loại trừ nào đối với đoạn A, nên không thể coi là ngoại lệ của đoạn A.)
 **Sàng lọc:** không đúng ý đồ nhóm — Chỉ cần đoạn ngoại lệ về yêu cầu dự toán là trả lời được; đoạn quy tắc (đề xuất bổ sung kinh phí phải nộp tài liệu) không được dùng. · Gợi ý câu hỏi: Khi đề xuất Quỹ bổ sung kinh phí cho một nội dung chi không áp dụng phương thức khoán chi, chủ thể đề xuất phải nộp gì và dự toán phải thể hiện những thông tin nào?
 
 **Gold: 10/2026/TT-BTP Điều 12 khoản 1 — QUY TẮC**
@@ -1987,7 +2011,7 @@ Câu hỏi: Một đơn vị đề xuất hỗ trợ chi phí xây dựng chính
 ---
 ## q258 · xuyen_khoan · ngoai_le · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Trong trường hợp cần tạm giam để phục hồi điều tra, thì việc trả hồ sơ để điều tra bổ sung có được thực hiện nhiều lần không?
 
 *Đáp án nháp của mô hình:* Không, thẩm phán chủ tọa và Hội đồng xét xử chỉ được trả hồ sơ để điều tra bổ sung một lần theo quy định chung. Tuy nhiên, nếu có căn cứ cần tạm giam để phục hồi điều tra, thì thời hạn tạm giam không được vượt quá thời hạn quy định, và việc trả hồ sơ để điều tra bổ sung vẫn chỉ được thực hiện một lần, nhưng trong trường hợp này, thời hạn tạm giam sẽ được tính theo quy định riêng về phục hồi điều tra.
@@ -2011,11 +2035,13 @@ Thời hạn tạm giam và gia hạn tạm giam trong trường hợp vụ án 
 ---
 ## q089 · dan_chieu · dan_chieu
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Nếu một người vô ý làm lộ bí mật công tác hoặc làm mất tài liệu bí mật công tác và gây hậu quả nghiêm trọng, thì sẽ bị xử phạt như thế nào?
 
 *Đáp án nháp của mô hình:* Bị phạt cảnh cáo, cải tạo không giam giữ đến hai năm hoặc phạt tù từ ba tháng đến hai năm; nếu gây hậu quả rất nghiêm trọng hoặc đặc biệt nghiêm trọng thì mức phạt có thể cao hơn, nhưng cụ thể phải căn cứ vào quy định về tội làm lộ bí mật nhà nước hoặc làm mất tài liệu bí mật nhà nước.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 15/1999/QH10 Điều 287 ↔ 100/2015/QH13 Điều 362: KHÁC ÍT (chứa 0.61); 15/1999/QH10 Điều 264 ↔ 100/2015/QH13 Điều 338: KHÁC ÍT (chứa 0.64)
+**⚠ Kiểm tra tự động:** trả lời được chỉ bằng đoạn nguồn (Đoạn nguồn nêu rõ rằng người vô ý làm lộ bí mật công tác hoặc làm mất tài liệu bí mật công tác gây hậu quả nghiêm trọng, rất nghiêm trọng hoặc đặc biệt nghiêm trọng sẽ bị phạt cảnh cáo, cải tạo không giam giữ đến hai năm hoặc phạt tù từ ba tháng đến hai năm, nên trả lời đầy đủ và cụ thể theo nội dung đoạn nguồn.)
 **Sàng lọc:** không đúng ý đồ nhóm; lộ đáp án / nhắc văn bản — Câu hỏi về bí mật công tác trả lời trọn bằng đoạn nguồn, không cần đọc điều về bí mật nhà nước; câu hỏi chép gần nguyên văn đoạn nguồn. · Gợi ý câu hỏi: Một cán bộ vô ý làm mất tài liệu mật, gây hậu quả nghiêm trọng; mức hình phạt khác nhau thế nào tùy tài liệu đó là bí mật công tác hay bí mật nhà nước?
 
 **Gold: 15/1999/QH10 Điều 287 khoản 1 — NGUỒN**
@@ -2037,6 +2063,7 @@ Câu hỏi: Khi đình chỉ vụ án, cần ghi rõ những nội dung gì đ�
 
 *Đáp án nháp của mô hình:* Cần ghi rõ lý do và căn cứ đình chỉ vụ án, việc hủy bỏ biện pháp ngăn chặn hoặc cưỡng chế, xử lý vật chứng và tài liệu đã tạm giữ, cũng như các vấn đề liên quan khác. Nếu vụ án có nhiều bị can và lý do đình chỉ không liên quan đến tất cả, thì cần đình chỉ đối với từng bị can.
 
+**⚠ Kiểm tra tự động:** trả lời được chỉ bằng đoạn nguồn (Đoạn nguồn nêu rõ rằng quyết định đình chỉ vụ án phải ghi rõ lý do và căn cứ đình chỉ vụ án, việc hủy bỏ biện pháp ngăn chặn, biện pháp cưỡng chế, xử lý vật chứng, tài liệu, đồ vật đã tạm giữ (nếu có), các vấn đề khác có liên quan và các nội dung quy định tại khoản 2 Điều 132 Bộ luật. Do đó, nội dung cần ghi rõ được nêu cụ thể trong đoạn nguồn, không chỉ nhắc đến điều luật mà đã nêu rõ các nội dung cụ thể.)
 **Sàng lọc:** câu hỏi mơ hồ — Cần cả nguồn và đích nên đúng nhóm; nên nói rõ là vụ án hình sự vì tố tụng dân sự cũng có đình chỉ; đáp án nháp thiếu phần nội dung ở đoạn đích. · Gợi ý câu hỏi: Quyết định đình chỉ vụ án hình sự phải ghi rõ những nội dung gì?
 
 **Gold: 101/2015/QH13 Điều 248 khoản 2 — NGUỒN**
@@ -2060,6 +2087,7 @@ Câu hỏi: Nếu một hợp đồng lao động bị tuyên bố vô hiệu to
 *Đáp án nháp của mô hình:* Cơ quan quản lý nhà nước về lao động sẽ hướng dẫn các bên ký lại hợp đồng lao động, đồng thời quyền và nghĩa vụ của người lao động sẽ được giải quyết theo quy định của pháp luật.
 
 **Cờ tự động:** trùng từ cao (87%)
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 10/2012/QH13 Điều 52 ↔ 45/2019/QH14 Điều 51: KHÁC NHIỀU hoặc không còn (chứa 0.54); 10/2012/QH13 Điều 50 ↔ 45/2019/QH14 Điều 49 khoản 1: KHÁC NHIỀU hoặc không còn (chứa 0.44)
 **Sàng lọc:** không đúng ý đồ nhóm; lộ đáp án / nhắc văn bản — Câu hỏi đã nêu sẵn 'ký sai thẩm quyền' nên chỉ cần đoạn nguồn, không cần danh sách ở đoạn đích; câu chữ chép gần nguyên văn. · Gợi ý câu hỏi: Hợp đồng lao động do một người không có thẩm quyền đại diện bên sử dụng lao động ký thì có hiệu lực không, và được xử lý thế nào?
 
 **Gold: 10/2012/QH13 Điều 52 khoản 2 — NGUỒN**
@@ -2079,11 +2107,12 @@ Câu hỏi: Nếu một hợp đồng lao động bị tuyên bố vô hiệu to
 ---
 ## q092 · dan_chieu · dan_chieu
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Nếu một doanh nghiệp vi phạm pháp luật và bị xử phạt, thì điều kiện nào để bị đình chỉ hoạt động vĩnh viễn?
 
 *Đáp án nháp của mô hình:* Khi doanh nghiệp phạm tội gây thiệt hại hoặc có khả năng gây thiệt hại đến tính mạng của nhiều người, gây sự cố môi trường hoặc ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội và không có khả năng khắc phục hậu quả, thì sẽ bị đình chỉ hoạt động vĩnh viễn.
 
+**⚠ Kiểm tra tự động:** trả lời được chỉ bằng đoạn nguồn (Đoạn nguồn nêu rõ rằng pháp nhân thương mại phạm tội thuộc trường hợp quy định tại Điều 79 của Bộ luật này thì bị đình chỉ hoạt động vĩnh viễn, do đó điều kiện để bị đình chỉ hoạt động vĩnh viễn là phạm tội thuộc trường hợp quy định tại Điều 79 của Bộ luật.)
 **Sàng lọc:** không đúng ý đồ nhóm; câu hỏi mơ hồ — Câu hỏi chung chung (lẫn xử phạt hành chính với hình sự), chỉ cần đoạn đích và không xuất phát từ tội cụ thể ở đoạn nguồn (gold không nêu tên tội); đáp án nháp bỏ sót khoản 2 Điều 79. · Gợi ý câu hỏi: Ngoài phạt tiền, pháp nhân thương mại phạm [tên tội của đoạn nguồn] có thể bị đình chỉ hoạt động vĩnh viễn khi nào, và trường hợp nào thì bị đình chỉ toàn bộ hoạt động?
 
 **Gold: 100/2015/QH13 Điều 211 khoản 4 — NGUỒN**
@@ -2151,6 +2180,7 @@ Câu hỏi: Tại sao một nhóm lớp mầm non độc lập lại bị đình
 
 *Đáp án nháp của mô hình:* Vì nhóm lớp đó có hành vi gian lận trong hồ sơ, không đảm bảo các điều kiện thành lập, hoạt động tại địa điểm không được phép, chưa triển khai hoạt động trong 12 tháng kể từ ngày được thành lập, hoặc vi phạm pháp luật đến mức phải đình chỉ hoạt động.
 
+**⚠ Kiểm tra tự động:** trả lời được chỉ bằng đoạn nguồn (Đoạn nguồn nêu rõ các trường hợp cụ thể dẫn đến việc đình chỉ hoạt động của nhóm lớp mầm non độc lập, bao gồm gian lận hồ sơ, không bảo đảm điều kiện thành lập, hoạt động không đúng địa điểm, không triển khai hoạt động trong 12 tháng, hoặc vi phạm pháp luật đến mức phải đình chỉ. Do đó, câu hỏi được trả lời đầy đủ và cụ thể dựa trên đoạn nguồn.)
 **Sàng lọc:** không đúng ý đồ nhóm — Danh sách các trường hợp đình chỉ trả lời được chỉ bằng đoạn nguồn; đoạn đích chỉ cần khi hỏi cụ thể về điều kiện thành lập; nên đổi 'tại sao' thành 'khi nào'. · Gợi ý câu hỏi: Một nhóm lớp mầm non độc lập đang hoạt động nhưng không còn đủ giáo viên đáp ứng yêu cầu vị trí việc làm thì có thể bị đình chỉ hoạt động không?
 
 **Gold: 360/2026/NĐ-CP Điều 21 khoản 1 — NGUỒN**
@@ -2173,7 +2203,7 @@ Câu hỏi: Tại sao một nhóm lớp mầm non độc lập lại bị đình
 ---
 ## q096 · dan_chieu · dan_chieu
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Khi nhập khẩu máy móc, thiết bị, dây chuyền công nghệ đã qua sử dụng, doanh nghiệp cần đáp ứng những điều kiện nào để được phép thông quan?
 
 *Đáp án nháp của mô hình:* Doanh nghiệp phải nộp đầy đủ hồ sơ và tài liệu quy định, trong đó chứng thư giám định phải xác nhận dây chuyền công nghệ đáp ứng các tiêu chí về an toàn, tiết kiệm năng lượng, bảo vệ môi trường, công suất còn lại từ 85% trở lên, tiêu hao nguyên vật liệu và năng lượng không vượt quá 15% so với thiết kế, công nghệ không nằm trong danh mục hạn chế hoặc cấm chuyển giao, và công nghệ phải đang được sử dụng tại ít nhất 03 cơ sở sản xuất ở các nước thành viên OECD.
@@ -2222,7 +2252,7 @@ Câu hỏi: Ai là người có quyền nhận hàng theo quy định của Bộ
 ---
 ## q098 · dan_chieu · dan_chieu
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Nếu một người được ủy quyền quản lý tài sản, họ có thể trở thành chủ sở hữu tài sản đó không?
 
 *Đáp án nháp của mô hình:* Không, người được ủy quyền quản lý tài sản không thể trở thành chủ sở hữu đối với tài sản đó, dù họ quản lý nó, vì việc trở thành chủ sở hữu chỉ xảy ra theo quy định về thời hiệu, như được nêu trong đoạn về thời hạn chiếm hữu.
@@ -2240,12 +2270,14 @@ Câu hỏi: Nếu một người được ủy quyền quản lý tài sản, h�
 ---
 ## q099 · dan_chieu · dan_chieu
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Người bị kết án về tội ít nghiêm trọng và đã được hoãn chấp hành hình phạt có thể được miễn chấp hành hình phạt nếu trong thời gian hoãn có lập công không?
 
 *Đáp án nháp của mô hình:* Có, nếu trong thời gian được hoãn chấp hành hình phạt đã lập công, thì theo đề nghị của Viện trưởng Viện Kiểm sát, Toà án có thể quyết định miễn chấp hành hình phạt.
 
 **Cờ tự động:** trùng từ cao (97%)
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 15/1999/QH10 Điều 57 ↔ 100/2015/QH13 Điều 62: KHÁC NHIỀU hoặc không còn (chứa 0.49); 15/1999/QH10 Điều 61 ↔ 100/2015/QH13 Điều 67: KHÁC ÍT (chứa 0.87)
+**⚠ Kiểm tra tự động:** trả lời được chỉ bằng đoạn nguồn (Đoạn nguồn nêu rõ rằng người bị kết án về tội ít nghiêm trọng đã được hoãn chấp hành hình phạt thì nếu trong thời gian được hoãn đã lập công, Toà án có thể quyết định miễn chấp hành hình phạt theo đề nghị của Viện trưởng Viện Kiểm sát, nên câu hỏi được trả lời đầy đủ và cụ thể dựa trên đoạn nguồn.)
 **Sàng lọc:** không đúng ý đồ nhóm; lộ đáp án / nhắc văn bản — Câu hỏi chép gần nguyên văn đoạn nguồn và trả lời được mà không cần đọc điều về hoãn chấp hành hình phạt tù. · Gợi ý câu hỏi: Người bị phạt tù về tội ít nghiêm trọng được hoãn chấp hành vì nhu cầu công vụ, nếu trong thời gian hoãn lập công thì có thể được miễn chấp hành hình phạt không, và theo đề nghị của ai?
 
 **Gold: 15/1999/QH10 Điều 57 khoản 3 — NGUỒN**
@@ -2265,12 +2297,13 @@ Câu hỏi: Người bị kết án về tội ít nghiêm trọng và đã đư
 ---
 ## q100 · dan_chieu · dan_chieu
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Nếu chủ sở hữu tài sản không yêu cầu nhận lại hoặc thanh toán nợ trong thời gian nào thì người trục vớt phải giao nộp tài sản cho cơ quan nhà nước có thẩm quyền?
 
 *Đáp án nháp của mô hình:* Trong thời hạn 15 ngày kể từ ngày thông báo, nếu chủ sở hữu không yêu cầu nhận lại tài sản hay thanh toán nợ thì người trục vớt phải giao nộp tài sản cho cơ quan nhà nước có thẩm quyền, cụ thể là các bộ, ngành hoặc địa phương được quy định tại Điều 284 của Bộ luật Hàng hải.
 
 **Cờ tự động:** trùng từ cao (86%)
+**⚠ Kiểm tra tự động:** trả lời được chỉ bằng đoạn nguồn (Đoạn nguồn nêu rõ rằng trong thời hạn 15 ngày kể từ ngày thông báo, nếu chủ sở hữu tài sản không yêu cầu nhận lại hoặc không thanh toán nợ thì người trục vớt phải giao nộp tài sản cho cơ quan nhà nước có thẩm quyền, nên trả lời đầy đủ và cụ thể theo nội dung đoạn nguồn.)
 **Sàng lọc:** không đúng ý đồ nhóm; lộ đáp án / nhắc văn bản — Câu hỏi chép gần nguyên văn và chỉ hỏi thời hạn nên trả lời bằng đoạn nguồn, không cần đoạn đích về cơ quan có thẩm quyền; đoạn đích còn dính tiêu đề 'Chương XV TAI NẠN ĐÂM VA'. · Gợi ý câu hỏi: Người trục vớt được tài sản chìm đắm là di sản văn hóa nhưng chủ sở hữu không đến nhận lại thì sau bao lâu phải giao nộp, và giao cho cơ quan nào chủ trì xử lý?
 
 **Gold: 95/2015/QH13 Điều 282 khoản 3 — NGUỒN**
@@ -2314,11 +2347,12 @@ Câu hỏi: Thư viện Quốc gia và các thư viện cấp tỉnh có thể l
 ---
 ## q102 · dan_chieu · dan_chieu
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Nếu một bên gửi đơn kháng cáo sau thời hạn quy định, thì tòa án sẽ xử lý như thế nào?
 
 *Đáp án nháp của mô hình:* Tòa án cấp sơ thẩm sẽ nhận đơn kháng cáo quá hạn và gửi đơn đó, cùng bản tường trình lý do và tài liệu, chứng cứ nếu có, cho Tòa án cấp phúc thẩm để xem xét.
 
+**⚠ Kiểm tra tự động:** trả lời được chỉ bằng đoạn nguồn (Đoạn nguồn nêu rõ rằng nếu đơn kháng cáo quá thời hạn, Tòa án cấp sơ thẩm sẽ phải gửi đơn kháng cáo, bản tường trình của người kháng cáo về lý do kháng cáo quá hạn và tài liệu, chứng cứ, nếu có cho Tòa án cấp phúc thẩm, nên trả lời đầy đủ và cụ thể theo nội dung đoạn nguồn.)
 **Sàng lọc:** không đúng ý đồ nhóm; câu hỏi mơ hồ — Trả lời được ngay từ đoạn nguồn (tòa sơ thẩm gửi đơn lên tòa phúc thẩm), không cần đoạn đích về thời hạn kháng cáo; câu hỏi không nói rõ là tố tụng dân sự nên dễ lẫn với tố tụng hình sự, hành chính. · Gợi ý câu hỏi: Trong vụ án dân sự, đương sự vắng mặt tại phiên tòa sơ thẩm, đến ngày thứ 20 kể từ khi được giao bản án mới nộp đơn kháng cáo; đơn này bị coi là gì và Tòa án cấp sơ thẩm phải xử lý ra sao?
 
 **Gold: 24/2004/QH11 Điều 247 khoản 1 — NGUỒN**
@@ -2335,7 +2369,7 @@ Câu hỏi: Nếu một bên gửi đơn kháng cáo sau thời hạn quy địn
 ---
 ## q103 · dan_chieu · dan_chieu
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Công chức trong Tòa án được hưởng tiền lương và phụ cấp như thế nào?
 
 *Đáp án nháp của mô hình:* Công chức trong Tòa án được hưởng tiền lương và phụ cấp theo chế độ quy định tại pháp luật, trong đó Thẩm phán, Thẩm tra viên Tòa án, Thư ký Tòa án được ưu tiên về tiền lương và phụ cấp, cụ thể do Ủy ban Thường vụ Quốc hội quy định theo đề nghị của Chánh án Tòa án nhân dân tối cao.
@@ -2362,6 +2396,7 @@ Câu hỏi: Khi người sử dụng lao động thôi việc cho người lao �
 
 *Đáp án nháp của mô hình:* Phải trả trợ cấp mất việc làm, với mức là mỗi năm làm việc được 01 tháng tiền lương, nhưng ít nhất bằng 02 tháng tiền lương, và thời gian làm việc được tính theo quy định tại Điều 49.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 10/2012/QH13 Điều 45 ↔ 45/2019/QH14 Điều 42: KHÁC ÍT (chứa 0.67); 10/2012/QH13 Điều 49 ↔ 45/2019/QH14 Điều 47: KHÁC ÍT (chứa 0.74)
 **Sàng lọc:** câu hỏi mơ hồ — Không nêu trường hợp thôi việc (sáp nhập, hợp nhất, chia, tách doanh nghiệp) nên dễ lẫn với trợ cấp thôi việc; câu hỏi hỏi gộp hai ý. Đáp án nháp thiếu điều kiện đã làm việc từ 12 tháng trở lên. · Gợi ý câu hỏi: Khi doanh nghiệp sáp nhập, hợp nhất hoặc chia, tách mà người sử dụng lao động cho người lao động thôi việc, người lao động được hưởng khoản trợ cấp nào và mức trợ cấp được tính ra sao?
 
 **Gold: 10/2012/QH13 Điều 45 khoản 3 — NGUỒN**
@@ -2380,11 +2415,12 @@ Câu hỏi: Khi người sử dụng lao động thôi việc cho người lao �
 ---
 ## q105 · dan_chieu · dan_chieu
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Nếu một viên chức đã được xếp loại chất lượng nhưng sau này phát hiện có khuyết điểm hoặc không trung thực, thì có thể điều chỉnh lại xếp loại không?
 
 *Đáp án nháp của mô hình:* Có thể điều chỉnh lại xếp loại chất lượng bằng cách cấp có thẩm quyền ban hành quyết định xếp loại mới để thay thế quyết định trước đó.
 
+**⚠ Kiểm tra tự động:** trả lời được chỉ bằng đoạn nguồn (Đoạn nguồn nêu rõ rằng nếu phát hiện khuyết điểm hoặc không trung thực làm cho kết quả xếp loại không chính xác, thì cấp có thẩm quyền có thể ban hành quyết định xếp loại mới thay thế quyết định trước đó, tức là có thể điều chỉnh lại xếp loại.)
 **Sàng lọc:** không đúng ý đồ nhóm; lộ đáp án / nhắc văn bản — Trả lời trọn từ đoạn nguồn, không cần đoạn đích về thẩm quyền; câu hỏi chép gần nguyên văn đoạn nguồn. · Gợi ý câu hỏi: Một viên chức là cấp phó của người đứng đầu đơn vị sự nghiệp công lập đã được xếp loại chất lượng, sau đó bị phát hiện kê khai không trung thực khiến kết quả sai; ai có thẩm quyền xếp loại lại và quyết định cũ được xử lý thế nào?
 
 **Gold: 233/2026/NĐ-CP Điều 15 khoản 4 — NGUỒN**
@@ -2411,6 +2447,7 @@ Câu hỏi: Khi có kháng cáo hoặc kháng nghị đối với quyết địn
 
 *Đáp án nháp của mô hình:* Thời hạn là một tháng, kể từ ngày nhận được hồ sơ, và thời hạn này có thể được kéo dài thêm không quá hai tháng nếu cần yêu cầu giải thích theo quy định tại Điều 353.
 
+**⚠ Kiểm tra tự động:** trả lời được chỉ bằng đoạn nguồn (Đoạn nguồn nêu rõ thời hạn để Toà án nhân dân tối cao xem xét là một tháng, kể từ ngày nhận được hồ sơ, và trong trường hợp cần yêu cầu giải thích thì thời hạn được kéo dài nhưng không quá hai tháng.)
 **Sàng lọc:** không đúng ý đồ nhóm; câu hỏi mơ hồ — Thời hạn nằm trọn ở đoạn nguồn, không cần đoạn đích về yêu cầu giải thích. Câu hỏi thiếu ngữ cảnh là thủ tục công nhận bản án dân sự của Tòa án nước ngoài, nên cụm 'quyết định của Tòa án cấp tỉnh' quá chung. · Gợi ý câu hỏi: Khi xét kháng cáo, kháng nghị quyết định của Tòa án cấp tỉnh về công nhận và cho thi hành bản án dân sự của Tòa án nước ngoài, nếu cần yêu cầu bên nước ngoài giải thích điểm chưa rõ thì văn bản yêu cầu phải gửi qua cơ quan nào và thời hạn xét được kéo dài tối đa bao lâu?
 
 **Gold: 24/2004/QH11 Điều 359 khoản 1 — NGUỒN**
@@ -2434,6 +2471,7 @@ Câu hỏi: Khi nào thì cổ phần được coi là đã bán theo quy địn
 
 *Đáp án nháp của mô hình:* Cổ phần được coi là đã bán khi được thanh toán đủ và thông tin về người mua được ghi đầy đủ vào sổ đăng ký cổ đông.
 
+**⚠ Kiểm tra tự động:** trả lời được chỉ bằng đoạn nguồn (Đoạn nguồn nêu rõ rằng cổ phần được coi là đã bán khi được thanh toán đủ và thông tin về người mua được ghi đầy đủ vào sổ đăng ký cổ đông, kể từ thời điểm đó người mua trở thành cổ đông. Điều này trả lời cụ thể và đầy đủ câu hỏi về thời điểm cổ phần được coi là đã bán theo quy định của Luật doanh nghiệp.)
 **Sàng lọc:** không đúng ý đồ nhóm; lộ đáp án / nhắc văn bản — Câu hỏi nêu tên Luật doanh nghiệp. Câu trả lời cho 'khi nào' lấy được ngay từ đoạn nguồn, không buộc phải đọc danh mục thông tin trong sổ đăng ký cổ đông ở đoạn đích. · Gợi ý câu hỏi: Người mua đã thanh toán đủ tiền mua cổ phần; công ty phải ghi những thông tin nào của người mua vào sổ đăng ký cổ đông thì cổ phần mới được coi là đã bán?
 
 **Gold: 59/2020/QH14 Điều 124 khoản 4 — NGUỒN**
@@ -2489,7 +2527,7 @@ Câu hỏi: Khi nào thì cơ quan, tổ chức có thể thanh lý xe ô tô th
 ---
 ## q237 · dan_chieu · dan_chieu · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Khi phát hành hóa đơn điện tử, người kinh doanh cần đảm bảo nội dung nào để đảm bảo tính minh bạch và đúng với quy định pháp luật?
 
 *Đáp án nháp của mô hình:* Hóa đơn điện tử phải ghi đầy đủ nội dung theo quy định của pháp luật về thuế, kế toán và các yêu cầu về thông tin giao dịch như hợp đồng, lệnh vận chuyển, mã khách hàng, đảm bảo phản ánh trung thực nội dung nghiệp vụ kinh tế phát sinh.
@@ -2507,11 +2545,12 @@ Câu hỏi: Khi phát hành hóa đơn điện tử, người kinh doanh cần �
 ---
 ## q238 · dan_chieu · dan_chieu · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Khi nào thì tòa án phải ra quyết định áp dụng biện pháp khẩn cấp tạm thời trong vụ việc dân sự?
 
 *Đáp án nháp của mô hình:* Khi người yêu cầu không cần thực hiện biện pháp bảo đảm hoặc đã thực hiện biện pháp bảo đảm theo quy định, thì Thẩm phán phải ra quyết định áp dụng biện pháp khẩn cấp tạm thời trong vòng ba ngày kể từ ngày nhận đơn.
 
+**⚠ Kiểm tra tự động:** trả lời được chỉ bằng đoạn nguồn (Đoạn nguồn nêu rõ điều kiện cụ thể khi nào tòa án phải ra quyết định áp dụng biện pháp khẩn cấp tạm thời: trong thời hạn ba ngày kể từ ngày nhận đơn, nếu người yêu cầu không phải thực hiện biện pháp bảo đảm hoặc ngay sau khi thực hiện biện pháp bảo đảm theo quy định tại Điều 120 Bộ luật Dân sự thì Thẩm phán phải ra quyết định áp dụng biện pháp khẩn cấp tạm thời.)
 **Sàng lọc:** không đúng ý đồ nhóm — Đoạn nguồn đã tự trả lời (thời hạn 03 ngày, Thẩm phán ra quyết định ngay); đoạn đích về việc Tòa án gửi tiền bảo đảm vào ngân hàng không được câu hỏi dùng tới. · Gợi ý câu hỏi: Khi người yêu cầu áp dụng biện pháp khẩn cấp tạm thời phải nộp một khoản tiền bảo đảm, Thẩm phán phải ra quyết định áp dụng biện pháp khi nào và Tòa án phải xử lý khoản tiền bảo đảm đó ra sao?
 
 **Gold: 24/2004/QH11 Điều 117 khoản 2 — NGUỒN**
@@ -2544,11 +2583,12 @@ Câu hỏi: Khi nhập khẩu máy móc, thiết bị đã qua sử dụng, nế
 ---
 ## q240 · dan_chieu · dan_chieu · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Cơ quan thuế sẽ gửi kết quả giải đáp vướng mắc cho người nộp thuế bằng cách nào?
 
 *Đáp án nháp của mô hình:* Cơ quan thuế sẽ gửi kết quả giải đáp vướng mắc cho người nộp thuế thông qua tin nhắn trên số điện thoại di động đã đăng ký.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 19/2021/TT-BTC Điều 33 ↔ 21/VBHN-BTC Điều 33 khoản 3 điểm b: GIỐNG (chứa 1.00); 19/2021/TT-BTC Điều 5 ↔ 21/VBHN-BTC Điều 5 khoản 2 điểm a: GIỐNG (chứa 1.00)
 **Sàng lọc:** chỉ trả lời được một phần từ gold; câu hỏi mơ hồ — Thiếu bối cảnh giao dịch điện tử và đối tượng cá nhân đăng ký nhận qua điện thoại; gold chỉ nêu tin nhắn thông báo cho trường hợp này, không phải mọi cách gửi kết quả. · Gợi ý câu hỏi: Trong giao dịch thuế điện tử, khi người nộp thuế là cá nhân đã đăng ký nhận kết quả qua điện thoại di động, cơ quan thuế thông báo kết quả giải đáp vướng mắc cho họ bằng cách nào?
 
 **Gold: 19/2021/TT-BTC Điều 33 khoản 3 điểm b — NGUỒN**
@@ -2562,7 +2602,7 @@ Câu hỏi: Cơ quan thuế sẽ gửi kết quả giải đáp vướng mắc c
 ---
 ## q241 · dan_chieu · dan_chieu · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Khi cần tạm đình chỉ hoạt động của một pháp nhân, thì cần điều kiện gì để quyết định đó được thực hiện?
 
 *Đáp án nháp của mô hình:* Quyết định tạm đình chỉ hoạt động của pháp nhân phải được Viện kiểm sát cùng cấp phê chuẩn trước khi thi hành.
@@ -2580,7 +2620,7 @@ Câu hỏi: Khi cần tạm đình chỉ hoạt động của một pháp nhân,
 ---
 ## q243 · dan_chieu · dan_chieu · TRUNG LẬP
 
-Trạng thái: DỰ PHÒNG
+Trạng thái: GIỮ
 Câu hỏi: Nếu có hai hoặc nhiều người có kết quả tuyển dụng bằng nhau và thấp hơn người liền kề, thì ai sẽ quyết định người trúng tuyển?
 
 *Đáp án nháp của mô hình:* Người đứng đầu cơ quan, đơn vị có thẩm quyền tuyển dụng sẽ quyết định người trúng tuyển theo quy định về thứ tự ưu tiên, và nếu vẫn chưa xác định được thì sẽ quyết định thêm theo quy định của cơ quan đó.
@@ -2598,7 +2638,7 @@ Câu hỏi: Nếu có hai hoặc nhiều người có kết quả tuyển dụng
 ---
 ## q259 · dan_chieu · dan_chieu · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Khi nào thì phiên họp xét lại quyết định bị kháng cáo, kháng nghị sẽ được tổ chức?
 
 *Đáp án nháp của mô hình:* Khi người phải thi hành hoặc người đại diện hợp pháp của họ yêu cầu Toà án xét đơn vắng mặt họ hoặc đã được triệu tập hợp lệ đến lần thứ hai mà vẫn vắng mặt.
@@ -2621,11 +2661,8 @@ Câu hỏi: Ở cấp tỉnh, ai có quyền quy định cụ thể về quy tr�
 
 *Đáp án nháp của mô hình:* Chủ tịch Ủy ban nhân dân tỉnh quy định cụ thể về quy trình, thành phần tham dự các bước trong việc bổ nhiệm cán bộ lãnh đạo, quản lý thuộc phạm vi phụ trách của đơn vị.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 170/2025/NĐ-CP Điều 33 ↔ 10/2026/VBHN-NĐ-BNV Điều 72: KHÁC NHIỀU hoặc không còn (chứa 0.47)
 **Sàng lọc:** câu hỏi mơ hồ; lộ đáp án / nhắc văn bản — Câu hỏi chép gần nguyên văn gold. Câu hỏi dùng từ 'cán bộ' và không nói rõ là bổ nhiệm công chức nên dễ lẫn với quy định tương tự cho viên chức. Gold viết 'quyết định' thành phần tham dự, không phải 'quy định'. · Gợi ý câu hỏi: Ở cấp tỉnh, ai được giao quy định chi tiết trình tự, thủ tục bổ nhiệm công chức giữ chức vụ lãnh đạo, quản lý và quyết định những ai tham dự các bước của quy trình?
-
-**Gold: 170/2025/NĐ-CP Điều 33 — DẪN**
-
-> Trình tự, thủ tục bổ nhiệm công chức lãnh đạo, quản lý thuộc thẩm quyền quản lý của Bộ, ngành, địa phương
 
 **Gold: 170/2025/NĐ-CP Điều 33 khoản 4 — ĐÍCH**
 
@@ -2639,11 +2676,8 @@ Câu hỏi: Người nộp thuế muốn đăng ký giao dịch với cơ quan t
 
 *Đáp án nháp của mô hình:* Người nộp thuế cần đăng ký giao dịch thông qua tổ chức cung cấp dịch vụ T-VAN theo quy định.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 19/2021/TT-BTC Điều 10 ↔ 21/VBHN-BTC Điều 10 khoản 3: GIỐNG (chứa 1.00)
 **Sàng lọc:** chỉ trả lời được một phần từ gold; câu hỏi mơ hồ — Có nhiều cách đăng ký giao dịch điện tử (qua Cổng của Tổng cục Thuế, Cổng dịch vụ công, tổ chức T-VAN). Gold chỉ là câu dẫn chiếu cho trường hợp T-VAN, không chứa nội dung thủ tục. · Gợi ý câu hỏi: Người nộp thuế muốn đăng ký giao dịch điện tử với cơ quan thuế thông qua một tổ chức cung cấp dịch vụ T-VAN thì thực hiện theo thủ tục nào?
-
-**Gold: 19/2021/TT-BTC Điều 10 — DẪN**
-
-> Đăng ký giao dịch thuế điện tử
 
 **Gold: 19/2021/TT-BTC Điều 10 khoản 3 — ĐÍCH**
 
@@ -2657,11 +2691,12 @@ Câu hỏi: Khi một doanh nghiệp đang giao dịch qua tổ chức cung cấ
 
 *Đáp án nháp của mô hình:* Doanh nghiệp phải chuyển sang giao dịch qua Cổng thông tin điện tử của Tổng cục Thuế hoặc đăng ký giao dịch với một tổ chức cung cấp dịch vụ T-VAN khác.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 19/2021/TT-BTC Điều 41 ↔ 21/VBHN-BTC Điều 41 khoản 5 điểm c: GIỐNG (chứa 1.00)
 **Sàng lọc:** lộ đáp án / nhắc văn bản — Câu hỏi lặp gần nguyên văn vế điều kiện của gold; cuối gold dính dòng tiêu đề Mục 2. Gold viết 'được đăng ký' (quyền lựa chọn) chứ không phải nghĩa vụ 'phải làm gì'. · Gợi ý câu hỏi: Nếu đơn vị trung gian truyền nhận dữ liệu thuế điện tử mà doanh nghiệp đang dùng ngừng cung cấp dịch vụ, doanh nghiệp có thể chuyển sang giao dịch điện tử với cơ quan thuế bằng cách nào?
 
-**Gold: 19/2021/TT-BTC Điều 41 — DẪN**
+**Gold: 19/2021/TT-BTC Điều 41 khoản 5 — DẪN**
 
-> Lựa chọn doanh nghiệp cung cấp dịch vụ T-VAN và kết nối hệ thống của tổ chức cung cấp dịch vụ T-VAN với Cổng thông tin điện tử của Tổng cục Thuế
+> 5. Ngừng cung cấp dịch vụ T-VAN:
 
 **Gold: 19/2021/TT-BTC Điều 41 khoản 5 điểm c — ĐÍCH**
 
@@ -2678,10 +2713,6 @@ Câu hỏi: Nếu một doanh nghiệp đã có giấy chứng nhận chất lư
 
 **Sàng lọc:** lộ đáp án / nhắc văn bản — Câu hỏi nêu tên luật; chủ thể 'doanh nghiệp' không khớp vì gold nói về giấy chứng nhận cấp cho phương tiện. · Gợi ý câu hỏi: Giấy chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường của xe đã được cấp trước khi luật mới về giao thông đường bộ có hiệu lực thì còn được sử dụng đến khi nào?
 
-**Gold: 36/2024/QH15 Điều 89 — DẪN**
-
-> Quy định chuyển tiếp
-
 **Gold: 36/2024/QH15 Điều 89 khoản 6 — ĐÍCH**
 
 > 6. Chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường được cấp trước ngày Luật này có hiệu lực thi hành thì có giá trị sử dụng đến hết thời hạn ghi trên giấy chứng nhận đó.
@@ -2696,9 +2727,9 @@ Câu hỏi: Người bán hàng hóa bán lưu động cần làm gì khi bán h
 
 **Sàng lọc:** không thấy vấn đề
 
-**Gold: 254/2026/NĐ-CP Điều 6 — DẪN**
+**Gold: 254/2026/NĐ-CP Điều 6 khoản 3 — DẪN**
 
-> Đối tượng sử dụng hóa đơn điện tử
+> 3. Quy định về áp dụng hóa đơn điện tử, đối với một số trường hợp cụ thể theo yêu cầu quản lý như sau:
 
 **Gold: 254/2026/NĐ-CP Điều 6 khoản 3 điểm đ — ĐÍCH**
 
@@ -2716,7 +2747,7 @@ Câu hỏi: Ai là người thành lập doanh nghiệp theo quy định?
 
 **Gold: 59/2020/QH14 Điều 4 — DẪN**
 
-> Giải thích từ ngữ
+> Trong Luật này, các từ ngữ dưới đây được hiểu như sau:
 
 **Gold: 59/2020/QH14 Điều 4 khoản 25 — ĐÍCH**
 
@@ -2733,9 +2764,9 @@ Câu hỏi: Có quy định về việc phân bổ ngân sách cho các quỹ kh
 **Cờ tự động:** trùng từ cao (91%)
 **Sàng lọc:** câu hỏi mơ hồ — Câu hỏi có/không quá chung, không chỉ ra khía cạnh cần hỏi (hình thức cấp kinh phí về các quỹ). · Gợi ý câu hỏi: Kinh phí tài trợ nhiệm vụ khoa học, công nghệ và đổi mới sáng tạo giao về các quỹ được cấp theo hình thức nào và chuyển vào đâu?
 
-**Gold: 93/2025/QH15 Điều 63 — DẪN**
+**Gold: 93/2025/QH15 Điều 63 khoản 3 — DẪN**
 
-> Lập dự toán, phân bổ, quản lý, sử dụng, quyết toán ngân sách nhà nước cho khoa học, công nghệ và đổi mới sáng tạo
+> 3. Việc phân bổ ngân sách nhà nước chi cho khoa học, công nghệ và đổi mới sáng tạo được thực hiện theo các nguyên tắc sau đây:
 
 **Gold: 93/2025/QH15 Điều 63 khoản 3 điểm đ — ĐÍCH**
 
@@ -2751,9 +2782,9 @@ Câu hỏi: Khi mua trái phiếu doanh nghiệp trên thị trường thứ c�
 
 **Sàng lọc:** lộ đáp án / nhắc văn bản — Câu hỏi trùng từ ngữ gần nguyên văn với gold; nên nói rõ là trái phiếu doanh nghiệp riêng lẻ. · Gợi ý câu hỏi: Nhà đầu tư mua lại trái phiếu doanh nghiệp riêng lẻ từ một nhà đầu tư khác có quyền đòi bên bán cung cấp thông tin gì về doanh nghiệp phát hành?
 
-**Gold: 200/2026/NĐ-CP Điều 9 — DẪN**
+**Gold: 200/2026/NĐ-CP Điều 9 khoản 5 — DẪN**
 
-> Nhà đầu tư tham gia mua, giao dịch, chuyển nhượng trái phiếu doanh nghiệp riêng lẻ
+> 5. Quyền lợi của nhà đầu tư tham gia mua, giao dịch, chuyển nhượng trái phiếu doanh nghiệp riêng lẻ:
 
 **Gold: 200/2026/NĐ-CP Điều 9 khoản 5 điểm d — ĐÍCH**
 
@@ -2767,11 +2798,12 @@ Câu hỏi: Các tổ chức đã kết nối với Cổng thông tin điện t�
 
 *Đáp án nháp của mô hình:* Các tổ chức vẫn cần tiếp tục kết nối và đảm bảo đáp ứng các tiêu chuẩn kỹ thuật kết nối theo quy định, nếu không thì phải hoàn thiện để đạt yêu cầu.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 19/2021/TT-BTC Điều 38 ↔ 21/VBHN-BTC Điều 38 khoản 3 điểm g: GIỐNG (chứa 1.00)
 **Sàng lọc:** câu hỏi mơ hồ; lộ đáp án / nhắc văn bản — Câu hỏi dùng 'Thông tư này' mà không rõ văn bản nào và chép gần nguyên văn gold. Chủ thể đúng là ngân hàng, tổ chức trung gian thanh toán chứ không phải 'các tổ chức' chung chung; gold nói 'tiếp tục kết nối', không phải 'tiếp tục hoạt động'. · Gợi ý câu hỏi: Ngân hàng đã kết nối hệ thống với cổng thông tin điện tử của cơ quan thuế từ trước khi quy định mới về giao dịch thuế điện tử có hiệu lực thì có được tiếp tục kết nối không, và nếu hệ thống chưa đạt chuẩn kỹ thuật thì phải làm gì?
 
-**Gold: 19/2021/TT-BTC Điều 38 — DẪN**
+**Gold: 19/2021/TT-BTC Điều 38 khoản 3 — DẪN**
 
-> Thông tin trao đổi, cung cấp giữa cơ quan thuế với KBNN, cơ quan nhà nước có thẩm quyền khác, ngân hàng, tổ chức cung ứng dịch vụ trung gian thanh toán
+> 3. Thủ tục kết nối kỹ thuật giữa Cổng thông tin điện tử của Tổng cục Thuế và hệ thống trao đổi thông tin của ngân hàng, tổ chức cung ứng dịch vụ trung gian thanh toán:
 
 **Gold: 19/2021/TT-BTC Điều 38 khoản 3 điểm g — ĐÍCH**
 
@@ -2786,10 +2818,6 @@ Câu hỏi: Khi tuyển dụng viên chức cho một cơ quan có tổ chức c
 *Đáp án nháp của mô hình:* Người đứng đầu cơ quan phải căn cứ vào điều kiện cụ thể của cơ quan, tổ chức để xác định nguồn nhân sự tại chỗ hoặc từ nơi khác, đảm bảo phù hợp với quy định của Đảng và quy định tại Nghị định.
 
 **Sàng lọc:** chỉ trả lời được một phần từ gold; câu hỏi mơ hồ — Gold nói về việc người đứng đầu cơ quan quản lý viên chức quy định thẩm quyền bổ nhiệm và nguyên tắc xác định nguồn nhân sự, không phải tuyển dụng. Câu hỏi lẫn tuyển dụng với bổ nhiệm và hỏi gộp nhiều ý. · Gợi ý câu hỏi: Với đơn vị sự nghiệp công lập có các tổ chức cấu thành, ai quy định cụ thể thẩm quyền bổ nhiệm viên chức quản lý và nguyên tắc xác định nguồn nhân sự tại chỗ hay từ nơi khác?
-
-**Gold: 259/2026/NĐ-CP Điều 31 — DẪN**
-
-> Trình tự, thủ tục bổ nhiệm đối với nguồn tại chỗ
 
 **Gold: 259/2026/NĐ-CP Điều 31 khoản 4 — ĐÍCH**
 
@@ -2807,7 +2835,7 @@ Câu hỏi: Trong thi công xây dựng, khi xảy ra tình trạng công trình
 
 **Gold: 135/2025/QH15 Điều 3 — DẪN**
 
-> Giải thích từ ngữ
+> Trong Luật này, các từ ngữ dưới đây được hiểu như sau:
 
 **Gold: 135/2025/QH15 Điều 3 khoản 29 — ĐÍCH**
 
@@ -2823,9 +2851,9 @@ Câu hỏi: Khi đã hoàn thành việc lập báo cáo tài chính và báo c�
 
 **Sàng lọc:** chỉ trả lời được một phần từ gold — Chủ thể sai ('doanh nghiệp' thay vì đơn vị thi hành án dân sự) và điều kiện lệch: gold cấm sửa sau khi đã khóa sổ và báo cáo đã nộp cho cơ quan có thẩm quyền, không phải chỉ khi lập xong báo cáo. · Gợi ý câu hỏi: Cơ quan thi hành án dân sự có được sửa số liệu trên sổ kế toán sau khi đã khóa sổ và đã nộp báo cáo tài chính, báo cáo nghiệp vụ thi hành án cho cơ quan có thẩm quyền không?
 
-**Gold: 107/2026/TT-BTC Điều 10 — DẪN**
+**Gold: 107/2026/TT-BTC Điều 10 khoản 7 — DẪN**
 
-> Quy định về sổ kế toán
+> 7. Khoá sổ kế toán
 
 **Gold: 107/2026/TT-BTC Điều 10 khoản 7 điểm a — ĐÍCH**
 
@@ -2842,10 +2870,6 @@ Câu hỏi: Các doanh nghiệp nhà nước, cơ quan Đảng, Mặt trận và
 **Cờ tự động:** trùng từ cao (91%)
 **Sàng lọc:** câu hỏi mơ hồ; lộ đáp án / nhắc văn bản — Câu hỏi chép gần nguyên văn, dùng 'nghị định này' và hiểu sai chủ thể: gold nói về xe của doanh nghiệp do Nhà nước, cơ quan Đảng, Mặt trận, tổ chức chính trị - xã hội nắm 100% vốn, không phải về chính các cơ quan đó. · Gợi ý câu hỏi: Xe ô tô phục vụ công tác chung của doanh nghiệp do Nhà nước nắm giữ 100% vốn điều lệ, mua bằng nguồn kinh phí sản xuất, kinh doanh và đã đưa vào sử dụng trước khi quy định mới về tiêu chuẩn, định mức xe ô tô có hiệu lực, thì được quản lý, xử lý theo pháp luật nào?
 
-**Gold: 379/2026/NĐ-CP Điều 39 — DẪN**
-
-> Xử lý chuyển tiếp
-
 **Gold: 379/2026/NĐ-CP Điều 39 khoản 10 — ĐÍCH**
 
 > 10. Đối với xe ô tô phục vụ công tác chung của các doanh nghiệp do Nhà nước, cơ quan Đảng Cộng sản Việt Nam, Mặt trận Tổ quốc Việt Nam, tổ chức chính trị - xã hội nắm giữ 100% vốn điều lệ, bao gồm cả các doanh nghiệp là công ty con và đơn vị trực thuộc đã được mua sắm từ nguồn kinh phí hoạt động sản xuất, kinh doanh của doanh nghiệp và bố trí sử dụng theo quy định trước ngày Nghị định này có hiệu lực thi hành thì việc quản lý, sử dụng và xử lý xe ô tô thực hiện theo quy định của pháp luật về quản lý và đầu tư vốn nhà nước tại doanh nghiệp và pháp luật có liên quan; không thực hiện theo quy định tại Nghị định này.
@@ -2858,11 +2882,8 @@ Câu hỏi: Người lao động mua hàng hóa, dịch vụ tại Việt Nam đ
 
 *Đáp án nháp của mô hình:* Có, người lao động mua hàng hóa, dịch vụ tại Việt Nam để sử dụng trong hoạt động ngoại giao được hoàn lại số thuế giá trị gia tăng đã trả, cụ thể là số thuế ghi trên hóa đơn hoặc chứng từ thanh toán.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 48/2024/QH15 Điều 15 ↔ 114/VBHN-VPQH Điều 15 khoản 7: GIỐNG (chứa 1.00)
 **Sàng lọc:** chỉ trả lời được một phần từ gold — Chủ thể sai: gold áp dụng cho đối tượng được hưởng quyền ưu đãi, miễn trừ ngoại giao, không phải 'người lao động' mua hàng cho 'hoạt động ngoại giao'. · Gợi ý câu hỏi: Người được hưởng quyền ưu đãi, miễn trừ ngoại giao mua hàng hóa, dịch vụ tại Việt Nam để sử dụng có được hoàn thuế giá trị gia tăng không, và số thuế được hoàn căn cứ vào chứng từ nào?
-
-**Gold: 48/2024/QH15 Điều 15 — DẪN**
-
-> Hoàn thuế giá trị gia tăng
 
 **Gold: 48/2024/QH15 Điều 15 khoản 7 — ĐÍCH**
 
@@ -2878,9 +2899,9 @@ Câu hỏi: Người vận hành chuyến bay cần nộp đề nghị cấp, s�
 
 **Sàng lọc:** chỉ trả lời được một phần từ gold; câu hỏi mơ hồ — Gold chỉ quy định 07 ngày làm việc cho nhóm chuyến bay nêu tại một khoản khác (các điểm sau có thể có thời hạn khác), trong khi câu hỏi hỏi chung cho mọi chuyến bay. · Gợi ý câu hỏi: Đối với nhóm chuyến bay đầu tiên được liệt kê trong quy định về phép bay (cần nêu rõ loại chuyến bay), đề nghị cấp, sửa đổi, hủy bỏ phép bay đi, đến và bay qua lãnh thổ Việt Nam phải nộp chậm nhất bao lâu trước ngày dự kiến thực hiện chuyến bay?
 
-**Gold: 222/2026/NĐ-CP Điều 17 — DẪN**
+**Gold: 222/2026/NĐ-CP Điều 17 khoản 3 — DẪN**
 
-> Hồ sơ, trình tự thủ tục cấp, sửa đổi, hủy bỏ phép bay
+> 3. Thời hạn nộp đề nghị cấp, sửa đổi, hủy bỏ phép bay đi, đến và bay qua lãnh thổ Việt Nam:
 
 **Gold: 222/2026/NĐ-CP Điều 17 khoản 3 điểm a — ĐÍCH**
 
@@ -2909,6 +2930,7 @@ Câu hỏi: Nếu người nộp thuế không chấp nhận được thông bá
 
 *Đáp án nháp của mô hình:* Người nộp thuế có thể căn cứ vào thông báo đó để hoàn chỉnh thông tin đăng ký hoặc liên hệ với cơ quan thuế, ngân hàng hoặc tổ chức thanh toán nơi có tài khoản để được hỗ trợ hướng dẫn.
 
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 19/2021/TT-BTC Điều 10 ↔ 21/VBHN-BTC Điều 10 khoản 5: GIỐNG (chứa 1.00)
 **Sàng lọc:** không thấy vấn đề — Câu hỏi hiểu sai chủ thể: gold là ngân hàng hoặc tổ chức trung gian thanh toán không chấp nhận đăng ký nộp thuế điện tử, không phải người nộp thuế 'không chấp nhận được thông báo'. · Gợi ý câu hỏi: Khi ngân hàng hoặc tổ chức cung ứng dịch vụ trung gian thanh toán thông báo không chấp nhận đăng ký nộp thuế điện tử, người nộp thuế cần làm gì?
 
 **Gold: 19/2021/TT-BTC Điều 10 khoản 5 — ĐÍCH**
@@ -3219,7 +3241,7 @@ Câu hỏi: Nếu một đơn vị chưa thực hiện hết dự toán chi thư
 ---
 ## q262 · khong_co_dieu · doan · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: XOÁ
 Câu hỏi: Công văn này gửi đến những bộ, cơ quan nào và có mục đích gì?
 
 *Đáp án nháp của mô hình:* Công văn gửi đến Văn phòng Chính phủ và các bộ: Nội vụ, Kế hoạch và Đầu tư, Lao động Thương binh và Xã hội, Tư pháp, với mục đích đính chính một thông tư của Bộ Tài chính.
@@ -3235,7 +3257,7 @@ Câu hỏi: Công văn này gửi đến những bộ, cơ quan nào và có m�
 ---
 ## q263 · khong_co_dieu · doan · TRUNG LẬP
 
-Trạng thái: DỰ PHÒNG
+Trạng thái: GIỮ
 Câu hỏi: Nếu một doanh nghiệp kê khai thuế giá trị gia tăng không đúng với mức thuế suất được quy định thì sẽ bị xử lý thế nào?
 
 *Đáp án nháp của mô hình:* Sẽ bị truy thu thuế và bị phạt theo quy định hiện hành.

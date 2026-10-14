@@ -38,8 +38,7 @@ SEED = 2026
 SO_CAU = {"don_gian_khoan": 20, "don_gian_trung_lap": 20, "don_gian_phien_ban": 10, "xuyen_khoan": 30,
           "dan_chieu": 25, "dieu_dai": 20, "khong_co_dieu": 15}
 DU_PHONG = 0.1
-CAN = {"don_gian": 50, "xuyen_khoan": 30, "dan_chieu": 25, "dieu_dai": 20, "khong_co_dieu": 15}
-TRUNG_LAP = {"don_gian": 16, "xuyen_khoan": 10, "dan_chieu": 8, "dieu_dai": 6, "khong_co_dieu": 5}
+from eval.duyet import CAN, TRUNG_LAP  # noqa: E402  (chỉ tiêu dùng chung với bước duyệt)
 GOLD = ch.GOC / "eval/gold.draft.jsonl"
 NHAP = ch.GOC / "eval/questions.draft.jsonl"
 DUYET = ch.GOC / "eval/questions.review.md"
@@ -502,7 +501,7 @@ def bo_sung_trung_lap() -> None:
             cu = _ban_cu(cm[c["doc_id"]], DonVi(g["doc_id"], g["so_hieu"], g["dieu"], g["khoan"], g["diem"], g["start"], g["end"]))
             if cu:
                 x["phien_ban_cu"] = [_gold(cu)]
-        if x["loai"] == "dieu_dai" and x["qid"] not in da_nhap:  # câu dẫn cũ là TÊN Điều (lỗi) → tính lại
+        if x["loai"] == "dieu_dai":  # câu dẫn cũ là TÊN Điều (lỗi) → tính lại, kể cả câu đã nháp (nháp dùng câu dẫn đúng)
             d = docs[x["gold"][-1]["doc_id"]]
             dich = x["gold"][-1]
             u = next(v for v in cm[d.doc_id]["dieu"] if v.dieu == dich["dieu"] and v.start <= dich["start"] < v.end)
@@ -545,6 +544,30 @@ def bo_sung_trung_lap() -> None:
         x = [y for y in ra if y["loai"] == loai]
         print(f"{loai:14s} tổng {len(x):3d} | GIỮ {sum(not y['du_phong'] for y in x):3d} "
               f"(trung lập {sum(not y['du_phong'] and y['trung_lap'] for y in x)}) | dự phòng {sum(y['du_phong'] for y in x)}")
+
+
+def sua_cau_dan() -> None:
+    """Tính lại câu dẫn (vai dan) cho MỌI gold nhóm dieu_dai — lần dựng lại cơ cấu từ bản sao lưu đã bỏ qua câu đã nháp
+    nên tên Điều cũ quay lại gold (câu hỏi được nháp với câu dẫn đúng). Sửa cả gold.draft.jsonl lẫn questions.draft.jsonl."""
+    docs = {d.doc_id: d for d in nap_van_ban()}
+    cm = {}
+    for tep in (GOLD, NHAP):
+        ds = [json.loads(x) for x in tep.read_text().splitlines() if x.strip()]
+        for x in ds:
+            if x["loai"] != "dieu_dai":
+                continue
+            dich = x["gold"][-1]
+            d = docs[dich["doc_id"]]
+            cm.setdefault(d.doc_id, chi_muc(d))
+            u = next(v for v in cm[d.doc_id]["dieu"] if v.dieu == dich["dieu"] and v.start <= dich["start"] < v.end)
+            dv = DonVi(d.doc_id, d.so_hieu, dich["dieu"], dich["khoan"], dich["diem"], dich["start"], dich["end"])
+            cd = cau_dan(d.text, cm[d.doc_id], u, dv)
+            if cd and (cd[0] < dich["end"] and dich["start"] < cd[1]):
+                cd = None
+            x["gold"] = ([_gold(_don_vi_span(cm[d.doc_id], u, *cd), "dan")] if cd else []) + [dich]
+        tam = tep.with_suffix(".tmp")
+        tam.write_text("\n".join(json.dumps(x, ensure_ascii=False) for x in ds) + "\n")
+        tam.replace(tep)
 
 
 def thay_trung_lap_loi() -> None:
@@ -669,7 +692,11 @@ def main() -> None:
     ap.add_argument("--force", action="store_true", help="chọn lại gold từ đầu (xoá nháp cũ)")
     ap.add_argument("--trung-lap", action="store_true", help="bổ sung gold trung lập vào gold.draft.jsonl đang có rồi dừng")
     ap.add_argument("--thay-trung-lap-loi", action="store_true", help="thay gold trung lập chưa đạt luật hiện hành rồi dừng")
+    ap.add_argument("--sua-cau-dan", action="store_true", help="tính lại câu dẫn của nhóm dieu_dai rồi dừng")
     a = ap.parse_args()
+    if a.sua_cau_dan:
+        sua_cau_dan()
+        return
     if a.thay_trung_lap_loi:
         thay_trung_lap_loi()
         return
