@@ -1,0 +1,116 @@
+<style>
+.duyet-dau{display:flex;flex-wrap:wrap;gap:8px 32px;align-items:baseline;margin-bottom:6px}
+.huong-dan{color:var(--phu);max-width:70ch;margin:0 0 26px}
+.huong-dan code{background:var(--nen-ma);padding:1px 5px;border-radius:4px;font-size:.9em}
+.chi-tieu{display:grid;gap:10px;margin:0 0 30px;max-width:760px}
+.chi-tieu button{all:unset;cursor:pointer;display:grid;grid-template-columns:9.5em 1fr 6.5em;gap:14px;align-items:center;
+font-size:14px;padding:4px 6px;border-radius:6px}
+.chi-tieu button:hover,.chi-tieu button[aria-pressed=true]{background:var(--to)}
+.chi-tieu button:focus-visible{outline:2px solid var(--son)}
+.thanh{position:relative;height:12px;background:var(--to);border:1px solid var(--ke);border-radius:6px;overflow:hidden}
+.thanh i{position:absolute;inset:0 auto 0 0;background:var(--muc)}.thanh i.tl{background:#7C8BA6}
+.thanh b{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--son)}
+.so{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}.so .thieu{color:var(--son);font-weight:600}
+.chu-giai{display:flex;gap:18px;font-size:13px;color:var(--phu);margin:-18px 0 28px;flex-wrap:wrap}
+.chu-giai span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;
+vertical-align:-1px;background:var(--c)}
+.loc{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;padding:12px 0;border-top:1px solid var(--ke);
+border-bottom:1px solid var(--ke);position:sticky;top:0;background:var(--giay);z-index:1}
+.loc select,.loc input[type=search]{font:15px var(--chu);color:var(--muc);padding:6px 10px;border:1px solid var(--ke);
+border-radius:6px;background:var(--to)}
+.loc input[type=search]{flex:1 1 220px}
+.loc label{font-size:14px;display:flex;gap:6px;align-items:center}
+#dem{font-size:14px;color:var(--phu);margin-left:auto}
+#ds{list-style:none;padding:0;margin:0}
+#ds>li{padding:20px 0;border-bottom:1px solid var(--ke);display:grid;grid-template-columns:5.5em minmax(0,1fr);gap:4px 18px}
+.ma{font-weight:600;font-variant-numeric:tabular-nums}
+.ma small{display:block;font-weight:400;font-size:12.5px;color:var(--phu)}
+.ma small.giu{color:var(--muc);font-weight:600}.ma small.xoa{color:var(--son);text-decoration:line-through}
+.cau{font-size:17px;line-height:1.5;margin:0 0 6px;max-width:72ch}
+.the{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px}
+.the span{font-size:12.5px;padding:1px 8px;border-radius:10px;background:var(--to);border:1px solid var(--ke);color:var(--phu)}
+.the span.tl{border-color:#7C8BA6;color:var(--muc)}.the span.co{border-color:var(--son);color:var(--son);background:var(--son-nhat)}
+details{max-width:80ch}summary{cursor:pointer;font-size:14px;color:var(--phu)}
+.gold{margin:10px 0 0;padding-left:14px;border-left:3px solid var(--ke)}
+.gold h4{margin:12px 0 4px;font-size:13.5px;font-weight:600}.gold h4 em{font-style:normal;color:var(--son);margin-left:6px}
+.gold p{margin:0;font:15px/1.65 var(--van);white-space:pre-line}
+.ghi-chu{font-size:14px;color:var(--phu);margin:8px 0 0;max-width:80ch}
+@media(max-width:640px){.chi-tieu button{grid-template-columns:7.5em 1fr 5.5em;gap:10px}#ds>li{grid-template-columns:1fr}
+.loc{position:static}}
+</style>
+
+<div class="duyet-dau"><h1>Bộ câu hỏi đánh giá</h1><span id="lan" class="phu"></span></div>
+<p class="huong-dan">Trang này chỉ để đọc và lọc. Việc giữ, bỏ hay sửa câu hỏi làm trong tệp
+<code>eval/questions.review.md</code>, rồi chạy <code>python -m eval.duyet --chot</code>. Trang đọc lại tệp đó mỗi lần mở,
+nên trạng thái ở đây luôn khớp với bản bạn đang sửa.</p>
+
+<div class="chi-tieu" id="chi-tieu" aria-label="Số câu đang giữ so với chỉ tiêu, bấm để lọc theo nhóm"></div>
+<div class="chu-giai"><span style="--c:var(--muc)">Gold trùng ranh giới khoản</span>
+<span style="--c:#7C8BA6">Gold trung lập</span><span style="--c:var(--son)">Chỉ tiêu</span></div>
+
+<div class="loc" role="search">
+  <select id="nhom" aria-label="Nhóm câu hỏi"><option value="">Mọi nhóm</option></select>
+  <select id="tt" aria-label="Trạng thái"><option value="">Mọi trạng thái</option><option>GIỮ</option>
+    <option>DỰ PHÒNG</option><option>XOÁ</option></select>
+  <label><input type="checkbox" id="chi-co"> Chỉ câu có cờ</label>
+  <label><input type="checkbox" id="chi-tl"> Chỉ gold trung lập</label>
+  <input type="search" id="tim" placeholder="Tìm trong câu hỏi hoặc mã câu" aria-label="Tìm">
+  <span id="dem" aria-live="polite"></span>
+</div>
+<ol id="ds"><li class="phu">Đang tải…</li></ol>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const TEN = {don_gian: "Đơn giản", xuyen_khoan: "Xuyên khoản", dan_chieu: "Dẫn chiếu", dieu_dai: "Điều dài", khong_co_dieu: "Không có Điều"};
+const VAI = {dieu_kien: "quy tắc", loai_tru: "ngoại lệ", nguon: "đoạn nguồn", dich: "đoạn đích", dan: "câu dẫn"};
+let D = null;
+
+function veChiTieu() {
+  const html = Object.keys(D.chi_tieu).map(k => {
+    const giu = D.cau.filter(c => c.loai === k && c.trang_thai === "GIỮ"), tl = giu.filter(c => c.trung_lap).length;
+    const ct = D.chi_tieu[k], tran = Math.max(ct, giu.length) * 1.1, pct = n => (100 * n / tran).toFixed(1) + "%";
+    return `<button type="button" data-nhom="${k}" aria-pressed="${$("#nhom").value === k}">
+      <span>${TEN[k]}</span>
+      <span class="thanh" role="img" aria-label="${giu.length} câu giữ, chỉ tiêu ${ct}">
+        <i style="width:${pct(giu.length)}"></i><i class="tl" style="left:${pct(giu.length - tl)};width:${pct(tl)}"></i>
+        <b style="left:${pct(ct)}"></b></span>
+      <span class="so"><span class="${giu.length < ct ? "thieu" : ""}">${giu.length} / ${ct}</span><br>
+        <small class="${tl < D.trung_lap[k] ? "thieu" : ""}">trung lập ${tl} / ${D.trung_lap[k]}</small></span>
+    </button>`;
+  }).join("");
+  $("#chi-tieu").innerHTML = html;
+}
+
+function veDs() {
+  const nhom = $("#nhom").value, tt = $("#tt").value, co = $("#chi-co").checked, tl = $("#chi-tl").checked;
+  const tim = $("#tim").value.trim().toLowerCase();
+  const ds = D.cau.filter(c => (!nhom || c.loai === nhom) && (!tt || c.trang_thai === tt) && (!co || c.co.length)
+    && (!tl || c.trung_lap) && (!tim || c.qid.includes(tim) || c.cau_hoi.toLowerCase().includes(tim)));
+  $("#dem").textContent = `${ds.length} câu`;
+  $("#ds").innerHTML = ds.map(c => `<li>
+    <div class="ma">${c.qid}<small class="${c.trang_thai === "GIỮ" ? "giu" : c.trang_thai === "XOÁ" ? "xoa" : ""}">${esc(c.trang_thai)}</small></div>
+    <div>
+      <p class="cau">${esc(c.cau_hoi)}</p>
+      <div class="the"><span>${TEN[c.loai]}</span>${c.trung_lap ? '<span class="tl">gold trung lập</span>' : ""}
+        ${c.phien_ban ? "<span>phiên bản</span>" : ""}${[...new Set(c.co)].map(x => `<span class="co">${esc(x)}</span>`).join("")}</div>
+      <details><summary>Nguyên văn gold${c.ghi_chu.length ? " và ghi chú sàng lọc" : ""}</summary>
+        <div class="gold">${c.gold.map(g => `<h4>${esc(g.nhan)}${g.vai ? `<em>${VAI[g.vai] || esc(g.vai)}</em>` : ""}</h4><p>${esc(g.text)}</p>`).join("")}</div>
+        ${c.ghi_chu.map(x => `<p class="ghi-chu">${esc(x)}</p>`).join("")}
+      </details>
+    </div></li>`).join("") || `<li class="phu">Không có câu nào khớp bộ lọc.</li>`;
+}
+
+fetch("/api/duyet").then(r => r.json()).then(d => {
+  if (d.loi) { $("#ds").innerHTML = `<li class="loi">${esc(d.loi)}</li>`; return; }
+  D = d;
+  $("#lan").textContent = d.thoi_diem ? `Tệp duyệt sửa lần cuối lúc ${d.thoi_diem}` : "";
+  for (const k of Object.keys(d.chi_tieu)) $("#nhom").insertAdjacentHTML("beforeend", `<option value="${k}">${TEN[k]}</option>`);
+  veChiTieu(); veDs();
+});
+for (const id of ["#nhom", "#tt", "#chi-co", "#chi-tl", "#tim"]) $(id).addEventListener("input", () => { veChiTieu(); veDs(); });
+$("#chi-tieu").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  $("#nhom").value = $("#nhom").value === b.dataset.nhom ? "" : b.dataset.nhom; veChiTieu(); veDs();
+});
+</script>

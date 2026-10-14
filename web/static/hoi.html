@@ -1,39 +1,164 @@
-<h1>Hỏi đáp văn bản quy phạm pháp luật</h1>
-<p class="meta">Demo đồ án: cùng một mô hình nhúng, cùng cách truy hồi, cùng mô hình sinh và prompt —
-chỉ khác <b>cách phân đoạn</b>. Gạt công tắc để so sánh. Mô hình sinh chạy trên CPU nên mỗi câu trả lời mất khoảng 1–2 phút.</p>
+<style>
+.hoi{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:40px;align-items:start}
+.hoi h1{font-size:1.6rem}
+.gioi-thieu{color:var(--phu);max-width:46ch;margin:0 0 22px}
+textarea{width:100%;min-height:112px;font:17px/1.55 var(--chu);color:var(--muc);padding:12px 14px;background:var(--to);
+border:1px solid var(--ke);border-radius:8px;resize:vertical}
+textarea:focus-visible{outline:2px solid var(--son);outline-offset:0;border-color:transparent}
+fieldset{border:0;margin:18px 0 0;padding:0}legend{font-weight:600;font-size:15px;margin-bottom:8px;padding:0}
+.nhom-pp{display:grid;gap:12px}
+.nhom-pp p{margin:0 0 6px;font-size:13px;color:var(--phu)}
+.cac-pp{display:flex;flex-wrap:wrap;gap:6px}
+.cac-pp label{position:relative;display:flex;flex-direction:column;gap:1px;min-width:118px;flex:1 1 118px;cursor:pointer;
+padding:8px 12px;background:var(--to);border:1px solid var(--ke);border-radius:8px}
+.cac-pp input{position:absolute;opacity:0;pointer-events:none}
+.cac-pp b{font-size:15px}.cac-pp small{font-size:12.5px;color:var(--phu);line-height:1.35}
+.cac-pp label:has(input:checked){border-color:var(--muc);box-shadow:inset 0 0 0 1px var(--muc)}
+.cac-pp label:has(input:focus-visible){outline:2px solid var(--son);outline-offset:2px}
+.hanh-dong{display:flex;align-items:center;gap:16px;margin-top:18px;flex-wrap:wrap}
+button{font:600 16px var(--chu);padding:10px 26px;border-radius:8px;border:0;background:var(--muc);color:#fff;cursor:pointer}
+button:hover{background:#26324d}button:disabled{background:var(--phu);cursor:progress}
+.trang-thai{color:var(--phu);font-size:14px}
+.tra-loi{margin-top:30px}.tra-loi h2,.can-cu h2{margin:0 0 10px;font-size:1.05rem}
+#tra-loi{white-space:pre-wrap;font:17px/1.7 var(--van);min-height:3.4em;padding:16px 18px;background:var(--to);
+border:1px solid var(--ke);border-radius:8px}
+#tra-loi:empty::before{content:"Câu trả lời sẽ hiện ở đây, kèm căn cứ Điều, khoản.";color:var(--phu);font-family:var(--chu);font-size:15px}
+a.dau{font:600 .86em var(--chu);color:var(--son);background:var(--son-nhat);border:1px solid var(--son);border-radius:4px;
+padding:0 5px;text-decoration:none;white-space:nowrap}
+a.dau.khong-khop{border-style:dashed;background:transparent}
+.chi-so{display:flex;flex-wrap:wrap;gap:4px 18px;margin-top:8px;color:var(--phu);font-size:13.5px}
+.can-cu{position:sticky;top:16px}
+#bang{display:grid;gap:12px;max-height:calc(100vh - 110px);overflow:auto;padding:2px 4px 2px 2px}
+.trong-rong{color:var(--phu);padding:18px;border:1px dashed var(--ke);border-radius:8px;background:transparent}
+.to-trich{background:var(--to);border:1px solid var(--ke);border-radius:8px;padding:12px 16px 14px;scroll-margin-top:16px}
+.to-trich.sang{border-color:var(--son);box-shadow:0 0 0 3px var(--son-nhat)}
+.to-trich header{display:flex;gap:12px;align-items:baseline;margin-bottom:6px}
+.hang{font:700 14px var(--chu);color:var(--phu);min-width:1.6em}
+.duong{font-size:13.5px;line-height:1.45;display:flex;flex-wrap:wrap;gap:2px 0}
+.duong span+span::before{content:"›";margin:0 6px;color:var(--phu)}
+.duong .dieu{color:var(--son);font-weight:600}
+.duong .khong-nhan{color:var(--phu);font-style:italic}
+.diem-so{margin-left:auto;font-size:12.5px;color:var(--phu);font-variant-numeric:tabular-nums;white-space:nowrap}
+.to-trich p{margin:0;font:15.5px/1.65 var(--van);white-space:pre-line;max-height:15em;overflow:hidden;
+-webkit-mask-image:linear-gradient(#000 75%,transparent);mask-image:linear-gradient(#000 75%,transparent)}
+.to-trich.mo p{max-height:none;-webkit-mask-image:none;mask-image:none}
+.to-trich .mo-them{margin-top:6px;font:500 13px var(--chu);background:none;color:var(--phu);padding:2px 0;border:0;
+text-decoration:underline;text-underline-offset:3px}
+@media(max-width:900px){.hoi{grid-template-columns:1fr;gap:28px}.can-cu{position:static}#bang{max-height:none;overflow:visible}}
+</style>
 
-<form id="f">
-  <textarea id="q" maxlength="500" placeholder="Ví dụ: Thời gian thử việc tối đa đối với người quản lý doanh nghiệp là bao lâu?" required></textarea>
-  <div class="o cong-tac" style="margin:10px 0" role="radiogroup" aria-label="Phương pháp phân đoạn">
-    <label><input type="radio" name="pp" value="A">A — cửa sổ 300 từ</label>
-    <label><input type="radio" name="pp" value="A+">A+ — cửa sổ + tiêu đề văn bản</label>
-    <label><input type="radio" name="pp" value="B" checked>B — theo Điều/khoản/điểm</label>
-    <label><input type="radio" name="pp" value="B+">B+ — B, mở rộng lên cả Điều</label>
-    <button id="nut" type="submit">Hỏi</button>
+<div class="hoi">
+<section aria-labelledby="tieu-de">
+  <h1 id="tieu-de">Hỏi đáp văn bản quy phạm pháp luật</h1>
+  <p class="gioi-thieu">Cùng mô hình nhúng, cùng cách truy hồi, cùng mô hình trả lời. Chỉ khác cách cắt văn bản
+  thành đoạn. Đổi cách phân đoạn và hỏi lại để thấy căn cứ thay đổi thế nào.</p>
+
+  <form id="f">
+    <label for="q" class="phu">Câu hỏi</label>
+    <textarea id="q" maxlength="500" required
+      placeholder="Ví dụ: Thời gian thử việc tối đa đối với công việc của người quản lý doanh nghiệp là bao lâu?"></textarea>
+
+    <fieldset>
+      <legend>Cách phân đoạn</legend>
+      <div class="nhom-pp">
+        <div><p>Không nhìn cấu trúc văn bản</p><div class="cac-pp">
+          <label><input type="radio" name="pp" value="A"><b>A</b><small>Cắt mỗi 300 từ</small></label>
+          <label><input type="radio" name="pp" value="C"><b>C</b><small>Cắt theo câu, tới 300 từ</small></label>
+          <label><input type="radio" name="pp" value="D"><b>D</b><small>Cắt theo ngữ nghĩa</small></label>
+        </div></div>
+        <div><p>Theo cấu trúc pháp lý</p><div class="cac-pp">
+          <label><input type="radio" name="pp" value="B" checked><b>B</b><small>Theo Điều, khoản, điểm</small></label>
+          <label><input type="radio" name="pp" value="B+"><b>B+</b><small>Tìm theo khoản, đọc cả Điều</small></label>
+        </div></div>
+        <div><p>Đối chứng</p><div class="cac-pp">
+          <label><input type="radio" name="pp" value="A+"><b>A+</b><small>Như A, kèm tên văn bản</small></label>
+        </div></div>
+      </div>
+    </fieldset>
+
+    <div class="hanh-dong">
+      <button id="nut" type="submit">Hỏi</button>
+      <span id="tt" class="trang-thai" aria-live="polite">Mô hình chạy trên CPU, mỗi câu mất khoảng 1–2 phút.</span>
+    </div>
+  </form>
+
+  <div class="tra-loi">
+    <h2>Câu trả lời</h2>
+    <div id="tra-loi" aria-live="polite"></div>
+    <div id="chi-so" class="chi-so"></div>
   </div>
-</form>
+</section>
 
-<h2>Câu trả lời</h2>
-<div id="tt" class="meta"></div>
-<div id="tra-loi" aria-live="polite"></div>
-
-<h2>Các đoạn truy hồi được (căn cứ hệ thống dùng)</h2>
-<div id="bang"><p class="meta">Chưa có.</p></div>
+<section class="can-cu" aria-labelledby="tieu-de-can-cu">
+  <h2 id="tieu-de-can-cu">Các đoạn văn bản hệ thống đã đọc</h2>
+  <div id="bang"><p class="trong-rong">Đặt một câu hỏi để xem những đoạn văn bản được truy hồi, theo thứ tự liên quan.
+  Đoạn cắt theo cấu trúc sẽ hiện đường dẫn Văn bản › Chương › Điều › khoản; đoạn cắt theo số từ thì không có.</p></div>
+</section>
+</div>
 
 <script>
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let TO = [];   // các tờ trích hiện tại: {so_hieu, dieu, khoan}
+
+function duongDan(c) {
+  // tiền tố "[số hiệu] [trích yếu] > Chương II > Điều 5. Tên > Khoản 2 > Điểm a" → các nấc
+  if (!c.tien_to) return `<span>${esc(c.so_hieu)}</span><span class="khong-nhan">không có nhãn Điều, khoản</span>`;
+  const nac = c.tien_to.split(" > ");
+  const dau = (nac.shift().match(/^\[([^\]]+)\]/) || [, c.so_hieu])[1];
+  return `<span>${esc(dau)}</span>` + nac.map(x => `<span class="${/^Điều /.test(x) ? "dieu" : ""}">${esc(x.replace(/^(Điều [\w]+)\.\s.*/, "$1"))}</span>`).join("");
+}
+
+function veBang(ds) {
+  TO = ds.map(c => ({so_hieu: c.so_hieu, dieu: c.dieu, khoan: c.khoan, text: c.trich}));
+  $("#bang").innerHTML = ds.map((c, i) => `
+    <article class="to-trich" id="trich-${i}">
+      <header><span class="hang">${c.hang}</span><div class="duong">${duongDan(c)}</div>
+        <span class="diem-so" title="Độ tương đồng cosine với câu hỏi">${c.diem.toFixed(3)}</span></header>
+      <p>${esc(c.trich)}</p>
+      <button type="button" class="mo-them" aria-expanded="false">Xem cả đoạn</button>
+    </article>`).join("") || `<p class="trong-rong">Không truy hồi được đoạn nào.</p>`;
+}
+
+$("#bang").addEventListener("click", e => {
+  const b = e.target.closest(".mo-them"); if (!b) return;
+  const to = b.closest(".to-trich"), mo = to.classList.toggle("mo");
+  b.textContent = mo ? "Thu gọn" : "Xem cả đoạn"; b.setAttribute("aria-expanded", mo);
+});
+
+// "Điều 25 khoản 1 của 45/2019/QH14" → dấu đỏ trỏ tới tờ trích cùng văn bản và cùng Điều; nét đứt = không tờ nào khớp
+function danhDau(text) {
+  const re = /Điều\s+(\d+[a-zđ]?)(?:,?\s+khoản\s+(\d+))?(?:,?\s+điểm\s+([a-zđ]|\d+))?(?:\s+(?:của|tại)\s+([\p{L}\p{N}\/\-–]+(?:\.[\p{L}\p{N}\/\-–]+)*))?/gu;
+  return esc(text).replace(re, (m, d, k, _, sh) => {
+    let i = TO.findIndex(t => (!sh || t.so_hieu === sh) && String(t.dieu) === d && (!k || String(t.khoan ?? "") === k || t.khoan == null));
+    // tờ trích không có nhãn (A, C, D): khớp nếu cùng văn bản và nội dung có chứa dòng "Điều N."
+    if (i < 0) i = TO.findIndex(t => (!sh || t.so_hieu === sh) && t.dieu == null && new RegExp(`(^|\\n)Điều ${d}[.:]`).test(t.text));
+    return i >= 0 ? `<a class="dau" href="#trich-${i}" data-i="${i}">${m}</a>`
+                  : `<a class="dau khong-khop" title="Không có đoạn nào đã đọc khớp với căn cứ này">${m}</a>`;
+  });
+}
+
+$("#tra-loi").addEventListener("click", e => {
+  const a = e.target.closest("a.dau[data-i]"); if (!a) return;
+  e.preventDefault();
+  const to = document.getElementById("trich-" + a.dataset.i);
+  document.querySelectorAll(".to-trich.sang").forEach(x => x.classList.remove("sang"));
+  to.classList.add("sang");
+  to.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "nearest"});
+});
+
 $("#f").addEventListener("submit", async e => {
   e.preventDefault();
   const q = $("#q").value.trim(), pp = document.querySelector("input[name=pp]:checked").value;
   if (!q) return;
-  $("#nut").disabled = true; $("#tra-loi").textContent = ""; $("#bang").innerHTML = "<p class='meta'>Đang truy hồi…</p>";
-  $("#tt").textContent = "Đang xử lý (" + pp + ")…";
-  const t0 = Date.now();
+  let tra = "";
+  $("#nut").disabled = true; $("#tra-loi").textContent = ""; $("#chi-so").innerHTML = "";
+  $("#bang").innerHTML = `<p class="trong-rong">Đang truy hồi bằng cách phân đoạn ${pp}…</p>`;
+  $("#tt").textContent = "Đang tìm các đoạn liên quan…";
   try {
     const r = await fetch("/api/hoi", {method: "POST", headers: {"Content-Type": "application/json"},
                                        body: JSON.stringify({cau_hoi: q, phuong_phap: pp})});
-    if (!r.ok) { const j = await r.json().catch(() => ({})); throw new Error(j.loi || ("Lỗi " + r.status)); }
+    if (!r.ok) { const j = await r.json().catch(() => ({})); throw new Error(j.loi || ("Máy chủ báo lỗi " + r.status)); }
     const rd = r.body.getReader(), dec = new TextDecoder(); let buf = "";
     for (;;) {
       const {value, done} = await rd.read(); if (done) break;
@@ -42,19 +167,22 @@ $("#f").addEventListener("submit", async e => {
       while ((i = buf.indexOf("\n\n")) >= 0) {
         const ev = buf.slice(0, i); buf = buf.slice(i + 2);
         const ten = (ev.match(/^event: (.*)$/m) || [, "message"])[1], d = JSON.parse((ev.match(/^data: (.*)$/m) || [, "{}"])[1]);
-        if (ten === "chunks") {
-          $("#bang").innerHTML = "<table><tr><th>#</th><th>Điểm</th><th>Số hiệu</th><th>Điều</th><th>Khoản</th><th>Điểm</th><th>Đoạn văn bản</th></tr>" +
-            d.map(c => `<tr><td>${c.hang}</td><td>${c.diem}</td><td>${esc(c.so_hieu)}</td><td>${esc(c.dieu ?? "—")}</td><td>${esc(c.khoan ?? "—")}</td><td>${esc(c.diem_chu ?? "—")}</td><td>${c.tien_to ? "<b>" + esc(c.tien_to) + "</b><br>" : ""}${esc(c.trich)}</td></tr>`).join("") + "</table>";
-          $("#tt").textContent = "Đã truy hồi, mô hình đang viết câu trả lời…";
-        } else if (ten === "xong") {
-          $("#tt").textContent = `Xong sau ${d.giay} giây` + (d.cache ? " (câu trả lời đã sinh sẵn trong lần đánh giá)" : "") + ` · phương pháp ${pp}` +
-            (d.token_vao ? ` · ngữ cảnh ${d.token_vao}/${d.n_ctx} token` : "") + (d.bi_cat ? " · CẢNH BÁO: câu trả lời bị cắt vì hết độ dài cho phép" : "");
+        if (ten === "chunks") { veBang(d); $("#tt").textContent = "Đã có căn cứ. Mô hình đang viết câu trả lời…"; }
+        else if (ten === "xong") {
+          $("#tra-loi").innerHTML = danhDau(tra);
+          $("#tt").textContent = "Xong.";
+          const so = [`${d.giay} giây`, `cách phân đoạn ${pp}`, `${TO.length} đoạn đã đọc`];
+          if (d.token_vao) so.push(`ngữ cảnh ${d.token_vao} trên ${d.n_ctx} token`);
+          if (d.cache) so.push("câu trả lời sinh sẵn khi đánh giá");
+          if (d.bi_cat) so.push("câu trả lời bị cắt vì hết độ dài cho phép");
+          $("#chi-so").innerHTML = so.map(x => `<span>${esc(x)}</span>`).join("");
         } else if (ten === "loi") { throw new Error(d.loi); }
-        else if (d.t) { $("#tra-loi").textContent += d.t; }
+        else if (d.t) { tra += d.t; $("#tra-loi").textContent = tra; }
       }
     }
   } catch (err) {
-    $("#tt").innerHTML = "<span class='loi'>" + esc(err.message) + "</span>";
+    $("#tt").innerHTML = `<span class="loi">${esc(err.message)}</span>`;
+    if (!TO.length) $("#bang").innerHTML = `<p class="trong-rong">Chưa truy hồi được. ${esc(err.message)}</p>`;
   } finally { $("#nut").disabled = false; }
 });
 </script>
