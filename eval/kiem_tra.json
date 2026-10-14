@@ -376,5 +376,17 @@
   "loai": "dan_chieu",
   "dat": false,
   "ly_do": "Đoạn nguồn chỉ nói rằng phiên họp xét lại được tiến hành theo quy định tại Điều 369, nhưng không cung cấp nội dung cụ thể về thời điểm tổ chức phiên họp đó, nên không trả lời đầy đủ và cụ thể câu hỏi."
+ },
+ "4d229703c2b841893b04081d42e388141d81d587": {
+  "qid": "q100",
+  "loai": "dan_chieu",
+  "dat": true,
+  "ly_do": "Đoạn nguồn nêu rõ rằng trong thời hạn 15 ngày kể từ ngày thông báo, nếu chủ sở hữu tài sản không yêu cầu nhận lại hoặc không thanh toán nợ thì người trục vớt phải giao nộp tài sản cho cơ quan nhà nước có thẩm quyền, nên trả lời đầy đủ và cụ thể theo nội dung đoạn nguồn."
+ },
+ "dad4127f135316ce4f5bd60fcc3f4927bd498d2f": {
+  "qid": "q104",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nói đến việc phải trả trợ cấp mất việc làm theo quy định tại Điều 49, nhưng không cung cấp chi tiết về nội dung, điều kiện cụ thể để được tính trợ cấp, do đó không trả lời đầy đủ và cụ thể câu hỏi."
  }
 }

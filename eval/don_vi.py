@@ -94,6 +94,24 @@ def _cay_khoan(doc_id: str) -> dict[int, int]:
     return ra
 
 
+RE_TIEU_DE_CUOI = re.compile(r"^\s*(?:Chương|CHƯƠNG|Mục|MỤC|Phần|PHẦN|Tiểu mục)\b")
+
+
+def bo_tieu_de_cuoi(t: str, a: int, b: int) -> int:
+    """Lùi `b` qua các dòng tiêu đề Chương/Mục/Phần (hoặc dòng viết hoa toàn bộ — tên chương) ở CUỐI đơn vị [a, b): các
+    dòng này mở đầu phần kế tiếp, không thuộc nội dung đơn vị (trước đây gold có khi dính "Mục 2. …" ở đuôi)."""
+    while True:
+        while b > a and t[b - 1].isspace():
+            b -= 1
+        ld = t.rfind("\n", a, b) + 1
+        if ld <= a:
+            return b
+        dong = t[ld:b].strip()
+        if not (RE_TIEU_DE_CUOI.match(dong) or (dong == dong.upper() and any(c.isalpha() for c in dong))):
+            return b
+        b = ld
+
+
 def chi_muc(doc: Document) -> dict:
     """{'dieu': [DonVi], 'khoan': [DonVi], 'diem': [DonVi], 'doan': [DonVi] (văn bản không có Điều: từng đoạn)}."""
     t = doc.text
@@ -118,24 +136,21 @@ def chi_muc(doc: Document) -> dict:
     for i, (a, n) in enumerate(that):
         b = that[i + 1][0] if i + 1 < len(that) else het
         kt = next((ten for vt, ten in reversed(kem) if vt < a), None)
-        while b > a and t[b - 1].isspace():
-            b -= 1
+        b = bo_tieu_de_cuoi(t, a, b)
         dong_dieu = [(vt, x) for vt, x in dong if a < vt < b]
         mk = _day_lien_tiep([(vt, m.group(1)) for vt, x in dong_dieu if (m := RE_KHOAN.match(x))], lambda s: int(s) - 1)
         ok = (len(mk) == cay[n]) if n in cay and cay[n] else None
         ra["dieu"].append(DonVi(doc.doc_id, doc.so_hieu, n, None, None, a, b, ok, kt))
         for j, (ka, so) in enumerate(mk):
             kb = mk[j + 1][0] if j + 1 < len(mk) else b
-            while kb > ka and t[kb - 1].isspace():
-                kb -= 1
+            kb = bo_tieu_de_cuoi(t, ka, kb)
             ra["khoan"].append(DonVi(doc.doc_id, doc.so_hieu, n, int(so), None, ka, kb, ok, kt))
             dong_k = [(vt, x) for vt, x in dong if ka < vt < kb]
             md = _day_lien_tiep([(vt, m.group(1)) for vt, x in dong_k if (m := RE_DIEM.match(x))],
                                 lambda s: THU_TU_DIEM.index(s) if s in THU_TU_DIEM else -9)
             for h, (da, chu) in enumerate(md):
                 db = md[h + 1][0] if h + 1 < len(md) else kb
-                while db > da and t[db - 1].isspace():
-                    db -= 1
+                db = bo_tieu_de_cuoi(t, da, db)
                 ra["diem"].append(DonVi(doc.doc_id, doc.so_hieu, n, int(so), chu, da, db, ok, kt))
     return ra
 

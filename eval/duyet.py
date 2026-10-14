@@ -22,6 +22,7 @@ from chunking.base import nap_van_ban
 NHAP = ch.GOC / "eval/questions.draft.jsonl"
 DUYET = ch.GOC / "eval/questions.review.md"
 CHOT = ch.GOC / "eval/questions.jsonl"
+ANH_CHUP = ch.GOC / "eval/questions.review.lan_xuat_truoc.md"  # bản đúng như lần xuất trước — để nhận ra sửa tay
 # chỉ tiêu hạ ngày 14/10: xuyen_khoan 30 → 18, dan_chieu 25 → 12; tỉ lệ gold trung lập giữ ~32%
 CAN = {"don_gian": 50, "xuyen_khoan": 18, "dan_chieu": 12, "dieu_dai": 20, "khong_co_dieu": 15}
 TRUNG_LAP = {"don_gian": 16, "xuyen_khoan": 6, "dan_chieu": 4, "dieu_dai": 6, "khong_co_dieu": 5}
@@ -39,7 +40,30 @@ def nhan(g: dict) -> str:
     return f"{g['so_hieu']} {s}"
 
 
+def _doc_dong(van_ban: str) -> dict[str, dict]:
+    """{qid: {"Trạng thái": …, "Câu hỏi": …}} từ một file duyệt."""
+    ra, q = {}, None
+    for dong in van_ban.split("\n"):
+        m = re.match(r"^## (q\d+)\b", dong)
+        if m:
+            q = m.group(1)
+            ra[q] = {}
+        elif q and dong.startswith(("Trạng thái:", "Câu hỏi:")):
+            k, v = dong.split(":", 1)
+            ra[q][k] = v.strip()
+    return ra
+
+
 def xuat_duyet() -> None:
+    """Xuất file duyệt. KHÔNG ghi đè sửa tay: dòng Trạng thái/Câu hỏi nào trong file hiện tại khác với ảnh chụp lần xuất
+    trước (tức người duyệt đã sửa) thì giữ nguyên giá trị của người duyệt."""
+    sua_tay = {}
+    if DUYET.exists() and ANH_CHUP.exists():
+        hien, truoc = _doc_dong(DUYET.read_text()), _doc_dong(ANH_CHUP.read_text())
+        for q, d in hien.items():
+            for k, v in d.items():
+                if truoc.get(q, {}).get(k) != v:
+                    sua_tay.setdefault(q, {})[k] = v
     docs = {d.doc_id: d for d in nap_van_ban()}
     ds = [json.loads(x) for x in NHAP.read_text().splitlines() if x.strip()]
     L = ["# Duyệt bộ câu hỏi đánh giá (nháp)", "",
@@ -68,9 +92,11 @@ def xuat_duyet() -> None:
         nguon = x["nguon_chon"]
         if nguon == "trung_lap" and not x.get("trung_lap"):
             nguon = "đầu khoản/điểm (không trung lập: span bắt đầu ngay đầu khoản hoặc điểm)"
+        tt = sua_tay.get(x["qid"], {}).get("Trạng thái", tt)
+        cau = sua_tay.get(x["qid"], {}).get("Câu hỏi", x.get("question", ""))
         L += [f"## {x['qid']} · {x['loai']} · {nguon}" + (" · TRUNG LẬP" if x.get("trung_lap") else "")
               + (" · phiên bản" if x.get("phien_ban") else ""), "",
-              f"Trạng thái: {tt}", f"Câu hỏi: {x.get('question', '')}", "",
+              f"Trạng thái: {tt}", f"Câu hỏi: {cau}", "",
               f"*Đáp án nháp của mô hình:* {x.get('dap_an_nhap', '')}", ""]
         if x.get("co"):
             L.append(f"**Cờ tự động:** {'; '.join(x['co'])}")
@@ -92,7 +118,17 @@ def xuat_duyet() -> None:
             L += [f"**Bản CŨ (đã bị {x.get('sua_boi')} sửa): {nhan(g)}**", ""] + ["> " + y for y in t.split("\n")][:20] + [""]
         L.append("---")
     DUYET.write_text("\n".join(L) + "\n")
-    print("→", DUYET)
+    # ảnh chụp = bản vừa xuất nhưng với giá trị MẶC ĐỊNH (không gồm sửa tay) để lần sau còn nhận ra sửa tay
+    goc = _doc_dong(DUYET.read_text())
+    anh = "\n".join(L)
+    for q, d in sua_tay.items():
+        for k, v in d.items():
+            x = next(y for y in ds if y["qid"] == q)
+            mac_dinh = ("XOÁ" if x.get("xoa") else "DỰ PHÒNG" if x.get("du_phong") else "GIỮ") if k == "Trạng thái" \
+                else x.get("question", "")
+            anh = re.sub(rf"(## {q} [^\n]*\n\n(?:[^\n]*\n)*?){k}: [^\n]*", lambda m: f"{m.group(1)}{k}: {mac_dinh}", anh, count=1)
+    ANH_CHUP.write_text(anh + "\n")
+    print("→", DUYET, f"(giữ {sum(len(v) for v in sua_tay.values())} dòng sửa tay)" if sua_tay else "")
 
 
 def chot() -> None:

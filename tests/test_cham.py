@@ -1,6 +1,6 @@
 """Test các phép chấm trên dữ liệu giả có đáp án biết trước."""
 from eval.cham import (bootstrap_hieu, cat_theo_tu, do_phu, du_trong_mot_chunk, giao, holm, mcnemar, mrr, recall_k,
-                       tim_tuong_duong)
+                       ban_tuong_duong, doc_cap)
 
 G = {"doc_id": "d", "start": 100, "end": 200}
 
@@ -30,17 +30,28 @@ def test_nhieu_don_vi_du_ca():
     assert du_trong_mot_chunk([G, g2], kq, 3) == 0 and du_trong_mot_chunk([G, g2], [c(0, 400)], 1) == 1
 
 
-def test_tuong_duong_va_tim():
+def test_tuong_duong_theo_bang_cap():
+    from types import SimpleNamespace as U
     td = {0: [{"doc_id": "vbhn", "start": 10, "end": 110}]}
     assert recall_k([G], [c(0, 120, doc="vbhn")], 1, td=td) == 1
-    van_ban = {"goc": "Điều 5. Mức phạt\n1. Phạt tiền từ 1.000.000 đồng đến 2.000.000 đồng đối với hành vi vi phạm quy định.",
-               "vbhn": "Điều 5. Mức phạt[3]\n1. Phạt tiền từ 1.000.000 đồng đến 2.000.000 đồng đối với hành vi vi phạm quy định."}
-    g = {"doc_id": "goc", "start": 17, "end": len(van_ban["goc"])}
-    # khác số hiệu (VBHN của luật gốc, hay bản cũ/bản sửa đổi) → KHÔNG tương đương
-    assert tim_tuong_duong(g, van_ban, {"goc": "1/2020/QH14", "vbhn": "5/VBHN-VPQH"}) == []
-    r = tim_tuong_duong(g, van_ban, {"goc": "1/2020/QH14", "vbhn": "1/2020/QH14"})
-    assert r and r[0]["doc_id"] == "vbhn" and van_ban["vbhn"][r[0]["start"]:r[0]["end"]].startswith("1. Phạt tiền")
-    assert tim_tuong_duong(g, van_ban, {"goc": "x", "vbhn": "x"}, phien_ban=True) == []
+    van_ban = {"goc": "Điều 5. Mức phạt\n1. Phạt tiền từ 1.000.000 đồng đến 2.000.000 đồng.\n2. Khoản cũ.",
+               "vbhn": "Điều 5. Mức phạt[3]\n1. Phạt tiền từ 1.000.000 đồng đến 2.000.000 đồng.\n2. Khoản đã sửa[4]",
+               "khac": "Điều 5. Mức phạt\n1. Phạt tiền từ 1.000.000 đồng đến 2.000.000 đồng."}
+    sh = {"goc": "1/2020/TT-BTC", "vbhn": "9/VBHN-BTC", "khac": "7/2021/TT-BTC"}
+    def dv(doc, t):
+        a1 = t.index("1."); a2 = t.index("2.")
+        return [U(dieu=5, khoan=1, diem=None, start=a1, end=a2 - 1), U(dieu=5, khoan=2, diem=None, start=a2, end=len(t))]
+    don_vi = {k: dv(k, v) for k, v in van_ban.items()}
+    cap = {"1/2020/TT-BTC": {"9/VBHN-BTC"}, "9/VBHN-BTC": {"1/2020/TT-BTC"}}
+    t = van_ban["goc"]
+    k1 = {"doc_id": "goc", "dieu": 5, "khoan": 1, "diem": None, "start": t.index("1."), "end": t.index("2.") - 1}
+    k2 = {"doc_id": "goc", "dieu": 5, "khoan": 2, "diem": None, "start": t.index("2."), "end": len(t)}
+    r = ban_tuong_duong(k1, van_ban, sh, don_vi, cap)
+    assert [x["doc_id"] for x in r] == ["vbhn"]                       # chỉ văn bản trong bảng cặp, không lấy "khac"
+    assert van_ban["vbhn"][r[0]["start"]:r[0]["end"]].startswith("1. Phạt tiền")
+    assert ban_tuong_duong(k2, van_ban, sh, don_vi, cap) == []        # khoản đã bị sửa nội dung → không tương đương
+    assert ban_tuong_duong(k1, van_ban, sh, don_vi, cap, phien_ban=True) == []
+    assert doc_cap()["19/2021/TT-BTC"] == {"21/VBHN-BTC"}
 
 
 def test_recall_theo_ngan_sach_tu():

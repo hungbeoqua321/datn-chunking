@@ -570,6 +570,25 @@ def sua_cau_dan() -> None:
         tam.replace(tep)
 
 
+def sua_cuoi_gold() -> None:
+    """Cắt các dòng tiêu đề Chương/Mục/Phần dính ở CUỐI đơn vị gold (lỗi cũ của chỉ mục don_vi) — gold.draft + bản nháp."""
+    from eval.don_vi import bo_tieu_de_cuoi
+
+    docs = {d.doc_id: d for d in nap_van_ban()}
+    for tep in (GOLD, NHAP):
+        ds = [json.loads(x) for x in tep.read_text().splitlines() if x.strip()]
+        n = 0
+        for x in ds:
+            for g in x["gold"] + x.get("phien_ban_cu", []):
+                b = bo_tieu_de_cuoi(docs[g["doc_id"]].text, g["start"], g["end"])
+                n += b != g["end"]
+                g["end"] = b
+        tam = tep.with_suffix(".tmp")
+        tam.write_text("\n".join(json.dumps(x, ensure_ascii=False) for x in ds) + "\n")
+        tam.replace(tep)
+        print(f"{tep.name}: cắt đuôi tiêu đề ở {n} đơn vị gold")
+
+
 def thay_trung_lap_loi() -> None:
     """Thay các gold trung lập CHƯA ĐẠT luật hiện hành của span_trung_lap (vd kết thúc bằng câu dẫn "…sau đây:" — luật
     thêm sau khi sàng lọc lượt 1) bằng gold mới cùng nhóm, giữ nguyên mọi câu khác và cờ dự phòng của câu bị thay."""
@@ -693,7 +712,11 @@ def main() -> None:
     ap.add_argument("--trung-lap", action="store_true", help="bổ sung gold trung lập vào gold.draft.jsonl đang có rồi dừng")
     ap.add_argument("--thay-trung-lap-loi", action="store_true", help="thay gold trung lập chưa đạt luật hiện hành rồi dừng")
     ap.add_argument("--sua-cau-dan", action="store_true", help="tính lại câu dẫn của nhóm dieu_dai rồi dừng")
+    ap.add_argument("--sua-cuoi-gold", action="store_true", help="cắt dòng tiêu đề dính ở cuối đơn vị gold rồi dừng")
     a = ap.parse_args()
+    if a.sua_cuoi_gold:
+        sua_cuoi_gold()
+        return
     if a.sua_cau_dan:
         sua_cau_dan()
         return

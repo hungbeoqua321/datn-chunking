@@ -72,6 +72,12 @@ def kiem_ban_cu(ds: list[dict]) -> dict[str, str]:
         w = re.sub(r"\[\d+\]|[^\w]+", " ", unicodedata.normalize("NFC", s).lower()).split()
         return {tuple(w[i:i + 3]) for i in range(max(1, len(w) - 2))}
 
+    from eval.cham import ban_tuong_duong, doc_cap
+
+    bang = doc_cap()
+    vb = {k: d.text for k, d in docs.items()}
+    sh = {k: d.so_hieu for k, d in docs.items()}
+    dv_cap = {k: [u for t in ("dieu", "khoan", "diem") for u in chi_muc(d)[t]] for k, d in docs.items() if d.so_hieu in bang}
     dv: dict[str, list] = {}
     ra = {}
     for x in ds:
@@ -79,6 +85,8 @@ def kiem_ban_cu(ds: list[dict]) -> dict[str, str]:
         for g in x["gold"]:
             if g["so_hieu"] not in cap or g.get("vai") == "dan":
                 continue
+            if not x.get("phien_ban") and ban_tuong_duong(g, vb, sh, dv_cap, bang):
+                continue  # đã có bản tương đương theo bảng cặp liệt kê tay → lấy trúng bản mới vẫn được tính
             moi = cap[g["so_hieu"]]
             if moi not in dv:
                 cm = chi_muc(theo_sh[moi])

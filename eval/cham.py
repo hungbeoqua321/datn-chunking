@@ -3,13 +3,15 @@
 Độ phủ gold: cov_k(G) = |G ∩ ∪ span(top-k chunk cùng văn bản)| / |G| (theo VỊ TRÍ KÝ TỰ của phần nội dung,
 không tính tiền tố). Span của chunk chỉ tính tới chỗ mô hình nhúng THỰC SỰ đọc (end_nhung: chunk dài hơn 512 token bị
 cắt đuôi khi nhúng — phần đuôi đó không thể giúp chunk được truy hồi nên không được tính là "đã lấy về").
-Bản tương đương E(G): đoạn trùng nội dung ở văn bản khác CÙNG SỐ HIỆU (không bao giờ là bản cũ/bản sửa đổi của một
-văn bản khác); câu hỏi về phiên bản thì tắt hẳn → lấy trúng bản đã hết hiệu lực không bao giờ được tính là đúng.
+Bản tương đương E(G) (dùng cho cả chấm truy hồi lẫn chấm trích dẫn): chỉ giữa các CẶP VĂN BẢN liệt kê tay trong
+eval/cap_tuong_duong.csv, cùng số Điều/khoản/điểm, nguyên văn giống hệt — xem ban_tuong_duong. Câu hỏi phiên bản: tắt hẳn.
 """
+import csv
 import math
 import random
 import re
 from collections import defaultdict
+from pathlib import Path
 
 TAU = 0.5
 
@@ -107,38 +109,43 @@ def _chuan(s: str) -> tuple[str, list[int]]:
     return "".join(ra), vt
 
 
-def _ngram(s: str, n: int = 5) -> set:
-    return {s[i:i + n] for i in range(max(0, len(s) - n + 1))}
+CAP_TUONG_DUONG = Path(__file__).with_name("cap_tuong_duong.csv")
 
 
-def tim_tuong_duong(gold: dict, van_ban: dict[str, str], so_hieu: dict[str, str], phien_ban: bool = False,
-                    nguong: float = 0.8, _cache: dict = {}) -> list[dict]:  # noqa: B006
-    """Các đoạn ở văn bản KHÁC nhưng CÙNG SỐ HIỆU với gold, có độ chứa 5-gram ký tự ≥ nguong (neo bằng 60 ký tự
-    đầu/giữa/cuối). Câu hỏi phiên bản (phien_ban=True) → không có bản tương đương."""
-    if phien_ban:
+def doc_cap(p: Path = CAP_TUONG_DUONG) -> dict[str, set[str]]:
+    """Bảng cặp văn bản tương đương (liệt kê TAY, đối xứng): {số hiệu: {số hiệu cặp}}."""
+    ra: dict[str, set[str]] = defaultdict(set)
+    for r in csv.DictReader(open(p)):
+        ra[r["so_hieu_a"]].add(r["so_hieu_b"])
+        ra[r["so_hieu_b"]].add(r["so_hieu_a"])
+    return ra
+
+
+def ban_tuong_duong(gold: dict, van_ban: dict[str, str], so_hieu: dict[str, str], don_vi: dict[str, list],
+                    cap: dict[str, set[str]], phien_ban: bool = False) -> list[dict]:
+    """Bản tương đương của MỘT đơn vị gold — KHÔNG dùng ngưỡng độ giống:
+      1. văn bản chứa nó phải nằm trong bảng cặp liệt kê tay (`cap`, eval/cap_tuong_duong.csv);
+      2. trong văn bản cặp, lấy đơn vị CÙNG số Điều / khoản / điểm (don_vi: {doc_id: [DonVi…]} từ eval.don_vi);
+      3. nguyên văn gold (đã chuẩn hoá khoảng trắng, nháy, ký hiệu chú thích [n]) phải xuất hiện NGUYÊN VẸN trong đơn vị
+         đó — đơn vị đã bị sửa nội dung thì không tương đương.
+    Câu hỏi phiên bản → không bao giờ có bản tương đương. Trả [{doc_id, so_hieu, dieu, khoan, diem, start, end}]."""
+    if phien_ban or gold.get("dieu") is None:
         return []
     g, _ = _chuan(van_ban[gold["doc_id"]][gold["start"]:gold["end"]])
-    if len(g) < 40:
+    if not g:
         return []
-    ng = _ngram(g)
-    neo = {g[:60], g[len(g) // 2:len(g) // 2 + 60], g[-60:]}
     ra = []
-    for doc_id, t in van_ban.items():
-        if doc_id == gold["doc_id"] or so_hieu.get(doc_id) != so_hieu.get(gold["doc_id"]):
+    for doc_id, sh in so_hieu.items():
+        if sh not in cap.get(so_hieu[gold["doc_id"]], set()):
             continue
-        if doc_id not in _cache:
-            _cache[doc_id] = _chuan(t)
-        tc, vt = _cache[doc_id]
-        for n in neo:
-            j = tc.find(n)
-            if j < 0:
+        for u in don_vi.get(doc_id, []):
+            if (u.dieu, u.khoan, u.diem) != (gold["dieu"], gold.get("khoan"), gold.get("diem")):
                 continue
-            off = g.find(n)
-            a = max(0, j - off)
-            b = min(len(tc), a + len(g))
-            ng2 = _ngram(tc[a:b])
-            if ng and len(ng & ng2) / len(ng) >= nguong:
-                ra.append({"doc_id": doc_id, "start": vt[a], "end": vt[b - 1] + 1})
+            tc, vt = _chuan(van_ban[doc_id][u.start:u.end])
+            j = tc.find(g)
+            if j >= 0:
+                ra.append({"doc_id": doc_id, "so_hieu": sh, "dieu": u.dieu, "khoan": u.khoan, "diem": u.diem,
+                           "start": u.start + vt[j], "end": u.start + vt[j + len(g) - 1] + 1})
                 break
     return ra
 

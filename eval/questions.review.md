@@ -10,10 +10,10 @@ Tổng 175 câu nháp; cần giữ: don_gian 50 (trung lập ≥ 16), xuyen_khoa
 
 | Nhóm | Câu GIỮ (trung lập) | Không cờ | Gold đáng ngờ | Không trả lời được | Sai ý đồ nhóm | Mơ hồ | Lộ đáp án | Kiểm tra tự động | Gold ở bản cũ |
 |---|---|---|---|---|---|---|---|---|---|
-| don_gian | 50 (16) | 16 | 8 | 3 | 9 | 21 | 4 | 0 | 8 |
+| don_gian | 44 (14) | 15 | 5 | 3 | 9 | 19 | 2 | 0 | 0 |
 | xuyen_khoan | 18 (6) | 2 | 0 | 1 | 8 | 10 | 4 | 0 | 0 |
-| dan_chieu | 12 (4) | 4 | 0 | 0 | 5 | 2 | 2 | 2 | 2 |
-| dieu_dai | 20 (6) | 7 | 0 | 0 | 0 | 7 | 8 | 0 | 6 |
+| dan_chieu | 10 (4) | 4 | 0 | 0 | 4 | 1 | 1 | 2 | 0 |
+| dieu_dai | 19 (6) | 7 | 0 | 0 | 0 | 6 | 7 | 0 | 0 |
 | khong_co_dieu | 15 (5) | 4 | 3 | 1 | 0 | 5 | 4 | 0 | 0 |
 
 ## q001 · don_gian · khoan
@@ -88,7 +88,7 @@ Câu hỏi: Khi người lao động làm việc tại một doanh nghiệp từ
 ---
 ## q006 · don_gian · khoan
 
-Trạng thái: GIỮ
+Trạng thái: XOÁ
 Câu hỏi: Nếu một hành vi phạm tội được thực hiện có tổ chức hoặc lợi dụng nghề nghiệp thì sẽ bị xử lý như thế nào?
 
 *Đáp án nháp của mô hình:* Sẽ bị phạt tù từ mười năm đến hai mươi năm hoặc tù chung thân.
@@ -118,8 +118,6 @@ Câu hỏi: Nếu một người vận chuyển bị chậm trả hàng, họ c�
 **Gold: 95/2015/QH13 Điều 174 khoản 4**
 
 > 4. Người vận chuyển không phải bồi thường đối với tổn thất phát sinh do việc chậm trả hàng, trừ trường hợp thông báo về việc chậm trả hàng bằng văn bản được gửi tới người vận chuyển trong vòng 60 ngày kể từ ngày hàng hóa lẽ ra được giao theo thỏa thuận trong hợp đồng.
-> Mục 3
-> HỢP ĐỒNG VẬN CHUYỂN THEO CHUYẾN
 
 ---
 ## q008 · don_gian · khoan
@@ -134,8 +132,6 @@ Câu hỏi: Khi kinh doanh dịch vụ tại một bảo tàng, doanh nghiệp c
 **Gold: 45/2024/QH15 Điều 81 khoản 2**
 
 > 2. Hoạt động kinh doanh dịch vụ bảo tàng phải phù hợp với nhiệm vụ của bảo tàng quy định tại Điều 68 của Luật này.
-> Chương VII
-> ĐIỀU KIỆN BẢO ĐẢM HOẠT ĐỘNG BẢO VỆ VÀ PHÁT HUY GIÁ TRỊ DI SẢN VĂN HÓA
 
 ---
 ## q009 · don_gian · khoan
@@ -159,7 +155,6 @@ Câu hỏi: Người thiết kế kiến trúc cần nộp hồ sơ gì để đ
 
 *Đáp án nháp của mô hình:* Cần nộp hồ sơ thiết kế kiến trúc, đây là một phần của hồ sơ thiết kế xây dựng được thẩm định và phê duyệt theo quy định của Luật xây dựng.
 
-**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 03/2020/TT-BXD Điều 2 ↔ 83/2026/VBHN-TT-BXD Điều 2 khoản 1: GIỐNG (chứa 1.00)
 **Sàng lọc:** chỉ trả lời được một phần từ gold; không đúng ý đồ nhóm — Gold chỉ nói hồ sơ thiết kế kiến trúc là một phần của hồ sơ thiết kế xây dựng, không liệt kê cần nộp gì (danh mục nằm ở khoản 2) và không nói ai nộp. Đáp án nháp lặp lại ý trong câu hỏi. · Gợi ý câu hỏi: Hồ sơ thiết kế kiến trúc có vị trí như thế nào trong hồ sơ thiết kế xây dựng và được thẩm định, phê duyệt theo luật nào?
 
 **Gold: 03/2020/TT-BXD Điều 2 khoản 1**
@@ -183,7 +178,7 @@ Câu hỏi: Nếu một bên không thực hiện nghĩa vụ đúng thời hạ
 ---
 ## q012 · don_gian · khoan
 
-Trạng thái: GIỮ
+Trạng thái: XOÁ
 Câu hỏi: Khi muốn thay đổi vị trí làm việc của một cán bộ lãnh đạo, người ta cần làm gì?
 
 *Đáp án nháp của mô hình:* Phải có quyết định của cấp có thẩm quyền về công tác cán bộ.
@@ -198,7 +193,7 @@ Câu hỏi: Khi muốn thay đổi vị trí làm việc của một cán bộ l
 ---
 ## q013 · don_gian · khoan
 
-Trạng thái: GIỮ
+Trạng thái: XOÁ
 Câu hỏi: Nếu người lao động yêu cầu thương lượng tập thể, doanh nghiệp có được từ chối không?
 
 *Đáp án nháp của mô hình:* Không được từ chối, doanh nghiệp phải tham gia thương lượng.
@@ -233,7 +228,6 @@ Câu hỏi: Giao dịch thuế điện tử là gì?
 *Đáp án nháp của mô hình:* Là các giao dịch được thực hiện bằng phương thức điện tử giữa các cơ quan, tổ chức, cá nhân trong lĩnh vực thuế.
 
 **Cờ tự động:** trùng từ cao (86%)
-**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 19/2021/TT-BTC Điều 3 ↔ 21/VBHN-BTC Điều 3 khoản 1: GIỐNG (chứa 1.00)
 **Sàng lọc:** không thấy vấn đề
 
 **Gold: 19/2021/TT-BTC Điều 3 khoản 1**
@@ -257,7 +251,7 @@ Câu hỏi: Nếu một người không tố giác tội phạm của người t
 ---
 ## q017 · don_gian · khoan
 
-Trạng thái: GIỮ
+Trạng thái: XOÁ
 Câu hỏi: Nếu một hộ kinh doanh không thực hiện hoặc thực hiện không đầy đủ chế độ kế toán và hóa đơn theo quy định, thì sẽ phải nộp thuế giá trị gia tăng như thế nào?
 
 *Đáp án nháp của mô hình:* Sẽ nộp thuế giá trị gia tăng theo phương pháp khoán thuế.
@@ -673,7 +667,7 @@ Câu hỏi: Những loại thỏa ước lao động tập thể nào được q
 ---
 ## q207 · don_gian · trung_lap · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: XOÁ
 Câu hỏi: Khi vận chuyển quân sự bằng tàu buôn thì có áp dụng quy định về vận chuyển hàng hóa, hành khách và hành lý không?
 
 *Đáp án nháp của mô hình:* Không áp dụng quy định về vận chuyển hàng hóa, hành khách và hành lý khi vận chuyển quân sự bằng tàu buôn.
@@ -788,7 +782,7 @@ Câu hỏi: Sau khi cơ sở giáo dục đã khắc phục hoàn toàn nguyên 
 ---
 ## q216 · don_gian · trung_lap · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: XOÁ
 Câu hỏi: Nếu một cuộc đình công là bất hợp pháp và gây thiệt hại cho người sử dụng lao động thì ai phải chịu trách nhiệm bồi thường?
 
 *Đáp án nháp của mô hình:* Tổ chức công đoàn lãnh đạo cuộc đình công phải bồi thường thiệt hại cho người sử dụng lao động.
@@ -865,7 +859,6 @@ Câu hỏi: Người nộp thuế có thể tra cứu thông tin giao dịch đi
 
 *Đáp án nháp của mô hình:* Người nộp thuế có thể tra cứu thông tin giao dịch điện tử trước đó trên Cổng thông tin điện tử của Tổng cục Thuế, Cổng thông tin điện tử của cơ quan nhà nước có thẩm quyền, hoặc tổ chức cung cấp dịch vụ T-VAN bằng cách sử dụng tài khoản hoặc mã giao dịch thuế điện tử đã được cấp.
 
-**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 19/2021/TT-BTC Điều 12 ↔ 21/VBHN-BTC Điều 12 khoản 2: GIỐNG (chứa 1.00)
 **Sàng lọc:** không thấy vấn đề
 
 **Gold: 19/2021/TT-BTC Điều 12 khoản 2**
@@ -916,8 +909,6 @@ Câu hỏi: Khi một công chức lãnh đạo, quản lý được điều đ�
 > 1. Công chức giữ chức vụ lãnh đạo, quản lý được điều động đến vị trí công tác khác mà phụ cấp chức vụ mới thấp hơn phụ cấp chức vụ hiện đảm nhiệm thì được bảo lưu phụ cấp chức vụ trong thời gian 06 tháng.
 > 2. Cơ quan, tổ chức, đơn vị cử công chức biệt phái có trách nhiệm trả lương và bảo đảm các quyền lợi khác của công chức trong thời gian được cử biệt phái. Trường hợp cơ quan, tổ chức, đơn vị nơi được cử đến biệt phái có chế độ phụ cấp, chính sách hỗ trợ đặc thù theo nghề, theo công việc hoặc theo địa bàn thì ngoài lương và các quyền lợi khác do cơ quan, tổ chức, đơn vị cử công chức biệt phái chi trả, công chức còn được hưởng các chế độ, chính sách đặc thù do cơ quan, tổ chức, đơn vị nơi được cử đến biệt phái chi trả.
 > 3. Trường hợp công chức được cử biệt phái đến làm việc ở vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn được hưởng các chế độ, chính sách ưu đãi khác theo quy định của pháp luật.
-> Mục 3
-> BỔ NHIỆM CÔNG CHỨC LÃNH ĐẠO, QUẢN LÝ
 
 **Bản CŨ (đã bị 300/2026/NĐ-CP sửa): 170/2025/NĐ-CP Điều 27**
 
@@ -925,8 +916,6 @@ Câu hỏi: Khi một công chức lãnh đạo, quản lý được điều đ�
 > 1. Công chức giữ chức vụ lãnh đạo, quản lý được điều động đến vị trí công tác khác mà phụ cấp chức vụ mới thấp hơn phụ cấp chức vụ hiện đảm nhiệm thì được bảo lưu phụ cấp chức vụ trong thời gian 06 tháng.
 > 2. Cơ quan, tổ chức cử công chức biệt phái có trách nhiệm trả lương và bảo đảm các quyền lợi khác của công chức trong thời gian được cử biệt phái; bố trí công việc phù hợp cho công chức khi hết thời gian biệt phái. Trường hợp cơ quan, tổ chức nơi được cử đến biệt phái có chế độ, chính sách đặc thù thì ngoài lương và các quyền lợi khác do cơ quan, tổ chức cử công chức biệt phái chi trả, công chức còn được hưởng các chế độ, chính sách đặc thù do cơ quan, tổ chức nơi được cử đến biệt phái chi trả.
 > 3. Trường hợp công chức được biệt phái đến làm việc ở miền núi, biên giới, hải đảo, vùng sâu, vùng xa, vùng dân tộc thiểu số, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn được hưởng các chế độ, chính sách ưu đãi theo quy định của pháp luật.
-> Mục 3
-> BỔ NHIỆM CÔNG CHỨC LÃNH ĐẠO, QUẢN LÝ
 
 ---
 ## q046 · don_gian · phien_ban · phiên bản
@@ -979,8 +968,6 @@ Câu hỏi: Tại địa phương, cơ quan nào có trách nhiệm thống nh�
 > 3. Đề xuất với cơ quan có thẩm quyền các nội dung liên quan đến quản lý công chức quy định tại điểm d khoản 1 Điều 64 Nghị định này theo thẩm quyền.
 > 4. Thực hiện quy định tại điểm g, điểm h khoản 1 Điều 64 Nghị định này theo thẩm quyền.
 > 5. Giải quyết khiếu nại, tố cáo theo quy định; thực hiện các nội dung quản lý công chức theo phân cấp quản lý cán bộ của cấp có thẩm quyền.
-> Chương VI
-> ĐIỀU KHOẢN THI HÀNH[39]
 
 **Bản CŨ (đã bị 300/2026/NĐ-CP sửa): 170/2025/NĐ-CP Điều 67**
 
@@ -1071,8 +1058,6 @@ Câu hỏi: Khi tiếp nhận công chức vào làm việc để bổ nhiệm g
 > 2. Người đứng đầu cơ quan có thẩm quyền tuyển dụng quyết định tiếp nhận công chức theo thẩm quyền.
 > 3. Khi tiếp nhận vào làm công chức để bổ nhiệm giữ chức vụ lãnh đạo, quản lý thì thực hiện theo quy trình bổ nhiệm đối với nguồn nhân sự từ nơi khác. Quyết định bổ nhiệm đồng thời là quyết định tiếp nhận vào làm công chức.
 > Trường hợp cơ quan có thẩm quyền bổ nhiệm là cấp dưới của cơ quan có thẩm quyền tuyển dụng thì cơ quan có thẩm quyền bổ nhiệm phải báo cáo và được cơ quan có thẩm quyền tuyển dụng đồng ý về việc tiếp nhận trước khi ban hành quyết định bổ nhiệm.
-> Mục 5
-> TRÌNH TỰ, THỦ TỤC THI TUYỂN, XÉT TUYỂN CÔNG CHỨC
 
 **Bản CŨ (đã bị 300/2026/NĐ-CP sửa): 170/2025/NĐ-CP Điều 14**
 
@@ -1093,8 +1078,6 @@ Câu hỏi: Khi tiếp nhận công chức vào làm việc để bổ nhiệm g
 > 5. Khi tiếp nhận vào làm công chức để bổ nhiệm giữ chức vụ, chức danh lãnh đạo, quản lý thì thực hiện theo quy trình bổ nhiệm đối với nguồn nhân sự từ nơi khác. Quyết định bổ nhiệm đồng thời là quyết định tiếp nhận vào làm công chức và thực hiện như sau:
 > a) Trường hợp cơ quan có thẩm quyền tuyển dụng đồng thời là cơ quan có thẩm quyền bổ nhiệm hoặc là cấp dưới của cơ quan có thẩm quyền bổ nhiệm thì quyết định bổ nhiệm đồng thời là quyết định tiếp nhận;
 > b) Trường hợp cơ quan có thẩm quyền tuyển dụng là cấp trên của cơ quan có thẩm quyền bổ nhiệm thì cơ quan có thẩm quyền bổ nhiệm phải báo cáo và được cơ quan có thẩm quyền tuyển dụng đồng ý về việc tiếp nhận trước khi quyết định bổ nhiệm.
-> Mục 5
-> TRÌNH TỰ, THỦ TỤC THI TUYỂN, XÉT TUYỂN CÔNG CHỨC
 
 ---
 ## q051 · don_gian · phien_ban · phiên bản
@@ -1141,20 +1124,12 @@ Câu hỏi: Khi tuyển dụng vào làm công chức, người được tuyển
 > 2. Trường hợp người được tuyển dụng vào làm công chức đã có thời gian công tác theo đúng quy định của pháp luật phù hợp với yêu cầu về trình độ chuyên môn, nghiệp vụ của vị trí việc làm được tuyển dụng, có đóng bảo hiểm xã hội bắt buộc (nếu không liên tục mà chưa nhận trợ cấp bảo hiểm xã hội một lần hoặc chưa hưởng chế độ phục viên, xuất ngũ thì được cộng dồn), được bố trí làm công việc theo đúng chuyên môn, nghiệp vụ trước đây đã đảm nhiệm thì người đứng đầu cơ quan có thẩm quyền tuyển dụng căn cứ thời gian công tác đó để xem xét, quyết định xếp vào bậc lương phù hợp ở ngạch công chức tương ứng theo vị trí việc làm được tuyển dụng.
 > 3. Trường hợp người được tiếp nhận vào làm công chức có thời gian công tác theo đúng quy định của pháp luật, có đóng bảo hiểm xã hội bắt buộc (nếu không liên tục mà chưa nhận trợ cấp bảo hiểm xã hội một lần hoặc chưa hưởng chế độ phục viên, xuất ngũ thì được cộng dồn), làm công việc phù hợp với yêu cầu về trình độ chuyên môn, nghiệp vụ của vị trí việc làm được tiếp nhận thì thời gian công tác đó được tính làm căn cứ xếp lương ở ngạch công chức tương ứng theo vị trí việc làm được tiếp nhận.
 > 4. Bộ Nội vụ hướng dẫn việc xếp lương đối với các trường hợp quy định tại Điều này.
-> Chương III
-> SỬ DỤNG CÔNG CHỨC
-> Mục 1
-> BỐ TRÍ VÀ XẾP NGẠCH CÔNG CHỨC THEO VỊ TRÍ VIỆC LÀM
 
 **Bản CŨ (đã bị 300/2026/NĐ-CP sửa): 170/2025/NĐ-CP Điều 20**
 
 > Điều 20. Xếp lương đối với người được tuyển dụng vào công chức đã có thời gian công tác có đóng bảo hiểm xã hội bắt buộc
 > Trường hợp người được tuyển dụng vào công chức theo quy định tại Nghị định này đã có thời gian công tác theo đúng quy định của pháp luật phù hợp với yêu cầu về trình độ chuyên môn nghiệp vụ của vị trí việc làm được tuyển dụng, có đóng bảo hiểm xã hội bắt buộc (nếu không liên tục mà chưa nhận trợ cấp bảo hiểm xã hội một lần thì được cộng dồn), được bố trí làm công việc theo đúng chuyên môn, nghiệp vụ trước đây đã đảm nhiệm thì thời gian công tác đó được tính làm căn cứ để xếp lương ở ngạch công chức tương ứng theo vị trí việc làm được tuyển dụng.
 > Bộ Nội vụ hướng dẫn chi tiết Điều này.
-> Chương III
-> SỬ DỤNG CÔNG CHỨC
-> Mục 1
-> BỐ TRÍ VÀ XẾP NGẠCH CÔNG CHỨC THEO VỊ TRÍ VIỆC LÀM
 
 ---
 ## q053 · don_gian · phien_ban · phiên bản
@@ -1200,8 +1175,6 @@ Câu hỏi: Khi xem xét bổ nhiệm lại hoặc kéo dài thời gian giữ c
 
 > Điều 41. Hồ sơ bổ nhiệm lại, kéo dài thời gian giữ chức vụ lãnh đạo, quản lý đến tuổi nghỉ hưu[24]
 > Hồ sơ đề nghị bổ nhiệm lại, kéo dài thời gian giữ chức vụ thực hiện theo quy định tại Điều 35 Nghị định này; đối với bản tự kiểm điểm và đánh giá, nhận xét của tập thể lãnh đạo cơ quan, tổ chức, đơn vị thực hiện trong cả thời hạn giữ chức vụ.
-> Mục 5
-> LUÂN CHUYỂN CÔNG CHỨC LÃNH ĐẠO, QUẢN LÝ
 
 **Bản CŨ (đã bị 300/2026/NĐ-CP sửa): 170/2025/NĐ-CP Điều 41**
 
@@ -1217,8 +1190,6 @@ Câu hỏi: Khi xem xét bổ nhiệm lại hoặc kéo dài thời gian giữ c
 > g) Bản kê khai tài sản, thu nhập theo mẫu quy định;
 > h) Giấy chứng nhận sức khỏe của cơ sở y tế có thẩm quyền cấp trong thời hạn 06 tháng.
 > Trường hợp các thành phần trong hồ sơ đề nghị kéo dài thời gian giữ chức vụ lãnh đạo, quản lý đến tuổi nghỉ hưu quy định tại khoản 2 Điều này đã được cấp có thẩm quyền phê duyệt và tồn tại trong cơ sở dữ liệu quốc gia thì được sử dụng để thay thế bản giấy tương ứng.
-> Mục 5
-> LUÂN CHUYỂN CÔNG CHỨC LÃNH ĐẠO, QUẢN LÝ
 
 ---
 ## q055 · don_gian · phien_ban · phiên bản
@@ -2081,7 +2052,7 @@ Câu hỏi: Khi đình chỉ vụ án, cần ghi rõ những nội dung gì đ�
 ---
 ## q091 · dan_chieu · dan_chieu
 
-Trạng thái: GIỮ
+Trạng thái: XOÁ
 Câu hỏi: Nếu một hợp đồng lao động bị tuyên bố vô hiệu toàn bộ do việc ký kết sai thẩm quyền, thì người lao động sẽ được xử lý như thế nào?
 
 *Đáp án nháp của mô hình:* Cơ quan quản lý nhà nước về lao động sẽ hướng dẫn các bên ký lại hợp đồng lao động, đồng thời quyền và nghĩa vụ của người lao động sẽ được giải quyết theo quy định của pháp luật.
@@ -2319,8 +2290,6 @@ Câu hỏi: Nếu chủ sở hữu tài sản không yêu cầu nhận lại ho�
 > 4. Bộ Công an chủ trì tổ chức xử lý tài sản chìm đắm liên quan đến an ninh quốc gia.
 > 5. Ủy ban nhân dân cấp tỉnh chủ trì tổ chức xử lý tài sản chìm đắm không thuộc tài sản quy định tại các khoản 1, 2, 3 và 4 Điều này.
 > 6. Chính phủ quy định chi tiết việc xử lý tài sản chìm đắm.
-> Chương XV
-> TAI NẠN ĐÂM VA
 
 ---
 ## q101 · dan_chieu · dan_chieu
@@ -2391,12 +2360,12 @@ Câu hỏi: Công chức trong Tòa án được hưởng tiền lương và ph�
 ---
 ## q104 · dan_chieu · dan_chieu
 
-Trạng thái: GIỮ
+Trạng thái: XOÁ
 Câu hỏi: Khi người sử dụng lao động thôi việc cho người lao động theo quy định, thì phải trả khoản tiền gì và điều kiện nào để được tính?
 
 *Đáp án nháp của mô hình:* Phải trả trợ cấp mất việc làm, với mức là mỗi năm làm việc được 01 tháng tiền lương, nhưng ít nhất bằng 02 tháng tiền lương, và thời gian làm việc được tính theo quy định tại Điều 49.
 
-**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 10/2012/QH13 Điều 45 ↔ 45/2019/QH14 Điều 42: KHÁC ÍT (chứa 0.67); 10/2012/QH13 Điều 49 ↔ 45/2019/QH14 Điều 47: KHÁC ÍT (chứa 0.74)
+**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 10/2012/QH13 Điều 45 ↔ 45/2019/QH14 Điều 42: KHÁC ÍT (chứa 0.67); 10/2012/QH13 Điều 49 ↔ 45/2019/QH14 Điều 47: KHÁC ÍT (chứa 0.78)
 **Sàng lọc:** câu hỏi mơ hồ — Không nêu trường hợp thôi việc (sáp nhập, hợp nhất, chia, tách doanh nghiệp) nên dễ lẫn với trợ cấp thôi việc; câu hỏi hỏi gộp hai ý. Đáp án nháp thiếu điều kiện đã làm việc từ 12 tháng trở lên. · Gợi ý câu hỏi: Khi doanh nghiệp sáp nhập, hợp nhất hoặc chia, tách mà người sử dụng lao động cho người lao động thôi việc, người lao động được hưởng khoản trợ cấp nào và mức trợ cấp được tính ra sao?
 
 **Gold: 10/2012/QH13 Điều 45 khoản 3 — NGUỒN**
@@ -2409,8 +2378,6 @@ Câu hỏi: Khi người sử dụng lao động thôi việc cho người lao �
 > 1. Người sử dụng lao động trả trợ cấp mất việc làm cho người lao động đã làm việc thường xuyên cho mình từ 12 tháng trở lên mà bị mất việc làm theo quy định tại Điều 44 và Điều 45 của Bộ luật này, mỗi năm làm việc trả 01 tháng tiền lương nhưng ít nhất phải bằng 02 tháng tiền lương.
 > 2. Thời gian làm việc để tính trợ cấp mất việc làm là tổng thời gian người lao động đã làm việc thực tế cho người sử dụng lao động trừ đi thời gian người lao động đã tham gia bảo hiểm thất nghiệp theo quy định của Luật bảo hiểm xã hội và thời gian làm việc đã được người sử dụng lao động chi trả trợ cấp thôi việc.
 > 3. Tiền lương để tính trợ cấp mất việc làm là tiền lương bình quân theo hợp đồng lao động của 06 tháng liền kề trước khi người lao động mất việc làm.
-> Mục 4
-> HỢP ĐỒNG LAO ĐỘNG VÔ HIỆU
 
 ---
 ## q105 · dan_chieu · dan_chieu
@@ -2588,7 +2555,6 @@ Câu hỏi: Cơ quan thuế sẽ gửi kết quả giải đáp vướng mắc c
 
 *Đáp án nháp của mô hình:* Cơ quan thuế sẽ gửi kết quả giải đáp vướng mắc cho người nộp thuế thông qua tin nhắn trên số điện thoại di động đã đăng ký.
 
-**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 19/2021/TT-BTC Điều 33 ↔ 21/VBHN-BTC Điều 33 khoản 3 điểm b: GIỐNG (chứa 1.00); 19/2021/TT-BTC Điều 5 ↔ 21/VBHN-BTC Điều 5 khoản 2 điểm a: GIỐNG (chứa 1.00)
 **Sàng lọc:** chỉ trả lời được một phần từ gold; câu hỏi mơ hồ — Thiếu bối cảnh giao dịch điện tử và đối tượng cá nhân đăng ký nhận qua điện thoại; gold chỉ nêu tin nhắn thông báo cho trường hợp này, không phải mọi cách gửi kết quả. · Gợi ý câu hỏi: Trong giao dịch thuế điện tử, khi người nộp thuế là cá nhân đã đăng ký nhận kết quả qua điện thoại di động, cơ quan thuế thông báo kết quả giải đáp vướng mắc cho họ bằng cách nào?
 
 **Gold: 19/2021/TT-BTC Điều 33 khoản 3 điểm b — NGUỒN**
@@ -2656,7 +2622,7 @@ Câu hỏi: Khi nào thì phiên họp xét lại quyết định bị kháng c�
 ---
 ## q117 · dieu_dai · dieu_dai
 
-Trạng thái: GIỮ
+Trạng thái: XOÁ
 Câu hỏi: Ở cấp tỉnh, ai có quyền quy định cụ thể về quy trình và thành phần tham dự các bước trong việc bổ nhiệm cán bộ lãnh đạo, quản lý thuộc phạm vi phụ trách của đơn vị?
 
 *Đáp án nháp của mô hình:* Chủ tịch Ủy ban nhân dân tỉnh quy định cụ thể về quy trình, thành phần tham dự các bước trong việc bổ nhiệm cán bộ lãnh đạo, quản lý thuộc phạm vi phụ trách của đơn vị.
@@ -2676,7 +2642,6 @@ Câu hỏi: Người nộp thuế muốn đăng ký giao dịch với cơ quan t
 
 *Đáp án nháp của mô hình:* Người nộp thuế cần đăng ký giao dịch thông qua tổ chức cung cấp dịch vụ T-VAN theo quy định.
 
-**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 19/2021/TT-BTC Điều 10 ↔ 21/VBHN-BTC Điều 10 khoản 3: GIỐNG (chứa 1.00)
 **Sàng lọc:** chỉ trả lời được một phần từ gold; câu hỏi mơ hồ — Có nhiều cách đăng ký giao dịch điện tử (qua Cổng của Tổng cục Thuế, Cổng dịch vụ công, tổ chức T-VAN). Gold chỉ là câu dẫn chiếu cho trường hợp T-VAN, không chứa nội dung thủ tục. · Gợi ý câu hỏi: Người nộp thuế muốn đăng ký giao dịch điện tử với cơ quan thuế thông qua một tổ chức cung cấp dịch vụ T-VAN thì thực hiện theo thủ tục nào?
 
 **Gold: 19/2021/TT-BTC Điều 10 khoản 3 — ĐÍCH**
@@ -2691,7 +2656,6 @@ Câu hỏi: Khi một doanh nghiệp đang giao dịch qua tổ chức cung cấ
 
 *Đáp án nháp của mô hình:* Doanh nghiệp phải chuyển sang giao dịch qua Cổng thông tin điện tử của Tổng cục Thuế hoặc đăng ký giao dịch với một tổ chức cung cấp dịch vụ T-VAN khác.
 
-**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 19/2021/TT-BTC Điều 41 ↔ 21/VBHN-BTC Điều 41 khoản 5 điểm c: GIỐNG (chứa 1.00)
 **Sàng lọc:** lộ đáp án / nhắc văn bản — Câu hỏi lặp gần nguyên văn vế điều kiện của gold; cuối gold dính dòng tiêu đề Mục 2. Gold viết 'được đăng ký' (quyền lựa chọn) chứ không phải nghĩa vụ 'phải làm gì'. · Gợi ý câu hỏi: Nếu đơn vị trung gian truyền nhận dữ liệu thuế điện tử mà doanh nghiệp đang dùng ngừng cung cấp dịch vụ, doanh nghiệp có thể chuyển sang giao dịch điện tử với cơ quan thuế bằng cách nào?
 
 **Gold: 19/2021/TT-BTC Điều 41 khoản 5 — DẪN**
@@ -2701,7 +2665,6 @@ Câu hỏi: Khi một doanh nghiệp đang giao dịch qua tổ chức cung cấ
 **Gold: 19/2021/TT-BTC Điều 41 khoản 5 điểm c — ĐÍCH**
 
 > c) Người nộp thuế đang giao dịch qua tổ chức cung cấp dịch vụ T-VAN ngừng cung cấp dịch vụ được đăng ký để chuyển sang giao dịch qua Cổng thông tin điện tử của Tổng cục Thuế hoặc đăng ký giao dịch qua tổ chức cung cấp dịch vụ T-VAN khác.
-> Mục 2. ĐĂNG KÝ GIAO DỊCH ĐIỆN TỬ TRONG LĨNH VỰC THUẾ QUA TỔ CHỨC CUNG CẤP DỊCH VỤ T-VAN
 
 ---
 ## q120 · dieu_dai · dieu_dai
@@ -2798,7 +2761,6 @@ Câu hỏi: Các tổ chức đã kết nối với Cổng thông tin điện t�
 
 *Đáp án nháp của mô hình:* Các tổ chức vẫn cần tiếp tục kết nối và đảm bảo đáp ứng các tiêu chuẩn kỹ thuật kết nối theo quy định, nếu không thì phải hoàn thiện để đạt yêu cầu.
 
-**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 19/2021/TT-BTC Điều 38 ↔ 21/VBHN-BTC Điều 38 khoản 3 điểm g: GIỐNG (chứa 1.00)
 **Sàng lọc:** câu hỏi mơ hồ; lộ đáp án / nhắc văn bản — Câu hỏi dùng 'Thông tư này' mà không rõ văn bản nào và chép gần nguyên văn gold. Chủ thể đúng là ngân hàng, tổ chức trung gian thanh toán chứ không phải 'các tổ chức' chung chung; gold nói 'tiếp tục kết nối', không phải 'tiếp tục hoạt động'. · Gợi ý câu hỏi: Ngân hàng đã kết nối hệ thống với cổng thông tin điện tử của cơ quan thuế từ trước khi quy định mới về giao dịch thuế điện tử có hiệu lực thì có được tiếp tục kết nối không, và nếu hệ thống chưa đạt chuẩn kỹ thuật thì phải làm gì?
 
 **Gold: 19/2021/TT-BTC Điều 38 khoản 3 — DẪN**
@@ -2882,7 +2844,6 @@ Câu hỏi: Người lao động mua hàng hóa, dịch vụ tại Việt Nam đ
 
 *Đáp án nháp của mô hình:* Có, người lao động mua hàng hóa, dịch vụ tại Việt Nam để sử dụng trong hoạt động ngoại giao được hoàn lại số thuế giá trị gia tăng đã trả, cụ thể là số thuế ghi trên hóa đơn hoặc chứng từ thanh toán.
 
-**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 48/2024/QH15 Điều 15 ↔ 114/VBHN-VPQH Điều 15 khoản 7: GIỐNG (chứa 1.00)
 **Sàng lọc:** chỉ trả lời được một phần từ gold — Chủ thể sai: gold áp dụng cho đối tượng được hưởng quyền ưu đãi, miễn trừ ngoại giao, không phải 'người lao động' mua hàng cho 'hoạt động ngoại giao'. · Gợi ý câu hỏi: Người được hưởng quyền ưu đãi, miễn trừ ngoại giao mua hàng hóa, dịch vụ tại Việt Nam để sử dụng có được hoàn thuế giá trị gia tăng không, và số thuế được hoàn căn cứ vào chứng từ nào?
 
 **Gold: 48/2024/QH15 Điều 15 khoản 7 — ĐÍCH**
@@ -2930,7 +2891,6 @@ Câu hỏi: Nếu người nộp thuế không chấp nhận được thông bá
 
 *Đáp án nháp của mô hình:* Người nộp thuế có thể căn cứ vào thông báo đó để hoàn chỉnh thông tin đăng ký hoặc liên hệ với cơ quan thuế, ngân hàng hoặc tổ chức thanh toán nơi có tài khoản để được hỗ trợ hướng dẫn.
 
-**⚠ Bản cũ:** gold ở BẢN CŨ, bản mới cũng có trong kho — 19/2021/TT-BTC Điều 10 ↔ 21/VBHN-BTC Điều 10 khoản 5: GIỐNG (chứa 1.00)
 **Sàng lọc:** không thấy vấn đề — Câu hỏi hiểu sai chủ thể: gold là ngân hàng hoặc tổ chức trung gian thanh toán không chấp nhận đăng ký nộp thuế điện tử, không phải người nộp thuế 'không chấp nhận được thông báo'. · Gợi ý câu hỏi: Khi ngân hàng hoặc tổ chức cung ứng dịch vụ trung gian thanh toán thông báo không chấp nhận đăng ký nộp thuế điện tử, người nộp thuế cần làm gì?
 
 **Gold: 19/2021/TT-BTC Điều 10 khoản 5 — ĐÍCH**

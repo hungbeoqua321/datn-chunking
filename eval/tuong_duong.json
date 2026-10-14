@@ -1,0 +1,130 @@
+{
+ "q010": {
+  "0": [
+   {
+    "doc_id": "036f1d10-bd46-11f1-9afa-17578b466afa",
+    "so_hieu": "83/2026/VBHN-TT-BXD",
+    "dieu": 2,
+    "khoan": 1,
+    "diem": null,
+    "start": 1264,
+    "end": 1402
+   }
+  ]
+ },
+ "q015": {
+  "0": [
+   {
+    "doc_id": "692d5e30-79d2-11f1-9ebf-3d552c8b2ae8",
+    "so_hieu": "21/VBHN-BTC",
+    "dieu": 3,
+    "khoan": 1,
+    "diem": null,
+    "start": 4110,
+    "end": 4267
+   }
+  ]
+ },
+ "q221": {
+  "0": [
+   {
+    "doc_id": "692d5e30-79d2-11f1-9ebf-3d552c8b2ae8",
+    "so_hieu": "21/VBHN-BTC",
+    "dieu": 12,
+    "khoan": 2,
+    "diem": null,
+    "start": 48357,
+    "end": 48702
+   }
+  ]
+ },
+ "q240": {
+  "0": [
+   {
+    "doc_id": "692d5e30-79d2-11f1-9ebf-3d552c8b2ae8",
+    "so_hieu": "21/VBHN-BTC",
+    "dieu": 33,
+    "khoan": 3,
+    "diem": "b",
+    "start": 106717,
+    "end": 106826
+   }
+  ],
+  "1": [
+   {
+    "doc_id": "692d5e30-79d2-11f1-9ebf-3d552c8b2ae8",
+    "so_hieu": "21/VBHN-BTC",
+    "dieu": 5,
+    "khoan": 2,
+    "diem": "a",
+    "start": 17327,
+    "end": 17564
+   }
+  ]
+ },
+ "q118": {
+  "0": [
+   {
+    "doc_id": "692d5e30-79d2-11f1-9ebf-3d552c8b2ae8",
+    "so_hieu": "21/VBHN-BTC",
+    "dieu": 10,
+    "khoan": 3,
+    "diem": null,
+    "start": 43359,
+    "end": 43528
+   }
+  ]
+ },
+ "q119": {
+  "1": [
+   {
+    "doc_id": "692d5e30-79d2-11f1-9ebf-3d552c8b2ae8",
+    "so_hieu": "21/VBHN-BTC",
+    "dieu": 41,
+    "khoan": 5,
+    "diem": "c",
+    "start": 141797,
+    "end": 142034
+   }
+  ]
+ },
+ "q125": {
+  "1": [
+   {
+    "doc_id": "692d5e30-79d2-11f1-9ebf-3d552c8b2ae8",
+    "so_hieu": "21/VBHN-BTC",
+    "dieu": 38,
+    "khoan": 3,
+    "diem": "g",
+    "start": 125752,
+    "end": 126188
+   }
+  ]
+ },
+ "q130": {
+  "0": [
+   {
+    "doc_id": "a80b2270-8c8f-11f1-9ea1-8159e3cb2601",
+    "so_hieu": "114/VBHN-VPQH",
+    "dieu": 15,
+    "khoan": 7,
+    "diem": null,
+    "start": 40807,
+    "end": 41105
+   }
+  ]
+ },
+ "q246": {
+  "0": [
+   {
+    "doc_id": "692d5e30-79d2-11f1-9ebf-3d552c8b2ae8",
+    "so_hieu": "21/VBHN-BTC",
+    "dieu": 10,
+    "khoan": 5,
+    "diem": null,
+    "start": 45006,
+    "end": 45341
+   }
+  ]
+ }
+}
