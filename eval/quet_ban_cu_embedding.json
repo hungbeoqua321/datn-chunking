@@ -1,0 +1,227 @@
+[
+ {
+  "qid": "q100",
+  "loai": "dan_chieu",
+  "named": false,
+  "margin": -0.29332149028778076,
+  "sim_moi": 0.352520227432251,
+  "sim_cu": 0.6458417177200317,
+  "cap": "95/2015/QH13 D284kNone ↔ 42-LCT/HĐNN8 Đ179kNone"
+ },
+ {
+  "qid": "q069",
+  "loai": "xuyen_khoan",
+  "named": true,
+  "margin": -0.1838916540145874,
+  "sim_moi": 0.4015952944755554,
+  "sim_cu": 0.5854869484901428,
+  "cap": "45/2019/QH14 D107k2 ↔ 10/2012/QH13 Đ107kNone"
+ },
+ {
+  "qid": "q060",
+  "loai": "xuyen_khoan",
+  "named": true,
+  "margin": -0.13637840747833252,
+  "sim_moi": 0.5237975120544434,
+  "sim_cu": 0.6601759195327759,
+  "cap": "45/2019/QH14 D185k5 ↔ 10/2012/QH13 Đ199kNone"
+ },
+ {
+  "qid": "q049",
+  "loai": "don_gian",
+  "named": false,
+  "margin": -0.13259214162826538,
+  "sim_moi": 0.6707167029380798,
+  "sim_cu": 0.8033088445663452,
+  "cap": "10/2026/VBHN-NĐ-BNV D19kNone ↔ 170/2025/NĐ-CP Đ19k2"
+ },
+ {
+  "qid": "q045",
+  "loai": "don_gian",
+  "named": false,
+  "margin": -0.1058499813079834,
+  "sim_moi": 0.5956968069076538,
+  "sim_cu": 0.7015467882156372,
+  "cap": "10/2026/VBHN-NĐ-BNV D27kNone ↔ 170/2025/NĐ-CP Đ27k1"
+ },
+ {
+  "qid": "q053",
+  "loai": "don_gian",
+  "named": false,
+  "margin": -0.09294301271438599,
+  "sim_moi": 0.6085705161094666,
+  "sim_cu": 0.7015135288238525,
+  "cap": "10/2026/VBHN-NĐ-BNV D37kNone ↔ 170/2025/NĐ-CP Đ36k7"
+ },
+ {
+  "qid": "q058",
+  "loai": "xuyen_khoan",
+  "named": false,
+  "margin": -0.09291395545005798,
+  "sim_moi": 0.43680670857429504,
+  "sim_cu": 0.529720664024353,
+  "cap": "100/2015/QH13 D313k5 ↔ 15/1999/QH10 Đ240k1"
+ },
+ {
+  "qid": "q051",
+  "loai": "don_gian",
+  "named": false,
+  "margin": -0.08906587958335876,
+  "sim_moi": 0.4559997022151947,
+  "sim_cu": 0.5450655817985535,
+  "cap": "10/2026/VBHN-NĐ-BNV D66kNone ↔ 170/2025/NĐ-CP Đ7k1"
+ },
+ {
+  "qid": "q097",
+  "loai": "dan_chieu",
+  "named": true,
+  "margin": -0.07786059379577637,
+  "sim_moi": 0.4863826632499695,
+  "sim_cu": 0.5642432570457458,
+  "cap": "95/2015/QH13 D162kNone ↔ 42-LCT/HĐNN8 Đ61kNone"
+ },
+ {
+  "qid": "q047",
+  "loai": "don_gian",
+  "named": false,
+  "margin": -0.06664955615997314,
+  "sim_moi": 0.5217616558074951,
+  "sim_cu": 0.5884112119674683,
+  "cap": "10/2026/VBHN-NĐ-BNV D67kNone ↔ 170/2025/NĐ-CP Đ7k1"
+ },
+ {
+  "qid": "q055",
+  "loai": "don_gian",
+  "named": false,
+  "margin": -0.06316304206848145,
+  "sim_moi": 0.6410272121429443,
+  "sim_cu": 0.7041902542114258,
+  "cap": "10/2026/VBHN-NĐ-BNV D40kNone ↔ 170/2025/NĐ-CP Đ40kNone"
+ },
+ {
+  "qid": "q046",
+  "loai": "don_gian",
+  "named": false,
+  "margin": -0.04871559143066406,
+  "sim_moi": 0.5538052320480347,
+  "sim_cu": 0.6025208234786987,
+  "cap": "21/VBHN-BTC D35k2 ↔ 19/2021/TT-BTC Đ35k2"
+ },
+ {
+  "qid": "q206",
+  "loai": "don_gian",
+  "named": true,
+  "margin": -0.03058028221130371,
+  "sim_moi": 0.702829122543335,
+  "sim_cu": 0.7334094047546387,
+  "cap": "45/2019/QH14 D75k1 ↔ 10/2012/QH13 Đ73k1"
+ },
+ {
+  "qid": "q054",
+  "loai": "don_gian",
+  "named": false,
+  "margin": -0.018125295639038086,
+  "sim_moi": 0.6639463901519775,
+  "sim_cu": 0.6820716857910156,
+  "cap": "10/2026/VBHN-NĐ-BNV D41kNone ↔ 170/2025/NĐ-CP Đ40k1"
+ },
+ {
+  "qid": "q016",
+  "loai": "don_gian",
+  "named": true,
+  "margin": -0.014339983463287354,
+  "sim_moi": 0.6498022675514221,
+  "sim_cu": 0.6641422510147095,
+  "cap": "100/2015/QH13 D19k2 ↔ 15/1999/QH10 Đ314k2"
+ },
+ {
+  "qid": "q048",
+  "loai": "don_gian",
+  "named": false,
+  "margin": -0.012021303176879883,
+  "sim_moi": 0.5989103317260742,
+  "sim_cu": 0.6109316349029541,
+  "cap": "21/VBHN-BTC D13k1 ↔ 19/2021/TT-BTC Đ10k4"
+ },
+ {
+  "qid": "q041",
+  "loai": "don_gian",
+  "named": false,
+  "margin": -0.010666191577911377,
+  "sim_moi": 0.6027531623840332,
+  "sim_cu": 0.6134193539619446,
+  "cap": "100/2015/QH13 D361k1 ↔ 15/1999/QH10 Đ287k1"
+ },
+ {
+  "qid": "q064",
+  "loai": "xuyen_khoan",
+  "named": false,
+  "margin": 0.0028721094131469727,
+  "sim_moi": 0.6343564987182617,
+  "sim_cu": 0.6314843893051147,
+  "cap": "100/2015/QH13 D260k5 ↔ 15/1999/QH10 Đ202k1"
+ },
+ {
+  "qid": "q005",
+  "loai": "don_gian",
+  "named": true,
+  "margin": 0.004876434803009033,
+  "sim_moi": 0.764763593673706,
+  "sim_cu": 0.759887158870697,
+  "cap": "45/2019/QH14 D46k1 ↔ 10/2012/QH13 Đ48k1"
+ },
+ {
+  "qid": "q052",
+  "loai": "don_gian",
+  "named": false,
+  "margin": 0.02645212411880493,
+  "sim_moi": 0.6119294762611389,
+  "sim_cu": 0.585477352142334,
+  "cap": "10/2026/VBHN-NĐ-BNV D20kNone ↔ 170/2025/NĐ-CP Đ22k1"
+ },
+ {
+  "qid": "q092",
+  "loai": "dan_chieu",
+  "named": false,
+  "margin": 0.050695568323135376,
+  "sim_moi": 0.5422300100326538,
+  "sim_cu": 0.49153444170951843,
+  "cap": "100/2015/QH13 D211k4 ↔ 15/1999/QH10 Đ155k1"
+ },
+ {
+  "qid": "q050",
+  "loai": "don_gian",
+  "named": false,
+  "margin": 0.05251944065093994,
+  "sim_moi": 0.7073942422866821,
+  "sim_cu": 0.6548748016357422,
+  "cap": "10/2026/VBHN-NĐ-BNV D14kNone ↔ 170/2025/NĐ-CP Đ22k1"
+ },
+ {
+  "qid": "q007",
+  "loai": "don_gian",
+  "named": true,
+  "margin": 0.10639578104019165,
+  "sim_moi": 0.769159734249115,
+  "sim_cu": 0.6627639532089233,
+  "cap": "95/2015/QH13 D174k4 ↔ 42-LCT/HĐNN8 Đ94kNone"
+ },
+ {
+  "qid": "q031",
+  "loai": "don_gian",
+  "named": false,
+  "margin": 0.17139601707458496,
+  "sim_moi": 0.5380809307098389,
+  "sim_cu": 0.3666849136352539,
+  "cap": "95/2015/QH13 D244k1 ↔ 42-LCT/HĐNN8 Đ57kNone"
+ },
+ {
+  "qid": "q218",
+  "loai": "don_gian",
+  "named": false,
+  "margin": 0.3404161036014557,
+  "sim_moi": 0.8102060556411743,
+  "sim_cu": 0.46978995203971863,
+  "cap": "100/2015/QH13 D5k1 ↔ 15/1999/QH10 Đ5kNone"
+ }
+]

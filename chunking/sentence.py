@@ -69,10 +69,27 @@ def tach_cau(text: str) -> list[tuple[int, int]]:
 
 
 def gom(text: str, cau: list[tuple[int, int]], toi_da: int = ch.CUA_SO) -> list[tuple[int, int, int]]:
-    """Gom câu liên tiếp thành chunk ≤ `toi_da` từ → [(start, end, số từ)]. Câu dài hơn `toi_da` đứng riêng."""
+    """Gom câu liên tiếp thành chunk ≤ `toi_da` từ → [(start, end, số từ)].
+
+    Câu dài hơn `toi_da` thì CẮT TIẾP bằng cửa sổ cố định kiểu A (trước đây để đứng nguyên, làm
+    thủng trần — đo được 413 từ/trần 300). Theo chính sách trần chung của cả bốn phương pháp: chỉ
+    miễn trừ đơn vị pháp lý thật (xem B), còn "câu" dài quá trần là ARTEFACT của bộ tách câu
+    (một khoản nhiều điểm bị bỏ sót) nên cắt là sửa lỗi, không phá định nghĩa của C.
+    """
+    from chunking.base import vi_tri_tu
+
     ra, dau, cuoi, n = [], None, None, 0
     for a, b in cau:
         k = len(text[a:b].split())
+        if k > toi_da:                       # câu đơn quá trần → cửa sổ cố định
+            if dau is not None:
+                ra.append((dau, cuoi, n))
+                dau, cuoi, n = None, None, 0
+            tu = vi_tri_tu(text, a, b)
+            for i in range(0, len(tu), toi_da):
+                lo = tu[i:i + toi_da]
+                ra.append((lo[0][0], lo[-1][1], len(lo)))
+            continue
         if dau is not None and n + k > toi_da:
             ra.append((dau, cuoi, n))
             dau, n = None, 0

@@ -79,3 +79,60 @@ Mỗi bước ghi kết quả ra file và **tự bỏ qua nếu file đã có**;
 ## Truy cập kết quả
 
 *(Bổ sung ở bước 9: `https://$DATN_HOST/bao-cao`, …)*
+
+## Chốt chặn chỉ mục — chạy TRƯỚC mọi lần đánh giá
+
+```bash
+python -m rag.kiem_chi_muc      # lệch là mã thoát 1, DỪNG, không đánh giá
+```
+
+Kiểm mỗi tệp `data/chunks/*.jsonl` so với `data/index/<tên>/`: số chunk, **vân nội dung**
+(chunk đầu/giữa/cuối — bắt được trường hợp dựng lại chunk mà số dòng tình cờ không đổi) và
+kích thước `emb.f32`. Tệp cố ý không nhúng khai báo tường minh trong `KHONG_NHUNG`
+(hiện là `B_s1..3`: B không phụ thuộc seed, chỉ nhúng seed 0).
+
+Trong mã đánh giá, gọi ở dòng đầu:
+
+```python
+from rag.kiem_chi_muc import chot_chan
+chot_chan()
+```
+
+⚠️ `rag.chi_muc` **bỏ qua** tệp đã có chỉ mục nếu thiếu `--force`, in `BỎ QUA` và thoát mã **3**;
+`tools/nhung_tat_ca.sh` dừng hẳn, **không in `XONG NHÚNG`**. Lý do: sau khi sửa cài đặt C và D, tệp
+chunk đổi nhưng chỉ mục vẫn là bản cũ mà lệnh vẫn báo thành công — suýt nữa pilot chấm C và D trên
+đúng bản lỗi vừa sửa.
+
+## Slide bảo vệ
+
+Deck reveal.js (bản ghim **5.1.0**), một file duy nhất `web/static/slide.html`, phục vụ tại:
+
+```
+https://$DATN_HOST/slide
+```
+
+### Xuất PDF để nộp kèm quyển
+
+reveal.js in PDF qua tham số `?print-pdf` (chỉ Chrome/Chromium cho kết quả đúng):
+
+1. Mở `https://$DATN_HOST/slide?print-pdf`
+2. `Ctrl+P` (macOS: `Cmd+P`)
+3. Đặt **Destination: Save as PDF**, **Layout: Landscape**, **Margins: None**,
+   bật **Background graphics** (không bật thì mất nền và viền bảng).
+4. Save.
+
+Hoặc không mở trình duyệt:
+
+```bash
+google-chrome --headless --disable-gpu --no-pdf-header-footer \
+  --print-to-pdf=slide.pdf "https://$DATN_HOST/slide?print-pdf"
+```
+
+⚠️ **Mỗi slide phải vừa một trang.** Nếu một slide bị tràn sang trang thứ hai thì cắt bớt chữ
+trên slide đó, đừng chỉnh cỡ chữ riêng lẻ — hệ thiết kế chỉ có ba cỡ chữ, khai báo một lần ở
+đầu `slide.html`.
+
+⚠️ **Deck tải reveal.js từ cdnjs.cloudflare.com** nên **cần mạng khi trình chiếu**. Phòng bảo vệ
+không chắc có mạng: xuất sẵn bản PDF theo hướng dẫn trên và mang theo, hoặc tải reveal.js về
+`web/static/` rồi đổi hai thẻ `<link>` và một thẻ `<script>` trong `slide.html` sang đường dẫn nội bộ.
+Font (Be Vietnam Pro) đã tự host sẵn nên không phụ thuộc mạng.

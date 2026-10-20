@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Phân đoạn VBQPPL cho RAG — slide bảo vệ</title>
+
+<!-- reveal.js GHIM CỐ ĐỊNH 5.1.0 (không dùng @latest) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/white.min.css">
+<!-- Be Vietnam Pro tự host sẵn trong site: đủ dấu tiếng Việt, KHÔNG phụ thuộc mạng khi bảo vệ -->
+<link rel="stylesheet" href="/static/fonts/fonts.css">
+
+<style>
+/* ── HỆ THIẾT KẾ — khai báo MỘT LẦN, mọi slide dùng lại ────────────────── */
+:root{
+  --nhan:#1a56db;        /* màu nhấn DUY NHẤT — chỉ dành cho phương pháp B */
+  --xam:#6b7280;         /* xám trung tính — các baseline A, C, D */
+  --xam-nhat:#e5e7eb;
+  --muc:#111827;         /* chữ chính */
+  --phu:#6b7280;         /* chú thích */
+  --nen:#ffffff;
+  /* ĐÚNG BA CỠ CHỮ */
+  --co-tieu-de:1.45em;
+  --co-noi-dung:0.78em;
+  --co-chu-thich:0.42em;
+}
+.reveal{font-family:'Be Vietnam Pro',system-ui,sans-serif;color:var(--muc);font-weight:400}
+.reveal .slides section{text-align:left;height:100%;
+  display:flex;flex-direction:column;justify-content:flex-start;padding:1.2em 1.6em}
+.reveal h1,.reveal h2{font-family:'Be Vietnam Pro',sans-serif;text-transform:none;letter-spacing:0;
+  font-weight:700;color:var(--muc);margin:0 0 .5em;font-size:var(--co-tieu-de);line-height:1.2}
+.reveal p,.reveal li,.reveal td,.reveal th{font-size:var(--co-noi-dung);line-height:1.5}
+.reveal .nguon{margin-top:auto;font-size:var(--co-chu-thich);color:var(--phu);
+  border-top:1px solid var(--xam-nhat);padding-top:.5em}
+.reveal .than{flex:1;display:flex;flex-direction:column;justify-content:center;gap:.7em;min-height:0}
+.reveal .y-chinh{font-weight:600;color:var(--muc)}
+.reveal .dien-giai{color:var(--phu)}
+.reveal ul{margin:0;padding-left:1.1em}
+.reveal li{margin:.25em 0}
+.reveal section[data-background-color] h2{color:#fff}
+
+/* nhấn B / xám baseline */
+.b{color:var(--nhan);font-weight:600}
+.bl{color:var(--xam)}
+.the-b{background:var(--nhan);color:#fff;padding:.08em .5em;border-radius:3px;font-weight:600}
+.the-bl{background:var(--xam-nhat);color:var(--xam);padding:.08em .5em;border-radius:3px}
+
+/* bảng — không bóng, không gradient */
+.reveal table{border-collapse:collapse;width:100%}
+.reveal th,.reveal td{border:1px solid var(--xam-nhat);padding:.35em .6em;text-align:left}
+.reveal thead th{background:#f9fafb;font-weight:600}
+.reveal tr.hang-b td{background:#eff4fe}
+.reveal td.so{text-align:right;font-variant-numeric:tabular-nums}
+
+/* sơ đồ dọc — QUY TẮC CHUNG CẢ ĐỒ ÁN: KHÔNG DÙNG MŨI TÊN.
+   Thứ tự thể hiện bằng SỐ THỨ TỰ và một ĐƯỜNG KẺ DỌC nối các bước. */
+.so-do{list-style:none;margin:0;padding:0;position:relative}
+.so-do::before{content:"";position:absolute;left:calc(.75em - 1px);top:1em;bottom:1em;
+  width:2px;background:var(--xam-nhat)}
+.so-do li{position:relative;display:flex;align-items:center;gap:.8em;padding:.3em 0}
+.so-do .stt{width:1.5em;height:1.5em;flex:none;border-radius:50%;background:var(--nen);
+  border:2px solid var(--xam-nhat);color:var(--xam);display:grid;place-items:center;
+  font-weight:600;position:relative;z-index:1;font-size:var(--co-noi-dung)}
+.so-do li.noi-bat .stt{border-color:var(--nhan);background:var(--nhan);color:#fff}
+.so-do li.noi-bat .nhan-buoc{color:var(--nhan);font-weight:600}
+
+/* khối ví dụ điều khoản */
+.cot2{display:grid;grid-template-columns:1fr 1fr;gap:.7em}
+.khoi{border:1px solid var(--xam-nhat);border-radius:4px;padding:.5em .7em}
+.khoi .nhan{font-size:var(--co-chu-thich);color:var(--phu);display:block;margin-bottom:.2em}
+.khoi.canh-bao{border-color:var(--nhan)}
+
+/* slide chừa trống */
+.cho-so-lieu{flex:1;border:2px dashed var(--xam-nhat);border-radius:6px;
+  display:grid;place-items:center;color:var(--phu);font-size:var(--co-noi-dung);min-height:5em}
+.cho-so-lieu .nhan-cho{text-align:center}
+.cho-so-lieu .nhan-cho b{color:var(--muc)}
+.can-dien{background:#fffbeb;border:1px solid #fde68a;color:#92400e;
+  font-size:var(--co-chu-thich);padding:.3em .6em;border-radius:3px;display:inline-block}
+</style>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+
+<!-- 1 ───────────────────────────────────────────────────────────────── -->
+<section>
+  <div class="than" style="justify-content:center">
+    <h1 style="font-size:1.7em;margin-bottom:.3em">Phân đoạn văn bản quy phạm pháp luật<br>cho hệ thống hỏi đáp RAG</h1>
+    <p class="dien-giai" style="margin:0">Đồ án tốt nghiệp</p>
+    <p style="margin:1.2em 0 0">
+      <span class="can-dien">CẦN ĐIỀN: họ tên sinh viên · MSSV · lớp</span><br><br>
+      <span class="can-dien">CẦN ĐIỀN: giảng viên hướng dẫn</span>
+    </p>
+  </div>
+  <div class="nguon">Hà Nội, 2026</div>
+</section>
+
+<!-- 2 ───────────────────────────────────────────────────────────────── -->
+<section>
+  <h2>Tra cứu pháp luật khó, mà hỏi thẳng mô hình thì nó bịa</h2>
+  <div class="than">
+    <ul>
+      <li>Văn bản luật <b>dài, chằng chịt dẫn chiếu</b>: một câu trả lời đúng thường nằm rải ở nhiều điều khoản.</li>
+      <li>Hỏi thẳng mô hình ngôn ngữ: câu chữ trôi chảy nhưng <b>viện dẫn sai điều khoản</b> — người đọc không kiểm được.</li>
+      <li>Hệ quả: cần một hệ thống <b>trả lời kèm trích dẫn</b> đúng tới từng khoản.</li>
+    </ul>
+    <p class="dien-giai">Đó là lý do dùng RAG: lấy đúng đoạn luật rồi mới sinh câu trả lời.</p>
+  </div>
+  <div class="nguon">Đồ án tốt nghiệp — Phân đoạn VBQPPL cho RAG</div>
+</section>
+
+<!-- 3 ───────────────────────────────────────────────────────────────── -->
+<section>
+  <h2>RAG gồm 5 bước — đồ án này đi sâu vào bước 2</h2>
+  <div class="than">
+    <ol class="so-do">
+      <li><span class="stt">1</span><span>Thu thập và chuẩn hoá văn bản luật</span></li>
+      <li class="noi-bat"><span class="stt">2</span><span class="nhan-buoc">PHÂN ĐOẠN văn bản thành chunk</span></li>
+      <li><span class="stt">3</span><span>Nhúng vector và lập chỉ mục</span></li>
+      <li><span class="stt">4</span><span>Truy hồi đoạn liên quan tới câu hỏi</span></li>
+      <li><span class="stt">5</span><span>Sinh câu trả lời kèm trích dẫn</span></li>
+    </ol>
+    <p class="dien-giai">Bốn bước kia gần như dùng chung; <b>chỉ bước 2 là biến số của đồ án</b>.</p>
+  </div>
+  <div class="nguon">Đồ án tốt nghiệp — Phân đoạn VBQPPL cho RAG</div>
+</section>
+
+<!-- 4 ───────────────────────────────────────────────────────────────── -->
+<section>
+  <h2>Cắt sai một chỗ là câu trả lời sai hẳn</h2>
+  <div class="than">
+    <div class="cot2">
+      <div class="khoi"><span class="nhan">Khoản 2 — QUY TẮC</span>
+        Điều kiện cấp thẻ nhà báo: công dân Việt Nam, có bằng đại học, công tác liên tục từ 02 năm…</div>
+      <div class="khoi canh-bao"><span class="nhan">Khoản 3 — NGOẠI LỆ</span>
+        Các trường hợp <b>không được</b> xét cấp thẻ: đã vi phạm đạo đức nghề nghiệp, đang bị kỷ luật…</div>
+    </div>
+    <p class="y-chinh">Nếu hai khoản rơi vào hai chunk khác nhau, hệ thống chỉ lấy được khoản 2
+      và trả lời “đủ điều kiện” — <b>bỏ mất ngoại lệ</b>.</p>
+    <p class="dien-giai">Vì vậy đồ án đo riêng một nhóm câu hỏi bắt buộc phải dùng cả quy tắc lẫn ngoại lệ.</p>
+  </div>
+  <div class="nguon">Ví dụ: Luật Báo chí 126/2025/QH15, Điều 28</div>
+</section>
+
+<!-- 5 ───────────────────────────────────────────────────────────────── -->
+<section>
+  <h2>Bốn cách phân đoạn đem ra so sánh</h2>
+  <div class="than">
+    <ul>
+      <li><span class="the-bl">A</span> &nbsp;Cắt theo <b>kích thước cố định</b> — 300 từ một chunk, không nhìn nội dung.</li>
+      <li><span class="the-bl">C</span> &nbsp;Cắt theo <b>dấu câu</b> — gom câu trọn vẹn cho tới khi đầy.</li>
+      <li><span class="the-bl">D</span> &nbsp;Cắt theo <b>ngữ nghĩa</b> — chỗ nào ý đổi nhiều thì cắt.</li>
+      <li><span class="the-b">B</span> &nbsp;Cắt theo <b>cấu trúc pháp lý</b> — mỗi Điều/khoản/điểm là một chunk.</li>
+      <li><span class="the-b">B+</span> &nbsp;Vẫn là chunk của B, nhưng khi sinh câu trả lời thì
+        <b>mở rộng lên Điều cha</b> để lấy đủ ngữ cảnh.</li>
+    </ul>
+    <p class="dien-giai">A, C, D không nhìn cấu trúc văn bản. B là phương pháp đồ án đề xuất; B+ là biến thể của B.</p>
+  </div>
+  <div class="nguon">Đồ án tốt nghiệp — Phân đoạn VBQPPL cho RAG</div>
+</section>
+
+<!-- 6 ───────────────────────────────────────────────────────────────── -->
+<section>
+  <h2>Bốn phương pháp cắt ra lượng chunk rất khác nhau</h2>
+  <div class="than">
+    <table>
+      <thead><tr><th>Phương pháp</th><th class="so">Số chunk</th><th class="so">Trung vị từ</th>
+        <th class="so">Dài nhất</th><th class="so">Ngắn nhất</th></tr></thead>
+      <tbody>
+        <tr><td class="bl">A — kích thước cố định</td><td class="so">5.172</td><td class="so">300</td><td class="so">300</td><td class="so">6</td></tr>
+        <tr><td class="bl">C — dấu câu</td><td class="so">5.640</td><td class="so">281</td><td class="so">300</td><td class="so">10</td></tr>
+        <tr><td class="bl">D — ngữ nghĩa</td><td class="so">7.673</td><td class="so">199</td><td class="so">385 **</td><td class="so">25</td></tr>
+        <tr class="hang-b"><td class="b">B — cấu trúc pháp lý</td><td class="so">12.718</td><td class="so">97</td><td class="so">372 *</td><td class="so">3</td></tr>
+      </tbody>
+    </table>
+    <p class="dien-giai">B cắt mịn nhất vì bám đúng đơn vị điều khoản — chunk ngắn hơn hẳn ba cách còn lại.</p>
+  </div>
+  <div class="nguon">
+    <b>Trần thiết kế:</b> A và C 300 từ · B 350 từ · <b>D 385 từ</b> (350 cộng biên độ gộp).
+    Ba loại vượt trần, bản chất khác hẳn nhau:<br>
+    <b>①</b> <b>B — đơn vị pháp lý thật:</b> 16 chunk (0,13%) là Điều trọn vẹn, vượt nhiều nhất 22 từ
+    vì dòng tiêu đề Chương/Mục gắn đầu chunk mà không tính vào ngưỡng. Giữ nguyên để không cắt đôi một Điều.<br>
+    <b>②</b> <b>C và D cũ — lỗi bộ tách câu:</b> một khoản nhiều điểm bị nhận nhầm thành “câu” dài hơn trần.
+    Đây là lỗi, đã cắt bằng cửa sổ cố định: C từ 413 còn 300, D từ 413 về trong trần.<br>
+    <b>③</b> <b>D mới — thiết kế cho phép:</b> 205 chunk (2,7%) trong dải 350–385, do biên độ gộp được
+    phép nhỉnh hơn trần để hấp thụ đoạn dưới sàn. Không chunk nào vượt 385.<br>
+    <b>Chiều sàn ngược lại:</b> D bị ép sàn 50 từ (chỉ còn 5 chunk dưới sàn), còn B <b>không</b> bị ép —
+    2.781 chunk (21,9%) dưới 50 từ, ngắn nhất 3 từ, vì đó là điểm/khoản có thật, không phải mẩu vụn.<br>
+    80 văn bản, seed 0 · results/buoc3/thong_ke_chunk.md
+  </div>
+</section>
+
+<!-- 7 ───────────────────────────────────────────────────────────────── -->
+<section>
+  <h2>Dữ liệu: 80 văn bản, 112 câu hỏi chia 5 nhóm</h2>
+  <div class="than">
+    <table>
+      <thead><tr><th>Nhóm câu hỏi</th><th class="so">Số câu</th><th>Đo điều gì</th></tr></thead>
+      <tbody>
+        <tr><td>Đơn giản</td><td class="so">50</td><td>trả lời nằm gọn trong một khoản</td></tr>
+        <tr><td>Xuyên khoản</td><td class="so">18</td><td>phải dùng cả quy tắc lẫn ngoại lệ</td></tr>
+        <tr><td>Dẫn chiếu</td><td class="so">10</td><td>phải đọc thêm điều được dẫn tới</td></tr>
+        <tr><td>Điều dài</td><td class="so">19</td><td>đáp án nằm sâu trong điều rất dài</td></tr>
+        <tr><td>Không chia Điều</td><td class="so">15</td><td>văn bản hành chính, không có cấu trúc</td></tr>
+      </tbody>
+    </table>
+    <p class="dien-giai">Trong đó <b>37 câu “trung lập”</b> — đáp án cố ý không trùng ranh giới khoản,
+      để B không thắng chỉ nhờ lợi thế cấu trúc. Đây là tập số chính của báo cáo.</p>
+  </div>
+  <div class="nguon">
+    <b>Số tạm</b> — đếm từ <code>eval/questions.draft.jsonl</code> (bản nháp đang duyệt tay).
+    Chốt lại bằng <code>python -m eval.duyet --chot</code>; sau đó số trên slide này phải cập nhật theo
+    <code>eval/questions.jsonl</code>.<br>
+    80 văn bản trong data/manifest.csv
+  </div>
+</section>
+
+<!-- 8 ── CHỪA TRỐNG ──────────────────────────────────────────────────── -->
+<section>
+  <h2>Kết quả: tỉ lệ lấy đúng đoạn (Recall@k)</h2>
+  <div class="than">
+    <div class="cho-so-lieu"><div class="nhan-cho"><b>Chờ số liệu pilot</b><br>
+      biểu đồ Recall@k cho A · C · D · B</div></div>
+    <p class="dien-giai">Một câu diễn giải sẽ viết sau khi có số.</p>
+  </div>
+  <div class="nguon">Chờ bước đánh giá truy hồi</div>
+</section>
+
+<!-- 9 ── CHỪA TRỐNG ──────────────────────────────────────────────────── -->
+<section>
+  <h2>Kết quả: độ chính xác trích dẫn</h2>
+  <div class="than">
+    <div class="cho-so-lieu"><div class="nhan-cho"><b>Chờ số liệu pilot</b><br>
+      tỉ lệ trích dẫn đúng điều/khoản theo từng phương pháp</div></div>
+    <p class="dien-giai">Một câu diễn giải sẽ viết sau khi có số.</p>
+  </div>
+  <div class="nguon">Chờ bước chấm trích dẫn</div>
+</section>
+
+<!-- 10 ── CHỪA TRỐNG ─────────────────────────────────────────────────── -->
+<section>
+  <h2>Kết quả tách theo 5 nhóm câu hỏi</h2>
+  <div class="than">
+    <div class="cho-so-lieu"><div class="nhan-cho"><b>Chờ số liệu pilot</b><br>
+      bảng 4 phương pháp × 5 nhóm câu hỏi</div></div>
+  </div>
+  <div class="nguon">Chờ bước đánh giá truy hồi</div>
+</section>
+
+<!-- 11 ── CHỪA TRỐNG ─────────────────────────────────────────────────── -->
+<section>
+  <h2>Chỗ B không thắng</h2>
+  <div class="than">
+    <div class="cho-so-lieu"><div class="nhan-cho"><b>Chờ số liệu pilot</b><br>
+      các trường hợp baseline ngang hoặc hơn B</div></div>
+    <p class="dien-giai">Slide này để trình bày thẳng điểm yếu, không giấu.</p>
+  </div>
+  <div class="nguon">Chờ bước đánh giá truy hồi</div>
+</section>
+
+<!-- 12 ──────────────────────────────────────────────────────────────── -->
+<section>
+  <h2>Demo trực tiếp</h2>
+  <div class="than">
+    <ul>
+      <li>Hỏi một câu thật trên kho 80 văn bản.</li>
+      <li>Gạt công tắc <span class="the-bl">A</span> <span class="the-b">B</span> <span class="the-b">B+</span>
+        để so câu trả lời và trích dẫn ngay tại chỗ.</li>
+      <li>Xem đúng những chunk đã được lấy về.</li>
+    </ul>
+    <p class="dien-giai">Mọi số liệu trong slide đều tra lại được trên web của đồ án.</p>
+  </div>
+  <div class="nguon">datn.134-185-85-25.sslip.io</div>
+</section>
+
+<!-- 13 ──────────────────────────────────────────────────────────────── -->
+<section>
+  <h2>Hạn chế và hướng phát triển</h2>
+  <div class="than">
+    <ul>
+      <li><b>Phạm vi:</b> 80 văn bản, một mô hình nhúng, một mô hình sinh — chưa khái quát cho mọi loại văn bản.</li>
+      <li><b>Đơn vị câu:</b> câu trong văn bản luật không trùng câu ngữ pháp, nên mọi cách cắt dựa vào câu đều khó.</li>
+      <li><b>Nhiễu phiên bản:</b> kho chứa cả bản cũ lẫn bản mới của cùng quy định, có thể lấy nhầm bản cũ.</li>
+      <li><b>Hướng tiếp:</b> kết hợp ngữ nghĩa <i>bên trong</i> ranh giới điều khoản, thay vì chọn một trong hai.</li>
+    </ul>
+    <p class="dien-giai">Các hạn chế này đều được đo và báo cáo, không chỉ nêu định tính.</p>
+  </div>
+  <div class="nguon">results/phuong_phap_quet_ban_cu.md · results/phuong_phap_D_semantic_chunking.md</div>
+</section>
+
+<!-- 14 ── CHỪA TRỐNG ─────────────────────────────────────────────────── -->
+<section>
+  <h2>Kết luận</h2>
+  <div class="than">
+    <div class="cho-so-lieu"><div class="nhan-cho"><b>Chờ số liệu pilot</b><br>
+      kết luận viết đúng MỘT câu, dựa trên con số thật</div></div>
+    <p class="dien-giai">Không viết trước khi có kết quả.</p>
+  </div>
+  <div class="nguon">Đồ án tốt nghiệp — Phân đoạn VBQPPL cho RAG</div>
+</section>
+
+<!-- ── PHỤ LỤC (sau slide cuối — nơi DUY NHẤT được nhắc công thức, tên thư viện) ── -->
+<section>
+  <h2>Phụ lục A — chi tiết kỹ thuật</h2>
+  <div class="than">
+    <ul>
+      <li><b>Mô hình nhúng:</b> halong_embedding, vector chuẩn hoá L2, trần 512 token.</li>
+      <li><b>D:</b> dựa trên <code>SemanticChunker</code> (LangChain) — nhúng cụm 3 câu,
+        ngưỡng phân vị 95 tính riêng từng văn bản.</li>
+      <li><b>B:</b> tách theo ba tầng Điều, khoản, điểm; Điều dài quá 350 từ thì tách tiếp xuống tầng dưới.</li>
+      <li><b>Chấm:</b> độ phủ gold theo vị trí ký tự; bootstrap 1000 lần cho khoảng tin cậy 95%.</li>
+      <li><b>Công bằng ràng buộc:</b> baseline D đang được <b>nới trần rộng hơn</b> chính phương pháp
+        đề xuất B — 385 từ so với 372, và 2,7% số chunk vượt trần so với 0,13%.</li>
+    </ul>
+  </div>
+  <div class="nguon">Chỉ dùng khi hội đồng hỏi sâu</div>
+</section>
+
+</div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"></script>
+<script>
+Reveal.initialize({
+  hash: true,
+  transition: 'none',        // cấm hoạt hình chuyển slide
+  backgroundTransition: 'none',
+  controls: true,
+  progress: true,
+  slideNumber: 'c/t',
+  width: 1280, height: 720,
+  margin: 0.04
+});
+</script>
+</body>
+</html>

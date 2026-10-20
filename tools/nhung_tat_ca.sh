@@ -13,6 +13,11 @@ for t in ${DS:-A_s0 C_s0 Acong_s0 D A_s1 A_s2 A_s3 B_s0 Btru_s0 A_H_s0}; do
     .venv/bin/python -u -m chunking.chay --chi D
     t=D_s0
   fi
-  .venv/bin/python -u -m rag.chi_muc "$t"
+  if ! .venv/bin/python -u -m rag.chi_muc "$t"; then
+    rc=$?
+    [ "$rc" = 3 ] && { echo "DỪNG: $t bị BỎ QUA — chỉ mục cũ còn nguyên. Chạy lại với --force."; exit 3; }
+    echo "DỪNG: $t lỗi (mã $rc)"; exit "$rc"
+  fi
 done
+.venv/bin/python -u -m rag.kiem_chi_muc || { echo "DỪNG: chỉ mục lệch tệp chunk"; exit 4; }
 echo "XONG NHÚNG"

@@ -50,6 +50,10 @@ class Chunk:
     dieu_start: int | None = None  # B+: vị trí của cả Điều cha (để mở rộng khi sinh)
     dieu_end: int | None = None
     kem_theo: str | None = None    # Điều thuộc văn bản ban hành kèm theo (Quy chế…) có số Điều riêng
+    # ── chỉ phương pháp E dùng (mặc định None/"" nên A, B, C, D không đổi gì) ──
+    vi_tri_manh: int | None = None   # mảnh thứ i khi một đơn vị pháp lý bị tách (1-based)
+    tong_so_manh: int | None = None  # tổng số mảnh của đơn vị đó
+    cau_dan_lap: str = ""            # câu dẫn được CHÉP LẠI vào đầu mảnh (để đo nó chiếm bao nhiêu % chunk)
 
     def dict(self) -> dict:
         return asdict(self)

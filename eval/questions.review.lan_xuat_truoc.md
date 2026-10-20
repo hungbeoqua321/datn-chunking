@@ -2,7 +2,7 @@
 
 Mỗi câu: sửa `Trạng thái:` (GIỮ / XOÁ; câu dự phòng đổi DỰ PHÒNG → GIỮ nếu muốn dùng) và sửa thẳng dòng `Câu hỏi:`. Xong chạy `python -m eval.duyet --chot`.
 
-Tổng 175 câu nháp; cần giữ: don_gian 50 (trung lập ≥ 16), xuyen_khoan 18 (trung lập ≥ 6), dan_chieu 12 (trung lập ≥ 4), dieu_dai 20 (trung lập ≥ 6), khong_co_dieu 15 (trung lập ≥ 5).
+Tổng 181 câu nháp; cần giữ: don_gian 50 (trung lập ≥ 16), xuyen_khoan 18 (trung lập ≥ 6), dan_chieu 12 (trung lập ≥ 4), dieu_dai 20 (trung lập ≥ 6), khong_co_dieu 15 (trung lập ≥ 5).
 
 **TRUNG LẬP** = gold cố ý KHÔNG trùng ranh giới cấu trúc (1–3 câu bắt đầu giữa khoản/điểm/đoạn, có thể vắt sang khoản kế) — tập số chính của báo cáo. Câu không ghi TRUNG LẬP có gold trùng ranh giới khoản (B có lợi thế cấu trúc), báo riêng. Câu DỰ PHÒNG: đổi thành GIỮ nếu muốn thay câu bị XOÁ cùng nhóm, cùng loại gold.
 
@@ -11,7 +11,7 @@ Tổng 175 câu nháp; cần giữ: don_gian 50 (trung lập ≥ 16), xuyen_khoa
 | Nhóm | Câu GIỮ (trung lập) | Không cờ | Gold đáng ngờ | Không trả lời được | Sai ý đồ nhóm | Mơ hồ | Lộ đáp án | Kiểm tra tự động | Gold ở bản cũ |
 |---|---|---|---|---|---|---|---|---|---|
 | don_gian | 50 (16) | 21 | 5 | 3 | 9 | 19 | 2 | 0 | 0 |
-| xuyen_khoan | 18 (6) | 2 | 0 | 1 | 8 | 10 | 4 | 0 | 0 |
+| xuyen_khoan | 18 (6) | 6 | 0 | 1 | 7 | 9 | 5 | 5 | 0 |
 | dan_chieu | 10 (4) | 4 | 0 | 0 | 4 | 1 | 1 | 3 | 0 |
 | dieu_dai | 19 (6) | 7 | 0 | 0 | 0 | 6 | 7 | 0 | 0 |
 | khong_co_dieu | 15 (5) | 4 | 3 | 1 | 0 | 5 | 4 | 0 | 0 |
@@ -1237,7 +1237,7 @@ Câu hỏi: Có quy định về việc bổ sung xe ô tô cho các tỉnh, th�
 ---
 ## q056 · xuyen_khoan · ngoai_le
 
-Trạng thái: DỰ PHÒNG
+Trạng thái: GIỮ
 Câu hỏi: Một nhóm người muốn truyền lại kỹ năng làm nghề truyền thống như dệt lụa cho thế hệ sau, nhưng họ cũng cần sửa chữa một phần kiến trúc cổ để bảo vệ di tích lịch sử, thì việc này có được thực hiện không?
 
 *Đáp án nháp của mô hình:* Việc truyền lại kỹ năng làm nghề truyền thống như dệt lụa được coi là trao truyền di sản văn hóa phi vật thể, phù hợp với quy tắc bảo vệ và phát triển bản sắc văn hóa. Tuy nhiên, nếu cần sửa chữa phần kiến trúc cổ để ngăn chặn di tích khỏi sập đổ, thì chỉ được thực hiện trong phạm vi chống đỡ, gia cố tạm thời, không được tháo rời toàn bộ cấu kiện, và vẫn phải đảm bảo việc bảo tồn di sản văn hóa được thực hiện đúng cách.
@@ -1282,7 +1282,7 @@ Câu hỏi: Nếu một bị can bị tạm giam, có thể được thay thế 
 ---
 ## q058 · xuyen_khoan · ngoai_le
 
-Trạng thái: DỰ PHÒNG
+Trạng thái: GIỮ
 Câu hỏi: Nếu một người gây cháy tại một khu dân cư và có nguy cơ làm chết hoặc gây thương tích cho người khác, nhưng chưa xảy ra thiệt hại thực tế, thì có bị xử lý theo quy định về phòng cháy, chữa cháy không?
 
 *Đáp án nháp của mô hình:* Có thể bị xử lý theo quy định ngoại lệ nếu có nguy cơ gây thiệt hại cho tính mạng, sức khỏe hoặc tài sản của người khác mà không được ngăn chặn kịp thời, với mức phạt từ cảnh cáo đến tù từ 3 tháng đến 1 năm. Tuy nhiên, nếu đã xảy ra thiệt hại về người hoặc tài sản theo quy định thì sẽ bị xử lý nghiêm theo quy tắc, với mức phạt tù từ 2 năm đến 5 năm hoặc cải tạo không giam giữ đến 3 năm.
@@ -1372,7 +1372,7 @@ Câu hỏi: Nếu một cá nhân đang tham gia tố tụng thì chết, nhưng
 ---
 ## q062 · xuyen_khoan · ngoai_le
 
-Trạng thái: DỰ PHÒNG
+Trạng thái: GIỮ
 Câu hỏi: Có thể huy động tổ chức hoặc cá nhân để tham gia bảo vệ an ninh mạng không, nếu tổ chức đó không phải là lực lượng chuyên trách hay có tổ chức độc lập trong bộ máy nhà nước?
 
 *Đáp án nháp của mô hình:* Có thể huy động tổ chức hoặc cá nhân tham gia bảo vệ an ninh mạng nếu họ có năng lực, kinh nghiệm và điều kiện phù hợp, nhưng lực lượng này không phải là lực lượng chuyên trách, thường trực hay có tổ chức độc lập trong bộ máy nhà nước, cũng không phát sinh biên chế, chức danh hay thẩm quyền công vụ.
@@ -1392,7 +1392,7 @@ Câu hỏi: Có thể huy động tổ chức hoặc cá nhân để tham gia b�
 ---
 ## q063 · xuyen_khoan · ngoai_le
 
-Trạng thái: DỰ PHÒNG
+Trạng thái: GIỮ
 Câu hỏi: Có được phép không cập nhật dữ liệu hàng không một cách nhanh chóng và không chính xác nếu tình huống đó thuộc trường hợp ngoại lệ?
 
 *Đáp án nháp của mô hình:* Có thể cập nhật dữ liệu hàng không nhanh chóng trong trường hợp ngoại lệ, nhưng vẫn phải đảm bảo dữ liệu chính xác, đầy đủ, kịp thời và có thể kiểm chứng, phù hợp với mục đích sử dụng, đồng thời vẫn phải tuân thủ yêu cầu quản lý nhà nước về an toàn và hiệu quả hoạt động bay.
@@ -1438,7 +1438,7 @@ Câu hỏi: Nếu một người lái xe vi phạm quy định an toàn giao th�
 ---
 ## q065 · xuyen_khoan · ngoai_le
 
-Trạng thái: DỰ PHÒNG
+Trạng thái: GIỮ
 Câu hỏi: Nếu một doanh nghiệp bán hàng hóa và gặp sự cố không thể sử dụng hóa đơn điện tử có mã của cơ quan thuế do lỗi kỹ thuật, thì doanh nghiệp đó có thể sử dụng hóa đơn điện tử có mã của cơ quan thuế trong thời gian xử lý sự cố không?
 
 *Đáp án nháp của mô hình:* Doanh nghiệp có thể đến cơ quan thuế để sử dụng hóa đơn điện tử có mã của cơ quan thuế trong thời gian xử lý sự cố. Tuy nhiên, nếu sự cố xảy ra do các tình huống bất khả kháng như chiến tranh, bạo loạn, đình công hoặc rủi ro không do lỗi chủ quan của doanh nghiệp, thì doanh nghiệp được phép tạm ngừng gửi hóa đơn điện tử và phải ghi chép sổ sách, lưu giữ tài liệu chứng minh tình hình đó trong vòng 03 ngày làm việc kể từ ngày sự cố được khắc phục.
@@ -1461,7 +1461,7 @@ Câu hỏi: Nếu một doanh nghiệp bán hàng hóa và gặp sự cố khôn
 ---
 ## q066 · xuyen_khoan · ngoai_le
 
-Trạng thái: DỰ PHÒNG
+Trạng thái: GIỮ
 Câu hỏi: Chánh Văn phòng Trung ương Đảng có được quyết định sử dụng xe ô tô cho các cơ quan thuộc đơn vị trực thuộc mình không, nếu đó là các tổ chức chính trị - xã hội ở trung ương như Liên đoàn Lao động không?
 
 *Đáp án nháp của mô hình:* Chánh Văn phòng Trung ương Đảng có quyền quyết định sử dụng xe ô tô cho các cơ quan thuộc đơn vị trực thuộc, nhưng đối với các tổ chức chính trị - xã hội ở trung ương, việc quyết định thuộc về Ban Thường trực Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam, trừ trường hợp Tổng Liên đoàn Lao động Việt Nam.
@@ -1483,7 +1483,7 @@ Câu hỏi: Chánh Văn phòng Trung ương Đảng có được quyết định
 ---
 ## q067 · xuyen_khoan · ngoai_le
 
-Trạng thái: DỰ PHÒNG
+Trạng thái: GIỮ
 Câu hỏi: Công ty muốn thay đổi ngành nghề kinh doanh, thì cần bao nhiêu cổ đông đồng ý, và có trường hợp nào ngoại lệ không?
 
 *Đáp án nháp của mô hình:* Cần ít nhất 65% cổ đông đại diện tại cuộc họp đồng ý, trừ các trường hợp được quy định trong Điều lệ công ty; tuy nhiên, nếu nội dung thay đổi ngành nghề thuộc các trường hợp được ngoại lệ, thì chỉ cần hơn 50% cổ đông đồng ý.
@@ -1510,7 +1510,7 @@ Câu hỏi: Công ty muốn thay đổi ngành nghề kinh doanh, thì cần bao
 ---
 ## q068 · xuyen_khoan · ngoai_le
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Văn phòng Chính phủ có được phân bổ xe ô tô cho các đơn vị trực thuộc không, nếu những đơn vị đó nằm trong phạm vi điều hòa của bộ, cơ quan trung ương?
 
 *Đáp án nháp của mô hình:* Có, Văn phòng Chính phủ được phân bổ xe ô tô cho các đơn vị trực thuộc trong phạm vi điều hòa của bộ, cơ quan trung ương, nhưng không áp dụng với các trường hợp được nêu tại ngoại lệ, cụ thể là các đơn vị thuộc phạm vi điều hòa trong cục loại 1 và tương đương.
@@ -1532,7 +1532,7 @@ Câu hỏi: Văn phòng Chính phủ có được phân bổ xe ô tô cho các 
 ---
 ## q069 · xuyen_khoan · ngoai_le
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Công ty sản xuất điện có được cho người lao động làm thêm giờ trong trường hợp xảy ra thiên tai không, và nếu có thì có giới hạn về số giờ làm thêm không?
 
 *Đáp án nháp của mô hình:* Có, công ty được phép cho người lao động làm thêm giờ trong trường hợp xảy ra thiên tai do tính chất công việc cấp bách, không thể trì hoãn, và số giờ làm thêm không quá 300 giờ trong năm, nhưng vẫn phải tuân thủ giới hạn về thời gian làm việc bình thường và làm thêm theo quy định chung, cụ thể là không quá 200 giờ trong năm nếu không thuộc trường hợp ngoại lệ được quy định.
@@ -1652,7 +1652,7 @@ Câu hỏi: Một người có thể dùng bút danh để ký tên trong hợp 
 ---
 ## q074 · xuyen_khoan · ngoai_le
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Khi thuê vận chuyển, nếu cả hai bên đã thỏa thuận mức cước phí khác với mức quy định thì bên thuê có phải thanh toán cước phí sau khi hàng hóa được chuyển lên phương tiện không?
 
 *Đáp án nháp của mô hình:* Có, bên thuê vẫn phải thanh toán cước phí sau khi hàng hóa được chuyển lên phương tiện, trừ khi hai bên đã có thỏa thuận khác về việc thanh toán.
@@ -1672,7 +1672,7 @@ Câu hỏi: Khi thuê vận chuyển, nếu cả hai bên đã thỏa thuận m�
 ---
 ## q075 · xuyen_khoan · ngoai_le
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Một thành viên Hội đồng quản trị có được tham gia biểu quyết khi nội dung đó có xung đột lợi ích với chính mình không?
 
 *Đáp án nháp của mô hình:* Không, nếu nội dung biểu quyết có xung đột lợi ích với thành viên thì thành viên đó không được tham gia biểu quyết, dù vẫn có quyền tham dự cuộc họp và thảo luận, nhưng phải chịu trách nhiệm trước Hội đồng quản trị và Đại hội thành viên về quyết định của mình.
@@ -1712,7 +1712,7 @@ Câu hỏi: Một thẩm phán có được tham gia xét xử lại cùng một
 ---
 ## q077 · xuyen_khoan · ngoai_le
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Nếu một doanh nghiệp chậm trả tiền cho một công ty cung cấp dịch vụ, thì công ty đó có được gia hạn thời gian trả tiền không, và nếu không trả kịp thời, có phải trả lãi không?
 
 *Đáp án nháp của mô hình:* Có, doanh nghiệp có thể được gia hạn thời gian trả tiền theo yêu cầu của bên có quyền. Nếu sau thời hạn gia hạn vẫn không trả, doanh nghiệp phải thực hiện nghĩa vụ và bồi thường thiệt hại. Ngoài ra, do trường hợp chậm trả tiền, doanh nghiệp phải trả lãi theo lãi suất cơ bản do Ngân hàng Nhà nước công bố tại thời điểm thanh toán, trừ khi có thỏa thuận khác hoặc pháp luật có quy định khác.
@@ -1732,7 +1732,7 @@ Câu hỏi: Nếu một doanh nghiệp chậm trả tiền cho một công ty cu
 ---
 ## q078 · xuyen_khoan · ngoai_le
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Một người không có quyền ủy quyền thực hiện một công việc cho doanh nghiệp, họ có phải báo cáo cho người giao việc về kết quả nếu doanh nghiệp yêu cầu không?
 
 *Đáp án nháp của mô hình:* Có, người đó có nghĩa vụ thực hiện công việc phù hợp với khả năng của mình và phải báo cáo cho người có công việc nếu bị yêu cầu, trừ trường hợp người có công việc đã biết hoặc người thực hiện không biết nơi cư trú của người đó.
@@ -1752,7 +1752,7 @@ Câu hỏi: Một người không có quyền ủy quyền thực hiện một c
 ---
 ## q079 · xuyen_khoan · ngoai_le
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Một người đang làm chứng trong một vụ án có được bào chữa cho người bị buộc tội không?
 
 *Đáp án nháp của mô hình:* Không, người đang làm chứng trong vụ án không được bào chữa vì đây là trường hợp ngoại lệ theo quy định, dù họ có thể được bào chữa trong các trường hợp khác, nhưng khi tham gia vụ án với tư cách là người làm chứng thì không được.
@@ -1775,7 +1775,7 @@ Câu hỏi: Một người đang làm chứng trong một vụ án có được 
 ---
 ## q224 · xuyen_khoan · ngoai_le · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Nếu một người đang sử dụng đất và trồng cây trong khuôn viên đất của mình, nhưng rễ cây vượt quá ranh giới, thì có được để nguyên không?
 
 *Đáp án nháp của mô hình:* Có được để nguyên nếu rễ và cành cây vượt quá ranh giới không gây tranh chấp và đã tồn tại từ ba mươi năm trở lên theo tập quán hoặc ranh giới đã xác lập; nếu không, phải xén rễ, tỉa cành phần vượt quá, trừ khi có thỏa thuận khác giữa các bên.
@@ -1795,7 +1795,7 @@ Câu hỏi: Nếu một người đang sử dụng đất và trồng cây trong
 ---
 ## q225 · xuyen_khoan · ngoai_le · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Khi cấp trưởng vắng mặt, cấp phó có được ủy quyền cho một cán bộ điều tra thực hiện nhiệm vụ của cấp trưởng không?
 
 *Đáp án nháp của mô hình:* Cấp phó có thể ủy quyền cho cấp phó thực hiện nhiệm vụ của cấp trưởng khi cấp trưởng vắng mặt, nhưng không được ủy quyền cho cán bộ điều tra thực hiện nhiệm vụ đó.
@@ -1816,7 +1816,7 @@ Câu hỏi: Khi cấp trưởng vắng mặt, cấp phó có được ủy quy�
 ---
 ## q226 · xuyen_khoan · ngoai_le · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Nếu một Phó Viện trưởng Viện kiểm sát được ủy quyền thay thế Viện trưởng, thì có được ủy quyền cho một Kiểm sát viên thực hiện nhiệm vụ của Viện trưởng không?
 
 *Đáp án nháp của mô hình:* Không, vì theo quy định, Phó Viện trưởng có thể được ủy quyền thay thế Viện trưởng, nhưng Viện trưởng và Phó Viện trưởng không được ủy quyền cho Kiểm sát viên thực hiện nhiệm vụ hoặc quyền hạn của mình.
@@ -1836,7 +1836,7 @@ Câu hỏi: Nếu một Phó Viện trưởng Viện kiểm sát được ủy q
 ---
 ## q227 · xuyen_khoan · ngoai_le · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Nếu một bên mua không trả lời trong thời gian dùng thử, thì có được coi là đã đồng ý mua sản phẩm không, và bên dùng thử có phải chịu trách nhiệm về những hao mòn thông thường hay không?
 
 *Đáp án nháp của mô hình:* Có, nếu bên mua không trả lời trong thời hạn dùng thử thì sẽ được coi là đã chấp nhận mua theo các điều kiện đã thỏa thuận. Đồng thời, bên dùng thử không phải chịu trách nhiệm về những hao mòn thông thường do việc dùng thử gây ra.
@@ -1856,7 +1856,7 @@ Câu hỏi: Nếu một bên mua không trả lời trong thời gian dùng th�
 ---
 ## q228 · xuyen_khoan · ngoai_le · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Trong trường hợp hợp đồng xây dựng bị chấm dứt do đơn phương, thì bên giao thầu có được thanh toán cho bên nhận thầu không, nếu hai bên chưa có thỏa thuận về thời gian và điều kiện thanh toán?
 
 *Đáp án nháp của mô hình:* Có được thanh toán nếu hợp đồng bị đơn phương chấm dứt, nhưng chỉ thực hiện theo thỏa thuận giữa hai bên về thời gian, phương thức và điều kiện thanh toán; nếu không có thỏa thuận, bên giao thầu phải thanh toán đủ giá trị đúng thời hạn sau khi đã trừ tiền tạm ứng và các khoản tiền giữ lại theo hợp đồng.
@@ -1941,7 +1941,7 @@ Câu hỏi: Một trường chuyên biệt muốn chuyển địa điểm hoạt
 ---
 ## q232 · xuyen_khoan · ngoai_le · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Nếu một cuộc họp Hội đồng quản trị của công ty không đủ số thành viên dự họp theo quy định, thì có thể triệu tập thêm lần thứ hai không, và nếu có, điều kiện nào phải thỏa mãn?
 
 *Đáp án nháp của mô hình:* Có thể triệu tập thêm lần thứ hai nếu cuộc họp ban đầu không đủ số thành viên dự họp, nhưng chỉ được làm trong thời hạn 07 ngày kể từ ngày dự định họp lần đầu, trừ trường hợp Điều lệ công ty quy định thời hạn khác ngắn hơn. Trong trường hợp có nhiều thành viên có số phiếu bầu hoặc tỷ lệ phiếu bầu cao nhất và ngang nhau, thì các thành viên sẽ bầu theo nguyên tắc đa số để chọn một người triệu tập họp.
@@ -3237,5 +3237,93 @@ Câu hỏi: Nếu một doanh nghiệp kê khai thuế giá trị gia tăng khô
 **Gold: 8159/TC/TCT (đoạn)**
 
 > Các cơ sở kinh doanh kê khai và nộp thuế GTGT không đúng mức thuế suất quy định sẽ bị xử lý truy thu và phạt theo quy định hiện hành.
+
+---
+## q264 · xuyen_khoan · ngoai_le_vat · TRUNG LẬP
+
+Trạng thái: GIỮ
+Câu hỏi: Một lãnh đạo của một cơ quan báo chí đang làm việc tại Việt Nam, đã được Bộ Văn hóa, Thể thao và Du lịch có văn bản đồng ý bổ nhiệm, thì có được xét cấp thẻ nhà báo hay không?
+
+*Đáp án nháp của mô hình:* Không, người này không được xét cấp thẻ nhà báo theo quy tắc chung, nhưng được xem xét ngoại lệ vì đã được Bộ Văn hóa, Thể thao và Du lịch đồng ý bổ nhiệm, do đó không áp dụng điều kiện cấp thẻ nhà báo.
+
+
+**Gold: 126/2025/QH15 Điều 28 khoản 2 điểm c — **
+
+> Đối với lãnh đạo các cơ quan báo chí đã được Bộ Văn hóa, Thể thao và Du lịch có văn bản đồng ý bổ nhiệm thì không áp dụng điều kiện này;
+> d) Được cơ quan báo chí hoặc cơ quan công tác đề nghị cấp thẻ nhà báo.
+> 3. Các trường hợp sau đây không được xét cấp thẻ nhà báo:
+
+---
+## q265 · xuyen_khoan · ngoai_le_vat · TRUNG LẬP
+
+Trạng thái: GIỮ
+Câu hỏi: Một người có thời gian lái xe 1 năm và đã lái được 20.000 km an toàn, hiện muốn nâng hạng từ B lên C1, nhưng không đạt đủ điều kiện theo quy định chung, thì có thể được phép nâng hạng không?
+
+*Đáp án nháp của mô hình:* Không, người này không được phép nâng hạng từ B lên C1 vì không đạt điều kiện về thời gian và số km lái xe an toàn theo quy tắc chung; tuy nhiên, nếu người này thuộc trường hợp đào tạo chuyển tiếp từ hạng C lên CE hoặc CX theo chỉ tiêu của Bộ Tổng Tham mưu thì được xem xét đặc biệt, nhưng không áp dụng cho trường hợp nâng hạng từ B lên C1.
+
+
+**Gold: 131/2026/TT-BQP Điều 9 khoản 1 — **
+
+> Đối với lao động hợp đồng: Chỉ đào tạo nâng hạng khi có đủ điều kiện, tiêu chuẩn quy định tại khoản 1 Điều này.
+> 2. Đối với người học nâng hạng Giấy phép lái xe quân sự phải có thời gian lái xe và số km lái xe an toàn như sau:
+> a) Từ hạng B lên hạng C1; hạng C1 lên hạng C, C1E; hạng C lên hạng D1, CE, CX; hạng D1 lên hạng D2; hạng D2 lên hạng D: Có thời gian lái xe 02 năm trở lên và 30.000 km lái xe an toàn trở lên trừ các trường hợp đào tạo chuyển tiếp từ hạng C lên hạng CE hoặc CX theo chỉ tiêu của Bộ Tổng Tham mưu;
+
+---
+## q266 · xuyen_khoan · ngoai_le_vat · TRUNG LẬP
+
+Trạng thái: GIỮ
+Câu hỏi: Trong trường hợp doanh nghiệp muốn mua lại trái phiếu trước hạn của người sở hữu mà không được sự đồng ý của họ, nhưng vẫn muốn thay đổi điều kiện phát hành hoặc mục đích phát hành, thì việc này có được thực hiện hay không, và điều kiện nào cần được đáp ứng?
+
+*Đáp án nháp của mô hình:* Việc mua lại trái phiếu trước hạn của người sở hữu không được chấp thuận việc thay đổi điều kiện hoặc mục đích phát hành chỉ được thực hiện nếu đã có ít nhất 65% số trái phiếu được đại diện từ những người sở hữu đồng ý với việc thay đổi; tuy nhiên, quy định này không áp dụng nếu trái phiếu bị thu hồi theo quyết định của cơ quan có thẩm quyền.
+
+
+**Gold: 200/2026/NĐ-CP Điều 12 khoản 3 điểm b — **
+
+> Các trường hợp khác được nêu cụ thể tại phương án phát hành trái phiếu (nếu có);
+> c) Mua lại trước hạn trái phiếu của người sở hữu trái phiếu không chấp thuận việc thay đổi điều kiện, điều khoản của trái phiếu, việc thay đổi mục đích phát hành tại phương án phát hành đối với trường hợp việc thay đổi đã được những người sở hữu trái phiếu đại diện từ 65% tổng số trái phiếu trở lên chấp thuận.
+> 4. Quy định tại điểm b khoản 3 Điều này không áp dụng đối với trường hợp trái phiếu bị thu hồi theo quyết định của cơ quan có thẩm quyền.
+
+---
+## q267 · xuyen_khoan · ngoai_le_vat · TRUNG LẬP
+
+Trạng thái: GIỮ
+Câu hỏi: Một doanh nghiệp đang triển khai dự án đầu tư xây dựng với thiết kế FEED và đã thực hiện lựa chọn nhà thầu theo hình thức EPC, EC, EP, đồng thời đã phê duyệt báo cáo nghiên cứu khả thi, thì trong trường hợp này, doanh nghiệp có cần phải thực hiện thẩm định dự toán xây dựng tại bước triển khai dự án hay không?
+
+*Đáp án nháp của mô hình:* Không, doanh nghiệp không cần phải thực hiện thẩm định dự toán xây dựng tại bước triển khai dự án, vì đây là trường hợp ngoại lệ được quy định khi dự án sử dụng thiết kế FEED và đã thực hiện lựa chọn nhà thầu EPC, EC, EP, nhà thầu thi công xây dựng.
+
+
+**Gold: 206/2026/NĐ-CP Điều 16 khoản 10 — **
+
+> Bộ Tài chính quy định phí thẩm định dự toán xây dựng.
+> 11. Đối với dự án sử dụng thiết kế FEED, thiết kế kỹ thuật tại Báo cáo nghiên cứu khả thi và đã thực hiện lựa chọn nhà thầu EPC, EC, EP, nhà thầu thi công xây dựng thì không phải thẩm định dự toán xây dựng công trình tại bước triển khai sau khi dự án được phê duyệt.
+
+---
+## q268 · xuyen_khoan · ngoai_le_vat · TRUNG LẬP
+
+Trạng thái: GIỮ
+Câu hỏi: Trong một cơ quan có hai ứng viên có kết quả thi tuyển bằng nhau ở chỉ tiêu cuối cùng, và cả hai đều đạt điểm cao nhất, thì theo quy định, ai sẽ được tuyển dụng? Và nếu một ứng viên không trúng tuyển trong kỳ thi này, thì có được phép dự thi lại không?
+
+*Đáp án nháp của mô hình:* Người được tuyển dụng sẽ được lựa chọn theo thứ tự ưu tiên quy định, ví dụ như người có kinh nghiệm, trình độ chuyên môn hoặc điều kiện khác được ưu tiên; tuy nhiên, nếu ứng viên đó không trúng tuyển, thì không được bảo lưu kết quả để dự thi lần sau, kể cả khi có điều kiện hoặc lý do đặc biệt.
+
+
+**Gold: 259/2026/NĐ-CP Điều 12 khoản 3 — **
+
+> Trường hợp có từ 02 người trở lên có kết quả tuyển dụng bằng nhau ở chỉ tiêu cuối cùng của cơ quan, đơn vị sử dụng thì lựa chọn theo thứ tự ưu tiên quy định tại khoản 2 Điều này.
+> 4. Người không trúng tuyển trong kỳ thi tuyển viên chức không được bảo lưu kết quả thi tuyển cho các kỳ thi tuyển lần sau.
+
+---
+## q269 · xuyen_khoan · ngoai_le_vat · TRUNG LẬP
+
+Trạng thái: GIỮ
+Câu hỏi: Một doanh nghiệp tổ chức kinh doanh dịch vụ sàn dữ liệu muốn cho phép một loại dữ liệu nhạy cảm, ví dụ như dữ liệu y tế, được giao dịch trên sàn của mình, thì điều gì là điều kiện bắt buộc mà doanh nghiệp đó phải tuân thủ, và có trường hợp nào mà dữ liệu đó vẫn được phép giao dịch dù không đáp ứng đầy đủ các điều kiện về tính phù hợp của hồ sơ hay không?
+
+*Đáp án nháp của mô hình:* Doanh nghiệp phải kiểm tra, đánh giá sự phù hợp của hồ sơ, tài liệu theo quy định; đồng thời, phải công bố rõ ràng các điều kiện, yêu cầu hoặc hạn chế liên quan đến việc lưu thông, lưu hành và sử dụng dữ liệu trong hồ sơ. Tuy nhiên, có ngoại lệ: nếu dữ liệu thuộc trường hợp không bị cấm giao dịch theo quy định pháp luật về dữ liệu, thì dù không đáp ứng đầy đủ các điều kiện, vẫn được phép giao dịch.
+
+
+**Gold: 314/2026/NĐ-CP Điều 17 khoản 1 điểm a — **
+
+> Tổ chức kinh doanh dịch vụ sàn dữ liệu có trách nhiệm kiểm tra, đánh giá sự phù hợp của hồ sơ, tài liệu theo quy định của Nghị định này;
+> b) Có các điều kiện, yêu cầu hoặc hạn chế (nếu có) trong việc lưu thông, lưu hành và sử dụng dữ liệu, sản phẩm, dịch vụ về dữ liệu đã được Bên bán xác định và công bố rõ ràng trong hồ sơ dữ liệu, sản phẩm, dịch vụ về dữ liệu.
+> 2. Không thuộc trường hợp dữ liệu không được phép giao dịch theo quy định của pháp luật về dữ liệu.
 
 ---

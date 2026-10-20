@@ -9,8 +9,8 @@ Tập: 80 văn bản (`data/manifest.csv`). Seed 0 = cửa sổ bắt đầu t�
 | B | 12.718 | 97 | 372 | 3 | 0.4% | 0 | 44 (0.3%) | 38 | 0 |
 | A_H | 5.172 | 300 | 300 | 6 | 0.0% | 0 | 65 (1.3%) | 36 | 0 |
 | B- | 12.718 | 97 | 372 | 3 | 0.4% | 0 | 4 (0.0%) | 0 | 0 |
-| C | 5.637 | 281 | 413 | 25 | 0.0% | 0 | 5 (0.1%) | 0 | 0 |
-| D | 7.718 | 198 | 413 | 17 | 0.0% | 0 | 5 (0.1%) | 0 | 0 |
+| C | 5.640 | 281 | 300 | 10 | 0.0% | 0 | 5 (0.1%) | 0 | 0 |
+| D | 7.673 | 199 | 385 | 25 | 0.1% | 0 | 7 (0.1%) | 0 | 0 |
 
 - **Số từ** tính trên phần nội dung (không tính tiền tố). **Vượt 512 token**: đếm bằng tokenizer của halong_embedding trên chuỗi đem nhúng (tiền tố + nội dung) — phần vượt bị cắt mất khi nhúng.
 - **Ký tự không phủ** = ký tự không trắng của văn bản không thuộc chunk nào (phải = 0: không để mất văn bản).

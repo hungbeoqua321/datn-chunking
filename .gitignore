@@ -11,3 +11,8 @@ data/
 models/
 tools/llama.cpp/
 results/gen/
+
+# Nhật ký chạy và tệp tạm của bước dựng câu hỏi (sinh lại được)
+results/*.log
+eval/_6vat.jsonl
+*.bak-*

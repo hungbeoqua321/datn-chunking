@@ -70,23 +70,31 @@ def test_phu_het_khong_chong_lan():
     assert all(co[i] or t[i].isspace() for i in range(len(t)))
 
 
-def test_gom_toi_da_300_tu_va_cau_dai_dung_rieng():
+def test_gom_toi_da_300_tu_va_cau_dai_bi_cat_cua_so():
+    """Chính sách trần chung: câu đơn dài hơn trần KHÔNG còn đứng nguyên mà bị cắt bằng cửa sổ cố
+    định kiểu A (câu 320 từ → 300 + 20). Trước khi áp chính sách, chunk này để nguyên 320 từ."""
     dai = " ".join(["dài"] * 320) + "."
     t = "\n".join(["Câu " + " ".join(["x"] * 99) + "."] * 4 + [dai, "Câu cuối."])
     cs = sentence.chunk(Document("d", "1/2020/QH14", "Luật", "Luật mẫu", t))
-    assert [c.n_words for c in cs] == [300, 100, 320, 2]
+    assert [c.n_words for c in cs] == [300, 100, 300, 20, 2]
+    assert max(c.n_words for c in cs) <= 300
     assert all(c.dieu_so is None and c.tien_to == "" and c.text == t[c.start:c.end] for c in cs)
 
 
 def _vec_chu_de(cs: list[str]) -> np.ndarray:
-    """Vector giả: câu nói về mèo → e0, về chó → e1 (gần trực giao), nhiễu nhỏ cố định."""
-    V = np.array([[1.0, 0.05] if "mèo" in c else [0.05, 1.0] for c in cs])
+    """Vector giả theo TỈ LỆ mèo/chó trong chuỗi được nhúng.
+
+    D nhúng CỤM 3 CÂU (buffer_size=1 như bản gốc LangChain), nên cụm vắt qua ranh giới chủ đề là
+    HỖN HỢP chứ không thuần một bên — vector giả phải phản ánh điều đó, nếu không ranh giới đo được
+    sẽ lệch đúng bằng bề rộng cụm."""
+    V = np.array([[c.count("mèo") + 0.05, c.count("chó") + 0.05] for c in cs], dtype=float)
     return V / np.linalg.norm(V, axis=1, keepdims=True)
 
 
 def test_d_cat_o_cho_doi_chu_de():
-    t = "\n".join([f"Con mèo số {i} " + " ".join(["kêu"] * 20) + "." for i in range(5)] +
-                  [f"Con chó số {i} " + " ".join(["sủa"] * 20) + "." for i in range(5)])
+    # ≥ 20 câu: dưới ngưỡng đó D rơi về cách gom của C (văn bản quá ngắn, phân vị vô nghĩa)
+    t = "\n".join([f"Con mèo số {i} " + " ".join(["kêu"] * 8) + "." for i in range(12)] +
+                  [f"Con chó số {i} " + " ".join(["sủa"] * 8) + "." for i in range(12)])
     cs = semantic.chunk(Document("d", "x", "Luật", "y", t), vec=_vec_chu_de)
     assert len(cs) == 2 and "mèo" in cs[0].text and "chó" not in cs[0].text and "chó" in cs[1].text
     assert all(c.tien_to == "" and c.dieu_so is None for c in cs)
@@ -105,3 +113,24 @@ def test_d_rang_buoc_50_350_tu():
 @pytest.mark.parametrize("ham", [sentence.chunk])
 def test_van_ban_rong(ham):
     assert ham(Document("d", "x", "Luật", "y", "  \n ")) == []
+
+
+def test_d_van_ban_ngan_roi_ve_c():
+    """Dưới 20 câu thì phân vị 95 vô nghĩa (ít khoảng cách, p95 ≈ max) → D gom như C và đánh dấu
+    fallback=True. Vector giả KHÔNG được gọi tới trong nhánh này."""
+    def _khong_duoc_goi(cs):
+        raise AssertionError("văn bản ngắn không được nhúng")
+
+    t = "\n".join([f"Câu số {i} " + " ".join(["chữ"] * 10) + "." for i in range(10)])
+    cs = semantic.chunk(Document("d", "x", "Luật", "y", t), vec=_khong_duoc_goi)
+    assert cs and all(c.fallback and c.method == "D" for c in cs)
+    assert "".join(t[c.start:c.end] for c in cs).replace("\n", "") == t.replace("\n", "")
+
+
+def test_d_bien_do_gop_khong_vuot_tran_gop():
+    """Gộp đoạn dưới sàn được phép nhỉnh hơn trần, nhưng không bao giờ quá TRAN_GOP."""
+    t = "\n".join([f"Con mèo {i} " + " ".join(["kêu"] * 28) + "." for i in range(10)] +
+                  ["Con chó sủa " + "to " * 7 + "."] +
+                  [f"Con mèo {i} " + " ".join(["kêu"] * 28) + "." for i in range(10, 20)])
+    cs = semantic.chunk(Document("d", "x", "Luật", "y", t), vec=_vec_chu_de)
+    assert all(c.n_words <= semantic.TRAN_GOP for c in cs)

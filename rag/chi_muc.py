@@ -111,12 +111,17 @@ def _ghi_chunks(p, cs: list[dict]) -> None:
     tam.replace(p)
 
 
-def dung(ten: str, force: bool = False) -> None:
+def dung(ten: str, force: bool = False) -> bool:
+    """Dựng chỉ mục cho `ten`. Trả True nếu ĐÃ DỰNG, False nếu BỎ QUA.
+
+    Bỏ qua im lặng từng làm chỉ mục C và D lệch với tệp chunk sau khi sửa cài đặt mà không ai biết
+    (lệnh chạy vẫn báo thành công) — nên thông báo phải nói rõ là BỎ QUA, và bên gọi phải thấy được.
+    """
     src = ch.CHUNKS / f"{ten}.jsonl"
     out = ch.INDEX / ten
     if (out / "emb.f32").exists() and not force:
-        print("có rồi:", ten)
-        return
+        print(f"BỎ QUA: {ten} — đã có chỉ mục, dùng --force để ghi đè", flush=True)
+        return False
     cs = [json.loads(x) for x in open(src) if x.strip()]
     print(f"{ten}: {len(cs)} chunk", flush=True)
     idx = nhung_bo_dem([c["text"] for c in cs])
@@ -127,6 +132,7 @@ def dung(ten: str, force: bool = False) -> None:
     _ghi_chunks(out / "chunks.jsonl", cs)
     (out / "emb.f32.tmp").replace(out / "emb.f32")
     print(f"→ {out} ({m.shape[0]}×{m.shape[1]})")
+    return True
 
 
 def nap(ten: str) -> tuple[np.ndarray, list[dict]]:
@@ -150,8 +156,11 @@ def main() -> None:
     if not ds:
         ap.print_help()
         sys.exit(1)
-    for t in ds:
-        dung(t, a.force)
+    bo_qua = [t for t in ds if not dung(t, a.force)]
+    if bo_qua:
+        print(f"\n{len(bo_qua)}/{len(ds)} tệp BỎ QUA (đã có chỉ mục): {' '.join(bo_qua)}", file=sys.stderr)
+        print("Chỉ mục CŨ vẫn đang dùng. Nếu tệp chunk đã đổi thì phải chạy lại với --force.", file=sys.stderr)
+        sys.exit(3)      # mã riêng: bên gọi KHÔNG được coi là chạy xong
 
 
 if __name__ == "__main__":

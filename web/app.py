@@ -83,7 +83,8 @@ display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px}
 """
 
 TRANG_DIEU_HUONG = [("/", "Hỏi đáp"), ("/bao-cao", "Báo cáo so sánh"), ("/loi-phan-doan", "Lỗi phân đoạn"),
-                    ("/ket-qua", "Kết quả từng bước"), ("/duyet", "Bộ câu hỏi"), ("/api/tep", "Tải dữ liệu")]
+                    ("/ket-qua", "Kết quả từng bước"), ("/duyet", "Bộ câu hỏi"), ("/slide", "Slide bảo vệ"),
+                    ("/api/tep", "Tải dữ liệu")]
 
 
 def trang(tieu_de: str, than: str, duong_dan: str = "") -> HTMLResponse:
@@ -380,3 +381,10 @@ def api_duyet():
 @app.get("/duyet", response_class=HTMLResponse)
 def trang_duyet():
     return trang("Bộ câu hỏi đánh giá", (Path(__file__).parent / "static/duyet.html").read_text(), "/duyet")
+
+
+@app.get("/slide", response_class=HTMLResponse)
+def trang_slide():
+    """Slide bảo vệ (reveal.js). Trả NGUYÊN trang, không bọc khung site: deck phải chiếm trọn màn hình.
+    In ra PDF: mở /slide?print-pdf rồi Ctrl+P → Save as PDF (xem README)."""
+    return HTMLResponse((Path(__file__).parent / "static/slide.html").read_text())
