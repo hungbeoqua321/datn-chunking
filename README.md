@@ -103,6 +103,130 @@ chot_chan()
 chunk đổi nhưng chỉ mục vẫn là bản cũ mà lệnh vẫn báo thành công — suýt nữa pilot chấm C và D trên
 đúng bản lỗi vừa sửa.
 
+## Chạy trên máy cá nhân
+
+Repo chỉ chứa **mã nguồn và kết quả**. Bốn thư mục nặng bị `.gitignore` chặn và **phải chép tay** sang máy mới:
+`data/` (1,7 GB), `models/` (3,3 GB), `tools/llama.cpp/` (276 MB) và `results/gen/` (324 KB — kho câu trả lời đã
+sinh, thiếu nó thì mọi lệnh đánh giá phải gọi lại mô hình sinh).
+
+> ⚠️ **Đừng crawl lại.** Bộ câu hỏi và đáp án vàng gắn với đúng bản chụp vbpl.vn đã tải; crawl lại ra bản khác thì
+> số hiệu và số Điều trong gold lệch, mọi con số trong `results/` không tái lập được. Luôn chép `data/raw`,
+> `data/clean`, `data/clean_full`, `data/manifest.csv` từ máy cũ.
+
+### 1. Chép dữ liệu sang
+
+Chép đủ (đơn giản nhất, ~5,3 GB) — chạy **trên máy cá nhân**:
+
+```bash
+git clone https://github.com/hungbeoqua321/datn-chunking.git
+cd datn-chunking
+for d in data models tools/llama.cpp results/gen; do
+  rsync -av --progress ubuntu@<vps>:~/datn-chunking/$d/ ./$d/
+done
+```
+
+Chép tối thiểu (118 MB) rồi dựng lại tại chỗ — chỉ nên làm nếu máy cá nhân mạnh hơn VPS, vì bước nhúng lại
+`data/index/` (1,2 GB) rất nặng trên CPU:
+
+```bash
+rsync -av ubuntu@<vps>:~/datn-chunking/data/{raw,clean,clean_full,manifest.csv,ung_vien.jsonl} ./data/
+python -m chunking.chay        # dựng lại data/chunks/
+tools/nhung_tat_ca.sh          # dựng lại data/index/ — chạy rất lâu
+```
+
+### 2. Môi trường Python
+
+Y như phần [Môi trường](#môi-trường): Python 3.12, `.venv`, `requirements.txt`. Nếu máy có GPU NVIDIA thì
+**vẫn cài torch bản CPU theo `requirements.txt`** — đổi sang bản CUDA là đổi điều kiện thực nghiệm, phần nhúng
+có thể ra vector khác ở chữ số cuối.
+
+```bash
+python3.12 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+cp .env.example .env
+.venv/bin/python -m rag.nhung --kiem      # phải khớp model card
+.venv/bin/python -m pytest -q             # 140 test
+```
+
+### 3. Mô hình sinh
+
+`tools/llama.cpp/` chép từ VPS là **bản build cho arm64**, máy cá nhân x86_64 hoặc macOS chạy không được —
+phải dựng lại đúng tag `b11577`:
+
+```bash
+rm -rf tools/llama.cpp && tools/build-llama.sh
+tools/chay-llm.sh      # llama-server tại 127.0.0.1:8082
+```
+
+`tools/chay-llm.sh` ghim `-t 3 -tb 3 -c 4096 -np 1 -b 512 -ub 512 --no-cache-prompt --seed 42` cho VPS 4 nhân.
+**Giữ nguyên mọi cờ** nếu muốn tái lập số cũ — kể cả trên máy nhiều nhân hơn. Chỉ đổi `CONG=<cổng>` và
+`MO_HINH=<đường dẫn gguf>` qua biến môi trường.
+
+### 4. Chốt chặn rồi mới đánh giá
+
+```bash
+.venv/bin/python -m rag.kiem_chi_muc     # lệch là thoát mã 1 → DỪNG
+```
+
+### 5. Web xem kết quả
+
+```bash
+.venv/bin/uvicorn web.app:app --host 127.0.0.1 --port 8081
+```
+
+### Prompt để nhờ Claude Code dựng hộ
+
+Dán nguyên hai khối dưới đây vào Claude Code trên máy cá nhân (khối **Hệ thống** vào system prompt /
+`CLAUDE.md`, khối **Con người** vào ô chat).
+
+#### Hệ thống
+
+```text
+Bạn là kỹ sư dựng lại môi trường cho một đồ án tốt nghiệp đã chạy xong trên VPS Linux aarch64,
+nay chuyển sang máy cá nhân. Mục tiêu là chạy lại ĐÚNG số cũ, không phải làm cho nó chạy được.
+
+Ràng buộc, không được tự ý bỏ qua:
+- Mọi phiên bản đều đã ghim: Python 3.12, requirements.txt (torch bản CPU), mô hình nhúng
+  halong_embedding revision b57776031035f70ed2030d2e35ecc533eb0f8f71, llama.cpp tag b11577,
+  Qwen3-4B-Instruct-2507-Q4_0 revision a06e946bb6b655725eafa393f4a9745d460374c9.
+  Không nâng, không đổi sang bản CUDA, không thay mô hình.
+- Không crawl lại dữ liệu. data/raw, data/clean, data/clean_full, data/manifest.csv phải chép từ
+  máy cũ; crawl lại làm lệch đáp án vàng.
+- Không sửa cờ trong tools/chay-llm.sh. Đổi cờ = đổi thực nghiệm.
+- Trước mọi lệnh đánh giá phải chạy python -m rag.kiem_chi_muc; thoát khác 0 thì DỪNG, không
+  chạy tiếp, không tự sửa chỉ mục.
+- rag.chi_muc thoát mã 3 nghĩa là BỎ QUA vì đã có chỉ mục cũ, không phải thành công.
+
+Cách làm việc:
+- Trả lời bằng tiếng Việt.
+- Báo thời gian thật của từng bước nặng (cài đặt, build llama.cpp, nhúng, sinh).
+- Lệnh nào hỏng thì dán nguyên văn lỗi, đừng tóm tắt lại.
+- Không chạy lại bước đã có kết quả trong results/; mọi script tự bỏ qua nếu file đã có.
+- Đọc README.md trước khi gõ lệnh đầu tiên.
+```
+
+#### Con người
+
+```text
+Dựng lại đồ án datn-chunking trên máy này và chạy cho tới khi ra được kết quả.
+
+Tôi đã có:
+- repo clone từ github.com/hungbeoqua321/datn-chunking
+- quyền ssh vào VPS cũ: ubuntu@<điền-ip-vps>, thư mục ~/datn-chunking
+
+Làm theo mục "Chạy trên máy cá nhân" trong README.md:
+1. Chép data/, models/, tools/llama.cpp/, results/gen/ từ VPS sang.
+2. Dựng .venv theo requirements.txt, copy .env.example thành .env.
+3. Chạy rag.nhung --kiem và pytest -q — báo số test xanh.
+4. Xoá tools/llama.cpp chép từ VPS (bản arm64) và build lại bằng tools/build-llama.sh,
+   rồi bật tools/chay-llm.sh.
+5. Chạy rag.kiem_chi_muc. Lệch thì dừng và báo tôi, đừng tự sửa.
+6. Bật web bằng uvicorn và cho tôi đường dẫn xem kết quả.
+
+Mỗi bước xong thì báo thời gian thật. Bước nào hỏng thì dừng ở đó, dán lỗi nguyên văn
+và nói rõ cần tôi làm gì.
+```
+
 ## Slide bảo vệ
 
 Deck reveal.js (bản ghim **5.1.0**), một file duy nhất `web/static/slide.html`, phục vụ tại:
