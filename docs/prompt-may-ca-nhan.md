@@ -14,8 +14,8 @@ Ràng buộc, không được tự ý bỏ qua:
   halong_embedding revision b57776031035f70ed2030d2e35ecc533eb0f8f71, llama.cpp tag b11577,
   Qwen3-4B-Instruct-2507-Q4_0 revision a06e946bb6b655725eafa393f4a9745d460374c9.
   Không nâng, không đổi sang bản CUDA, không thay mô hình.
-- Không crawl lại dữ liệu. data/raw, data/clean, data/clean_full, data/manifest.csv phải chép từ
-  máy cũ; crawl lại làm lệch đáp án vàng.
+- Không crawl lại dữ liệu. data/raw, data/clean, data/clean_full, data/manifest.csv lấy từ
+  GitHub Release du-lieu-2026-10-29; crawl lại làm lệch đáp án vàng.
 - Không sửa cờ trong tools/chay-llm.sh. Đổi cờ = đổi thực nghiệm.
 - Trước mọi lệnh đánh giá phải chạy python -m rag.kiem_chi_muc; thoát khác 0 thì DỪNG, không
   chạy tiếp, không tự sửa chỉ mục.
@@ -36,13 +36,14 @@ Dựng lại đồ án datn-chunking trên máy này và chạy cho tới khi ra
 
 Tôi đã có:
 - repo clone từ github.com/hungbeoqua321/datn-chunking
-- quyền ssh vào VPS cũ: ubuntu@<điền-ip-vps>, thư mục ~/datn-chunking
+- gh đã đăng nhập bằng tài khoản hungbeoqua321 (repo private)
 
 Làm theo mục "Chạy trên máy cá nhân" trong README.md:
-1. Chép data/, models/, tools/llama.cpp/, results/gen/ từ VPS sang.
+1. Tải bộ dữ liệu từ GitHub Release du-lieu-2026-10-29, kiểm sha256, giải vào data/.
+   Rồi tải mô hình bằng python tools/tai_mo_hinh.py (KHÔNG có trong release).
 2. Dựng .venv theo requirements.txt, copy .env.example thành .env.
 3. Chạy rag.nhung --kiem và pytest -q — báo số test xanh.
-4. Xoá tools/llama.cpp chép từ VPS (bản arm64) và build lại bằng tools/build-llama.sh,
+4. Build llama.cpp đúng tag b11577 bằng tools/build-llama.sh,
    rồi bật tools/chay-llm.sh.
 5. Chạy rag.kiem_chi_muc. Lệch thì dừng và báo tôi, đừng tự sửa.
 6. Bật web bằng uvicorn và cho tôi đường dẫn xem kết quả.

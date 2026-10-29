@@ -105,33 +105,46 @@ chunk đổi nhưng chỉ mục vẫn là bản cũ mà lệnh vẫn báo thành
 
 ## Chạy trên máy cá nhân
 
-Repo chỉ chứa **mã nguồn và kết quả**. Bốn thư mục nặng bị `.gitignore` chặn và **phải chép tay** sang máy mới:
-`data/` (1,7 GB), `models/` (3,3 GB), `tools/llama.cpp/` (276 MB) và `results/gen/` (324 KB — kho câu trả lời đã
-sinh, thiếu nó thì mọi lệnh đánh giá phải gọi lại mô hình sinh).
+Repo chỉ chứa **mã nguồn và kết quả**. Phần nặng lấy ở hai chỗ khác: `data/` tải từ **GitHub Release**
+(mục 1 dưới đây), `models/` tải từ HuggingFace bằng `tools/tai_mo_hinh.py`, `tools/llama.cpp/` build tại chỗ.
 
-> ⚠️ **Đừng crawl lại.** Bộ câu hỏi và đáp án vàng gắn với đúng bản chụp vbpl.vn đã tải; crawl lại ra bản khác thì
-> số hiệu và số Điều trong gold lệch, mọi con số trong `results/` không tái lập được. Luôn chép `data/raw`,
-> `data/clean`, `data/clean_full`, `data/manifest.csv` từ máy cũ.
+### 1. Lấy bộ dữ liệu
 
-### 1. Chép dữ liệu sang
+Bộ dữ liệu phát hành ở **GitHub Release** `du-lieu-2026-10-29` của chính repo này (repo private nên cần đăng nhập `gh`).
+Tổng **518 MB** nén.
 
-Chép đủ (đơn giản nhất, ~5,3 GB) — chạy **trên máy cá nhân**:
+| Tệp | Nén | Giải ra | Bắt buộc? |
+|---|---:|---:|---|
+| `datn-corpus.tar.gz` | 20 MB | 118 MB | **Có** — bản chụp vbpl.vn đã dùng, không crawl lại được |
+| `datn-chunks.tar.zst` | 38 MB | 334 MB | Không — dựng lại bằng `chunking.chay` (nhanh) |
+| `datn-index.tar.zst` | 461 MB | 730 MB | Không — dựng lại bằng `nhung_tat_ca.sh` (rất lâu) |
 
 ```bash
 git clone https://github.com/hungbeoqua321/datn-chunking.git
 cd datn-chunking
-for d in data models tools/llama.cpp results/gen; do
-  rsync -av --progress ubuntu@<vps>:~/datn-chunking/$d/ ./$d/
-done
+gh release download du-lieu-2026-10-29 -D /tmp/datn-data
+( cd /tmp/datn-data && sha256sum -c SHA256SUMS.txt )
+tar -xzf /tmp/datn-data/datn-corpus.tar.gz
+zstd -dc /tmp/datn-data/datn-chunks.tar.zst | tar -x
+zstd -dc /tmp/datn-data/datn-index.tar.zst  | tar -x
 ```
 
-Chép tối thiểu (118 MB) rồi dựng lại tại chỗ — chỉ nên làm nếu máy cá nhân mạnh hơn VPS, vì bước nhúng lại
-`data/index/` (1,2 GB) rất nặng trên CPU:
+Hai thứ **cố ý không có** trong release:
+
+- `models/` (3,3 GB) — tải lại bằng `python tools/tai_mo_hinh.py`, đã ghim revision và kiểm sha256.
+- `data/index/cache.f32` (474 MB) — chỉ là bộ đệm lúc dựng chỉ mục, truy hồi đọc `<tên>/emb.f32` nên không cần.
+  Thiếu nó thì lần dựng lại chỉ mục sau phải nhúng lại từ đầu.
+
+> ⚠️ **Đừng crawl lại.** Bộ câu hỏi và đáp án vàng gắn với đúng bản chụp vbpl.vn trong `datn-corpus.tar.gz`;
+> crawl lại ra bản khác thì số hiệu và số Điều trong gold lệch, mọi con số trong `results/` không tái lập được.
+
+Chỉ lấy corpus rồi dựng lại tại chỗ — chỉ nên làm nếu máy cá nhân mạnh hơn VPS:
 
 ```bash
-rsync -av ubuntu@<vps>:~/datn-chunking/data/{raw,clean,clean_full,manifest.csv,ung_vien.jsonl} ./data/
-python -m chunking.chay        # dựng lại data/chunks/
-tools/nhung_tat_ca.sh          # dựng lại data/index/ — chạy rất lâu
+gh release download du-lieu-2026-10-29 -p 'datn-corpus.tar.gz' -D /tmp
+tar -xzf /tmp/datn-corpus.tar.gz
+.venv/bin/python -m chunking.chay     # dựng lại data/chunks/
+tools/nhung_tat_ca.sh                 # dựng lại data/index/ — rất lâu
 ```
 
 ### 2. Môi trường Python
@@ -150,12 +163,12 @@ cp .env.example .env
 
 ### 3. Mô hình sinh
 
-`tools/llama.cpp/` chép từ VPS là **bản build cho arm64**, máy cá nhân x86_64 hoặc macOS chạy không được —
-phải dựng lại đúng tag `b11577`:
+`tools/llama.cpp/` không có trong repo lẫn release — build tại chỗ, **đúng tag `b11577`** (script đã ghim sẵn):
 
 ```bash
-rm -rf tools/llama.cpp && tools/build-llama.sh
-tools/chay-llm.sh      # llama-server tại 127.0.0.1:8082
+python tools/tai_mo_hinh.py   # models/ — mô hình nhúng + Qwen3-4B GGUF, kiểm sha256
+tools/build-llama.sh          # tools/llama.cpp/
+tools/chay-llm.sh             # llama-server tại 127.0.0.1:8082
 ```
 
 `tools/chay-llm.sh` ghim `-t 3 -tb 3 -c 4096 -np 1 -b 512 -ub 512 --no-cache-prompt --seed 42` cho VPS 4 nhân.
@@ -190,8 +203,8 @@ Ràng buộc, không được tự ý bỏ qua:
   halong_embedding revision b57776031035f70ed2030d2e35ecc533eb0f8f71, llama.cpp tag b11577,
   Qwen3-4B-Instruct-2507-Q4_0 revision a06e946bb6b655725eafa393f4a9745d460374c9.
   Không nâng, không đổi sang bản CUDA, không thay mô hình.
-- Không crawl lại dữ liệu. data/raw, data/clean, data/clean_full, data/manifest.csv phải chép từ
-  máy cũ; crawl lại làm lệch đáp án vàng.
+- Không crawl lại dữ liệu. data/raw, data/clean, data/clean_full, data/manifest.csv lấy từ
+  GitHub Release du-lieu-2026-10-29; crawl lại làm lệch đáp án vàng.
 - Không sửa cờ trong tools/chay-llm.sh. Đổi cờ = đổi thực nghiệm.
 - Trước mọi lệnh đánh giá phải chạy python -m rag.kiem_chi_muc; thoát khác 0 thì DỪNG, không
   chạy tiếp, không tự sửa chỉ mục.
@@ -212,13 +225,14 @@ Dựng lại đồ án datn-chunking trên máy này và chạy cho tới khi ra
 
 Tôi đã có:
 - repo clone từ github.com/hungbeoqua321/datn-chunking
-- quyền ssh vào VPS cũ: ubuntu@<điền-ip-vps>, thư mục ~/datn-chunking
+- gh đã đăng nhập bằng tài khoản hungbeoqua321 (repo private)
 
 Làm theo mục "Chạy trên máy cá nhân" trong README.md:
-1. Chép data/, models/, tools/llama.cpp/, results/gen/ từ VPS sang.
+1. Tải bộ dữ liệu từ GitHub Release du-lieu-2026-10-29, kiểm sha256, giải vào data/.
+   Rồi tải mô hình bằng python tools/tai_mo_hinh.py (KHÔNG có trong release).
 2. Dựng .venv theo requirements.txt, copy .env.example thành .env.
 3. Chạy rag.nhung --kiem và pytest -q — báo số test xanh.
-4. Xoá tools/llama.cpp chép từ VPS (bản arm64) và build lại bằng tools/build-llama.sh,
+4. Build llama.cpp đúng tag b11577 bằng tools/build-llama.sh,
    rồi bật tools/chay-llm.sh.
 5. Chạy rag.kiem_chi_muc. Lệch thì dừng và báo tôi, đừng tự sửa.
 6. Bật web bằng uvicorn và cho tôi đường dẫn xem kết quả.

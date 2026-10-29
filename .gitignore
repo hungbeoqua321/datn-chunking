@@ -10,7 +10,7 @@ __pycache__/
 data/
 models/
 tools/llama.cpp/
-results/gen/
+# (results/gen/ đã đưa vào git: kho câu trả lời đã sinh, 324 KB)
 
 # Nhật ký chạy và tệp tạm của bước dựng câu hỏi (sinh lại được)
 results/*.log
