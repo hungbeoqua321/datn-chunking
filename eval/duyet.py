@@ -25,7 +25,7 @@ CHOT = ch.GOC / "eval/questions.jsonl"
 ANH_CHUP = ch.GOC / "eval/questions.review.lan_xuat_truoc.md"  # bản đúng như lần xuất trước — để nhận ra sửa tay
 # chỉ tiêu hạ ngày 14/10: xuyen_khoan 30 → 18, dan_chieu 25 → 12; tỉ lệ gold trung lập giữ ~32%
 CAN = {"don_gian": 50, "xuyen_khoan": 18, "dan_chieu": 12, "dieu_dai": 20, "khong_co_dieu": 15}
-TRUNG_LAP = {"don_gian": 16, "xuyen_khoan": 6, "dan_chieu": 4, "dieu_dai": 6, "khong_co_dieu": 5}
+TRUNG_LAP = {"don_gian": 16, "xuyen_khoan": 5, "dan_chieu": 3, "dieu_dai": 6, "khong_co_dieu": 4}
 TEN_VAI = {"dieu_kien": "QUY TẮC", "loai_tru": "NGOẠI LỆ", "nguon": "NGUỒN", "dich": "ĐÍCH", "dan": "DẪN"}
 
 

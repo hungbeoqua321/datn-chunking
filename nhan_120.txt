@@ -1,0 +1,120 @@
+004 | 107/2026/TT-BTC Điều 11 khoản e | Thiếu
+011 | 32/2024/QH15 Điều 3 khoản 3 | Đúng
+012 | 33/2005/QH11 Điều 410 khoản 3 | Đúng
+019 | 360/2026/NĐ-CP Điều 42 khoản 2 | Đúng
+026 | (không có) | Đúng
+028 | 32/2024/QH15 Điều 43 khoản 2 điểm a; Điều 43 khoản 1 cùng luật; 32/24/QH15 Điều 43 khoản 2 điểm a | Sai
+041 | 69/2025/QH15 Điều 14 khoản 5 | Đúng
+042 | (không có) | Đúng
+051 | 101/2015/QH13 Điều 248 khoản 2; Điều 132 khoản 2 của Bộ luật này | Thiếu
+060 | 09/CT-TTg | Sai
+061 | 200/2026/NĐ-CP Điều 15 khoản 3; Điều 9 khoản 4 điểm a b c d của Nghị định này | Thiếu
+063 | 83/2026/VBHN-TT-BXD Điều 2 | Đúng
+074 | 200/2026/NĐ-CP Điều 12 khoản 3 điểm c | Đúng
+078 | 69/2025/QH15 Điều 7 khoản 1 | Đúng
+086 | 33/2005/QH11 Điều 410 khoản 3 | Đúng
+089 | (không có trích dẫn nguồn; thân bài nhắc 105/2020/TT-BTC) | Thừa
+094 | 10/2026/VBHN-NĐ-BNV Điều 2 khoản 2 | Đúng
+107 | 126/2025/QH15 Điều 28 khoản 2 | Đúng
+109 | 200/2026/NĐ-CP Điều 5 khoản g | Thiếu
+119 | 101/2015/QH13 Điều 122 khoản 2 | Đúng
+005 | 107/2026/TT-BTC Điều 7 khoản 1 | Đúng
+013 | (không có) | Đúng
+014 | 334/CT-TTg Điều 2; Điều 3; Điều 10 | Sai
+022 | 10/2026/VBHN-NĐ-BNV Điều 67 khoản 1 điểm a | Đúng
+029 | 200/2026/NĐ-CP Điều 12 khoản 3 điểm c; 200/2026/NĐ-CP Điều 5 khoản 4 | Đúng
+031 | 107/2026/TT-BTC Điều 7 khoản 1 | Đúng
+043 | 36/2024/QH15 Điều 80 khoản 3 | Đúng
+045 | 334/CT-TTg Điều 2; 334/CT-TTg Điều 3; 334/CT-TTg Điều 10 | Sai
+055 | 32/2024/QH15 Điều 5 khoản 4 | Đúng
+064 | 300/2026/NĐ-CP Điều 4 khoản 1; Điều 13 của Nghị định này | Thiếu
+068 | 19/2021/TT-BTC Điều 4 khoản 1 điểm a b c | Thiếu
+072 | 360/2026/NĐ-CP Điều 42 khoản 2 | Đúng
+077 | 19/2021/TT-BTC Điều 13 khoản 2 điểm b; 21/VBHN-BTC Điều 13 khoản 2 điểm b | Đúng
+083 | 09/CT-TTg | Sai
+091 | 32/2024/QH15 Điều 7 khoản 2; 32/2024/QH15 Điều 103 khoản 1; 32/2024/QH15 Điều 134 khoản 3; Điều 134 khoản 1 cùng luật | Thiếu
+095 | 200/2026/NĐ-CP Điều 9 khoản 4 điểm a b c d | Thiếu
+101 | (không có) | Đúng
+108 | 334/CT-TTg Điều 10 khoản 1 | Sai
+115 | 334/CT-TTg Điều 10 khoản 1 | Sai
+120 | 107/2026/TT-BTC Điều 10 khoản 7 | Đúng
+001 | 36/2024/QH15 Điều 3 | Đúng
+006 | 10/2026/VBHN-NĐ-BNV Điều 40; 300/2026/NĐ-CP Điều 19 | Đúng
+016 | (không có) | Đúng
+018 | 10/2026/VBHN-NĐ-BNV Điều 64 khoản 2; Điều 2 khoản 2 của Nghị định này; thân bài nhắc 80/2025/QH15 | Sai
+030 | 334/CT-TTg Điều 2; 334/CT-TTg Điều 3; 334/CT-TTg Điều 10 | Sai
+032 | 101/2015/QH13 Điều 52 khoản 1 | Đúng
+035 | 107/2026/TT-BTC Điều 2 khoản 2 | Đúng
+044 | 32/2024/QH15 Điều 7 khoản 2; Điều 134 khoản 1 điểm a, khoản 1 điểm b, khoản 4, 5, 6, 7 cùng luật | Thiếu
+049 | 135/2025/QH15 Điều 55 khoản 1 điểm a b c | Thiếu
+056 | (không có trích dẫn nguồn; thân bài nhắc 105/2020/TT-BTC) | Thừa
+065 | 259/2026/NĐ-CP Điều 31 khoản 4; Điều 2 khoản 2 của Nghị định này | Thiếu
+069 | 101/2015/QH13 Điều 178 | Đúng
+075 | 9367 TC/PC Điều 5 khoản 2 | Thiếu
+080 | 10/2026/VBHN-NĐ-BNV Điều 40; 300/2026/NĐ-CP Điều 19 | Đúng
+085 | (không có) | Đúng
+096 | 101/2015/QH13 Điều 132 khoản 2 | Đúng
+097 | 33/2005/QH11 Điều 411 khoản 3 | Đúng
+102 | 19/2021/TT-BTC Điều 3 khoản 1 | Đúng
+110 | 200/2026/NĐ-CP Điều 39 khoản 2 | Đúng
+117 | 126/2025/QH15 Điều 28 khoản 1 điểm c | Đúng
+002 | 200/2026/NĐ-CP Điều 21 | Đúng
+007 | 83/2026/VBHN-TT-BXD Điều 2 khoản 1 | Đúng
+020 | 101/2015/QH13 Điều 128 khoản 4; 101/2015/QH13 Điều 178 | Đúng
+021 | 32/2024/QH15 Điều 7 khoản 2 | Đúng
+033 | 09/CT-TTg | Sai
+034 | 200/2026/NĐ-CP Điều 9 khoản 4 điểm e | Đúng
+038 | 10/2026/VBHN-NĐ-BNV Điều 41 | Đúng
+046 | 32/2024/QH15 Điều 42 khoản 3 | Đúng
+050 | 200/2026/NĐ-CP Điều 9 khoản 4 điểm g | Đúng
+058 | 1408/CT-TTg Điều 2 khoản a b | Sai
+066 | 107/2026/TT-BTC Điều 7 khoản 2 | Đúng
+070 | 19/2021/TT-BTC Điều 42 | Đúng
+079 | 101/2015/QH13 Điều 132 khoản 2 | Đúng
+081 | 83/2026/VBHN-TT-BXD Điều 2 khoản 1 | Đúng
+090 | 307/2026/NĐ-CP Điều 6 khoản 2 | Đúng
+098 | 126/2025/QH15 Điều 5 khoản 2 | Đúng
+099 | 19/2021/TT-BTC Điều 3 khoản 1 | Đúng
+104 | 19/2021/TT-BTC Điều 42 | Đúng
+111 | 1408/CT-TTg Điều 3 khoản b | Sai
+118 | 10/2026/VBHN-NĐ-BNV Điều 67 khoản 1 điểm a | Đúng
+003 | 170/2025/NĐ-CP Điều 67 khoản 1 điểm a | Đúng
+009 | 135/2025/QH15 Điều 29 khoản 1 | Đúng
+015 | 36/2024/QH15 Điều 80 khoản 3 | Đúng
+023 | 135/2025/QH15 Điều 55 khoản 1 | Đúng
+024 | 19/2021/TT-BTC Điều 13 khoản 1 điểm b | Đúng
+036 | 307/2026/NĐ-CP Điều 6 khoản 2 | Đúng
+039 | 101/2015/QH13 Điều 122 khoản 2 | Đúng
+047 | 21/VBHN-BTC Điều 3 | Đúng
+052 | 1408/CT-TTg Điều 3 khoản b | Sai
+053 | 10/2026/VBHN-NĐ-BNV Điều 66; Điều 64 khoản 1 điểm d đ e và khoản 2 Điều này, nội bộ | Thiếu
+059 | (không có) | Đúng
+067 | 21/VBHN-BTC Điều 35 khoản 2 điểm a | Đúng
+073 | 101/2015/QH13 Điều 52 khoản 1 điểm a b; Điều 49 của Bộ luật này | Thiếu
+082 | 32/2024/QH15 Điều 42 khoản 3 | Đúng
+087 | 107/2026/TT-BTC Điều 7 khoản 2 | Đúng
+092 | 360/2026/NĐ-CP Điều 42 khoản 2 | Đúng
+100 | (không có) | Đúng
+105 | 10/2026/VBHN-NĐ-BNV Điều 5 khoản 2 | Đúng
+112 | 101/2015/QH13 Điều 128 khoản 4; 101/2015/QH13 Điều 178; điểm a khoản 4 Điều 128 nội bộ | Thiếu
+114 | 200/2026/NĐ-CP Điều 5 khoản 3 | Đúng
+008 | 259/2026/NĐ-CP Điều 4 khoản 2 | Đúng
+010 | (không có) | Đúng
+017 | 69/2025/QH15 Điều 14 khoản 7 | Đúng
+025 | 59/2020/QH14 Điều 17 khoản 1 | Đúng
+027 | 32/2024/QH15 Điều 166 khoản 5 | Đúng
+037 | 32/2024/QH15 Điều 51 khoản 4 | Đúng
+040 | 307/2026/NĐ-CP Điều 6 khoản 2 | Đúng
+048 | (không có) | Đúng
+054 | 24/2004/QH11 Điều 48; 101/2015/QH13 Điều 52 | Đúng
+057 | 107/2026/TT-BTC Điều 7 khoản 1 | Đúng
+062 | 101/2015/QH13 Điều 122 khoản 2 | Đúng
+071 | 19/2021/TT-BTC Điều 42 | Đúng
+076 | 10/2026/VBHN-NĐ-BNV Điều 73; 300/2026/NĐ-CP Điều 2 khoản b | Thiếu
+084 | 200/2026/NĐ-CP Điều 9 khoản 4 điểm a b c d | Thiếu
+088 | 59/2020/QH14 Điều 25 khoản 1 | Đúng
+093 | 9367/TC/PC Điều 5 khoản 2 | Sai
+103 | 59/2020/QH14 Điều 4 khoản 25 | Đúng
+106 | 200/2026/NĐ-CP Điều 39 khoản 2 | Đúng
+113 | 9367 TC/PC Điều 1 | Thiếu
+116 | 200/2026/NĐ-CP Điều 39 khoản 2 | Đúng

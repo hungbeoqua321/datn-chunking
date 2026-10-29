@@ -1,0 +1,62 @@
+[
+ {
+  "loai": "xuyen_khoan",
+  "gold": [
+   {
+    "doc_id": "142881",
+    "so_hieu": "59/2020/QH14",
+    "dieu": 120,
+    "khoan": 3,
+    "diem": null,
+    "start": 169349,
+    "end": 169579,
+    "vai": "quy_tac_ngoai_le",
+    "khoan_den": 4,
+    "vat_khoan": true,
+    "cum_dan_chieu": "quy định tại khoản 3 Điều này không áp dụng"
+   }
+  ],
+  "nguon_chon": "ngoai_le_vat",
+  "trung_lap": true,
+  "du_phong": false,
+  "b_parse_ok": true,
+  "qid": "q270",
+  "question": "Tôi là cổ đông sáng lập của một doanh nghiệp và muốn chuyển nhượng cổ phần phổ thông của mình, nhưng tôi nghe nói cổ đông sáng lập không có quyền biểu quyết về việc chuyển nhượng cổ phần. Vậy trong trường hợp nào tôi vẫn có thể biểu quyết về việc chuyển nhượng cổ phần đó?",
+  "dap_an_nhap": "Trường hợp cổ phần phổ thông đó thuộc một trong các trường hợp được quy định ngoại lệ, ví dụ như cổ phần được chuyển nhượng theo thỏa thuận giữa các cổ đông hoặc trong trường hợp doanh nghiệp có quy định đặc biệt cho phép, thì cổ đông sáng lập vẫn có quyền biểu quyết về việc chuyển nhượng.",
+  "ban_cu": "",
+  "nguon_chua_dap_an": "",
+  "ti_le_trung_tu": 0.614,
+  "co": [],
+  "kiem_vat": "Đoạn văn bản nêu rõ rằng cổ đông sáng lập không có quyền biểu quyết về việc chuyển nhượng cổ phần phổ thông (theo khoản 3), nhưng lại có ngoại lệ tại khoản 4: các hạn chế tại khoản 3 không áp dụng đối với cổ phần phổ thông sau đây. Do đó, có cả quy tắc và ngoại lệ, và câu hỏi yêu cầu xác định trường hợp nào cổ đông sáng lập vẫn có thể biểu quyết, tức là phải dùng cả hai phần (quy tắc và ngoại lệ) để trả lời đúng."
+ },
+ {
+  "loai": "xuyen_khoan",
+  "gold": [
+   {
+    "doc_id": "166170",
+    "so_hieu": "32/2024/QH15",
+    "dieu": 51,
+    "khoan": 4,
+    "diem": null,
+    "start": 72086,
+    "end": 72420,
+    "vai": "quy_tac_ngoai_le",
+    "khoan_den": 5,
+    "vat_khoan": true,
+    "cum_dan_chieu": "trừ trường hợp quy định tại khoản 5 Điều này"
+   }
+  ],
+  "nguon_chon": "ngoai_le_vat",
+  "trung_lap": true,
+  "du_phong": false,
+  "b_parse_ok": true,
+  "qid": "q271",
+  "question": "Tại một tổ chức tín dụng, Ban kiểm soát nhiệm kỳ trước đã kết thúc, nhưng chưa có Ban kiểm soát nhiệm kỳ mới được bầu ra. Trong tình huống này, Ban kiểm soát nhiệm kỳ cũ vẫn đang thực hiện nhiệm vụ kiểm soát, thì việc này có vi phạm quy định hay không?",
+  "dap_an_nhap": "Không vi phạm, vì theo quy định, Ban kiểm soát của nhiệm kỳ vừa kết thúc vẫn tiếp tục hoạt động cho đến khi Ban kiểm soát của nhiệm kỳ mới tiếp quản công việc, đây là ngoại lệ so với quy định về thời hạn nhiệm kỳ không quá 05 năm.",
+  "ban_cu": "",
+  "nguon_chua_dap_an": "",
+  "ti_le_trung_tu": 0.509,
+  "co": [],
+  "kiem_vat": "Theo đoạn văn bản, Ban kiểm soát của nhiệm kỳ vừa kết thúc tiếp tục hoạt động cho đến khi Ban kiểm soát của nhiệm kỳ mới tiếp quản công việc, điều này cho thấy việc Ban kiểm soát nhiệm kỳ cũ vẫn thực hiện nhiệm vụ là được phép, không vi phạm quy định."
+ }
+]

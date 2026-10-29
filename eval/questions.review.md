@@ -1283,7 +1283,7 @@ Câu hỏi: Bị can được cho đặt tiền bảo đảm thay cho tạm giam
 ## q058 · xuyen_khoan · ngoai_le
 
 Trạng thái: GIỮ
-Câu hỏi: Người vi phạm quy định về phòng cháy, chữa cháy tuy chưa gây thiệt hại về người hay tài sản nhưng có khả năng thực tế gây thiệt hại nếu không được ngăn chặn kịp thời thì có bị truy cứu trách nhiệm hình sự không và hình phạt ra sao?
+Câu hỏi: Người vi phạm quy định về phòng cháy, chữa cháy bị phạt khác nhau thế nào giữa trường hợp đã gây chết người hoặc thiệt hại tài sản và trường hợp mới có khả năng thực tế gây thiệt hại nếu không được ngăn chặn kịp thời?
 
 *Đáp án nháp của mô hình:* Có thể bị xử lý theo quy định ngoại lệ nếu có nguy cơ gây thiệt hại cho tính mạng, sức khỏe hoặc tài sản của người khác mà không được ngăn chặn kịp thời, với mức phạt từ cảnh cáo đến tù từ 3 tháng đến 1 năm. Tuy nhiên, nếu đã xảy ra thiệt hại về người hoặc tài sản theo quy định thì sẽ bị xử lý nghiêm theo quy tắc, với mức phạt tù từ 2 năm đến 5 năm hoặc cải tạo không giam giữ đến 3 năm.
 
@@ -1414,7 +1414,7 @@ Câu hỏi: Có được phép không cập nhật dữ liệu hàng không mộ
 ## q064 · xuyen_khoan · ngoai_le
 
 Trạng thái: GIỮ
-Câu hỏi: Người tham gia giao thông đường bộ vi phạm quy định an toàn giao thông, chưa gây tai nạn nhưng có khả năng thực tế gây thiệt hại nếu không được ngăn chặn kịp thời thì có bị truy cứu trách nhiệm hình sự không, hình phạt thế nào?
+Câu hỏi: Người vi phạm quy định về an toàn giao thông đường bộ bị phạt khác nhau thế nào giữa trường hợp đã gây tai nạn chết người hoặc thiệt hại tài sản và trường hợp mới có khả năng thực tế gây thiệt hại nếu không được ngăn chặn kịp thời?
 
 *Đáp án nháp của mô hình:* Có, người đó có thể bị phạt tiền từ 10.000.000 đồng đến 50.000.000 đồng, hoặc phạt cải tạo không giam giữ đến 01 năm, hoặc phạt tù từ 03 tháng đến 01 năm, nếu hành vi của họ có khả năng thực tế gây thiệt hại cho tính mạng, sức khỏe hoặc tài sản của người khác mà không được ngăn chặn kịp thời. Tuy nhiên, nếu hành vi đó đã dẫn đến làm chết người hoặc gây thương tích nặng, hoặc gây thiệt hại về tài sản từ 100.000.000 đồng đến dưới 500.000.000 đồng, thì mức phạt sẽ nặng hơn, từ 30.000.000 đồng đến 100.000.000 đồng, hoặc phạt tù từ 01 năm đến 05 năm.
 
@@ -2030,7 +2030,7 @@ Câu hỏi: Nếu một người vô ý làm lộ bí mật công tác hoặc l�
 ## q090 · dan_chieu · dan_chieu
 
 Trạng thái: GIỮ
-Câu hỏi: Khi đình chỉ vụ án, cần ghi rõ những nội dung gì để đảm bảo tính minh bạch và đúng quy định?
+Câu hỏi: Quyết định đình chỉ vụ án hình sự phải ghi rõ những nội dung gì?
 
 *Đáp án nháp của mô hình:* Cần ghi rõ lý do và căn cứ đình chỉ vụ án, việc hủy bỏ biện pháp ngăn chặn hoặc cưỡng chế, xử lý vật chứng và tài liệu đã tạm giữ, cũng như các vấn đề liên quan khác. Nếu vụ án có nhiều bị can và lý do đình chỉ không liên quan đến tất cả, thì cần đình chỉ đối với từng bị can.
 
@@ -2149,7 +2149,7 @@ Câu hỏi: Khi nào bên thế chấp được phép thay thế tài sản th�
 ---
 ## q095 · dan_chieu · dan_chieu
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Tại sao một nhóm lớp mầm non độc lập lại bị đình chỉ hoạt động?
 
 *Đáp án nháp của mô hình:* Vì nhóm lớp đó có hành vi gian lận trong hồ sơ, không đảm bảo các điều kiện thành lập, hoạt động tại địa điểm không được phép, chưa triển khai hoạt động trong 12 tháng kể từ ngày được thành lập, hoặc vi phạm pháp luật đến mức phải đình chỉ hoạt động.
@@ -2177,8 +2177,8 @@ Câu hỏi: Tại sao một nhóm lớp mầm non độc lập lại bị đình
 ---
 ## q096 · dan_chieu · dan_chieu
 
-Trạng thái: DỰ PHÒNG
-Câu hỏi: Khi nhập khẩu máy móc, thiết bị, dây chuyền công nghệ đã qua sử dụng, doanh nghiệp cần đáp ứng những điều kiện nào để được phép thông quan?
+Trạng thái: GIỮ
+Câu hỏi: Khi doanh nghiệp nhập khẩu một dây chuyền công nghệ đã qua sử dụng, cơ quan hải quan chỉ cho thông quan khi nào và dây chuyền phải đạt những tiêu chí gì?
 
 *Đáp án nháp của mô hình:* Doanh nghiệp phải nộp đầy đủ hồ sơ và tài liệu quy định, trong đó chứng thư giám định phải xác nhận dây chuyền công nghệ đáp ứng các tiêu chí về an toàn, tiết kiệm năng lượng, bảo vệ môi trường, công suất còn lại từ 85% trở lên, tiêu hao nguyên vật liệu và năng lượng không vượt quá 15% so với thiết kế, công nghệ không nằm trong danh mục hạn chế hoặc cấm chuyển giao, và công nghệ phải đang được sử dụng tại ít nhất 03 cơ sở sản xuất ở các nước thành viên OECD.
 
@@ -2205,7 +2205,7 @@ Câu hỏi: Khi nhập khẩu máy móc, thiết bị, dây chuyền công ngh�
 ## q097 · dan_chieu · dan_chieu
 
 Trạng thái: GIỮ
-Câu hỏi: Ai là người có quyền nhận hàng theo quy định của Bộ luật Hàng hải?
+Câu hỏi: Trong vận chuyển hàng hóa bằng đường biển, ai là người nhận hàng hợp pháp khi vận đơn là vận đơn theo lệnh, vận đơn vô danh hoặc vận đơn đích danh?
 
 *Đáp án nháp của mô hình:* Người nhận hàng là người có quyền nhận hàng được quy định tại Điều 162 và Điều 187 của Bộ luật này, cụ thể, người có quyền nhận hàng là người được nêu trong vận đơn hoặc người được chuyển nhượng vận đơn theo quy định.
 
@@ -2466,7 +2466,7 @@ Câu hỏi: Khi nào thì cổ phần được coi là đã bán theo quy địn
 ## q235 · dan_chieu · dan_chieu · TRUNG LẬP
 
 Trạng thái: GIỮ
-Câu hỏi: Khi kê biên tài sản, cần làm gì để đảm bảo biên bản được hợp lệ và có thể sử dụng trong quá trình điều tra?
+Câu hỏi: Khi kê biên tài sản trong quá trình điều tra, biên bản kê biên phải ghi những gì, xử lý ý kiến bổ sung ra sao và những ai phải ký tên?
 
 *Đáp án nháp của mô hình:* Phải lập biên bản ghi rõ tên và tình trạng từng tài sản bị kê biên, đọc cho những người có mặt nghe và cùng ký tên. Biên bản cũng phải ghi nhận các ý kiến bổ sung và lý do nếu không chấp nhận, và được người tham gia tố tụng, điều tra viên, cán bộ điều tra cùng ký tên.
 
@@ -2483,7 +2483,7 @@ Câu hỏi: Khi kê biên tài sản, cần làm gì để đảm bảo biên b�
 ---
 ## q236 · dan_chieu · dan_chieu · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Khi nào thì cơ quan, tổ chức có thể thanh lý xe ô tô theo quy định?
 
 *Đáp án nháp của mô hình:* Khi xe ô tô hết hạn sử dụng hoặc đáp ứng các điều kiện về niên hạn, tần suất sử dụng theo quy định của pháp luật.
@@ -2540,7 +2540,7 @@ Câu hỏi: Khi nào thì tòa án phải ra quyết định áp dụng biện p
 ---
 ## q239 · dan_chieu · dan_chieu · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Khi nhập khẩu máy móc, thiết bị đã qua sử dụng, nếu doanh nghiệp không cung cấp đầy đủ thông tin, cơ quan có thẩm quyền yêu cầu bổ sung tài liệu nào?
 
 *Đáp án nháp của mô hình:* Cơ quan yêu cầu doanh nghiệp bổ sung bản sao Giấy chứng nhận đăng ký doanh nghiệp có đóng dấu của doanh nghiệp, và trong trường hợp cần thiết, sẽ thẩm xét hồ sơ do tổ chức giám định đề nghị thay đổi hoặc bổ sung phạm vi chỉ định.
@@ -2559,8 +2559,8 @@ Câu hỏi: Khi nhập khẩu máy móc, thiết bị đã qua sử dụng, nế
 ---
 ## q240 · dan_chieu · dan_chieu · TRUNG LẬP
 
-Trạng thái: DỰ PHÒNG
-Câu hỏi: Cơ quan thuế sẽ gửi kết quả giải đáp vướng mắc cho người nộp thuế bằng cách nào?
+Trạng thái: GIỮ
+Câu hỏi: Trong giao dịch thuế điện tử, khi người nộp thuế là cá nhân đã đăng ký nhận kết quả qua điện thoại di động, cơ quan thuế thông báo kết quả giải đáp vướng mắc cho họ bằng cách nào?
 
 *Đáp án nháp của mô hình:* Cơ quan thuế sẽ gửi kết quả giải đáp vướng mắc cho người nộp thuế thông qua tin nhắn trên số điện thoại di động đã đăng ký.
 
@@ -2596,7 +2596,7 @@ Câu hỏi: Khi cần tạm đình chỉ hoạt động của một pháp nhân,
 ---
 ## q243 · dan_chieu · dan_chieu · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: DỰ PHÒNG
 Câu hỏi: Nếu có hai hoặc nhiều người có kết quả tuyển dụng bằng nhau và thấp hơn người liền kề, thì ai sẽ quyết định người trúng tuyển?
 
 *Đáp án nháp của mô hình:* Người đứng đầu cơ quan, đơn vị có thẩm quyền tuyển dụng sẽ quyết định người trúng tuyển theo quy định về thứ tự ưu tiên, và nếu vẫn chưa xác định được thì sẽ quyết định thêm theo quy định của cơ quan đó.
@@ -2614,8 +2614,8 @@ Câu hỏi: Nếu có hai hoặc nhiều người có kết quả tuyển dụng
 ---
 ## q259 · dan_chieu · dan_chieu · TRUNG LẬP
 
-Trạng thái: DỰ PHÒNG
-Câu hỏi: Khi nào thì phiên họp xét lại quyết định bị kháng cáo, kháng nghị sẽ được tổ chức?
+Trạng thái: GIỮ
+Câu hỏi: Khi xét lại quyết định của Tòa án về yêu cầu công nhận và cho thi hành phán quyết của Trọng tài nước ngoài bị kháng cáo, kháng nghị, nếu người phải thi hành vắng mặt thì phiên họp có vẫn được tiến hành không và trong trường hợp nào?
 
 *Đáp án nháp của mô hình:* Khi người phải thi hành hoặc người đại diện hợp pháp của họ yêu cầu Toà án xét đơn vắng mặt họ hoặc đã được triệu tập hợp lệ đến lần thứ hai mà vẫn vắng mặt.
 
@@ -3256,7 +3256,7 @@ Câu hỏi: Một lãnh đạo của một cơ quan báo chí đang làm việc 
 ---
 ## q265 · xuyen_khoan · ngoai_le_vat · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: XOÁ
 Câu hỏi: Một người có thời gian lái xe 1 năm và đã lái được 20.000 km an toàn, hiện muốn nâng hạng từ B lên C1, nhưng không đạt đủ điều kiện theo quy định chung, thì có thể được phép nâng hạng không?
 
 *Đáp án nháp của mô hình:* Không, người này không được phép nâng hạng từ B lên C1 vì không đạt điều kiện về thời gian và số km lái xe an toàn theo quy tắc chung; tuy nhiên, nếu người này thuộc trường hợp đào tạo chuyển tiếp từ hạng C lên CE hoặc CX theo chỉ tiêu của Bộ Tổng Tham mưu thì được xem xét đặc biệt, nhưng không áp dụng cho trường hợp nâng hạng từ B lên C1.
@@ -3300,7 +3300,7 @@ Câu hỏi: Một doanh nghiệp đang triển khai dự án đầu tư xây d�
 ---
 ## q268 · xuyen_khoan · ngoai_le_vat · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: XOÁ
 Câu hỏi: Trong một cơ quan có hai ứng viên có kết quả thi tuyển bằng nhau ở chỉ tiêu cuối cùng, và cả hai đều đạt điểm cao nhất, thì theo quy định, ai sẽ được tuyển dụng? Và nếu một ứng viên không trúng tuyển trong kỳ thi này, thì có được phép dự thi lại không?
 
 *Đáp án nháp của mô hình:* Người được tuyển dụng sẽ được lựa chọn theo thứ tự ưu tiên quy định, ví dụ như người có kinh nghiệm, trình độ chuyên môn hoặc điều kiện khác được ưu tiên; tuy nhiên, nếu ứng viên đó không trúng tuyển, thì không được bảo lưu kết quả để dự thi lần sau, kể cả khi có điều kiện hoặc lý do đặc biệt.
@@ -3314,7 +3314,7 @@ Câu hỏi: Trong một cơ quan có hai ứng viên có kết quả thi tuyển
 ---
 ## q269 · xuyen_khoan · ngoai_le_vat · TRUNG LẬP
 
-Trạng thái: GIỮ
+Trạng thái: XOÁ
 Câu hỏi: Một doanh nghiệp tổ chức kinh doanh dịch vụ sàn dữ liệu muốn cho phép một loại dữ liệu nhạy cảm, ví dụ như dữ liệu y tế, được giao dịch trên sàn của mình, thì điều gì là điều kiện bắt buộc mà doanh nghiệp đó phải tuân thủ, và có trường hợp nào mà dữ liệu đó vẫn được phép giao dịch dù không đáp ứng đầy đủ các điều kiện về tính phù hợp của hồ sơ hay không?
 
 *Đáp án nháp của mô hình:* Doanh nghiệp phải kiểm tra, đánh giá sự phù hợp của hồ sơ, tài liệu theo quy định; đồng thời, phải công bố rõ ràng các điều kiện, yêu cầu hoặc hạn chế liên quan đến việc lưu thông, lưu hành và sử dụng dữ liệu trong hồ sơ. Tuy nhiên, có ngoại lệ: nếu dữ liệu thuộc trường hợp không bị cấm giao dịch theo quy định pháp luật về dữ liệu, thì dù không đáp ứng đầy đủ các điều kiện, vẫn được phép giao dịch.
@@ -3325,5 +3325,36 @@ Câu hỏi: Một doanh nghiệp tổ chức kinh doanh dịch vụ sàn dữ li
 > Tổ chức kinh doanh dịch vụ sàn dữ liệu có trách nhiệm kiểm tra, đánh giá sự phù hợp của hồ sơ, tài liệu theo quy định của Nghị định này;
 > b) Có các điều kiện, yêu cầu hoặc hạn chế (nếu có) trong việc lưu thông, lưu hành và sử dụng dữ liệu, sản phẩm, dịch vụ về dữ liệu đã được Bên bán xác định và công bố rõ ràng trong hồ sơ dữ liệu, sản phẩm, dịch vụ về dữ liệu.
 > 2. Không thuộc trường hợp dữ liệu không được phép giao dịch theo quy định của pháp luật về dữ liệu.
+
+---
+
+## q270 · xuyen_khoan · ngoai_le_vat · TRUNG LẬP
+
+Trạng thái: GIỮ
+Câu hỏi: Tôi là cổ đông sáng lập của một doanh nghiệp và muốn chuyển nhượng cổ phần phổ thông của mình, nhưng tôi nghe nói cổ đông sáng lập không có quyền biểu quyết về việc chuyển nhượng cổ phần. Vậy trong trường hợp nào tôi vẫn có thể biểu quyết về việc chuyển nhượng cổ phần đó?
+
+*Đáp án nháp của mô hình:* Trường hợp cổ phần phổ thông đó thuộc một trong các trường hợp được quy định ngoại lệ, ví dụ như cổ phần được chuyển nhượng theo thỏa thuận giữa các cổ đông hoặc trong trường hợp doanh nghiệp có quy định đặc biệt cho phép, thì cổ đông sáng lập vẫn có quyền biểu quyết về việc chuyển nhượng.
+
+**Dẫn chiếu tường minh:** quy định tại khoản 3 Điều này không áp dụng
+
+**Gold: 59/2020/QH14 Điều 120 khoản 3 (vắt sang khoản 4)**
+
+> Trường hợp này, cổ đông sáng lập dự định chuyển nhượng cổ phần phổ thông thì không có quyền biểu quyết về việc chuyển nhượng cổ phần đó.
+4. Các hạn chế quy định tại khoản 3 Điều này không áp dụng đối với cổ phần phổ thông sau đây:
+
+---
+## q271 · xuyen_khoan · ngoai_le_vat · TRUNG LẬP
+
+Trạng thái: GIỮ
+Câu hỏi: Tại một tổ chức tín dụng, Ban kiểm soát nhiệm kỳ trước đã kết thúc, nhưng chưa có Ban kiểm soát nhiệm kỳ mới được bầu ra. Trong tình huống này, Ban kiểm soát nhiệm kỳ cũ vẫn đang thực hiện nhiệm vụ kiểm soát, thì việc này có vi phạm quy định hay không?
+
+*Đáp án nháp của mô hình:* Không vi phạm, vì theo quy định, Ban kiểm soát của nhiệm kỳ vừa kết thúc vẫn tiếp tục hoạt động cho đến khi Ban kiểm soát của nhiệm kỳ mới tiếp quản công việc, đây là ngoại lệ so với quy định về thời hạn nhiệm kỳ không quá 05 năm.
+
+**Dẫn chiếu tường minh:** trừ trường hợp quy định tại khoản 5 Điều này
+
+**Gold: 32/2024/QH15 Điều 51 khoản 4 (vắt sang khoản 5)**
+
+> Ban kiểm soát của nhiệm kỳ vừa kết thúc tiếp tục hoạt động cho đến khi Ban kiểm soát của nhiệm kỳ mới tiếp quản công việc.
+5. Nhiệm kỳ của Trưởng ban kiểm soát và thành viên khác của Ban kiểm soát tại tổ chức tín dụng là công ty trách nhiệm hữu hạn một thành viên được quy định tại Điều lệ của tổ chức tín dụng nhưng không quá 05 năm.
 
 ---

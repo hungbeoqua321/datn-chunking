@@ -1,0 +1,25 @@
+014 | 334/CT-TTg Điều 2; Điều 3; Điều 10 | Thiếu
+018 | 10/2026/VBHN-NĐ-BNV Điều 64 khoản 2; Điều 2 khoản 2 của Nghị định này | Thiếu
+028 | 32/2024/QH15 Điều 43 khoản 2 điểm a; Điều 43 khoản 1 cùng luật; 32/24/QH15 Điều 43 khoản 2 điểm a | Sai
+030 | 334/CT-TTg Điều 2; 334/CT-TTg Điều 3; 334/CT-TTg Điều 10 | Đúng
+033 | 09/CT-TTg | Đúng
+044 | 32/2024/QH15 Điều 7 khoản 2; Điều 134 khoản 1 điểm a, khoản 1 điểm b, khoản 4, 5, 6, 7 cùng luật | Đúng
+045 | 334/CT-TTg Điều 2; 334/CT-TTg Điều 3; 334/CT-TTg Điều 10 | Đúng
+051 | 101/2015/QH13 Điều 248 khoản 2; Điều 132 khoản 2 của Bộ luật này | Thiếu
+052 | 1408/CT-TTg Điều 3 khoản b | Thiếu
+053 | 10/2026/VBHN-NĐ-BNV Điều 66; Điều 64 khoản 1 điểm d đ e và khoản 2 Điều này, nội bộ | Thiếu
+058 | 1408/CT-TTg Điều 2 khoản a b | Thiếu
+060 | 09/CT-TTg | Đúng
+061 | 200/2026/NĐ-CP Điều 15 khoản 3; Điều 9 khoản 4 điểm a b c d của Nghị định này | Thiếu
+064 | 300/2026/NĐ-CP Điều 4 khoản 1; Điều 13 của Nghị định này | Thiếu
+065 | 259/2026/NĐ-CP Điều 31 khoản 4; Điều 2 khoản 2 của Nghị định này | Đúng
+073 | 101/2015/QH13 Điều 52 khoản 1 điểm a b; Điều 49 của Bộ luật này | Thiếu
+075 | 9367 TC/PC Điều 5 khoản 2 | Đúng
+083 | 09/CT-TTg | Đúng
+091 | 32/2024/QH15 Điều 7 khoản 2; 32/2024/QH15 Điều 103 khoản 1; 32/2024/QH15 Điều 134 khoản 3; Điều 134 khoản 1 cùng luật | Đúng
+093 | 9367/TC/PC Điều 5 khoản 2 | Đúng
+108 | 334/CT-TTg Điều 10 khoản 1 | Đúng
+111 | 1408/CT-TTg Điều 3 khoản b | Thiếu
+112 | 101/2015/QH13 Điều 128 khoản 4; 101/2015/QH13 Điều 178; điểm a khoản 4 Điều 128 nội bộ | Thiếu
+113 | 9367 TC/PC Điều 1 | Đúng
+115 | 334/CT-TTg Điều 10 khoản 1 | Đúng

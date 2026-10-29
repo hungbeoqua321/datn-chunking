@@ -29,9 +29,28 @@ SCHEMA = {"type": "object", "properties": {"dat": {"type": "boolean"}, "ly_do": 
 HE_THONG = "Bạn là chuyên gia pháp luật Việt Nam, đánh giá chặt chẽ, chỉ dựa trên đoạn văn bản được cung cấp. Trả lời JSON."
 
 
+def _mot_span(x: dict) -> bool:
+    """Gold kiểu VẮT KHOẢN: một span duy nhất chứa cả quy tắc lẫn ngoại lệ (nguon_chon=ngoai_le_vat).
+
+    Không có hai vai dieu_kien/loai_tru nên bộ hỏi chuẩn sẽ gửi cho giám khảo hai đoạn RỖNG rồi
+    gắn cờ giả "Đoạn B không nêu ngoại lệ" — từng làm cả 6 câu q264–q269 bị cờ oan.
+    """
+    return x.get("nguon_chon") == "ngoai_le_vat" or any(g.get("vat_khoan") for g in x.get("gold", []))
+
+
 def _tin_nhan(x: dict, docs) -> list[dict]:
     t = {g.get("vai"): docs[g["doc_id"]].text[g["start"]:g["end"]] for g in x["gold"]}
-    if x["loai"] == "xuyen_khoan":
+    if x["loai"] == "xuyen_khoan" and _mot_span(x):
+        g = x["gold"][0]
+        doan = docs[g["doc_id"]].text[g["start"]:g["end"]]
+        nd = (f"ĐOẠN VĂN BẢN (một đoạn liền, vắt qua ranh giới khoản):\n{doan}\n\n"
+              f"CÂU HỎI: {x.get('question', '')}\n\n"
+              "Trong ĐOẠN trên có đồng thời (a) một QUY TẮC và (b) một NGOẠI LỆ / GIỚI HẠN / TRƯỜNG HỢP "
+              "LOẠI TRỪ áp dụng cho CHÍNH quy tắc đó không, VÀ câu hỏi có buộc người trả lời dùng CẢ HAI "
+              "phần mới trả lời đúng không? Nếu ngoại lệ thuộc về một quy định khác, hoặc câu hỏi chỉ cần "
+              "một phần là trả lời được, thì trả lời false.\n"
+              'Trả về JSON {"dat": true/false, "ly_do": "một câu"}.')
+    elif x["loai"] == "xuyen_khoan":
         nd = (f"ĐOẠN A:\n{t.get('dieu_kien', '')}\n\nĐOẠN B:\n{t.get('loai_tru', '')}\n\n"
               "Đoạn B có nêu một NGOẠI LỆ, GIỚI HẠN hoặc TRƯỜNG HỢP LOẠI TRỪ áp dụng cho CHÍNH quy tắc ở đoạn A không "
               "(tức là muốn áp dụng đúng quy tắc ở đoạn A thì phải biết đoạn B)? Hai quy định song song, độc lập, hoặc "
@@ -103,8 +122,12 @@ def kiem_ban_cu(ds: list[dict]) -> dict[str, str]:
     return ra
 
 
-def kiem_nguon_chua_dap_an(ds: list[dict], nguong: float = 0.6) -> dict[str, str]:
-    """dan_chieu — kiểm tra MÁY MÓC (không dùng mô hình): đoạn nguồn một mình có chứa đáp án không. Đo tỉ lệ cặp từ liền
+def kiem_nguon_chua_dap_an(ds: list[dict], nguong: float = 0.9) -> dict[str, str]:
+    """dan_chieu — kiểm tra MÁY MÓC (không dùng mô hình): đoạn nguồn một mình có TRẢ LỜI ĐẦY ĐỦ không.
+
+    Tiêu chí là "nguồn KHÔNG trả lời đầy đủ" (không phải "nguồn không chứa chữ nào của đáp án"), nên
+    ngưỡng để gắn cờ là 0,9: dưới mức đó vẫn còn phần đáp án nằm ở đoạn đích, tức câu hỏi vẫn buộc
+    phải lần theo dẫn chiếu. Đo tỉ lệ cặp từ liền
     nhau (đã chuẩn hoá) của đáp án nháp nằm trong đoạn nguồn và trong đoạn đích; gắn cờ khi ≥ `nguong` đáp án đã có trong
     nguồn và đoạn đích không đóng góp nhiều hơn. Giới hạn: dựa vào đáp án nháp của mô hình — câu hỏi sửa tay mà đáp án
     nháp không còn khớp thì kết quả không còn ý nghĩa (khi đó dựa vào kiểm tra bằng giám khảo)."""
@@ -128,8 +151,9 @@ def kiem_nguon_chua_dap_an(ds: list[dict], nguong: float = 0.6) -> dict[str, str
         t = {g.get("vai"): cap_tu(docs[g["doc_id"]].text[g["start"]:g["end"]]) for g in x["gold"]}
         n, dch = len(A & t.get("nguon", set())) / len(A), len(A & t.get("dich", set())) / len(A)
         if n >= nguong and dch <= n:
-            ra[x["qid"]] = (f"đoạn nguồn một mình đã chứa {n:.0%} đáp án nháp (đoạn đích {dch:.0%}) — "
-                            "câu hỏi có thể không cần đọc điều được dẫn chiếu")
+            ra[x["qid"]] = (f"đoạn nguồn một mình đã TRẢ LỜI ĐẦY ĐỦ {n:.0%} đáp án nháp "
+                            f"(đoạn đích {dch:.0%}, ngưỡng {nguong:.0%}) — câu hỏi có thể không cần "
+                            "đọc điều được dẫn chiếu")
     return ra
 
 
@@ -152,7 +176,7 @@ def kiem_tra(ds: list[dict]) -> dict[str, dict]:
             if k not in dem:
                 r, _ = sinh.goi(_tin_nhan(x, docs), {"qid": x["qid"], "bien_the": "kiem_tra_truoc_chot", "seed": 0,
                                                      "so_khoi": len(x["gold"]), "so_tu_ngu_canh": 0}, cl,
-                                model=sinh.tham_so()["model"], temperature=0, seed=42, max_tokens=200,
+                                model=sinh.tham_so()["model"], temperature=0, seed=42, max_tokens=500,
                                 extra_body={"cache_prompt": False},
                                 response_format={"type": "json_schema", "json_schema": {"name": "kiem_tra", "schema": SCHEMA}})
                 try:

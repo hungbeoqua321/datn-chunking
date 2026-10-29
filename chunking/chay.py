@@ -15,8 +15,9 @@ D phải nhúng từng câu trước (nặng: chạy qua systemd-run như khi nh
 import argparse
 
 import cau_hinh as ch
-from chunking import fixed, semantic, sentence, structural
+from chunking import fixed, hybrid, semantic, sentence, structural
 from chunking.base import ghi_jsonl, nap_van_ban
+from chunking.hybrid import CongTac
 
 PHUONG_PHAP = {
     "A": (fixed.chunk, (0,) + ch.SEEDS),            # 4 seed: đo truy hồi
@@ -28,6 +29,19 @@ PHUONG_PHAP = {
     "D": (semantic.chunk, (0,)),
 }
 
+# Phương pháp E và bộ cắt bỏ thành phần (ablation). Tên tệp nói rõ thành phần nào BỊ TẮT,
+# vì đó là thứ phép đo muốn tách: chênh lệch so với "E đầy đủ" là đóng góp của thành phần đó.
+# Cả bộ cắt bỏ dùng biến thể bản lề "duoi" để chỉ còn đúng một biến thay đổi.
+PHUONG_PHAP_E = {
+    "Eduoi":  CongTac(True, True, True, True, "duoi"),      # E đầy đủ, câu bản lề thuộc mảnh dưới
+    "Etren":  CongTac(True, True, True, True, "tren"),      # E đầy đủ, câu bản lề thuộc mảnh trên
+    "Etat_d": CongTac(False, True, True, True, "duoi"),     # tắt dẫn Điều
+    "Etat_k": CongTac(True, False, True, True, "duoi"),     # tắt dẫn khoản
+    "Etat_n": CongTac(True, True, False, True, "duoi"),     # tắt nhãn mảnh
+    "Etat_s": CongTac(True, True, True, False, "duoi"),     # tắt semantic → tầng cuối là cửa sổ như B
+    "Echi_s": CongTac(False, False, False, True, "duoi"),   # chỉ semantic, không bù ngữ cảnh
+}
+
 
 def ten_tep(pp: str, seed: int):
     return ch.CHUNKS / f"{pp.replace('+', 'cong').replace('-', 'tru')}_s{seed}.jsonl"
@@ -36,7 +50,8 @@ def ten_tep(pp: str, seed: int):
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--force", action="store_true")
-    ap.add_argument("--chi", nargs="*", metavar="PP", help="chỉ dựng các phương pháp này (A, A+, B, A_H, B-, C, D)")
+    ap.add_argument("--chi", nargs="*", metavar="PP",
+                    help="chỉ dựng các phương pháp này (A, A+, B, A_H, B-, C, D, hoặc tên cấu hình E)")
     a = ap.parse_args()
     docs = nap_van_ban()
     for pp, (ham, seeds) in PHUONG_PHAP.items():
@@ -52,6 +67,15 @@ def main() -> None:
             cs = [c for d in docs for c in ham(d, s)]
             ghi_jsonl(p, cs)
             print(f"{p.name}: {len(cs)} chunk")
+
+    can_e = [t for t in PHUONG_PHAP_E if not a.chi or t in a.chi]
+    can_e = [t for t in can_e if a.force or not (ch.CHUNKS / f"{t}_s0.jsonl").exists()]
+    if can_e:
+        hybrid.chuan_bi(docs)          # nhúng cụm câu của các đơn vị tầng cuối (dùng bộ đệm nội dung)
+    for t in can_e:
+        cs = [c for d in docs for c in hybrid.chunk(d, 0, PHUONG_PHAP_E[t])]
+        ghi_jsonl(ch.CHUNKS / f"{t}_s0.jsonl", cs)
+        print(f"{t}_s0.jsonl: {len(cs)} chunk")
 
 
 if __name__ == "__main__":

@@ -69,8 +69,9 @@ h3{font-size:1.05rem;margin:1.6em 0 .4em}
 .doc p,.doc li{font-family:var(--van);font-size:17px;line-height:1.7}
 .doc table{border-collapse:collapse;margin:1.2em 0;font-size:14px;display:block;overflow-x:auto;max-width:100%;
 background:var(--to);font-variant-numeric:tabular-nums}
-.doc th,.doc td{border-bottom:1px solid var(--ke);padding:7px 12px;text-align:left;vertical-align:top}
-.doc th{font-weight:600;border-bottom:2px solid var(--muc);white-space:nowrap}
+.doc th,.doc td{border:1px solid var(--ke);padding:7px 12px;text-align:left;vertical-align:top}
+.doc th{font-weight:600;border-bottom:2px solid var(--muc);white-space:nowrap;background:var(--nen-ma)}
+.doc tbody tr:nth-child(even){background:color-mix(in srgb,var(--ke) 22%,transparent)}
 .doc td:not(:first-child){white-space:nowrap}
 .doc code{background:var(--nen-ma);padding:1px 5px;border-radius:4px;font-size:.88em}
 .doc blockquote{margin:1em 0;padding:.2em 0 .2em 1em;border-left:3px solid var(--ke);color:var(--phu)}

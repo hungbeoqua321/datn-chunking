@@ -78,3 +78,117 @@ Một phép kiểm chỉ đáng tin tới mức nó kiểm đúng thứ cần đ
 phải kiểm **nội dung**; nó bắt được hai ca đầu (C, D) nên tạo cảm giác an toàn, rồi mù với ca thứ ba.
 Lỗi này không do thuật toán phân đoạn mà do **quy trình**: một bước có thể âm thầm không làm gì mà
 vẫn báo thành công. Chi phí để đóng hẳn khe hở là 4,4 giây mỗi lần chạy.
+
+---
+
+## 2026-10-20 — Giám khảo 4B kết luận ngược với chính lập luận của nó (q058, q065), và bỏ sót dẫn chiếu tường minh (q067)
+
+### Lệch ở đâu
+
+Bộ kiểm tra tự động trước khi chốt dùng chính mô hình sinh tại chỗ (Qwen3-4B, temperature 0) làm
+giám khảo cho nhóm `xuyen_khoan`: *"Đoạn B có nêu một ngoại lệ áp dụng cho CHÍNH quy tắc ở đoạn A
+không?"*. Ba câu bị gắn cờ `dat=False` (tức "không phải quan hệ quy tắc–ngoại lệ"), nhưng đọc kỹ
+phần `ly_do` thì **hai câu có lập luận nói ngược lại chính kết luận**, và một câu kết luận sai sự thật:
+
+| qid | Kết luận | Trích lập luận của chính nó | Thực chất |
+|---|---|---|---|
+| **q058** | `False` | *"…tức là **là một ngoại lệ** so với đoạn A, do đó **có thể coi là trường hợp loại trừ** hoặc giới hạn áp dụng quy định ở đoạn A."* | **Tự mâu thuẫn** — lập luận khẳng định ĐÚNG, kết luận trả về SAI |
+| **q065** | `False` | *"…điều này **là một ngoại lệ** đối với quy trình trong đoạn A…"* | **Tự mâu thuẫn** — như trên |
+| **q067** | `False` | *"Đoạn B không phải là ngoại lệ… mà là **một quy định song song, không liên quan**"* | **Nhất quán nhưng SAI SỰ THẬT** — xem dưới |
+
+**q067 (59/2020/QH14 Điều 148)** là kiểu hỏng khác. Lập luận của giám khảo thẳng hàng với kết luận,
+nhưng nó **bỏ sót một câu chữ nằm ngay trong đoạn được đưa cho nó đọc**: khoản 2 ghi rõ
+*"…trừ trường hợp quy định tại **các khoản 1**, 3, 4 và 6 Điều này"* — tức khoản 2 **trỏ đích danh
+khoản 1**. Hai khoản có liên kết tường minh, không hề "song song, không liên quan".
+
+### Vì sao suýt lọt
+
+Cả ba đều mang cờ trong `questions.jsonl`. Nếu chỉ đọc cột `dat` mà không đọc `ly_do`, ba câu này sẽ
+bị loại khỏi bộ đánh giá — mất ba cặp quy tắc–ngoại lệ hợp lệ, trong đó q067 là cặp có **dẫn chiếu
+tường minh**, tức thuộc loại chắc chắn nhất của nhóm. Cờ sai theo chiều "loại nhầm câu đúng" không
+để lại dấu vết nào trong kết quả: bộ câu hỏi vẫn chạy, chỉ là nhỏ đi và yếu đi.
+
+### Sửa thế nào
+
+1. **Ghi đè cờ cho q065 và q067**, kèm lý do vào trường ghi chú của từng câu — không xoá cờ, để người
+   đọc thấy cả cờ lẫn lý do ghi đè.
+2. **q058 và q064** thay câu hỏi bằng dạng so sánh.
+3. Giữ nguyên nguyên tắc chung *"cặp nào bộ kiểm tra nói rời nhau thì bỏ, không cứu"* — ba ca này là
+   ngoại lệ **có chứng cứ đối chiếu được**, không phải nới nguyên tắc.
+
+### Bài học ghi vào quyển
+
+Mô hình 4B dùng làm giám khảo **không đáng tin ở mức kết luận nhị phân**. Trong ba ca, hai ca trường
+`dat` mâu thuẫn với trường `ly_do` do chính nó sinh ra trong cùng một lần gọi. Vì vậy mọi cờ tự động
+trong đồ án đều **chỉ gắn cờ, không bao giờ tự xoá câu** — đúng như thiết kế ban đầu của
+`eval/kiem_tra.py` — và người duyệt phải đọc `ly_do` chứ không chỉ đọc `dat`. Một giám khảo tự mâu
+thuẫn vẫn có ích nếu nó buộc người ta nhìn vào đúng chỗ; nó chỉ nguy hiểm khi được tin như nhãn cuối cùng.
+
+---
+
+## 2026-10-22 — Báo "1 ca cắt trần" trong khi thật ra có 6
+
+### Lệch ở đâu
+
+Trong lúc lượt sinh E chạy nền trên bộ `manh_con`, tôi báo tiến độ bốn lần, và cả bốn lần đều
+nói **"1 ca bị cắt"**. Con số thật khi lượt chạy kết thúc là **6**:
+
+| Câu | Cấu hình bị cắt trần |
+|---|---|
+| **mc031** | Eduoi · Etren · Etat_d · Etat_n · Etat_s — **5/8 cấu hình** |
+| mc014 | Etat_s — 1/8 |
+
+Sai số không phải 1 đơn vị mà **gấp sáu lần**, và nó đi kèm một nhận định sai theo: tôi viết
+"tỉ lệ đến giờ 1/122, khớp với 1/253 đo trên pilot", tức là dùng con số sai để trấn an rằng
+hiện tượng này hiếm như dự đoán. Tỉ lệ thật trên `manh_con` là **6/280 = 2,1%**, cao gấp năm lần
+tỉ lệ 0,4% của pilot.
+
+### Vì sao các lần kiểm trước lọt
+
+Tôi đếm bằng cách đọc **dòng cuối** của tệp nhật ký:
+
+```bash
+tail -2 "$CLAUDE_JOB_DIR/tmp/chay_E.log"
+wc -l < results/manh_con_bi_cat.jsonl
+```
+
+Lần kiểm đầu tiên rơi đúng vào lúc mới có một ca (`mc014/Etat_s`, ở lượt ~121/280). Năm ca của
+`mc031` xảy ra muộn hơn, quanh lượt 240–280. Những lần kiểm sau tôi **chỉ nhìn `tail`** chứ không
+đếm lại toàn tệp, nên con số 1 bị chép đi chép lại qua bốn lần báo cáo như thể nó vẫn đúng.
+
+Hai thói quen cộng lại thành lỗi:
+
+1. **Đếm một lần rồi tái sử dụng con số.** Một đại lượng đang tăng theo thời gian thì mỗi lần báo
+   phải đếm lại, không được nhớ.
+2. **`tail` để xem tiến độ bị dùng nhầm thành `tail` để đếm.** `tail -2` trả lời câu hỏi "đang
+   chạy tới đâu", không trả lời câu hỏi "tổng cộng bao nhiêu".
+
+### Hậu quả nếu không phát hiện
+
+Con số 6 không chỉ là con số. Nó mang một **kết quả thật**: `mc031` bị cắt ở 5 cấu hình nhưng
+**không bị cắt ở B, Etat_k và Echi_s** — đúng ba cấu hình **tắt `dan_khoan`**. Đối chiếu đầy đủ:
+
+| | `dan_khoan` bật | `dan_khoan` tắt |
+|---|---|---|
+| mc031 cắt trần | 5/5 (Eduoi, Etren, Etat_d, Etat_n, Etat_s) | 0/5 (B, Etat_k, Echi_s, B+, E2) |
+
+`dan_dieu` **không** phân biệt được hai nhóm: Etat_d tắt dẫn Điều mà vẫn cắt. Tức là **chép câu
+dẫn của khoản vào mọi chunk điểm là nguyên nhân làm phình ngữ cảnh tới mức tràn trần**. Nếu tôi
+cứ báo "1 ca", bằng chứng này nằm im trong tệp và không ai đọc tới; đặc tả E2 ngày 26/10 — *chỉ
+chép câu dẫn của Điều, không chép câu dẫn của khoản* — chính là dựa trên nó.
+
+### Sửa thế nào
+
+1. Mọi lần báo số đếm đều **đếm lại từ đầu tệp**, không dùng `tail`:
+   `python -c "...len([l for l in open(p)])"` hoặc `wc -l` trên toàn tệp, kèm phân tích theo nhóm.
+2. `eval/manh_con_chay.py` in **tổng kết cuối lượt** liệt kê đích danh mọi cặp bị cắt, nên con số
+   cuối không còn phụ thuộc vào việc tôi theo dõi đúng lúc hay không.
+3. Cột **cắt trần** là cột cố định trong mọi bảng kết quả (`eval/ket_qua.py`), nên số này luôn
+   hiện ra cạnh các số khác thay vì phải đi hỏi.
+
+### Bài học ghi vào quyển
+
+Lỗi này không nằm trong mã, nó nằm trong **cách tường thuật**. Một con số đang thay đổi mà được
+báo lại nhiều lần thì mỗi lần là một phép đo mới, không phải một lần trích dẫn. Và khi một con số
+nhỏ được dùng để nói "khớp với dự đoán", đó đúng là lúc phải kiểm lại nó kỹ nhất — vì nó đang
+được dùng để đóng một câu hỏi, chứ không phải để mở một câu hỏi.

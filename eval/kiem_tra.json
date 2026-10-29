@@ -388,5 +388,167 @@
   "loai": "dan_chieu",
   "dat": false,
   "ly_do": "Đoạn nguồn chỉ nói đến việc phải trả trợ cấp mất việc làm theo quy định tại Điều 49, nhưng không cung cấp chi tiết về nội dung, điều kiện cụ thể để được tính trợ cấp, do đó không trả lời đầy đủ và cụ thể câu hỏi."
+ },
+ "4e3e2a6f9e8876b949c3b22aca176e5d2c827fdb": {
+  "qid": "q057",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ các nghĩa vụ cam đoan của bị can, bị cáo khi đặt tiền bảo đảm, và trong trường hợp vi phạm thì bị tạm giam, số tiền bị tịch thu, điều này là ngoại lệ so với việc được thả tự do nếu tuân thủ, do đó là trường hợp giới hạn hoặc ngoại lệ của quy định ở đoạn A."
+ },
+ "8aea371d6445a3a721bf5364480eabe24093372f": {
+  "qid": "q058",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B nêu trường hợp có khả năng gây thiệt hại nhưng không được ngăn chặn kịp thời thì bị phạt nhẹ hơn, tức là là một ngoại lệ so với đoạn A, do đó có thể coi là trường hợp loại trừ hoặc giới hạn áp dụng quy định ở đoạn A."
+ },
+ "e592ceaf02455963a4d15e47a3e4c539fc8c2bfb": {
+  "qid": "q059",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ rằng không bao gồm dung môi mà khi tách ra thì tính chất của chất đó không thay đổi, tức là đưa ra một trường hợp loại trừ trong định nghĩa về chất, nên đây là một ngoại lệ hoặc giới hạn áp dụng cho quy định ở đoạn A."
+ },
+ "a87e87c8b5f0a4c2613af534e10b0480766a2f63": {
+  "qid": "q060",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ ngoại lệ với nguyên tắc quyết định theo đa số trong trường hợp quy định tại điểm c khoản 4 Điều này, tức là có trường hợp loại trừ việc áp dụng nguyên tắc đa số theo quy định ở đoạn A."
+ },
+ "009da3149047499880c6929f282ebf0190585066": {
+  "qid": "q061",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu trường hợp ngoại lệ đối với tổ chức không phải là pháp nhân, trong khi đoạn A áp dụng cho cá nhân đang tham gia tố tụng chết, do đó đoạn B là trường hợp giới hạn hoặc ngoại lệ so với quy định ở đoạn A."
+ },
+ "285e5e90873875d075bed1a21e30600c3240b769": {
+  "qid": "q064",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B không nêu ra bất kỳ ngoại lệ, giới hạn hay trường hợp loại trừ nào cho quy định ở đoạn A; hai đoạn là song song, độc lập với nhau, không có mối quan hệ nào là ngoại lệ của bên kia."
+ },
+ "23ce3c2058100668d64d4ad569aa0f0dc4c4a036": {
+  "qid": "q065",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B nêu rõ trường hợp bất khả kháng khiến không thể lập, cấp mã hoặc truyền dữ liệu hóa đơn điện tử, trong đó người bán được phép thực hiện việc lập và gửi hóa đơn điện tử sau 03 ngày làm việc kể từ ngày sự cố được khắc phục, điều này là một ngoại lệ đối với quy trình trong đoạn A, tức là khi có sự cố do yếu tố bất khả kháng, người bán không cần phải liên hệ cơ quan thuế ngay lập tức hay phải sử dụng hóa đơn điện tử có mã của cơ quan thuế trong thời gian xử lý sự cố như quy định tại đoạn A."
+ },
+ "c35b214898cba5a4950cb38e0d1834dbbd1119f6": {
+  "qid": "q067",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B chỉ nêu điều kiện thông qua nghị quyết với tỷ lệ cổ đông sở hữu trên 50%, trong khi đoạn A yêu cầu 65% phiếu biểu quyết, nên đoạn B không phải là ngoại lệ hay giới hạn áp dụng cho đoạn A, mà là một quy định song song, không liên quan đến việc loại trừ hoặc áp dụng điều kiện của đoạn A."
+ },
+ "9e4d8cec30af3b790c70552b659084741a826bea": {
+  "qid": "q068",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ ngoại lệ với các trường hợp quy định tại điểm b khoản này, tức là có trường hợp loại trừ khi phân bổ xe ô tô, do đó cần biết đoạn B để áp dụng đúng quy tắc ở đoạn A."
+ },
+ "0f38b11e6891c399f9d9c60388e804ffd35c1bb6": {
+  "qid": "q070",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B nêu rõ các trường hợp ngoại lệ cho thành viên Hội đồng thành viên, trong đó có trường hợp là người quản lý công ty con hoặc công ty mẹ, hoặc trường hợp chuyển giao bắt buộc được phê duyệt, điều này có thể được xem như giới hạn hoặc ngoại lệ áp dụng cho quy định ở đoạn A, đặc biệt khi xét đến việc tránh xung đột lợi ích giữa các chức vụ trong tổ chức tín dụng."
+ },
+ "7de3a2d08afd85a108058ecf4a57d06d7f785dad": {
+  "qid": "q072",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn B quy định trường hợp ngoại lệ khi sử dụng phương tiện đưa nạn nhân đi cấp cứu, tức là có điều kiện cụ thể để được phép làm điều đó, nên đây là một ngoại lệ đối với quy định ở đoạn A về việc phải báo tin, bảo vệ hiện trường, v.v. do đó, để áp dụng đúng quy định ở đoạn A, người có mặt phải biết đến điều kiện ngoại lệ trong đoạn B."
+ },
+ "05a1e003478179650ab683c25cd869e0781da580": {
+  "qid": "q090",
+  "loai": "dan_chieu",
+  "dat": true,
+  "ly_do": "Đoạn nguồn nêu rõ rằng quyết định đình chỉ vụ án phải ghi rõ lý do và căn cứ đình chỉ vụ án, việc hủy bỏ biện pháp ngăn chặn, biện pháp cưỡng chế, xử lý vật chứng, tài liệu, đồ vật đã tạm giữ (nếu có), các vấn đề khác có liên quan và các nội dung quy định tại khoản 2 Điều 132 Bộ luật. Do đó, nội dung cần trả lời được nêu cụ thể trong đoạn nguồn."
+ },
+ "21e83b705fcdde794aebf4dbdfc834904e969da2": {
+  "qid": "q096",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nêu rằng cơ quan hải quan chỉ cho thông quan khi có chứng thư giám định ghi kết luận dây chuyền công nghệ đã qua sử dụng đáp ứng tiêu chí nhập khẩu quy định tại Điều 5 Thông tư, nhưng không nêu cụ thể những tiêu chí đó. Do đó, không thể trả lời đầy đủ và cụ thể về các tiêu chí mà dây chuyền phải đạt được chỉ dựa vào đoạn nguồn này."
+ },
+ "827af464c53b281ed99ca4819882fe24c463dc2c": {
+  "qid": "q097",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nêu rằng người nhận hàng là người có quyền nhận hàng theo quy định tại Điều 162 và Điều 187, nhưng không nêu rõ ai là người nhận hàng hợp pháp trong từng trường hợp cụ thể như vận đơn theo lệnh, vận đơn vô danh hoặc vận đơn đích danh. Do đó, không thể trả lời đầy đủ và cụ thể câu hỏi chỉ dựa vào đoạn nguồn này."
+ },
+ "be25c112c80b4fbf1bccb772e7dbf41eb1c349c8": {
+  "qid": "q235",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nói rằng biên bản phải ghi rõ tên và tình trạng từng tài sản bị kê biên, đọc cho những người có mặt nghe và cùng ký tên, nhưng không cung cấp chi tiết về việc ghi những nội dung cụ thể khác, cách xử lý ý kiến bổ sung hay ai cụ thể phải ký tên (ví dụ: người tiến hành, người có mặt, người đại diện cơ quan điều tra v.v.). Do đó, không đủ cơ sở để trả lời đầy đủ và cụ thể câu hỏi."
+ },
+ "fa2327abd90a8ceb01cd286bcb430efc0539910d": {
+  "qid": "q240",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nói rằng cơ quan thuế gửi kết quả theo quy định tại khoản 2 Điều 5, nhưng không nêu rõ cách thức cụ thể (ví dụ: qua điện thoại di động, email, SMS, v.v.) để thông báo kết quả giải đáp vướng mắc cho cá nhân đã đăng ký nhận qua điện thoại di động."
+ },
+ "fb0cde1236e505889f8941209f918e99424f7b17": {
+  "qid": "q259",
+  "loai": "dan_chieu",
+  "dat": false,
+  "ly_do": "Đoạn nguồn chỉ nói rằng phiên họp xét lại được tiến hành theo quy định tại Điều 369 của Bộ luật, nhưng không cung cấp thông tin cụ thể về việc người phải thi hành vắng mặt hay điều kiện để phiên họp vẫn được tiến hành trong trường hợp đó."
+ },
+ "f94f2cd6363b3be291163d7e2ce8256261983924": {
+  "qid": "q265",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B không nêu rõ bất kỳ ngoại lệ, giới hạn hoặc trường hợp loại trừ nào áp dụng cho chính quy tắc ở đoạn A."
+ },
+ "f030e7a48fc4025686b3f10138dd85dfadac6fc5": {
+  "qid": "q268",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B không nêu rõ bất kỳ ngoại lệ, giới hạn hoặc trường hợp loại trừ nào áp dụng cho chính quy tắc ở đoạn A."
+ },
+ "41922f418aa9ac209ddd4625abb964de03d92161": {
+  "qid": "q269",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B không nêu rõ bất kỳ ngoại lệ, giới hạn hoặc trường hợp loại trừ nào áp dụng cho chính quy tắc ở đoạn A."
+ },
+ "ecfbc485cb4680646508a4c0dde6553e0ee2e62a": {
+  "qid": "q058",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B nêu trường hợp có khả năng gây thiệt hại nhưng không được ngăn chặn kịp thời thì bị phạt nhẹ hơn, tức là là một ngoại lệ so với đoạn A, do đó có thể coi là trường hợp loại trừ hoặc giới hạn áp dụng quy định ở đoạn A."
+ },
+ "eadacea58257110a3b7814d9c2e45c547c6edf22": {
+  "qid": "q064",
+  "loai": "xuyen_khoan",
+  "dat": false,
+  "ly_do": "Đoạn B không nêu ra bất kỳ ngoại lệ, giới hạn hay trường hợp loại trừ nào cho quy định ở đoạn A; hai đoạn là song song, độc lập với nhau, không có mối quan hệ nào là ngoại lệ của bên kia."
+ },
+ "bd99e8755a61b5b8ba6a05fb45ed5431672bd089": {
+  "qid": "q270",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn văn bản nêu rõ rằng cổ đông sáng lập không có quyền biểu quyết về việc chuyển nhượng cổ phần phổ thông (quy tắc), nhưng lại có ngoại lệ: các hạn chế tại khoản 3 không áp dụng đối với cổ phần phổ thông sau đây, tức là trong một số trường hợp cụ thể, cổ đông sáng lập vẫn có thể biểu quyết về việc chuyển nhượng cổ phần. Do đó, câu hỏi yêu cầu xác định trường hợp ngoại lệ, và đoạn văn cung cấp cả quy tắc lẫn ngoại lệ, nên cần dùng cả hai phần để trả lời đúng."
+ },
+ "94c27a6378b202bfa94233fc681a1b9a7780f918": {
+  "qid": "q271",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn văn bản quy định: \"Ban kiểm soát của nhiệm kỳ vừa kết thúc tiếp tục hoạt động cho đến khi Ban kiểm soát của nhiệm kỳ mới tiếp quản công việc\" — điều này cho thấy việc Ban kiểm soát nhiệm kỳ cũ vẫn thực hiện nhiệm vụ kiểm soát trong tình huống chưa có Ban kiểm soát nhiệm kỳ mới là được phép, không vi phạm quy định."
+ },
+ "7e449c4d46609d282b90184b76f9f59214eef516": {
+  "qid": "q264",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn văn bản nêu rõ rằng đối với lãnh đạo các cơ quan báo chí đã được Bộ Văn hóa, Thể thao và Du lịch có văn bản đồng ý bổ nhiệm thì không áp dụng điều kiện xét cấp thẻ nhà báo, tức là đây là một ngoại lệ được nêu rõ trong cùng đoạn, nên câu hỏi có thể được trả lời đúng bằng cách sử dụng cả quy tắc và ngoại lệ."
+ },
+ "faa301fb6f4b3137214f2fb3ca7c3d8a1b5d1601": {
+  "qid": "q266",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn văn bản quy định rằng việc mua lại trái phiếu trước hạn của người sở hữu không đồng ý với việc thay đổi điều kiện hoặc mục đích phát hành chỉ được thực hiện nếu có ít nhất 65% số trái phiếu được đại diện đồng ý với việc thay đổi đó. Do đó, nếu doanh nghiệp muốn thay đổi điều kiện hoặc mục đích phát hành mà không được sự đồng ý của người sở hữu, thì việc này không được thực hiện trừ khi có sự đồng ý từ ít nhất 65% số trái phiếu. Điều này cho thấy việc thay đổi điều kiện hoặc mục đích phát hành phải đáp ứng điều kiện về tỷ lệ sở hữu trái phiếu được đại diện. Câu hỏi yêu cầu xác định việc thực hiện thay đổi trong trường hợp không có sự đồng ý của người sở hữu, và điều kiện cần đáp ứng, nên cần sử dụng cả quy tắc và ngoại lệ (trường hợp được 65% đồng ý) để trả lời đúng."
+ },
+ "ca28fb32c80aed75eccf02af7b3362c00fc6a17a": {
+  "qid": "q267",
+  "loai": "xuyen_khoan",
+  "dat": true,
+  "ly_do": "Đoạn văn bản nêu rõ rằng đối với dự án sử dụng thiết kế FEED, đã thực hiện lựa chọn nhà thầu EPC, EC, EP, nhà thầu thi công xây dựng và đã phê duyệt báo cáo nghiên cứu khả thi thì không phải thẩm định dự toán xây dựng công trình tại bước triển khai. Do đó, trong trường hợp doanh nghiệp đã thực hiện các điều kiện nêu trên, không cần phải thực hiện thẩm định dự toán xây dựng tại bước triển khai. Câu hỏi đã xác định rõ các điều kiện phù hợp với ngoại lệ được nêu trong quy định, nên câu trả lời đúng là không cần phải thẩm định."
  }
 }
