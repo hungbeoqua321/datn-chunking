@@ -27,7 +27,8 @@ def nap(so_luong: int | None = None):
 
         if so_luong:
             torch.set_num_threads(so_luong)
-        _MO_HINH = SentenceTransformer(str(ch.MO_HINH_NHUNG), device="cpu")
+        # Mặc định CPU như VPS; máy có GPU đặt NHUNG_DEVICE=cuda cho thử nghiệm mới (đổi điều kiện thực nghiệm)
+        _MO_HINH = SentenceTransformer(str(ch.MO_HINH_NHUNG), device=os.environ.get("NHUNG_DEVICE", "cpu"))
     return _MO_HINH
 
 
