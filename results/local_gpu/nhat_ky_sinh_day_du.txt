@@ -1,0 +1,6 @@
+SINH_XONG exit=0 5037s
+  [1300/1300] manh_con mc035 E3b  3.2s (tb 3.9s)
+→ xong 1300 lượt trong 5027s. Cắt trần: 23 [('chinh', 'q021', 'A'), ('chinh', 'q021', 'C'), ('chinh', 'q021', 'D'), ('chinh', 'q021', 'B'), ('chinh', 'q021', 'B+'), ('chinh', 'q021', 'E'), ('chinh', 'q021', 'E2'), ('chinh', 'q021', 'E3'), ('chinh', 'q029', 'B+'), ('chinh', 'q029', 'E2'), ('chinh', 'q064', 'B+'), ('chinh', 'q064', 'E2'), ('chinh', 'q064', 'E3'), ('chinh', 'q213', 'D'), ('chinh', 'q270', 'C'), ('manh_con', 'mc014', 'B'), ('manh_con', 'mc014', 'Etat_s'), ('manh_con', 'mc014', 'E3b'), ('manh_con', 'mc031', 'Eduoi'), ('manh_con', 'mc031', 'Etren'), ('manh_con', 'mc031', 'Etat_d'), ('manh_con', 'mc031', 'Etat_n'), ('manh_con', 'mc031', 'Etat_s')]
+thời gian sinh theo đợt (s): {"chinh/A": 401, "chinh/C": 449, "chinh/D": 404, "chinh/B": 447, "chinh/B+": 423, "chinh/E": 452, "chinh/E2": 424, "chinh/E3": 405, "manh_con/B": 134, "manh_con/B+": 101, "manh_con/Eduoi": 140, "manh_con/Etren": 142, "manh_con/Etat_d": 133, "manh_con/Etat_k": 137, "manh_con/Etat_n": 143, "manh_con/Etat_s": 135, "manh_con/Echi_s": 142, "manh_con/E2": 112, "manh_con/E3": 111, "manh_con/E3b": 131}
+
+[exited with code 0]
