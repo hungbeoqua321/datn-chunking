@@ -89,11 +89,41 @@ python -m uvicorn web.app:app --host 127.0.0.1 --port 8081
 ```
 
 Mở **http://127.0.0.1:8081** — `/` hỏi đáp (~70 s/câu trên CPU), `/ket-qua` số liệu, `/duyet` bộ câu hỏi,
-`/loi-phan-doan`, `/slide`. Thử bằng lệnh (kết thúc bằng `event: xong`):
+`/loi-phan-doan`, `/slide`.
+
+Trang hỏi đáp còn có:
+
+- **Tải tài liệu của bạn lên** (.pdf, .docx, .txt, .md) rồi tích *Kèm tài liệu tôi đã tải lên* để hỏi trên đó.
+  PDF scan được OCR (~3 s/trang) — cần cài thêm [môi trường OCR](#tuỳ-chọn-đọc-pdf-scan); .docx/.txt không cần.
+- **Tìm trong 212 văn bản** (toàn bộ đã tải từ vbpl.vn) thay vì 80 văn bản của đồ án — dựng kho một lần:
+  `python -m rag.kho dung-day-du`.
+
+Thử bằng lệnh (kết thúc bằng `event: xong`):
 
 ```bash
 curl -N http://127.0.0.1:8081/api/hoi -H "Content-Type: application/json; charset=utf-8" --data-binary @tools/hoi_thu.json
 ```
+
+### Tuỳ chọn: đọc PDF scan
+
+Môi trường OCR là một venv **riêng** (`.venv-ocr`), không đụng `.venv` của đồ án:
+
+```bash
+python -m venv .venv-ocr
+.venv-ocr/Scripts/python -m pip install -r requirements-ocr.txt      # Linux: .venv-ocr/bin/python
+```
+
+Tesseract (chương trình OCR) — Linux: `sudo apt install tesseract-ocr tesseract-ocr-vie`. Windows (không cần quyền
+admin, cài vào `tools/`):
+
+```bash
+curl -L -o tools/mm/micromamba.exe --create-dirs https://github.com/mamba-org/micromamba-releases/releases/latest/download/micromamba-win-64
+MAMBA_ROOT_PREFIX=tools/mm/root tools/mm/micromamba.exe create -y -p tools/tesseract-env -c conda-forge tesseract
+curl -L -o tools/tesseract-env/share/tessdata/vie.traineddata https://github.com/tesseract-ocr/tessdata_best/raw/main/vie.traineddata
+```
+
+Kiểm tra: `.venv-ocr/Scripts/python -m ocr.doc_pdf ocr/data/mau/70fbb4a0-c0df-11f1-8027-6f84f5cae5b7.pdf`
+→ in JSON có `"so_trang": 3, "trang_ocr": 3`.
 
 ## 4. Lỗi thường gặp
 
@@ -115,6 +145,10 @@ curl -N http://127.0.0.1:8081/api/hoi -H "Content-Type: application/json; charse
 | `tools/llama.cpp/build/bin/llama-server: No such file` | chưa làm bước ⑤ | bước ⑤ |
 | GPU báo `out of memory` | VRAM < 3 GB trống | tắt chương trình khác dùng GPU, hoặc dùng `tools/chay-llm.sh` (CPU) |
 | `curl … -d '{"cau_hoi": "…"}'` ra chữ lỗi / `ill-formed UTF-8` | Git Bash Windows làm hỏng chữ có dấu trong tham số | gửi qua tệp: `--data-binary @tools/hoi_thu.json` |
+| Tải PDF lên báo `Chưa cài môi trường OCR (.venv-ocr)` | chưa làm phần [đọc PDF scan](#tuỳ-chọn-đọc-pdf-scan) | làm phần đó, hoặc tải .docx/.txt thay vì PDF |
+| `OCR hỏng: … Failed loading language 'vie'` | thiếu dữ liệu tiếng Việt cho Tesseract | tải `vie.traineddata` (lệnh `curl` cuối ở phần đọc PDF scan); Linux: `sudo apt install tesseract-ocr-vie` |
+| Không lấy được chữ nào từ PDF | ảnh quá mờ / trang trắng | quét lại ở ≥ 300 dpi |
+| Ô *212 văn bản* bị mờ, không chọn được | chưa dựng kho đầy đủ | `python -m rag.kho dung-day-du` (cần `docs.zip`) |
 | `Address already in use` (cổng 8081/8082) | đang có một bản chạy rồi | tắt bản cũ, hoặc đổi cổng: `--port 8090`, `CONG=8083 tools/chay-llm.sh` |
 
 **Vẫn không cài được?**
