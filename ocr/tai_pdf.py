@@ -16,6 +16,7 @@ Tên file lấy qua server action chi tiết (crawl/vbpl.py); file tải từ ga
 import argparse
 import csv
 import hashlib
+import json
 import shutil
 from pathlib import Path
 from urllib.parse import quote
@@ -28,7 +29,7 @@ PDF = THU_MUC / "pdf"
 DOCS = THU_MUC / "docs"
 MANIFEST = THU_MUC / "manifest_pdf.csv"
 GATEWAY = "https://vbpl-bientap-gateway.moj.gov.vn/api/qtdc/public/doc/minio/buckets/vbpl"
-COT = ["id", "so_hieu", "ten_goc", "sha256", "so_trang", "trang_co_text", "ghi_chu"]
+COT = ["id", "so_hieu", "trong_80", "ten_goc", "sha256", "so_trang", "trang_co_text", "ghi_chu"]
 
 # Client dò lại action id thì ghi ra ocr/data/, KHÔNG ghi vào data/raw (bản chụp phải giữ nguyên).
 vbpl.TEP_ACTION = THU_MUC / "_actions.json"
@@ -47,6 +48,8 @@ def _so_trang(p: Path) -> tuple[int, int]:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--toi-da", type=int, default=0, help="dừng khi đã có chừng này PDF (0: không giới hạn)")
+    ap.add_argument("--tat-ca", action="store_true",
+                    help="cả 212 văn bản đã tải (data/clean), không chỉ 80 văn bản trong manifest")
     a = ap.parse_args()
     PDF.mkdir(parents=True, exist_ok=True)
     DOCS.mkdir(parents=True, exist_ok=True)
@@ -54,14 +57,21 @@ def main() -> None:
         shutil.copyfile(ch.RAW / "_actions.json", vbpl.TEP_ACTION)
 
     cu = {r["id"]: r for r in csv.DictReader(open(MANIFEST))} if MANIFEST.exists() else {}
+    tam_muoi = {r["id"]: r["so_hieu"] for r in csv.DictReader(open(ch.MANIFEST))}
+    if a.tat_ca:   # số hiệu của văn bản ngoài manifest lấy từ metadata đã tải (data/raw/<id>.json)
+        ds = [(p.stem, tam_muoi.get(p.stem) or json.loads((ch.RAW / f"{p.stem}.json").read_text())["so_hieu"])
+              for p in sorted(ch.CLEAN.glob("*.txt"))]
+    else:
+        ds = list(tam_muoi.items())
     v = vbpl.Vbpl()
-    for r in csv.DictReader(open(ch.MANIFEST)):
+    for i, so_hieu in ds:
         if a.toi_da and sum(1 for x in cu.values() if x["sha256"]) >= a.toi_da:
             break
-        i = r["id"]
-        if i in cu and not cu[i]["ghi_chu"].startswith("lỗi"):   # lỗi mạng/server thì thử lại
-            continue
-        dong = {"id": i, "so_hieu": r["so_hieu"], "ten_goc": "", "sha256": "", "so_trang": 0,
+        if i in cu:
+            cu[i]["trong_80"] = i in tam_muoi
+            if not cu[i]["ghi_chu"].startswith("lỗi"):   # lỗi mạng/server thì thử lại
+                continue
+        dong = {"id": i, "so_hieu": so_hieu, "trong_80": i in tam_muoi, "ten_goc": "", "sha256": "", "so_trang": 0,
                 "trang_co_text": 0, "ghi_chu": ""}
         try:
             ten = v.chi_tiet(i).get("documentContentFileName") or ""
