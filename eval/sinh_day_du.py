@@ -5,7 +5,7 @@ Trên VPS chỉ sinh A, B, B+ (bộ chính), E3 (26 câu dẫn chiếu) và manh
 MAX_TOKENS 384, nhiệt độ 0, cùng lời nhắc (rag/sinh.py).
 
   bộ chính  110 câu × A, C, D, B, B+, E, E2, E3                         = 880 lượt → pilot_tra_loi.jsonl (khoá "pp")
-  manh_con   35 câu × B, B+, Eduoi, Etren, Etat_d/k/n/s, Echi_s, E2, E3 = 420 lượt → manh_con_tra_loi.jsonl (khoá "cau_hinh")
+  manh_con   35 câu × B, B+, Eduoi, Etren, Etat_d/k/n/s, Echi_s, E2, E3, E3b = 420 lượt → manh_con_tra_loi.jsonl (khoá "cau_hinh")
 
 Định dạng dòng giống hệt eval/pilot.py, eval/manh_con_chay.py, eval/chay_e3.py nên eval/ket_qua.py và
 eval/cham_trich_dan.py chấm thẳng được. Ghi vào ch.RESULTS — chạy với KET_QUA_DIR=results/local_gpu để
@@ -30,7 +30,7 @@ from rag.sinh import LoiCat
 PP_CHINH = {"A": "A", "C": "C", "D": "D", "B": "B", "B+": "B+", "E": "Eduoi_s0", "E2": "E2", "E3": "E3"}
 PP_MANH_CON = {"B": "B_s0", "B+": "B+", "Eduoi": "Eduoi_s0", "Etren": "Etren_s0", "Etat_d": "Etat_d_s0",
                "Etat_k": "Etat_k_s0", "Etat_n": "Etat_n_s0", "Etat_s": "Etat_s_s0", "Echi_s": "Echi_s_s0",
-               "E2": "E2", "E3": "E3"}
+               "E2": "E2", "E3": "E3", "E3b": "E3b"}
 BO = {"chinh": (ch.GOC / "eval/questions.jsonl", "pilot_tra_loi.jsonl", "pp", PP_CHINH),
       "manh_con": (ch.GOC / "eval/manh_con.draft.jsonl", "manh_con_tra_loi.jsonl", "cau_hinh", PP_MANH_CON)}
 
