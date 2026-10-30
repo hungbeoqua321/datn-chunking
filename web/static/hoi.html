@@ -44,6 +44,21 @@ a.dau.khong-khop{border-style:dashed;background:transparent}
 .to-trich.mo p{max-height:none;-webkit-mask-image:none;mask-image:none}
 .to-trich .mo-them{margin-top:6px;font:500 13px var(--chu);background:none;color:var(--phu);padding:2px 0;border:0;
 text-decoration:underline;text-underline-offset:3px}
+.cac-pp label:has(input:disabled){opacity:.45;cursor:not-allowed}
+.kem{display:flex;gap:8px;align-items:center;margin-top:10px;font-size:15px;cursor:pointer}
+.tai-len{margin-top:34px;padding-top:22px;border-top:1px solid var(--ke)}
+.tai-len h2{margin:0 0 6px;font-size:1.05rem}.tai-len p{margin:0 0 12px;color:var(--phu);font-size:14px}
+.chon-tep{display:inline-block;font:600 15px var(--chu);padding:9px 20px;border-radius:8px;border:1px solid var(--muc);
+color:var(--muc);background:var(--to);cursor:pointer}
+.chon-tep:focus-within{outline:2px solid var(--son);outline-offset:2px}.chon-tep input{position:absolute;opacity:0;width:1px}
+#ds-tl{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:8px}
+#ds-tl li{display:flex;gap:10px;align-items:baseline;padding:8px 12px;background:var(--to);border:1px solid var(--ke);
+border-radius:8px;font-size:14px}
+#ds-tl li b{font-weight:600}#ds-tl li small{color:var(--phu)}
+#ds-tl li button{margin-left:auto;font:500 13px var(--chu);padding:2px 8px;background:none;color:var(--phu);
+border:1px solid var(--ke)}
+.nhan-tl{font:600 11.5px var(--chu);color:var(--son);border:1px solid var(--son);border-radius:4px;padding:0 5px;
+white-space:nowrap}
 @media(max-width:900px){.hoi{grid-template-columns:1fr;gap:28px}.can-cu{position:static}#bang{max-height:none;overflow:visible}}
 </style>
 
@@ -76,6 +91,15 @@ text-decoration:underline;text-underline-offset:3px}
       </div>
     </fieldset>
 
+    <fieldset>
+      <legend>Tìm trong</legend>
+      <div class="cac-pp">
+        <label><input type="radio" name="kho" value="80" checked><b>80 văn bản</b><small>Bộ của đồ án — mọi cách phân đoạn</small></label>
+        <label><input type="radio" name="kho" value="212"><b>212 văn bản</b><small>Toàn bộ đã tải từ vbpl.vn — cắt theo B</small></label>
+      </div>
+      <label class="kem"><input type="checkbox" id="kem-tl"> Kèm tài liệu tôi đã tải lên <small id="so-tl" class="phu"></small></label>
+    </fieldset>
+
     <div class="hanh-dong">
       <button id="nut" type="submit">Hỏi</button>
       <span id="tt" class="trang-thai" aria-live="polite">Mô hình chạy trên CPU, mỗi câu mất khoảng 1–2 phút.</span>
@@ -86,6 +110,15 @@ text-decoration:underline;text-underline-offset:3px}
     <h2>Câu trả lời</h2>
     <div id="tra-loi" aria-live="polite"></div>
     <div id="chi-so" class="chi-so"></div>
+  </div>
+
+  <div class="tai-len" aria-labelledby="tieu-de-tl">
+    <h2 id="tieu-de-tl">Tài liệu của bạn</h2>
+    <p>Tải lên .pdf, .docx, .txt hoặc .md (tối đa 50 MB). PDF scan được đọc bằng OCR, bỏ dấu đỏ trước — khoảng
+    3 giây mỗi trang. Văn bản được cắt theo Điều, khoản như cách B rồi đưa vào tìm kiếm.</p>
+    <label class="chon-tep">Chọn tệp…<input type="file" id="tep" multiple accept=".pdf,.docx,.txt,.md"></label>
+    <span id="tt-tl" class="trang-thai" aria-live="polite"></span>
+    <ul id="ds-tl"></ul>
   </div>
 </section>
 
@@ -114,6 +147,7 @@ function veBang(ds) {
   $("#bang").innerHTML = ds.map((c, i) => `
     <article class="to-trich" id="trich-${i}">
       <header><span class="hang">${c.hang}</span><div class="duong">${duongDan(c)}</div>
+        ${c.kho === "tai_len" ? `<span class="nhan-tl">tài liệu tải lên</span>` : ""}
         <span class="diem-so" title="Độ tương đồng cosine với câu hỏi">${c.diem.toFixed(3)}</span></header>
       <p>${esc(c.trich)}</p>
       <button type="button" class="mo-them" aria-expanded="false">Xem cả đoạn</button>
@@ -149,7 +183,8 @@ $("#tra-loi").addEventListener("click", e => {
 
 $("#f").addEventListener("submit", async e => {
   e.preventDefault();
-  const q = $("#q").value.trim(), pp = document.querySelector("input[name=pp]:checked").value;
+  const q = $("#q").value.trim(), kho = document.querySelector("input[name=kho]:checked").value;
+  const pp = kho === "212" ? "B" : document.querySelector("input[name=pp]:checked").value, tl = $("#kem-tl").checked;
   if (!q) return;
   let tra = "";
   $("#nut").disabled = true; $("#tra-loi").textContent = ""; $("#chi-so").innerHTML = "";
@@ -157,7 +192,7 @@ $("#f").addEventListener("submit", async e => {
   $("#tt").textContent = "Đang tìm các đoạn liên quan…";
   try {
     const r = await fetch("/api/hoi", {method: "POST", headers: {"Content-Type": "application/json"},
-                                       body: JSON.stringify({cau_hoi: q, phuong_phap: pp})});
+                                       body: JSON.stringify({cau_hoi: q, phuong_phap: pp, kho, tai_len: tl})});
     if (!r.ok) { const j = await r.json().catch(() => ({})); throw new Error(j.loi || ("Máy chủ báo lỗi " + r.status)); }
     const rd = r.body.getReader(), dec = new TextDecoder(); let buf = "";
     for (;;) {
@@ -171,7 +206,8 @@ $("#f").addEventListener("submit", async e => {
         else if (ten === "xong") {
           $("#tra-loi").innerHTML = danhDau(tra);
           $("#tt").textContent = "Xong.";
-          const so = [`${d.giay} giây`, `cách phân đoạn ${pp}`, `${TO.length} đoạn đã đọc`];
+          const so = [`${d.giay} giây`, `cách phân đoạn ${pp}`, `kho ${kho} văn bản${tl ? " + tài liệu tải lên" : ""}`,
+                      `${TO.length} đoạn đã đọc`];
           if (d.token_vao) so.push(`ngữ cảnh ${d.token_vao} trên ${d.n_ctx} token`);
           if (d.cache) so.push("câu trả lời sinh sẵn khi đánh giá");
           if (d.bi_cat) so.push("câu trả lời bị cắt vì hết độ dài cho phép");
@@ -185,4 +221,48 @@ $("#f").addEventListener("submit", async e => {
     if (!TO.length) $("#bang").innerHTML = `<p class="trong-rong">Chưa truy hồi được. ${esc(err.message)}</p>`;
   } finally { $("#nut").disabled = false; }
 });
+
+// ── kho 212: chỉ có cách cắt B ────────────────────────────────────────────
+document.querySelectorAll("input[name=kho]").forEach(r => r.addEventListener("change", () => {
+  const day_du = document.querySelector("input[name=kho]:checked").value === "212";
+  document.querySelectorAll("input[name=pp]").forEach(x => { x.disabled = day_du && x.value !== "B"; if (day_du && x.value === "B") x.checked = true; });
+}));
+
+// ── tài liệu tải lên ──────────────────────────────────────────────────────
+async function veTaiLieu() {
+  const j = await fetch("/api/tai-lieu").then(r => r.json()).catch(() => ({tai_len: [], day_du: 0}));
+  const ds = j.tai_len || [];
+  $("#so-tl").textContent = ds.length ? `(${ds.length} tài liệu)` : "(chưa có)";
+  $("#kem-tl").disabled = !ds.length; if (!ds.length) $("#kem-tl").checked = false;
+  document.querySelector("input[name=kho][value='212']").disabled = !j.day_du;
+  $("#ds-tl").innerHTML = ds.map(x => `<li><b>${esc(x.so_hieu)}</b><small>${esc(x.tep)} · ${x.so_chunk} đoạn` +
+    (x.so_trang ? ` · ${x.so_trang} trang${x.trang_ocr ? `, ${x.trang_ocr} trang OCR` : ""}` : "") +
+    `</small><button type="button" data-xoa="${esc(x.id)}">Xoá</button></li>`).join("");
+}
+
+$("#ds-tl").addEventListener("click", async e => {
+  const b = e.target.closest("[data-xoa]"); if (!b) return;
+  b.disabled = true; await fetch("/api/tai-lieu/" + encodeURIComponent(b.dataset.xoa), {method: "DELETE"}); veTaiLieu();
+});
+
+const NHAN = {cho: "đang chờ", doc: "đang đọc chữ (PDF scan thì OCR)", nhung: "đang cắt đoạn và nhúng"};
+$("#tep").addEventListener("change", async e => {
+  for (const f of e.target.files) {
+    $("#tt-tl").textContent = `Đang gửi ${f.name}…`;
+    try {
+      const r = await fetch("/api/tai-len", {method: "POST", body: f, headers: {"X-Ten-Tep": encodeURIComponent(f.name)}});
+      const j = await r.json(); if (!r.ok) throw new Error(j.loi || r.status);
+      for (;;) {
+        const v = await fetch("/api/tai-len/" + j.viec).then(r => r.json());
+        if (v.trang_thai === "xong") { $("#tt-tl").textContent = `Đã thêm ${f.name}: ${v.ket_qua.so_chunk} đoạn.`; break; }
+        if (v.trang_thai === "loi") throw new Error(v.loi);
+        $("#tt-tl").textContent = `${f.name}: ${NHAN[v.trang_thai] || v.trang_thai}…`;
+        await new Promise(ok => setTimeout(ok, 1500));
+      }
+    } catch (err) { $("#tt-tl").innerHTML = `<span class="loi">${esc(f.name)}: ${esc(err.message)}</span>`; }
+    veTaiLieu();
+  }
+  e.target.value = "";
+});
+veTaiLieu();
 </script>

@@ -16,6 +16,7 @@ restart); file chưa có thì trả 404 kèm câu tiếng Việt nói rõ bướ
 import asyncio
 import csv
 import datetime as dt
+import hashlib
 import html
 import io
 import json
@@ -23,6 +24,7 @@ import re
 import time
 from collections import defaultdict, deque
 from pathlib import Path
+from urllib.parse import unquote
 
 from fastapi import FastAPI, Request
 from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, PlainTextResponse, StreamingResponse
@@ -30,6 +32,7 @@ from fastapi.staticfiles import StaticFiles
 from markdown_it import MarkdownIt
 
 import cau_hinh as ch
+from rag.kho import DUOI_HOP_LE, Kho, tao_tai_lieu
 
 R = ch.RESULTS
 app = FastAPI(title="ĐATN — phân đoạn VBQPPL cho RAG", docs_url=None, redoc_url=None, openapi_url=None)
@@ -235,6 +238,11 @@ def tep(duong_dan: str):
 # ── hỏi đáp (POST /api/hoi, SSE) ────────────────────────────────────────────
 _HANG = asyncio.Semaphore(1)        # mỗi lúc chỉ một lượt sinh (CPU)
 _CHO = 0
+KHO_DAY_DU = Kho("day_du")          # 212 văn bản (rag/kho.py) — độc lập với chỉ mục của đồ án
+KHO_TAI_LEN = Kho("tai_len")        # tài liệu người dùng tải lên
+_DOC_TEP = asyncio.Semaphore(1)     # mỗi lúc chỉ xử lý (OCR + nhúng) một tệp tải lên
+_VIEC: dict[str, dict] = {}         # việc tải lên: {mã: {trang_thai, tep, ket_qua | loi}}
+TOI_DA_BYTE = 50 * 1024 * 1024
 _LUOT: dict[str, deque] = defaultdict(deque)
 GIOI_HAN = [(60, 5), (3600, 30)]    # mỗi IP: 5 câu/phút, 30 câu/giờ
 
@@ -273,8 +281,14 @@ async def api_hoi(request: Request):
         return JSONResponse({"loi": "Yêu cầu không hợp lệ."}, status_code=400)
     q = str(body.get("cau_hoi", "")).strip()
     pp = str(body.get("phuong_phap", "B"))
+    kho = str(body.get("kho", "80"))           # "80": chỉ mục của đồ án; "212": kho đầy đủ (rag/kho.py, chỉ cắt B)
+    kem_tai_len = bool(body.get("tai_len"))    # cộng thêm tài liệu người dùng tải lên
     if pp not in ("A", "A+", "B", "B+", "C", "D"):
         return JSONResponse({"loi": "Cách phân đoạn phải là A, C, D, B, B+ hoặc A+."}, status_code=400)
+    if kho not in ("80", "212"):
+        return JSONResponse({"loi": "Kho văn bản phải là 80 hoặc 212."}, status_code=400)
+    if kho == "212":
+        pp = "B"                                # kho đầy đủ chỉ dựng theo cách cắt B
     if not 3 <= len(q) <= 500:
         return JSONResponse({"loi": "Câu hỏi phải dài từ 3 đến 500 ký tự."}, status_code=400)
     ip = request.client.host if request.client else "?"
@@ -285,8 +299,12 @@ async def api_hoi(request: Request):
     from rag import truy_hoi
 
     ten = truy_hoi.TEP[pp]
-    if not (ch.INDEX / ten / "emb.f32").exists():
+    if kho == "80" and not (ch.INDEX / ten / "emb.f32").exists():
         return JSONResponse({"loi": "Chưa có chỉ mục vector — bước 5 (nhúng) chưa chạy."}, status_code=503)
+    if kho == "212" and not KHO_DAY_DU.tai_lieu():
+        return JSONResponse({"loi": "Chưa dựng kho 212 văn bản — chạy: python -m rag.kho dung-day-du"}, status_code=503)
+    if kem_tai_len and not KHO_TAI_LEN.tai_lieu():
+        return JSONResponse({"loi": "Chưa có tài liệu nào được tải lên."}, status_code=400)
     if _CHO >= 3:
         return JSONResponse({"loi": "Máy đang bận trả lời người khác — thử lại sau một phút."}, status_code=503,
                             headers={"Retry-After": "60"})
@@ -298,17 +316,23 @@ async def api_hoi(request: Request):
             async with _HANG:
                 t0 = time.monotonic()
                 qv = await asyncio.to_thread(truy_hoi.nhung_cau_hoi, q)
-                kq = await asyncio.to_thread(truy_hoi.tim, pp, qv, ch.K_UNG_VIEN)
+                if kho == "80":
+                    kq = await asyncio.to_thread(truy_hoi.tim, pp, qv, ch.K_UNG_VIEN)
+                else:
+                    kq = await asyncio.to_thread(KHO_DAY_DU.tim, qv, ch.K_UNG_VIEN)
+                if kem_tai_len:   # gộp theo điểm cosine — cùng mô hình nhúng nên so được với nhau
+                    kq += await asyncio.to_thread(KHO_TAI_LEN.tim, qv, ch.K_UNG_VIEN)
+                    kq = sorted(kq, key=lambda x: -x[1])[:ch.K_UNG_VIEN]
                 from rag import sinh
 
                 khoi = await asyncio.to_thread(truy_hoi.ngu_canh, pp, kq)  # các khối thật sự đưa cho mô hình
                 dung = {k["chunk_id"] for k in khoi}
                 bang = [{"hang": i + 1, "diem": round(s, 4), "so_hieu": c["so_hieu"], "dieu": c.get("dieu_so"),
                          "khoan": c.get("khoan_so"), "diem_chu": c.get("diem"), "tien_to": c.get("tien_to", ""),
-                         "trich": c["text"][len(c.get("tien_to") or ""):].strip()[:2500]}
+                         "trich": c["text"][len(c.get("tien_to") or ""):].strip()[:2500], "kho": c.get("kho", "80")}
                         for i, (c, s) in enumerate(kq) if c["chunk_id"] in dung]
                 yield f"event: chunks\ndata: {json.dumps(bang, ensure_ascii=False)}\n\n"
-                cache = _cache_tra_loi(q, pp)
+                cache = _cache_tra_loi(q, pp) if kho == "80" and not kem_tai_len else None
                 if cache:
                     yield f"data: {json.dumps({'t': cache['tra_loi']}, ensure_ascii=False)}\n\n"
                     yield f"event: xong\ndata: {json.dumps({'giay': round(time.monotonic() - t0, 1), 'cache': True})}\n\n"
@@ -344,6 +368,55 @@ async def api_hoi(request: Request):
 
     return StreamingResponse(luong(), media_type="text/event-stream",
                              headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
+
+
+@app.post("/api/tai-len")
+async def api_tai_len(request: Request):
+    """Tải một tài liệu lên kho tai_len. Thân yêu cầu = nguyên tệp; tên tệp ở header X-Ten-Tep (mã hoá URL).
+    Trả {"viec": mã} ngay; xử lý (đọc chữ / OCR, cắt theo B, nhúng) chạy nền — hỏi trạng thái ở GET /api/tai-len/<mã>."""
+    ten = Path(unquote(request.headers.get("x-ten-tep", ""))).name
+    if not ten.lower().endswith(DUOI_HOP_LE):
+        return JSONResponse({"loi": f"Chỉ nhận tệp {', '.join(DUOI_HOP_LE)}."}, status_code=400)
+    if int(request.headers.get("content-length") or 0) > TOI_DA_BYTE:
+        return JSONResponse({"loi": "Tệp lớn quá 50 MB."}, status_code=413)
+    du_lieu = await request.body()
+    if not du_lieu or len(du_lieu) > TOI_DA_BYTE:
+        return JSONResponse({"loi": "Tệp rỗng hoặc lớn quá 50 MB."}, status_code=400)
+    ma = hashlib.sha1(du_lieu).hexdigest()[:12]
+    if ma in _VIEC and _VIEC[ma]["trang_thai"] != "loi":
+        return {"viec": ma}
+    _VIEC[ma] = {"trang_thai": "cho", "tep": ten}
+
+    async def xu_ly():
+        async with _DOC_TEP:
+            try:
+                _VIEC[ma]["trang_thai"] = "doc"          # đọc chữ; PDF scan thì OCR — lâu nhất
+                doc, tt = await asyncio.to_thread(tao_tai_lieu, ten, du_lieu)
+                _VIEC[ma]["trang_thai"] = "nhung"
+                _VIEC[ma]["ket_qua"] = (await asyncio.to_thread(KHO_TAI_LEN.them, [doc], [tt]))[0]
+                _VIEC[ma]["trang_thai"] = "xong"
+            except Exception as e:  # noqa: BLE001 — báo lỗi cho người dùng, không làm sập web
+                _VIEC[ma].update(trang_thai="loi", loi=str(e) or type(e).__name__)
+
+    asyncio.get_running_loop().create_task(xu_ly())
+    return {"viec": ma}
+
+
+@app.get("/api/tai-len/{ma}")
+def api_tai_len_trang_thai(ma: str):
+    v = _VIEC.get(ma)
+    return v if v else JSONResponse({"loi": "Không có việc này."}, status_code=404)
+
+
+@app.get("/api/tai-lieu")
+def api_tai_lieu():
+    """Tài liệu đã tải lên (kho tai_len) và quy mô kho 212 văn bản."""
+    return {"tai_len": KHO_TAI_LEN.tai_lieu(), "day_du": len(KHO_DAY_DU.tai_lieu())}
+
+
+@app.delete("/api/tai-lieu/{doc_id}")
+def api_xoa_tai_lieu(doc_id: str):
+    return {"xoa": True} if KHO_TAI_LEN.xoa(doc_id) else JSONResponse({"loi": "Không có tài liệu này."}, status_code=404)
 
 
 @app.get("/", response_class=HTMLResponse)
