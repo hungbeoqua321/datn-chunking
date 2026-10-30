@@ -387,5 +387,5 @@ def trang_duyet():
 @app.get("/slide", response_class=HTMLResponse)
 def trang_slide():
     """Slide bảo vệ (reveal.js). Trả NGUYÊN trang, không bọc khung site: deck phải chiếm trọn màn hình.
-    In ra PDF: mở /slide?print-pdf rồi Ctrl+P → Save as PDF (xem README)."""
+    In ra PDF: mở /slide?print-pdf rồi Ctrl+P → Save as PDF (xem docs/do-an.md)."""
     return HTMLResponse((Path(__file__).parent / "static/slide.html").read_text())

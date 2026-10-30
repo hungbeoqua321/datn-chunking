@@ -10,7 +10,7 @@ trúc (B)? (2) xếp lại bằng cross-encoder có cải thiện không, và c�
 
 Mọi thứ nằm trong thuc_nghiem/data/ — PHẢI chạy với CHUNKS_DIR / INDEX_DIR trỏ vào đó (script tự kiểm):
 
-    set CHUNKS_DIR=thuc_nghiem/data/chunks INDEX_DIR=thuc_nghiem/data/index (xem README)
+    set CHUNKS_DIR=thuc_nghiem/data/chunks INDEX_DIR=thuc_nghiem/data/index (xem docs/thuc-nghiem-mo-rong.md)
     python -m thuc_nghiem.chay chunk                       # dựng chunk (bỏ qua file đã có)
     NHUNG_DEVICE=cuda python -m rag.chi_muc A100_s0 ...    # nhúng
     python -m thuc_nghiem.chay danh_gia                    # chốt chặn chỉ mục rồi chấm
