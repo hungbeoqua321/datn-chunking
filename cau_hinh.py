@@ -3,6 +3,7 @@
 Mọi tham số của thực nghiệm nằm ở đây để báo cáo trích dẫn được đúng một chỗ.
 Đổi tham số = đổi thực nghiệm: ghi lại lý do trong commit.
 """
+import os
 from pathlib import Path
 
 GOC = Path(__file__).resolve().parent
@@ -14,7 +15,7 @@ CLEAN = DATA / "clean"          # text đã chuẩn hoá, đã bỏ "Căn cứ�
 CLEAN_FULL = DATA / "clean_full"  # text đã chuẩn hoá, CHƯA bỏ gì (để đối chiếu)
 CHUNKS = DATA / "chunks"        # chunk của từng phương pháp (jsonl)
 INDEX = DATA / "index"          # vector nhúng (memmap)
-RESULTS = GOC / "results"
+RESULTS = Path(os.environ.get("KET_QUA_DIR", GOC / "results"))  # máy cá nhân: chạy tái lập ra thư mục riêng
 MODELS = GOC / "models"
 MANIFEST = DATA / "manifest.csv"
 
