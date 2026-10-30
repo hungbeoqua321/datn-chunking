@@ -30,6 +30,7 @@ OCR = GOC / "ocr" / "data" / "ocr"
 MANIFEST = GOC / "ocr" / "data" / "manifest_pdf.csv"
 CSV_RA = GOC / "ocr" / "ket_qua_ocr.csv"
 MD_RA = GOC / "ocr" / "ket_qua_ocr.md"
+NGUONG_PHU = 0.8   # OCR ngắn hơn 80% text chuẩn → PDF thiếu trang, tách riêng
 
 
 def chuan(s: str) -> str:
@@ -90,6 +91,25 @@ def main() -> None:
                   f"{cer - cbd:.2%} | {t['giay'] / t['trang']:.2f} |")
     md += ["", "CER ở đây là cận trên: số trang, dòng chữ ký số và chữ trong dấu giáp lai có trên bản scan nhưng "
            "không có trong text chuẩn nên bị tính là lỗi chèn."]
+
+    # PDF không phủ hết text chuẩn (vbpl chỉ lưu một phần, hoặc bản khác) thì "lỗi xoá" là do THIẾU TRANG, không
+    # phải do OCR đọc sai → tách riêng, liệt kê rõ, không bỏ ngầm.
+    thieu = sorted({x["id"] for x in dong if x["ky_tu_ocr"] < NGUONG_PHU * x["ky_tu"]})
+    if thieu:
+        md += ["", f"## Chỉ tính PDF phủ đủ text chuẩn (ký tự OCR ≥ {NGUONG_PHU:.0%} text chuẩn)", "",
+               "| Cấu hình | Văn bản | CER không tính chèn | CER | Lỗi do dấu |", "|---|---:|---:|---:|---:|"]
+        for ten in tong:
+            x = [r for r in dong if r["cau_hinh"] == ten and r["id"] not in thieu]
+            c = sum(r["ky_tu"] for r in x)
+            def gop(k):
+                return sum(r[k] * r["ky_tu"] for r in x) / c
+            md.append(f"| {ten} | {len(x)} | {gop('CER_khong_chen'):.2%} | {gop('CER'):.2%} | "
+                      f"{gop('CER') - gop('CER_bo_dau'):.2%} |")
+        md += ["", f"PDF KHÔNG phủ đủ ({len(thieu)}) — vbpl chỉ lưu một phần văn bản:", ""]
+        for i in thieu:
+            r = next(r for r in dong if r["id"] == i)
+            md.append(f"- {r['so_hieu']} (`{i}`): {r['so_trang']} trang, OCR {r['ky_tu_ocr']:,} / "
+                      f"chuẩn {r['ky_tu']:,} ký tự")
     MD_RA.write_text("\n".join(md) + "\n")
     print("\n".join(md))
 
