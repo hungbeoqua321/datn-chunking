@@ -1,0 +1,1061 @@
+BỘ XÂY DỰNG CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+gyýờệj Độc lập - Tự do - Hạnh phúc
+Số: 66/2026/TT-BXD Hà Nội, ngày 24 tháng 8: năm 2026
+THÔNG TƯ
+Quy định về quản lý, bảo trì công trình hàng không
+
+Căn cứ Nghị định số 33/2025/NĐ-CP của Chính phủ quy định chức năng
+nhiệm vụ, quyên hạn và cơ cầu tổ chức của Bộ Xây dựng;
+
+Căn cứ Nghị định số 287/2025/NĐ-CP của Chính phủ quy định việc quản
+lý, sử dụng và khai thác tài sản kết cầu hạ tông hàng không;
+
+Căn cứ Nghị định số 207/2026/NĐ-CP của Chính phủ quy định chỉ tiết một
+số điều của Luật Xây dựng về quản lý chất lượng, thì công xây dựng và bảo trì
+công trình xây dựng;
+
+Theo đề nghị của Cục trưởng Cục Hàng không Việt Nam;
+
+Bộ trưởng Bộ Xây dựng ban hành Thông tư quy định về quản lý, bảo trì
+công trình hàng không.
+
+Chương I
+QUY ĐỊNH CHUNG
+
+Điều 1. Phạm vi điều chỉnh và đối tượng áp dụng
+
+1. Thông tư này quy định về quản lý, bảo trì công trình hàng không.
+
+2. Thông tư này áp dụng đối với các cá nhân, cơ quan, tô chức có liên quan
+đến công tác quản lý, bảo trì công trình hàng không.
+
+Điều 2. Giải thích từ ngữ
+
+Trong Thông tư này, các từ ngữ dưới đây được hiều như sau:
+
+1. Bảo dưỡng công trình hàng không là hoạt động được tiến hành thường
+xuyên, định kỳ đề duy trì công trình hàng không ở trạng thái khai thác, sử dụng
+bình thường và hạn chế phát sinh các hư hỏng công trình.
+
+2. Chủ quản lý, sử dụng công trình hàng không được quy định tại khoản 16
+Điều 2 Nghị định số 207/2026/NĐ-CP của Chính phủ quy định chỉ tiết một số
+
+2
+điều của Luật Xây dựng về quản lý chất lượng, thi công xây dựng và bảo trì công
+trình xây dựng (sau đây gọi là Nghị định số 207/2026/NĐ-CP) trừ doanh nghiệp
+kinh doanh, khai thác cảng được quy định tại khoản 6 Điều này.
+
+3. Công trình hàng không là các công trình tại cảng hàng không, bao gồm
+các công trình quy định tại khoản 1 Điều 3 Nghị định số 205/2026/NĐ-CP của
+Chính phủ về cảng hàng không và bãi cất, hạ cánh (sau đây gọi là Nghị định số
+205/2026/NĐ-CP) được phân loại như sau:
+
+a) Công trình kết cầu hạ tầng hàng không do Nhà nước đầu tư, quản lý là
+các công trình thuộc danh mục tài sản kết cầu hạ tầng hàng không (bao gồm cả
+tài sản quốc phòng, an ninh được giao cho doanh nghiệp kinh doanh, khai thác
+cảng sử dụng vào mục đích lưỡng dụng) theo quy định tại điểm a khoản 2 Điều
+5 Nghị định số 287/2025/NĐ-CP của Chính phủ quy định việc quản lý, sử dụng
+và khai thác tài sản kết cấu hạ tầng hàng không (sau đây gọi là Nghị định số
+278/2026/NĐ-CP) và điểm a khoản 6 Điều 42 Nghị định số 205/2026/NĐ-CP;
+
+b) Công trình hàng không khác là các công trình hàng không quy định tại
+khoản 1 Điều 3 Nghị định số 205/2026/NĐ-CP trừ công trình kết cấu hạ tầng
+hàng không do Nhà nước đầu tư, quản lý quy định tại điểm a khoản này.
+
+4. Công tác khác là nội dung được xác định theo kế hoạch quản lý, bảo trì
+công trình hàng không bao gỒm các công việc sau: kiểm tra, quan trắc, kiểm định
+chất lượng, đánh giá an toàn công trình; lập kế hoạch bảo trì hàng năm; lập, thẩm
+tra (trường hợp chưa có quy trình bảo trì) hoặc điều chính quy trình bảo trì; xây
+dựng định mức dự toán cho công tác bảo trì công trình hàng không chưa có trong
+hệ thống định mức; mua sắm vật tư dự phòng; các công việc liên quan đến xử lý
+công trình, tài sản hàng không đề thực hiện đảm bảo an toàn, an ninh hàng không
+theo quy định của pháp luật về hàng không và công tác quản lý của chủ sở hữu,
+chủ sử dụng công trình.
+
+5, Cơ sở dữ liệu về bảo trì công trình hàng không là tập hợp các thông tin
+về công trình và lịch sử bảo trì công trình được cập nhật, khai thác sử dụng trên
+hệ thống thông tin quản lý công trình hàng không và là một phần của cơ sở dữ
+liệu hàng không dân dụng theo quy định tại Điều 19 Nghị định số 221/2026/NĐ-
+CP của Chính phủ về Nhà chức trách hàng không Việt Nam và quản lý an toàn
+hàng không.
+
+6. Doanh nghiệp kinh doanh, khai thác cáng là doanh nghiệp quản lý tài
+sản kết cầu hạ tằng hàng không do Nhà nước đầu tư, quản lý theo quy định tại
+điểm a khoản 2 Điều 5 Nghị định số 287/2025/NĐ-CP và tài sản quốc phòng, an
+
+3
+ninh được khai thác vào mục đích lưỡng dụng theo quy định tại điểm a khoản ó
+Điều 42 Nghị định số 205/2026/NĐ-CP.
+
+7. Kiểm tra công trình hàng không là việc xem xét bằng trực quan hoặc
+bằng thiết bị chuyên dùng đề đánh giá hiện trạng công trình hàng không nhằm
+phát hiện các dấu hiệu xuống cấp, hư hỏng của công trình, thiết bị lắp đặt vào
+công trình đề có biện pháp xử lý kịp thời. Kiểm tra công trình hàng không bao
+gồm kiểm tra thường xuyên, kiểm tra định kỳ và kiểm tra đột xuất.
+
+8. Sửa chữa công trình hàng không là việc khắc phục, khôi phục, thay thế
+những hư hỏng của bộ phận công trình, thiết bị, cầu kiện công trình hay toàn bộ
+công trình được phát hiện trong quá trình khai thác, sử dụng nhằm đảm bảo sự
+làm việc bình thường, an toàn của công trình và an toàn hàng không. Sửa chữa
+công trình hàng không bao gồm:
+
+a) Sa chữa định kỳ công trình hàng không là sửa chữa hư hỏng, thay thế
+hoặc bồ sung bộ phận công trình, thiết bị lắp đặt vào công trình bị hư hỏng được
+thực hiện định kỳ theo quy trình bảo trì công trình hàng không và kế hoạch bảo
+trì công trình hàng không được duyệt;
+
+b) Sửa chữa đột xuất công trình hàng không là việc sửa chữa hư hỏng, thay
+thế hoặc bồ sung bộ phận công trình, thiết bị lắp đặt vào công trình bị hư hỏng
+được thực hiện khi bộ phận công trình, hạng mục công trình, thiết bị công trình
+bị hư hỏng do chịu tác động đột xuất như gió, bão, lũ lụt, động đất, va đập, cháy
+và những tác động đột xuất khác, bao gồm nhưng không giới hạn các trường
+hợp: sự cố tàu bay, phương tiện hoạt động trên khu bay; hoặc khi bộ phận công
+trình, hạng mục công trình, thiết bị công trình có biều hiện xuống cấp ảnh hưởng
+đến an toàn sử dụng, vận hành, khai thác công trình.
+
+Chương JI
+QUẦN LÝ, BẢO TRÌ CÔNG TRÌNH HÀNG KHÔNG
+
+Điều 3. Vêu cầu chung về quản lý, bảo trì công trình hàng không
+
+1. Công trình hàng không sau khi hoàn thành nghiệm thu, bản giao đưa vào
+khai thác, sử dụng phải được quản lý, bảo trì theo quy định tại Nghị định số
+207/2026/NĐ-CP, Thông tư này và pháp luật có liên quan.
+
+2. Việc quản lý, bảo trì công trình kết cầu hạ tằng hàng không do Nhà nước
+đầu tư, quản lý ngoài việc tuân thủ quy định tại khoản 1 Điều này còn phải thực
+hiện theo quy định tại Nghị định số 287/2025/NĐ-CP.
+
+4
+
+3. Công trình hàng không được theo dõi, quản lý chặt chẽ về tình trạng kỹ thuật.
+Đồi với công trình kết cầu hạ tầng hàng không do Nhà nước đầu tư, quản lý, yêu cầu
+quản lý và theo dõi kỹ thuật phải tuân thủ các quy định sau đây:
+
+a) Lập số theo dõi tình trạng kỹ thuật theo Phụ lục I ban hành kèm theo
+Thông tư này hoặc quản lý thông qua các hồ sơ, tài liệu, cơ sở dữ liệu số hóa có
+đầy đủ thông tin kỹ thuật của công trình;
+
+b) Tổ chức kiểm tra hiện trạng và lập biên bản xác nhận hiện trạng hư hỏng
+công trình (hoặc dấu hiệu hư hỏng công trình) giữa Cảng vụ hàng không và
+doanh nghiệp kinh doanh, khai thác cảng theo Phụ lục II ban hành kèm theo
+Thông tư này trước khi lập kế hoạch nhu cầu bảo trì.
+
+4. Công tác bảo trì công trình tuân thủ kế hoạch bảo trì hàng năm, quy trình
+bảo trì đã được phê duyệt và các quy định pháp luật có liên quan.
+
+5. Việc quản lý, bảo trì công trình đề bảo đảm duy trì thời hạn sử dụng
+theo thiết kế, an toàn khai thác, an ninh, an toàn hàng không, an toàn cho người
+và tài sản, công trình, đồng thời đáp ứng yêu cầu phòng, chống cháy, nô và bảo
+vệ môi trường.
+
+Điều 4. Quy trình bảo trì
+
+1. Quy trình bảo trì công trình hàng không được thực hiện theo quy định tại
+Điều 34 Nghị định số 207/2026/NĐ-CP.
+
+2. Việc lập, phê duyệt và điều chính quy trình bảo trì công trình kết cấu hạ
+tầng hàng không do Nhà nước đầu tư, quản lý được thực hiện theo quy định tại
+khoản 1 Điều này và các quy định sau:
+
+a) Đối với công trình đã đưa vào khai thác, sử dụng nhưng chưa có quy trình
+bảo trì, doanh nghiệp kinh doanh, khai thác cảng tô chức lập, phê duyệt quy trình
+bảo trì, tô chức kiểm định chất lượng công trình làm cơ sở đề lập quy trình bảo trì
+nếu cần thiết. Trong quy trình bảo trì phải xác định rõ thời gian sử dụng còn lại
+của công trình, các bộ phận, hạng mục công trình, thiết bị lắp đặt vào công trình;
+
+b) Doanh nghiệp kinh doanh, khai thác cảng điều chỉnh quy trình bảo trì
+theo quy định tại khoản 6 Điều 34 Nghị định số 207/2026/NĐ-CP;
+
+c) Chủ đầu tư tổ chức lập và phê duyệt quy trình bảo trì trong trường hợp
+nâng cấp, mở rộng, cải tạo công trình.
+
+5
+
+Điều 5. Kế hoạch bảo trì công trình hàng không
+
+1. Đối với công trình hàng không khác, kế hoạch bảo trì được thực hiện
+theo quy định tại Điều 35 Nghị định số 207/2026/NĐ-CP.
+
+2. Đối với công trình kết cầu hạ tầng hàng không do Nhà nước đầu tư, quản
+lý, kế hoạch bảo trì bao gồm:
+
+a) Kế hoạch nhu cầu;
+
+b) Kế hoạch quản lý, bảo trì.
+
+3. Việc lập, thẩm định và phê duyệt kế hoạch nhu cầu đối với công trình kết
+cầu hạ tằng hàng không do Nhà nước đầu tư, quản lý được thực hiện như sau:
+
+a) Căn cứ vào tình trạng kỹ thuật của công trình; số theo dõi tình trạng kỹ
+thuật công trình hoặc các hồ sơ, tài liệu, cơ sở dữ liệu khác có đầy đủ thông tín
+về tình trạng kỹ thuật của công trình; biên bản xác nhận hiện trạng hư hỏng công
+trình đã lập theo quy định tại điểm b khoản 3 Điều 3 Thông tư này; quy trình bảo
+trì (nếu có); hệ thống định mức xây dựng được cơ quan có thâm quyền ban hành
+hoặc các định mức được vận dụng, tính toán, điều chỉnh theo quy định tại điểm
+d khoản 5 Điều 6 Nghị định số 206/2026/NĐ-CP của Chính phủ quy định chi
+tiết về quản lý chi phí đầu tư xây dựng: quy chuân kỹ thuật; tiêu chuân áp dụng:
+mức độ ưu tiên được quy định tại điểm b khoản này, doanh nghiệp kinh doanh,
+khai thác cảng lập kế hoạch nhu cầu cho năm kế hoạch nhằm đảm bảo an toàn
+công trình trong quá trình khai thác;
+
+b) Mức độ ưu tiên được xác định như sau:
+
+Mức 1: công tác bảo dưỡng thường xuyên; các công việc thuộc kế hoạch
+quản lý, bảo trì năm trước chưa thực hiện xong phải chuyền tiếp sang năm kế
+hoạch; sửa chữa các hạng mục, công trình đã xuất hiện hư hỏng đến mức phải
+tiến hành bảo trì đề ngăn chặn việc phát sinh thêm hư hỏng, bảo đảm an toàn
+khai thác; mua sắm vật tư dự phòng;
+
+Mức 2: sửa chữa các hạng mục, công trình có dấu hiệu hư hỏng đề duy trì
+trạng thái khai thác, sử dụng bình thường và hạn chế phát sinh hư hỏng:
+
+Mức 3: thực hiện sửa chữa định kỳ theo quy chuần kỹ thuật, tiêu chuẩn áp
+dụng, quy trình bảo trì, tài liệu hướng dẫn của nhà sản xuất;
+
+Mức 4: sửa chữa các hạng mục, công trình đề nâng cao năng lực khai thác.
+
+c) Kế hoạch nhu cầu gồm các nội dung liên quan đến việc thực hiện công
+tác bảo dưỡng thường xuyên, sửa chữa định kỳ, công tác khác được lập theo Phụ
+
+6
+lục IV ban hành kèm theo Thông tư này;
+
+d) Thành phần hồ sơ trình kế hoạch nhu cầu gỒm: tờ trình theo Phụ lục II
+ban hành kèm theo Thông tư này; biên bản xác nhận hiện trạng hư hỏng công trình
+giữa Cảng vụ hàng không và doanh nghiệp kinh doanh, khai thác cảng;
+
+đ) Doanh nghiệp kinh doanh, khai thác cảng tổ chức lập kế hoạch nhu cầu
+của năm kế hoạch, trình Cục Hàng không Việt Nam thẩm định trước ngày 15
+tháng 5 của năm trước năm kế hoạch;
+
+e) Cục Hàng không Việt Nam tổ chức thâm định kế hoạch nhu cầu; yêu cầu
+doanh nghiệp kinh doanh, khai thác cảng tiếp thu, giải trình, hoàn thiện hồ sơ
+theo kết quả thâm định và gửi lại để Cục Hàng không Việt Nam trình Bộ Xây
+dựng xem xét, phê duyệt trước ngày 15 tháng ó của năm trước năm kế hoạch. Nội
+dung thầm định bao gỒm: kiểm tra sự cần thiết bảo trì và danh mục bảo trì thuộc
+tài sản kết cầu hạ tầng hàng không do Nhà nước đầu tư, quản lý; quy trình bảo trì
+được áp dụng: cơ sở xác định khối lượng và chi phí bảo trì, mức độ ưu tiên;
+
+g) Trên cơ sở kế hoạch nhu cầu được phê duyệt, Bộ Xây dựng tổng hợp dự
+toán kinh phí quản lý, bảo trì vào dự toán thu, chi ngân sách nhà nước hàng năm
+của Bộ Xây dựng, gửi Bộ Tài chính trước ngày 20 tháng 7 của năm trước năm
+kế hoạch.
+
+4. Căn cứ kế hoạch nhu cầu được Bộ Xây dựng phê duyệt, doanh nghiệp
+kinh doanh, khai thác cảng tổ chức lập dự án đầu tư xây dựng, dự toán bảo trì
+đối với công trình kết cầu hạ tầng hàng không do Nhà nước đầu tư, quản lý theo
+quy định tại Nghị định số 217/2026/NĐ-CP của Chính phủ quy định chi tiết một
+số điều của Luật Xây dựng về quản lý hoạt động xây dựng và trình Cục Hàng
+không Việt Nam thầm định, phê duyệt trước ngày 20 tháng 11 của năm trước
+năm kế hoạch, làm cơ sở lập kế hoạch quản lý, bảo trì.
+
+5. Việc lập, thầm định và phê duyệt kế hoạch quản lý, bảo trì đối với công
+trình kết cấu hạ tằng hàng không do Nhà nước đầu tư, quản lý được thực hiện
+như sau:
+
+a) Trên cơ sở thông báo của Bộ Xây dựng về dự toán chi ngân sách nhà
+nước cho hoạt động kinh tế hàng không và các quyết định phê duyệt dự án đầu
+tư xây dựng, dự toán bảo trì, doanh nghiệp kinh doanh, khai thác cảng rà soát và
+lập kế hoạch quản lý, bảo trì của năm kế hoạch, đảm bảo phù hợp với nguồn kinh
+phí được bố trí và trình Cục Hàng không Việt Nam thầm định trước ngày 01
+tháng 12 của năm trước năm kế hoạch;
+
+7
+
+b) Nội dung, thành phần hồ sơ của kế hoạch quản lý, bảo trì theo quy định
+tại điểm c, điểm d khoản 3 Điều này;
+
+c) Cục Hàng không Việt Nam tô chức thâm định kế hoạch quản lý, bảo trì;
+yêu cầu doanh nghiệp kinh doanh, khai thác cảng tiếp thu, giải trình, hoàn thiện
+hồ sơ theo kết quả thầm định và gửi lại để Cục Hàng không Việt Nam trình Bộ
+Xây dựng xem xét, phê duyệt trước ngày 10 tháng 12 của năm trước năm kế
+hoạch. Nội dung thẩm định: mức độ ưu tiên đảm bảo phù hợp với nguồn kinh
+phí được bó trí;
+
+d) Bộ Xây dựng phê duyệt kế hoạch quản lý, bảo trì trước ngày 25 tháng 12
+của năm trước năm kế hoạch.
+
+6. Điều chỉnh kế hoạch quản lý, bảo trì đối với công trình kết cầu hạ tầng
+hàng không do Nhà nước đầu tư, quản lý:
+
+a) Kế hoạch quản lý, bảo trì được điều chỉnh trong quá trình thực hiện đề
+phù hợp với tình trạng kỹ thuật thực tế của công trình;
+
+b) Doanh nghiệp kinh doanh, khai thác cảng lập hồ sơ điều chỉnh kế hoạch
+quản lý, bảo trì và trình Cục Hàng không Việt Nam thâm định trước ngày 01
+tháng 10 của năm kế hoạch;
+
+c) Thành phần hồ sơ, nội dung kế hoạch quản lý, bảo trì điều chính bao gồm
+tờ trình theo Phụ lục III ban hành kèm theo Thông tư này và thuyết minh nêu rõ
+nội dung điều chính, lý do, sự cần thiết phải điều chỉnh;
+
+d) Cục Hàng không Việt Nam tổ chức thâm định, yêu cầu doanh nghiệp kinh
+doanh, khai thác cảng tiếp thu, giải trình, hoàn thiện hồ sơ theo kết quả thâm định
+và gửi lại để Cục Hàng không Việt Nam trình Bộ Xây dựng xem xét, phê duyệt
+điều chỉnh kế hoạch quản lý, bảo trì trước ngày 15 tháng 10 của năm kế hoạch;
+
+đ) Bộ Xây dựng phê duyệt điều chỉnh kế hoạch quản lý, bảo trì trước ngày
+31 tháng 10 của năm kế hoạch.
+
+Điều 6. Thực hiện bảo trì công trình hàng không
+
+1. Công trình hàng không được thực hiện bảo trì theo quy định tại Điều 36
+Nghị định số 207/2026/NĐ-CP.
+
+2. Ngoài các quy định tại khoản 1 Điều này, bảo trì công trình kết cấu hạ
+tầng hàng không do Nhà nước đầu tư, quản lý được thực hiện như sau:
+
+a) Trường hợp công tác bảo dưỡng thường xuyên do doanh nghiệp kinh
+doanh, khai thác cảng tự tô chức thực hiện, doanh nghiệp kinh doanh, khai thác
+
+8
+cảng lập biên bản nghiệm thu công tác bảo dưỡng theo Phụ lục V ban hành kèm
+theo Thông tư này;
+
+b) Việc thực hiện sửa chữa đột xuất theo quy định tại điểm c khoản 3 Điều
+11 Nghị định số 287/2025/NĐ-CP. Doanh nghiệp kinh doanh, khai thác cảng
+phối hợp với Cảng vụ hàng không xác nhận hiện trạng hư hỏng đột xuất; chịu
+trách nhiệm quyết định biện pháp sửa chữa và tổ chức sửa chữa đột xuất;
+
+c) Trong quá trình thực hiện bảo trì, trường hợp phát sinh vật liệu, vật tư
+thu hồi từ việc bảo trì thì việc xử lý vật liệu, vật tư thu hồi được thực hiện theo
+quy định về xử lý vật liệu, vật tư thu hồi từ thanh lý tài sản tại Điều 20 Nghị định
+số 287/2025/NĐ-CP.
+
+Điều 7. Quan trắc công trình hàng không
+
+1. Quan trắc công trình hàng không được thực hiện theo quy định tại Điều
+37 Nghị định số 207/2026/NĐ-CP.
+
+2. Ngoài các công trình phải thực hiện quan trắc theo quy định tại khoản 1
+Điều 37 Nghị định số 207/2026/NĐ-CP, danh mục công trình hàng không phải
+thực hiện quan trắc đề phục vụ công tác bảo trì công trình hàng không bao gồm:
+đường cất hạ cánh; công trình nhà ga hành khách, nhà ga hàng hóa; khu kỹ thuật
+máy bay (hangar); kho hàng hóa có cấp công trình từ cấp I trở lên; các công trình
+kết cấu nhịp lớn dạng khung cấp đặc biệt; đài kiểm soát không lưu có cấp công
+trình từ cấp I trở lên.
+
+3. Việc quan trắc phục vụ công tác bảo trì công trình hàng không được thực
+hiện theo quy định tại khoản 3 Điều 6 Thông tư số 32/2026/TT-BXD của Bộ
+trưởng Bộ Xây dựng quy định chi tiết một số điều của Nghị định số
+207/2026/NĐ-CP ngày 15 tháng 6 năm 2026 của Chính phủ quy định chi tiết
+một số điều của Luật Xây dựng về quản lý chất lượng, thi công xây dựng và bảo
+trì công trình xây dựng.
+
+4. Chủ quản lý, sử dụng công trình hàng không và doanh nghiệp kinh doanh,
+khai thác cảng có trách nhiệm tổ chức thực hiện quan trắc công trình hàng không
+theo quy định tại Điều này.
+
+Điều 8. Quản lý chất lượng công việc bảo trì công trình hàng không
+
+1. Quản lý chất lượng công việc bảo trì công trình hàng không được thực
+hiện theo quy định tại Điều 38 Nghị định số 207/2026/NĐ-CP.
+
+2. Ngoài quy định tại điểm a khoản 1 Điều 38 Nghị định số 207/2026/NĐ-
+CP, tài liệu phục vụ công tác bảo trì công trình hàng không bao gồm:
+
+9
+
+a) Tài liệu khai thác công trình hoặc tài liệu khai thác sân bay đối với công
+trình có quy định phải lập tài liệu khai thác công trình hoặc tài liệu khai thác sân
+bay theo quy định của pháp luật về cảng hàng không và bãi cất hạ cánh;
+
+b) Sồ theo dõi tình trạng kỹ thuật công trình hoặc các hồ sơ, tài liệu, cơ sở
+dữ liệu khác có đầy đủ thông tin về tình trạng kỹ thuật của công trình đối với
+công trình kết cầu hạ tầng hàng không do Nhà nước đầu tư, quản lý;
+
+c) Quyết định bàn giao tài sản (nếu có) và hồ sơ bàn giao tài sản, quản lý
+đối với công trình kết cầu hạ tầng hàng không do Nhà nước đầu tư, quản lý theo
+quy định tại Điều 6 Nghị định số 287/2025/NĐ-CP.
+
+Điều 9. Chỉ phí bảo trì công trình hàng không
+
+1. Chi phí bảo trì công trình hàng không được thực hiện theo quy định tại
+Điều 39 Nghị định số 207/2026/NĐ-CP.
+
+2. Xác định chi phí bảo trì công trình hàng không được thực hiện theo quy
+định tại Thông tư số 40/2026/TT-BXD của Bộ trưởng Bộ Xây dựng hướng dẫn
+xác định chi phí bảo trì công trình xây dựng.
+
+Điều 10. Báo cáo việc thực hiện quản lý, bảo trì công trình kết cầu hạ
+tầng hàng không do Nhà nước đầu tư, quản lý
+
+1. Doanh nghiệp kinh doanh, khai thác cảng báo cáo Cục Hàng không Việt
+Nam kết quả thực hiện công tác quần lý, bảo trì định kỳ như sau:
+
+a) Tên báo cáo: Báo cáo định kỳ kết quả thực hiện công tác quản lý, bảo trì
+công trình;
+
+b) Nội dung báo cáo phải thể hiện đầy đủ các nội dung sau: nhiệm vụ thực
+hiện; khối lượng, kinh phí được Bộ Xây dựng phê duyệt hoặc điều chỉnh trong
+kế hoạch quản lý, bảo trì; chất lượng thực hiện; khối lượng hoàn thành; giá trị
+đã giải ngân; đề xuất, kiến nghị (nếu có);
+
+c) Cơ quan nhận báo cáo: Cục Hàng không Việt Nam;
+
+d) Phương thức gửi, nhận báo cáo: trên môi trường điện tử;
+
+đ) Thời hạn gửi báo cáo: trước ngày 15 tháng 02 của năm tiếp theo năm kế hoạch;
+
+e) Tần suất thực hiện báo cáo: 01 lần trong năm;
+
+g) Thời gian chốt số liệu báo cáo: từ ngày 01 tháng 01 đến ngày 31 tháng 12
+của năm kế hoạch;
+
+h) Biểu mẫu báo cáo theo Phụ lục VI ban hành kèm theo Thông tư này.
+
+10
+
+2. Cục Hàng không Việt Nam tổng hợp, báo cáo kết quả thực hiện kế hoạch
+quản lý, bảo trì về Bộ Xây dựng định kỳ hàng năm hoặc báo cáo đột xuất khi Bộ
+Xây dựng yêu cầu, chi tiết báo cáo như sau:
+
+a) Tên báo cáo: báo cáo kết quả thực hiện kế hoạch quản lý, bảo trì công trình;
+
+b) Nội dung báo cáo: các nội dung liên quan đến tình hình thực hiện kế hoạch
+quản lý, bảo trì công trình theo Phụ lục VII ban hành kèm theo Thông tư;
+
+c) Phương thức gửi, nhận báo cáo: trên môi trường điện tử;
+
+d) Tần suất báo cáo: định kỳ hàng năm;
+
+đ) Thời hạn gửi báo cáo: trước ngày 25 tháng 02 của năm tiếp theo năm kế hoạch;
+
+e) Thời gian chốt số liệu báo cáo: từ ngày 01 tháng 01 đến ngày 31 tháng 12
+của năm kế hoạch.
+
+Chương III
+ĐÁNH GIÁ AN TOÀN CÔNG TRÌNH HÀNG KHÔNG
+
+Điều 11. Đánh giá an toàn công trình hàng không
+
+1. Đánh giá an toàn công trình hàng không được thực hiện theo quy định
+tại Điều 40 Nghị định số 207/2026/NĐ-CP và Thông tư số 33/2026/TT-BXD
+của Bộ trưởng Bộ Xây dựng quy định chỉ tiết một số nội dung về đánh giá an
+toàn công trình trong quá trình khai thác, sử dụng đối với các công trình thuộc
+thầm quyền quản lý của Bộ Xây dựng.
+
+2. Ngoài quy định tại Điều 40 Nghị định 207/2026/NĐ-CP, việc đánh giá
+an toàn công trình hàng không được thực hiện như sau:
+
+a) Trong quá trình khai thác, sử dụng, đường cất hạ cánh phải được xác
+định chỉ số phân cấp mặt đường, hệ số ma sát mặt đường: đường lăn và sân đỗ
+tàu bay phải được xác định chỉ số phân cấp mặt đường đề đánh giá định kỳ về
+an toàn công trình;
+
+b) Đánh giá lần đầu đối với đường cất hạ cánh, đường lăn, sân đỗ tàu bay
+thực hiện khi công trình được xây dựng, nâng cấp, cải tạo và đưa vào khai thác;
+
+c) Tần suất đánh giá các lần tiếp theo đối với đường cất hạ cánh, đường lăn,
+sân đỗ tàu bay được thực hiện theo quy định tại khoản 11 Điều 6 Thông tư số
+52/2026/TT-BXD của Bộ trưởng Bộ Xây dựng hướng dẫn về cảng hàng không
+và bãi cất, hạ cánh.
+
+li
+
+Điều 12. Trách nhiệm tổ chức thực hiện đánh giá an toàn công trình
+hàng không
+
+1. Trách nhiệm tổ chức thực hiện đánh giá an toàn công trình hàng không
+được thực hiện theo quy định tại Điều 41 Nghị định số 207/2026/NĐ-CP.
+
+2. Đối với công trình kết cầu hạ tầng hàng không do Nhà nước đầu tư, quản
+lý, doanh nghiệp kinh doanh, khai thác cảng có trách nhiệm tô chức đánh giá an
+toàn công trình.
+
+Chương IV
+XỬ LÝ ĐÔI VỚI CÔNG TRÌNH HÀNG KHÔNG CÓ DẦU HIỆU
+NGUY HIẾM, CÔNG TRÌNH HÉT THỜI HẠN SỬ DỤNG
+
+Điều 13. Xử lý đối với công trình hàng không có dấu hiệu nguy hiểm,
+không đám bảo an toàn cho khai thác, sứ dụng
+
+1. Xử lý đối với công trình hàng không có dấu hiệu nguy hiểm, không đảm
+bảo an toàn cho khai thác, sử dụng được thực hiện theo quy định tại Điều 42
+Nghị định số 207/2026/NĐ-CP.
+
+2. Ngoài quy định tại khoản 1 Điều này, việc xử lý đối với công trình hàng
+không có dấu hiệu nguy hiểm, không đảm bảo an toàn cho khai thác, sử dụng
+được thực hiện như sau:
+
+a) Chủ quản lý, sử dụng công trình hàng không, doanh nghiệp kinh doanh,
+khai thác cảng thông báo cho Cảng vụ hàng không và Cục Hàng không Việt Nam;
+
+b) Trường hợp công trình kết cầu hạ tầng hàng không do Nhà nước đầu tư,
+quản lý cần khắc phục, sửa chữa đột xuất đề bảo đảm duy trì hoạt động an toàn,
+liên tục của cảng hàng không, sân bay, doanh nghiệp kinh doanh, khai thác cảng
+thực hiện theo quy định tại điểm b khoản 2 Điều 6 Thông tư này.
+
+3. Trường hợp công trình hàng không có nguy cơ gây mất an toàn phải dừng
+khai thác cảng hàng không hoặc đừng khai thác công trình, một phần công trình,
+chủ quản lý sử dụng công trình hàng không, doanh nghiệp kinh doanh, khai thác
+cảng có trách nhiệm báo cáo Cảng vụ hàng không, Cục Hàng không Việt Nam
+để triển khai các biện pháp bảo đảm an toàn hàng không theo quy định của pháp
+luật về hàng không dân dụng.
+
+Điều 14. Xử lý công trình hàng không hết thời hạn sử dụng theo thiết kế
+
+1. Thời hạn sử dụng của công trình hàng không theo thiết kế được xác định
+theo quy định tại khoản 1 Điều 43 Nghị định số 207/2026/NĐ-CP.
+
+12
+
+2. Đối với công trình hàng không đã sử dụng lâu năm, không có hồ sơ thiết
+kế hoặc có hồ sơ thiết kế nhưng không xác định thời hạn sử dụng thì chủ quản
+lý, sử dụng công trình hàng không, doanh nghiệp kinh doanh, khai thác cảng tổ
+chức kiểm tra, kiểm định đề đánh giá chất lượng hiện trạng của công trình hoặc
+đánh giá an toàn công trình và xác định thời hạn tiếp tục sử dụng công trình.
+
+3. Việc xử lý công trình hàng không hết thời hạn sử dụng theo thiết kế được
+thực hiện theo quy định tại Điều 43 Nghị định số 207/2026/NĐ-CP.
+
+4. Ngoài việc thực hiện theo quy định tại khoản 3 Điều này, đối với công
+trình kết cấu hạ tằng hàng không do Nhà nước đầu tư, quản lý hết thời hạn sử
+dụng nhưng có nhu cầu sử dụng tiếp, doanh nghiệp kinh doanh, khai thác cảng
+báo cáo Cục Hàng không Việt Nam, Bộ Xây dựng và cơ quan nhà nước có thẩm
+quyền theo quy định tại điểm c khoản 4 Điều 43 Nghị định số 207/2026/NĐ-CP.
+Cục Hàng không Việt Nam đánh giá, báo cáo Bộ Xây dựng đề Bộ Xây dựng có
+ý kiến gửi cơ quan nhà nước có thầm quyền xem xét và cho ý kiến về việc kéo
+dài thời hạn sử dụng của công trình theo quy định tại khoản 9 Điều 43 Nghị định
+số 207/2026/NĐ-CP.
+
+Chương V
+ĐIÊU KHOẢN THỊ HÀNH
+
+Điều 15. Trách nhiệm quản lý và bảo trì công trình hàng không
+
+1. Cục Hàng không Việt Nam:
+
+a) Tổ chức kiểm tra công tác thực hiện kế hoạch bảo trì công trình kết cấu
+hạ tầng hàng không do Nhà nước đầu tư, quản lý định kỳ tối thiều 01 lần trong
+02 năm; kiểm tra đột xuất khi phát hiện công trình có dấu hiệu mất an toàn, xảy
+ra sự có, hư hỏng lớn hoặc theo chỉ đạo của Bộ Xây dựng và cơ quan nhà nước
+có thâm quyền; đối với các công trình hàng không khác, tổ chức kiểm tra công
+tác thực hiện kế hoạch bảo trì định kỳ tối thiều 01 lần trong 03 năm hoặc kiểm
+tra đột xuất khi có yêu cầu;
+
+b) Thực hiện các chức năng của cơ quan chuyên môn về xây dựng theo quy
+định của Luật Xây dựng đối với các dự án bảo trì công trình kết cầu hạ tầng hàng
+không do Nhà nước đầu tư, quản lý;
+
+c) Tổ chức giám sát các hoạt động bảo trì công trình hàng không tuân thủ
+phương án đảm bảo an ninh, an toàn được cơ quan có thâm quyền phê duyệt.
+
+13
+
+2. Doanh nghiệp kinh doanh, khai thác cảng:
+
+a) Tổ chức kiểm tra, theo dõi định kỳ chất lượng công trình kết cầu hạ tầng
+hàng không do Nhà nước đầu tư, quản lý trong quá trình khai thác, sử dụng: thực
+hiện sửa chữa những hư hỏng để duy trì trạng thái kỹ thuật ồn định của công
+trình kết cầu hạ tằng hàng không do Nhà nước đầu tư, quản lý, bảo đảm an toàn
+công trình, an toàn hàng không:
+
+b) Chịu trách nhiệm về sự cố hoặc xuống cấp của công trình kết cầu hạ tầng
+hàng không do Nhà nước đầu tư, quản lý do không thực hiện bảo trì theo quy định;
+
+c) Chấp hành việc thanh tra, kiểm tra xử lý của cơ quan nhà nước có thẩm
+quyền trong việc thực hiện trách nhiệm của mình về quản lý, vận hành khai thác
+và bảo trì công trình kết cầu hạ tằng hàng không do Nhà nước đầu tư, quản lý;
+
+d) Báo cáo kê khai, thực hiện nhập dữ liệu vào hệ thống cơ sở dữ liệu về
+bảo trì công trình hàng không theo quy định.
+
+3. Chủ quản lý, sử dụng công trình hàng không:
+
+a) Tổ chức quản lý, khai thác và bảo trì công trình hàng không khác do
+mình quản lý, bảo đảm an toàn khai thác và hoạt động vận tải hàng không thông
+suốt theo quy định;
+
+b) Chịu trách nhiệm trước pháp luật về sự có hoặc xuống cấp của công trình
+hàng không khác do không thực hiện bảo trì theo quy định;
+
+c) Chấp hành việc thanh tra, kiểm tra xử lý của cơ quan nhà nước có thẩm
+quyền trong việc thực hiện trách nhiệm của mình về quản lý, vận hành khai thác
+và bảo trì công trình hàng không khác;
+
+d) Kê khai, thực hiện nhập dữ liệu vào hệ thống cơ sở dữ liệu về bảo trì
+công trình hàng không khác theo quy định.
+
+Điều 16. Quy định chuyên tiếp
+
+1. Đối với công tác quản lý, bảo trì công trình kết cầu hạ tầng hàng không
+do Nhà nước đầu tư, quản lý:
+
+a) Việc lập, thầm định, phê duyệt (bao gồm cả điều chỉnh, bồ sung) và tổ
+chức thực hiện kế hoạch bảo trì năm 2026 được tiếp tục áp dụng theo các quy
+định pháp luật về quản lý, bảo trì công trình hàng không có hiệu lực trước ngày
+Thông tư này có hiệu lực thi hành;
+
+b) Các hạng mục, công trình sửa chữa đã được phê duyệt dự án, dự toán
+trước ngày Thông tư này có hiệu lực thi hành được tiếp tục sử dụng đề làm cơ
+
+14
+sở lập, điều chỉnh, bồ sung kế hoạch quản lý, bảo trì mà không phải thực hiện
+thẩm định, phê duyệt lại theo quy định tại Thông tư này.
+
+2. Đối với công tác quản lý, bảo trì công trình hàng không khác: các kế
+hoạch bảo trì đã được phê duyệt trước ngày Thông tư này có hiệu lực thi hành
+thì tiếp tục thực hiện theo các nội dung đã được phê duyệt. Trường hợp có yêu
+cầu điều chỉnh, bồ sung hoặc phát sinh các công việc mới kề từ ngày Thông tư
+này có hiệu lực thi hành thì nội dung điều chỉnh, bồ sung, phát sinh đó phải thực
+hiện theo quy định tại Thông tư này.
+
+Điều 17. Hiệu lực thi hành
+
+1. Thông tư này có hiệu lực thi hành kể từ ngày 08 tháng 10 năm 2026.
+
+2. Trường hợp các văn bản quy phạm pháp luật viện dẫn tại Thông tư này
+được sửa đôi, bồ sung, thay thế thì áp dụng theo các quy định tại các văn bản
+quy phạm pháp luật sửa đồi, bồ sung, thay thế đó.
+
+3. Thông tư này thay thế Thông tư số 24/2021/TT-BGTVT ngày 22 tháng
+11 năm 2021 của Bộ trưởng Bộ Giao thông vận tải quy định về bảo trì công trình
+hàng không: Thông tư số 56/2019/TT-BGTVT ngày 31 tháng 12 năm 2019 của
+Bộ trưởng Bộ Giao thông vận tải ban hành quy định tiêu chí giám sát, nghiệm
+thu kết quả bảo trì tài sản kết cầu hạ tằng hàng không theo chất lượng thực hiện
+và chế độ, quy trình bảo trì tài sản kết cấu hạ tầng hàng không./.. ,
+
+Nơi nhận: KT. BỘ TRƯỞNG
+
+- Thủ tướng Chính phủ; THỦ TRƯỞNG
+
+- Các Phó Thủ tướng Chính phủ;
+
+- Văn phòng Trung ương Đảng:
+
+- Văn phòng Chủ tịch nước; s2
+- Văn phòng Quốc hội; u eiGửi
+
+- Văn phòng Chính phủ; xxx ”””m”””m”/m
+- Tòa án nhân dân tôi cao; :
+
+- Viện Kiểm sát nhân dân tối cao; I2 Anh Tuần
+
+- Các Bộ, cơ quan ngang Bộ;
+
+- Kiêm toán nhà nước; ,
+
+- UBND các tỉnh, thành phô trực thuộc Trung ương;
+
+- Sở Xây dựng các tỉnh, thành phô trực thuộc Trung ương;
+
+- Công báo; Công TTĐT Chính phủ;
+
+- Công thông tin điện tử Bộ Xây dựng:
+
+- Cục Kiêm tra văn bản và Tô chức thị hành pháp luật (BTP);
+
+- Bộ Xây dựng: Bộ trưởng và các Thứ trưởng:
+
+- Các đơn vị trực thuộc Bộ Xây dựng:
+
+- Lưu: VT, Cục HKVN.
+
+Phụ lục I
+M.U SỐ THEO DÕI TÌNH TRẠNG KỸ THUẬT CÔNG TRÌNH
+KX—T CA. 1X TẢNG HÀNG KHÔNG DO NHÀ NƯỚC ĐẦU TƯ, QUẦN LÝ ©
+“Ban anh kèm theo Thông tư số 66/2026/TT-BXD ngày 24 tháng 8. năm 2026
+của Bộ trưởng Bộ Xáy dựng)
+1. Mẫu bìa số theo dõi tình trạng kỹ thuật công trình
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+SỐ THEO DỐI TÌNH TRẠNG KỸ THUẬT CÔNG TRÌNH
+KẾT CẤU HẠ TẢNG HÀNG KHÔNG DO NHÀ NƯỚC ĐẦU TƯ, QUẦN LÝ
+Quyến số: .............
+Đơn vị quản lý, khai thác công trình......................
+Tên công trình: ............
+Thời gian bắt đầu: ......................./......nnnnnnennnnes .eenensrnereenereenersessrsssers
+Hết quyền ngày: .................../...eeenenennenenneneeeeenensenesnenereeeeseerssn
+....... năm 20......
+
+(1) Mẫu này được thực hiện theo hình thức tài liệu giấy hoặc tài liệu điện tử. Trường
+
+hợp doanh nghiệp kinh doanh, khai thác cảng có hệ thống quản lý tài sản có đầy đủ các
+
+thông tin cơ bản theo mẫu này thì không phải lập số theo dõi tình trạng kỹ thuật công
+
+trình kết cầu hạ tầng hàng không do Nhà nước đầu tư, quản lý.
+
+2
+
+2. Nội dung ghi số theo dõi, kiểm tra trạng thái kỹ thuật công trình
+
+Phần I. Mục đích, yêu cầu
+
+1. Theo dõi, kiểm tra trạng thái kỹ thuật công trình nhăm mục đích phát hiện
+kịp thời những hư hỏng, vi phạm hoặc sự cố xây ra đề nhanh chóng khắc phục,
+tránh những hậu quả xấu làm thiệt hại đến công trình và làm mất an ninh, an toàn
+cho các hoạt động khai thác vận tải hàng không. Số theo dõi, kiểm tra trạng thái
+kỹ thuật công trình là tài liệu phục vụ công tác quản lý, bảo trì công trình và được
+ghi chép đầy đủ và lưu trữ tại đơn vị quản lý, khai thác công trình.
+
+2. Cá nhân có trách nhiệm phải ghi chép, phản ánh đầy đủ mọi tình trạng, sự
+cố xảy ra đối với công trình theo nhiệm vụ được giao, ghi ý kiến nếu có và ký tên
+dưới ý kiến đề xuất, báo cáo.
+
+3. Lãnh đạo bộ phận được giao nhiệm vụ kiểm tra, theo dõi trạng thái kỹ
+thuật công trình kiểm tra nội dung ghi chép trong số vào cuối ngày của đợt kiểm
+tra và ghi ý kiến xử lý, đồng thời ký tên dưới ý kiến xử lý và báo cáo cấp có thẩm
+quyền trong trường hợp vượt thâm quyền xử lý.
+
+4. Nội dung ghi chép trong số này là một trong các căn cứ đề đánh giá chất
+lượng công tác bảo trì công trình.
+
+5. Các nội dung khác theo nhu cầu quản lý của người quản lý, khai thác
+công trình.
+
+Phần II. Hướng dẫn nội dung ghi trong số theo dõi, kiểm tra trạng thái
+kỹ thuật công trình
+
+Bao gồm các nội dung chính sau:
+
+1. Nội dung ghi trong số theo dõi, kiểm tra gồm:
+
+a) Người thực hiện theo dõi, kiểm tra;
+
+b) Thời gian theo dõi, kiểm tra;
+
+c) Khu vực kiểm tra;
+
+d) Kết quả kiểm tra: Ghi kết quả theo dõi, kiểm tra về tình trạng của công
+trình, mô tả các điểm, dấu hiệu bất thường được phát hiện ra (như vị trí phát hiện
+điểm bất thường, dầu hiệu phát hiện hư hỏng hoặc đã hư hỏng có phát triển và các
+trường hợp hư hỏng khác nếu có).
+
+3
+
+đ) Kết quả bảo trì: ghi kết quả đã được báo trì đề khắc phục các điểm bất
+thường, dấu hiệu phát hiện hư hỏng hoặc đã hư hỏng có phát triển và các trường
+hợp hư hỏng khác nếu có;
+
+e) Nội dung theo dõi, kiểm tra được lập theo mẫu sau:
+
+Kết quả kiểm tra Hoàn thành việc
+Nội dung kiểm ĩ Không Mô tả chỉ tiết các bảo trì và khác
+tra Đat Không áp điêm, dâu hiệu bất phục các điêm,
+° đạt d thường dâu hiệu bât
+ùng thường (
+
+2. Việc ghi chép phải thực hiện trong khi tiền hành kiểm tra.
+
+3. Nội dung ghi chép phải mạch lạc, rõ ràng, tỉ mỉ, chính xác, nhân viên thực
+hiện kiểm tra phải ký tên ở phía dưới.
+
+4. Doanh nghiệp kinh doanh, khai thác cảng:
+
+a) Tự quyết định số trang của sô theo dõi, kiểm tra và đóng dấu giáp lai và
+có thể bồ sung nội dung yêu cầu khác trong số này nếu có nhu cầu;
+
+b) Kiểm tra quy trình bảo trì công trình đề đảm bảo sự đồng bộ, tránh chồng
+chéo nội dung: trường hợp cần thiết, quy định bảng mẫu trên trong quy trình bảo
+trì công trình.
+
+5. Trường hợp áp dụng số theo dõi, kiểm tra trạng thái kỹ thuật công trình
+dạng điện tử, người quản lý, khai thác công trình có trách nhiệm ban hành quy
+trình quản lý, sử dụng sô điện tử.
+
+(1) Mô ủ thông tin và thời gian được bảo trì, hoàn thành khắc phục các điểm, dấu hiệu bất thường
+
+Phụ lục H
+JstlìN BẢN XÁC NHẬN HIỆN TRẠNG CÔNG TRÌNH
+Kk.^ f =b H2. TẢNG HÀNG KHÔNG DO NHÀ NƯỚC ĐẦU TƯ, QUẢN LÝ
+“Ran bè:,h kèm theo Thông tư số 66./2026/TT-BXD ngày 24 tháng 8. năm 2026
+của Bộ trưởng Bộ Xáy dựng)
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+"BIẾN BẢN XÁC NHẬN HIỆN TRẠNG CÔNG TRÌNH
+KÉT CÁU HẠ TẢNG HÀNG KHÔNG DO NHA NƯỚC ĐẦU TƯ, QUẢN LÝ
+
+Căn cứ Thông tư số: ..../2026/TT-BXD ngày ... tháng ... năm 2026 của
+Bộ trưởng Bộ Xây dụng;
+
+Hôm nay, vào hồi giờ phút, ngày... tháng... năm.... tại ...............,
+chúng tôi xác nhận hiện trạng công trình kêt câu hạ tâng hàng không do Nhà nước
+đâu tư, quản lý như sau:
+
+A. THÀNH PHẦN
+
+1. Đại diện Cảng vụ hàng không(”;
+
+Ông (Bà): ........................................ Chức vụ:
+
+Ông (Bà): ........................................ Chức vụ:
+
+Ông (Bà): ........................................ Chức vụ:
+
+2. Đại diện doanh nghiệp kinh doanh, khai thác cảng:
+Ông (Bà): .........................................Chức vụ:
+
+Ông (Bà): .........................................Chức vụ:
+
+2
+B. NỘI DỤNG
+1. Ghi nhận hiện trạng công trình/hạng mục công trình/thiết bị như sau:
+ên công trình/hạ \ _~—
+TT Tên công trình/hạng \ Tình trạng) Ghi chút
+mục công trình/thiêt bị °
+.  ìm%$XẠJ ”~ + cv
+—Ð/„ÐmmÝmmï Hm
+. .
+. «9V
+—ỶÝímI
+2. Ý kiến khác của các bên tham gia (nếu có)
+ĐẠI DIỆN ĐẠI DIỆN
+CẢNG VỤ HÀNG KHÔNG DOANH NGHIỆP KINH DOANH,
+(Ký, ghi rõ họ tên, đóng dâu) KHAI THÁC CANG
+(Ký, ghi rõ họ tên, đóng dâu)
+
+(1) Ghi cụ thể tên đại diện Cảng vụ hàng không.
+(2) Ghi cụ thể tên doanh nghiệp kinh doanh, khai thác cảng.
+(3) Ghi tình trạng hư hỏng, xuống cấp của công trình/hạng mục công trình/thiết bị. Việc kiểm
+tra, xác nhận hiện trạng thiết bi/công trình được thực hiện bằng trực quan hoặc các thiết bị đo
+lường thông thường (như thước đo.... không sử dụng các thiết bị chuyên sâu). Nội dung xác
+nhận chỉ bao gồm: ghi nhận lại hiện trạng của thiết bị/công trình và các biến dạng, hư hỏng phổ
+biến nếu có như ổ gà, nứt rạn, lún lõm, khe co giãn, tình trạng thoát nước mặt
+đường/mương/cống...trên bề mặt đường hoặc công trình (không xác nhận hoặc kết luận công
+trình có cằn/không cần bảo trì công trình, không đưa ra phương án bảo trì và kinh phí sửa chữa).
+(4) Nêu rõ các tải liệu, các nội dung cần chú ý hoặc kèm theo Biên bản như hình ảnh thực tế,
+các báo cáo hoặc phản ánh của người, tổ chức hoạt động tại cảng hàng không liên quan đến
+chất lượng công trình, thiết bị, làm ảnh hưởng đến an toàn bay.
+
+Vhụ lục III
+*ia:J TỜ TRÌNH
+KÉẺ HOẠCH NHƯ CÂU/KE HCẠCH QUẦN LÝ, BẢO TRÌ CÔNG TRÌNH
+KẾT CẤU HẠ TẢNG hHàÏG KHÔNG DO NHÀ NƯỚC ĐẦU TƯ, QUẦN LÝ
+(Ban hành kèm theo Thông tư số 66./2026/TT-BXD ngày24 tháng 8. năm 2026
+của Bộ trưởng Bộ Xáy dựng)
+TÊN ĐƠN VỊ CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+II Độc lập - Tự do - Hạnh phúc
+Số: .../TTr-...
+Hà Nội, ngày ... tháng ... năm 20...
+TỜ TRÌNH
+Về việc thẩm định, phê duyệt kế hoạch (nhu cầu) quản lý, bảo trì công trình
+kêt câu hạ tâng hàng không do Nhà nước đâu tư, quản lý năm ...(1)...
+Kính gửi: Cục Hàng không Việt Nam
+Thực hiện quy định về bảo trì công trình, ...(2)... trình thâm định, phê
+duyệt kê hoạch quản lý, bảo trì công trình kêt câu hạ tâng hàng không do Nhà
+nước đâu tư, quản lý năm ...(1)... như sau:
+1. Căn cứ
+...Ồ)...
+2. Kết quả thực hiện kế hoạch bảo trì năm trước
+...đ)...
+3. Cơ cấu bố trí kinh phí kế hoạch
+...Ó)..
+4. Nội dung kế hoạch
+...(Ô)...
+5. Đề xuất, kiến nghị
+...Ơ)...
+Nơi nhận: CHỨC VỤ CỦA NGƯỜI KÝ
+nh (Ký, ghi rõ họ tên, đóng dâu)
+
+2
+(1) Ghi năm kê hoạch. ;
+(2) Ghi tên doanh nghiệp kinh doanh, khai thác cảng trình kê hoạch bảo trì.
+(3) Ghi đầy đủ các căn cứ làm cơ sở đề xây dựng kế hoạch bảo trì bao gồm: các văn bản quy
+phạm pháp luật, quy chuẩn kỹ thuật, tiêu chuẩn áp dụng; các văn bản chỉ đạo, điều hành trong
+quá trình thực hiện bảo trì có liên quan.
+(4) Tóm tắt kết quả thực hiện đối với các nội dung đã và đang thực hiện kế hoạch bảo trì của
+năm trước.
+(5) Thuyết minh mục tiêu hướng tới và nguyên tắc cơ cầu bố trí kinh phí trong kế hoạch đề bảo
+đảm phù hợp với tình trạng kỹ thuật của công trình kết cầu hạ tầng hàng không; quá trình điều
+tra, xác nhận khối lượng nhu cầu bảo trì.
+(6) Thuyết minh kế hoạch (nhu cầu), trong đó nêu tình trạng kỹ thuật của công trình, sự cần
+thiết phải bảo trì, quy trình bảo trì, định mức dự toán, quy chuân kỹ thuật, tiêu chuẩn áp dụng
+và chi phí bảo trì, mức độ ưu tiên.
+(7) Nêu rõ đề xuất, kiến nghị của doanh nghiệp kinh doanh, khai thác cảng.
+
+Phụ lục IV
+KẾ HOẠCH NHŨ (.:/KẾ :¿GCACH QUẦN LÝ, BẢO TRÌ CÔNG TRÌNH
+KẾT CẤU HẠ TẦNG š£ \Y© KHÔNG DO NHÀ NƯỚC ĐẦU TƯ, QUẦN LÝ
+(Ban hành kèm thec Théne +„ só66../2026/TT-BXD ngày 24 tháng&.. năm 2026
+của Bộ trưởng Bộ Xáy dựng)
+KẾ HOẠCH NHU CẢU/KẾ HOẠCH QUẢN LÝ, BẢO TRÌ CÔNG TRÌNH .
+KÉT CÁU HẠ TẢNG HÀNG KHÔNG DO NHA NƯỚC ĐẦU TƯ, QUẢN LÝ
+NAM...
+(Kèm theo Tờ trình số ... ngày ... của...)
+Tiên công trình, Khối |Kinh phí _ | Thời Phương Mức
+hạng mục công | Đơn lượng/công thực hiện Quy mô, gian thức độ ưu
+TT |trình/ hạng mục| vị iêc chủ ..|giái pháp thưc | thực tiên (Ghi chú
+công việc thực | tính YICC CHỊ (triệu bảo trì | ni hiê
+hiên yêu đông) lẹn lẹn
+m0 20 3|) @m |) @ø | @ | 0 | @œ | mm
+mNxN“mmmmsm
+thường xuyên
+ng  Ị
+-_ lbảo dưỡng
+mu .s.ssmssssm
+sa | | | | |
+„ lnêu có)
+mx..mmmsm
+2 ¡
+k
+nem | l | | | |
+_ kửa chữa
+22 Cnipikhkee | | ii  ì.ÔẦU..ẦiÑMU:Ñ II
+ng | | | | |
+„ lnêu có)
+3 Cmtekhep ,/ “CỤ ỐỰUỐỐỰU-ÔUÔỰUI”: UỰI
+ni . ,.  ,.
+mm
+si  ,L , | II
+có)
+Em XmmmsSm
+3.4 Âu
+lượng (nêu có
+
+2
+Đánh giá an toàn
+3.5 Icông trình (nêu
+có
+3.6 L.\› x
+trì hàng năm
+Lập, thẩm tra
+hoặc điêu chỉnh
+3.7 |quy trình bảo trì
+công trình xây
+dựng (nêu có)
+38 Vậtdgpong ở >> òẠ vs” ò ÔÑÔUUI
+ÔNG  l |
+Diễn giải, thuyết minh:
+Cột (5) Kinh phí thực hiện được xác định như sau:
+
+a) Kinh phí bảo dưỡng thường xuyên: căn cứ khối lượng công việc cần bảo dưỡng thường
+xuyên; định mức công tác bảo dưỡng thường xuyên; suât chị phí bảo dưỡng thường xuyên; các
+quy định lập, quản lý chi phí xây dựng công trình và quy định lập, quản lý chi phí bảo trì của
+cơ quan thâm quyên;
+
+b) Kinh phí sửa chữa định kỳ: căn cứ khối lượng cần thực hiện dự kiến, định mức dự toán
+do cơ quan thâm quyên ban hành; quy định vê lập, quán lý chi phí xây dựng của cơ quan có
+thâm quyên; kinh phí đã bô trí lũy kê đền năm xây dựng kê hoạch đôi với công trình chuyên
+tiệp; hoặc ước tính theo suât đâu tư sửa chữa định kỳ các công trình tương tự đê xác định;
+
+. . c) Kinh phí công tác khác: căn cứ khối lượng cần thực hiện phù hợp quy định hiện hành
+về nguôn vôn bảo trì, định mức dự toán, định mức chi phí do cơ quan thâm quyên ban hành;
+quy định về lập, quản lý chi phí xây dựng của cơ quan thâm quyên đê xác định.
+
+Fhu lục V
+MẪU BIẾN BẢN YCH 15M “2U CÔNG TÁC BẢO DƯỠNG CÔNG TRÌNH
+KẾT CẤU HẠ TẦNG H 1V!” KHÔNG DO NHÀ NƯỚC ĐẦU TƯ, QUẦN LÝ
+(Ban hành kèm theo Thô:> “:sö 66./2026/TT-BXD ngày 24 tháng 8. năm 2026
+của Bộ trưởng Bộ Xáy dựng)
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+BIẾN BẢN NGHIỆM THU CÔNG TÁC BẢO DƯỠNG
+
+Căn cứ Thông tư số: ..../2026/TT-BXD ngày ... tháng ... năm 2026 của
+Bộ trưởng Bộ Xây dụng;
+
+Căn cứ Quy trình bảo trì/ Hướng dẫn sử dụng thiết bị.
+
+Hôm nay, vào hồi .....giờ .... phút, ngày... tháng... năm...., tại nhnnnnnneennrne
+chúng tôi xác nhận nghiệm thu công tác bảo dưỡng thường xuyên công trình kêt
+câu hạ tâng hàng không do Nhà nước đâu tư, quản lý như sau:
+
+A. THÀNH PHẦN
+
+1. Đại diện đơn vị thực hiện công tác bảo dưỡng();
+
+Ông (Bà): ........................................ Chức vụ:
+
+Ông (Bà): ........................................ Chức vụ:
+
+Ông (Bà): ........................................ Chức vụ:
+
+2. Đại diện đơn vị quản lý, khai thác, sử dụng công trình kết cầu hạ tầng
+hàng không do Nhà nước đâu tư, quản lý được bảo dưỡng;
+
+Ông (Bà): .........................................Chức vụ:
+
+Ông (Bà): .........................................Chức vụ:
+
+2
+B. NỘI DUNG
+Ì. Hai bên xác nhận công tác bảo dưỡng thường xuyên các công trình kết cấu hạ
+tâng hàng không do Nhà nước đâu tư, quản lý chi tiệt như sau:
+Tên công Vật tư hao
+trình/hạng mục| Thời gian Nôi dun phí đề thực | Đánh giá
+TT |côngtrình/thiết| thực hiện |, .Ẻ dướn hiện công |chất lượng
+bịđược bảo | bảo dưỡng .| việcbio [bảo dưỡng
+dưỡng dưỡng
+mm
+....
+..
+...
+s! II  * | + |
+2. Ý kiến khác của các bên (nếu có)
+3. Biên bản nghiệm thu này được lập thành 02 bản, mỗi bên giữ 01 bản và có giá
+trị pháp lý như nhau.
+ĐẠI DIỆN ĐẠI DIỆN
+Đơn vị thực hiện công tác báo dưỡng... Đơn vị quán lý, khai thác, sử dụng
+(Ký, ghi rõ họ tên, đóng dâu) công trình kêt câu hạ tâng hàng
+không do Nhà nước đâu tư, quản lý
+được bảo dưỡng
+(Ký, ghi rõ họ tên, đóng dâu)
+
+Phụ lục VI
+MẪU BÁO CÁO ĐỊNH KỲ KẾT (9D! F;tt 7 H£UN KẾ HOẠCH QUẢN LÝ, BẢO TRÌ CÔNG TRÌNH
+KẾT CẤU HẠ TẦNG HÀ từ xZ4ÔNG DO NHÀ NƯỚC ĐẦU TƯ, QUẦN LÝ
+(Ban hành kèm theo Thông tư số 66./2020/: 1-BXD ngày 24 tháng 8. năm 2026 của Bộ trưởng Bộ Xây dựng)
+TÊN ĐƠN VỊ CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+II Độc lập - Tự do - Hạnh phúc
+Số: ......... ngày ... tháng ... năm ...
+— BÁO CÁO ti.
+ĐỊNH KỲ KÉT QUA THỤC HIỆN KẾ HOẠCH QUAN LY, BAO TRỊ CÔNG TRINH
+KÉT CẤU HẠ TẦNG HÀNG KHÔNG DO NHÀ NƯỚC ĐẦU TƯ, QUẢN LÝ NĂM....
+Kính gửi: Cục Hàng không Việt Nam.
+ê „  Nhữngđiều Thuận phương | bánh giá | Những đề xuất,
+TT | lên hạng mục | Đơn |” Ngày hoàn Lùnh sọ với. 5n đắm bảo an | Lốp quả kiến nghị
+ˆ . : “ Ấ x niÃi mu Ñ . Ñ qu ên nghị
+công việc vị Kế |Đãthực Kêhoạch |Đã giải ngân| thành kế hoạch ninh, an toàn thưc hiên (nếu có)
+hoạch | hiện | (triệu đồng) (triệu đồng) thi công mm
+ABoum tr” /h Đr |... ,.  ..............
+.- LLLL. L -L-XIL L IL
+
+2
+"em...
+k
+i..
+ệ....... ... .Ỉ.
+. .
+xuât
+
+.Ð.........
+ệ.. ...........
+DCmgekkl | | | | .. ỖỈỒ
+..„ ....
+... . .  .....èòp......
+ệ.......
+ệ......... .......
+S„Hgog | | |ạ° |1  . |  71«ẹœ+91T177 4/7. (
+Diễn giải, thuyết minh:
+
+Nơi nhận: CHỨC VỤ CỦA NGƯỜI KÝ
+
+———X—m (Ký, ghi rõ họ tên, đóng dầu)
+
+Cột (10) Chỉ áp dụng đối với công tác bảo trì công trình được cơ quan có thẩm quyền chấp thuận phương án đảm bảo an ninh, an toàn trong quá trình thi công.
+Cột (11) Kết quả đánh giá được căn cứ tỷ lệ kinh phí đã thực hiện giải ngân trong năm kế hoạch
+
+Phụ lục VII
+MẪU BÁO CÁO k.ÊT :JU Š 11! Vt! HIỆN KẾ HOẠCH QUẢN LÝ, BẢO TRÌ
+CÔNG TRÌNH Eñ* ÂU 14 TẲNG HÀNG KHÔNG DO NHÀ NƯỚC
+"ÂU 7U, QUẦN LÝ
+(Ban hành kèm theo Thôn; ¿u số 66/2026/TT-BXD ngày 24 tháng 8. năm 2026
+của Bộ trưởng Bộ Xáy dựng)
+KÉT QUÁ THỰC HIỆN KẾ HOẠCH QUẢN LÝ, BẢO TRÌ CÔNG TRÌNH
+KẾT CẤU HẠ TẢNG HÀNG KHÔNG DO NHÀ NƯỚC ĐẦU TƯ, QUẦN LÝ
+NĂM...
+(Ban hành kèm theo Văn bản số... ngày ... của Cục Hàng không Việt Nam)
+Kính gửi: Bộ Xây dựng
+Sô Quyêt định phê triệu đồng Tông _—_—
+„ | duyệt Kế hoạch Ñ kinh phí R  NHG
+Tên Ì quản lý, bảo trì _ | sứa |Công| TôỔng | thực | PK
+TT đơn [noặc Văn bản báo | Báo | Sửa [nga | tác |Kinh phí| hiện | “Cổ H
+VÌ káo Kế hoạch quản quang | Chữa | gạt |khác |đư kiến | (uiệu | CÔ.
+lý, bảo trì năm ... định kỳÌ xuất hn đồng) 2)
+lện
+L1mị2| ø  |m|sm | |2|sm |ø | mo
+CHỨC VỤ CỦA NGƯỜI KÝ
+Jơi nhận: (Ký, ghi rõ họ tên, đóng dầu)

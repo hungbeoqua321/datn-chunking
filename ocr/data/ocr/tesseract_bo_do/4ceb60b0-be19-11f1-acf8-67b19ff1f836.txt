@@ -1,0 +1,1357 @@
+BỘ CÔNG THƯƠNG CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+ggyseyyyg Độc lập - Tự do - Hạnh phúc
+Số: 61/2026/TT-BCT Hà Nội, ngày 29 tháng 9 năm 2026
+THÔNG TƯ
+Ban hành Quy chuẩn kỹ thuật quốc gia về trụ sạc, trạm sạc xe điện
+
+„Căn cứ Luật T. lêu chuẩn và quy chuẩn kỹ thuật số 68/2006/QH1 ] được sửa
+đói, bố sung bởi Luật sô 35/2018/QH14 và Luật số 70/2025/QH75;
+
+_.. Căn cứ Luật Chất lượng sản phẩm, hàng hóa số 05/2007/QH12 được sửa
+đói, bố sung bởi Luật sô 35/2018/QH14 và Luật số 78/2025/QHT5;
+
+Căn cứ Luật Điện lực số 61/2024/QH15 được sửa đổi, bổ sung bởi Luật số
+94/2025/QH15, Luật số 1 16/2025/QH15 và Luật số 135/2025/QH15,
+
+„Căn cứ Nghị định số 22/2026/NĐ-CP của Chính phủ quy định chỉ tiết một
+số điều và biện pháp đề tô chức, hướng dân thi hành Luật Tiêu chuẩn và quy
+chuẩn kỹ thuật;
+
+Căn cứ Nghị định số 351/2026/NĐ-CP của Chính phủ quy định chức năng,
+nhiệm vụ, quyền hạn và cơ cầu tô chức của Bộ Công Thương;
+
+Theo đề nghị của Cục trưởng Cục Công nghiệp;
+
+Bộ trưởng Bộ Công Thương ban hành Thông tư ban hành Quy chuẩn kỹ
+thuật quỐc gia về trụ sạc, trạm sạc xe điện.
+
+Điều 1. Ban hành Quy chuẩn kỹ thuật quốc gia
+
+Ban hành kèm theo Thông tư này Quy chuân kỹ thuật quốc gia về trụ sạc,
+trạm sạc xe điện (sau đây gọi là Quy chuân).
+
+Ký hiệu: QUVN 32:2026/BCT.
+
+Điều 2. Điều khoản thi hành
+
+1. Thông tư này có hiệu lực thi hành kể từ ngày 01 tháng 7 năm 2027.
+
+2. Trụ sạc đã được lắp đặt hợp pháp trước ngày Thông tư có hiệu lực thi
+hành được tiệp tục sử dụng. Chủ sở hữu, đơn vị vận hành có trách nhiệm duy trì
+vận hành an toàn; kiêm tra, bảo trì, khắc phục khiêm khuyêt và xử lý nguy cơ trực
+tiếp theo khoản 5 Điều này.
+
+3. Đối với trạm sạc thuộc phạm vi điều chỉnh của Quy chuẩn đã hoạt động
+trước ngày Thông tư có hiệu lực thi hành, chủ đâu tư, chủ sở hữu, đơn vị vận hành
+có trách nhiệm:
+
+a) Rà soát việc đáp ứng các yêu cầu an toàn của Quy chuần trong thời hạn
+06 tháng kê từ ngày Thông tư có hiệu lực thị hành;
+
+2
+
+b) Hoàn thành việc khắc phục các nội dung chưa đáp ứng yêu cầu an toàn
+của Quy chuân trong thời hạn 24 tháng kê từ ngày Thông tư có hiệu lực thi hành.
+Nguy cơ trực tiếp phải được xử lý ngay theo khoản 5 Điêu này;
+
+c) Khi sửa chữa, cải tạo, mở rộng hoặc thay đổi cấu hình kể từ ngày Thông
+tư có hiệu lực thi hành, phân được sửa chữa, cải tạo, mở rộng hoặc thay đôi câu
+hình phải đáp ứng Quy chuân và quy định của pháp luật có liên quan.
+
+4. Đối với trạm sạc thuộc phạm vi điều chỉnh của Quy chuẩn đã khởi công
+trước ngày Thông tư có hiệu lực thi hành nhưng chưa được nghiệm thu, đưa vào
+vận hành, chủ đâu tư có trách nhiệm:
+
+a) Rà soát, cập nhật thiết kế đối với phần việc chưa thi công đề báo đảm
+đáp ứng Quy chuân;
+
+b) Rà soát, đánh giá phần việc đã thi công trên cơ sở hồ sơ thiết kế, hồ sơ
+thi công và băng chứng kỹ thuật có liên quan. Trạm sạc chỉ được nghiệm thu, đưa
+vào vận hành khi đáp ứng các điêu kiện quy định tại Quy chuân.
+
+5. Nguy cơ trực tiếp và việc xử lý được quy định như sau:
+
+a) Nguy cơ trực tiếp là tình trạng có khả năng gây mất an toàn ngay khi tiếp
+tục vận hành do điện giật, cháy, nô, mât ôn định kêt câu hoặc hư hỏng phương
+tiện, hệ thông điện;
+
+b) Khi phát hiện nguy cơ trực tiếp, chủ sở hữu hoặc đơn vị vận hành phải
+cảnh báo, ngừng vận hành hoặc cô lập phân bị ảnh hướng và thực hiện biện pháp
+khăc phục. Trường hợp không thê cô lập an toàn, phải ngừng vận hành toàn bộ
+trạm sạc. Phân bị ảnh hưởng chỉ được vận hành trở lại sau khi được khắc phục và
+kiêm tra bảo đảm an toàn;
+
+c) Sai lệch đo lường hoặc lỗi điều khiển không gây nguy cơ trực tiếp được
+xử lý theo quy định của pháp luật chuyên ngành. Không phải ngừng vận hành toàn
+bộ trạm sạc khi phân bị ảnh hướng đã được cô lập và phân còn lại bảo đảm an
+toàn, trừ trường hợp pháp luật chuyên ngành có quy định khác.
+
+Điều 3. Tổ chức thực hiện
+
+Chánh Văn phòng Bộ, Cục trưởng Cục Công nghiệp, Vụ trưởng Vụ Pháp
+chê, Thủ trưởng các đơn vị thuộc Bộ Công Thương, Chủ tịch Ủy ban nhân dân
+các tỉnh, thành phô và các cơ quan, tô chức, cá nhân có liên quan chịu trách nhiệm
+thi hành Thông tư này./.
+
+Nơi nhận: KT. BỘ TRƯỞNG
+
+- Thủ tướng Chính phủ, các Phó Thủ tướng Chính phủ; THỨ TRƯỞNG
+
+- Các bộ, cơ quan ngang bộ, cơ quan thuộc Chính phủ;
+
+-UBND và Sở Công Thương các tỉnh, thành phô;
+
+- Cục Kiêm tra văn bản và Tô chức thị hành pháp luật
+
+(Bộ Tư pháp); (đã ký)
+
+- Công báo, Công Thông tĩn điện tử Chính phủ;
+
+- Bộ Công Thương: Bộ trưởng, các Thứ trưởng,
+
+các đơn vị thuộc Bộ, Công Thông tin điện tử của Bộ:
+
+- Lưu: VT, CN 3b). Trương Thanh Hoài
+
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+QCVN 32:2026/BCT
+QUY CHUÂN KỸ THUẬT QUỐC GIA
+VỀ TRỤ SẠC, TRẠM SẠC XE ĐIỆN
+National technical regulation on
+electric vehicle charging equipment and charging stations
+HÀ NỘI ~- 2026
+
+QCVN 32:2026/BCT
+Lời nói đầu
+QCVN 32:2026/BCT do Tổ soạn thảo Quy chuẩn kỹ thuật quốc gia về trụ sạc, trạm
+sạc xe điện biên soạn, Cục Công nghiệp trình duyệt, Bộ Công Thương tô chức thâm
+định, Bộ Khoa học và Công nghệ có ý kiên tại Công văn số 7366/BKHCN-TĐC ngày
+23 tháng 9 năm 2026 và được Bộ trưởng Bộ Công Thương ban hành theo Thông tư
+sô 61/2026/TT-BCT ngày 29 tháng 9 năm 2026.
+
+2
+
+QUY CHUẨÄN KỸ THUẬT QUỐC GIA
+VỀ TRỤ SẠC, TRẠM SẠC XE ĐIỆN
+National technical regulation on
+electric vehicle charging equipment and charging stations
+
+1. QUY ĐỊNH CHUNG
+
+1.1. Phạm vi điều chỉnh
+
+1.1.1. Quy chuẩn này quy định các yêu cầu kỹ thuật và quản lý đối với trụ sạc,
+trạm sạc xe điện, bao gôm: thiệt bị sạc; hệ thông cấp điện, phân phôi điện và đâu nôi;
+bô trí và lắp đặt; an toàn điện; hệ thông điều khiên; quản lý vận hành và khai thác.
+
+1.1.2. Quy chuẩn này áp dụng cho trạm sạc lắp đặt ở khu vực công cộng, nơi
+trông giữ xe tập trung, trạm dừng nghỉ và các khu vực tương tự.
+
+1.1.3. Quy chuẩn này áp dụng đồi với trụ sạc và trạm sạc xe điện:
+
+...-Dùng để sạc cho phương tiện giao thông đường bộ chạy điện, bao gồm: ô tô
+thuân điện (BEV), ô tô hybrid nạp điện ngoài (PHEV) và các phương tiện đường bộ
+chạy điện tương tự có hệ thông tích trữ năng lượng sạc lại được lắp trên xe;
+
+_..~ Có điện áp cấp danh định đến 1.000 V xoay chiều (AC) hoặc đến 1.500 V một
+chiêu (DC) và điện áp ra danh định đến 1.000 V AC hoặc 1.500 V DC.
+
+1.1.4. Trụ sạc được sản xuất, lắp ráp, nhập khẩu, lưu thông hoặc lắp đặt phải
+đáp ứng các yêu câu đôi với trụ sạc quy định tại Quy chuân này, trừ thiết bị, trụ sạc
+quy định tại mục 1.1.5.2 và mục 1.1.5.3.
+
+1.1.5. Quy chuẩn này không áp dụng đối với:
+
+Ñ 1.1.5.1. Trạm sạc được bồ trí trong phạm vi bên trong công trình xây dựng, bao
+gồm: các tầng hâm, tầng nửa hâm và tầng trên mặt đất; trong nhà đề xe, khu vực đỗ
+xe trong nhà và các không gian khác được bao che một phân hoặc toàn bộ bởi các
+kết câu xây dựng. Trạm sạc bô trí ngoài trời hoặc dưới mái che độc lập chỉ có chức
+năng che mưa, che năng cho khu vực sạc không thuộc trường hợp quy định tại mục
+này.
+
+1.1.5.2. Thiết bị sạc không dây; thiết bị điều khiển và bảo vệ tích hợp trên cáp
+dùng cho sạc chê độ 2 (IO-CPD); thiết bị sạc trên xe; thiết bị cấp điện cho hệ thông
+lưu trữ năng lượng không lắp trên xe; thiết bị sạc dùng riêng cho phương tiện đường
+sắt, phương tiện chuyên dùng ngoài đường bộ, xe công nghiệp không tham gia giao
+thông đường bộ.
+
+1.1.5.3. Trụ sạc, trạm sạc chỉ sử dụng để thử nghiệm, nghiên cứu, trưng bày
+hoặc đào tạo trong phạm vi kiêm soát nội bộ, có biện pháp bảo đảm an toàn và không
+cung cấp dịch vụ sạc công cộng.
+
+1.1.5.4. Trạm sạc chỉ phục vụ nhu cầu sử dụng nội bộ của tổ chức, cá nhân,
+không cung cập dịch vụ sạc nhằm mục đích thương mại.
+
+1.1.5.5. Hạ tằng lưới điện phía trước điểm đầu nói của trạm sạc.
+
+1.1.6. Các yêu cầu đối với hạ tầng lưới điện và hạ tầng phòng cháy và chữa
+cháy (PCCC) được thực hiện theo pháp luật và quy chuẩn kỹ thuật chuyên ngành có
+liên quan.
+
+3
+
+QCVN 32:2026/BCT
+
+1.2. Đối tượng áp dụng
+
+Quy chuẩn này áp dụng đối với:
+
+- Tổ chức, cá nhân sản xuất, lắp ráp, nhập khẩu, phân phối, lưu thông trụ sạc
+xe điện;
+
+- Chủ đầu tư, đơn vị thiết kế, đơn vị thi công, đơn vị lắp đặt, đơn vị quản lý, đơn
+vị vận hành trạm sạc xe điện;
+
+- Đơn vị cung cấp điện, đơn vị điều độ hệ thống điện, tổ chức thử nghiệm, tổ
+chức chứng nhận, tô chức kiêm định, tô chức đánh giá sự phù hợp;
+
+- Cơ quan quản lý nhà nước và các tổ chức, cá nhân khác có liên quan.
+
+1.3. Nguyên tắc áp dụng
+
+1.3.1. Quy chuẩn này quy định các yêu cầu tối thiểu bắt buộc về an toàn điện,
+an toàn sử dụng, tương thích kỹ thuật, đo lường chính xác, minh bạch và vận hành an
+toàn, ôn định.
+
+1.3.2. Quy chuẩn, tiêu chuẩn và pháp luật chuyên ngành về điện lực, xây dựng,
+phòng cháy, chữa cháy, đo lường, an ninh mạng, bảo vệ dữ liệu cá nhân và môi trường
+được áp dụng theo đúng phạm vi, đôi tượng và hiệu lực của từng văn bản; Quy chuân
+này không thay thê thủ tục hoặc thâm quyên quản lý chuyên ngành.
+
+1.3.3. Trạm sạc phải bảo đảm khả năng kỹ thuật để dùng chung cho các
+phương tiện giao thông đường bộ chạy điện có công sạc tương thích với loại đâu nôi,
+chê độ sạc và câu hình kỹ thuật mà trạm sạc hô trợ.
+
+1.3.4. Việc lựa chọn công nghệ, giao thức, phần cứng và phần mềm phải đáp
+ứng các yêu câu kỹ thuật và tiêu chí kiêm tra tương ứng của Quy chuân này; không
+được làm mất tác dụng của các chức năng bảo vệ an toàn.
+
+1.4. Tài liệu viện dẫn
+
+Đối với tiêu chuẩn viện dẫn có ghi năm công bồ, áp dụng đúng phiên bản được
+nêu. Việc sử dụng kết quả đánh giá theo phiên bản khác thực hiện theo mục 4.3.3.
+Đôi với văn bản quy phạm pháp luật và quy chuân kỹ thuật được sửa đôi, bô sung,
+thay thê, thực hiện theo mục 6.2.
+
+- TOVN 13078-1:2020 (IEC 61851-1:2017), Hệ thống sạc điện có dây dùng cho
+xe điện — Phân 1: Yêu cầu chung.
+
+- TOVN 13078-21-2:2020 (IEC 61851-21-2:2018), Hệ thống sạc điện có dây
+dùng cho xe điện — Phân 21-2: Yêu câu về xe điện kết nôi có dây với nguôn cập điện
+xoay chiêu/một chiêu — Yêu câu tương thích điện từ của bộ sạc không lắp trên xe điện.
+
+- TOVN 13078-23:2020 (IEC 61851-23:2014), Hệ thống sạc điện có dây dùng
+cho xe điện — Phân 23: Trạm sạc điện một chiêu cho xe điện.
+
+- QCVN 25:2025/BCT, Quy chuẩn kỹ thuật quốc gia về an toàn điện.
+
+- QCVN 26:2025/BCT, Quy chuẩn kỹ thuật quốc gia về kỹ thuật điện - Hệ thống
+lưới điện.
+
+- QCVN 01:2020/BCT, Quy chuẩn kỹ thuật quốc gia về yêu cầu thiết kế cửa
+hàng xăng dâu, ban hành kèm theo Thông tư sô 15/2020/TT-BCT.
+
+_.- TOVN 7447-7-722:2023 (IEC 60364-7-722:2018), Hệ thống lắp đặt điện hạ áp
+— Phân 7-722: Yêu câu đôi với hệ thông lắp đặt đặc biệt hoặc khu vực đặc biệt — Nguôn
+cấp cho xe điện.
+4
+
+QCVN 32:2026/BCT
+
+_.- TOVN 13724-7:2023 (IEC 61439-7:2022), Cụm đóng cắt và điều khiển hạ áp
+
+— Phân 7: Cụm lắp ráp dùng cho các ứng dụng đặc biệt như bên du thuyên, khu vực
+căm trại, khu vực chợ, trạm sạc xe điện.
+
+- IEC 62423:2009, Type F and type B residual current operated circuit-breakers
+with and without integral overcurrent protection for household and similar uses.
+
+- IEC 62955:2018, Residual direct current detecting device (RDC-DD) to be
+used for mode 3 charging of electric vehicles.
+
+- QCVN 06:2022/BXD và Sửa đổi 1:2023 QCVN 06:2022/BXD, Quy chuẩn kỹ
+thuật quộc gia về an toàn cháy cho nhà và công trình.
+
+- QCVN 10:2025/BCA, Quy chuẩn kỹ thuật quốc gia về trang bị, bó trí phương
+tiện phòng cháy, chữa cháy, cứu nạn, cứu hộ cho nhà và công trình.
+
+- TOVN 3890:2023, Phòng cháy chữa cháy - Phương tiện phòng cháy và chữa
+cháy cho nhà và công trình — Trang bị, bô trí.
+
+- TOVN ISO/IEC 17025:2017 (ISO/IEC 17025:2017), Yêu cầu chung về năng
+lực của phòng thử nghiệm và hiệu chuân.
+
+_ TOVN ISO/IEC 17065:2013 (ISO/IEC 17065:2012), Đánh giá sự phù hợp -
+Yêu câu đôi với tô chức chứng nhận sản phẩm, quá trình và dịch vụ.
+
+1.5. Giải thích từ ngữ
+
+Trong Quy chuẩn này, các từ ngữ dưới đây được hiểu như sau:
+
+1.5.1. Xe điện (Electric vehicle — EV): phương tiện giao thông đường bộ dẫn
+động hoàn toàn hoặc một phân băng động cơ điện, lây điện năng từ hệ thông tích trữ
+năng lượng sạc lại được lắp trên xe và hệ thông này có khả năng sạc từ nguôn điện
+bên ngoài.
+
+1.5.2. Xe hybrid nạp điện ngoài (Plug-in hybrid electric vehicle — PHEV): xe
+hybrid điện có khả năng nạp điện từ nguôn điện bên ngoài.
+
+1.5.3. Hệ thống tích trữ năng lượng sạc lại được (Rechargeable energy storage
+System — RESS): hệ thông tích trữ năng lượng có thê nạp lại, dùng đề cung cập điện
+năng cho hệ thông truyền động điện.
+
+_. 1.5.4. Trụ sạc xe điện: thiết bị hoặc tổ hợp thiết bị tĩnh dùng để cấp điện có điều
+khiên cho xe điện, bao gồm bộ phận chuyên đôi điện năng, điều khiên, bảo vệ, giao
+tiệp, đo lường, cáp sạc, đâu nôi và giao diện người sử dụng, tùy theo câu hình sản
+phẩm.
+
+1.5.5. Trụ sạc điện xoay chiều (AC): trụ sạc cung cấp điện xoay chiều cho xe
+điện; việc chuyên đôi AC/DC đề sạc pin được thực hiện bởi thiết bị trên xe, trừ trường
+hợp tiêu chuẩn áp dụng có quy định khác.
+
+1.5.6. Trụ sạc điện một chiều (DO): trụ sạc có bộ biến đồi điện năng đề cung
+cấp điện một chiêu cho xe điện theo thông sô điện áp, dòng điện và giao tiệp điêu
+khiên phù hợp với tiêu chuân áp dụng.
+
+1.5.7. Trạm sạc xe điện: tổ hợp công trình và thiết bị kỹ thuật được lắp đặt tại
+một địa điểm xác định, bao gm một hoặc nhiêu trụ sạc xe điện và các hệ thông phụ
+trợ như cấp điện, phân phôi điện, bảo vệ, điều khiên, giám sát, thanh toán, chiêu sáng,
+biên báo, PCCOG và hạ tầng liên quan nhằm cung cấp điện năng đề sạc cho xe điện.
+
+1.5.8. Ô sạc hoặc vị trí sạc: phần diện tích dành cho phương tiện dừng, đỗ đề
+thực hiện hoạt động sạc, bao gồm vạch sơn, bậc chặn bánh, không gian thao tác,
+không gian tiêp cận đâu nôi và khoảng an toàn cân thiết.
+
+5
+
+QCVN 32:2026/BCT
+
+1.5.9. Hệ thống phân phối điện của trạm sạc: tập hợp thiết bị và kết cầu điện
+trong phạm vi trạm sạc dùng đề tiêệp nhận điện năng từ nguồn cấp và phân phôi đến
+các trụ sạc, thiết bị phụ trợ và phụ tải liên quan.
+
+1.5.10. Điểm đầu nối của trạm sạc: điểm kết nồi hệ thống điện của trạm sạc với
+lưới điện hoặc nguôn cấp điện, được xác định trong hỗ sơ thiết kê và hỗ sơ đâu nôi
+áp dụng.
+
+„15.11. Vị trí thao tác ngắt điện khẩn cấp: vị trí bố trí cơ cầu thao tác dùng đề
+ngăt nhanh nguôn điện cấp đên toàn bộ hoặc một phân trạm sạc trong tình huồng
+nguy hiểm hoặc khân cấp.
+
+1.5.12. Hệ thống giám sát trạm sạc: hệ thống phần cứng, phần mồm và truyền
+thông dùng đề thu thập dữ liệu, giám sát trạng thái, cảnh báo, điều khiên, lưu trữ nhật
+ký, quản lý giao dịch và hô trợ vận hành trạm sạc.
+
+1.5.13. Hệ thống quản lý phụ tải: hệ thống có khả năng giám sát, phân bỗ, giới
+hạn hoặc điều chỉnh công suất sạc của từng trụ sạc hoặc toàn trạm nhăm bảo đảm
+không vượt quá khả năng của nguôn cấp, hệ thông phân phôi nội bộ hoặc yêu câu
+điêu độ.
+
+1.5.14. Dòng điện rò: dòng điện đi xuống đất trực tiếp hoặc qua các phần dẫn
+điện bên ngoài khi thiết bị điện làm việc bình thường.
+
+1 5.15. Thiết bị bảo vệ theo dòng điện dư (Residual current device - RCD): thiết
+bị đóng căt hoặc tô hợp thiết bị có chức năng cắt mạch khi dòng điện dư đạt giá trị tác
+động trong các điêu kiện quy định của tiêu chuân áp dụng.
+
+1.5.16. Thiết bị phát hiện dòng điện dư một chiều (Residual direct current
+detecting device — RDO-DD): thiết bị phát hiện dòng điện dư một chiêu, khởi động
+hoặc thực hiện việc căt mạch, dùng cho sạc chê độ 3 theo IEC 62955:2018.
+
+1.5.17. Cụm cáp sạc: tổ hợp cáp mềm, đầu nối và các chỉ tiết kết nồi theo cầu
+hình, dùng đề kêt nôi trụ sạc với xe điện.
+
+_ „ 1.5.18. Đầu nối xe điện (sau đây gọi là đầu nói): bộ phận của cụm cáp sạc dùng
+đề kêt nôi điện và giao tiêp điều khiên giữa trụ sạc và xe điện.
+
+1.5.19. Hệ thống pin lưu trữ năng lượng (Battery energy storage system -
+BESS): hệ thông cô định tại trạm, sử dụng pin đê lưu trữ và cấp điện, gôm pin, hệ
+thông quản lý pin, thiệt bị biên đôi điện, bảo vệ, điêu khiên và bộ phận phụ trợ theo
+cầu hình; không bao gồm hệ thông tích trữ năng lượng sạc lại được lắp trên xe.
+
+1.5.20. Đơn vị vận hành trạm sạc: tổ chức, cá nhân trực tiếp quản lý, khai thác,
+bảo trì, tiếp nhận phản ánh, xử lý sự cô và chịu trách nhiệm vận hành an toàn trạm
+sạc theo quy định pháp luật và hợp đông liên quan.
+
+1.5.21. Sạc thông minh: hoạt động sạc trong đó công suất hoặc thời điểm sạc
+được giám sát, giới hạn hoặc điều chỉnh tự động theo giới hạn nguôn cấp, nhu câu
+người sử dụng, tín hiệu hợp pháp của hệ thông điện hoặc mục tiêu quản lý năng
+lượng, nhưng không làm giảm chức năng bảo vệ an toàn độc lập.
+
+_.. 1.5.22. Chức năng kiểm soát công suất phát lên lưới điện: chức năng giám sát,
+điêu chỉnh hoặc ngăn công suất tác dụng từ hệ thông điện của trạm sạc phát lên lưới
+điện vượt giới hạn được phép tại điêm đâu nôi.
+
+1.5.23. Phụ tải của trạm sạc: tập hợp trụ sạc và thiết bị phụ trợ tiêu thụ điện
+trong phạm vi ranh giới hệ thông điện của trạm. Phụ tải sạc gôm các trụ sạc tiêu thụ
+điện đề sạc cho xe; phụ tải phụ trợ gôm thiết bị chiêu sáng, điêu khiên, làm mát và các
+thiết bị liên quan.
+
+6
+
+QCVN 32:2026/BCT
+
+1.5.24. Dòng điện dư: tổng đại số các giá trị tức thời của dòng điện đi trong tất
+cả các dây dẫn tải điện tại một điêm của mạch điện. Dạng sóng, giá trị tác động và
+thời gian cắt của bảo vệ được xác định theo tiêu chuân của thiết bị và hệ thông lắp đặt
+áp dụng.
+
+1.5.25. Các chữ viết tắt: AC - dòng điện xoay chiều; DC - dòng điện một chiều;
+EMOC - tương thích điện từ; IP - mã cấp bảo vệ băng vỏ ngoài; RCD - thiết bị bảo vệ
+theo dòng điện dư; RDC-DD - thiết bị phát hiện dòng điện dư một chiêu; BESS - hệ
+thông pin lưu trữ năng lượng; PCCO - phòng cháy và chữa cháy.
+
+1.5.26. Bộ tiếp hợp (adapter): phụ kiện dùng đề kết nối các giao diện điện dẫn
+khác nhau giữa trụ sạc và xe điện. Bộ tiêp hợp phải phù hợp câu hình sử dụng và đáp
+ứng Điêu 10 TOVN 13078-1:2020 (IEC 61851-1:2017).
+
+1.6. Phân loại trụ sạc
+
+Trụ sạc được phân loại theo dạng dòng điện đầu ra gồm:
+
+- Trụ sạc AC.
+
+- Trụ sạc DO.
+
+- Trụ sạc kết hợp AC và DC.
+
+Cầu hình tủ nguồn và trụ phân phối được xác định theo cầu tạo sản phẩm, độc
+lập với việc phân loại theo dạng dòng điện đâu ra.
+
+7
+
+QCVN 32:2026/BCT
+
+2. QUY ĐỊNH KỸ THUẬT ĐÓI VỚI TRỤ SẠC
+
+2.1. Yêu cầu chung đối với trụ sạc
+
+Trụ sạc phải bảo đảm truyền năng lượng an toàn trong các điều kiện sử dụng,
+môi trường và cầu hình do nhà sản xuất công bộ; đáp ứng các yêu câu và phép thử
+quy định tại các mục 2.2 đên 2.5.
+
+2.2. Yêu cầu về an toàn
+
+- Yêu cầu về bảo vệ chống điện giật theo quy định tại Điều 8 TCVN 13078-
+1:2020 (IEC 61851-1:2017);
+
+- Yêu cầu đối với giao diện điện dẫn theo quy định tại Điều 9 TCVN 13078-
+1:2020 (IEC 61851-1:2017);
+
+- Yêu cầu đồi với bộ tiếp hợp theo quy định tại Điều 10 TCVN 13078-1:2020
+(IEC 61851-1:2017),
+
+- Yêu cầu đối với cụm cáp theo quy định tại Điều 11 TCVN 13078-1:2020 (IEC
+61851-1:2017);
+
+- Yêu cầu và thử nghiệm kết cấu đối với trụ sạc xe điện theo quy định tại Điều
+12 TOVN 13078-1:2020 (IEC 61851-1:2017);
+
+- Yêu cầu về bảo vệ quá tải và bảo vệ ngắn mạch theo quy định tại Điều 13
+TCVN 13078-1:2020 (IEC 61851-1:2017).
+
+2.3. Yêu cầu về tương thích điện từ (EMC) đồi với trụ sạc xe điện
+
+- Yêu cầu về phát xạ theo quy định tại Điều 6 của TCVN 13078-21-2:2020 (IEC
+61851-21-2:2018);
+
+- Yêu cầu về miễn nhiễm theo quy định tại Điều 5 của TCVN 13078-21-2:2020
+(IEC 61851-21-2:2018),
+
+- Trụ sạc có chức năng thu, phát sóng vô tuyến điện phải đáp ứng quy định
+pháp luật và quy chuân kỹ thuật về vô tuyên điện áp dụng cho chức năng đó.
+
+2.4. Yêu cầu về truyền thông
+
+Yêu cầu về truyền thông theo quy định tại Điều 7 TCVN 13078-1:2020 (IEC
+61851-1:2017).
+
+2.5. Yêu cầu bỗ sung đối với trụ sạc điện một chiều (DC)
+
+Trụ sạc điện một chiều (DC) phải đáp ứng các yêu cầu bồ sung tại TCVN 13078-
+23:2020 (IEC 61851-23:2014).
+
+2.6. Yêu cầu về ghi nhãn
+
+Trụ sạc phải được ghi nhãn theo pháp luật về nhãn hàng hóa; thông tin trên
+nhãn phải rõ ràng, đủ bên trong thời gian sử dụng và bao gôm:
+
+- Nhà sản xuất;
+
+- Kiểu, loại sản phẩm;
+
+- Điện áp vào;
+
+- Dòng điện vào;
+
+- Điện áp ra;
+
+- Dòng điện ra;
+
+- Công suất ra;
+
+8
+
+QCVN 32:2026/BCT
+
+- Cấp bảo vệ IP;
+
+- Nhiệt độ làm việc;
+
+- Năm sản xuất.
+
+2.7. Yêu cầu về giao diện và hướng dẫn sử dụng
+
+Giao diện người sử dụng của trụ sạc phải bằng tiếng Việt; được sử dụng thêm
+ngôn ngữ khác.
+
+Tổ chức, cá nhân sản xuất, lắp ráp, nhập khẩu phải cung cấp hướng dẫn lắp
+đặt và hướng dẫn sử dụng trụ sạc băng tiêng Việt theo quy định tại mục 16.1 và mục
+16.2 của TCVN 13078-1:2020 (IEC 61851-1:2017).
+
+9
+
+QCVN 32:2026/BCT
+
+3. QUY ĐỊNH KỸ THUẬT ĐÓI VỚI TRẠM SẠC
+
+3.1. Yêu cầu chung
+
+3.1.1. Trạm sạc xe điện phải bảo đảm an toàn điện, an toàn về phòng cháy và
+chữa cháy, an toàn cho người sử dụng, phương tiện, thiết bị và công trình trong suôt
+quá trình thiết kê, thi công, lắp đặt, nghiệm thu, vận hành, bảo trì, cải tạo và châm dứt
+khai thác.
+
+3.1.2. Việc áp dụng pháp luật, quy chuẩn kỹ thuật về hệ thống điện, an toàn
+điện, PCCC, xây dựng, giao thông, môi trường, đo lường và dữ liệu thực hiện theo
+mục 1.3.2. Các yêu câu về trạm tại Quy chuân này không thay thê yêu câu đôi với
+công trình, bãi đỗ xe hoặc trạm dừng nghỉ.
+
+3.1.3. Trạm sạc phải được thiết kế đồng bộ giữa hệ thống cấp điện, hệ thống
+phân phôi điện, trụ sạc, hệ thông bảo vệ, nôi đât, chông sét, giám sát, điêu khiên,
+PCCO, chiêu sáng, biên báo, tô chức giao thông và hạ tâng phụ trợ.
+
+3.1.4. Trạm sạc phải có giải pháp kỹ thuật để phát hiện, cảnh báo, cô lập và xử
+lý sự cô; bảo đảm ngắt điện tự động hoặc thủ công khi xảy ra cháy, sự cô chạm đất,
+va chạm, nước ngập, quá nhiệt, hư hỏng cách điện hoặc sự cô nghiêm trọng khác.
+
+3.1.5. Các thiết bị, vật liệu và phụ kiện sử dụng trong trạm sạc phải phù hợp với
+môi trường lắp đặt, cấp bảo vệ, điêu kiện nhiệt độ, độ âm, mưa năng, ăn mòn, bụi,
+rung động và nguy cơ va chạm phương tiện.
+
+3.2. Yêu cầu về bố trí trạm sạc
+
+32.1. Vị trí bố trí trạm sạc phải phù hợp mục đích sử dụng đất, công năng khu
+vực và tô chức giao thông nội bộ; không cản trở lôi ra vào, lôi thoát nạn, đường cho
+xe chữa cháy, khả năng tiêp cận của phương tiện ứng cứu, người đi bộ và hoạt động
+của công trình lân cận.
+
+3.2.2. Đường giao thông nội bộ, lồi vào và lồi ra phải được xác định theo loại
+và kích thước phương tiện phục vụ, bán kính quay, lưu lượng dự kiên, phương án tô
+chức giao thông và quy chuẩn, tiêu chuần xây dựng áp dụng.
+
+3.2.3. Ô sạc phải có kích thước và không gian thao tác phù hợp với loại phương
+tiện, hướng đô, chiêu dài cáp, vị trí đâu nôi và khả năng mở cửa xe; bảo đảm người
+sử dụng tiếp cận, kêt nôi và thoát khỏi khu vực sạc an toàn.
+
+3.2.4. Đồi với bố trí ô sạc chéo, ô sạc song song, ô sạc cho xe thương mại, xe
+buýt, xe tải, xe đầu kéo hoặc sơ đô tô chức giao thông đặc thù, kích thước ô đô,
+khoảng lùi thiết bị, khoảng cách đên bó vỉa, vỉa hè hoặc làn xe phải được xác định
+theo kích thước phương tiện, bán kính quay, chiêu dài cáp sạc, hướng đô xe và
+phương án vận hành thực tô.
+
+3.2.5. Khi ô sạc bố trí sát tường, hàng rào hoặc vật cản cố định, phải duy trì
+khoảng thao tác, tiêp cận thiết bị, quản lý cáp và bảo trì theo hỗ sơ thiết kê và tiêu
+chuân áp dụng; không đê vật cản làm tăng nguy cơ va chạm, vấp ngã hoặc cản trở
+thoát nạn.
+
+3.2.6. Trụ sạc được bố trí cạnh ô đỗ, giữa hai ô đỗ, trên vỉa hè, trên tường hoặc
+theo câu hình một trụ phục vụ một hoặc nhiêu ô sạc. Trường hợp bô trí trên vỉa hè,
+phải bảo đảm bê rộng thông thủy liên tục tôi thiêu dành cho người đi bộ theo quy chuân
+kỹ thuật quôc gia về hạ tầng kỹ thuật. Vị trí lắp đặt phải phù hợp với chiêu dài cáp,
+hướng đỗ xe, giải pháp quản lý cáp và phương án tô chức giao thông; bảo đảm thao
+tác sạc an toàn, không gây vập ngã, không đê cáp cắt ngang lôi đi gây mật an toàn
+hoặc bị kéo căng.
+
+10
+
+QCVN 32:2026/BCT
+
+3.2.7. Bồ mặt khu vực sạc phải chịu được tải trọng của phương tiện và thiết bị
+theo hô sơ thiết kê. Nên hiện hữu không đáp ứng yêu câu về khả năng chịu tải phải
+được gia cô hoặc thay thê băng giải pháp có tính toán kiểm chứng.
+
+3.2.8. Khu vực sạc phải có biên nhận biết trạm sạc, biên cảnh báo an toàn điện,
+hướng dân thao tác, chỉ dân vị trí dừng đồ, thông tin hô trợ khân cấp và vạch sơn hoặc
+dâu hiệu phân định ô sạc rõ ràng, dễ quan sát vào ban ngày và ban đêm.
+
+3.2.9. Trụ sạc, tủ điện, cột đèn, cột camera, biên báo và thiết bị phụ trợ phải có
+bệ móng hoặc giá đỡ phù hợp với kích thước thực tê của thiết bị, không cản trở lỗi đi
+bộ, lôi thoát nạn và không gian thao tác bảo trì.
+
+3.2.10. Trạm sạc ngoài trời phải có giải pháp thoát nước, chống đọng nước tại
+chân bệ móng và khu vực đầu nôi, cao độ, độ dôc bê mặt và hướng thoát nước được
+xác định theo địa hình, cao độ không chê, hệ thông thoát nước hiện trạng hoặc quy
+hoạch và điêu kiện ngập của địa điểm.
+
+3.2.11. Việc bố trí trạm sạc tại cửa hàng xăng dầu phải đáp ứng QCVN
+01:2020/BCT về yêu câu thiết kê cửa hàng xăng dâu, ban hành kèm theo Thông tư sô
+15/2020/TT-BCT, trong phạm vi áp dụng. Trạm sạc bô trí tại cửa hàng xăng dâu, trạm
+tiệp nhiên liệu, trạm dừng nghỉ, bãi đỗ xe hoặc khu vực có nguy cơ cháy, nô phải đáp
+ứng quy chuẩn, pháp luật chuyên ngành áp dụng về khoảng cách an toàn, phân khu
+chức năng, tô chức giao thông và PCCC.
+
+3.3. Yêu cầu đói với trụ sạc trong trạm
+
+3.3.1. Trụ sạc xe điện phải phù hợp với thiết kế tổng thể của trạm sạc, bảo đảm
+khả năng kêt nôi an toàn, ôn định với hệ thông phân phôi điện của trạm.
+
+_ 3.3.2. Trụ sạc xe điện phải được lắp đặt, đầu nồi và vận hành theo đúng hướng
+dân của nhà sản xuất và quy định kỹ thuật có liên quan.
+
+3.3.3. Trụ sạc xe điện tối thiểu phải có các chức năng bảo vệ an toàn sau:
+
+- Bảo vệ quá dòng điện, quá điện áp và thấp điện áp;
+
+- Bảo vệ ngắn mạch;
+
+- Bảo vệ theo dòng điện dư phù hợp tiêu chuẩn và cấu hình hệ thống lắp đặt;
+
+- Tự động ngắt khi xảy ra sự cố.
+
+3.3.4. Trụ sạc lắp trong trạm phải duy trì các biện pháp bảo vệ chống điện giật
+trong điều kiện bình thường và điều kiện sự cô theo mục 2.2; giải pháp lắp đặt không
+được làm mất tác dụng của các biện pháp bảo vệ của trụ sạc.
+
+; 3.3.5. Khả năng kỹ thuật dùng chung tại mục 1.3.3 được xác định theo loại đầu
+nồi, chê độ sạc, dải điện áp và dòng điện, chức năng giao tiêp và liên động an toàn.
+Giao diện điện dân và bộ tiêệp hợp phải đáp ứng Điều 9 và Điêu 10 TCVN 13078-
+1:2020; yêu câu đôi với trụ sạc DƠ thực hiện theo mục 2.5.
+
+Hồ sơ kỹ thuật phải nêu tiêu chuẩn đầu nối và phiên bản áp dụng, bản kích
+thước tương ứng, thông sô điện, chức năng giao tiếp, điều kiện liên động và phiên
+bản phần mềm ảnh hưởng đên tương thích. Đôi với câu hình đã công bô, trụ sạc phải
+có khả năng kêt nổi, khởi tạo, duy trì và kết thúc phiên sạc; kết quả kiềm tra theo mục
+3.7.3 phải được lưu giữ. Chức năng điều khiển không được hạn chê khả năng tương
+thích đã công bô khi các điều kiện kỹ thuật, xác thực và an toàn không thay đôi.
+
+3.3.6. Trụ sạc xe điện phải được lắp đặt tại vị trí phù hợp trong trạm sạc, bảo
+đảm:
+
+- Khoảng cách an toàn giữa các trụ sạc;
+
+11
+
+QCVN 32:2026/BCT
+
+- Thuận tiện cho việc sử dụng, vận hành và bảo trì;
+
+- Không cản trở lồi đi, lồi thoát nạn và giao thông nội bộ.
+
+... 3.3.7. Cấp bảo vệ của trụ sạc lắp ngoài trời phải đáp ứng yêu cầu tại mục 2.2,
+điều kiện môi trường trong hô sơ thiết kê và hướng dân lắp đặt của nhà sản xuất; phải
+được đôi chiêu với nhãn và hô sơ thử nghiệm của sản phẩm.
+
+3.3.8. Ngoài nhãn sản phẩm tại mục 2.6, tại vị trí sử dụng hoặc bằng phương
+tiện điện tử cho phép người sử dụng tiếp cận trước khi sạc, phải công khai tôi thiêu
+công suât, dải điện áp và dòng điện, loại đâu nôi, chê độ sạc, hướng dân sử dụng và
+cảnh báo an toàn.
+
+3.3.9. Bộ phận giữ cáp và đầu nối phải được bồ trí để cáp không chắn lồi đi khi
+không sử dụng và được bảo vệ khỏi hư hỏng cơ khí.
+
+3.3.10. Bệ móng, bản mã, bu lông neo và chi tiết liên kết của trụ sạc phải phù
+hợp kích thước chân đê thực tê của thiết bị; bu lông, đai ôc, nắp chụp và chỉ tiệt lộ
+thiên phải có giải pháp chông gỉ, chông ăn mòn phù hợp với điêu kiện ngoài trời.
+
+3.3.11. Đồi với trụ sạc có cầu hình tủ nguồn - trụ phân phói tách rời hoặc có liên
+kết DC mở rộng, khoảng cách, tuyên cáp và giải pháp bảo vệ cơ học giữa các thiết bị
+phải được thiết kê đông bộ, bảo đảm dễ kiêm tra, thay thê và xử lý sự cô.
+
+3.3.12. Trường hợp trụ sạc treo tường, giá treo và tường đỡ phải được tính
+toán về khả năng chịu lực; việc lắp đặt phải bảo đảm khoảng không thao tác và các
+điêu kiện cách điện, chông nước, chông ăn mòn phù hợp.
+
+3.4. Yêu cầu về an toàn
+
+3.4.1. Trạm sạc phải có thiết bị hoặc cơ cầu thao tác ngắt điện khẩn cấp được
+bô trí tại vị trí dễ tiêp cận, có ký hiệu rõ ràng, cho phép cô lập nhanh nguôn điện cập
+đên khu vực sạc khi có cháy, sự cô chạm đât, tai nạn hoặc sự cô vận hành.
+
+3.4.2. Thiết bị ngắt điện khẩn cấp phải được bố trí và bảo vệ để tránh thao tác
+ngoài ý muôn, không cản trở thao tác trong tình huông khân cấp.
+
+3.4.3. Sau khi ngắt điện khẩn cấp, chỉ được cấp điện trở lại khi đã xác định
+nguyên nhân, loại trừ nguy cơ mất an toàn và người có trách nhiệm về vận hành hoặc
+an toàn điện quyêt định đóng điện. Việc đặt lại thiệt bị ngăt điện khân cập không được
+làm phiên sạc tự động khởi động lại. Thao tác và kết quả kiêm tra phải được ghi nhận
+trong hỗ sơ vận hành.
+
+3.4.4. Chức năng ngắt điện khẩn cấp phải được kiểm tra trước khi đưa trạm
+sạc vào vận hành và được kiêm tra định kỹ trong quá trình khai thác theo kê hoạch
+bảo trì của trạm sạc.
+
+_.. 3.4.5. Hệ thống nối đất, liên kết đẳng thế bảo vệ, vỏ kim loại, cột đèn, cột camera
+(nêu có), tủ điện và các kết câu dân điện thuộc câu hình lắp đặt phải được kiêm tra,
+đo và nghiệm thu tại các giai đoạn phù hợp trước khi đóng điện; kết quả phải được
+lập hỗ sơ và truy xuất được.
+
+3.4.6. Việc trang bị, bố trí phương tiện phòng cháy, chữa cháy, cứu nạn, cứu
+hộ phải đáp ứng QCVN 06:2022/BXD và Sửa đôi 1:2023 QCVN 06:2022/BXD, QCVN
+10:2025/BCA và TOVN 3890:2023 trong phạm vi áp dụng của từng tài liệu. Việc thâm
+định thiết kê, nghiệm thu vô phòng cháy và chữa cháy và các thủ tục liên quan thực
+hiện theo pháp luật chuyên ngành trong trường hợp thuộc diện áp dụng.
+
+12
+
+QCVN 32:2026/BCT
+
+3.4.7. Phương tiện chữa cháy tại chỗ phải được lựa chọn, bố trí, quản lý, sử
+dụng, bảo quản và bảo dưỡng theo quy mô, nguy cơ cháy và hỗ sơ PCCC áp dụng;
+phương tiện đặt ngoài trời phải được bảo vệ khỏi tác động môi trường, dễ nhận biết
+và tiêp cận khi có sự cô.
+
+3.4.8. Trạm sạc phải có nội quy, tiêu lệnh chữa cháy, biên cảnh báo an toàn
+điện, hướng dân sử dụng và thông tin liên hệ xử lý khân cấp được đặt tại vị trí dễ nhìn,
+bên với điêu kiện môi trường lắp đặt.
+
+3.4.9. Trước khi đưa trạm sạc vào vận hành, phải kiểm tra, thử nghiệm tối thiều:
+tính liên tục của dây dẫn bảo vệ và các môi liên kết đắng thê bảo vệ; điện trở nôi đất;
+chức năng bảo vệ quá dòng điện, ngăn mạch và bảo vệ theo dòng điện dư; chức năng
+ngắt điện khẩn cấp; tình trạng cơ khí của bệ móng và liên kết; nhãn cảnh báo; chiều
+sáng; hệ thông giám sát, truyên thông và camera thuộc cầu hình lắp đặt.
+
+. 34.10. Khi phát hiện nước ngập, hư hỏng cách điện, vỏ thiết bị nứt vỡ, cáp hở
+lõi, đâu nôi quá nhiệt, phương tiện PCCC không đáp ứng yêu câu hoặc thiết bị bảo vệ
+mất tác dụng, phải dừng và cô lập thiết bị, khu vực hoặc phân hệ thông bị ảnh hưởng.
+Chỉ dừng toàn trạm khi không thê cô lập an toàn hoặc nguy cơ ảnh hưởng đên toàn
+trạm. Việc khôi phục thực hiện theo mục 4.6.3.
+
+3.5. Yêu cầu về hệ thống cấp điện, đấu nói, đo đếm điện năng và quản lý
+phụ tải
+
+3.5.1. Yêu cầu chung về hệ thống cấp điện
+
+- Hệ thống cấp điện cho trạm sạc xe điện phải được thiết kế, lắp đặt và vận
+hành tuân thủ quy định tại QCVN 25:2025/BCT và QCVN 26:2025/BCT trong phạm vi
+áp dụng của từng quy chuân.
+
+- Công suất cấp điện phải được tính toán theo công suất nhận từ nguồn cấp
+lớn nhất trong các chê độ vận hành theo thiết kê, bao gồm công suất điện đầu vào của
+các trụ sạc, phụ tải phụ trợ và công suất nạp BESS thuộc câu hình lắp đặt. Hô sơ phải
+nêu căn cứ lựa chọn hệ sô đông thời, tôn thất, khả năng nguôn cấp, giới hạn tại điểm
+đâu nôi và điêu kiện mở rộng; việc sử dụng quản lý phụ tải đề giới hạn công suất thực
+hiện theo mục 3.5.5.
+
+- Tủ điện phân phối chính và vỏ thiết bị điện phải có độ bền cơ học, khả năng
+chịu nhiệt, khả năng chồng cháy và cấp bảo vệ phù hợp với môi trường lắp đặt, vị trí
+lắp đặt trong nhà hoặc ngoài trời và tiêu chuẩn áp dụng; cập bảo vệ phải được ghi
+trong hô sơ thiết kê và kiểm chứng trước khi đưa vào vận hành. Cụm đóng cắt và điều
+khiên hạ áp dùng cho trạm sạc, khi thuộc phạm vi áp dụng, phải đáp ứng TCVN 13724-
+7:2023.
+
+- Tuyến cáp cấp nguồn trong trạm sạc phải được bảo vệ cơ học bằng ống luồn
+dây chuyên dụng hoặc hào cáp, bảo đảm khả năng chịu tải cơ học khi phương tiện di
+chuyên qua lại và chông thâm nước, đọng nước cục bộ.
+
+3.5.2. Đầu nối lưới điện và nguồn cấp
+
+- Cấp điện áp và phương án đầu nối được xác định theo công suất đăng ký,
+khả năng của lưới điện khu vực, yêu cầu chất lượng điện năng và quy định pháp luật
+về truyền tải, phân phôi, đo đêm điện năng.
+
+- Thiết bị đóng cắt tại điểm đầu nối phải có khả năng cô lập phần trạm thuộc
+phạm vi sự cô hoặc toàn trạm khi cân thiệt, phù hợp sơ đô bảo vệ, hô sơ đâu nôi và
+phân quyên thao tác.
+
+13
+
+QCVN 32:2026/BCT
+
+- Hồ sơ thỏa thuận đầu nói, nghiệm thu kỹ thuật, xác nhận điều kiện đóng điện
+hoặc thủ tục tương ứng chỉ áp dụng đôi với trường hợp pháp luật điện lực và thỏa
+thuận đâu nôi yêu câu; Quy chuân này không tạo thêm thủ tục chấp thuận trạm sạc.
+
+3.5.3. Chất lượng điện năng và bảo vệ hệ thống điện
+
+- Biến dạng sóng hài dòng điện do trạm sạc gây ra tại điểm đầu nối không được
+vượt giới hạn áp dụng theo pháp luật và quy chuân về hệ thông điện. Trường hợp
+không đạt, phải có giải pháp khắc phục phù hợp phô sóng hài, câu hình nguôn và hỗ
+sơ đâu nôi.
+
+- Hệ số công suất tại vị trí đo đếm áp dụng phải đáp ứng QCVN 26:2025/BCT
+và pháp luật về điện lực, phù hợp đôi tượng và chê độ vận hành. Trường hợp không
+đạt, phải có giải pháp bù công suất phản kháng phù hợp đặc tính phụ tải, điêu kiện
+lưới điện và hô sơ thiệt kê.
+
+- Hoạt động đóng cắt, khởi động hoặc thay đổi công suất đột ngột của trụ sạc
+không được gây mức nhâp nháy điện áp hoặc mất cân băng điện áp vượt giới hạn áp
+dụng trên lưới điện phân phôi.
+
+- Mạch điện cấp cho trụ sạc phải có bảo vệ theo dòng điện dư phù hợp TOVN
+7447-7-722:2023 và câu hình bảo vệ của trụ. RCD kiêu B phải đáp ứng IEC
+62423:2009; tô hợp RCD với RDC-DD phải đáp ứng tiêu chuân áp dụng và IEC
+62955:2018 đôi với phân phát hiện dòng điện dư một chiêu, trong phạm vi áp dụng
+của từng tiêu chuẩn. Khả năng phát hiện, phối hợp và cắt mạch phải được kiểm chứng
+theo câu hình lắp đặt.
+
+- Thiết bị bảo vệ quá dòng điện, ngắn mạch phải được phối hợp đỗ cô lập chọn
+lọc phân sự cô trong phạm vi thiệt kê và duy trì bảo vệ dự phòng khi thiết bị gân vị trí
+sự cô không tác động. Thiết bị bảo vệ tông được tác động theo chức năng bảo vệ dự
+phòng hoặc yêu câu cô lập sự cô trong thiêt kê. Căn cứ tính toán, đường cong tác
+động và kêt quả kiêm tra phải được lưu trong hô sơ.
+
+- Thiết bị bảo vệ chồng quá điện áp quá độ phải được lựa chọn, phối hợp và bồ
+trí theo đánh giá rủi ro do sét, quá điện áp, hệ thông chồng sét, loại nguôn cập và tiêu
+chuân lắp đặt.
+
+- Hệ thống cấp điện phải giới hạn tổng phụ tải theo mục 3.5.5 đề không vượt
+khả năng của nguôn cấp và hệ thông phân phôi nội bộ.
+
+3.5.4. Yêu cầu kỹ thuật phục vụ đo đếm điện năng
+
+- Hệ thống đo đếm tại điểm giao nhận điện phải đáp ứng yêu cầu kỹ thuật, cấp
+chính xác, kiềm soát về đo lường và trao đôi dữ liệu theo pháp luật điện lực, pháp luật
+đo lường và thỏa thuận áp dụng.
+
+- Thiết bị đo đếm phục vụ giao nhận điện hoặc thanh toán phải ghi nhận, lưu
+trữ và hiên thị dữ liệu theo pháp luật về điện lực, đo lường và bảo vệ quyên lợi người
+tiêu dùng; chức năng biểu giá theo thời gian chỉ bắt buộc khi cơ chê giá hoặc hợp
+đông áp dụng yêu câu.
+
+- Việc ghi nhận công suất cực đại và truyền dữ liệu cho đơn vị điện lực thực
+hiện theo quy định đo đêm, yêu câu của hệ thông điện và thỏa thuận đầu nôi áp dụng.
+
+- Đồi với dịch vụ sạc có thu tiền, người sử dụng phải được cung cấp trước và
+trong giao dịch thông tin về điện năng, thời gian, giá hoặc phương pháp tính giá và
+tông sô tiên theo pháp luật về giá, đo lường và bảo vệ quyên lợi người tiêu dùng. Dữ
+liệu giao dịch phải bảo đảm toàn vẹn, chông sửa đôi hoặc xóa trái phép và có khả
+năng truy xuất.
+
+14
+
+QCVN 32:2026/BCT
+
+3.5.5. Quản lý phụ tải và điều chỉnh công suất sạc
+
+- Trạm sạc phải có biện pháp kỹ thuật hoặc vận hành đề tổng công suất tiêu thụ
+không vượt công suất được phép tại điểm đầu nôi và khả năng của hệ thông phân
+phôi nội bộ.
+
+- Khi hồ sơ thiết kế sử dụng hệ số đồng thời nhỏ hơn 1 hoặc dựa vào việc điều
+chỉnh phôi hợp công suất giữa nhiêu trụ sạc đề không vượt giới hạn nêu trên, hệ thông
+phải có chức năng quản lý phụ tải tự động, giám sát giới hạn và đưa hệ thông về trạng
+thái an toàn khi chức năng điêu khiên bị lôi. Công nghệ, giao thức và thuật toán được
+lựa chọn phải được mô tả trong hỗ sơ kỹ thuật; kêt quả kiêm tra phải được lưu giữ.
+
+- Kết nối với hệ thống quản lý phụ tải hoặc điều độ bên ngoài trạm chỉ bắt buộc
+trong phạm vi pháp luật điện lực, chương trình điêu chỉnh phụ tải hoặc thỏa thuận đâu
+nỗi hợp pháp áp dụng. Danh mục tín hiệu, lệnh giảm tải, tách tải, khôi phục, quyên
+điêu khiên và thời gian đáp ứng phải được xác định trong hô sơ giao diện theo mục
+3.6.6.
+
+3.6. Yêu cầu về giám sát, điều khiển và quản lý năng lượng
+
+3.6.1. Yêu cầu chung
+
+\ Trạm sạc thuộc phạm vi điều chỉnh tại mục 1.1.2 phải có chức năng giám sát
+đê nhận biệt trạng thái, cảnh báo sự cô, lưu trữ nhật ký và hồ trợ vận hành an toàn.
+Câu hình phân cứng, phân mềm và mức dự phòng được xác định theo quy mô, chức
+năng, chê độ bô trí người trực, hậu quả sự cô và yêu câu về khả năng phục hồi.
+
+3.6.2. Cấu trúc hệ thống giám sát
+
+- Hệ thống giám sát phải thực hiện các chức năng thu thập dữ liệu, hiển thị
+trạng thái, cảnh báo, điều khiên theo phân quyên, lưu trữ và trao đôi dữ liệu. Hệ thông
+được sử dụng kiên trúc tập trung, phân tán hoặc kêt hợp khi đáp ứng các yêu câu của
+Quy chuân này.
+
+- Việc lựa chọn máy chủ, bộ điều khiển, thiết bị mạng, phương tiện truyền dẫn,
+mức dự phòng và khả năng mở rộng phải được mô tả trong hô sơ kỹ thuật; lỗi của hệ
+thông giám sát không được làm mất tác dụng của chức năng bảo vệ an toàn độc lập
+của trụ sạc và hệ thông điện.
+
+3.6.3. Hệ thống giám sát sạc
+
+- Hệ thống giám sát sạc phải thực hiện các chức năng cần thiết theo cầu hình:
+thu thập và xử lý dữ liệu, hiên thị trạng thái, cảnh báo, điêu khiên theo phân quyên,
+lưu trữ, ghi nhật ký, quản lý thiệt bị và người sử dụng, báo cáo hoặc xuât dữ liệu, đông
+bộ thời gian và khả năng mở rộng.
+
+- Đồi với trụ DC, hệ thống phải ghi nhận trạng thái làm việc, tín hiệu sự có, điện
+áp, dòng điện, công suât, điện năng và nhiệt độ tại các vị trí được giám sát phục vụ
+bảo vệ. Đôi với trụ AC, phải ghi nhận trạng thái làm việc, tín hiệu sự cô, điện áp, dòng
+điện và điện năng. Danh mục điểm đo, đơn vị đo, giới hạn cảnh báo và chu kỹ cập
+nhật phải được xác định trong hô sơ kỹ thuật theo chức năng của thiệt bị.
+
+- Các chức năng khởi động, dừng, điều chỉnh thông số và đồng bộ thời gian từ
+xa phải được phân quyền, giới hạn theo câu hình và ghi nhật ký. Lệnh từ xa không
+được làm mất tác dụng của liên động bảo vệ hoặc thay thê điêu kiện khôi phục cập
+điện sau ngắt khẩn cấp tại mục 3.4.3.
+
+_....- Hệ thống phải lưu trữ và truy xuất được dữ liệu sạc, tín hiệu cảnh báo, lệnh
+điêu khiên và kêt quả thực hiện. Việc lưu trữ tập trung hoặc phân tán phải bảo đảm
+tính toàn vẹn của dữ liệu và cho phép đôi chiêu theo trình tự thời gian.
+
+15
+
+QCVN 32:2026/BCT
+
+3.6.4. Hệ thống giám sát cấp điện
+
+- Hệ thống giám sát cấp điện phải thu thập tồi thiêu các thông tin sau: trạng thái
+đóng căt của hệ thông cập điện trạm sạc, tín hiệu bảo vệ, điện áp, dòng điện, công
+suât tác dụng, công suất phản kháng, hệ sô công suât và thông tin đo lường điện năng.
+
+- Hệ thống giám sát cấp điện phải có khả năng điều khiển đóng, cắt cầu dao
+phụ tải hoặc máy cắt của hệ thông cấp điện trong phạm vi được phân quyên.
+
+...- Trường hợp mắt giám sát hoặc sự có cấp điện có nguy cơ ảnh hưởng đến
+nhiêu trụ sạc, nhiêu người sử dụng hoặc hệ thông điện, hệ thông giám sát cấp điện
+phải có cảnh báo vượt ngưỡng, ghi nhật ký sự kiện và thông kê sự cô. Điêu kiện được
+xác định trong đánh giá rủi ro và hỗ sơ thiết kê.
+
+3.6.5. Hệ thống giám sát an ninh và liên động an toàn
+
+_ Camera giám sát phải được lắp đặt trong trường hợp pháp luật chuyên ngành
+yêu câu hoặc hô sơ đánh giá rủi ro xác định cân thiết theo mức độ tiếp cận của công
+chúng và chê độ bô trí người trực. Camera được lặp đặt phải duy trì hoạt động theo
+mục đích thiết kê; dữ liệu hình ảnh phải được xử lý theo pháp luật vê bảo vệ dữ liệu
+cá nhân.
+
+3.6.6. Hệ thống truyền thông
+
+- Mạng truyền thông nội bộ của trạm được sử dụng công nghệ có dây hoặc
+không dây; phải bảo đảm tính toàn vẹn dữ liệu, quản lý phiên bản, phân quyên, khả
+năng chân đoán và trao đôi dữ liệu theo cầu hình áp dụng.
+
+_...- Giao diện giữa hệ thống giám sát trạm, hệ thống quản lý phụ tải và hệ thống
+điều độ thuộc phạm vi áp dụng tại mục 3.5.5 phải được lập tài liệu, quản lý phiên bản
+và kiêm tra. Hô sơ giao diện phải xác định đôi tượng kêt nôi, định dạng dữ liệu, đơn vị
+đo, danh mục lệnh, quyên truy cập, mã xác nhận hoặc từ chôi lệnh, mã lôi và thời gian
+đáp ứng.
+
+; - Mỗi lệnh phải có thông tin nhận dạng, thời điểm nhận, xác nhận tiếp nhận và
+kết quả thực hiện hoặc lý do không thực hiện. Mất kêt nôi, lệnh trùng, lệnh quá hạn
+hoặc không hợp lệ phải được phát hiện, ghi nhật ký và xử lý theo hô sơ giao diện;
+chức năng bảo vệ an toàn phải được duy trì. Giao thức và sản phẩm của nhà cung
+cấp được lựa chọn phải đáp ứng yêu câu giao diện và tiêu chí kiêm tra tương ứng.
+
+3.6.7. Đồng bộ thời gian, lưu trữ dữ liệu và an ninh mạng
+
+_...- Hệ thống giám sát, đo lường và thanh toán phải có cơ chế đồng bộ thời gian.
+Hồ sơ kỹ thuật phải xác định nguôn thời gian, sai lệch cho phép và cách xử lý mất
+đông bộ theo yêu câu đo lường, giao dịch hoặc điêu độ áp dụng; nhật ký phải cho
+phép xác định trình tự sự kiện.
+
+- Trường hợp mất kết nối, lỗi phần mềm, lỗi thanh toán, nghi ngờ truy cập trái
+phép hoặc sự cô an ninh mạng có nguy cơ ảnh hưởng đên an toàn sạc, đo lường,
+thanh toán hoặc dữ liệu của người sử dụng, đơn vị vận hành phải cô lập phân bị ảnh
+hưởng, xử lý, khôi phục hoạt động và lưu hô sơ sự cô.
+
+- Dữ liệu vận hành, cảnh báo, sự cố, đo lường và giao dịch phải được bảo vệ,
+sao lưu và truy xuất theo mục 4.7. Hệ thông kết nôi mạng công cộng hoặc nên tảng
+thanh toán phải có biện pháp quản lý tài khoản, phân quyên truy cập, ghi nhật ký hệ
+thông và biện pháp bảo đảm an ninh mạng theo pháp luật áp dụng.
+
+- Việc cập nhật phần mềm, thay đồi cầu hình điều khiên, thay đổi thông số vận
+hành hoặc thay đôi phương thức thanh toán của trạm sạc phải được kiêm soát, ghi
+nhận và truy xuất được.
+
+16
+
+QCVN 32:2026/BCT
+
+3.6.8. Tích hợp năng lượng tái tạo, hệ thống lưu trữ năng lượng và lưới
+điện thông minh
+
+- Khi tích hợp nguồn điện phân tán, BESS hoặc chức năng cấp điện từ xe vào
+hệ thông điện của trạm, hỗ sơ thiết kê phải xác định ranh giới đâu nôi, chê độ nạp và
+phóng điện, giới hạn công suât, phôi hợp bảo vệ, đo lường và trạng thái khi mất điện
+lưới. Chức năng kiểm soát công suất phát lên lưới điện phải bảo đảm công suất tác
+dụng phát lên lưới không vượt giới hạn được phép tại điểm đâu nôi; trường hợp không
+được phép phát lên lưới, phải ngăn phát công suất tác dụng lên lưới.
+
+_... - Giải pháp tích hợp phải được kiểm tra ở các chế độ vận hành theo thiết kế,
+gôm mât và khôi phục điện lưới, lôi điêu khiên và tác động bảo vệ; không được cấp
+điện ngoài ý muôn vào phân lưới đã cô lập. Yêu câu đôi với pin, hệ thông lưu trữ và
+nguôn phát thực hiện theo pháp luật, quy chuân, tiêu chuân chuyên ngành áp dụng.
+
+3.6.9. Giao diện người sử dụng và thông tin vận hành
+
+Trạm sạc phải hiển thị hoặc công khai tối thiêu trạng thái sẵn sàng, đang sạc
+hoặc lôi, điện năng đã sạc, thời gian sạc, thông tin giá hoặc phương pháp tính giá,
+cảnh báo an toàn và thông tin liên hệ hỗ trợ. Nội dung hiền thị cho người sử dụng phải
+thông nhât với dữ liệu đo lường và dữ liệu giao dịch được lưu trữ.
+
+3.7. Phương pháp kiểm tra và tiêu chí chấp nhận
+
+3.7.1. Việc đáp ứng các yêu cầu tại Phần 3 được kiểm tra bằng một hoặc nhiều
+phương pháp: D - xem xét hỗ sơ; Ï - kiểm tra trực quan, hiện trường; M - đo hoặc thử;
+F - thử chức năng hoặc mô phỏng tình huồng. Hỗ sơ kiềm tra phải xác định yêu câu
+áp dụng, điều khoản tiêu chuân, điêu kiện thử, đại lượng đo và tiêu chí đạt. Tiêu chí
+trong hô sơ thiêt kê phải có căn cứ từ quy chuân, tiêu chuân áp dụng, hướng dân thiết
+bị hoặc tính toán kiểm chứng; không được thập hơn yêu câu bất buộc của Quy chuân
+này.
+
+3.7.2. Mục 3.2 được kiểm tra bằng D, l và F trên phương tiện có kích thước, vị
+trí đâu nôi và quỹ đạo bật lợi nhât trong phạm vi thiết kê. Kêt quả được đánh giá đạt
+khi phương tiện vào, đỗ và rời vị trí sạc an toàn; việc kết nỗi sạc và mở cửa xe được
+thực hiện an toàn; cáp không bị kéo vượt giới hạn do nhà sản xuất quy định, không
+cắt ngang lôi đi hoặc lôi thoát nạn; thiệt bị không lân không gian tiệp cận đã xác định;
+nước không đọng tại chân bệ, tủ điện hoặc điêm đâu nôi trong điêu kiện thử thoát
+nước theo thiệt kê.
+
+3.7.3. Mục 3.3 được kiểm tra bằng D, l và F. Mỗi cầu hình tương thích phải có
+phép thử băng phương tiện đại diện hoặc thiệt bị mô phỏng phù hợp với tiêu chuân
+đâu nôi, giao tiêp áp dụng. Nội dung kiểm tra gồm lặp ghép cơ khí, thông sô điện, giao
+tiếp, liên động, khởi tạo, duy trì và kết thúc phiên sạc, dừng khi có lỗi. Kết quả được
+đánh giá đạt khi đáp ứng tiêu chuân, câu hình đã công bô và các điều kiện an toàn;
+nguyên nhân từ chối hoặc dừng sạc phải được ghi nhận đề truy xuất. Câu hình thử,
+phiên bản phân mêm và kết quả phải được lưu trong hô sơ.
+
+. 3.7.4. Mục 3.4 được kiểm tra bằng D, I, M và F. Kết quả được đánh giá đạt khi
+nôi đât, liên kêt đăng thê bảo vệ, cách điện và bảo vệ đáp ứng tiêu chuân, hô sơ thiệt
+kê; ngất khân cấp và bảo vệ sự cô cô lập đúng phân nguy hiểm; việc đặt lại thiết bị
+không làm phiên sạc tự khởi động lại; việc khôi phục đáp ứng mục 3.4.3. Kết quả phải
+được lập hô sơ và truy xuât được.
+
+3.7.5. Mục 3.5 được kiểm tra bằng D, M và F ở chế độ có phụ tải đồng thời lớn
+nhất theo thiết kê, kê cả phụ tải phụ trợ. Kết quả được đánh giá đạt khi công suất,
+dòng điện không vượt giới hạn nguôn cấp và hệ thông nội bộ; chất lượng điện năng
+đáp ứng quy chuân áp dụng; bảo vệ tác động theo thiết kê. Hệ thông quản lý phụ tải
+
+17
+
+QCVN 32:2026/BCT
+
+tự động thuộc cầu hình lắp đặt phải được thử trong các tình huống mắt truyền thông,
+lỗi điều khiển và khôi phục. Lỗi phải được phát hiện; chức năng giới hạn công suất
+hoặc giảm tải phải đưa hệ thống về trạng thái an toàn trong thời gian xác định theo
+thiết kế và yêu cầu bảo vệ.
+
+3.7.6. Mục 3.6 được kiểm tra bằng D và F theo cấu hình áp dụng. Phải kiểm tra
+thu thập trạng thái, cảnh báo, phân quyền, nhật ký, đồng bộ thời gian, sao lưu, khôi
+phục và giao diện trao đồi dữ liệu. Đồi với giao diện điều khiển, phải thử lệnh hợp lệ,
+lệnh không hợp lệ hoặc vượt quyền được cấp, lệnh trùng, mắt kết nối và khôi phục;
+đối chiều lệnh, xác nhận, kết quả thực hiện và thời gian phản hồi với hồ sơ giao diện.
+Kết quả được đánh giá đạt khi dữ liệu truy xuất được, lệnh không hợp lệ không được
+thực hiện, kết quả phản hồi đúng trạng thái thiết bị và lỗi giám sát không làm mắt tác
+dụng của chức năng bảo vệ an toàn. Nguồn tích hợp được kiểm tra theo các chế độ
+tại mục 3.6.8.
+
+3.7.7. Kết quả kiểm tra phải nêu cấu hình, điều kiện thử, thiết bị đo, tiêu chuẩn,
+hồ sơ dùng làm căn cứ đánh giá, kết quả và kết luận đạt hoặc không đạt; phần không
+đạt phải được khắc phục và kiểm tra lại trước khi đưa vào vận hành.
+
+18
+
+QCVN 32:2026/BCT
+
+4. QUY ĐỊNH VÈ QUẢN LÝ
+
+4.1. Công bố hợp quy đối với trụ sạc
+
+4.1.1. Trụ sạc xe điện sản xuất, lắp ráp trong nước phải được công bố hợp quy
+theo Quy chuân này và được găn dầu hợp quy trước khi đưa ra lưu thông trên thị
+trường.
+
+4.1.2. Trụ sạc xe điện nhập khẩu phải được công bố hợp quy theo Quy chuẩn
+này và được găn dâu hợp quy trước khi đưa ra lưu thông trên thị trường. Việc kiểm
+tra nhà nước về chất lượng hàng hóa nhập khẩu thực hiện theo pháp luật về chất
+lượng sản phâm, hàng hóa.
+
+4.1.3. Việc công bồ hợp quy đối với trụ sạc phải dựa trên kết quả chứng nhận
+hợp quy của tô chức chứng nhận được chỉ định theo pháp luật; việc thừa nhận, sử
+dụng kết quả chứng nhận của tô chức nước ngoài thực hiện theo mục 4.3. Tô chức
+chứng nhận phải đáp ứng TCVN ISO/IEC 17065:2013 (ISO/IEC 17065:2012) và thực
+hiện chứng nhận trong phạm vi được chỉ định hoặc được thừa nhận theo pháp luật.
+
+Đồi với trụ sạc có chức năng thu, phát sóng vô tuyến điện đã được đánh giá
+theo quy chuẩn kỹ thuật về vô tuyên điện, kết quả đánh giá chỉ được sử dụng cho các
+yêu câu và phép thử được chứng minh tương đương với yêu cầu tại mục 2.3. Các yêu
+câu về tương thích điện từ chưa được đánh giá hoặc khác về câu hình, công kêt nôi,
+chê độ vận hành phải được đánh giá bô sung.
+
+4.1.4. Việc chứng nhận hợp quy đối với trụ sạc được thực hiện theo phương
+thức 5 hoặc phương thức 7 quy định tại Thông tư sô 14/2026/TT-BKHON ngày 09
+tháng 4 năm 2026 của Bộ trưởng Bộ Khoa học và Công nghệ.
+
+4.2. Quy định về thử nghiệm, chứng nhận và thừa nhận kết quả đánh giá
+sự phù hợp
+
+Thử nghiệm phục vụ chứng nhận hợp quy phải được thực hiện bởi tổ chức thử
+nghiệm được chỉ định hoặc được thừa nhận theo mục 4.3 của Quy chuân này và pháp
+luật có liên quan.
+
+4.3. Nguyên tắc thừa nhận kết quả đánh giá sự phù hợp
+
+4.3.1. Việc thừa nhận, sử dụng kết quả thử nghiệm, chứng nhận của tổ chức
+nước ngoài thực hiện theo Thông tư sô 16/2026/TT-BKHON và pháp luật vô tiêu
+chuân, quy chuân kỹ thuật, chât lượng sản phẩm, hàng hóa.
+
+4.3.2. Kết quả thử nghiệm, chứng nhận của tổ chức nước ngoài chỉ được sử
+dụng trong phạm vi, thời hạn và điêu kiện thừa nhận theo mục 4.3.1. Hỗ sơ phải xác
+định được tô chức thực hiện, phép thử, kiêu, loại, phiên bản và câu hình sản phâm.
+Việc công nhận năng lực phòng thử nghiệm theo TCOVN ISO/IEC 17025:2017 (ISO/IEC
+17025:2017) hoặc việc cập chứng nhận quộc tê không thay thê cơ chê thừa nhận và
+kêt luận hợp quy theo pháp luật Việt Nam. TÔ chức sử dụng kêt quả chịu trách nhiệm
+về tính đây đủ, phù hợp của kêt quả và kêt luận đánh giá sự phù hợp do mình đưa ra.
+
+4.3.3. Tổ chức đánh giá sự phù hợp sử dụng kết quả thử nghiệm, chứng nhận
+theo phiên bản tiêu chuân khác với phiên bản viện dân tại mục 1.4 phải lập, lưu giữ
+bảng đôi chiều, xác định phạm vi và nội dung tương đương. Kêt quả chỉ được sử dụng
+đôi với các yêu câu kỹ thuật có mức yêu câu tương đương hoặc nghiêm ngặt hơn và
+phương pháp thử tương đương. Các yêu câu bắt buộc còn lại phải được thử nghiệm
+hoặc đánh giá bô sung trước khi kêt luận sự phù hợp với Quy chuân này. Việc sử
+dụng kêt quả của tô chức nước ngoài phải đáp ứng mục 4.3.1 và mục 4.3.2.
+
+19
+
+QCVN 32:2026/BCT
+
+4.4. Hồ sơ thiết kế, lắp đặt và nghiệm thu trạm sạc
+
+4.4.1. Hồ sơ kỹ thuật thiết kế trạm phải thể hiện nội dung phù hợp với cấu hình
+và phạm vi dự án: mặt băng, tô chức giao thông; sơ đô và ranh giới hệ thông điện,
+tuyên cáp; tính toán phụ tải, hệ sô đông thời, sụt áp và phôi hợp bảo vệ; nôi đất, chông
+sét, nên móng, thoát nước; giải pháp PCCC, chiêu sáng, biên báo; câu hình giám sát,
+giao diện điều khiên và tài liệu thiết bị. Hỗ sơ thủ tục chuyên ngành chỉ phải lập trong
+trường hợp pháp luật tương ứng yêu câu.
+
+4.4.2. Hồ sơ lắp đặt, thử nghiệm và bàn giao phải gồm bản vẽ hoàn công; biên
+bản kiêm tra vật liệu, thiêt bị và chât lượng thi công; kêt quả đo, thử; hướng dân vận
+hành, bảo trì và nhật ký thi công. Hô sơ đâu nôi điện lực, đo lường, PCCC hoặc nghiệm
+thu chuyên ngành chỉ lập khi pháp luật, hô sơ thiết kê hoặc thỏa thuận áp dụng yêu
+câu.
+
+4.4.3. Thay đổi trụ sạc, cáp, thiết bị bảo vệ, vị trí, công suất, đầu nối hoặc giải
+pháp PCCC phải được đánh giá theo phạm vi ảnh hưởng; cập nhật tính toán, hỗ sơ
+và thực hiện kiêm tra, nghiệm thu bô sung đôi với phân bị ảnh hưởng trước khi khai
+thác. Không phải kiêm tra, nghiệm thu lại phân không bị ảnh hưởng đã có băng chứng
+phù hợp và truy xuất được.
+
+4.5. Điều kiện đưa trạm sạc vào vận hành
+
+4.5.1. Trạm sạc chỉ được đưa vào vận hành sau khi hoàn thành kiểm tra, thử
+nghiệm và nghiệm thu các hạng mục thuộc phạm vi thiệt kê; đáp ứng yêu câu về bảo
+vệ điện, nôi đất, chông sét, chiêu sáng, giám sát và truyền thông theo câu hình lắp đặt.
+Các điêu kiện vê PCCC, đo lường, đâu nôi điện lực và thủ tục chuyên ngành khác
+được thực hiện trong trường hợp pháp luật chuyên ngành quy định.
+
+4.5.2. Phương tiện đo điện năng dùng đề định lượng hàng hóa, dịch vụ trong
+mua bán, thanh toán phải đáp ứng yêu câu và biện pháp kiểm soát về đo lường theo
+pháp luật về đo lường trước khi đưa vào sử dụng và trong quá trình sử dụng.
+
+4.5.3. Đồi với trạm có nguồn cấp qua trạm biến áp riêng hoặc đầu nối trung áp,
+hỗ sơ thỏa thuận đâu nôi, nghiệm thu kỹ thuật, xác nhận điều kiện đóng điện hoặc tài
+liệu tương ứng được lập khi pháp luật điện lực và thỏa thuận đâu nôi yêu câu.
+
+4.5.4. Trụ sạc lắp đặt trong trạm phải có hồ sơ kỹ thuật và hồ sơ chứng nhận
+hợp quy, công bô hợp quy theo các mục 4.1 đến 4.3. Không lắp đặt, đưa vào sử dụng
+trụ sạc không rõ nguôn gôc, không có tài liệu kỹ thuật hoặc không đáp ứng yêu cầu
+an toàn.
+
+4.6. Quản lý vận hành, kiểm tra và bảo trì
+
+4.6.1. Đơn vị vận hành phải xây dựng, ban hành và duy trì quy trình vận hành,
+quy trình xử lý sự cô, quy trình ngắt điện khân cấp, quy trình hỗ trợ người sử dụng và
+kê hoạch kiêm tra, bảo trì định kỳ cho toàn bộ trạm sạc.
+
+4.6.2. Đơn vị vận hành phải ghi nhận và lưu hồ sơ kiểm tra, bảo trì, sửa chữa,
+thay thê, cập nhật phân mềm và xử lý sự cô. Hỗ sơ phải có ngày thực hiện, thông tin
+nhận dạng thiết bị hoặc phân hệ thông, người thực hiện, nội dung và kết quả kiêm tra,
+biện pháp xử lý và điều kiện vận hành trở lại; phải truy xuất được theo thiết bị và thời
+điểm. Hô sơ được lưu dưới dạng văn bản giây hoặc thông điệp dữ liệu theo pháp luật
+áp dụng. Thông điệp dữ liệu phải bảo đảm tính toàn vẹn và có thê truy cập, sử dụng
+đề tham chiêu; hình thức, nội dung và thời hạn lưu trữ thực hiện theo pháp luật về
+giao dịch điện tử và pháp luật có liên quan.
+
+20
+
+QCVN 32:2026/BCT
+
+; 4.6.3. Khi phát hiện nguy cơ mất an toàn, đơn vị vận hành phải dừng hoặc hạn
+chê khai thác thiệt bị, khu vực hoặc phân hệ thông bị ảnh hưởng và cô lập nguy cơ.
+Chỉ dừng toàn trạm khi không thê cô lập an toàn hoặc nguy cơ ảnh hưởng đên toàn
+trạm. Việc vận hành trở lại chỉ thực hiện sau khi kiểm tra, khắc phục và lập hô sơ xác
+nhận phân bị ảnh hưởng đáp ứng yêu câu kỹ thuật; thâm quyên thao tác và xác nhận
+chuyên ngành thực hiện theo pháp luật áp dụng.
+
+—— Chất thải phát sinh trong quá trình vận hành, bảo trì, sửa chữa, thay thế
+thiết bị hoặc tháo dỡ trạm sạc phải được phân loại, thu gom, lưu giữ và chuyên giao
+theo pháp luật về bảo vệ môi trường. Pin, thiết bị điện, điện tử thải bỏ và chất thải nguy
+hại được quản lý theo quy định áp dụng đôi với từng loại chât thải.
+
+4.7. Thông tin nhận biết trạm sạc và quản lý dữ liệu
+
+4.7.1. Tại trạm sạc phải công khai thông tin nhận biết trạm, tên và thông tin liên
+hệ của đơn vị vận hành, vị trí, công suất cấp đồng thời, loại đâu nôi, thời gian và tình
+trạng hoạt động, hướng dẫn sử dụng, cảnh báo và đầu môi xử lý khân cấp. Thông tin
+phải được cập nhật khi thay đôi; thông tin hướng dẫn và xử lý khân cấp phải bảo đảm
+tiệp cận được tại chỗ, kê cả khi mật kết nỗi mạng. Các thông tin khác được cung cập
+băng phương tiện điện tử trước khi sử dụng dịch vụ.
+
+4.7.2. Dữ liệu vận hành, cảnh báo, sự có, đo lường, thanh toán và phản ánh
+của người sử dụng phải được thu thập, lưu trữ, truy xuất và bảo vệ theo quy định của
+pháp luật. Việc xử lý dữ liệu cá nhân phải tuân thủ pháp luật về bảo vệ dữ liệu cá
+nhân. Dữ liệu chỉ được cung cấp cho cơ quan nhà nước theo căn cứ, thâm quyên,
+phạm vi, mục đích và phương thức do pháp luật quy định. Chê độ báo cáo hoặc kêt
+nôi dữ liệu định kỳ chỉ áp dụng trong trường hợp pháp luật quy định.
+
+4.7.3. Khi xảy ra tai nạn, cháy, nổ hoặc sự có ảnh hưởng đến an toàn, đơn vị
+vận hành phải cô lập nguy cơ và lưu hô sơ xử lý. Việc thông báo, báo cáo và phôi hợp
+với cơ quan nhà nước được thực hiện trong các trường hợp và theo thâm quyên, nội
+dung, trình tự do pháp luật chuyên ngành quy định.
+
+21
+
+QCVN 32:2026/BCT
+5. TRÁCH NHIỆM CỦA TÔ CHỨC, CÁ NHÂN
+_..5.1. Trách nhiệm của tổ chức, cá nhân sản xuất, lắp ráp, nhập khâu, phân
+phôi trụ sạc
+
+5.1.1. Công bố tiêu chuẩn áp dụng; thực hiện chứng nhận hợp quy, công bồ
+hợp quy, ghi nhãn và gắn dâu hợp quy đôi với trụ sạc theo quy định pháp luật.
+
+5.1.2. Cung cấp đầy đủ, trung thực tài liệu kỹ thuật, kết quả thử nghiệm, thông
+tin nhà sản xuất, thông số danh định, điêu kiện lắp đặt, hướng dân sử dụng, hướng
+dân bảo trì và cảnh báo an toàn băng tiêng Việt.
+
+5.1.3. Bảo đảm trụ sạc lưu thông phù hợp hồ sơ kỹ thuật, tiêu chuẩn công bồ
+áp dụng và kết quả đánh giá sự phù hợp. Thay đôi thiệt kê, linh kiện, phân mềm hoặc
+chức năng ảnh hưởng đên an toàn phải được kiêm soát và đánh giá theo pháp luật
+về đánh giá sự phù hợp; nghĩa vụ thông báo thực hiện trong trường hợp pháp luật quy
+định.
+
+_.. 5.1.4. Phối hợp với chủ đầu tư, đơn vị lắp đặt, đơn vị vận hành và cơ quan có
+thâm quyên trong kiêm tra, chạy thử, xử lý lôi kỹ thuật, thu hôi hoặc khắc phục sản
+phẩm không phù hợp khi phát hiện nguy cơ mất an toàn.
+
+5.2. Trách nhiệm của chủ đầu tư, chủ sở hữu hoặc đơn vị quản lý trạm
+sạc
+
+5.2.1. Tổ chức lập, rà soát và quản lý hồ sơ thiết kế; thi công, lắp đặt, kiểm tra,
+nghiệm thu và đưa trạm sạc vào vận hành theo Quy chuẩn này và pháp luật có liên
+quan. Thâm tra hoặc phê duyệt hô sơ chỉ thực hiện khi pháp luật hoặc mô hình quản
+lý dự án áp dụng yêu câu.
+
+5.2.2. Bảo đảm điều kiện về địa điểm, cấp điện, PCCC, đo lường và an ninh
+mạng thuộc phạm vi pháp luật chuyên ngành áp dụng trước khi đưa trạm vào khai
+thác; thực hiện thủ tục theo đúng trường hợp và thâm quyên pháp luật quy định.
+
+5.2.3. Lựa chọn trụ sạc, vật liệu, thiết bị, phần mềm phù hợp và nhà thầu có
+năng lực đáp ứng yêu câu; không sử dụng thiết bị không rõ nguôn gốc, không có tài
+liệu kỹ thuật hoặc không đáp ứng yêu cầu an toàn.
+
+5.2.4. Bồ trí kinh phí, nhân lực và cơ chế quản lý để vận hành, kiểm tra, bảo trì,
+xử lý sự cô, công khai thông tin và bảo vệ quyên lợi người sử dụng trong suôt thời
+gian khai thác trạm.
+
+5.3. Trách nhiệm của đơn vị thiết kế, thi công, lắp đặt
+
+ì 5.3.1. Bảo đảm giải pháp thiết kế phù hợp quy mô phụ tải, hiện trạng khu đất,
+tô chức giao thông, công năng khai thác, điều kiện nên móng, thoát nước, đâu nôi điện
+và yêu câu an toàn của trạm.
+
+5.3.2. Lựa chọn vật liệu, thiết bị, cáp điện, ống bảo vệ, bệ móng, thiết bị bảo vệ,
+kêt câu đỡ và phụ kiện đáp ứng yêu câu kỹ thuật, môi trường sử dụng và hô sơ thiêt
+kê đã được chủ thê có trách nhiệm chấp thuận theo pháp luật hoặc hợp đông áp dụng.
+
+5.3.3. Thực hiện đầy đủ công tác kiểm tra hiện trường, kiểm soát chất lượng thi
+công, đo kiêm, thử nghiệm, lập hỗ sơ hoàn công và bàn giao hỗ sơ cho chủ đầu tư,
+chủ sở hữu hoặc đơn vị vận hành.
+
+22
+
+QCVN 32:2026/BCT
+
+5.4. Trách nhiệm của đơn vị vận hành trạm sạc
+
+„544.1. Vận hành trạm sạc theo đúng quy trình; duy trì hệ thống cảnh báo, PCCC,
+chiêu sáng, biên báo, thông tin hô trợ và các hạng mục phụ trợ bắt buộc. Camera và
+hệ thông an ninh thuộc câu hình lắp đặt phải được duy trì đúng chức năng; dữ liệu
+được xử lý theo pháp luật về bảo vệ dữ liệu cá nhân.
+
+5.4.2. Hướng dẫn sử dụng, tiếp nhận phản ánh, hỗ trợ người sử dụng; xử lý sự
+cô, dừng hoặc hạn chê khai thác phân bị ảnh hưởng theo mục 4.6.3; phôi hợp với cơ
+quan có thâm quyên theo pháp luật khi có tai nạn, cháy, nô hoặc sự cô.
+
+5.4.3. Quản lý hồ sơ vận hành, hồ sơ đo lường, hồ sơ bảo trì, nhật ký sự có,
+dữ liệu giao dịch và bảo đảm khả năng truy xuất lịch sử kiểm tra, sửa chữa, thay thê
+thiệt bị của trạm.
+
+5.4.4. Bảo đảm nhân sự vận hành, bảo trì và xử lý sự có được hướng dẫn, đào
+tạo phù hợp về an toàn điện, PCCC, đo lường, an ninh mạng và bảo vệ quyên lợi
+người tiêu dùng.
+
+5.5. Trách nhiệm của đơn vị cung cấp điện, đơn vị quản lý lưới điện và
+đơn vị điều độ hệ thông điện
+
+_.5.5.1. Hướng dẫn chủ đầu tư, đơn vị vận hành thực hiện thỏa thuận đấu nối,
+đo đêm điện năng, đóng điện, vận hành, điều chỉnh phụ tải và xử lý sự cô theo thâm
+quyên, phù hợp quy định pháp luật về điện lực.
+
+Ñ 5.5.2. Phối hợp đánh giá ảnh hưởng của trạm sạc đến lưới điện khu vực; yêu
+câu thực hiện các biện pháp kỹ thuật cân thiết về chất lượng điện năng, hệ sô công
+suât, giới hạn công suât, quản lý phụ tải hoặc bảo vệ hệ thông điện theo quy định.
+
+5.5.3. Thực hiện thao tác, yêu cầu giảm tải, tách tải, khôi phục cấp điện hoặc
+xử lý sự cô đôi với trạm sạc thuộc phạm vi điêu độ, quản lý vận hành theo quy định
+pháp luật.
+
+5.6. Trách nhiệm của tô chức đánh giá sự phù hợp và tô chức kiểm định,
+hiệu chuân, thử nghiệm phương tiện đo, chuân đo lường
+
+5.6.1. Thực hiện hoạt động đánh giá sự phù hợp, kiểm định, hiệu chuẩn, thử
+nghiệm phương tiện đo, chuân đo lường theo đúng phạm vi hoạt động, năng lực và
+điều kiện pháp luật quy định; bảo đảm độc lập, khách quan, trung thực và chịu trách
+nhiệm về kêt quả thực hiện.
+
+5.6.2. Lưu trữ hồ sơ đánh giá sự phù hợp, kiểm định, hiệu chuẩn, thử nghiệm
+phương tiện đo, chuân đo lường theo pháp luật áp dụng. Việc thông báo nguy cơ mật
+an toàn, cung cấp thông tin và báo cáo cơ quan quản lý thực hiện theo căn cứ, thâm
+quyên và phạm vi do pháp luật quy định.
+
+5.7. Trách nhiệm của cơ quan quản lý nhà nước
+
+_.5.7.1. Thực hiện hướng dẫn, thanh tra, kiểm tra và xử lý vi phạm theo thẩm
+quyên đôi với hoạt động sản xuất, nhập khâu, lưu thông, lắp đặt, vận hành và khai
+thác trụ sạc, trạm sạc xe điện.
+
+_..5.7.2. Tổng hợp khó khăn, vướng mắc phát sinh trong quá trình áp dụng Quy
+chuân; đề xuất sửa đôi, bô sung Quy chuẩn khi cần thiết đề bảo đảm phù hợp với thực
+tiên phát triển công nghệ, yêu câu quản lý và quy định pháp luật có liên quan.
+
+23
+
+QCVN 32:2026/BCT
+
+6. TÔ CHỨC THỰC HIỆN
+
+6.1. Trách nhiệm tổ chức thực hiện
+
+6.1.1. Cục Công nghiệp chủ trì, phối hợp với các cơ quan, đơn vị có liên quan
+hướng dân tô chức thực hiện Quy chuẩn này; tông hợp khó khăn, vướng mắc phát
+sinh trong quá trình áp dụng đề báo cáo cơ quan có thâm quyên xem xét, xử lý.
+
+6.1.2. Các cơ quan quản lý chuyên ngành về điện lực, an toàn kỹ thuật và môi
+trường công nghiệp, phòng cháy và chữa cháy, xây dựng, đo lường, an ninh mạng,
+bảo vệ quyên lợi người tiêu dùng và chính quyên địa phương phôi hợp thực hiện quản
+lý theo chức năng, nhiệm vụ được giao.
+
+6.2. Áp dụng văn bản, tiêu chuẩn được sửa đổi, bồ sung, thay thế
+
+_.. Khi văn bản quy phạm pháp luật hoặc quy chuẩn kỹ thuật viện dẫn được sửa
+
+đôi, bô sung, thay thê thì thực hiện theo văn bản mới, đúng phạm vi và hiệu lực. Đôi
+với tiêu chuân ghi năm công bô, áp dụng phiên bản nêu tại mục 1.4; việc sử dụng kêt
+quả đánh giá theo phiên bản khác thực hiện theo mục 4.3.3, không làm giảm yêu câu
+bắt buộc của Quy chuân này.
+
+6.3. Áp dụng Quy chuẩn
+
+Việc áp dụng Quy chuẩn đối với trụ sạc, trạm sạc thực hiện theo Điều 2 của
+Thông tư ban hành Quy chuần này.
+
+24

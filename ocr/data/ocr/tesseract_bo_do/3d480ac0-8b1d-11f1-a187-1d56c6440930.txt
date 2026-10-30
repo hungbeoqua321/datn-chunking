@@ -1,0 +1,384 @@
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+THÔNG TƯ
+Quy định về chê độ báo cáo định kỳ của Ngân hàng Nhà nước Việt Nam
+
+Thông tư số 09/2019/TT-NHNN ngày 31 tháng 07 năm 2019 của Thống
+đôc Ngân hàng Nhà nước Việt Nam quy định về chê độ báo cáo định kỳ của
+Ngân hàng Nhà nước Việt Nam, có hiệu lực kê từ ngày 16 tháng 09 năm 2019,
+được sửa đôi, bô sung bởi:
+
+Thông tư số 28/2026/TT-NHNN ngày 29 tháng 6 năm 2026 của Thống
+đôc Ngân hàng Nhà nước Việt Nam sửa đôi, bô sung một sô điều của Thông tư
+sô 09/2019/TT-NHNN quy định về chê độ báo cáo định kỳ của Ngân hàng Nhà
+nước Việt Nam, có hiệu lực kê từ ngày 12 tháng 8 năm 2026.
+
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010;
+
+Căn cứ Nghị định số 16/2017/NĐ-CP ngày 17 tháng 02 năm 2017 của
+Chính phủ quy định chức năng, nhiệm vụ, quyên hạn và cơ cầu tô chức của Ngân
+hàng Nhà nước Việt Nam;
+
+Căn cứ Nghị định số 09/2019/NĐ-CP ngày 24 tháng 01 năm 2019 của
+Chính phủ quy định vê chê độ báo cáo của cơ quan hành chính nhà nước;
+
+Theo đề nghị của Chánh Văn phòng Ngân hàng Nhà nước Việt Nam;
+
+Thông đóc Ngân hàng Nhà nước Việt Nam ban hành Thông tư quy định
+về chê độ báo cáo định kỳ của Ngân hàng Nhà nước Việt Nam.
+
+! Thông tư số 28/2026/1T-NHNN sửa đổi, bố sung một số điều của Thông tư số
+09/2019/TT-NHNN quy định về chê độ báo cáo định kỳ của Ngân hàng Nhà nước Việt Nam,
+có căn cứ ban hành như sau:
+
+“Căn cứ Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12;
+
+Căn cứ Luật Các tổ chức tín dụng số 32/2024/QH75 được sửa đổi, bồ sung bởi Luật
+sô 96/2025/QH15;
+
+Căn cứ Luật Giao dịch điện tử số 20/2023/QH15;
+
+.. Căn cứ Nghị định số 26/2025/NĐ-CP của Chính phủ quy định chức năng, nhiệm vụ,
+quyên hạn và cơ cầu tô chức của Ngân hàng Nhà nước Việt Nam được sửa đôi, bồ sung bởi
+Nghị định sô 198/2026/NĐ-CP;
+
+Căn cứ Nghị định số 09/2019/NĐ-CP của Chính phủ quy định về chế độ báo cáo của
+cơ quan hành chính nhà nước;
+
+Theo đề nghị của Chánh Văn phòng Ngân hàng Nhà nước;
+
+2
+Chương I
+NHỮNG QUY ĐỊNH CHUNG
+
+Điều 1. Phạm vi điều chỉnh
+
+1.2 Thông tư này quy định về:
+
+a) Nguyên tắc, nội dung, yêu cầu về việc ban hành chế độ báo cáo định
+kỳ thuộc phạm vi chức năng quản lý của Ngân hàng Nhà nước Việt Nam (sau
+đây gọi là Ngân hàng Nhà nước);
+
+b) Ứng dụng công nghệ thông tin trong thực hiện chế độ báo cáo định kỳ;
+
+c) Trách nhiệm của các đơn vị thuộc Ngân hàng Nhà nước trong việc thực
+hiện chế độ báo cáo định kỳ.
+
+2. Thông tư này không điều chỉnh:
+
+a) Chế độ báo cáo thống kê theo quy định của pháp luật về thống kê;
+
+b) Chế độ báo cáo mật theo quy định của pháp luật về bí mật nhà nước;
+
+c) Chế độ báo cáo trong nội bộ Ngân hàng Nhà nước.
+
+Điều 2. Đối tượng áp dụng
+
+Các đơn vị và cán bộ, công chức, viên chức thuộc Ngân hàng Nhà nước
+và các tổ chức, cá nhân có liên quan đến việc thực hiện chế độ báo cáo định kỳ
+của Ngân hàng Nhà nước.
+
+Chương JI
+BAN HÀNH CHÊ ĐỘ BÁO CÁO ĐỊNH KỲ
+
+Điều 3. Nguyên tắc ban hành chế độ báo cáo định kỳ của Ngân hàng
+Nhà nước
+
+1. Đáp ứng các nguyên tắc theo quy định tại Điều 5 Nghị định số
+09/2019/NĐ-CP ngày 24 tháng 01 năm 2019 của Chính phủ quy định về chê độ
+báo cáo của cơ quan hành chính nhà nước (sau đây gọi tặt là Nghị định sô
+09/2019/NĐ-CP).
+
+mi hồng đóc Ngân hàng Nhà nước Việt Nam ban hành Thông tư sửa đổi, bồ sung mội
+sô điều của Thông tư sô 09/2019/T7-NHNN quy định về chê độ báo cáo định kỳ của Ngân
+hàng Nhà nước Việt Nam ”
+
+2 Khoản này được sửa đổi theo quy định tại Điều 1 của Thông tư số 28/2026/TT-
+NHNN sửa đôi, bô sung một sô điều của Thông tư sô 09/2019/TT-NHNN quy định về chê độ
+báo cáo định kỳ của Ngân hàng Nhà nước Việt Nam, có hiệu lực kê từ ngày 12/8/2026.
+
+3
+
+2. Bảo đảm yêu cầu cải cách hành chính, cần thiết đôi với hoạt động quản
+lý, không trùng lặp với chê độ báo cáo khác, giảm tôi đa yêu câu về tân suât, nội
+dung báo cáo nhăm tiệt kiệm thời gian, chỉ phí, nhân lực trong việc thực hiện
+chê độ báo cáo.
+
+3. Đối với mỗi chế độ báo cáo định kỳ, trong mỗi tháng, cơ quan, tô chức,
+cá nhân chỉ phải thực hiện một trong các báo cáo: tháng, quý, ó tháng, 9 tháng
+hoặc báo cáo năm. Không được yêu câu cơ quan, tô chức, cá nhân gửi cùng một
+báo cáo nhiêu lân đên nhiêu đơn vị thuộc Ngân hàng Nhà nước.
+
+Điều 4. Nội dung chế độ báo cáo định kỳ
+
+Chế độ báo cáo định kỳ của Ngân hàng Nhà nước phải bao gồm đầy đủ
+các nội dung thành phân nêu tại các khoản từ khoản 1 đên khoản 9 Điêu 7 Nghị
+định sô 09/2019/NĐ-CP, trừ trường hợp có quy định khác tại các văn bản của
+Quôc hội, Uy ban thường vụ Quôc hội, Chính phủ, “Thủ tướng Chính phủ và
+phải quy định cụ thê đơn vị nhận báo cáo thuộc cơ câu tô chức của Ngân hàng
+Nhà nước.
+
+Điều 5. Vêu cầu chung
+
+Việc xây dựng chế độ báo cáo định kỳ của Ngân hàng Nhà nước phải đáp
+ứng yêu câu quy định tại Điêu 8 Nghị định sô 09/2019/NĐ-CP.
+
+Điều 6. Thời hạn gửi báo cáo
+
+1. Thời hạn gửi báo cáo định kỳ tối thiều sau 01 ngày kề từ ngày chốt số
+liệu báo cáo và trước ngày Ngân hàng Nhà nước gửi báo cáo định kỳ cho Chính
+phủ, Thủ tướng Chính phủ theo quy định tại Điêu 13 Nghị định sô 09/2019/NĐ-
+CP.
+
+2. Đối với trường hợp báo cáo phức tạp, có nhiều đối tượng thực hiện và
+phải tông hợp qua nhiều cơ quan, đơn vị, nhiều cập khác nhau thì chê độ báo
+cáo phải quy định rõ thời hạn gửi báo cáo đôi với từng đôi tượng, từng cập báo
+cáo đó và phải đảm bảo thời hạn quy định tại khoản 1 Điêu này.
+
+Điều 7. Thời gian chốt số liệu báo cáo
+
+1. Báo cáo định kỳ hằng tháng: Tính từ ngày 15 tháng trước đến ngày 14
+của tháng thuộc kỳ báo cáo.
+
+„2. Báo cáo định kỳ hằng quý: Tính từ ngày 15 của tháng trước kỳ báo cáo
+đên ngày 14 của tháng cuôi quý thuộc kỳ báo cáo.
+
+3. Báo cáo định kỳ 6 tháng: Thời gian chốt số liệu 6 tháng đầu năm được
+tính từ ngày 15 tháng 12 năm trước kỳ báo cáo đên ngày 14 tháng 6 của kỳ báo
+cáo. Thời gian chôt sô liệu 6 tháng cuôi năm được tính từ ngày 15 tháng 6ó đên
+ngày 14 tháng 12 của kỳ báo cáo.
+
+4. Báo cáo định kỳ hằng năm: Tính từ ngày 15 tháng 12 năm trước kỳ báo
+cáo đên ngày 14 tháng 12 của kỳ báo cáo.
+
+4
+
+5. Đối với các báo cáo định kỳ không chốt được số liệu theo các thời hạn
+quy định tại khoản 1, 2, 3, 4 Điều này, đơn vị xây dựng chê độ báo cáo cân
+chọn thời điểm chôt sô liệu gân nhât với thời hạn chôt sô liệu của kỳ báo cáo
+tương ứng và phải đảm bảo thời hạn gửi báo cáo quy định tại khoản 1 Điêu 6
+Thông tư này.
+
+Điều 7a. Ứng dụng công nghệ thông tin trong thực hiện chế độ báo
+cáo định kỳ.
+
+1. Ứng dụng công nghệ thông tin trong thực hiện chế độ báo cáo định kỳ
+là việc sử dụng hệ thông thông tin, phân mềm và chữ ký sô đê gửi, nhận, tông
+hợp và quản lý báo cáo định kỳ băng phương tiện điện tử, thay thê việc gửi,
+nhận báo cáo băng văn bản giây.
+
+2. Hệ thống thông tin báo cáo của Ngân hàng Nhà nước (sau đây gọi là
+Hệ thông báo cáo) là Hệ thông tập trung tiêp nhận, tông hợp, quản lý, khai thác
+và chia sẻ dữ liệu báo cáo với Hệ thông thông tín báo cáo Chính phủ và các cơ
+quan, tô chức liên quan.
+
+3. Báo cáo định kỳ được gửi, nhận bằng phương tiện điện tử qua Hệ
+thông báo cáo và các Hệ thông thông tín khác của Ngân hàng Nhà nước theo
+một trong các hình thức sau:
+
+a) Nhập dữ liệu trực tiếp trên biểu mẫu điện tử tích hợp sẵn trên Hệ
+thông;
+
+b) Gửi tệp tin điện tử đính kèm (có định dạng văn bản, bảng biểu, số liệu
+hoặc định dạng điện tử khác) đôi với các báo cáo không yêu câu nhập dữ liệu
+theo biêu mâu điện tử.
+
+4. Báo cáo định kỳ được gửi, nhận bằng phương tiện điện tử quy định
+tại khoản 3 Điêu này gọi là báo cáo điện tử. Báo cáo điện tử phải được ký sô
+bởi người có thâm quyên của đơn vị gửi báo cáo theo quy định của Luật Giao
+dịch điện tử, có giá trị pháp lý như báo cáo băng văn bản giây.
+
+5. Thời điểm gửi báo cáo điện tử được tính là thời điểm các Hệ thống
+ghi nhận đã gửi báo cáo thành công.
+
+6. Trường hợp các Hệ thống xảy ra sự cổ kỹ thuật không gửi, nhận được
+báo cáo điện tử, đơn vị gửi báo cáo thực hiện gửi văn bản giây theo các phương
+thức sau: gửi trực tiêp, gửi qua dịch vụ bưu chính hoặc gửi văn bản điện tử qua
+hệ thông thư điện tử (nêu có). Thực hiện cập nhật lại báo cáo trên Hệ thông
+sau khi sự cô được khăc phục.
+
+3 Điều này được bổ sung theo quy định tại Điều 2 của Thông tư số 28/2026/TT-NHNN
+sửa đôi, bô sung một sô điều của Thông tư sô 09/2019/TT-NHNN quy định vê chê độ báo
+cáo định kỳ của Ngân hàng Nhà nước Việt Nam, có hiệu lực kê từ ngày 12/8/2026.
+
+5
+Chương IJII
+TRÁCH NHIỆM CỦA CÁC ĐƠN VỊ TRONG VIỆC THỰC HIỆN QUY ĐỊNH
+VỀ CHẾ ĐỘ BẢO CÁO ĐỊNH KỶ
+
+Điều 8. Trách nhiệm của các đơn vị thuộc Ngân hàng Nhà nước
+
+1. Các đơn vị chủ trì xây dựng văn bản quy phạm pháp luật có quy định
+chê độ báo cáo định kỳ phải lây ý kiên của Văn phòng Ngân hàng Nhà nước và
+Vụ Dự báo, thông kê về quy định chê độ báo cáo định kỳ trong dự thảo văn bản.
+
+2. Trong thời hạn 10 ngày làm việc kề từ ngày Thông tư hoặc văn bản do
+Ngân hàng Nhà nước trình Chính phủ, Thủ tướng Chính phủ ban hành có quy
+định chê độ báo cáo định kỳ có hiệu lực thi hành, đơn vị chủ trì soạn thảo có
+trách nhiệm trình Thông độc Ngân hàng Nhà nước (qua Văn phòng) quyêt định
+công bô chê độ báo cáo định kỳ.
+
+Nội dung quyết định công bố gồm: Tên báo cáo, đối tượng thực hiện báo
+cáo, cơ quan nhận báo cáo, tân suât thực hiện báo cáo và văn bản quy định chê
+độ báo cáo.
+
+3. Các đơn vị thuộc Ngân hàng Nhà nước có trách nhiệm chia sẻ, khai
+thác các báo cáo do tô chức, cá nhân gửi đên Ngân hàng Nhà nước qua Hệ
+thông thông tìn báo cáo quộc gia và Hệ thông thông tin báo cáo của Ngân hàng
+Nhà nước.
+
+4.4 Đơn vị đầu mi nhận, khai thác báo cáo định kỳ có trách nhiệm:
+
+a) Theo dõi, đôn đốc các đơn vị liên quan gửi báo cáo đúng thời hạn quy
+định;
+
+b) Rà soát danh mục báo cáo định kỳ thuộc phạm vi chức năng, nhiệm
+vụ của đơn vị, bao gôm nội dung báo cáo, khả năng chuân hóa dữ liệu và khả
+năng ứng dụng công nghệ thông tin trong thực hiện chê độ báo cáo định kỳ
+theo quy định tại khoản 1 Điều 7a Thông tư này; đê xuât thực hiện báo cáo
+định kỳ băng phương tiện điện tử, gửi đơn vị chủ trì xây dựng văn bản quy
+phạm pháp luật quy định tại khoản 1 Điều 8 Thông tư này (đôi với trường hợp
+có từ hai đơn vị trở lên cùng nhận, khai thác báo cáo định kỳ) hoặc Văn phòng
+Ngân hàng Nhà nước đê tông hợp theo quy định tại khoản 4 Điều 9 Thông tư
+này;
+
+c) Phối hợp với Cục Công nghệ thông tin để xây dựng quy trình, biểu
+mâu báo cáo điện tử, thực hiện kiêm thử và gửi tài liệu hướng dân nghiệp vụ
+vê việc thực hiện báo cáo điện tử sau khi kêt nôi hệ thông hoàn thành.
+
+4 Khoản này được bồ sung theo quy định tại Điều 3 của Thông tư số 28/2026/TT-
+NHNN sửa đôi, bô sung một sô điều của Thông tư sô 09/2019/TT-NHNN quy định về chê độ
+báo cáo định kỳ của Ngân hàng Nhà nước Việt Nam, có hiệu lực kê từ ngày 12/8/2026.
+
+6
+
+5. Đơn vị chủ trì xây dựng văn bản quy phạm pháp luật quy định tại
+khoản 1 Điêu 8 Thông tư này có trách nhiệm:
+
+a) Đầu mồi tông hợp đề xuất việc thực hiện báo cáo định kỳ băng phương
+tiện điện tử đôi với trường hợp có từ hai đơn vị trở lên cùng nhận, khai thác
+báo cáo định kỳ gửi Văn phòng Ngân hàng Nhà nước đê tông hợp theo quy
+định tại khoản 4 Điêu 9 Thông tư này;
+
+b) Phối hợp với Cục Công nghệ thông tin trong quá trình triển khai ứng
+dụng công nghệ thông tin đôi với chê độ báo cáo định kỳ theo quy định tại
+khoản 1 Điêu 7a Thông tư này;
+
+c) Sửa đổi, bồ sung nội dung về thực hiện báo cáo định kỳ băng phương
+tiện điện tử.
+
+Điều 9. Trách nhiệm của Văn phòng Ngân hàng Nhà nước
+
+1. Tham mưu giúp Thống đốc Ngân hàng Nhà nước quản lý, lưu trữ, chia
+sẻ các thông tin báo cáo thuộc các lĩnh vực hoạt động do Ngân hàng Nhà nước
+quản lý, ban hành.
+
+2. Theo dõi, kiểm tra, đôn đốc việc thực hiện chế độ báo cáo phục vụ sự
+chỉ đạo điêu hành của Ngân hàng Nhà nước, Thông độc Ngân hàng Nhà nước.
+
+3. Tham gia ý kiến các dự thảo văn bản quy phạm pháp luật của Ngân
+hàng Nhà nước có quy định về chê độ báo cáo định kỳ, đảm bảo tuân thủ các
+quy định tại Thông tư này; kiêm soát nội dung công bô chê độ báo cáo định kỳ
+trước khi các đơn vị trình Thông độc Ngân hàng Nhà nước ban hành.
+
+4.6 Đầu mồi tổng hợp, đánh giá, báo cáo Thống đốc Ngân hàng Nhà nước
+việc thực hiện chê độ báo cáo định kỳ theo thâm quyên của Ngân hàng Nhà
+nước; tông hợp đê xuât việc thực hiện báo cáo định kỳ băng phương tiện điện tử
+từ các đơn vị thuộc Ngân hàng Nhà nước gửi Cục Công nghệ thông tin phôi hợp
+triên khai; rà soát đề đê xuât việc sửa đôi, bô sung quy định về chê độ báo cáo
+định kỳ cho phù hợp với yêu câu quản lý nhà nước.
+
+5. Hướng dẫn, theo dõi, đôn đốc, kiểm tra việc thực hiện Thông tư này.
+
+Điều 10. Trách nhiệm của Vụ Dự báo, thống kê
+
+Tham gia ý kiến các dự thảo văn bản quy phạm pháp luật có quy định chế
+độ báo cáo định kỳ của Ngân hàng Nhà nước đảm bảo tránh trùng lăp với các
+chê độ báo cáo thông kê của Ngân hàng Nhà nước.
+
+Điều 11. Trách nhiệm của Cục Công nghệ thông tin
+
+5 Khoản này được bồ sung theo quy định tại Điều 3 của Thông tư số 28/2026/TT-
+NHNN sửa đôi, bô sung một sô điều của Thông tư sô 09/2019/TT-NHNN quy định vê chê độ
+báo cáo định kỳ của Ngân hàng Nhà nước Việt Nam, có hiệu lực kê từ ngày 12/8/2026.
+
+6 Khoản này được sửa đôi theo quy định tại Điều 4 của Thông tư sô 28/2026/TT-
+NHNN sửa đôi, bô sung một sô điều của Thông tư sô 09/2019/TT-NHNN quy định về chê độ
+báo cáo định kỳ của Ngân hàng Nhà nước Việt Nam, có hiệu lực kê từ ngày 12/8/2026.
+
+7
+
+1. Đầu mối tổ chức xây dựng và vận hành các hệ thống thông tin báo cáo
+của Ngân hàng Nhà nước theo hướng dẫn của Văn phòng Chính phủ và Bộ Khoa
+học và Công nghệ”; hướng dẫn, tô chức tập huấn cho các đối tượng thực hiện
+báo cáo.
+
+2. Xác định cấp độ bảo đảm an toàn thông tin và thực hiện phương án bảo
+đảm an toàn hệ thống thông tin theo cấp độ đối với các hệ thống thông tin báo
+cáo của Ngân hàng Nhà nước. Thiết lập các hệ thống giám sát, phòng, chống tần
+công, chồng thất thoát dữ liệu, phòng, chống vi-rút đề bảo đảm an toàn, an ninh
+cho hệ thống.
+
+3.5 Triền khai về mặt kỹ thuật đề xây dựng việc gửi, nhận báo cáo định
+kỳ bằng phương tiện điện tử trên các Hệ thống thông tin đảm bảo việc truyền,
+nhận, theo dõi, tra soát, khai thác, tổng hợp báo cáo; gửi văn bản hướng dẫn kỹ
+thuật việc thực hiện báo cáo điện tử sau khi đã hoàn thành kết nói.
+
+4.? Hướng đẫn việc cấp phát, quản lý mã khóa, quản lý tài khoản, chương
+trình ký điện tử dùng trong hệ thống báo cáo cho các đơn vị gửi báo cáo. Tiếp
+nhận và xử lý các kiến nghị, vướng mắc liên quan đến sự cố đường truyền báo
+cáo.
+
+Chương IV
+ĐIÊU KHOẢN THỊ HÀNH"?
+
+Điều 12. Tổ chức thực hiện
+
+1. Thông tư này có hiệu lực thi hành kể từ ngày 16 tháng 9 năm 2019.
+
+7 Cụm từ “Bộ Thông tin và Truyền thông” được thay bằng cụm từ “Bộ Khoa học và
+Công nghệ” theo quy định tại khoản 1 Điêu 6 của Thông tư sô 28/2026/TT-NHNN sửa đôi,
+bô sung một sô điều của Thông tư sô 09/2019/TT-NHNN quy định về chê độ báo cáo định
+kỳ của Ngân hàng Nhà nước Việt Nam, có hiệu lực kê từ ngày 12/8/2026.
+
+$ Khoản này được bồ sung theo quy định tại Điều 5 của Thông tư số 28/2026/TT-
+NHNN sửa đôi, bô sung một sô điều của Thông tư sô 09/2019/TT-NHNN quy định về chê độ
+báo cáo định kỳ của Ngân hàng Nhà nước Việt Nam, có hiệu lực kê từ ngày 12/8/2026.
+
+? Khoản này được bồ sung theo quy định tại Điều 5 của Thông tư số 28/2026/TT-
+NHNN sửa đôi, bô sung một sô điều của Thông tư sô 09/2019/TT-NHNN quy định về chê độ
+báo cáo định kỳ của Ngân hàng Nhà nước Việt Nam, có hiệu lực kê từ ngày 12/8/2026.
+
+!9 Điều 7 và Điều 8 của Thông tư số 28/2026/TT-NHNN sửa đồi, bô sung một số điều
+của Thông tư sô 09/2019/TT-NHNN quy định về chê độ báo cáo định kỳ của Ngân hàng Nhà
+nước Việt Nam, có hiệu lực kê từ ngày 12/8/2026 quy định như sau:
+
+“Điều 7. Điều khoản thi hành
+
+Thông tư này có hiệu lực từ ngày 12 tháng Š năm 2026.
+
+Điều 8. Trách nhiệm tổ chức thực hiện
+
+Thủ trưởng các đơn vị thuộc Ngân hàng Nhà nước chịu trách nhiệm tổ chức thực
+hiện Thông tư này./ 7
+
+8
+2. Chánh Văn phòng, Thủ trưởng các đơn vị thuộc Ngân hàng Nhà nước,
+Giám đốc Ngân hàng Nhà nước Khu vực”! chịu trách nhiệm tô chức thực hiện
+Thông tư này./.
+NGÂN HÀNG NHÀ NƯỚC XÁC THỰC VĂN BẢN HỢP NHẤT
+VIỆT NAM : :
+7 U Hà Nội, ngày 30 tháng Ó năm 2026
+Sô: 85. /VBHN-NHNN KT. THÓNG ĐÓC .
+PHO THONG ĐỌC
+XVơi nhận:
+- Ban lãnh đạo NHNN;
+- Văn phòng Chính phủ (đê đăng Công báo); mi Ú,
+- Công thông tin điện tử NHNN; PA
+- Lưu VP, PC3. ” sai
+oàn Thái Sơn
+u Cụm từ “Ngân hàng Nhà nước chỉ nhánh tỉnh, thành phố trực thuộc Trung ương”
+được thay băng cụm từ “Ngân hàng Nhà nước Khu vực” theo quy định tại khoản 2 Điều 6
+của Thông tư sô 28/2026/TT-NHNN sửa đôi, bô sung một sô điều của Thông tư sô
+09/2019/TT-NHNN quy định về chê độ báo cáo định kỳ của Ngân hàng Nhà nước Việt Nam,
+có hiệu lực kê từ ngày 12/8/2026.

@@ -1,0 +1,1901 @@
+cà Cơxquan phát hành: VĂN PHÒNG CHÍNH PHỦ
+CHÍNH PHỦ CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+— Độc lập - Tự do - Hạnh phúc
+Số: 332/2026/NĐ-CP Hà Nội, ngày 19 tháng 8 năm 2026
+NGHỊ ĐỊNH
+
+Quy định về hoạt động kinh doanh sản phẩm, dịch vụ an ninh mạng
+
+Căn cứ Luật Tổ chức Chính phủ số 63/2025/QH15,
+
+Căn cứ Luật An ninh mạng số 116/2025/QH15;
+
+Căn cứ Luật Đầu tư số 143⁄2025/QH15;
+
+Căn cứ Luật Quản lý ngoại thương số 05/2017/QH14;
+
+Theo đề nghị của Bộ trưởng Bộ Công an;
+
+Chính phủ ban hành Nghị định về hoạt động kinh doanh sản phẩm, dịch vụ
+an ninh mạng.
+
+Chương I
+QUY ĐỊNH CHUNG
+
+Điều 1. Phạm vi điều chỉnh
+
+1. Nghị định này quy định chỉ tiết khoản 3 Điều 28, khoản 3 Điều 29 Luật
+An ninh mạng sô 116/2025/QH15 gôm:
+
+a) Sản phẩm, dịch vụ an ninh mạng:
+
+b) Việc kinh doanh sản phẩm, dịch vụ an ninh mạng: Điều kiện kinh doanh
+sản phâm, dịch vụ an ninh mạng; cấp; cấp đôi, cấp lại, gia hạn, tạm đình chỉ, thu
+hôi giây phép kinh doanh sản phâm, dịch vụ an ninh mạng;
+
+_.e) Việc nhập khẩu, xuất khẩu sản phẩm an ninh mạng: Điều kiện cấp, thu
+hồi giây phép xuất khâu, nhập khâu sản phâm an ninh mạng:
+
+d) Kiểm tra việc kinh doanh sản phẩm, dịch vụ an ninh mạng; xuất khẩu,
+nhập khâu sản phâm an ninh mạng:
+
+„. đ) Trách nhiệm của cơ quan, tổ chức, doanh nghiệp, cá nhân có liên quan
+đên hoạt động kinh doanh sản phẩm, dịch vụ an ninh mạng.
+
+2. Nghị định này không điều chỉnh hoạt động kinh doanh sản phẩm, dịch
+vụ mật mã dân sự.
+
+3 ,
+
+Điều 2. Đối tượng và nguyên tắc áp dụng
+
+„ 1. Nghị định này áp dụng đối với tổ chức, doanh nghiệp kinh doanh sản
+phâm, dịch vụ an ninh mạng; cơ quan cấp phép, quản lý hoạt động kinh doanh
+sản phâm, dịch vụ an ninh mạng; cơ quan, tô chức, cá nhân có liên quan đến hoạt
+động kinh doanh sản phẩm, dịch vụ an ninh mạng.
+
+2. Bộ Quốc phòng quản lý về an ninh mạng đối với nhiệm vụ quân sự, quốc
+phòng: Bộ Công an quản lý về an ninh mạng đôi với các đơn vị Quân đội có hoạt
+động dân sự, kinh tê theo thâm quyên; đôi với các nội dung giao thoa (nếu có),
+Bộ Công an và Bộ Quôc phòng thông nhất quy chế phối hợp.
+
+Điều 3. Sân phẩm an ninh mạng
+
+Sản phẩm an ninh mạng được quy định trong Nghị định này gồm:
+
+1. Sản phẩm kiểm tra, đánh giá an ninh mạng là các thiết bị phần cứng, phần
+mềm có các tính năng hoặc được thiết kế đề tích hợp các tính năng sau: Rà quét,
+kiêm tra, phân tích câu hình, hiện trạng, dữ liệu nhật ký của hệ thống thông tin, thiết
+bị điện tử; phát hiện lỗ hông, điểm yêu; đưa ra đánh giá rủi ro an ninh mạng.
+
+2. Sản phẩm giám sát an ninh mạng là các thiết bị phần cứng, phần mềm có
+các tính năng hoặc được thiết kế để tích hợp các tính năng sau: Giám sát, phân
+tích dữ liệu, địa chỉ mạng, lưu lượng mạng; thu thập, phân tích dữ liệu nhật ký
+theo thời gian thực; phát hiện và đưa ra cảnh báo sự kiện bất thường, có nguy cơ
+gây mât an ninh mạng.
+
+3. Sản phẩm chống tấn công, xâm nhập là các thiết bị phần cứng, phần mềm
+có tính năng hoặc được thiết kế để tích hợp các tính năng ngăn chặn tân công,
+xâm nhập vào hệ thông thông tin.
+
+4. Sản phẩm an ninh mạng khác thuộc một trong các sản phẩm sau:
+
+a) Sản phẩm bí mật thu thập thông tin, bao gồm: Các thiết bị phần cứng, phần
+mêm có tính năng bí mật thu thập thông tin trên không gian mạng, trong các
+phương tiện, thiêt bị điện tử;
+
+b) Sản phẩm chế áp thông tin mạng, bao gồm: Các thiết bị phần cứng, phần
+mềm chuyên dụng đề ngăn chặn, chèn, gây nhiễu, phá đường truyền Internet
+không dây tại các khu vực, mục tiêu cần bảo vệ;
+
+c) Sản phẩm pháp y số, điều tra số, bao gồm: Các thiết bị phần cứng, phần
+mềm chuyên dụng thu thập, trích xuất, phục hôi, phân tích dữ liệu điện tử và giám
+định kỹ thuật sô từ nguôn dữ liệu điện tử;
+
+d) Sản phẩm chế áp hệ thống mạng, bao gồm: Các thiết bị phần cứng, phần
+mềm chuyên dụng để chế áp hoặc thay đồi hoạt động của mạng viên thông, mạng
+Internet, mạng máy tính, hệ thông thông tin, hệ thông xử lý và điều khiên thông
+tin, cơ sở dữ liệu, phương tiện điện tử;
+
+3
+
+đ) Sản phẩm che giấu địa chỉ IP là sản phẩm kết nối mạng giữa thiết bị và
+không gian mạng thông qua máy chủ từ xa nhăm che giấu địa chỉ JP thật của thiết
+bị trên không gian mạng.
+
+Điều 4. Dịch vụ an ninh mạng
+
+Dịch vụ an ninh mạng được quy định trong Nghị định này gồm:
+
+_ 1.Dịch vụ kiểm tra, đánh giá an ninh mạng là dịch vụ rà quét, kiểm tra, phân tích
+câu hình, hiện trạng, dữ liệu nhật ký của hệ thông thông tin; phát hiện lỗ hông, điểm
+yêu; đưa ra đánh giá rủi ro mất an ninh mạng.
+
+2. Dịch vụ bảo mật thông tin không sử dụng mật mã dân sự là dịch vụ hỗ trợ người
+sử dụng đảm bảo tính bí mật của thông tin, hệ thông thông tin mà không sử dụng sản
+phâm mật mã dân sự.
+
+3. Dịch vụ tư vấn an ninh mạng là dịch vụ hỗ trợ tư vấn, kiểm tra, đánh giá, triển
+khai, thiết kê, xây dựng các giải pháp bảo đảm an ninh mạng.
+
+4. Dịch vụ giám sát an ninh mạng là dịch vụ giám sát, phân tích lưu lượng
+dữ liệu truyền trên hệ thông thông tin; thu thập, phân tích dữ liệu nhật ký theo thời
+gian thực; phát hiện và đưa ra cảnh báo sự kiện bất thường, có nguy cơ gây mắt
+an ninh mạng.
+
+5. Dịch vụ ứng cứu sự cố an ninh mạng là dịch vụ xử lý, khắc phục kịp thời sự cố
+gây mật an ninh mạng đôi với hệ thông thông tin.
+
+_.6. Dịch vụ khôi phục dữ liệu là dịch vụ phục hồi dữ liệu trong thiết bị điện tử, hệ
+thông thông tin đã bị xóa hoặc hư hỏng.
+
+7. Dịch vụ phòng ngừa, chống tần công mạng là dịch vụ ngăn chặn các hành vi tắn
+công, xâm nhập vào hệ thông thông tin thông qua việc giám sát, thu thập, phân tích các
+sự kiện đang xảy ra trên hệ thông thông tin.
+
+8. Dịch vụ an ninh mạng khác gồm:
+
+a) Dịch vụ cung cấp nên tảng kết nối bảo vệ an ninh mạng là dịch vụ kết nối
+chuyên gia, cộng đông trên không gian mạng tham gia nhiệm vụ bảo vệ an ninh
+mạng, an ninh dữ liệu;
+
+b) Dịch vụ huấn luyện, diễn tập bảo vệ an ninh mạng:
+
+„. e) Dịch vụ che giấu địa chỉ IP trên không gian mạng là dịch vụ cung cấp kết
+nôi mạng giữa thiết bị và không gian mạng thông qua máy chủ từ xa nhằm che
+giâu địa chỉ IP thật của thiêt bị trên không gian mạng:
+
+„.d) Dịch vụ săn tìm và báo cáo lỗ hồng bảo mật là dịch vụ cung cấp nền tảng
+đề tiêp nhận báo cáo phát hiện lỗ hồng bảo mật trong hệ thống thông tin của các cơ
+quan, tô chức, cá nhân của chuyên gia bảo mật, cộng đồng an ninh mạng.
+
+Điều 5. Kinh doanh sản phẩm, dịch vụ an ninh mạng
+
+1. Tổ chức, doanh nghiệp phải có Giấy phép kinh doanh sản phẩm, dịch vụ
+an ninh mạng khi kinh doanh sản phẩm, dịch vụ an ninh mạng thuộc Điều 3, Điều
+4 Nghị định này.
+
+4
+2. Giấy phép kinh doanh sản phẩm, dịch vụ an ninh mạng có thời hạn 10 năm.
+R, Tổ chức, doanh nghiệp nộp hồ sơ đề nghị cấp Giấy phép kinh doanh sản
+phâm, dịch vụ an ninh mạng phải nộp phí theo quy định của pháp luật về phí và
+lệ phí.
+\ . Chương II
+ĐIÊU KHIỂN KINH DOANH SAN PHÁM, DỊCH VỤ AN NINH MẠNG
+Điều 6. Điều kiện chung về kinh doanh sản phẩm, dịch vụ an ninh mạng
+; Tô chức, doanh nghiệp kinh doanh sản phẩm, dịch vụ an ninh mạng được
+cập Giây phép kinh doanh sản phẩm, dịch vụ an ninh mạng khi đáp ứng đủ điều
+kiện sau đây:
+
+I. Được thành lập theo quy định của pháp luật Việt Nam, không vi phạm
+quy định của pháp luật vê kinh doanh sản phâm, dịch vụ an ninh mạng. Đôi với
+các tô chức kinh tê có vôn đâu tư nước ngoài, thời hạn đâu tư tại Việt Nam phải
+còn nhiêu hơn 05 năm kề từ ngày được cấp Giấy phép kinh doanh sản phẩm,
+dịch vụ an ninh mạng.
+
+2. Điều kiện về nhân sự:
+
+a) Người đại diện theo pháp luật, người quản lý hoặc người được người đại
+diện theo pháp luật, người quản lý ủy quyền không thuộc một trong các trường
+hợp sau đây:
+
+Người Việt Nam đã bị khởi tố hình sự mà các cơ quan tiền hành tổ tụng của
+Việt Nam hoặc của nước ngoài đang tiền hành điều tra, truy tố, xét xử hoặc có
+tiên án về các tội xâm phạm an ninh quốc gia hoặc được cơ quan có thâm quyên
+xác định là có hoạt động xâm phạm an ninh quốc gia hoặc các tội khác do lỗi cô
+ý, chưa được xóa án tích; đang trong thời gian được tạm hoãn chấp hành hình phạt
+tù; đang bị quản chê, cầm cư trú, câm đảm nhiệm chức vụ, cầm kinh doanh ngành,
+nghề kinh doanh có điều kiện về an ninh, trật tự theo quyết định của Tòa án hoặc
+đang bị áp dụng biện pháp giáo dục tại xã, phường, đặc khu; đang được tạm hoãn,
+tạm đình chỉ chập hành quyêt định đưa vào cơ sở giáo dục bắt buộc hoặc đưa vào
+cơ sở cai nghiện băt buộc.
+
+Người Việt Nam định cư ở nước ngoài mang hộ chiếu nước ngoài và người
+nước ngoài chưa được cơ quan có thâm quyên của Việt Nam cấp phép cư trú, lao
+động tại Việt Nam;
+
+b) Tổ chức, doanh nghiệp phải có nhân sự chịu trách nhiệm kỹ thuật phù hợp
+với loại hình sản phẩm, dịch vụ kinh doanh. Nhân sự này phải có bằng đại học trở
+lên hoặc có chứng chỉ chuyên ngành an ninh mạng, an toàn thông tin, công nghệ
+thông tin, điện tử viên thông.
+
+3. Điều kiện về kỹ thuật: Có hệ thống trang thiết bị, cơ sở vật chất và công
+nghệ phù hợp với hoạt động đầu tư, kinh doanh và loại hình sản phẩm, dịch vụ an
+ninh mạng đăng ký kinh doanh.
+
+¡ 5
+
+Điều 7. Điều kiện về sản xuất, mua, bán, trao đổi, nhập khẩu, xuất khẩu
+sản phẩm an ninh mạng
+
+1. TỔ chức, doanh nghiệp sản xuất sản phẩm an ninh mạng phải đáp ứng các
+điều kiện quy định tại Điều 6 Nghị định này và các điều kiện sau:
+
+a) Chủng loại sản phẩm, quy mô sản xuất phù hợp với chiến lược phát triển
+ngành công nghiệp an ninh mạng:
+
+b) Có phương án kinh doanh phù hợp và bao gồm các nội dung: Phạm vi, đối
+tượng cung cập sản phâm; loại hình sản phâm dự kiến sản xuất; sự đáp ứng tiêu
+chuân, quy chuân kỹ thuật liên quan đền từng loại sản phẩm; các tính năng kỹ
+thuật cơ bản của sản phẩm;
+
+c) Có phương tiện, thiết bị phù hợp đề kiểm tra, giám sát các thông số kỹ
+thuật phục vụ công tác kiêm tra chất lượng sản phẩm trong quá trình sản xuất, bảo
+đảm tiêu chuẩn, quy chuẩn kỹ thuật bảo vệ an ninh mạng:
+
+d) Chỉ tổ chức, doanh nghiệp của Bộ Công an, Bộ Quốc phòng có văn bản
+giao nhiệm vụ, đặt hàng hoặc tô chức, doanh nghiệp có hợp đông với cơ quan có
+thâm quyên của Bộ Công an, Bộ Quốc phòng đáp ứng đủ các điều kiện được sản
+xuất sản phẩm an ninh mạng quy định tại các điểm a, b, c và d khoản 4 Điều 3
+Nghị định này đề phục vụ nhiệm vụ bảo đảm an ninh quốc gia.
+
+2. Tổ chức, doanh nghiệp mua bán, trao đồi, nhập khẩu, xuất khâu sản phẩm an
+ninh mạng phải đáp ứng các điều kiện quy định tại Điều 6 Nghị định này và các
+điều kiện sau:
+
+a) Chủng loại sản phẩm, quy mô phù hợp với chiến lược phát triển ngành
+công nghiệp an ninh mạng:
+
+b) Có phương án kinh doanh phù hợp và bao gồm các nội dung: Mục đích
+nhập khâu; phạm vi, đối tượng cung cấp sản phẩm; sự đáp ứng tiêu chuẩn, quy
+chuân kỹ thuật liên quan đến từng loại sản phẩm; chỉ tiết các tính năng kỹ thuật
+cơ bản của sản phẩm;
+
+c) Có phương tiện, thiết bị phù hợp để bảo quản, bảo đảm chất lượng sản
+phâm an ninh mạng theo tiêu chuẩn, quy chuẩn kỹ thuật bảo vệ an ninh mạng:
+
+d) Chỉ tổ chức, doanh nghiệp quy định tại điểm d khoản 1 Điều này được
+phép mua bán, trao đôi, nhập khẩu, xuất khẩu sản phẩm an ninh mạng tại điềm a,
+b, c và d khoản 4 Điều 3 Nghị định nảy;
+
+đ) Việc xuất khẩu, nhập khâu sản phẩm an ninh mạng có mục đích, đối tượng
+sử dụng rõ ràng, cam kết không gây phương hại đến an ninh quốc gia.
+
+Điều 8. Điều kiện cung cấp dịch vụ an ninh mạng
+
+TỔ chức, doanh nghiệp cung cấp dịch vụ an ninh mạng phải đáp ứng các điều
+kiện quy định tại Điêu 6 Nghị định này và các điều kiện sau:
+
+- 6
+
+1. Đối với dịch vụ kiểm tra an ninh mạng, dịch vụ tư vấn an ninh mạng, đội
+ngũ nhân sự kỹ thuật phải có ít nhât 05 người có trình độ đại học hoặc chứng chỉ
+về an ninh mạng trở lên, có địa chỉ cư trú cụ thê tại Việt Nam, người đại diện theo
+pháp luật phải là người có quốc tịch Việt Nam.
+
+2. Đối với dịch vụ giám sát an ninh mạng, phải có ít nhất 12 người có trình
+độ đại học hoặc chứng chỉ về an ninh mạng trở lên và có nhân sự chịu trách nhiệm
+quản trị hệ thông, bảo mật thông tin; người đại diện theo pháp luật phải là người
+có quốc tịch Việt Nam.
+
+3. Có phương án kỹ thuật đáp ứng các yêu cầu bảo vệ an ninh mạng theo
+loại hình dịch vụ cung cấp theo Mẫu sô 07 tại Phụ lục I ban hành kèm theo
+Nghị định này.
+
+„ 4. Có phương án dự phòng bảo đảm duy trì hoạt động an toàn, liên tục và
+khắc phục khi có sự cô xảy ra.
+
+5. Có mô tả tổng thể tính năng kỹ thuật hệ thống giám sát an ninh mạng; quy
+trình vận hành giám sát an ninh mạng.
+
+6. Có phương án kinh doanh phù hợp và bao gồm các nội dung: Phạm vi, đối
+tượng cung cấp dịch vụ, loại hình dịch vụ dự kiến cung cấp, phương án bảo mật
+thông tin của khách hàng, phương án bảo đảm chât lượng dịch vụ.
+
+Điều 9. Cấp giấy phép kinh doanh sản phẩm, dịch vụ an ninh mạng
+
+[. Tổ chức, doanh nghiệp được cấp giấy phép kinh doanh sản phẩm, dịch vụ
+an ninh mạng khi đáp ứng các điều kiện được quy định tại Điều 6, Điều 7, Điều 8
+Nghị định này.
+
+2. Hồ sơ đề nghị cấp giấy phép kinh doanh sản phẩm, dịch vụ an ninh
+mạng gồm:
+
+a) Văn bản đề nghị theo Mẫu số 03 tại Phụ lục I ban hành kèm theo Nghị
+định này;
+
+b) Bản khai lý lịch kèm theo các giấy tờ cá nhân của người đại diện theo
+pháp luật, người quản lý tổ chức, doanh nghiệp trong trường hợp không tra cứu
+được thông tin trong hệ thống thông tin gồm: Bản sao căn cước, căn cước công
+dân hoặc hộ chiêu, thẻ thường trú hoặc thẻ tạm trú hoặc thị thực còn thời hạn
+lưu trú tại Việt Nam; bản khai nhân sự của tổ chức, doanh nghiệp theo Mẫu số
+05, Mẫu số 06 tại Phụ lục I ban hành kèm theo Nghị định này;
+
+c) Văn bằng, chứng chỉ hoặc tài liệu có giá trị tương đương theo quy định
+pháp luật về giáo dục, đào tạo chứng minh đáp ứng điều kiện về nhân sự;
+
+d) Tài liệu thuyết minh hệ thống trang thiết bị, cơ sở vật chất và công
+nghệ phù hợp với hoạt động và sản phâm, dịch vụ đăng ký kinh doanh;
+
+đ) Phương án kỹ thuật, phương án kinh doanh theo Mẫu số 07, Mẫu số 08 tại
+Phụ lục I ban hành kèm theo Nghị định này;
+
+7
+
+e) Đối với tổ chức, doanh nghiệp sản xuất sản phẩm an ninh mạng quy định
+tại điểm a, b, c và d khoản 4 Điều 3 Nghị định này đề phục vụ nhiệm vụ bảo đảm
+an ninh quốc gia, phải có văn bản giao nhiệm vụ, đặt hàng hoặc tổ chức, doanh
+nghiệp có hợp đồng với cơ quan có thẩm quyền của Bộ Công an, Bộ Quốc phòng.
+
+3. Hỗ sơ đề nghị cấp giấy phép kinh doanh sản phẩm, dịch vụ an ninh mạng
+lập thành 01 bộ, nộp trực tiếp hoặc qua hệ thống bưu chính hoặc dịch vụ công trực
+tuyến đến Bộ Công an. Hồ sơ phải làm bằng tiếng Việt, gồm 01 bộ hồ sơ gốc.
+Trường hợp nộp trực tiếp hoặc qua dịch vụ bưu chính, bộ hồ sơ gốc phải có đủ
+chữ ký, dầu xác nhận của tổ chức, doanh nghiệp, các tài liệu do tổ chức, doanh
+nghiệp, cá nhân lập nếu có từ 02 tờ văn bản trở lên phải có dầu giáp lai. Đơn vị
+nộp hồ sơ và người nộp hồ sơ chịu trách nhiệm về tính hợp pháp của tài liệu hồ
+sơ. Trường hợp nộp qua dịch vụ công trực tuyến, tổ chức, doanh nghiệp phải ký
+số theo quy định của pháp luật về ký số.
+
+4. Thời điểm nhận hồ sơ là thời điểm cán bộ tiếp nhận hồ sơ từ tổ chức, doanh
+nghiệp nộp hồ sơ (trường hợp nộp hồ sơ trực tiếp) hoặc nhận được hồ sơ từ nhân
+viên bưu chính chuyền đến (trường hợp nộp qua dịch vụ bưu chính) hoặc ngày
+cán bộ tiếp nhận hồ sơ ghi nhận hồ sơ trên hệ thống cổng dịch vụ công và xác
+nhận tiếp nhận hồ sơ với tổ chức, doanh nghiệp gửi hồ sơ (trường hợp nộp thông
+qua công dịch vụ công). Trong vòng 03 ngày làm việc kể từ thời điểm nhận được
+hồ sơ, cơ quan tiếp nhận hồ sơ kiểm tra, thông báo cho tổ chức, doanh nghiệp tính
+hợp lệ của hồ sơ:
+
+a) Trường hợp hồ sơ hợp lệ: Tiếp nhận, giải quyết hồ sơ và xác nhận bằng
+văn bản hoặc qua tài khoản của tổ chức, doanh nghiệp trên cổng dịch vụ công
+hoặc địa chỉ thư điện tử (nếu có) về việc tiếp nhận, giải quyết hồ sơ của tổ chức,
+doanh nghiệp theo Mẫu số 10 tại Phụ lục I ban hành kèm theo Nghị định này;
+
+b) Trường hợp hô sơ cần bỏ sung: Hướng dẫn tổ chức, doanh nghiệp bổ sung
+hồ sơ và thông báo bằng văn bản hoặc qua tài khoản của tổ chức, doanh nghiệp
+trên công dịch vụ công hoặc địa chỉ thư điện tử (nếu có) theo Mẫu số 11 tại Phụ
+lục I ban hành kèm theo Nghị định này; trong thời hạn 10 ngày làm việc kể từ
+ngày nhận được thông báo bồ sung hồ sơ, doanh nghiệp phải hoàn thiện và nộp
+đầy đủ hồ sơ cho cơ quan tiếp nhận hồ sơ theo thông báo, Quá thời hạn trên, doanh
+nghiệp không nộp đây đủ hồ sơ thì được coi là hồ sơ không hợp lệ:
+
+c) Trường hợp hồ sơ không hợp lệ: Từ chối tiếp nhận, giải quyết hồ sơ và
+thông báo về việc từ chối tiếp nhận hồ sơ bằng văn bản hoặc qua tài khoản của tổ
+chức, doanh nghiệp trên công dịch vụ công hoặc địa chỉ thư điện tử (nếu có) theo
+Mẫu số 11 tại Phụ lục I ban hành kèm theo Nghị định này trong đó nêu rỡ lý do
+từ chồi tiếp nhận.
+
+5. Trong thời hạn 28 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ, Bộ
+Công an thâm định hô sơ đề nghị cấp Giấy phép kinh doanh sản phâm, dịch vụ an
+ninh mạng và xem xét cấp Giấy phép kinh doanh sản phẩm, dịch vụ an ninh mạng
+
+S ?
+theo Mẫu sỐ 01 tại Phụ lục I ban hành kèm theo Nghị định này nếu hồ sơ đề nghị
+cung cập đây đủ thông tin xác định đủ điều kiện theo quy định tại Nghị định.
+Trường hợp không đủ điều kiện thì Bộ Công an có văn bản từ chối cấp Giấy phép
+kinh doanh sản phâm, dịch vụ an ninh mạng cho tổ chức, doanh nghiệp theo Mẫu
+số 12 tại Phụ lục I ban hành kèm theo Nghị định này, trong đó nêu rõ lý do.
+
+Điều 10. Cấp đồi Giấy phép kinh doanh sản phẩm, dịch vụ an ninh mạng
+
+1. Tổ chức, doanh nghiệp đề nghị cấp đổi Giấy phép kinh doanh sản phẩm,
+dịch vụ an ninh mạng trong trường hợp sửa đôi tên tô chức, doanh nghiệp hoặc
+người đại diện theo pháp luật của tô chức, doanh nghiệp hoặc bổ sung, thay đổi
+sản phâm, dịch vụ an ninh mạng: Giây phép kinh doanh sản phẩm, dịch vụ an toàn
+thông tin mạng còn hiệu lực bị mât hoặc bị hư hỏng.
+
+Ạ Hồ sơ đề nghị cấp đôi Giấy phép kinh doanh sản phẩm, dịch vụ an ninh
+mạng, gÔm đủ thành phân tài liệu sau đây:
+
+a) Văn bản đề nghị theo Mẫu số 03 tại Phụ lục I ban hành kèm theo Nghị
+định này;
+
+b) Bản khai lý lịch kèm theo các giấy tờ cá nhân của người đại diện theo
+pháp luật;
+
+c) Bản mô tả chỉ tiết nội dung cấp đổi;
+
+d) Tài liệu chứng minh các điều kiện đối với loại hình kinh doanh sản phẩm,
+dịch vụ an ninh mạng tương ứng với đề nghị câp đôi của doanh nghiệp (trong
+trường hợp sửa đôi tên tô chức, doanh nghiệp hoặc người đại diện theo pháp luật
+của tô chức, doanh nghiệp hoặc bố sung, thay đôi sản phẩm, dịch vụ an ninh
+mạng).
+
+3. Các sản phẩm, dịch vụ an toàn thông tin mạng được quy đôi thành sản phẩm,
+dịch vụ an ninh mạng như sau:
+
+_.) Sản phẩm kiểm tra, đánh giá an toàn thông tin mạng được cấp đổi thành sản
+phâm kiêm tra, đánh giá an ninh mạng:
+
+b) Sản phẩm giám sát an toàn thông tin mạng được cấp đổi thành sản phẩm
+giám sát an ninh mạng:
+
+c) Sản phâm chồng tấn công, xâm nhập được giữ nguyên;
+
+d) Sản phẩm an toàn thông tin mạng khác được loại bỏ;
+
+đ) Dịch vụ giám sát an toàn thông tin mạng được cấp đổi thành dịch vụ giám
+sát an ninh mạng:
+
+e) Dịch vụ phòng ngừa, chồng tần công mạng được giữ nguyên;
+
+g) Dịch vụ tư vấn an toàn thông tin mạng được cấp đôi thành dịch vụ tư vấn an
+ninh mạng;
+
+h) Dịch vụ ứng cứu sự có an toàn thông tin mạng được cấp đổi thành dịch vụ
+ứng cứu an ninh mạng:
+
+9
+
+¡) Dịch vụ kiểm tra, đánh giá an toàn thông tin mạng được cấp đổi thành dịch
+vụ kiêm tra, đánh giá an ninh mạng:
+
+k) Dịch vụ khôi phục dữ liệu được giữ nguyên;
+
+I) Dịch vụ bảo mật thông tin không sử dụng mật mã dân sự được giữ nguyên;
+
+m) Dịch vụ an toàn thông tin mạng khác được loại bỏ.
+
+4. Hình thức nộp hồ sơ đề nghị cấp đổi Giấy phép kinh doanh sản phẩm, dịch
+vụ an ninh mạng quy định tại khoản 3 Điều 9 Nghị định này.
+
+5. Bộ Công an kiểm tra tính hợp lệ của hồ sơ quy định tại khoản 4 Điều 9 Nghị
+định này.
+
+6ó. Trong thời hạn 05 ngày làm việc kể từ ngày nhận được văn bản đề nghị
+hợp lệ, Bộ Công an xem xét và cấp đồi Giấy phép kinh doanh sản phẩm, dịch vụ
+an ninh mạng cho tổ chức, doanh nghiệp; trường hợp từ chối cấp thì phải thông
+báo bằng văn bản và nêu rõ lý do.
+
+7. Thời hạn của Giấy phép kinh doanh sản phẩm, dịch vụ an ninh mạng được
+giữ nguyên theo giá trị thời hạn của Giấy phép kinh doanh sản phâm, dịch vụ an
+ninh mạng được cấp lân đâu.
+
+Điều 11. Cấp lại Giấy phép kinh doanh sản phẩm, dịch vụ an ninh mạng
+
+1. Tô chức, doanh nghiệp đề nghị cấp lại Giấy phép kinh doanh sản phẩm,
+dịch vụ an ninh mạng trong trường hợp Giấy phép kinh doanh sản phẩm, dịch vụ
+an ninh mạng còn hiệu lực bị mất hoặc bị hư hỏng.
+
+2. Hồ sơ đề nghị cấp lại Giấy phép kinh doanh sản phẩm, dịch vụ an ninh
+mạng, gồm đủ thành phần tài liệu sau đây:
+
+a) Văn bản đề nghị theo Mẫu số 03 tại Phụ lục I ban hành kèm theo Nghị
+định này;
+
+b) Bản khai lý lịch kèm theo các giấy tờ cá nhân của người đại diện theo
+pháp luật;
+
+c) Bản mô tả chi tiết nội dung cấp lại.
+
+3. Hình thức nộp hồ sơ đề nghị cấp lại Giấy phép kinh doanh sản phẩm, dịch
+vụ an ninh mạng quy định tại khoản 3 Điều 9 Nghị định này.
+
+4. Bộ Công an kiểm tra tính hợp lệ của hỗ sơ quy định tại khoản 4 Điều 9 Nghị
+định này.
+
+5. Trong thời hạn 05 ngày làm việc kể từ ngày nhận được văn bản đề nghị
+hợp lệ, Bộ Công an xem xét và cấp lại Giấy phép cho tổ chức, doanh nghiệp;
+trường hợp từ chôi cấp thì phải thông báo bằng văn bản và nêu rõ lý do.
+
+6. Thời hạn của Giấy phép kinh doanh sản phẩm, dịch vụ an ninh mạng được
+giữ nguyên theo giá trị thời hạn của Giấy phép kinh doanh sản phẩm, dịch vụ an
+ninh mạng được cấp lân đâu.
+
+10 |
+
+Điều 12. Gia hạn Giấy phép kinh doanh sản phẩm, dịch vụ an ninh mạng
+
+1. Tô chức, doanh nghiệp không vi phạm quy định của pháp luật về kinh doanh
+sản phâm, dịch vụ an ninh mạng được gia hạn Giấy phép kinh doanh sản phẩm,
+dịch vụ an ninh mạng một lần với thời gian gia hạn không quá 03 năm. Hồ sơ đề
+nghị gia hạn Giây phép phải gửi vệ Bộ Công an chậm nhât là 60 ngày trước ngày
+Giây phép kinh doanh sản phẩm, dịch vụ an ninh mạng hết hạn.
+
+Hồ sơ đề nghị gia hạn Giấy phép kinh doanh sản phẩm, dịch vụ an ninh
+mạng, gôm:
+
+a) Văn bản đề nghị theo Mẫu số 03 tại Phụ lục I ban hành kèm theo Nghị
+định này;
+
+b) Báo cáo hoạt động của tổ chức, doanh nghiệp trong 02 năm gần nhất.
+
+3. Hình thức nộp hô sơ đề nghị gia hạn Giấy phép kinh doanh sản phẩm, dịch
+vụ an ninh mạng quy định tại khoản 3 Điêu 9 Nghị định này.
+
+4. Bộ Công an kiểm tra tính hợp lệ của hồ sơ quy định tại khoản 4 Điều 9 Nghị
+định này.
+
+5. Trong thời hạn 10 ngày làm việc kể từ ngày nhận được văn bản đề nghị
+hợp lệ, Bộ Công an xem xét và gia hạn Ciây phép cho tô chức, doanh nghiệp;
+trường hợp từ chôi cập thì phải thông báo băng văn bản và nêu rõ lý do.
+
+Điều 13. Cấp Giấy phép xuất khâu, nhập khẩu sản phẩm an ninh mạng
+
+_ 1. Khi xuất khẩu, nhập khẩu sản phẩm an ninh mạng thuộc danh mục sản
+phâm an ninh mạng xuất khâu, nhập khẩu theo giây phép tại Phụ lục kèm theo
+Nghị định này, tô chức, doanh nghiệp phải có Giây phép xuất khâu, nhập khâu
+sản phâm an ninh mạng do Bộ Công an cập. Giây phép xuât khâu, nhập khâu sản
+phâm an ninh mạng được cấp theo lô xuât khâu, nhập khâu, có thời hạn 02 năm.
+Tô chức, doanh nghiệp đề nghị cập Giây phép xuất khâu, nhập khâu sản phâm an
+ninh mạng phải có Giây phép kinh doanh sản phâm, dịch vụ an ninh mạng và phải
+nộp lệ phí theo quy định.
+
+2. Điều kiện cấp Giấy phép xuất khẩu, nhập khẩu sản phẩm an ninh mạng
+
+a) Tô chức, doanh nghiệp đề nghị cấp Giấy phép xuất khẩu, nhập khâu sản
+phâm an ninh mạng phải có Giây phép kinh doanh sản phâm, dịch vụ an ninh
+mạng còn hiệu lực;
+
+b) Sản phẩm an ninh mạng nhập khẩu đáp ứng sự phù hợp tiêu chuẩn quốc
+tê hoặc tiêu chuân Việt Nam trong lĩnh vực an ninh mạng theo quy định của pháp
+luật về tiêu chuẩn và quy chuẩn kỹ thuật;
+
+c) Mục đích, đối tượng sử dụng sản phẩm an ninh mạng phải cụ thể, không
+gây phương hại đên an ninh quốc gia.
+
+3, Hồ sơ đề nghị cấp Giấy phép xuất khẩu, nhập khẩu sản phẩm an ninh mạng
+quy định tại Điều 3 Nghị định này gồm:
+
+: lJ
+
+a) Văn bản đề nghị cấp Giấy phép xuất khẩu, nhập khẩu sản phẩm an ninh
+mạng theo Mẫu số 04 tại Phụ lục I ban hành kèm theo Nghị định này;
+
+b) Tài liệu chứng nhận tuân thủ tiêu chuẩn quốc tế hoặc tiêu chuẩn Việt Nam
+trong lĩnh vực an ninh mạng:
+
+c) Tài liệu chứng minh mục đích, đối tượng nhập khẩu gồm hợp đồng thương
+mại với đôi tượng dùng cuôi, tài liệu chứng mình mục đích nhập khâu phục vụ
+nghiên cứu, bảo hành.
+
+4. Danh mục sản phẩm an ninh mạng xuất khẩu, nhập khâu kèm theo mã HS
+sản phẩm được quy định tại Phụ lục II Nghị định này.
+
+5. Hình thức nộp hồ sơ đề nghị cấp Giấy phép xuất khẩu, nhập khẩu sản phẩm
+an ninh mạng quy định tại khoản 3 Điều 9 Nghị định này.
+
+6. Bộ Công an kiểm tra tính hợp lệ của hồ sơ quy định tại khoản 4 Điều 9 Nghị
+định này.
+
+7. Trong thời hạn 05 ngày làm việc kể từ ngày nhận được văn bản đề nghị
+hợp lệ, Bộ Công an xem xét và cập Giây phép cho tổ chức, doanh nghiệp; trường
+hợp từ chối cấp thì phải thông báo bằng văn bản và nêu rõ lý do theo Mẫu số 12
+tại Phụ lục I ban hành kèm theo Nghị định này.
+
+Điều 14. Tạm đình chỉ, thu hồi Giấy phép kinh doanh sản phẩm, dịch vụ an
+ninh mạng
+
+1. Các trường hợp thu hồi không có thời hạn:
+
+„..a) Giả mạo hồ sơ hoặc cung cấp thông tin trong tài liệu không đúng thực tế
+đê đê nghị cập Giây phép kinh doanh sản phâm, dịch vụ an ninh mạng; Giây phép
+kinh doanh sản phâm, dịch vụ an ninh mạng được cấp không đúng thâm quyên
+quy định tại Nghị định này;
+
+_.b) Không đáp ứng điều kiện kinh doanh quy định tại các Điều 6, Điều 7 và
+Điều 5 Nghị định này, đã được cơ quan có thâm quyên kiêm tra phát hiện, yêu
+câu khắc phục mà vẫn không khắc phục trong thời hạn 40 ngày kế từ ngày nhận
+được yêu câu;
+
+c) Sau 06 tháng kể từ ngày được cấp Giấy phép kinh doanh sản phẩm, dịch
+vụ an ninh mạng mà tô chức, doanh nghiệp không hoạt động:
+
+d) Tổ chức, doanh nghiệp bị đình chỉ hoạt động hoặc bị giải thể, phá sản
+theo quy định của pháp luật hoặc bị cơ quan có thâm quyên thu hôi các văn bản
+đăng ký thành lập; kiên nghị thu hôi Giây phép kinh doanh sản phẩm, dịch vụ
+an ninh mạng:
+
+đ) Tổ chức, doanh nghiệp cho muợn, cho thuê, mua, bán Giấy phép kinh
+doanh sản phẩm, dịch vụ an ninh mạng.
+
+2. Các trường hợp tạm đình chỉ sử dụng giầy phép kinh doanh sản phẩm,
+dịch vụ an ninh mạng có thời hạn từ 03 tháng đến 06 tháng:
+
+12
+a) Không làm thủ tục cấp đối Giấy phép kinh doanh sản phẩm, dịch vụ an
+ninh mạng trong trường hợp tô chức, doanh nghiệp thay đổi tên tổ chức, doanh
+nghiệp hoặc thay đôi người đại diện theo pháp luật;
+
+b) Không làm thủ tục cấp lại giấy phép trong trường hợp Giấy phép kinh
+doanh sản phâm, dịch vụ an ninh mạng bị mất hoặc hư hỏng:
+
+c) Không ngừng hoặc tạm ngừng cung cấp sản phẩm, dịch vụ an ninh mạng
+theo yêu cầu của cơ quan có thẩm quyền;
+
+d) Không báo cáo Bộ Công an về tình hình kinh doanh, xuất khẩu, nhập khẩu
+sản phâm, dịch vụ an ninh mạng theo quy định;
+
+đ) Vi phạm quy định về kinh doanh sản phẩm, dịch vụ an ninh mạng đã bị
+xử phạt vi phạm hành chính từ 02 lân trở lên trong thời gian 12 tháng.
+
+3. Trong quá trình kiểm tra, nêu phát hiện tổ chức, doanh nghiệp thuộc một
+trong các trường hợp thu hồi, tạm đình chỉ Giấy phép kinh doanh sản phẩm, dịch
+vụ an ninh mạng thuộc khoản 1, khoản 2 Điều này thì cơ quan thực hiện việc kiểm
+tra, lập biên bản, gửi về Bộ Công an. Trong thời gian 15 ngày làm việc kề từ ngày
+nhận được biên bản, Bộ Công an xem xét, quyết định việc thu hồi, tạm đình chỉ
+Giấy phép kinh doanh sản phẩm, dịch vụ an ninh mạng. Quyết định thu hồi, tạm
+đình chỉ được gửi cho cơ quan đăng ký kinh doanh, cơ quan hải quan.
+
+4. Trong trường hợp thu hồi, tạm đình chỉ Giấy phép kinh doanh sản phẩm,
+dịch vụ an ninh mạng thì Giây phép xuất khâu, nhập khâu sản phâm an ninh mạng
+không có hiệu lực.
+
+Điều 15. Thu hồi Giấy phép xuất khẩu, nhập khâu sản phẩm an ninh mạng
+
+_ 1, Tổ chức, doanh nghiệp bị thu hồi Giấy phép xuất khẩu, nhập khẩu sản
+phâm an ninh mạng nêu thuộc một trong các trường hợp sau đây:
+
+a) Giả mạo hồ sơ đề nghị cấp Giấy phép xuất khẩu, nhập khẩu sản phẩm an
+ninh mạng hoặc sửa chữa, tây xóa làm thay đôi nội dung giây phép;
+
+b) Giấy phép xuất khẩu, nhập khẩu sản phẩm an ninh mạng được cấp không
+đúng thâm quyên, hô sơ, thủ tục theo quy định tại Nghị định này;
+
+c) Tổ chức, doanh nghiệp nhập khẩu bị thu hồi, tạm đình chỉ giấy chứng nhận
+đăng ký kinh doanh hoặc giây chứng nhận đăng ký đâu tư hoặc châm dứt hoạt
+động hoặc không còn được ủy quyên của chủ sở hữu hoặc nhà sản xuât sản phâm
+an ninh mạng mà chưa được chuyên quyên nhập khâu cho tô chức thay thê hoặc
+bị giải thê, phá sản theo quy định của pháp luật;
+
+d) Sản phẩm an ninh mạng nhập khẩu hết thời hạn lưu hành theo thông
+báo của nhà sản xuât, chủ sở hữu hoặc cơ quan, tô chức có thâm quyên hoặc
+đang lưu hành trên thị trường có lôi gây hệ quả cho người sử dụng mà không
+thê khăc phục lôi.
+
+2. Trong quá trình kiểm tra, nếu phát hiện tô chức, doanh nghiệp thuộc một
+trong các trường hợp thu hôi Giây phép xuất khâu, nhập khâu sản phâm an ninh
+mạng thuộc khoản 1 Điều này thì cơ quan thực hiện việc kiêm tra, lập biên bản,
+
+l3
+gửi về cơ quan Công an có thẩm quyền cấp phép. Trong thời gian 05 ngày làm
+Việc kê từ ngày nhận được biên bản, Bộ Công an xem xét, quyêt định việc thu hôi
+Giây phép xuất khâu, nhập khâu sản phâm an ninh mạng. Quyêt định thu hôi được
+gửi cho cơ quan hải quan. Sau khi có quyết định thu hôi Giây phép xuất khâu,
+nhập khẩu sản phẩm an ninh mạng, tổ chức, doanh nghiệp có trách nhiệm thu hồi
+sản phâm an ninh mạng được ghi trong quyềt định thu hôi và không được tiếp tục
+nhập khâu, xuât khâu sản phâm đó.
+Chương II
+TRÁCH NHIỆM CỦA CÁC BỘ, CƠ QUAN NGANG BỘ,
+ỦY BAN NHẮN DẪN CÁP TÍNH VÀ TỎ CHỨC, DOANH NGHIỆP
+
+Điều 16. Trách nhiệm của tổ chức, doanh nghiệp
+
+1. Duy trì thường xuyên, liên tục các điều kiện trong quá trình kinh doanh
+sản phẩm, dịch vụ an ninh mạng. Đồi với doanh nghiệp cung cấp dịch vụ giám sát
+an ninh mạng, cần duy trì kết nối, trao đổi thông tin giám sát với hệ thống bảo vệ
+an ninh mạng quốc gia của Bộ Công an trong quá trình cung cấp dịch vụ giám sát
+an ninh mạng. Đối với sản phẩm an ninh mạng quy định tại các điểm a, b,c vàd
+khoản 4 Điều 3 Nghị định này, cần tổ chức tiêu hủy khi bị hư hỏng, không còn sử
+dụng vào nhiệm vụ của Bộ Công an, Bộ Quốc phòng.
+
+2. Nộp phí cấp Giấy phép kinh doanh sản phẩm, dịch vụ an ninh mạng và lệ
+phí cấp Giấy phép xuất khẩu, nhập khẩu sản phẩm an ninh mạng theo quy định
+của pháp luật.
+
+3. Tổ chức, doanh nghiệp được cấp Giầy phép kinh doanh sản phẩm, dịch vụ
+an ninh mạng có trách nhiệm báo cáo đột xuất theo yêu cầu và báo cáo định kỳ
+hằng năm về tình hình kinh doanh sản phẩm, dịch vụ an ninh mạng đến Bộ Công
+an theo Mẫu số 09 tại Phụ lục I ban hành kèm theo Nghị định này. Thời gian tính
+số liệu báo cáo định kỳ từ ngày 01 tháng 01 đến ngày 31 tháng 12; thời gian nộp
+báo cáo trước ngày 31 tháng 01 năm sau.
+
+4. Trường hợp tổ chức, doanh nghiệp tạm ngừng hoạt động thì trong thời
+hạn 10 ngày làm việc kê từ ngày tạm ngừng hoạt động phải có văn bản thông
+báo cho cơ quan có thầm quyền cấp giấy phép kinh doanh sản phẩm, dịch vụ an
+ninh mạng.
+
+5. Chấp hành việc kiểm tra và xử lý vi phạm của cơ quan Công an và cơ quan
+quản lý nhà nước có thâm quyền.
+
+14
+
+Điều 17. Trách nhiệm của Bộ Công an
+
+Bộ trưởng Bộ Công an chịu trách nhiệm trước Chính phủ thống nhất quản lý
+nhà nước đôi với hoạt động kinh doanh sản phẩm, dịch vụ an ninh mạng, có
+nhiệm vụ, quyên hạn sau đây:
+
+1.Chủ trì, phối hợp với các bộ, ngành thực hiện quản lý hoạt động kinh
+doanh sản phâm, dịch vụ an ninh mạng theo quy định tại Nghị định này và
+các văn bản pháp luật có liên quan; phân cấp, phân quyền quản lý hoạt động
+kinh doanh sản phâm, dịch vụ an ninh mạng theo quy định của pháp luật.
+
+2. Công bố tiêu chuẩn, quy định quy chuẩn kỹ thuật trong lĩnh vực an
+ninh mạng; xây dựng hệ thống cơ sở dữ liệu thông tin điện tử phục vụ công
+tác quản lý và thực hiện thủ tục hành chính liên quan đến hoạt động kinh
+doanh sản phẩm, dịch vụ an ninh mạng.
+
+3. Chủ trì, phối hợp với các bộ, ngành thực hiện và hướng dẫn công tác
+kiểm tra theo quy định tại Điều 19 của Nghị định này, giải quyết khiếu nại,
+tô cáo, phòng ngừa, phát hiện, đâu tranh, xử lý vi phạm về kinh doanh sản
+phâm, dịch vụ an ninh mạng theo quy định của pháp luật.
+
+Điều 18. Trách nhiệm của các bộ, cơ quan ngang bộ, Ủy ban nhân
+dân tỉnh, thành phố
+
+Trong phạm vi chức năng, nhiệm vụ, quyền hạn của mình, các bộ, cơ
+quan ngang bộ, Uy ban nhân dân các tỉnh, thành phố có trách nhiệm phôi
+hợp với Bộ Công an quản lý nhà nước về hoạt động kinh doanh sản phẩm,
+dịch vụ an ninh mạng.
+
+Điều 19. Kiểm tra
+
+1. Cơ quan có thẩm quyền thực hiện kiểm tra toàn diện việc chấp hành
+các quy định về kinh doanh sản phẩm, dịch vụ an ninh mạng không được quá
+01 lần trong năm, bao gồm cả kiểm tra liên ngành, trừ trường hợp có dâu
+hiệu vi phạm rõ ràng.
+
+Việc kiểm tra đột xuất được thực hiện khi phát hiện cơ sở kinh doanh
+có vi phạm hoặc có dâu hiệu vi phạm pháp luật liên quan đên kinh doanh sản
+phẩm, dịch vụ an ninh mạng; có đơn khiếu nại, tố cáo của tô chức hoặc cá
+nhân về vi phạm pháp luật liên quan đên kinh doanh sản phẩm, dịch vụ an
+ninh mạng trong tô chức, doanh nghiệp; phục vụ tăng cường công tác đảm
+bảo an ninh, trật tự theo văn bản chỉ đạo của cơ quan có thâm quyền.
+
+2. Nội dung kiểm tra:
+
+l5
+
+a) Kiểm tra các giấy tờ trong hô sơ pháp lý: nội dung kinh doanh ghi trong
+Giấy phép kinh doanh sản phẩm, dịch vụ an ninh mạng, Giấy phép xuất khẩu,
+nhập khẩu sản phẩm an ninh mạng cho tổ chức, doanh nghiệp với thực tế hoạt
+động tại tô chức, doanh nghiệp;
+
+b) Kiểm tra việc chấp hành các quy định tại Nghị định này và các quy định
+tại văn bản quy phạm pháp luật khác có liên quan;
+
+c) Kết thúc kiểm tra phải lập biên bản (theo mẫu quy định thống nhất của
+Bộ trưởng Bộ Công an) ghi rõ kết quả và tồn tại hoặc vi phạm (nếu có).
+
+3. Thẩm quyền kiểm tra:
+
+a) Bộ Công an có thẳm quyền kiểm tra định kỳ hàng năm hoặc đột xuất theo
+quy định của khoản 1 Điều này;
+
+b) Ủy ban nhân dân tỉnh, thành phố trở lên được tiền hành kiểm tra tổ chức,
+doanh nghiệp trên địa bản quản lý khi phát hiện tô chức, doanh nghiệp có vi phạm
+hoặc có dấu hiệu vi phạm pháp luật liên quan đên kinh doanh sản phâm, dịch vụ
+an ninh mạng: có đơn khiêu nại, tô cáo của tô chức hoặc cá nhân liên quan đên an
+ninh, trật tự tại tô chức, doanh nghiệp trên địa bàn do mình quản lý. Sau khi kiểm
+tra phải có văn bản thông báo kêt quả kiêm tra và xử lý vi phạm cho Bộ Công an.
+
+4. Các hành vi vi phạm được phát hiện trong quá trình kiểm tra phải được xử
+lý theo quy định của pháp luật.
+
+Chương IV
+ĐIỀU KHOẢN THỊ HÀNH
+
+Điều 20. Hiệu lực thi hành
+
+Nghị định này có hiệu lực thi hành kể từ ngày 19 tháng 8 năm 2026.
+
+Điều 21. Điều khoản chuyền tiếp
+
+1. Đồi với các hợp đồng kinh doanh sản phẩm, dịch vụ an ninh mạng đã được
+ký kết và có giá trị trước thời điểm Nghị định này có hiệu lực thi hành, doanh
+nghiệp vẫn tiếp tục được thực hiện các nội dung trong hợp đồng.
+
+2. Các hỗ sơ đề nghị cấp, cấp đổi, bồ sung, cấp lại, gia hạn được Bộ Công an
+tiêp nhận trước ngày 01 tháng 7 năm 2026, nhưng chưa được giải quyết thì thực
+hiện quy trình, thủ tục, điều kiện theo quy định tại Nghị định này.
+
+Điều 22. Trách nhiệm thi hành
+
+1. Bộ trưởng Bộ Công an đôn đốc, kiểm tra, hướng dẫn việc thực hiện Nghị
+định này.
+
+ló
+2. Bộ trưởng, Thủ trưởng cơ quan ngang bộ, Chủ tịch Ủy ban nhân dân các
+tỉnh, thành phô trực thuộc trung ương chịu trách nhiệm thi hành Nghị định này
+3
+Nơi nhận: TM.CHINH PHU
+- Ban Bí thư Trung ương Đảng; KT.TH T ỚN
+- Thủ tướng, các Phó Thủ tướng Chính phủ; ii G: U hNG
+- Các bộ, cơ quan ngang bộ; “c -PRœ1I HỦ
+- HĐND, UBND các tỉnh, thành phố trực thuộc trung ương 7 5 1 TT
+- Văn phòng Trung ương và các Ban của Đảng; "lv TA NHA
+- Văn phòng Tổng Bí thư; ki ị NA "t Á——
+- Văn phòng Chủ tịch nước; ; ( 7N | ~—
+- Hội đồng Dân tộc và các Ủy ban của Quốc hội; 7
+- Văn phòng Quốc hội; NO HH
+- Tòa án nhân dân tối cao; HC "Phạm {tia Tức
+- Viện kiểm sát nhân dân tối cao; —
+- Kiểm toán nhà nước;
+- Ủy ban Trung ương Mặt trận TỔ quốc Việt Nam;
+- Cơ quan trung ương của các tô chức chính trị - xã hội;
+- VPCP: BTCN, các PCN, Trợ lý TTg,
+các Vụ, Cục, Công báo;
+- Lưu: VT, CĐS 2b).
+
+MẪU ĐỚN ĐỀ NeH-Ú XP PHÉP, MẪU GIẦY PHÉP VÀ CÁC TÀI LIỆU
+"TS ” nẤ khéo Nghị định số 332/2026/NĐ-CP
+in 7a 19 tháng 8 năm 2026 của Chính phủ)
+Giấy phép kinh doanh sản phẩm, dịch vụ an ninh mạng
+Mẫu số 02 | Giấy phép xuất khẩu, nhập khẩu sản phẩm an ninh mạng
+Mẫu số 03. | Văn bản đề nghị cấp/cấp đổi/cấp lại/gia hạn Giấy phép kinh
+doanh sản phâm, dịch vụ an ninh mạng
+Mẫu số 04 | Văn bản đề nghị cấp Giấy phép xuất khẩu, nhập khẩu sản phẩm
+an ninh mạng
+Mẫu số 05 | Bản khai lý lịch
+Bản kê khai danh sách nhân sự
+Phương án kỹ thuật
+Mẫu số 08 | Phương án kinh doanh
+Mẫu số 09 | Báo cáo tình hình thực hiện giấy phép kinh doanh sản phẩm, dịch
+vụ an ninh mạng
+Phiều tiếp nhận hồ sơ và hẹn trả kết quả
+Phiếu từ chối tiếp nhận giải quyết hồ sơ
+Mẫu số 12 | Thông báo từ chối cấp/cấp đỏi/cấp lại/gia hạn giấy phép kinh
+doanh sản phâm, dịch vụ an ninh mạng
+
+: 2
+Phụ lục I - Mẫu số 01
+2m NHI CỌNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+se Ga Độc lập - Tự do - Hạnh phúc
+Số: /GPKD „+; HGẦV ..... THÔ HNG :..... HẦHH ..uuu,
+_... GIẦY PHÉP KINH DOANH
+SAN PHAM, DỊCH VỤ AN NINH MẠNG
+(Có giá trị đến hết ngày ... /... /... )
+THỦ TRƯỚNG CƠ QUAN (2)
+Căn cứ Luật An ninh mạng ngày 10 tháng 12 năm 2025;
+Căn cứ Luật Đầu tư ngày 1Ï tháng 12 năm 2025;
+Căn cứ Luật Doanh nghiệp sửa đôi ngày 17 tháng 6 năm 2025;
+Căn cứ Luật Quản lý ngoại thương ngày 12 tháng 6 năm 2017;
+Căn cứ Nghị định số ...../2026/NĐ-CP ngày ... tháng ... năm 2026 của
+Chính phủ quy định về hoạt động kinh doanh sản phẩm, dịch vụ an ninh mạng;
+Căn cứ Nghị định số 02/2025/NĐ-CP ngày 18 tháng 02 năm 2025 của
+Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cầu tô chức của
+Bộ Công an (được sửa đôi, bô sung bởi Nghị định số 11/2025/NĐ-CP ngày
+01 tháng 7 năm 2025);
+_ Xét hô sơ đề nghị cấp/cấp đồi/cấp lại/gia hạn Giấy phép kinh doanh sản
+phẩm, dịch vụ an ninh mạng ngày ... tháng ... năm ... của ..... (3);
+Theo đề nghị của........................GGG....Gortknrb-beee-- nen”... (4À
+QUYẾT ĐỊNH:
+Điều 1. Cho phép .................................. Ö) được kinh doanh sản phẩm,
+dịch vụ an ninh mạng.
+I. Thông tin doanh nghiệp
+..a) Tên giao dịch của doanh nghiệp bằng tiếng Việt hoặc tiếng nước ngoài
+ý: r5: 29 SEEEAOOAAAAAOOOORNEREEEEERWOPEO HS
+b) Tên người đại diện theo pháp luật: ..........................220/110/00///////..
+c) Giấy chứng nhận đăng ký doanh nghiệp sề: ..........do............ cấp ngày
+xe Tháng... TăP9 ca, B Ì xEEEEEEESHKG-EAERREERESLVN AEVITREEE KEER RE KEO ta a0 01000 211.x
+DU BI bi AE A A3» PA 3 3 3A 3 3
+GB an 12/090/92200020090900% PA OANH
+
+3 ¿
+e) Số Fax:  đn SỐ BE RPEERG HE RE T5 NHI HPEPERP TEEN TP. PP
+má 2229/2820 3 SG
+
+2. Doanh nghiệp được phép:
+
+NHAN
+
+Điều 2..................................... Ö) phải thực hiện đúng các quy định
+tại Nghị định sô ............./2026/NĐ-CP ngày ... tháng ... năm 2026 của quy
+định về hoạt động kinh doanh sản phẩm, dịch vụ an ninh mạng.
+
+Điều 3. Giấy phép kinh doanh sản phẩm, dịch vụ an ninh mạng này có hiệu
+lực kể từ ngày ký và có giá trị đến hết ngày ... tháng ... năm ...; thay thế cho Giấy
+phép kinh doanh sản phâm, dịch vụ an ninh mạng ...... /GPKD ngày ... tháng ...
+năm .... (6).
+
+THỦ TRƯỞNG CƠ QUAN CÓ THẮM QUYỀN
+(Ký và ghi rõ họ tên)
+
+Chú thích:
+
+(1) Tên cơ quan cấp trên trực tiếp,
+
+(2) Tên cơ quan cấp giấy chứng nhận.
+
+(3) Tên doanh nghiệp được cấp Giấy phép.
+
+(4) Thủ trưởng đơn vị trình cấp Giầy phép.
+
+(5) Sản phẩm, dịch vụ an ninh mạng được phép kinh doanh.
+
+(6) Sử dụng trong trường hợp cấp đổi hoặc cấp lại Giấy phép.
+
+` 4
+Phụ lục I - Mẫu số 02
+XIN CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+HN. XE Độc lập - Tự do - Hạnh phúc
+Số:...../GPNK, GPXK (3) ...., Hgày ..... tháng ...... năm ......
+GIÁY PHÉP XUẤT KHẨU, NHẬP KHẢU
+Sản phẩm an ninh mạng
+THỦ TRƯỚNG CƠ QUAN (2)
+Căn cứ Luật An ninh mạng ngày 10 tháng 12 năm 2025;
+Căn cứ Luật Đầu tư ngày 1Ì tháng 12 năm 2025;
+Căn cứ Luật Doanh nghiệp sửa đôi ngày 17 tháng 6 năm 2025,
+Căn cứ Luật Quản lý ngoại thương ngày 12 tháng 6 năm 2017;
+Căn cứ Nghị định số “.⁄/⁄2026/VD-CP ngày ... tháng ... năm 2026 của Chính phủ quy
+định về hoạt động kinh doanh sản phẩm, dịch vụ an ninh mạng;
+Căn cứ Nghị định số 02/2025/NĐ-CP ngày l8 tháng 02 năm 2025 của
+Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Công
+an (được sửa đồi, bồ sung bởi Nghị định số 11/2025/NĐ-CP ngày 01 tháng 7 năm 2025);
+Xét hồ sơ đề nghị cấp Giấy phép xuất khẩn, nhập khẩu sản phẩm an ninh mạng ngày ...
+tháng ... năm ... của ..... (3);
+Theo đề Lê ĐÁ tố: ho ÃAAAERAAEAAOIRRIRIRIRIII (6).
+QUYẾT ĐỊNH:
+„. Điều 1. Cho phép ...... (5) (Giấy chứng nhận đăng ký doanh nghiệp số............ do..........
+cấp ngày ... tháng ... năm ....) được xuất khâu, nhập khẩu sản phẩm an ninh mạng:
+lu; ÿ. ý. 9E RE
+3. Tính năng về an ninh i1): to HH ERPPEERAEREEPPEEEEEEPEOEEEEESSSP
+Ai  277XX9só} đo II NI EÊEÊN
+5. Hãng Sân XUẤT: ..,-.:acssssseiEGI-En ninh rEEE RE E1 TEEN TEEEEnE 0000001001205 155 5.
+Là Là AE eo EO 072727272/1Đ 000 0 NO AAASN
+7. Mục đích xuất khẩu, nhập khẩu: ................nGnnnỒỒnnỒ(nn/Ồ/3Ồ13//11111/4111//////0///0U
+Là ôi: 22A 3
+(Trường hợp nhập khẩu nhiều loại sản phẩm thì ban hành danh mục kèm theo Giấy phép)
+mu 29AARARAOOEARWPRRE Ôn thực hiện đúng các quy định tại Nghị định
+SỐ ............./2026/NĐ-CP ngày ...... tháng ...... năm 2026 quy định về hoạt động kinh doanh
+sản phâm, dịch vụ an ninh mạng và các quy định khác của pháp luật có liên quan,
+Điều 3. Giấy phép xuất khẩu, nhập khẩu sản phẩm an ninh mạng này có hiệu lực kể từ
+ngày ký và có giá trị đến hết ngày ......tháng .... năm..../.
+THỦ TRƯỞNG CƠ QUAN
+CÓ THẮM QUYỀN
+(Ký và ghi rõ họ tên)
+
+5
+Chú thích:
+(1) Tên cơ quan cấp trên trực tiếp.
+(2) Tên cơ quan cấp giầy chứng nhận.
+(3) Giấy phép nhập khẩu ghi GPNK, Giấy phép xuất khẩu ghi GPXK.
+(4) Trường hợp nhập khẩu ghi Giấy phép nhập khẩu, trường hợp xuất khẩu ghi Giấy phép xuất khẩu.
+(5) Tên doanh nghiệp được cấp Giấy phép.
+(6) Thủ trưởng đơn vị trình cấp Giấy phép.
+
+: 6
+Phụ lục I - Mẫu số 03
+rG)nnnn. CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+2929224 ..... Ngày .... tháng ..... năm ......
+VĂN BẢN ĐÈ NGHỊ CÁP/CÁP ĐỎI/CÁP LẠIGIA HẠN GIẦY PHÉP
+KINH DOANH SẢN PHẢM, DỊCH VỤ AN NINH MẠNG (1)
+Kính gửi: Cơ quan có thầm quyền (3)
+Căn cứ Luật An ninh mạng ngày 10 tháng 12 năm 2025;
+Căn cứ Luật Đầu tư ngày 11 tháng 12 năm 2025;
+Căn cứ Luật Doanh nghiệp sửa đôi ngày 17 tháng 6 năm 2025;
+Căn cứ Luật Quản lý ngoại thương ngày 12 tháng 6 năm 2017;
+Căn cứ Nghị định số ...../2026/NĐ-CP ngày ... tháng ... năm 2026 của
+Chính phủ quy định về hoạt động kinh doanh sản phẩm, dịch vụ an ninh mạng;
+nneeesssssseess........., (2) đề nghị cấp/cấp đổi/cấp lại/gia hạn Giầy phép kinh
+doanh sản phâm, dịch vụ an ninh mạng với các nội dung sau:
+Phần 1. Thông tin chung
+1. Tên doanh nghiệp: ..............................0eL vien nen nen na nen Ea nen 1 bá
+„ 2. Tên giao dịch của doanh nghiệp bằng tiếng Việt hoặc tiếng nước ngoài
+EU BÚ 49P29922729/792999707200027/9227=55S:S9SSSK9PRPROPOESN
+3: Tên người đại điện theø pháp BỘt:...........ồo»soesssssieeeerieeeesiseeenEesris:
+4. Giấy chứng nhận đăng ký doanh nghiệp số: .... do .... cấp ngày ... tháng ...
+SỐ Ất TÂY tin n1 1 22229292*~X%092928<="0 o0
+6. Điện thoại: ,‹2ccessseesssssssseesseossseosv,.., SỖ ự 8X: ....777ennseeeee se se,
+TU //77209/297/-7ề:ề:002-2/--S:SV9S
+9. Loại hình sản phẩm, dịch vụ dự kiến kinh doanh:...................
+10. Phạm vi, đối tượng dự kiến cung cấp sản phẩm, dịch vụ:..................
+Phần 2. Hồ sơ kèm theo (ghi rõ loại và số lượng hồ sơ)
+Phần 3. Lý do cấp/cấp đổi/cấp lại/gia hạn
+
+7 :
+
+Phần 4. Cam kết
+
+1. Chịu trách nhiệm trước pháp luật về tính chính xác và tính hợp pháp của
+nội dung trong đơn đê nghị câp/câp đôi/cấp lại/gia hạn Giây phép kinh doanh sản
+phâm, dịch vụ an ninh mạng và các tài liệu kèm theo.
+
+2. Nếu được cấp/cấp đổi/cấp lại/gia hạn Giầy phép kinh doanh sản phẩm,
+dịch vụ an ninh mạng, (tên tổ chức, doanh nghiệp) sẽ châp hành nghiêm chỉnh các
+quy định của pháp luật Việt Nam về kinh doanh sản phẩm, dịch vụ an ninh mạng
+và các quy định trong giây phép kinh doanh sản phẩm, dịch vụ an ninh mạng./.
+Nơi nhận: NGƯỜI ĐẠI DIỆN THEO PHÁP LUẬT
+-NhưỜiên: CỦA DOANH NGHIỆP
+SN: (Ký, ghi rõ họ tên, chức danh và đóng dấu)
+
+Chú thích: mm
+
+(1) Trường hợp cấp ghi Văn bản để nghị cấp, trường hợp cấp đổi ghi Văn bản đề nghị cấp đôi, trường hợp
+cấp lại ghi Văn bản Mị nghị cấp lại, trường hợp gia hạn ghi Văn bản đề nghị gia hạn.
+
+(2) Tên doanh nghiệp.
+
+(3) Tên cơ quan có thẩm quyền.
+
+: 8
+. . HN _ Phụ lục I - Mẫu số 04
+xsxsssiẢooessi CỌNG HOA XÃÁ HỘI CHỦ NGHĨA VIỆT NAM
+—n— Độc lập - Tự do - Hạnh phúc
+SỐ: eessessssesse ...., ngày .... tháng ..... năm ......
+VĂN BẢN ĐÈ NGHỊ CÁP GIÁY PHÉP XUẤT KHẨU, NHẬP KHẨU
+SAN PHAÁM AN NINH MẠNG (1)
+Kính gửi: Cơ quan có thẩm quyền (3)
+Căn cứ Luật An ninh mạng ngày 10 tháng 12 năm 2025;
+Căn cứ Luật Đầu tư ngày 1] tháng 12 năm 2025;
+Căn cứ Luật Doanh nghiệp sửa đôi ngày 17 tháng 6 năm 2025;
+Căn cứ Luật Quản hý ngoại thương ngày 12 tháng 6 năm 2017;
+Căn cứ Nghị định số ...../2026/NĐ-CP ngày ... tháng ... năm 2026 của
+Chính phủ quy định về hoạt động kinh doanh sản phẩm, dịch vụ an ninh mạng;
+1 keeesssesseseseeev.,,,, (2) đề nghị cấp Giấy phép xuất khẩu, nhập khẩu sản
+phẩm an ninh mạng với các nội dung sau:
+Phần 1. Thông tin chung
+l. Tên doanh nghiệp: ..................................7u0 e0 eeennnenneneeninnneniennini
+2. Tên người đại diện theo pháp luật: .....................................02/2....
+3. Giấy chứng nhận đăng ký doanh nghiệp số: .... do .... cấp ngày ... tháng ...
+4. Giấy phép kinh doanh sản phẩm, dịch vụ an ninh IGHE.GCSSSSGSSSSSSEES
+5. Địa chỉ trụ sở chính: .......................00 0u 0e nen ven nen na nen n1 n0 n0 010005
+6. Diện thoại: ....................................7. SỐ Fax: .....................
+8. Mã số thuế: ...................nnnnnnnnn n0 00011000000 /11011105 11,
+Phần 2. Sản phẩm nhập khẩu, xuất khẩu
+Dê sả 0222 9A PA xxx
+CN TU 1::/0999090200090770089222227-:ề9XS SN NNRIIRIREREERIRERBSEBERREEBSIIEPSI
+3. Tính năng về an ninh In GP BE SREARAARARARARERREEPRE
+5. Số là  XĂRbgt th 0 ưiboEEG b0 PRENREREWRRRWEWWH PP
+ch 223ÔđTUpÐp UI q3 3ö SP
+
+9 ‹
+7. Mục đích, đối tượng sử dụng sản phẩm:.........nnnnnnnn/77/755110020000/000
+
+(Nếu có nhiều sản phẩm thì lập danh mục kèm theo)
+
+Phần 3. Hồ sơ kèm theo (ghi rõ loại và số lượng hồ sơ)
+
+Phần 4. Cam kết
+
+1. Chịu trách nhiệm trước pháp luật về tính chính xác và tính hợp pháp của
+nội dung trong đơn đề nghị cấp Giây phép xuất khâu, nhập khẩu sản phẩm an ninh
+mạng và các tài liệu kèm theo.
+
+2. Nếu được cấp Giấy phép xuất khẩu, nhập khẩu sản phẩm an ninh mạng,
+(tên tổ chức, doanh nghiệp) sẽ chấp hành nghiêm chỉnh các quy định của pháp
+luật Việt Nam về kinh doanh sản phẩm, dịch vụ an ninh mạng và các quy định về
+xuất khâu, nhập khâu sản phâm an ninh mạng./.
+Nơi nhận: NGƯỜI ĐẠI DIỆN THEO PHÁP LUẬT
+- Như trên; CỦA DOANH NGHIỆP
+055027: (Ký, ghi rõ họ tên, chức danh và đóng dấu)
+
+Chú thích: !
+
+(1) Trường h cấp ghi Văn bản đề nghị cấp, trường hợp cắp đổi ghi Văn bản đề nghị cấp đồi, trường hợp
+cấp lại ghi Văn bản đà nghị cấp lại, trường hợp gia hạn ghi Văn bản đề nghị gia hạn.
+
+(2) Tên doanh nghiệp.
+
+(3) Tên cơ quan có thâm quyền.
+
+` 10
+Phụ lục I - Mẫu số 05
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Ảnh Độc lập - Tự do - Hạnh phúc
+(4x6 cm)
+BẢN KHAI LÝ LỊCH
+I. THÔNG TIN CÁ NHÂN
+I. Họ và tên: ...........................6660666.2/.//..,.Nam/NỮ: ..70070777077770..5|
+2. Tên thường dÙĐ G <ui.eseeessssssrssstESSCS09/20/00009/02010CRRE KRAEERERS EPESEASE:
+3. Sinh ngày:.............tháng.............năm ............00027001 011010001 ni nvnn
+4. Số định danh cá nhân (hoặc Hộ chiếu): ...............222272777200///////////.,
+Cấp ngày:........................tháng ...................... DI ...„---xeessesesss]
+le ._XY re
+5. Đần tộ€:.cccssssssessssois: TÔN giốŒ:....cH.uuusu.; KQUÔC (ậph:..uRDsSs„neesssse,
+6. QUÊ:GUẾN:.......cssxesssssessesesiueEeeeeGeerEiEEHE20002/0/02/20/0-10000E080000144.02/083 9:
+7. Nơi đăng ký hộ khẩu thường trú: ...............20711000010001 00001000100 0001 0g
+neo nha.
+9. Trình độ giáo dục phố thông: ................nnnn(( nen nen nen 110016000001 05 01,
+I0. Trình độ chuyên môn: .............................uu 0u enn ven nen nen ni ni n1 nn n nh
+11. Tên, địa chỉ của cơ sở kinh doanh: .................2u1010000000100000100000 0001
+12. Chức danh trong cơ sở kinh doanh: ........................220207070000000/0 00-1
+13. Số điện thoại liên hệ: ................nnnnn nen nen 0000000010000 00000000001.
+II. QUAN HỆ GIA ĐÌNH
+(Gồm bố, mẹ, vợ hoặc chồng, con)
+PT Năm sinh |Nơi đăng ký hộ Nghề
+STT |Họ và tên s tụnh đanh Quan hệ NHÌMh chau lường nghiệp
+cá nhân " Nam| Nữ | trúvàchöở |, 5 *,
+hiện na hiện tại
+KELUWS ESLSSSS GSNOS NHÀ II PK KG
+"4409 927S2:2/Ư~ L.Lễ —_
+KỢT Vu KIANGE NA NG SG 20000001) Net
+Lm g3
+LÔ —_—hL..—¬ ..
+
+li
+II. QUÁ TRÌNH HỌC TẬP, CÔNG TÁC CỦA BẢN THÂN
+1. Thời gian, nơi học tập, làm việc và nghề nghiệp, chức vụ
+2. Tiền án, tiền sự (nếu có ghi rõ tiền án, tiền sự, tội danh, thời gian, cơ quan
+xử lý)
+Tôi cam đoan những nội dung trong Bản khai lý lịch là đúng, Nếu sai tôi xin
+hoàn toàn chịu trách nhiệm trước pháp luật./.
+sa. HEÀY ... HÔNG ...... HỒN...
+(Người khai ký, ghi rõ họ tên)
+
+12
+Phụ lục I- Mẫu số 06
+(TÊN TÔ CHỨC, CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+DOANH NGHIỆP) Độc lập - Tự do - Hạnh phúc
+„+. Hgày ...... tháng ...... năm ......
+BẢN KỆ KHAI DANH SÁCH NHÂN SỰ
+Tô chức, doanh nghiệp: .............nnnnnnnnnnnnnnnnnnnn (11111 1111111000110000 0001
+Họ và tên người đại diện theo pháp luật:...............................0060.////..,
+Số định danh cá nhân của người đại diện theo pháp luật: .......................
+Địa điểm kinh doanh: ..................Điện thoại liên hệ.........................
+Nămsinh | Địa chỉ TY .
+he thường | Số định | Trình độ Năm tốt Công việc
+STT | Họ và tên „| trú,sô |danhcá, chuyên lục XP được
+Nam „ Nữ điện nhân môn XP phân công
+thoại ._ băng
+LKeïufựỷỹn, gi. ng [....  - CC.
+”  [—eÚ—17Ẻ——Yg
+VY ệẼỆẼh SN
+E..I.-..“.. Õ[Ị.ZKm"S„§xL... .I- .. Ễ
+—.. TỔ. ...Ề LÊ ni Vi
+se
+xi. x—  .3 3x ` J
+1 Hee, HgẴy, ..c tháng ... năm...
+NGƯỜI ĐẠI DIỆN THEO PHÁP LUẬT CỦA
+TÔ CHỨC, DOANH NGHIỆP CAM ĐOAN
+KHAI ĐÚNG SỰ THẬT
+(Ký ghỉ rõ họ lên, đóng dấu giáp lai)
+
+13
+: Phụ lục I - Mẫu số 07
+(TÊN TÓ CHỨC, CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+DOANH NGHIỆP) Độc lập - Tự do - Hạnh phúc
+«s<s HE c.: THhẤHỆ cuc... HỒ BE sua:
+PHƯƠNG ÁN KỸ THUẬT
+(Kèm theo Đơn đê nghị sô ... ngày ... tháng ... năm ...)
+
+1. Tổng thể hệ thống kỹ thuật:
+
+Mô tả cầu hình, sơ đồ lắp đặt thiết bị, giải pháp kỹ thuật tổng thể.
+
+2. Tính năng của hệ thống.
+
+3 Thuyết minh đáp ứng quy chuẩn kỹ thuật, tiêu chuẩn bắt buộc áp dụng về
+sản phâm, dịch vụ an ninh mạng:
+
+Mô tả, chứng minh sự đáp ứng với các quy chuần kỹ thuật và tiêu chuẩn bắt
+buộc áp dụng căn cứ vào các đặc tả kỹ thuật của giải pháp sử dụng, các chứng
+chỉ, chứng nhận đáp ứng tiêu chuân của nhà cung câp giải pháp đã thực hiện
+kiêm định và đã được công nhận hoặc chứng nhận của tô chức kiếm định được
+thừa nhận.
+
+Đồi với các sản phẩm phần mềm cần mô tả, chứng minh nguồn gốc, có bản quyền
+hay tự phát triển.
+
+4. Phụ lục:
+
+Phụ lục các tài liệu đặc tả thiết bị kỹ thuật hệ thống, các chứng nhận, chứng
+chỉ tuân thủ tiêu chuân đã được cấp.
+
+14
+Phụ lục I - Mẫu số 08
+(TÊN TÔÓ CHỨC, CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+DOANH NGHIỆP) Độc lập - Tự do - Hạnh phúc
+.... ngày .... tháng .... năm ......
+PHƯƠNG ÁN KINH DOANH
+(Kèm theo Đơn đề nghị số ... ngày ... tháng ... năm ...)
+
+Phần 1. Tổng quan
+
+1. Cơ cầu tổ chức của doanh nghiệp.
+
+2. Tóm tắt hoạt động kinh doanh của doanh nghiệp.
+
+3. Thuyết minh hệ thống trang thiết bị, cơ sở vật chất của doanh nghiệp.
+
+4. Mô tả nhân sự: Số lượng; kinh nghiệm kỹ thuật, kinh doanh trong lĩnh vực đề
+nghị cập Giây phép.
+
+Phần 2. Phạm vi, đối tượng kinh doanh sản phẩm, dịch vụ
+
+I. Loại hình sản phẩm, dịch vụ dự kiến kinh doanh.
+
+2. Quy mô hoạt động kinh doanh sản phẩm, dịch vụ.
+
+3. Đối tượng dự kiến cung cấp sản phẩm, dịch vụ.
+
+4. Kế hoạch triển khai hệ thống thiết bị cung cấp dịch vụ, sản xuất sản phẩm.
+
+Phần 3. Phương án bảo đảm chất lượng sản phẩm, dịch vụ
+
+I. Tiêu chuẩn chất lượng sản phẩm, dịch vụ.
+
+2. Quy chế bảo mật thông tin.
+
+3. Phương án bảo mật thông tin khách hàng (trước, trong và sau khi cung cấp
+dịch vụ).
+
+4. Các tiêu chuẩn bảo đảm chất lượng dịch vụ được áp dụng, phương án
+chứng nhận và công bố hợp chuẩn, hợp quy đối với sản phẩm do doanh nghiệp
+công bô và lưu hành trên thị trường.
+
+5. Thủ tục giải quyết khiếu nại về chất lượng dịch vụ của khách hàng.
+
+I5
+: . Phụ lục I - Mẫu số 09
+(TÊN DOANH NGHIỆP) CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+— Độc lập - Tự do - Hạnh phúc
+sả... ...., Ngày .... tháng ..... năm ......
+BÁO CÁO TÌNH HÌNH THỰC HIỆN GIẦY PHÉP
+KINH DOANH SAN PHÁM, DỊCH VỤ ÁN NINH MẠNG
+(Từ tháng ... ⁄...... đên tháng ... ^.......)
+Phần 1. Thông tin chung
+1. Tên doanh nghiệp? ssesessoseiossesees9xxsosissssiisigesieiisieais 0Eg4iaAiieEEELSIIKRSES
+ST R Lh Kh Ấn TT ]TTUN HỒ RE KƯNN N PPEEPEEERRSEPREREREEREREEEEROEEPREREEPERERREOEEREPRPRSEBN
+3. Điện thoại: ...............................4. Số FaX: .....217707271010110101011//05)
+5. Giấy phép kinh doanh sản phẩm, dịch vụ an ninh mạng số ... cấp ngày ...
+tháng ... năm ....
+Phần 2. Tình hình triển khai thực hiện Giấy phép
+]. Tóm tắt hoạt động kinh doanh sản phẩm, dịch vụ an ninh mạng của doanh
+Hghiệp:..................»*x»sxz›xzexsxesevxxxxewxievweskeneeeeexeweawkieteexsskessewrieeeeeeeewewkvis
+2. Số lượng, loại sản phẩm an ninh mạng xuất khẩu, nhập khẩu, sản xuất,
+tiêu thu trong HãØH csecsiesexsevksesssesisiekssiexaiieeixiSESEESESEESIEAICOGSSSEESHEE
+3. Số lượng khách hàng phân theo loại hình dịch vụ cung cấp trong năm: .....
+4. Tổng doanh thu, lợi nhuận trong năm: ...........-unnennnennnneeennn nen sen nnen
+5. Tình hình nhân sự trực tiếp tham gia các hoạt động xuất khâu, nhập khâu,
+sản xuât, cung cấp dịch vụ an ninh mạng: ...................107001iiee nen nen nen n ni nen ninh
+6. Nội dung kháC gxzasse.sssssxsiezeeeiexssaitissoxkerdieeisistte KHtSAECE PP RA AE EnEk881
+Phần 3. Cam kết
+(Tên doanh nghiệp) xin cam kết chịu trách nhiệm trước pháp luật về tính
+chính xác của nội dung trong Báo cáo và các tài liệu kèm theo.
+Nơi nhận: NGƯỜI ĐẠI DIỆN THEO PHÁP LUẬT
+"gen CỦA DOANH NGHIỆP
+(Ký, ghi rõ họ tên, chức danh và đóng dấu)
+
+l6
+: Phụ lục I - Mẫu số 10
+Ni CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+xin Độc lập - Tự do - Hạnh phúc
+Số: /PTN ae, Ngày ‹„... Kháng ...... HỐNE ‹.....
+PHIẾU TIẾP NHẬN HỖ SƠ VÀ HẸN TRẢ KÉT QUÁ
+Mã hỗ sơ:......
+Bộ phận Tiếp nhận và Trả kết quả (3): ....................Ceennnrneeeeeeeeee sen
+Tiếp nhận hồ sơ của (4):....................unu(eeen nen nen nn nen nan n1 nk E nen an 1n k ng
+LI: xu: L9 SOI HMREEARAEOERERERAERERRRRERPEEEREEEPAEREAEPPEAREAEREERER On
+Số điện thoại: ..................................Email: .......................... se.
+Nội dung yêu cầu giải quyết: TU NA AT
+Thành phần hồ sơ nộp gồm:
+Số lượng hồ sơ:................(bộ)
+Thời gian giải quyết hồ sơ theo quy định là: .............ngày
+Thời gian nhận hồ sơ: ... giờ... phút, ngày ... tháng ... năm.....
+Thời gian trả kết quả giải quyết hồ sơ: ... giờ ... , phút, ngày .. tháng .. năm ..
+Đăng ký nhận kết quả tại: .........................unnnnunnnn nen nen nen nen E100
+Vào Số theo dõi hồ sơ, QIYỀN SỐ esssseeieossyesesous Oh HỆ, .c.ssssssss,
+NGƯỜI NỘP HỖ SƠ NGƯỜI TIẾP NHẬN HÒ SƠ
+(Ký và ghi rõ họ tên) (Ký và ghỉ rõ họ tên) |
+Chữ ký sô của Tô chức Chữ ký số của Người tiêp nhận hô sơ
+(nêu là biểu máu điện tử) (nêu là biểu máu điện Hừ)
+
+(1) Tên cơ quan cấp trên trực tiếp.
+(2) Tên cơ quan cấp giấy chứng nhận.
+(3) Tên cơ quan tiếp nhận.
+(4) Tên của người nộp hồ sơ và ghi rõ là nộp hỗ sơ cho tổ chức, doanh nghiệp nào.
+
+l7
+| Phụ lục I - Mẫu số 11
+
+HH HN CỘNG HÒA XÃ HỘI CHÚ NGHĨA VIỆT NAM
+
+số test Độc lập - Tự do - Hạnh phúc
+
+Số: /PB „+. Hgày ...... thống ...... năm .....
+
+PHIẾU TỪ CHÓI TIẾP NHẬN GIẢI QUYẾT HỖ SƠ
+HOẶC BỎ SUNG HỖ SƠ
+Mã hồ sơ:......
+Bộ phận Tiếp nhận và Trả kết quả (1): ........................eeeeeeeeeueeeuuee,
+Tiếp nhận hồ sơ của (2):.........(u(nnnn(nn(( 2220111001011 00 1111000011000 00.
+p TT ĐT DI ỐNG Ộ HH HỘ! KH AERREEAREERRSPTONEYR"EEEPEEESEEPIEEEPREREEOREEEYEEUEERREROPPEESEEPRRENN
+Số điện thoại ceuessssesssvsssseeessvesasi IIONW cuysssssGESEECEECYSEENSH
+Nội dung vêu cầu giối quyết: c.sseyesssseeooyassssieeiwioesieiseyeeeeEpKEAYEREECSHENRS
+Qua xem xét, Bộ phận Tiếp nhận và Trả kết quả thông báo không tiếp nhận,
+giải quyết hô sơ này với lý do cụ thê như sau:
+Xin thông báo cho Ông, Bà được biết và thực hiện./.
+NGƯỜI NỘP HÒ SƠ NGƯỜI TIẾP NHẬN HÒ SƠ
+(Ký và ghỉ rõ họ tên) (Ký và ghi rõ họ tên)
+
+Chủ thích:
+(1) Tên cơ quan tiếp nhận.
+(2) Tên của người nộp hồ sơ và gh rõ là nộp hồ sơ cho tổ chức, doanh nghiệp nào.
+
+: 18
+i vu. _ Phụ lục I - Mẫu số 12
+xe si CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+SE Độc lập - Tự do - Hạnh phúc
+Số: /TB 2ÿ THẦÿ su... HÔNG cuusss THẾ xua
+THÔNG BÁO
+Qua xem xét hồ sơ đề nghị cấp/cấp đổi/cấp lại/gia hạn (3) Giấy phép kinh
+doanh sản phẩm, dịch vụ an ninh mạng ngày ... tháng ... năm .... của
+...(2).... từ chối cấp/cấp đỏi/cấp lại/gia hạn Giấy phép kinh doanh sản phẩm,
+dịch vụ an ninh mạng với lý do cụ thê như sau:
+Xin trao đổi cho ...(4)... được biết.
+THỦ TRƯỚNG CƠ QUAN
+CÓ THẢM QUYÊN
+(Ký và ghi rõ họ tên)
+Chú thích:
+(1) Tên cơ quan cấp trên trực tiếp.
+(2) Tên cơ quan cấp giấy chứng nhận.
+(3) Trường hợp cấp ph hồ sơ đề nghị cấp, trường hợp cấp lại ghi hồ sơ đề nghị cấp lại, trường hợp sửa
+đôi ghi hỗ sơ đề nghị sửa đôi, trường hợp bỏ sung ghi hồ sơ đề nghị bồ sung.
+(4) Tên doanh nghiệp đề nghị cấp/cấp đổi/ cấp lạ/gia hạn Giấy phép.
+
+J4.ÿNT 41%84N PHẨM AN NINH MẠNG XUẤT KHẨU, NHẬP KHẨU THEO GIẦY PHÉP
+T>. cv. theo Nghị định số 332/2026/NĐ-CP ngày 19 tháng 8 năm 2026 của Chính phủ)
+TT Tên à S phán .. v nh wG năng an Mã HS Mô tả hàng hóa
+hàng ?úa - ?„°= ninh mạng
+1] Sản phẩm an ninh mạng cho thiết bị đầu cuối
+Máy xử lý dữ liệu tự động và các khối chức năng của chúng: máy
+truyền dữ hệu lên các phương tiện truyền dữ liệu dưới dạng mã hóa và máy
+xử lý những dữ liệu này, chưa được chỉ tiết hay ghi ở nơi khác gồm:
+- Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+8471.30.90 : A1 nu -_—~ 1a ¬
+8471.41.90 trọng lượng không quá 10 kg, gôm ít nhất một đơn vị xử lý dữ liệu |
+.. trung tâm, một bàn phím và một màn hình. |
+8471.49.90. |, Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhất một đơn
+vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuât, kết hợp hoặc
+—_—_ không kêt hợp với nhau.
+To EIE g làn công, xâm - Loại khác, ở dạng hệ thống.
+1 Bảo vệ máy tính cá | nhập; giám sát an ninh - - : -
+nhân/máy chủ mạng; kiểm tra, đánh Thiết bị khác đê truyền hoặc nhận tiêng, hình ảnh hoặc dữ liệu khác,
+giá an ninh mạng kê cả các thiệt bị viên thông nôi mạng hữu tuyên hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gồm:
+- Bộ điều khiển và bộ thích ứng (adaptor), kể cả công nối, cầu nồi, bộ
+định tuyên và các thiệt bị tương tự khác được thiệt kế đề chỉ kết nối
+8517.62.43 doogd . : Ẩ : Là Ấ
+8517.62.49 với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+. thu, đôi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kê cả thiết bị chuyên mạch và thiết bị định tuyên.
+- Loại khác của hàng hóa Máy thu, đỏi và truyền hoặc tái tạo âm thanh,
+hình ảnh hoặc dạng dữ liệu khác, kê cả thiết bị chuyên mạch và thiết
+bị định tuyên.
+
+2
+Máy xử lý dữ liệu tự động và các khối chức năng của chúng: máy
+truyền dữ liệu lên các phương tiện'truyền dữ liệu đưới dạng mã hóa và
+máy xử lý những dữ liệu này, chưa được chỉ tiết hay ghi ở nơi khác gồm:
+84713090 “ Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+trọng lượng không quá 10 kg. gôm ít nhât một đơn vị xử lý dữ liệu
+S471.41.90 lÏ rung tâm, một bàn phím và một đàn hình.
+S47149.90 |. Loại khác của hàng hóa chứa trong cùng một vÕ có ít nhất một đơn
+vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kết hợp hoặc
+am không kết hợp với nhau.
+Báo vệ thiết bị di | Chồng tên công, xâm - Loại khác, ở dạng hệ thống.
+2 ldộng.  (Mobiie | Hhêp: giám sắt an ninh — =— nh
+.. mạng: kiêm tra, đánh Thiêt bị khác đê truyền hoặc nhận tiêng, hình ảnh hoặc dữ liệu khác,
+Secordt) giá an ninh mạng kể cả các thiết bị viễn thông nối mạng hữu tuyến hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gồm:
+- Bộ điều khiển và bộ thích ứng (adaptor), kể cả cổng nối, cầu nổi, bộ
+8517.62.43 | định tuyến và các thiết bị tương tự khác được thiết kế đề chỉ kết nối
+8317.62.40 với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+_— thu, đôi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kể cả thiết bị chuyển mạch và thiết bị định tuyến. - Loại khác
+của hàng hóa Máy thu, đổi và truyền hoặc tái tạo âm thanh, hình ảnh
+hoặc dạng dữ liệu khác, kể cả thiết bị chuyển mạch và thiết bị định
+tuyến.
+CH Sngảnwemiem SÁU I
+| Máy xử lý dữ liệu tự động và các khối chức năng của chúng: máy
+Sản phẩm kiểm soát 84713090 | truyền dữ liệu lên các phương tiện truyền dữ liệu dưới dạng mã hóa và máy
+h truy cập mạng|Giám sát an ninh 8471.41.90 xử lý những dữ liệu này, chưa được chỉ tiệt hay ghi ở nơi khác gôm:
+(Network  Access | mạng Láng - Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có ¡
+Control) 5471-4220 ` | trong lượng không quá 10 kg, gồm ít nhất một đơn vị xử lý dữ liệu
+trung tâm, một bàn phím và một màn hình.
+
+3
+- Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhất một đơn
+vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kêt hợp hoặc
+không kêt hợp với nhau.
+- Loại khác, ở dạng hệ thống.
+Thiết bị khác đề truyền hoặc nhận tiếng, hình ảnh hoặc dữ liệu khác,
+kể cả các thiết bị viễn thông nối mạng hữu tuyên hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gÔm:
+- Bộ điều khiển và bộ thích ứng (adaptor), kể cả cổng nối. cầu nối, bộ
+định tuyên và các thiết bị tương tự khác được thiết kê đề chỉ kết nối
+8517.62.43 HA MT Di ắ ñ ¿ Là khá
+17.62.49 với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+5517-6242 | thụ, đổi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kê cả thiết bị chuyên mạch và thiết bị định tuyên.
+- Loại khác của hàng hóa Máy thu, đổi và truyền hoặc tái tạo âm thanh,
+hình ảnh hoặc dạng dữ liệu khác, kề cả thiết bị chuyển mạch và thiết
+bị định tuyên.
+Máy xử lý dữ liệu tự động và các khối chức năng của chúng: máy
+truyền dữ liệu lên các phương tiện truyền dữ liệu dưới dạng mã hóa và
+máy xử lý những dữ liệu này, chưa được chỉ tiêt hay ghi ở nơi khác gồm:
+- Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+8471.30.90 ˆ - NHI  dn HÔ gN
+.  . 90 trọng lượng không quá 10 kg, gôm ít nhât một đơn vị xử lý dữ liệu
+Tường lửa bảo vệ. LAI. trung tâm, một bàn phím và một màn hình.
+
+4. lớp mạng| Chồng tân cống, xâm] 84714990 | r oi pháp của hàng hóa chữa trong cùng một vớ cố ít nhất một đơn
+Otetwvofebase { inhập vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kết hợp hoặc
+Eirewall) không kết hợp với nhau.
+
+- Loại khác, ở dạng hệ thống.
+Thiết bị khác để truyền hoặc nhận tiếng, hình ảnh hoặc dữ liệu khác,
+8517.62.43 Ã ~ễ 2z. TK TẾ, LÊ 4: 5 Z = ˆ M
+8517.62.49 kê cả các thiệt bị viên thông nôi mạng hữu tuyên hoặc không dây (như
+17.62. loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gồm:
+
+4
+- Bộ điêu khiến và bộ thích ứng (adaptor), kê cả công nôi, câu nôi, bộ.
+định tuyến và các thiết bị tương tự khác được thiết kế đề chỉ kết nối
+với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+thu, đổi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kề cả thiết bị chuyển mạch và thiết bị định tuyến. |
+- Loại khác của hàng hóa Máy thu, đồi và truyền hoặc tái tạo âm thanh,
+hình ảnh hoặc dạng dữ liệu khác, kể cả thiết bị chuyền mạch và thiết
+bị định tuyến.
+Máy xử lý dữ liệu tự động và các khối chức năng của chúng; máy
+truyền dữ liệu lên các phương tiện truyền dữ liệu dưới dạng mã hóa và
+máy xử lý những dữ liệu này. chưa được chỉ tiết hay ghi ở nơi khác
+gồm:
+8471.30.90 | - Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+8471.41.90 | trọng lượng không quá 10 kg. gồm ít nhất một đơn vị xử lý dữ liệu
+Sản phẩm phát hiện - Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhât một đơn
+và ngăn chặn xâm NHI NG vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuât, kết hợp hoặc
+s nhập - TIntrusion ha nhân . . ninh không kêt hợp với nhau.
+Prevention/ Cấi - Loại khác, ở dạng hệ thông.
+Detection áSvystem mạng
+(IPS/IDS) Thiết bị khác đề truyền hoặc nhận tiếng, hình ảnh hoặc dữ liệu khác,
+kê cả các thiêt bị viên thông nôi mạng hữu tuyên hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gồm:
+S748 (, Bộ điều khiển và bộ thích ứng (adaptor), kể cả cồng nồi. cầu nối, bộ
+8517.62.49 | định tuyến và các thiết bị tương tự khác được thiết kế đề chỉ kết nối
+với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+thu, đổi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kế cả thiết bị chuyển mạch và thiết bị định tuyến.
+
+5
+- Loại khác của hàng hóa Máy thu, đôi và truyền hoặc tái tạo âm thanh,
+hình ảnh hoặc dạng dữ liệu khác, kế cả thiết bị chuyển mạch và thiết
+bị định tuyến.
+Máy xử lý dữ liệu tự động và các khối chức năng của chúng: máy
+| truyền dữ liệu lên các phương tiện truyền dữ liệu dưới dạng mã hóa và
+máy xử lý những dữ liệu này, chưa được chỉ tiết hay ghi ở nơi khác gồm:
+84713090 |” Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+trọng lượng không quá 10 kg, gôm ít nhât một đơn vị xử lý dữ liệu
+84714190 | ung tâm, một bàn phím và một màn hình.
+5471.49.90. |. Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhất một đơn
+vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kết hợp hoặc
+Sản phẩm chống không kết hợp với nhau.
+6 tấn công từ chối | Chống tấn công, xâm š Loại khác, ở dạng hệ thông.
+dịch vụ (DDoS nhập Thiêt bị khác đê truyền hoặc nhận tiêng, hình ảnh hoặc dữ liệu khác,
+Prevention) kể cả các thiết bị viễn thông nối mạng hữu tuyến hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gồm:
+- Bộ điều khiển và bộ thích ứng (adaptor), kể cả cổng nối, cầu nối, bộ
+85176243 | định tuyến và các thiết bị tương tự khác được thiết kế để chỉ kết nối
+với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+8517-6242 Ï thụ, đổi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kể cả thiết bị chuyển mạch và thiết bị định tuyến.
+- Loại khác của hàng hóa Máy thu, đổi và truyền hoặc tái tạo âm thanh,
+hình ảnh hoặc dạng dữ liệu khác, kể cả thiết bị chuyền mạch và thiết
+bị định tuyến.
+Sản phẩm an toàn Chống tấn công xâm| sg4713090 | Máy xử lý dữ liệu tự động và các khối chức năng của chúng; máy truyền
+7 |Heng Internet kết|nhập;giámsátanminh c -iịgp dữ liệu lên các phương tiện truyên dữ liệu dưới dạng mã hóa và máy xử lý
+nối vạn vật (IoT | mạng; kiểm tra, đánh iề những dữ liệu này, chưa được chỉ tiết hay ghi ở nơi khác gồm:
+Security) giá au nắn mạng 8471.49.00
+
+6
+- Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+trọng lượng không quá 10 kg. gôm ít nhât một đơn vị xử lý dữ liệu
+trung tâm, một bàn phím và một màn hình.
+- Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhất một đơn
+vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuât, kêt hợp hoặc
+không kêt hợp với nhau.
+- Loại khác, ở dạng hệ thống.
+Thiết bị khác đề truyền hoặc nhận tiếng, hình ảnh hoặc dữ liệu khác,
+kê cả các thiệt bị viên thông nôi mạng hữu tuyên hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gôm:
+- Bộ điều khiển và bộ thích ứng (adaptor), kê cả công nối, cầu nối, bộ
+8517.62.43 định tuyên và các thiêt bị tương tự khác được thiệt kê đê chỉ kêt nôi
+8517 62.40 với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+ch. thu, đôi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+| khác, kê cả thiệt bị chuyên mạch và thiệt bị định tuyên.
+- Loại khác của hàng hóa Máy thu, đổi và truyền hoặc tái tạo âm thanh,
+hình ảnh hoặc dạng dữ liệu khác, kể cả thiết bị chuyên mạch và thiêt
+bị định tuyên.
+Máy xử lý dữ liệu tự động và các khối chức năng của chúng: máy
+truyên dữ liệu lên các phương tiện truyền dữ hiệu dưới dạng mã hóa và máy
+xử lý những dữ lhệu này, chưa được chỉ tiết hay ghị ở nơi khác gôm:
+- Ì - Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+8471.30.90 P vn ME Mà : :
+: an hâm quan M Giám sát an ninh 8471.41.90 trọng lượng không quá 10 kg, gôm ít nhât một đơn vị xử lý dữ hiệu
+. cn mạng In, trung tâm, một bàn phím và một màn hình.
+
+- 4714990. |° Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhất một đơn
+vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kêt hợp hoặc
+không kêt hợp với nhau.
+
+| - Loại khác, ở dạng hệ thống.
+
+7
+Thiết bị khác để truyền hoặc nhận tiếng, hình ảnh hoặc dữ liệu khác,
+kể cả các thiết bị viễn thông nối mạng hữu tuyến hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gồm:
+- Bộ điều khiến và bộ thích ứng (adaptor), kể cả cồng nối, cầu nối, bộ
+8517.6243 | đỉnh tuyến và các thiết bị tương tự khác được thiết kế để chỉ kết nối
+với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+55176249 | nụ đổi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kể cả thiết bị chuyển mạch và thiết bị định tuyến.
+- Loại khác của hàng hóa Máy thu, đổi và truyền hoặc tái tạo âm thanh,
+hình ảnh hoặc dạng dữ liệu khác, kê cả thiết bị chuyển mạch và thiết
+bị định tuyến.
+| Máy xử lý dữ liệu tự động và các khôi chức năng của chúng: máy
+truyền dữ liệu lên các phương tiện truyền dữ liệu dưới dạng mã hóa và
+máy xử lý những dữ liệu này, chưa được chỉ tiết hay ghi ở nơi khác gồm:
+84713090 | - Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+8471.41.90 trọng lượng không quá 10 kg, gôm ít nhất một đơn vị xử lý dữ liệu
+_~ˆ trung tâm, một bàn phím và một màn hình.
+8471.42.20 | _ Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhất một đơn
+tát kĩ P ; - - vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kêt hợp hoặc
+ni Chông tân công, xâm không kết hợp với nhau. _
+2 |thông tin đa dụng | Hhập: giám sát an ninh - Loại khác, ở dạng hệ thông.
+
+(UTM) man Thiết bị khác để truyền hoặc nhận tiếng, hình ảnh hoặc dữ liệu khác,
+| kể cả các thiết bị viễn thông nối mạng hữu tuyến hoặc không dây (như
+| loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gồm:
+| 8517.62.43 | - Bộ điều khiển và bộ thích ứng (adaptor), kể cả cổng nổi, cầu nổi, bộ
+
+8517.62.49 | định tuyến và các thiết bị tương tự khác được thiết kế để chỉ kết nối
+với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+thu, đổi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kề cả thiết bị chuyển mạch và thiết bị định tuyến.
+
+§
+- Loại khác của hàng hóa Máy thu, đôi và truyền hoặc tái tạo âm thanh,
+hình ảnh hoặc dạng dữ liệu khác, kê cả thiệt bị chuyên mạch và thiệt
+bị định tuyên.
+Máy xử lý dữ liệu tự động và các khối chức năng của chúng; máy
+truyền dữ liệu lên các phương tiện truyền dữ liệu dưới dạng mã hóa và
+máy xử lý những dữ liệu này, chưa được chỉ tiết hay ghi ở nơi khác gôm:
+- Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+8471.30.90 : : mm Ö nu Oh
+| 8471.41.90 trọng lượng không quá 10 kg, gồm ít nhât một đơn vị xử lý dữ liệu
+mns trung tâm, một bàn phím và một màn hình.
+
+8471.49.90. |. Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhất một đơn
+vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kệt hợp hoặc
+không kêt hợp với nhau.
+
+Sản phẩm giám GME Sát ân nănh - tu4 khác, ở dạng hệ thông.
+16 |:ang  Qắenyottl, .. Thiết bị khác để truyền hoặc nhận tiếng, hình ảnh hoặc dữ liệu khác,
+Montosng) kể cả các thiết bị viễn thông nối mạng hữu tuyến hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gôm:
+- Bộ điều khiển và bộ thích ứng (adaptor), kể cả công nối, cầu nồi, bộ
+định tuyên và các thiết bị tương tự khác được thiết kê đê chỉ kết nôi
+8517.62.43 mà ñ Ể tà : .
+762.49 với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+
+5517:62-49 Ï thu, đổi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+
+khác, kê cả thiết bị chuyên mạch và thiêt bị định tuyên.
+- Loại khác của hàng hóa Máy thu, đôi và truyền hoặc tái tạo âm thanh, |
+hình ảnh hoặc dạng dữ liệu khác, kê cả thiết bị chuyên mạch và thiêt
+bị định tuyên.
+Mạng riêng ảo Chống tấn công xâm, 3471.30.90 Máy xuy s Đ Xin ~ đồng và cao khó chức kh ng chúng: G
+a H s ˆ truyên dữ liệu lên các phương tiện truyên dữ liệu dưới dạng mã hóa và
+ll |(VPN) sản phẩm|nhập trên đường 8471.41.90 XE < ln ¬ L TẦ nu
+ng ` máy xử lý những dữ liệu này, chưa được chỉ tiết hay ghi ở nơi khác
+che giâu địa chỉ IP. | truyền 8471.49.90 gồm:
+
+9
+- Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+trọng lượng không quá 10 kg, gồm ít nhất một đơn vị xử lý dữ liệu
+trung tâm, một bàn phím và một màn hình.
+- Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhất một đơn
+vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kêt hợp hoặc
+không kêt hợp với nhau.
+- Loại khác, ở dạng hệ thống. |
+Thiết bị khác để truyền hoặc nhận tiếng, hình ảnh hoặc dữ liệu khác,
+kế cả các thiết bị viễn thông nối mạng hữu tuyến hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng điện rộng) gồm:
+- Bộ điều khiển và bộ thích ứng (adaptor). kể cả công nối, cầu nối, bộ
+€5176243 | định tuyên và các thiết bị tương tự khác được thiết kê để chỉ kết nối
+— với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy |
+5517-62-39 Ï thụ, đối và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kể cả thiết bị chuyển mạch và thiết bị định tuyến.
+- Loại khác của hàng hóa Máy thu, đổi và truyền hoặc tái tạo âm thanh,
+hình ảnh hoặc dạng dữ liệu khác, kê cả thiết bị chuyên mạch và thiết
+bị định tuyên.
+.H.; Sản phẩm an ninh mạng lớp ứng dụng
+Máy xử lý dữ liệu tự động và các khối chức năng của chúng; máy
+truyền dữ liệu lên các phương tiện truyền dữ liệu dưới dạng mã hóa và
+Tựt . ; máy xử lý những dữ liệu này, chưa được chỉ tiệt hay ghi ở nơi khác gồm:
+dan xen TC, Chẳng tân cân xấu UỐỜ130-90.- | _ Tại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+ụung web (Web Chông tân công. xâm Ễ "hy Ai Tu an
+12 Annhcalon nhập 8471.41.90 | trọng lượng không quá 10 kg, gồm ít nhất một đơn vị xử lý dữ liệu
+Firewall) 8471.49.90 | trung tâm, một bàn phím và một màn hình.
+- Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhật một đơn
+vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kêt hợp hoặc
+không kêt hợp với nhau.
+
+10
+J-Ioikhicgoômghome 1
+Thiết bị khác để truyền hoặc nhận tiếng, hình ảnh hoặc dữ liệu khác,
+kể cả các thiết bị viễn thông nối mạng hữu tuyến hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gồm:
+85176243 | - BỘ điều khiển và bộ thích ứng (adaptor), kể cả công nối, cầu nối, bộ
+T định tuyến và các thiết bị tương tự khác được thiết kế đề chỉ kết nối ;
+với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+thu, đôi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kể cả thiết bị chuyển mạch và thiết bị định tuyến.
+Máy xử lý dữ liệu tự động và các khối chức năng của chúng: máy
+truyền dữ liệu lên các phương tiện truyền dữ liệu dưới dạng mã hóa và
+máy xử lý những dữ liệu này, chưa được chỉ tiết hay ghi ở nơi khác
+gÔm:
+8471.30.90 |- Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+8471.41.90 | trọng lượng không quá 10 kg, gồm ít nhất một đơn vị xử lý dữ liệu
+KG GMkE - Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhất một đơn
+Sản phâm bảo xoan : : r vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kết hợp hoặc
+13 | toàn, an ninh cho hệ Chông tân công, xâm không kết hợp với nhau.
+thông thư điện từ nhập - Loại khác, ở dạng hệ thống
+(Email Security) - : - : ,
+Thiết bị khác để truyền hoặc nhận tiếng, hình ảnh hoặc dữ liệu khác,
+kể cả các thiết bị viên thông nối mạng hữu tuyến hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gôm:
+85176243 | Bộ điều khiển và bộ thích ứng (adaptor), kể cả công nói, cầu nồi, bộ
+định tuyên và các thiệt bị tương tự khác được thiêt kê đê chỉ kêt nôi
+với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+| thu, đổi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kề cả thiết bị chuyển mạch và thiết bị định tuyến.
+
+lại
+Máy xử lý dữ liệu tự động và các khối chức năng của chúng: máy
+truyền dữ liệu lên các phương tiện truyền dữ liệu dưới dạng mã hóa và
+máy xử lý những dữ liệu này, chưa được chỉ tiết hay ghi ở nơi khác
+gồm:
+8471.30.90  - Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+8471.41.90 trọng lượng không quá 10 kg, gồm ít nhất một đơn vị xử lý dữ liệu
+\ v ' THẾ - - Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhất một đơn
+Hệ thông kiệm Chông tân công, xâm vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kết hợp hoặc
+14 SOáU/ giám sáư/đánh nhập; giám sát an ninh không kết hợp với nhau.
+giá an toàn, on ninh | mạng; kiệm trợ, đánh - Loại khác, ở dạng hệ thống
+ứng dụng web giá an ninh mạng - : - -
+Thiết bị khác đê truyền hoặc nhận tiêng, hình ảnh hoặc dữ liệu khác,
+kể cả các thiết bị viễn thông nối mạng hữu tuyến hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gỒm:
+85176243 |“ Bộ điều khiển và bộ thích ứng (adaptor), kể cả công nồi, cầu nổi, bộ
+định tuyên và các thiết bị tương tự khác được thiết kê đê chỉ kêt nôi
+với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+| thu, đổi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kể cả thiết bị chuyển mạch và thiết bị định tuyến.
+Máy xử lý dữ liệu tự động và các khối chức năng của chúng; máy
+truyền dữ liệu lên các phương tiện truyền dữ liệu dưới dạng mã hóa và
+máy xử lý những dữ liệu này, chưa được chỉ tiết hay ghi ở nơi khác gồm:
+Sản phẩm kiểm tra, Giám sát an ninh| 8471.30.90 | -Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+15 | rà soát tìm lỗ hồng | mạng; kiểm tra, đánh| 8471.41.90 | trọng lượng không quá 10 kg, gôm ít nhất một đơn vị xử lý dữ liệu
+mất an ninh mạng | giá an ninh mạng 8471.49.90 | trung tâm, một bàn phím và một màn hình.
+- Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhất một đơn
+vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kết hợp hoặc
+không kết hợp với nhau.
+
+12
+—  |-aikdssdmggme |]
+Thiết bị khác để truyền hoặc nhận tiếng, hình ảnh hoặc dữ liệu khác,
+kế cả các thiết bị viễn thông nói mạng hữu tuyến hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gồm: |
+8517.6243 | - Bộ điều khiển và bộ thích ứng (adaptor), kể cả cổng nối, cầu nói, bộ
+định tuyên và các thiết bị tương tự khác được thiết kế đề chỉ kết nối
+với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+thu, đổi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kể cả thiết bị chuyền mạch và thiết bị định tuyến.
+Máy xử lý dữ liệu tự động và các khối chức năng của chúng: máy
+truyền dữ liệu lên các phương tiện truyền dữ liệu dưới dạng mã hóa và
+máy xử lý những dữ liệu này, chưa được chỉ tiết hay ghi ở nơi khác gồm:
+8471.3090 | - Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+trọng lượng không quá 10 kg, gôm ít nhất một đơn vị xử lý dữ liệu
+4714190 Ï rung tâm, một bản phím và một màn hình.
+84714990 |, Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhất một đơn
+Sản phẩm bảo đảm Trn vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kết hợp hoặc
+an toàn, an ninh cho Chồng lần công, xâm không kết hợp với nhau.
+' | nệ thống cơ sở dữ gan giám sắt an ninh - Loại khác, ở dạng hệ thống.
+liệu Thiết bị khác để truyền hoặc nhận tiếng, hình ảnh hoặc dữ liệu khác.
+kể cả các thiết bị viễn thông nối mạng hữu tuyến hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gồm:
+8517.6243 | - Bộ điều khiển và bộ thích ứng (adaptor), k cả cổng nối, cầu nồi, bộ
+định tuyên và các thiết bị tương tự khác được thiết kế để chỉ kết nối
+với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+thu, đổi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kể cả thiết bị chuyền mạch và thiết bị định tuyến. |
+
+13
+Máy xử lý dữ liệu tự động và các khối chức năng của chúng; máy
+truyên dữ liệu lên các phương tiện truyền dữ liệu dưới dạng mã hóa và
+máy xử lý những dữ liệu này, chưa được chi tiết hay ghi ở nơi khác
+gôm:
+8471.30.90 | - Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+8471.41.90 | trọng lượng không quá 10 kg, gôm ít nhất một đơn vị xử lý dữ liệu
+8471.4990 | trung tâm, một bản phím và một màn hình.
+- Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhất một đơn
+Sản phẩm an toàn, Chống tấn công, xâm vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kết hợp hoặc
+17 | an ninh dữ liệu lưu nhập; giám sát an ninh không kệt hợp với nhau. .
+. trữ mạng - Loại khác, ở dạng hệ thông.
+Thiết bị khác đề truyền hoặc nhận tiếng, hình ảnh hoặc dữ liệu khác,
+kê cả các thiệt bị viên thông nôi mạng hữu tuyên hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gồm:
+85176243 | “Bộ điều khiển và bộ thích ứng (adaptor), kê cả công nói, cầu nối, bộ
+I định tuyên và các thiết bị tương tự khác được thiết kê đê chỉ kết nôi
+với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+thu, đôi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kẻ cả thiết bị chuyển mạch và thiết bị định tuyến.
+Máy xử lý dữ liệu tự động và các khối chức năng của chúng; máy
+truyền dữ liệu lên các phương tiện truyền dữ liệu dưới dạng mã hóa và
+máy xử lý những dữ liệu này, chưa được chỉ tiệt hay ghi ở nơi khác gôm:
+Sản phẩm chống |Chống tấn công, xâm | 8471.30.90 | _I oại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+lề |thât thoát dữ liệu nhập; giám sátanninh| 8471.41.90 | trọng lượng không quá 10 kg, gồm ít nhất một đơn vị xử lý dữ liệu
+(DLP) mạng 8471.49.00 | trung tâm, một bàn phím và một màn hình.
+| - Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhất một đơn
+| vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kết hợp hoặc
+| không kêt hợp với nhau.
+
+14
+|-Iogikhkuodemghimn |
+
+Thiết bị khác để truyền hoặc nhận tiếng, hình ảnh hoặc dữ liệu khác,
+kề cả các thiết bị viễn thông nối mạng hữu tuyến hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gồm:
+
+85176243 | - Bộ điều khiển và bộ thích ứng (adaptor), kể cả công nối, cầu nói, bộ
+định tuyên và các thiêt bị tương tự khác được thiệt kê đê chỉ kêt nôi
+với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+thu, đổi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kế cả thiết bị chuyên mạch và thiết bị định tuyến.
+
+Sản phẩm loại khác |
+Máy xử lý dữ liệu tự động và các khối chức năng của chúng; máy |
+truyền dữ liệu lên các phương tiện truyền dữ liệu dưới dạng mã hóa và '
+máy xử lý những dữ liệu này, chưa được chi tiết hay ghi ở nơi khác
+gôm:
+
+8471.30.90 | - Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+8471.41.90 | trọng lượng không quá 10 kg, gồm ít nhất một đơn vị xử lý dữ liệu
+| Giải pháp thu thập S7 L40/90 vn . mm Ni á HU mam Tơ
+| thông tỉn nguy cơ, | -¡ Oại ác của ảng Ì ac ửa trong cùng một v ¡ có “ : t một đơn |
+| á ¿ Giám sát an ninh vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kêt hợp hoặc
+19 | đe dọa thông minh ˆ . .
+| mạng không kêt hợp với nhau.
+(Tirest - Loại khác, ở dạng hệ thôn
+Intelligence) & — C : ẽ Ể
+Thiêt bị khác đề truyền hoặc nhận tiêng, hình ảnh hoặc dữ liệu khác,
+kể cả các thiết bị viễn thông nói mạng hữu tuyến hoặc không dây (như |
+8517.62.43 loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gồm:
+85176249 | - BỘ điều khiển và bộ thích ứng (adaptor), kể cả công nối. cầu nội, bộ
+định tuyên và các thiệt bị tương tự khác được thiệt kê đề chỉ kêt nôi
+với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+thu, đổi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+
+15
+khác, kê cả thiêt bị chuyên mạch và thiệt bị định tuyên. - Loại khác
+của hàng hóa Máy thu, đôi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc
+dạng dữ liệu khác, kê cả thiết bị chuyên mạch và thiết bị định tuyến.
+| Máy xử lý dữ liệu tự động và các khối chức năng của chúng: máy
+truyền dữ liệu lên các phương tiện truyền dữ liệu dưới dạng mã hóa và
+máy xử lý những dữ liệu này, chưa được chi tiết hay ghi ở nơi khác gồm:
+84713090 | Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+_¬ 4 - 0 trọng lượng không quá 10 kg, gôm ít nhất một đơn vị xử lý dữ liệu
+. trung tâm. một bản phím và một màn hình.
+
+8471.49.90 |_ Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhất một đơn
+vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kết hợp hoặc
+không kêt hợp với nhau.
+
+Giải pháp giám sát ¬ ~ sát an ni nh - Loại khác, ở dạng hệ thông.
+29 lan nhi xong XNĐÍ uye Thiết bị khác để truyền hoặc nhận tiếng, hình ảnh hoặc dữ liệu khác,
+trung kê cả các thiết bị viễn thông nồi mạng hữu tuyến hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gồm:
+- Bộ điều khiển và bộ thích ứng (adaptor), kể cả công nối, cầu nối, bộ
+8517.62.43 định tuyên và các thiệt bị tương tự khác được thiết kê đề chỉ kết nôi
+- . s 49 với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+1762-29. Ï thu, đối và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kê cả thiêt bị chuyên mạch và thiết bị định tuyến.
+- Loại khác của hàng hóa Máy thu, đổi và truyền hoặc tái tạo âm thanh,
+hình ảnh hoặc dạng dữ liệu khác, kê cả thiệt bị chuyên mạch và thiết
+bị định tuyên.
+Giải pháp kiểm tra, |... 8471.30.90 ¡ Máy xử lý dữ liệu tự động và các khối chức năng của chúng: máy
+HN ii bng ninh Kiểm tra đánh giá an| e - gio | truyền dữ liệu lên các phương tiện truyền dữ liệu dưới dạng mã hóa và
+ẽ ninh mạng "| máy xử lý những dữ liệu này, chưa được chỉ tiết hay ghi ở nơi khác
+mạng 8471.49.90 | còm:
+
+16
+
+- Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+trọng lượng không quá 10 kg. gôm ít nhât một đơn vị xử lý dữ liệu
+trung tâm, một bàn phím và một màn hình.
+- Loại khác của hàng hóa chứa trong cùng một vỏ có Ít nhất một đơn
+vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kết hợp hoặc
+không kêt hợp với nhau.
+- Loại khác, ở dạng hệ thống.
+
+| Thiết bị khác để truyền hoặc nhận tiếng, hình ảnh hoặc dữ liệu khác,
+kê cả các thiệt bị viên thông nôi mạng hữu tuyên hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gôm:
+- Bộ điều khiển và bộ thích ứng (adaptor), kể cả công nối, cầu nối, bộ
+định tuyên và các thiết bị tương tự khác được thiệt kê đê chỉ kêt nôi
+
+8517.62.43 tt tk ng ˆ An. &. tà ngà
+với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+
+8517.6242 (hụ, đổi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kê cả thiết bị chuyên mạch và thiệt bị định tuyên.
+
+- Loại khác của hàng hóa Máy thu, đôi và truyền hoặc tái tạo âm thanh,
+hình ảnh hoặc dạng dữ liệu khác, kê cả thiết bị chuyên mạch và thiệt
+bị định tuyên.
+
+Máy xử lý dữ liệu tự động và các khối chức năng của chúng: máy
+truyền dữ liệu lên các phương tiện truyền dữ liệu dưới dạng mã hóa và
+máy xử lý những dữ liệu này, chưa được chỉ tiệt hay ghi ở nơi khác gôm:
+
+8471.3090 Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+
+22 | Giải pháp điều tra | Kiểm tra, đánh giá an „ ¬,¡gog tong lượng không quá 10 kg, gôm ít nhất một đơn vị xử lý dữ liệu
+và xử lý sự có ninh mạng "+. trung tâm, một bản phím và một màn hình.
+
+5471.42.20 Ì_ Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhất một đơn
+vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kệt hợp hoặc
+không kêt hợp với nhau.
+
+- Loại khác, ở dạng hệ thống.
+
+17
+Thiết bị khác đề truyền hoặc nhận tiếng, hình ảnh hoặc dữ liệu khác,
+kể cả các thiết bị viễn thông nối mạng hữu tuyến hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gồm:
+- Bộ điều khiển và bộ thích ứng (adaptor), kể cả cổng nói, cầu nối, bộ
+85176243 | đỉnh tuyến và các thiết bị tương tự khác được thiết kế để chỉ kết nói
+với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+5517-62-42 tu, đối và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kể cả thiết bị chuyển mạch và thiết bị định tuyến.
+- Loại khác của hàng hóa Máy thu, đôi và truyền hoặc tái tạo âm thanh,
+hình ảnh hoặc dạng dữ liệu khác, kề cả thiết bị chuyển mạch và thiết
+bị định tuyến.
+Máy xử lý dữ liệu tự động và các khôi chức năng của chúng: máy
+truyền dữ liệu lên các phương tiện truyền dữ liệu dưới dạng mã hóa và
+máy xử lý những dữ liệu này, chưa được chỉ tiết hay ghi ở nơi khác gồm:
+8471.30.90 | - Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+8471.41.90 trọng lượng không quá 10 kg, gôm ít nhât một đơn vị xử lý dữ liệu
+_~ˆ trung tâm, một bàn phím và một màn hình.
+8471.49.90. |._ Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhất một đơn
+Sản phẩm an ninh | Chống tấn công, xâm vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kết hợp hoặc
+23 | mạng cho hệ thống | nhập; giám sát an ninh không kết hợp với nhau. |
+điêu khiên công | mạng; kiểm tra, đánh - Loại khác, ở dạng hệ thông. .
+nghiệp giá an ninh mạng Thiết bị khác đề truyền hoặc nhận tiêng. hình ảnh hoặc dữ liệu khác,
+kê cả các thiệt bị viên thông nỗi mạng hữu tuyên hoặc không dây (như
+loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gồm:
+8517.62.43 - Bộ điều khiển và bộ thích ứng (adaptor). kể cả cổng nối, cầu nối, bộ
+8517.62.49 | định tuyến và các thiết bị tương tự khác được thiết kế đề chỉ kết nối
+với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+thu, đổi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kể cả thiết bị chuyển mạch và thiết bị định tuyến.
+
+18
+- Loại khác của hàng hóa Máy thu, đôi và truyền hoặc tái tạo âm thanh,
+hình ảnh hoặc dạng dữ liệu khác, kê cả thiết bị chuyên mạch và thiệt
+bị định tuyên.
+Thiết bị ghi hoặc tái tạo video, có hoặc không gắn bộ phận thu tín hiệu video:
+8521.90.99 L xã khác
+Thiết bị phát dùng cho phát thanh sóng vô tuyến hoặc truyền hình, có
+à . tư. hoặc không găn với thiệt bị thu hoặc ghi hoặc tái tạo âm thanh; camera
+ni an tì Găng sử nh 85256000 | CAYền hình, camera kỹ thuật số và camera ghỉ hình ảnh
+nh ny m 'O | _ Thiết bị phát có gắn với thiết bị thu;
+án phâm pháp y | mạng 8525.81.90 0... _~ —.
+số. điều tra số - Loại khác của hàng hóa Camera truyền hình, camera kỹ thuật sô và
+, 8525.82.90 ¡tì
+camera ghi hình ảnh;
+8525.89.90. LL Loại khác, được làm cứng bức xạ hoặc chịu bức xạ;
+- Loại khác, loại nhìn ban đêm;
+- Loại khác.
+Máy xử lý dữ liệu tự động và các khối chức năng của chúng; máy
+truyền dữ liệu lên các phương tiện truyên dữ hiệu dưới dạng mã hóa và
+máy xử lý những dữ liệu này, chưa được chỉ tiết hay ghi ở nơi khác gôm:
+P vi. - 84713090 |” Loại khác của hàng hóa Máy xử lý dữ liệu tự động loại xách tay, có
+Chông tân công, xâm .. trọng lượng không quá 10 kg, gồm ít nhất một đơn vị xử lý dữ liệu
+nhập; giám sát an ninh "2". | trung tâm, một bàn phím và một màn hình.
+
+25 |Sảnphẩmkhác  |"rEng kế Š471-4920 Loại khác của hàng hóa chứa trong cùng một vỏ có ít nhất một đơn
+Đa an pin mong: ChC vị xử lý trung tâm, một đơn vị nhập và một đơn vị xuất, kết hợp hoặc
+áp em tin mạng; chê không kết hợp với nhau. |
+ap hệ thông mạn ; :
+
+P ng thong mạng - Loại khác, ở dạng hệ thống.
+8517.62.43 Thiết bị khác để truyền hoặc nhận tiếng, hình ảnh hoặc dữ liệu khác,
+- _ kê cả các thiết bị viên thông nôi mạng hữu tuyên hoặc không dây (như
+Tế loại sử dụng trong mạng nội bộ hoặc mạng diện rộng) gôm:
+
+19
+
+- Bộ điều khiên và bộ thích ứng (adaptor), kê cả công nội. cầu nôi, bộ
+định tuyên và các thiệt bị tương tự khác được thiết kê đề chỉ kết nối
+với máy xử lý dữ liệu tự động thuộc nhóm 84.71 của hàng hóa Máy
+thu, đổi và truyền hoặc tái tạo âm thanh, hình ảnh hoặc dạng dữ liệu
+khác, kề cả thiết bị chuyên mạch và thiết bị định tuyến.
+
+- Loại khác của hàng hóa Máy thu, đổi và truyền hoặc tái tạo âm thanh,
+hình ảnh hoặc dạng dữ liệu khác, kê cả thiệt bị chuyên mạch và thiết
+bị định tuyến.

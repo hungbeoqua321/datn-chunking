@@ -1,0 +1,368 @@
+CHÍNH PHỦ CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+— Độc lập - Tự do - Hạnh phúc
+Số: 319/2026/NĐ-CP Hà Nội, ngày 13 tháng 8 năm 2026
+NGHỊ ĐỊNH
+Quy định về thiết bị giám sát hành trình, thiết bị ghi nhận
+hình ảnh người lái xe, thiết bị ghi nhận hình ảnh khoang chở khách
+trên phương tiện giao thông đường bộ
+
+Căn cứ Luật Tổ chức Chính phủ số 63/2025/QH15;
+
+Căn cứ Luật Trật tự, an loàn giao thông đường bộ số 36/2024/QH15 được
+sửa đới, bô sung bởi Luật sô 118/2025/QH15;
+
+Theo đề nghị của Bộ trưởng Bộ Công an;
+
+Chính phủ ban hành Nghị định quy định về thiết bị giám sát hành trình,
+thiết bị ghi nhận hình ảnh người lái xe, thiết bị ghi nhận hình ảnh khoang chở
+khách trên phương tiện giao thông đường bộ.
+
+Chương I
+QUY ĐỊNH CHUNG
+
+Điều 1. Phạm vi điều chỉnh
+
+Nghị định này quy định chỉ tiết khoản 2, khoản 5 Điều 35, khoản 2 Điều 54
+và khoản 2a Điêu 88 Luật Trật tự, an toàn giao thông đường bộ về thiêt bị giám
+sát hành trình, thiệt bị ghi nhận hình ảnh người lái xe, thiệt bị ghi nhận hình ảnh
+khoang chở khách (sau đây gọi là thiêt bị giám sát trên phương tiện giao thông
+đường bộ) đôi với xe ô tô kinh doanh vận tải, xe ô tô đâu kéo, xe cứu thương, xe
+cứu hộ giao thông đường bộ, xe vận tải nội bộ.
+
+Điều 2. Đối tượng áp dụng
+
+1. Nghị định này áp dụng đối với các cơ quan, tô chức, cá nhân trong nước
+và nước ngoài liên quan đên việc lặp, quản lý, kêt nôi, truyền, tiệp nhận, lưu trữ,
+khai thác, chia sẻ dữ liệu từ thiêt bị giám sát trên phương tiện giao thông đường
+bộ trên lãnh thô nước Cộng hòa xã hội chủ nghĩa Việt Nam.
+
+2. Nghị định này không áp dụng đối với phương tiện giao thông đường bộ
+của lực lượng quân đội, công an làm nhiệm vụ quôc phòng, an ninh.
+
+Điều 3. Giải thích từ ngữ
+
+Trong Nghị định này, những từ ngữ dưới đây được hiều như sau:
+
+1. Máy chủ dịch vụ là hệ thống các trang thiết bị kỹ thuật, phần mềm, cơ sở
+dữ liệu của đơn vị cung cấp dịch vụ hoặc đơn vị kinh doanh vận tải tự tổ chức
+
+- 2
+cung cấp dịch vụ đầu tư, quản lý, vận hành đề tiếp nhận, lưu trữ, truyền dữ liệu
+thu được từ thiết bị giám sát trên phương tiện giao thông đường bộ đên máy chủ
+Cục Cảnh sát giao thông theo quy định của Nghị định này và quy định khác của
+pháp luật có liên quan.
+
+2. Máy chủ Cục Cảnh sát giao thông là hệ thống các trang thiết bị kỹ thuật,
+phân mềm, cơ sở dữ liệu của Cục Cảnh sát giao thông dùng đê tiêp nhận, lưu trữ,
+phân tích, quản lý, khai thác, xử lý dữ liệu được truyền vê từ máy chủ dịch vụ và chia
+sẻ dữ liệu với các cơ quan có liên quan theo quy định của pháp luật.
+
+3, Cảnh báo an toàn là tín hiệu được phát ra từ thiết bị giám sát trên phương
+tiện giao thông đường bộ khi phát hiện hành vi vi phạm pháp luật, hành vi gây mât
+an toàn về trật tự, an toàn giao thông đường bộ của người lái xe, người trong khoang
+chở khách. Cảnh báo an toàn phải được duy trì cho đên khi kêt thúc hành vi vi phạm
+pháp luật, hành vi gây mất an toàn về trật tự, an toàn giao thông đường bộ.
+
+Chương!
+QUY ĐỊNH CỤ THE
+
+Điều 4. Lắp thiết bị giám sát trên phương tiện giao thông đường bộ
+
+1. Xe ô tô kinh doanh vận tải, xe ô tô đầu kéo, xe cứu thương, xe cứu hộ
+giao thông đường bộ, xe vận tải nội bộ phải lặp thiêt bị giám sát hành trình, thiệt
+bị ghi nhận hình ảnh người lái xe, thiết bị ghi nhận hình ảnh khoang chở khách
+theo quy định tại khoản 2 Điều 35 và khoản 2 Điều 54 Luật Trật tự, an toàn giao
+thông đường bộ, bảo đảm yêu câu kỹ thuật theo quy định của Nghị định này và
+Quy chuần kỹ thuật quôc gia do Bộ trưởng Bộ Công an ban hành.
+
+2. Thiết bị giám sát hành trình, thiết bị ghi nhận hình ảnh người lái xe, thiết
+bị ghi nhận hình ảnh khoang chở khách có thê tích hợp trong một hoặc nhiêu thiêt
+bị đề lắp trên xe nhưng phải đáp ứng đây đủ chức năng, yêu câu kỹ thuật của từng
+
+. thiết bị theo quy định của Nghị định này và Quy chuân kỹ thuật quôc gia do Bộ
+trưởng Bộ Công an ban hành.
+
+Điều 5. Vêu cầu về kỹ thuật đối với thiết bị giám sát trên phương tiện
+giao thông đường bộ
+
+1. Thiết bị giám sát trên phương tiện giao thông đường bộ phải bảo đảm ghi
+nhận được các dữ liệu sau đây:
+
+a) Dữ liệu thu được từ thiết bị giám sát hành trình gồm: Hành trình xe chạy,
+tốc độ vận hành của xe, thông tin về sô lân và thời gian dừng xe, đô xe, thời gian
+lái xe liên tục;
+
+b) Dữ liệu thu được từ thiết bị ghi nhận hình ảnh người lái xe được ghi nhận
+liên tục trong mọi điều kiện ánh sáng vê hình ảnh của người lái xe;
+
+- 3
+
+c) Dữ liệu thu được từ thiết bị ghi nhận hình ảnh khoang chở khách được
+ghi nhận liên tục trong mọi điều kiện ánh sáng, gồm: Hình ảnh trong khoang chở
+khách, hình ảnh người lên xe, người xuông xe;
+
+d) Các dữ liệu khác theo quy định của Quy chuẩn kỹ thuật quốc gia do
+Bộ trưởng Bộ Công an ban hành.
+
+2. Thiết bị giám sát trên phương tiện giao thông đường bộ có chức năng tự
+động phát hiện, tự động cảnh báo an toàn đôi với hành vi vi phạm pháp luật, hành
+VI gây mất an toàn về trật tự, an toàn giao thông đường bộ của người lái xe, người
+trong khoang chở khách được cụ thê trong Quy chuần kỹ thuật quôc gia do Bộ trưởng
+Bộ Công an ban hành.
+
+3. Trường hợp thiết bị giám sát trên phương tiện giao thông đường bộ thực
+hiện chức năng được quy định tại khoản 2 Điều này băng hệ thông trí tuệ nhân tạo
+thì phải thực hiện theo quy định của pháp luật về trí tuệ nhân tạo.
+
+Điều 6. Truyền, lưu trữ, khai thác, chia sẻ, xử lý dữ liệu thu được từ
+thiết bị giám sát trên phương tiện giao thông đường bộ
+
+1. Việc truyền dữ liệu thu được từ thiết bị giám sát trên phương tiện giao
+thông đường bộ được thực hiện như sau:
+
+a) Dữ liệu thu được từ thiết bị giám sát hành trình phải được truyền về máy
+chủ dịch vụ, từ máy chủ dịch vụ truyền về máy chủ Cục Cảnh sát giao thông theo
+thời gian thực;
+
+b) Dữ liệu thu được từ thiết bị ghi nhận hình ảnh người lái xe, thiết bị ghi
+nhận hình ảnh khoang chở khách được truyền về máy chủ dịch vụ và từ máy chủ
+dịch vụ truyền về máy chủ Cục Cảnh sát giao thông theo thời gian thực là dữ liệu
+hành vi vi phạm pháp luật về trật tự, an toàn giao thông đường bộ của người lái
+xe, hành vi gây mât an toàn về trật tự, an toàn giao thông đường bộ của người lái
+xe, hành vi vi phạm pháp luật của người trong khoang chở khách.
+
+2. Việc lưu trữ dữ liệu được thực hiện như sau:
+
+a) Dữ liệu thu được từ thiết bị giám sát hành trình được lưu trữ trên thiết bị
+này ít nhât 30 ngày, trên máy chủ dịch vụ ít nhất 01 năm, trên máy chủ Cục Cảnh sát
+giao thông ít nhât 03 năm;
+
+b) Dữ liệu thu được từ thiết bị ghi nhận hình ảnh người lái xe được lưu trữ
+trên thiệt bị này ít nhât 03 ngày, dữ liệu thu được từ thiết bị ghi nhận hình ảnh
+khoang chở khách được lưu trữ trên thiết bị này ít nhất 10 ngày;
+
+c) Dữ liệu hành vi vi phạm pháp luật về trật tự, an toàn giao thông đường
+bộ của người lái xe, hành vi gây mât an toàn về trật tự, an toàn giao thông đường
+bộ của người lái xe, hành vi vi phạm pháp luật của người trong khoang chở khách
+được lưu trữ trên máy chủ dịch vụ ít nhất 03 tháng, trên máy chủ Cục Cảnh sát
+giao thông ít nhât 03 năm.
+
+- 4
+
+3, Hết thời hạn lưu trữ theo quy định tại khoản 2 Điều này, dữ liệu được
+xóa, hủy theo quy định của pháp luật và Quy chuẩn kỹ thuật quốc gia do Bộ trưởng
+
+Bộ Công an ban hành. Đối với các trường hợp dữ liệu đang phục vụ việc xác minh,
+xử lý vi phạm, giải quyết khiếu nại, tổ cáo, điều tra thì dữ liệu được tiếp tục lưu trữ
+trên máy chủ Cục Cảnh sát giao thông cho đến khi kết thúc vụ việc.
+
+4. Việc lưu trữ, truyền, khai thác, chia sẻ, xử lý dữ liệu thu được từ thiết bị
+giám sát trên phương tiện giao thông đường bộ về máy chủ dịch vụ, từ máy chủ
+dịch vụ về máy chủ Cục Cảnh sát giao thông và việc chia sẻ dữ liệu với các cơ
+quan có liên quan được thực hiện theo quy định của pháp luật về dữ liệu, bảo vệ
+dữ liệu cá nhân và quy định khác của pháp luật liên quan. Không được sử dụng
+dữ liệu thu được từ thiết bị giám sát trên phương tiện giao thông đường bộ đề xâm
+phạm danh dự, nhân phẩm, đời sống riêng tư, bí mật cá nhân, bí mật gia đình, các
+quyền và lợi ích hợp pháp khác của cá nhân và tổ chức.
+
+5. Dữ liệu thu được từ thiết bị giám sát trên phương tiện giao thông đường
+bộ được sử dụng làm căn cứ để xử lý các hành vi vi phạm pháp luật và vi phạm
+về trật tự, an toàn giao thông đường bộ, vận tải đường bộ theo quy định của pháp
+luật; phục vụ công tác quản lý nhà nước, bảo đảm an ninh, trật tự, an toàn giao
+thông đường bộ, vận tải đường bộ.
+
+_. Chương JII
+TÓ CHỨC THỰC HIỆN
+
+Điều 7. Trách nhiệm của Bộ Công an
+
+1. Thống nhất quản lý việc lắp, khai thác, sử dụng thiết bị giám sát trên
+phương tiện giao thông đường bộ theo quy định tại Nghị định này và các quy định
+khác của pháp luật liên quan.
+
+2. Đầu tư, xây dựng Hệ thống quản lý dữ liệu thiết bị giám sát hành trình,
+thiết bị ghi nhận hình ảnh người lái xe, thiết bị ghi nhận hình ảnh khoang chở
+khách trên phương tiện giao thông đường bộ tại Cục Cảnh sát giao thông để phục
+vụ công tác bảo đảm an ninh, trật tự, an toàn giao thông đường bộ và xử lý hành
+vi vi phạm pháp luật, quản lý nhà nước về vận tải đường bộ; chịu trách nhiệm
+quản lý, vận hành, sử dụng Hệ thống này.
+
+3. Chỉ đạo thanh tra, kiểm tra, xử lý vi phạm trong việc thực hiện các quy định
+về thiết bị giám sát trên phương tiện giao thông đường bộ và các quy định khác của
+pháp luật có liên quan; trong quá trình thực hiện nhiệm vụ của Cảnh sát giao thông
+nếu có căn cứ xác định có hành vi vi phạm pháp luật về lắp, cung cấp, cập nhật,
+truyền, lưu trữ, quản lý dữ liệu thiết bị giám sát trên phương tiện giao thông đường
+bộ, lực lượng Cảnh sát giao thông được kiểm tra tại đơn vị kinh doanh vận tải, đơn
+vị cung cấp dịch vụ nơi đặt máy chủ dịch vụ đề xử lý vi phạm theo quy định.
+
+4, Thực hiện việc kết nối, chia sẻ dữ liệu thu được từ Hệ thống quản lý dữ
+liệu thiết bị giám sát hành trình, thiết bị ghi nhận hình ảnh người lái xe, thiết bị
+
+5
+ghi nhận hình ảnh khoang chở khách với cơ quan quản lý đường bộ và các cơ
+quan liên quan đê thực hiện quản lý nhà nước theo chức năng, nhiệm vụ.
+
+5. Kiểm tra, đôn đốc việc thi hành Nghị định này.
+
+Điều 8. Trách nhiệm của Bộ Xây dựng
+
+1. Chỉ đạo kiểm tra, xử lý vi phạm trong việc thực hiện các quy định về
+thiết bị giám sát trên phương tiện giao thông đường bộ theo quy định của Nghị
+định này và các quy định khác của pháp luật liên quan đôi với đơn vị kinh doanh
+vận tải băng xe ô tô, chủ phương tiện đê thực hiện quản lý nhà nước theo chức
+năng, nhiệm vụ.
+
+2. Tiếp nhận dữ liệu thiết bị giám sát hành trình hoặc tài khoản truy cập dữ
+liệu thiệt bị giám sát hành trình của Hệ thông quản lý dữ liệu thiêt bị giám sát
+hành trình, thiệt bị ghi nhận hình ảnh người lái xe, thiết bị ghi nhận hình ảnh
+khoang chở khách đê thực hiện quản lý nhà nước theo chức năng, nhiệm vụ.
+
+Điều 9. Trách nhiệm của Bộ Tài chính
+
+Chủ trì, phối hợp với Bộ Công an và các bộ, ngành có liên quan tổng hợp,
+trình câp có thâm quyên bô trí kinh phí ngân sách nhà nước đâu tư, xây dựng Hệ
+thông quản lý dữ liệu thiệt bị giám sát hành trình, thiết bị ghi nhận hình ảnh
+người lái xe, thiêt bị ghi nhận hình ảnh khoang chở khách quy định tại khoản 2
+Điều 7 Nghị định này theo quy định của pháp luật về ngân sách nhà nước, đầu
+tư công và các quy định của pháp luật có liên quan.
+
+Điều 10. Trách nhiệm của Ủy ban nhân dân cấp tỉnh
+
+Chỉ đạo các cơ quan chức năng của địa phương thực hiện kiểm tra, xử lý vi
+phạm trong việc thực hiện các quy định về thiêt bị giám sát trên phương tiện giao
+thông đường bộ theo quy định của Nghị định này và các quy định khác của pháp
+luật liên quan trên địa bàn địa phương.
+
+Điều 11. Trách nhiệm của đơn vị kinh doanh vận tải bằng xe ô tô, chủ
+phương tiện, đơn vị cung cấp máy chủ dịch vụ, người lái xe
+
+1. Đơn vị kinh doanh vận tải bằng xe ô tô, chủ phương tiện, đơn vị cung
+câp máy chủ dịch vụ có trách nhiệm lặp, quản lý, truyền, lưu trữ dữ liệu thiết bị
+giám sát trên phương tiện giao thông đường bộ theo quy định tại Điều 4, Điều 5,
+Điêu 6 Nghị định này và các quy định khác của pháp luật liên quan.
+
+2. Đơn vị kinh doanh vận tải bằng xe ô tô, chủ phương tiện, đơn vị cung
+câp máy chủ dịch vụ, người lái xe có trách nhiệm:
+
+a) Bảo đảm tính khách quan, chính xác, kịp thời trong việc cung cấp dữ
+liệu, không được sửa chữa hoặc làm sai lệch dữ liệu của các thiết bị được lắp trên
+phương tiện giao thông đường bộ, dữ liệu lưu trữ trên máy chủ dịch vụ và dữ liệu
+truyền về máy chủ Cục Cảnh sát giao thông:
+
+= 6
+
+b) Bảo đảm an toàn, bảo mật dữ liệu theo quy định; duy trì hoạt động liên
+tục, kịp thời khăc phục ngay các sự cô truyền dữ liệu từ thiệt bị giám sát trên
+phương tiện giao thông đường bộ về máy chủ dịch vụ, từ máy chủ dịch vụ về máy
+chủ Cục Cảnh sát giao thông: châp hành việc kiêm tra của cơ quan có thâm quyền;
+
+c) Đơn vị được giao quản lý máy chủ dịch vụ có trách nhiệm cung cấp tài khoản
+quản trị phân mềm ứng dụng, tài khoản quản trị cơ sở dữ liệu, mật khâu, địa chỉ, đường
+dẫn truy cập phân mềm ứng dụng, máy chủ cơ sở dữ liệu cho Cục Cảnh sát giao thông
+đê phục vụ công tác bảo đảm an ninh, trật tự, an toàn giao thông đường bộ và xử
+lý hành vi vi phạm pháp luật; trường hợp thay đôi tài khoản, mật khâu, địa chỉ,
+đường dẫn truy cập phải thông báo ngay với Cục Cảnh sát giao thông. Kiểm tra,
+giám sát và thông báo kịp thời cho đơn vị kinh doanh vận tải trong trường hợp
+thiệt bị giám sát trên phương tiện giao thông đường bộ gặp sự cô, không truyền
+dữ liệu vê máy chủ dịch vụ;
+
+d) Đơn vị kinh doanh vận tải bằng xe ô tô, chủ phương tiện, người lái xe có
+trách nhiệm phối hợp cung cấp tài khoản, mật khẩu, địa chỉ, đường dẫn truy cập
+thiết bị giám sát trên phương tiện giao thông đường bộ cho lực lượng Cảnh sát
+giao thông đê kiêm tra, kiêm soát khi có yêu câu.
+
+3. Việc lắp đặt, vận hành, khai thác máy chủ dịch vụ phải đáp ứng các yêu
+câu kỹ thuật theo quy định của pháp luật về quản lý, vận hành, sử dụng hệ thông
+quản lý dữ liệu thiệt bị giám sát hành trình, thiết bị ghi nhận hình ảnh người lái
+xe, thiết bị ghi nhận hình ảnh trong khoang chở khách.
+
+ChươngIV
+ĐIEU KHOAN THỊ HANH
+
+Điều 12. Hiệu lực thi hành
+
+1. Nghị định này có hiệu lực thi hành từ ngày 01 tháng 7 năm 2027, trừ quy
+định tại khoản 2, khoản 3, khoản 4 Điều này.
+
+2. Quy định lắp thiết bị ghi nhận hình ảnh người lái xe đối với xe ô tô kinh
+doanh vận tải hành khách dưới 08 chỗ (không kê chô của người lái xe), xe ô tô
+kinh doanh vận tải hàng hóa (trừ xe ô tô đâu kéo), xe vận tải nội bộ tại Điều 4
+Nghị định này thực hiện từ ngày 01 tháng 01 năm 2028.
+
+3. Quy định lắp thiết bị ghi nhận hình ảnh khoang chở khách đối với xe ô
+tô kinh doanh vận tải hành khách trên 29 chỗ (không kê chỗ của người lái xe) tại
+Điều 4 Nghị định này thực hiện từ ngày 01 tháng 01 năm 2029.
+
+4. Quy định lắp thiết bị ghi nhận hình ảnh khoang chở khách đối với xe ô
+tô kinh doanh vận tải hành khách từ 08 chỗ trở lên (không kê chỗ của người lái
+
+| 7
+xe) đến 29 chỗ (không kể chỗ của người lái xe) tại Điều 4 Nghị định này thực hiện
+từ ngày 01 tháng 01 năm 2030.
+
+5. Bãi bỏ, thay thế một số cụm từ, điều tại Nghị định số 151/2024/NĐ-CP
+ngày 15 tháng 11 năm 2024 của Chính phủ quy định chi tiết một số điều và
+biện pháp thi hành Luật Trật tự, an toàn giao thông đường bộ đã được sửa đổi,
+bổ sung bởi Nghị định số 184/2025/NĐ-CP ngày 01 tháng 7 năm 2025 của
+Chính phủ và Nghị định số 236/2026/NĐ-CP ngày 26 tháng 6 năm 2026 của
+Chính phủ như sau:
+
+a) Bãi bỏ cụm từ “lắp thiết bị giám sát hành trình đối với xe ô tô kinh doanh
+vận tải, xe vận tải nội bộ; lắp thiệt bị giám sát hành trình và thiêt bị ghi nhận hình
+ảnh người lái xe đối với xe ô tô chở người từ 08 chỗ trở lên (không kê chỗ của
+người lái xe) kinh doanh vận tải, xe ô tô đầu kéo, xe cứu thương, xe cứu hộ giao
+thông đường bộ:”*quy-định tại khoản 4 Điêu 1;
+
+b) Bãi bỏ cụm từ “VÀ LẮP THIẾT BỊ GIÁM SÁT HÀNH TRÌNH, THIẾT
+BỊ GHI NHẬN HÌNH ẢNH NGƯỜI LÁI XE” quy định tại tên Chương V;
+
+c) Bãi bỏ Điều 27, Điều 28, Điều 29;
+
+d) Thay thế cụm từ “hình ảnh người lái xe (trừ xe quân sự)” bằng cụm từ
+“hình ảnh người lái xe, hình ảnh khoang chở khách (trừ xe của lực lượng quân đội,
+công an làm nhiệm vụ quốc phòng, an ninh)” tại điểm a khoản 3 Điều 10;
+
+đ) Thay thế cụm từ “hình ảnh người lái xe” bằng cụm từ “hình ảnh người lái
+xe, hình ảnh khoang chở khách” tại khoản 10 Điêu 11, điêm b khoản 5 Điêu 12.
+
+Điều 13. Điều khoản chuyển tiếp
+
+1. Thiết bị giám sát hành trình, thiết bị ghi nhận hình ảnh người lái xe đã
+được lắp trước ngày Nghị định này có hiệu lực thị hành thì được tiếp tục sử dụng
+và thực hiện việc thu, lưu trữ, truyền dữ liệu theo QCVN 06:2024/BCA Quy chuẩn
+kỹ thuật quốc gia về thiết bị giám sát hành trình và thiết bị ghi nhận hình ảnh
+người lái xe và Thông tư số 71/2024/TT-BCA ngày 12 tháng 11 năm 2024 của
+Bộ trưởng Bộ Công an quy định về quản lý, vận hành, sử dụng Hệ thống quản lý
+dữ liệu thiết bị giám sát hành trình và thiết bị ghi nhận hình ảnh người lái xe đến
+hết ngày 31 tháng 12 năm 2029.
+
+2. Thiết bị giám sát hành trình, thiết bị ghi nhận hình ảnh người lái xe đã
+được lắp trước ngày Nghị định này có hiệu lực thi hành thì khi thay thế hoặc lắp
+mới phải thực hiện theo quy định của Nghị định này và Quy chuẩn kỹ thuật quốc
+gia do Bộ trưởng Bộ Công an ban hành.
+
+Điều 14. Trách nhiệm thi hành
+Các Bộ trưởng, Thủ trưởng cơ quan ngang bộ, Chủ tịch Ủy ban nhân dân
+
+các tính, thành phô và các tô chức, cá nhân có liên quan chịu trách nhiệm thi hành
+Nghị định này./.
+
+Nơi nhận: TM. CHÍNH PHỦ
+- Ban Bí thư Trung ương Đảng: KT. THỦ TƯỚNG
+- Thủ tướng, các Phó Thủ tướng Chính phủ; - PHÓ THỦ TƯỚNG
+- Các bộ, cơ quan ngang bộ; zzZztes Si
+- HĐND, UBND các tỉnh, thành phố trực thuộc trungương;, „ —-
+- Văn phòng Trung ương và các Ban của Đảng: TA  VG
+- Văn phòng Tổng Bí thư; LELES PP
+- Văn phòng Chủ tịch nước; ; NI Và Sa, CÀ j )
+- Hội đồng Dân tộc và các Ủy ban của Quôc hội; NA 2C, ii "T5
+- Văn phòng Quốc hội; (2 <<_Lnm
+- Tòa án nhân dân tối cao; SN
+- Viện kiểm sát nhân dân tối cao; . Phạm Gia Túc
+- Kiểm toán nhà nước;
+- Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam;
+- Cơ quan trung ương của các tổ chức chính trị - xã hội;
+- VPCP: BTCN, các PCN, Trợ lý TTg,
+
+các Vụ, Cục, Công báo;
+- Lưu: VT, CN (2). pvc 43
