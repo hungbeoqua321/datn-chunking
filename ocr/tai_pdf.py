@@ -3,7 +3,8 @@
 Không crawl lại corpus: data/raw, data/clean… KHÔNG bị đụng tới. Chỉ ghi vào ocr/data/:
 
   ocr/data/pdf/<id>.pdf      bản PDF gốc vbpl.vn lưu kèm văn bản (trường documentContentFileName)
-  ocr/data/docs/<id>.txt     text CHUẨN của cùng văn bản — chép nguyên từ data/clean (đáp án để đo CER)
+  ocr/data/docs/<id>.txt     text CHUẨN của cùng văn bản — chép nguyên từ data/clean_full (đáp án để đo CER;
+                             clean_full giữ cả "Căn cứ…", nơi nhận, chữ ký — đúng những gì có trên bản scan)
   ocr/data/manifest_pdf.csv  id, số hiệu, tên file gốc, sha256, số trang, số trang có lớp text, ghi chú
 
 Tên file lấy qua server action chi tiết (crawl/vbpl.py); file tải từ gateway của Bộ Tư pháp
@@ -58,7 +59,7 @@ def main() -> None:
         if a.toi_da and sum(1 for x in cu.values() if x["sha256"]) >= a.toi_da:
             break
         i = r["id"]
-        if i in cu:
+        if i in cu and not cu[i]["ghi_chu"].startswith("lỗi"):   # lỗi mạng/server thì thử lại
             continue
         dong = {"id": i, "so_hieu": r["so_hieu"], "ten_goc": "", "sha256": "", "so_trang": 0,
                 "trang_co_text": 0, "ghi_chu": ""}
@@ -78,7 +79,7 @@ def main() -> None:
             else:
                 p = PDF / f"{i}.pdf"
                 p.write_bytes(res.content)
-                shutil.copyfile(ch.CLEAN / f"{i}.txt", DOCS / f"{i}.txt")
+                shutil.copyfile(ch.CLEAN_FULL / f"{i}.txt", DOCS / f"{i}.txt")
                 dong["sha256"] = hashlib.sha256(res.content).hexdigest()
                 dong["so_trang"], dong["trang_co_text"] = _so_trang(p)
         cu[i] = dong
