@@ -38,7 +38,7 @@ Tôi đã có:
 - repo clone từ github.com/hungbeoqua321/datn-chunking
 - gh đã đăng nhập bằng tài khoản hungbeoqua321 (repo private)
 
-Làm theo mục "Chạy trên máy cá nhân" trong README.md:
+Làm theo README.md (cài đặt → kiểm tra → chạy local); chi tiết ở mục "Chạy trên máy cá nhân" của docs/do-an.md:
 1. Tải bộ dữ liệu từ GitHub Release du-lieu-2026-10-29, kiểm sha256, giải vào data/.
    Rồi tải mô hình bằng python tools/tai_mo_hinh.py (KHÔNG có trong release).
 2. Dựng .venv theo requirements.txt, copy .env.example thành .env.
