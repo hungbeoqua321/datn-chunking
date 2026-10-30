@@ -129,6 +129,16 @@ zstd -dc /tmp/datn-data/datn-chunks.tar.zst | tar -x
 zstd -dc /tmp/datn-data/datn-index.tar.zst  | tar -x
 ```
 
+**Windows:** cùng release có bản **`.zip`** (bấm đúp là mở được), nội dung trùng các tệp `.tar.*` ở trên
+(đã đối chiếu danh sách tệp; tạo bằng `tools/dong_goi_zip.py`): `datn-corpus.zip` 21 MB, `datn-chunks.zip` 39 MB,
+`datn-index.zip` 487 MB, kiểm bằng `SHA256SUMS-zip.txt`. Giải nén **tại gốc repo** (trong zip đã có sẵn `data/...`):
+
+```powershell
+Expand-Archive datn-corpus.zip -DestinationPath .
+Expand-Archive datn-chunks.zip -DestinationPath .
+Expand-Archive datn-index.zip  -DestinationPath .
+```
+
 Hai thứ **cố ý không có** trong release:
 
 - `models/` (3,3 GB) — tải lại bằng `python tools/tai_mo_hinh.py`, đã ghim revision và kiểm sha256.
@@ -186,6 +196,124 @@ tools/chay-llm.sh             # llama-server tại 127.0.0.1:8082
 ```bash
 .venv/bin/uvicorn web.app:app --host 127.0.0.1 --port 8081
 ```
+
+### Máy cá nhân Windows + GPU (đã chạy thật 29–30/10/2026)
+
+Máy: Windows 11, i5-11400H (12 luồng), RAM 16 GB, **RTX 2050 4 GB** (driver 621.01). Không dùng WSL.
+Mọi lệnh dưới đây chạy trong **Git Bash** tại gốc repo. Thời gian là thời gian thật đo trên máy này.
+
+**Ba bẫy của Windows — làm trước tiên:**
+
+1. `git config core.autocrlf false` rồi checkout lại (`git rm -rq --cached . && git reset -q --hard`). Git for Windows
+   mặc định đổi xuống dòng sang CRLF → script `.sh` hỏng, vân nội dung jsonl/csv lệch.
+2. Mọi lệnh Python chạy với **`PYTHONUTF8=1`** — không có thì `open()` dùng cp1252 và 23 test hỏng.
+3. Python 3.12.13 (bản VPS dùng) **không có bộ cài Windows** (3.12 chỉ còn bản vá bảo mật) → cài qua `uv`.
+
+```bash
+export PYTHONUTF8=1
+winget install astral-sh.uv                                    # 19 s cùng bước dưới
+uv python install 3.12.13
+"$(uv python find 3.12.13)" -m venv .venv
+.venv/Scripts/python -m pip install -r requirements-cu130.txt -c requirements-cu130.lock    # 573 s
+cp .env.example .env
+.venv/Scripts/python tools/tai_mo_hinh.py                      # 133 s, kiểm sha256
+.venv/Scripts/python -m rag.nhung --kiem                       # khớp model card, lệch 0.0000
+.venv/Scripts/python -m pytest -q                              # 140/140
+```
+
+`requirements-cu130.*` **chỉ khác bản gốc ở dòng torch** (`2.14.1+cu130` thay `+cpu`); mọi gói khác đúng lock.
+Khác biệt do Windows: thêm `colorama`, `tzdata`; không có `uvloop` (không hỗ trợ Windows, không ảnh hưởng số).
+
+**llama.cpp:** không build — tải bản build chính thức của **đúng tag `b11577`** (commit `cbe28bb3c`, kiểm digest):
+`llama-b11577-bin-win-cpu-x64.zip` giải vào `tools/llama.cpp/build/bin/` (đường `chay-llm.sh` dùng),
+`llama-b11577-bin-win-cuda-13.4-x64.zip` + `cudart-llama-bin-win-cuda-13.4-x64.zip` giải vào `tools/llama.cpp/build-cuda/bin/`.
+
+```bash
+tools/chay-llm.sh        # CPU, đúng cờ của VPS
+tools/chay-llm-gpu.sh    # GPU: y hệt cờ, chỉ thêm -ngl 99 — sinh ~40 token/s (VPS: 9), 3,0 GB VRAM
+```
+
+**Biến môi trường thêm cho máy cá nhân** (mặc định giữ y hành vi cũ):
+
+| Biến | Mặc định | Dùng khi |
+|---|---|---|
+| `NHUNG_DEVICE` | `cpu` | `cuda` để nhúng trên GPU (thử nghiệm mới) |
+| `KET_QUA_DIR` | `results/` | chạy tái lập ra thư mục khác, không ghi đè số gốc |
+| `CHUNKS_DIR`, `INDEX_DIR` | `data/chunks`, `data/index` | thử nghiệm mở rộng dựng chỉ mục riêng |
+
+**Cổng kiểm tra:** `rag.chi_muc A_s0 B_s0` thoát **mã 3** (BỎ QUA — đã có chỉ mục, không phải thành công);
+`rag.kiem_chi_muc` thoát 0, 17/17. ⚠️ **Đừng chạy `rag.chi_muc --tat-ca`**: nó nhúng cả `B_s1..3` (cố ý không nhúng).
+
+**Tái lập truy hồi** (`KET_QUA_DIR=thuc_nghiem/tai_lap python -m eval.chay_truy_hoi`, 46 s): **926/953 dòng khớp
+tuyệt đối** với `results/metrics_truy_hoi.csv`. 27 dòng lệch đều thuộc D (R@1 0,4091 → 0,4182 = 1 câu/110) do
+**hoà điểm tuyệt đối** giữa hai chunk cùng nội dung ở bản cũ/bản mới của một văn bản — numpy ARM và x86 phá hoà khác
+nhau. Chi tiết: [`thuc_nghiem/tai_lap/GHI_CHU.md`](thuc_nghiem/tai_lap/GHI_CHU.md).
+
+## Thử nghiệm mở rộng (máy cá nhân): OCR, rerank, độ dài chunk
+
+**Không thuộc thiết kế gốc** của đồ án — mọi số gốc trong `results/` giữ nguyên. Mọi thứ ghi vào `ocr/` và
+`thuc_nghiem/`; chỉ mục thử nghiệm nằm ở `thuc_nghiem/data/` (không lẫn với `data/index`).
+
+### Tiến độ
+
+| Việc | Trạng thái | Kết quả / thời gian thật |
+|---|---|---|
+| Tải PDF gốc (bản scan có dấu đỏ) của 80 văn bản | ✅ xong | 60/80 có PDF: 25 scan thuần, 20 lai, 15 có lớp chữ; 2.509 trang, 332 MB; 369 s |
+| So sánh engine OCR trên mẫu 8 văn bản / 98 trang | 🔄 Tesseract xong, EasyOCR đang chạy | Tesseract + bỏ dấu đỏ: **CER không tính chèn 1,73%**, 2,9 s/trang |
+| OCR toàn bộ 60 PDF (Tesseract, bỏ dấu đỏ, 6 tiến trình) | 🔄 đang chạy | — |
+| Chunk 100/200/300/500 từ (A và B) | ✅ dựng chunk xong (12 s) | A300, B_goc trùng tuyệt đối A, B gốc |
+| Nhúng 9 chỉ mục thử nghiệm trên GPU (~118 nghìn chunk) | ⏳ chờ GPU | — |
+| Rerank (bge-reranker-v2-m3, Vietnamese_Reranker) × 9 chỉ mục | ⏳ | — |
+| Truy hồi trên kho OCR (A300, B thay text chuẩn bằng text OCR) | ⏳ | — |
+
+### Dữ liệu OCR
+
+```
+ocr/data/pdf/<id>.pdf      bản PDF gốc vbpl.vn lưu kèm văn bản (phần lớn là bản scan có dấu đỏ)
+ocr/data/docs/<id>.txt     text CHUẨN tương ứng (= data/clean_full) — đáp án để chấm OCR
+ocr/data/ocr/<cấu hình>/   text OCR + thời gian từng trang
+ocr/data/manifest_pdf.csv  id, số hiệu, sha256, số trang, số trang có lớp chữ
+```
+
+PDF lấy từ gateway của Bộ Tư pháp (`vbpl-bientap-gateway.moj.gov.vn`, chỉ mở cho IP Việt Nam), **không đụng
+`data/raw`**. Bản PDF thường có thêm phụ lục / biểu mẫu mà text chuẩn không có, nên CER thô bị phình (tới 66%);
+độ đo chính là **CER không tính chèn** = (thay thế + xoá) / độ dài text chuẩn.
+
+### Cài môi trường OCR (tách khỏi `.venv` đã ghim)
+
+```bash
+"$(uv python find 3.12.13)" -m venv .venv-ocr
+.venv-ocr/Scripts/python -m pip install -r requirements-ocr.txt                       # torch cu130 + EasyOCR, 128 s
+# Tesseract 5.5.3 không cần quyền admin: micromamba (một tệp exe) + conda-forge          49 s
+curl -L -o tools/mm/micromamba.exe https://github.com/mamba-org/micromamba-releases/releases/latest/download/micromamba-win-64
+MAMBA_ROOT_PREFIX=tools/mm/root tools/mm/micromamba.exe create -y -p tools/tesseract-env -c conda-forge tesseract
+curl -L -o tools/tesseract-env/share/tessdata/vie.traineddata https://github.com/tesseract-ocr/tessdata_best/raw/main/vie.traineddata
+```
+
+### Lệnh chạy
+
+```bash
+export PYTHONUTF8=1
+# OCR
+.venv-ocr/Scripts/python -m ocr.tai_pdf                                   # tải PDF gốc + text chuẩn
+OMP_THREAD_LIMIT=1 .venv-ocr/Scripts/python -m ocr.quet --engine tesseract --tien-xu-ly bo_do --phan 1/6   # ×6 song song
+.venv-ocr/Scripts/python -m ocr.danh_gia                                  # → ocr/ket_qua_ocr.{csv,md}
+
+# Độ dài chunk × rerank
+.venv/Scripts/python -m rag.rerank --tai                                  # 2 reranker, ghim revision
+export CHUNKS_DIR=thuc_nghiem/data/chunks INDEX_DIR=thuc_nghiem/data/index
+.venv/Scripts/python -m thuc_nghiem.chay chunk
+NHUNG_DEVICE=cuda .venv/Scripts/python -m rag.chi_muc A100_s0 A200_s0 A300_s0 A500_s0 B100_s0 B200_s0 B300_s0 B500_s0 B_goc_s0
+.venv/Scripts/python -m thuc_nghiem.chay danh_gia                         # → thuc_nghiem/ket_qua/metrics.{csv,md}
+
+# Kho OCR
+.venv/Scripts/python -m thuc_nghiem.kho_ocr chunk --nguon tesseract_bo_do
+NHUNG_DEVICE=cuda .venv/Scripts/python -m rag.chi_muc A300ocr_s0 B_gococr_s0
+.venv/Scripts/python -m thuc_nghiem.kho_ocr danh_gia --nguon tesseract_bo_do   # → thuc_nghiem/ket_qua/kho_ocr.md
+```
+
+`A<N>`: cửa sổ cố định N từ. `B<N>`: cắt Điều → Khoản → Điểm, khối > N từ thì tách tiếp (tiền tố phân cấp không
+tính vào N). Chấm bằng đúng hàm của `eval/chay_truy_hoi.py` trên 110 câu chính, hiệu số kèm bootstrap ghép cặp 95%.
 
 ### Prompt để nhờ Claude Code dựng hộ
 
