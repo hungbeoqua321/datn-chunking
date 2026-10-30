@@ -27,10 +27,12 @@ git config core.autocrlf false && git rm -rq --cached . && git reset -q --hard  
 ```bash
 python -m venv .venv               # Linux/macOS: python3.12 -m venv .venv
 source .venv/Scripts/activate      # Windows (Git Bash). Linux/macOS: source .venv/bin/activate
+export PYTHONUTF8=1                # BẮT BUỘC trên Windows — thiếu là lỗi UnicodeEncodeError 'charmap' khi in tiếng Việt
 ```
 
 Bật xong, đầu dòng lệnh có `(.venv)`. Mọi lệnh `python`, `pip` sau đó đều chạy trong venv.
-**Mỗi lần mở terminal mới phải bật lại** (dòng `source …` ở trên).
+**Mỗi lần mở terminal mới phải bật lại** (dòng `source …` ở trên) và, trên Windows, đặt lại `PYTHONUTF8=1`
+(hoặc đặt vĩnh viễn một lần: `setx PYTHONUTF8 1` rồi mở terminal mới).
 
 **③ Cài thư viện** — chọn một dòng:
 
@@ -44,7 +46,6 @@ Mất khoảng 10 phút (tải torch ~2,5 GB). Phiên bản đã ghim sẵn, **k
 **④ Tải mô hình và dữ liệu**
 
 ```bash
-export PYTHONUTF8=1                # chỉ Windows — đặt mỗi lần mở terminal (hoặc 1 lần: setx PYTHONUTF8 1)
 cp .env.example .env
 python tools/tai_mo_hinh.py        # ~3,3 GB vào models/, tự kiểm sha256
 ```
@@ -129,6 +130,7 @@ Kiểm tra: `.venv-ocr/Scripts/python -m ocr.doc_pdf ocr/data/mau/70fbb4a0-c0df-
 
 | Triệu chứng | Nguyên nhân | Cách sửa |
 |---|---|---|
+| `UnicodeEncodeError: 'charmap' codec can't encode character` (Windows) | Python in ra console theo bảng mã cp1252, không có chữ tiếng Việt | `export PYTHONUTF8=1` (hoặc `setx PYTHONUTF8 1` rồi mở terminal mới), chạy lại lệnh |
 | `Python was not found` / `python3.12: command not found` | chưa cài Python, hoặc Windows đang trỏ tới lối tắt Microsoft Store | cài Python 3.12 từ python.org (tích *Add to PATH*), mở lại terminal. Hoặc: `winget install astral-sh.uv && uv python install 3.12` rồi `"$(uv python find 3.12)" -m venv .venv` |
 | `No module named ensurepip` khi tạo venv (Ubuntu/Debian) | thiếu gói venv | `sudo apt install python3.12-venv` |
 | PowerShell báo `running scripts is disabled` khi bật venv | chính sách chặn script | dùng Git Bash, hoặc chạy 1 lần `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` rồi `.venv\Scripts\Activate.ps1` |
