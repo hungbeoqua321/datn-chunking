@@ -1,6 +1,7 @@
 # Môi trường, khoá
 .venv/
 .venv-tools/
+.venv-ocr/
 .env
 __pycache__/
 *.pyc
@@ -11,6 +12,11 @@ data/
 models/
 tools/llama.cpp/
 results/gen/
+# máy cá nhân (Windows): micromamba + Tesseract cài cục bộ, không cần quyền admin
+tools/mm/
+tools/tesseract-env/
+# bộ OCR thì ĐƯA vào git: PDF scan gốc + text chuẩn tương ứng (nhỏ, không dựng lại được nếu vbpl đổi)
+!ocr/data/
 
 # Nhật ký chạy và tệp tạm của bước dựng câu hỏi (sinh lại được)
 results/*.log
