@@ -1,8 +1,4 @@
-# datn-chunking — phân đoạn văn bản quy phạm pháp luật cho RAG
-
-README này chỉ gồm: **cài đặt → kiểm tra cài đúng → chạy local để tự test → sửa lỗi thường gặp.**
-Nội dung đồ án: [`docs/do-an.md`](docs/do-an.md). Thử nghiệm mở rộng (OCR, rerank, độ dài chunk):
-[`docs/thuc-nghiem-mo-rong.md`](docs/thuc-nghiem-mo-rong.md).
+#Phân đoạn văn bản quy phạm pháp luật cho RAG
 
 ## Cần có
 
