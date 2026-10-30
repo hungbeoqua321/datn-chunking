@@ -1,6 +1,7 @@
 """Đóng gói bộ dữ liệu thành 2 tệp zip cho release `du-lieu` (Windows bấm đúp là mở, Linux dùng `unzip`).
 
     python tools/dong_goi_zip.py --ra ../datn-du-lieu
+    python tools/dong_goi_zip.py --ra ../datn-du-lieu --chi pdf.zip    # chỉ đóng lại một gói, giữ dòng sha256 gói kia
 
   docs.zip   dữ liệu dạng văn bản để chạy đồ án:
              data/raw, data/clean, data/clean_full, data/manifest.csv, data/ung_vien.jsonl,
@@ -33,11 +34,18 @@ def tep(muc: str) -> list[Path]:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--ra", required=True, help="thư mục ghi các tệp zip")
+    ap.add_argument("--chi", nargs="*", choices=list(GOI), help="chỉ đóng các gói này")
     a = ap.parse_args()
     ra = Path(a.ra)
     ra.mkdir(parents=True, exist_ok=True)
+    cu = ra / "SHA256SUMS.txt"
+    giu = {l.split()[1]: l for l in cu.read_text().splitlines() if l.strip()} if cu.exists() else {}
     tong = []
     for ten, muc in GOI.items():
+        if a.chi and ten not in a.chi:
+            if ten in giu:
+                tong.append(giu[ten])
+            continue
         z = ra / ten
         n = 0
         with zipfile.ZipFile(z, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as f:
