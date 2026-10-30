@@ -259,10 +259,10 @@ nhau. Chi tiết: [`thuc_nghiem/tai_lap/GHI_CHU.md`](thuc_nghiem/tai_lap/GHI_CHU
 | Việc | Trạng thái | Kết quả / thời gian thật |
 |---|---|---|
 | Tải PDF gốc (bản scan có dấu đỏ) của 80 văn bản | ✅ xong | 60/80 có PDF: 25 scan thuần, 20 lai, 15 có lớp chữ; 2.509 trang, 332 MB; 369 s |
-| So sánh engine OCR trên mẫu 8 văn bản / 98 trang | 🔄 Tesseract xong, EasyOCR đang chạy | Tesseract + bỏ dấu đỏ: **CER không tính chèn 1,73%**, 2,9 s/trang |
-| OCR toàn bộ 60 PDF (Tesseract, bỏ dấu đỏ, 6 tiến trình) | 🔄 đang chạy | — |
+| So sánh engine OCR trên mẫu 8 văn bản / 98 trang | ✅ xong | CER không tính chèn: Tesseract bỏ dấu đỏ **1,73%** (2,9 s/trang), ảnh gốc 1,74%, EasyOCR 7,43% (9,4 s/trang, ~12 GB RAM ở 300 dpi) — [`ocr/ket_qua_ocr_so_sanh.md`](ocr/ket_qua_ocr_so_sanh.md) |
+| OCR toàn bộ 60 PDF (Tesseract, bỏ dấu đỏ, 6 tiến trình) | ✅ xong, 3.638 s | 56 PDF phủ đủ: **mất 3,22% text chuẩn**, 1,50% do sai dấu; 4 PDF vbpl chỉ lưu một phần — [`ocr/ket_qua_ocr.md`](ocr/ket_qua_ocr.md) |
 | Chunk 100/200/300/500 từ (A và B) | ✅ dựng chunk xong (12 s) | A300, B_goc trùng tuyệt đối A, B gốc |
-| Nhúng 9 chỉ mục thử nghiệm trên GPU (~118 nghìn chunk) | ⏳ chờ GPU | — |
+| Nhúng 9 chỉ mục thử nghiệm trên GPU (~118 nghìn chunk) | 🔄 đang chạy | A300 330 s, B_goc 441 s (~17 vector/s với chunk 300 từ) |
 | Rerank (bge-reranker-v2-m3, Vietnamese_Reranker) × 9 chỉ mục | ⏳ | — |
 | Truy hồi trên kho OCR (A300, B thay text chuẩn bằng text OCR) | ⏳ | — |
 
@@ -274,6 +274,9 @@ ocr/data/docs/<id>.txt     text CHUẨN tương ứng (= data/clean_full) — đ
 ocr/data/ocr/<cấu hình>/   text OCR + thời gian từng trang
 ocr/data/manifest_pdf.csv  id, số hiệu, sha256, số trang, số trang có lớp chữ
 ```
+
+60 PDF (332 MB) **không nằm trong git** — tải `datn-ocr-pdf.zip` ở release **`ocr-pdf-2026-10-30`**, giải nén tại
+gốc repo. Trong git có sẵn 2 bản scan mẫu ở `ocr/data/mau/` để xem dấu đỏ.
 
 PDF lấy từ gateway của Bộ Tư pháp (`vbpl-bientap-gateway.moj.gov.vn`, chỉ mở cho IP Việt Nam), **không đụng
 `data/raw`**. Bản PDF thường có thêm phụ lục / biểu mẫu mà text chuẩn không có, nên CER thô bị phình (tới 66%);
