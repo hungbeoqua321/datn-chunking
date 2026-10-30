@@ -1,0 +1,1068 @@
+== CHUNK 12:22:23
+có rồi: A_s0.jsonl
+có rồi: A_s1.jsonl
+có rồi: A_s2.jsonl
+có rồi: A_s3.jsonl
+có rồi: Acong_s0.jsonl
+có rồi: B_s0.jsonl
+có rồi: B_s1.jsonl
+có rồi: B_s2.jsonl
+có rồi: B_s3.jsonl
+có rồi: A_H_s0.jsonl
+có rồi: Btru_s0.jsonl
+có rồi: C_s0.jsonl
+D: 47729 cụm 3 câu khác nhau, 19714287 ký tự
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  14%|█▍        | 28/199 [00:00<00:00, 263.26it/s]Loading weights:  31%|███       | 62/199 [00:00<00:00, 243.57it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 753.69it/s]
+  nhúng 128/47729  341.33 chunk/s  còn ~2 phút
+  nhúng 256/47729  482.11 chunk/s  còn ~2 phút
+  nhúng 384/47729  523.16 chunk/s  còn ~2 phút
+  nhúng 512/47729  520.33 chunk/s  còn ~2 phút
+  nhúng 640/47729  499.61 chunk/s  còn ~2 phút
+  nhúng 768/47729  472.62 chunk/s  còn ~2 phút
+  nhúng 896/47729  451.61 chunk/s  còn ~2 phút
+  nhúng 1024/47729  434.08 chunk/s  còn ~2 phút
+  nhúng 1152/47729  423.84 chunk/s  còn ~2 phút
+  nhúng 1280/47729  413.84 chunk/s  còn ~2 phút
+  nhúng 1408/47729  404.13 chunk/s  còn ~2 phút
+  nhúng 1536/47729  396.39 chunk/s  còn ~2 phút
+  nhúng 1664/47729  385.90 chunk/s  còn ~2 phút
+  nhúng 1792/47729  374.82 chunk/s  còn ~2 phút
+  nhúng 1920/47729  360.36 chunk/s  còn ~2 phút
+  nhúng 2048/47729  352.37 chunk/s  còn ~2 phút
+  nhúng 2176/47729  343.06 chunk/s  còn ~2 phút
+  nhúng 2304/47729  334.40 chunk/s  còn ~2 phút
+  nhúng 2432/47729  329.76 chunk/s  còn ~2 phút
+  nhúng 2560/47729  323.80 chunk/s  còn ~2 phút
+  nhúng 2688/47729  317.99 chunk/s  còn ~2 phút
+  nhúng 2816/47729  311.26 chunk/s  còn ~2 phút
+  nhúng 2944/47729  309.41 chunk/s  còn ~2 phút
+  nhúng 3072/47729  304.37 chunk/s  còn ~2 phút
+  nhúng 3200/47729  300.75 chunk/s  còn ~2 phút
+  nhúng 3328/47729  295.82 chunk/s  còn ~3 phút
+  nhúng 3456/47729  292.96 chunk/s  còn ~3 phút
+  nhúng 3584/47729  288.89 chunk/s  còn ~3 phút
+  nhúng 3712/47729  286.24 chunk/s  còn ~3 phút
+  nhúng 3840/47729  282.50 chunk/s  còn ~3 phút
+  nhúng 3968/47729  280.62 chunk/s  còn ~3 phút
+  nhúng 4096/47729  278.58 chunk/s  còn ~3 phút
+  nhúng 4224/47729  274.46 chunk/s  còn ~3 phút
+  nhúng 4352/47729  272.00 chunk/s  còn ~3 phút
+  nhúng 4480/47729  269.73 chunk/s  còn ~3 phút
+  nhúng 4608/47729  267.38 chunk/s  còn ~3 phút
+  nhúng 4736/47729  265.19 chunk/s  còn ~3 phút
+  nhúng 4864/47729  263.59 chunk/s  còn ~3 phút
+  nhúng 4992/47729  261.88 chunk/s  còn ~3 phút
+  nhúng 5120/47729  259.66 chunk/s  còn ~3 phút
+  nhúng 5248/47729  258.37 chunk/s  còn ~3 phút
+  nhúng 5376/47729  256.57 chunk/s  còn ~3 phút
+  nhúng 5504/47729  254.71 chunk/s  còn ~3 phút
+  nhúng 5632/47729  252.42 chunk/s  còn ~3 phút
+  nhúng 5760/47729  250.43 chunk/s  còn ~3 phút
+  nhúng 5888/47729  248.73 chunk/s  còn ~3 phút
+  nhúng 6016/47729  247.13 chunk/s  còn ~3 phút
+  nhúng 6144/47729  245.76 chunk/s  còn ~3 phút
+  nhúng 6272/47729  244.47 chunk/s  còn ~3 phút
+  nhúng 6400/47729  242.95 chunk/s  còn ~3 phút
+  nhúng 6528/47729  241.36 chunk/s  còn ~3 phút
+  nhúng 6656/47729  239.73 chunk/s  còn ~3 phút
+  nhúng 6784/47729  238.69 chunk/s  còn ~3 phút
+  nhúng 6912/47729  237.45 chunk/s  còn ~3 phút
+  nhúng 7040/47729  235.90 chunk/s  còn ~3 phút
+  nhúng 7168/47729  234.30 chunk/s  còn ~3 phút
+  nhúng 7296/47729  232.89 chunk/s  còn ~3 phút
+  nhúng 7424/47729  231.21 chunk/s  còn ~3 phút
+  nhúng 7552/47729  230.05 chunk/s  còn ~3 phút
+  nhúng 7680/47729  228.93 chunk/s  còn ~3 phút
+  nhúng 7808/47729  227.45 chunk/s  còn ~3 phút
+  nhúng 7936/47729  225.84 chunk/s  còn ~3 phút
+  nhúng 8064/47729  224.10 chunk/s  còn ~3 phút
+  nhúng 8192/47729  223.11 chunk/s  còn ~3 phút
+  nhúng 8320/47729  221.78 chunk/s  còn ~3 phút
+  nhúng 8448/47729  220.68 chunk/s  còn ~3 phút
+  nhúng 8576/47729  219.46 chunk/s  còn ~3 phút
+  nhúng 8704/47729  218.54 chunk/s  còn ~3 phút
+  nhúng 8832/47729  217.15 chunk/s  còn ~3 phút
+  nhúng 8960/47729  215.99 chunk/s  còn ~3 phút
+  nhúng 9088/47729  214.79 chunk/s  còn ~3 phút
+  nhúng 9216/47729  213.70 chunk/s  còn ~3 phút
+  nhúng 9344/47729  212.67 chunk/s  còn ~3 phút
+  nhúng 9472/47729  211.74 chunk/s  còn ~3 phút
+  nhúng 9600/47729  210.70 chunk/s  còn ~3 phút
+  nhúng 9728/47729  209.35 chunk/s  còn ~3 phút
+  nhúng 9856/47729  208.25 chunk/s  còn ~3 phút
+  nhúng 9984/47729  207.12 chunk/s  còn ~3 phút
+  nhúng 10112/47729  205.98 chunk/s  còn ~3 phút
+  nhúng 10240/47729  204.80 chunk/s  còn ~3 phút
+  nhúng 10368/47729  203.86 chunk/s  còn ~3 phút
+  nhúng 10496/47729  202.82 chunk/s  còn ~3 phút
+  nhúng 10624/47729  201.94 chunk/s  còn ~3 phút
+  nhúng 10752/47729  201.09 chunk/s  còn ~3 phút
+  nhúng 10880/47729  200.04 chunk/s  còn ~3 phút
+  nhúng 11008/47729  199.02 chunk/s  còn ~3 phút
+  nhúng 11136/47729  198.25 chunk/s  còn ~3 phút
+  nhúng 11264/47729  197.40 chunk/s  còn ~3 phút
+  nhúng 11392/47729  196.57 chunk/s  còn ~3 phút
+  nhúng 11520/47729  195.83 chunk/s  còn ~3 phút
+  nhúng 11648/47729  195.15 chunk/s  còn ~3 phút
+  nhúng 11776/47729  194.29 chunk/s  còn ~3 phút
+  nhúng 11904/47729  193.51 chunk/s  còn ~3 phút
+  nhúng 12032/47729  192.75 chunk/s  còn ~3 phút
+  nhúng 12160/47729  191.92 chunk/s  còn ~3 phút
+  nhúng 12288/47729  191.21 chunk/s  còn ~3 phút
+  nhúng 12416/47729  190.33 chunk/s  còn ~3 phút
+  nhúng 12544/47729  189.48 chunk/s  còn ~3 phút
+  nhúng 12672/47729  188.74 chunk/s  còn ~3 phút
+  nhúng 12800/47729  188.06 chunk/s  còn ~3 phút
+  nhúng 12928/47729  187.36 chunk/s  còn ~3 phút
+  nhúng 13056/47729  186.27 chunk/s  còn ~3 phút
+  nhúng 13184/47729  185.61 chunk/s  còn ~3 phút
+  nhúng 13312/47729  184.77 chunk/s  còn ~3 phút
+  nhúng 13440/47729  184.07 chunk/s  còn ~3 phút
+  nhúng 13568/47729  183.39 chunk/s  còn ~3 phút
+  nhúng 13696/47729  182.77 chunk/s  còn ~3 phút
+  nhúng 13824/47729  182.12 chunk/s  còn ~3 phút
+  nhúng 13952/47729  181.42 chunk/s  còn ~3 phút
+  nhúng 14080/47729  180.73 chunk/s  còn ~3 phút
+  nhúng 14208/47729  179.99 chunk/s  còn ~3 phút
+  nhúng 14336/47729  179.27 chunk/s  còn ~3 phút
+  nhúng 14464/47729  178.67 chunk/s  còn ~3 phút
+  nhúng 14592/47729  178.12 chunk/s  còn ~3 phút
+  nhúng 14720/47729  177.42 chunk/s  còn ~3 phút
+  nhúng 14848/47729  176.89 chunk/s  còn ~3 phút
+  nhúng 14976/47729  176.32 chunk/s  còn ~3 phút
+  nhúng 15104/47729  175.76 chunk/s  còn ~3 phút
+  nhúng 15232/47729  175.02 chunk/s  còn ~3 phút
+  nhúng 15360/47729  174.52 chunk/s  còn ~3 phút
+  nhúng 15488/47729  173.99 chunk/s  còn ~3 phút
+  nhúng 15616/47729  173.48 chunk/s  còn ~3 phút
+  nhúng 15744/47729  172.86 chunk/s  còn ~3 phút
+  nhúng 15872/47729  172.35 chunk/s  còn ~3 phút
+  nhúng 16000/47729  171.70 chunk/s  còn ~3 phút
+  nhúng 16128/47729  171.15 chunk/s  còn ~3 phút
+  nhúng 16256/47729  170.56 chunk/s  còn ~3 phút
+  nhúng 16384/47729  169.95 chunk/s  còn ~3 phút
+  nhúng 16512/47729  169.30 chunk/s  còn ~3 phút
+  nhúng 16640/47729  168.80 chunk/s  còn ~3 phút
+  nhúng 16768/47729  168.31 chunk/s  còn ~3 phút
+  nhúng 16896/47729  167.76 chunk/s  còn ~3 phút
+  nhúng 17024/47729  167.34 chunk/s  còn ~3 phút
+  nhúng 17152/47729  166.85 chunk/s  còn ~3 phút
+  nhúng 17280/47729  166.30 chunk/s  còn ~3 phút
+  nhúng 17408/47729  165.79 chunk/s  còn ~3 phút
+  nhúng 17536/47729  165.34 chunk/s  còn ~3 phút
+  nhúng 17664/47729  164.82 chunk/s  còn ~3 phút
+  nhúng 17792/47729  164.22 chunk/s  còn ~3 phút
+  nhúng 17920/47729  163.84 chunk/s  còn ~3 phút
+  nhúng 18048/47729  163.45 chunk/s  còn ~3 phút
+  nhúng 18176/47729  162.97 chunk/s  còn ~3 phút
+  nhúng 18304/47729  162.50 chunk/s  còn ~3 phút
+  nhúng 18432/47729  162.06 chunk/s  còn ~3 phút
+  nhúng 18560/47729  161.63 chunk/s  còn ~3 phút
+  nhúng 18688/47729  161.23 chunk/s  còn ~3 phút
+  nhúng 18816/47729  160.76 chunk/s  còn ~3 phút
+  nhúng 18944/47729  160.31 chunk/s  còn ~3 phút
+  nhúng 19072/47729  159.93 chunk/s  còn ~3 phút
+  nhúng 19200/47729  159.54 chunk/s  còn ~3 phút
+  nhúng 19328/47729  159.10 chunk/s  còn ~3 phút
+  nhúng 19456/47729  158.72 chunk/s  còn ~3 phút
+  nhúng 19584/47729  158.37 chunk/s  còn ~3 phút
+  nhúng 19712/47729  157.99 chunk/s  còn ~3 phút
+  nhúng 19840/47729  157.62 chunk/s  còn ~3 phút
+  nhúng 19968/47729  157.17 chunk/s  còn ~3 phút
+  nhúng 20096/47729  156.71 chunk/s  còn ~3 phút
+  nhúng 20224/47729  156.30 chunk/s  còn ~3 phút
+  nhúng 20352/47729  155.94 chunk/s  còn ~3 phút
+  nhúng 20480/47729  155.56 chunk/s  còn ~3 phút
+  nhúng 20608/47729  155.18 chunk/s  còn ~3 phút
+  nhúng 20736/47729  154.76 chunk/s  còn ~3 phút
+  nhúng 20864/47729  154.37 chunk/s  còn ~3 phút
+  nhúng 20992/47729  153.96 chunk/s  còn ~3 phút
+  nhúng 21120/47729  153.58 chunk/s  còn ~3 phút
+  nhúng 21248/47729  153.21 chunk/s  còn ~3 phút
+  nhúng 21376/47729  152.75 chunk/s  còn ~3 phút
+  nhúng 21504/47729  152.14 chunk/s  còn ~3 phút
+  nhúng 21632/47729  151.77 chunk/s  còn ~3 phút
+  nhúng 21760/47729  151.36 chunk/s  còn ~3 phút
+  nhúng 21888/47729  150.97 chunk/s  còn ~3 phút
+  nhúng 22016/47729  150.57 chunk/s  còn ~3 phút
+  nhúng 22144/47729  150.08 chunk/s  còn ~3 phút
+  nhúng 22272/47729  149.67 chunk/s  còn ~3 phút
+  nhúng 22400/47729  149.32 chunk/s  còn ~3 phút
+  nhúng 22528/47729  148.95 chunk/s  còn ~3 phút
+  nhúng 22656/47729  148.60 chunk/s  còn ~3 phút
+  nhúng 22784/47729  148.19 chunk/s  còn ~3 phút
+  nhúng 22912/47729  147.82 chunk/s  còn ~3 phút
+  nhúng 23040/47729  147.46 chunk/s  còn ~3 phút
+  nhúng 23168/47729  147.05 chunk/s  còn ~3 phút
+  nhúng 23296/47729  146.69 chunk/s  còn ~3 phút
+  nhúng 23424/47729  146.34 chunk/s  còn ~3 phút
+  nhúng 23552/47729  145.99 chunk/s  còn ~3 phút
+  nhúng 23680/47729  145.63 chunk/s  còn ~3 phút
+  nhúng 23808/47729  145.32 chunk/s  còn ~3 phút
+  nhúng 23936/47729  145.01 chunk/s  còn ~3 phút
+  nhúng 24064/47729  144.64 chunk/s  còn ~3 phút
+  nhúng 24192/47729  144.34 chunk/s  còn ~3 phút
+  nhúng 24320/47729  144.00 chunk/s  còn ~3 phút
+  nhúng 24448/47729  143.63 chunk/s  còn ~3 phút
+  nhúng 24576/47729  143.24 chunk/s  còn ~3 phút
+  nhúng 24704/47729  142.89 chunk/s  còn ~3 phút
+  nhúng 24832/47729  142.57 chunk/s  còn ~3 phút
+  nhúng 24960/47729  142.20 chunk/s  còn ~3 phút
+  nhúng 25088/47729  141.90 chunk/s  còn ~3 phút
+  nhúng 25216/47729  141.53 chunk/s  còn ~3 phút
+  nhúng 25344/47729  141.20 chunk/s  còn ~3 phút
+  nhúng 25472/47729  140.85 chunk/s  còn ~3 phút
+  nhúng 25600/47729  140.54 chunk/s  còn ~3 phút
+  nhúng 25728/47729  140.24 chunk/s  còn ~3 phút
+  nhúng 25856/47729  139.92 chunk/s  còn ~3 phút
+  nhúng 25984/47729  139.49 chunk/s  còn ~3 phút
+  nhúng 26112/47729  139.07 chunk/s  còn ~3 phút
+  nhúng 26240/47729  138.70 chunk/s  còn ~3 phút
+  nhúng 26368/47729  138.29 chunk/s  còn ~3 phút
+  nhúng 26496/47729  138.01 chunk/s  còn ~3 phút
+  nhúng 26624/47729  137.67 chunk/s  còn ~3 phút
+  nhúng 26752/47729  137.36 chunk/s  còn ~3 phút
+  nhúng 26880/47729  136.95 chunk/s  còn ~3 phút
+  nhúng 27008/47729  136.58 chunk/s  còn ~3 phút
+  nhúng 27136/47729  136.23 chunk/s  còn ~3 phút
+  nhúng 27264/47729  135.86 chunk/s  còn ~3 phút
+  nhúng 27392/47729  135.55 chunk/s  còn ~3 phút
+  nhúng 27520/47729  135.23 chunk/s  còn ~2 phút
+  nhúng 27648/47729  134.93 chunk/s  còn ~2 phút
+  nhúng 27776/47729  134.56 chunk/s  còn ~2 phút
+  nhúng 27904/47729  134.23 chunk/s  còn ~2 phút
+  nhúng 28032/47729  133.90 chunk/s  còn ~2 phút
+  nhúng 28160/47729  133.58 chunk/s  còn ~2 phút
+  nhúng 28288/47729  133.27 chunk/s  còn ~2 phút
+  nhúng 28416/47729  132.87 chunk/s  còn ~2 phút
+  nhúng 28544/47729  132.47 chunk/s  còn ~2 phút
+  nhúng 28672/47729  132.06 chunk/s  còn ~2 phút
+  nhúng 28800/47729  131.75 chunk/s  còn ~2 phút
+  nhúng 28928/47729  131.38 chunk/s  còn ~2 phút
+  nhúng 29056/47729  131.03 chunk/s  còn ~2 phút
+  nhúng 29184/47729  130.53 chunk/s  còn ~2 phút
+  nhúng 29312/47729  130.22 chunk/s  còn ~2 phút
+  nhúng 29440/47729  129.92 chunk/s  còn ~2 phút
+  nhúng 29568/47729  129.54 chunk/s  còn ~2 phút
+  nhúng 29696/47729  129.17 chunk/s  còn ~2 phút
+  nhúng 29824/47729  128.93 chunk/s  còn ~2 phút
+  nhúng 29952/47729  128.64 chunk/s  còn ~2 phút
+  nhúng 30080/47729  128.37 chunk/s  còn ~2 phút
+  nhúng 30208/47729  127.99 chunk/s  còn ~2 phút
+  nhúng 30336/47729  127.53 chunk/s  còn ~2 phút
+  nhúng 30464/47729  127.23 chunk/s  còn ~2 phút
+  nhúng 30592/47729  126.86 chunk/s  còn ~2 phút
+  nhúng 30720/47729  126.60 chunk/s  còn ~2 phút
+  nhúng 30848/47729  126.26 chunk/s  còn ~2 phút
+  nhúng 30976/47729  125.95 chunk/s  còn ~2 phút
+  nhúng 31104/47729  125.61 chunk/s  còn ~2 phút
+  nhúng 31232/47729  125.28 chunk/s  còn ~2 phút
+  nhúng 31360/47729  124.87 chunk/s  còn ~2 phút
+  nhúng 31488/47729  124.54 chunk/s  còn ~2 phút
+  nhúng 31616/47729  124.27 chunk/s  còn ~2 phút
+  nhúng 31744/47729  123.66 chunk/s  còn ~2 phút
+  nhúng 31872/47729  123.11 chunk/s  còn ~2 phút
+  nhúng 32000/47729  122.66 chunk/s  còn ~2 phút
+  nhúng 32128/47729  122.39 chunk/s  còn ~2 phút
+  nhúng 32256/47729  122.17 chunk/s  còn ~2 phút
+  nhúng 32384/47729  121.72 chunk/s  còn ~2 phút
+  nhúng 32512/47729  121.33 chunk/s  còn ~2 phút
+  nhúng 32640/47729  120.88 chunk/s  còn ~2 phút
+  nhúng 32768/47729  120.58 chunk/s  còn ~2 phút
+  nhúng 32896/47729  120.01 chunk/s  còn ~2 phút
+  nhúng 33024/47729  119.69 chunk/s  còn ~2 phút
+  nhúng 33152/47729  119.18 chunk/s  còn ~2 phút
+  nhúng 33280/47729  118.78 chunk/s  còn ~2 phút
+  nhúng 33408/47729  118.30 chunk/s  còn ~2 phút
+  nhúng 33536/47729  117.95 chunk/s  còn ~2 phút
+  nhúng 33664/47729  117.51 chunk/s  còn ~2 phút
+  nhúng 33792/47729  117.11 chunk/s  còn ~2 phút
+  nhúng 33920/47729  116.66 chunk/s  còn ~2 phút
+  nhúng 34048/47729  116.28 chunk/s  còn ~2 phút
+  nhúng 34176/47729  115.78 chunk/s  còn ~2 phút
+  nhúng 34304/47729  115.25 chunk/s  còn ~2 phút
+  nhúng 34432/47729  114.82 chunk/s  còn ~2 phút
+  nhúng 34560/47729  114.28 chunk/s  còn ~2 phút
+  nhúng 34688/47729  113.87 chunk/s  còn ~2 phút
+  nhúng 34816/47729  113.35 chunk/s  còn ~2 phút
+  nhúng 34944/47729  112.86 chunk/s  còn ~2 phút
+  nhúng 35072/47729  112.37 chunk/s  còn ~2 phút
+  nhúng 35200/47729  111.90 chunk/s  còn ~2 phút
+  nhúng 35328/47729  111.47 chunk/s  còn ~2 phút
+  nhúng 35456/47729  110.99 chunk/s  còn ~2 phút
+  nhúng 35584/47729  110.50 chunk/s  còn ~2 phút
+  nhúng 35712/47729  110.00 chunk/s  còn ~2 phút
+  nhúng 35840/47729  109.56 chunk/s  còn ~2 phút
+  nhúng 35968/47729  109.12 chunk/s  còn ~2 phút
+  nhúng 36096/47729  108.67 chunk/s  còn ~2 phút
+  nhúng 36224/47729  108.28 chunk/s  còn ~2 phút
+  nhúng 36352/47729  107.89 chunk/s  còn ~2 phút
+  nhúng 36480/47729  107.46 chunk/s  còn ~2 phút
+  nhúng 36608/47729  107.04 chunk/s  còn ~2 phút
+  nhúng 36736/47729  106.64 chunk/s  còn ~2 phút
+  nhúng 36864/47729  106.20 chunk/s  còn ~2 phút
+  nhúng 36992/47729  105.79 chunk/s  còn ~2 phút
+  nhúng 37120/47729  105.35 chunk/s  còn ~2 phút
+  nhúng 37248/47729  104.90 chunk/s  còn ~2 phút
+  nhúng 37376/47729  104.46 chunk/s  còn ~2 phút
+  nhúng 37504/47729  104.05 chunk/s  còn ~2 phút
+  nhúng 37632/47729  103.63 chunk/s  còn ~2 phút
+  nhúng 37760/47729  103.20 chunk/s  còn ~2 phút
+  nhúng 37888/47729  102.81 chunk/s  còn ~2 phút
+  nhúng 38016/47729  102.40 chunk/s  còn ~2 phút
+  nhúng 38144/47729  101.95 chunk/s  còn ~2 phút
+  nhúng 38272/47729  101.53 chunk/s  còn ~2 phút
+  nhúng 38400/47729  101.10 chunk/s  còn ~2 phút
+  nhúng 38528/47729  100.68 chunk/s  còn ~2 phút
+  nhúng 38656/47729  100.27 chunk/s  còn ~2 phút
+  nhúng 38784/47729  99.84 chunk/s  còn ~1 phút
+  nhúng 38912/47729  99.48 chunk/s  còn ~1 phút
+  nhúng 39040/47729  99.06 chunk/s  còn ~1 phút
+  nhúng 39168/47729  98.64 chunk/s  còn ~1 phút
+  nhúng 39296/47729  98.23 chunk/s  còn ~1 phút
+  nhúng 39424/47729  97.83 chunk/s  còn ~1 phút
+  nhúng 39552/47729  97.42 chunk/s  còn ~1 phút
+  nhúng 39680/47729  96.99 chunk/s  còn ~1 phút
+  nhúng 39808/47729  96.55 chunk/s  còn ~1 phút
+  nhúng 39936/47729  96.16 chunk/s  còn ~1 phút
+  nhúng 40064/47729  95.68 chunk/s  còn ~1 phút
+  nhúng 40192/47729  95.31 chunk/s  còn ~1 phút
+  nhúng 40320/47729  94.93 chunk/s  còn ~1 phút
+  nhúng 40448/47729  94.53 chunk/s  còn ~1 phút
+  nhúng 40576/47729  94.13 chunk/s  còn ~1 phút
+  nhúng 40704/47729  93.76 chunk/s  còn ~1 phút
+  nhúng 40832/47729  93.38 chunk/s  còn ~1 phút
+  nhúng 40960/47729  92.95 chunk/s  còn ~1 phút
+  nhúng 41088/47729  92.56 chunk/s  còn ~1 phút
+  nhúng 41216/47729  92.18 chunk/s  còn ~1 phút
+  nhúng 41344/47729  91.83 chunk/s  còn ~1 phút
+  nhúng 41472/47729  91.45 chunk/s  còn ~1 phút
+  nhúng 41600/47729  91.00 chunk/s  còn ~1 phút
+  nhúng 41728/47729  90.65 chunk/s  còn ~1 phút
+  nhúng 41856/47729  90.29 chunk/s  còn ~1 phút
+  nhúng 41984/47729  89.88 chunk/s  còn ~1 phút
+  nhúng 42112/47729  89.52 chunk/s  còn ~1 phút
+  nhúng 42240/47729  89.15 chunk/s  còn ~1 phút
+  nhúng 42368/47729  88.79 chunk/s  còn ~1 phút
+  nhúng 42496/47729  88.40 chunk/s  còn ~1 phút
+  nhúng 42624/47729  88.01 chunk/s  còn ~1 phút
+  nhúng 42752/47729  87.62 chunk/s  còn ~1 phút
+  nhúng 42880/47729  87.20 chunk/s  còn ~1 phút
+  nhúng 43008/47729  86.79 chunk/s  còn ~1 phút
+  nhúng 43136/47729  86.43 chunk/s  còn ~1 phút
+  nhúng 43264/47729  86.03 chunk/s  còn ~1 phút
+  nhúng 43392/47729  85.65 chunk/s  còn ~1 phút
+  nhúng 43520/47729  85.26 chunk/s  còn ~1 phút
+  nhúng 43648/47729  84.88 chunk/s  còn ~1 phút
+  nhúng 43776/47729  84.48 chunk/s  còn ~1 phút
+  nhúng 43904/47729  84.07 chunk/s  còn ~1 phút
+  nhúng 44032/47729  83.70 chunk/s  còn ~1 phút
+  nhúng 44160/47729  83.28 chunk/s  còn ~1 phút
+  nhúng 44288/47729  82.89 chunk/s  còn ~1 phút
+  nhúng 44416/47729  82.50 chunk/s  còn ~1 phút
+  nhúng 44544/47729  82.09 chunk/s  còn ~1 phút
+  nhúng 44672/47729  81.68 chunk/s  còn ~1 phút
+  nhúng 44800/47729  81.30 chunk/s  còn ~1 phút
+  nhúng 44928/47729  80.94 chunk/s  còn ~1 phút
+  nhúng 45056/47729  80.55 chunk/s  còn ~1 phút
+  nhúng 45184/47729  80.13 chunk/s  còn ~1 phút
+  nhúng 45312/47729  79.68 chunk/s  còn ~1 phút
+  nhúng 45440/47729  79.28 chunk/s  còn ~0 phút
+  nhúng 45568/47729  78.87 chunk/s  còn ~0 phút
+  nhúng 45696/47729  78.46 chunk/s  còn ~0 phút
+  nhúng 45824/47729  77.99 chunk/s  còn ~0 phút
+  nhúng 45952/47729  77.56 chunk/s  còn ~0 phút
+  nhúng 46080/47729  77.16 chunk/s  còn ~0 phút
+  nhúng 46208/47729  76.72 chunk/s  còn ~0 phút
+  nhúng 46336/47729  76.26 chunk/s  còn ~0 phút
+  nhúng 46464/47729  75.79 chunk/s  còn ~0 phút
+  nhúng 46592/47729  75.34 chunk/s  còn ~0 phút
+  nhúng 46720/47729  74.89 chunk/s  còn ~0 phút
+  nhúng 46848/47729  74.44 chunk/s  còn ~0 phút
+  nhúng 46976/47729  73.96 chunk/s  còn ~0 phút
+  nhúng 47104/47729  73.50 chunk/s  còn ~0 phút
+  nhúng 47232/47729  73.02 chunk/s  còn ~0 phút
+  nhúng 47360/47729  72.49 chunk/s  còn ~0 phút
+  nhúng 47488/47729  71.86 chunk/s  còn ~0 phút
+  nhúng 47616/47729  71.05 chunk/s  còn ~0 phút
+  nhúng 47729/47729  70.18 chunk/s  còn ~0 phút
+D_s0.jsonl: 7673 chunk
+E: 1294 cụm 3 câu của các đơn vị tầng cuối, 692024 ký tự
+  nhúng 128/196  93.09 chunk/s  còn ~0 phút
+  nhúng 196/196  46.12 chunk/s  còn ~0 phút
+Eduoi_s0.jsonl: 12753 chunk
+Etren_s0.jsonl: 12753 chunk
+Etat_d_s0.jsonl: 12753 chunk
+Etat_k_s0.jsonl: 12753 chunk
+Etat_n_s0.jsonl: 12753 chunk
+Etat_s_s0.jsonl: 12718 chunk
+Echi_s_s0.jsonl: 12753 chunk
+== CHUNK xong: 718 s
+== VAN 12:34:21
+| Tệp | Số chunk mới | Số chunk VPS | Vân mới | Vân VPS (data/chunks) | Vân VPS (data/index) | Vân khớp | Khớp cả metadata |
+|---|---|---|---|---|---|---|---|
+| A_H_s0 | 5172 | 5172 | 8f3839b48a58710e | 8f3839b48a58710e | 8f3839b48a58710e | ✅ | ✅ |
+| A_s0 | 5172 | 5172 | 21cfe4fce4a12f2f | 21cfe4fce4a12f2f | 21cfe4fce4a12f2f | ✅ | ✅ |
+| A_s1 | 5215 | 5215 | a12a1158665c058b | a12a1158665c058b | a12a1158665c058b | ✅ | ✅ |
+| A_s2 | 5215 | 5215 | 02d46348bfcab43e | 02d46348bfcab43e | 02d46348bfcab43e | ✅ | ✅ |
+| A_s3 | 5206 | 5206 | a491c3b648151a45 | a491c3b648151a45 | a491c3b648151a45 | ✅ | ✅ |
+| Acong_s0 | 5172 | 5172 | 9f4e79087c76214b | 9f4e79087c76214b | 9f4e79087c76214b | ✅ | ✅ |
+| B_s0 | 12718 | 12718 | 4168b60e1ed8cd6b | 4168b60e1ed8cd6b | 4168b60e1ed8cd6b | ✅ | ✅ |
+| B_s1 | 12724 | 12724 | db1cea3922655439 | db1cea3922655439 | — | ✅ | ✅ |
+| B_s2 | 12723 | 12723 | 88059a1b464bf569 | 88059a1b464bf569 | — | ✅ | ✅ |
+| B_s3 | 12721 | 12721 | 6d69c61f8ff6ce7a | 6d69c61f8ff6ce7a | — | ✅ | ✅ |
+| Btru_s0 | 12718 | 12718 | 0daae64962510d53 | 0daae64962510d53 | 0daae64962510d53 | ✅ | ✅ |
+| C_s0 | 5640 | 5640 | dbff81b99ea828df | dbff81b99ea828df | dbff81b99ea828df | ✅ | ✅ |
+| D_s0 | 7673 | 7673 | c89d0a8fe40d87bb | c89d0a8fe40d87bb | c89d0a8fe40d87bb | ✅ | ✅ |
+| Echi_s_s0 | 12753 | 12753 | a4572b17ae2a1606 | a4572b17ae2a1606 | a4572b17ae2a1606 | ✅ | ✅ |
+| Eduoi_s0 | 12753 | 12753 | 08a3c5d1d4f072ce | 08a3c5d1d4f072ce | 08a3c5d1d4f072ce | ✅ | ✅ |
+| Etat_d_s0 | 12753 | 12753 | 2e75edd42bc8429c | 2e75edd42bc8429c | 2e75edd42bc8429c | ✅ | ✅ |
+| Etat_k_s0 | 12753 | 12753 | 20c1ec71c4f3c341 | 20c1ec71c4f3c341 | 20c1ec71c4f3c341 | ✅ | ✅ |
+| Etat_n_s0 | 12753 | 12753 | c32fd6470869f68a | c32fd6470869f68a | c32fd6470869f68a | ✅ | ✅ |
+| Etat_s_s0 | 12718 | 12718 | 7b3f3c6d6de1007f | 7b3f3c6d6de1007f | 7b3f3c6d6de1007f | ✅ | ✅ |
+| Etren_s0 | 12753 | 12753 | 0df848f6025caa2f | 0df848f6025caa2f | 0df848f6025caa2f | ✅ | ✅ |
+
+20/20 tệp trùng tuyệt đối
+van exit=0
+== VAN xong: 12 s
+== NHUNG A_s0 12:34:33
+A_s0: 5172 chunk
+  nhúng 128/5172  22.02 chunk/s  còn ~4 phút
+  nhúng 256/5172  20.03 chunk/s  còn ~4 phút
+  nhúng 384/5172  19.49 chunk/s  còn ~4 phút
+  nhúng 512/5172  19.17 chunk/s  còn ~4 phút
+  nhúng 640/5172  18.96 chunk/s  còn ~4 phút
+  nhúng 768/5172  18.60 chunk/s  còn ~4 phút
+  nhúng 896/5172  18.59 chunk/s  còn ~4 phút
+  nhúng 1024/5172  18.49 chunk/s  còn ~4 phút
+  nhúng 1152/5172  18.40 chunk/s  còn ~4 phút
+  nhúng 1280/5172  18.39 chunk/s  còn ~4 phút
+  nhúng 1408/5172  18.45 chunk/s  còn ~3 phút
+  nhúng 1536/5172  18.48 chunk/s  còn ~3 phút
+  nhúng 1664/5172  18.47 chunk/s  còn ~3 phút
+  nhúng 1792/5172  18.47 chunk/s  còn ~3 phút
+  nhúng 1920/5172  18.41 chunk/s  còn ~3 phút
+  nhúng 2048/5172  18.39 chunk/s  còn ~3 phút
+  nhúng 2176/5172  18.40 chunk/s  còn ~3 phút
+  nhúng 2304/5172  18.29 chunk/s  còn ~3 phút
+  nhúng 2432/5172  18.26 chunk/s  còn ~3 phút
+  nhúng 2560/5172  18.08 chunk/s  còn ~2 phút
+  nhúng 2688/5172  18.07 chunk/s  còn ~2 phút
+  nhúng 2816/5172  18.00 chunk/s  còn ~2 phút
+  nhúng 2944/5172  17.99 chunk/s  còn ~2 phút
+  nhúng 3072/5172  17.93 chunk/s  còn ~2 phút
+  nhúng 3200/5172  17.88 chunk/s  còn ~2 phút
+  nhúng 3328/5172  17.87 chunk/s  còn ~2 phút
+  nhúng 3456/5172  17.86 chunk/s  còn ~2 phút
+  nhúng 3584/5172  17.85 chunk/s  còn ~1 phút
+  nhúng 3712/5172  17.80 chunk/s  còn ~1 phút
+  nhúng 3840/5172  17.77 chunk/s  còn ~1 phút
+  nhúng 3968/5172  17.75 chunk/s  còn ~1 phút
+  nhúng 4096/5172  17.77 chunk/s  còn ~1 phút
+  nhúng 4224/5172  17.77 chunk/s  còn ~1 phút
+  nhúng 4352/5172  17.75 chunk/s  còn ~1 phút
+  nhúng 4480/5172  17.72 chunk/s  còn ~1 phút
+  nhúng 4608/5172  17.69 chunk/s  còn ~1 phút
+  nhúng 4736/5172  17.67 chunk/s  còn ~0 phút
+  nhúng 4864/5172  17.61 chunk/s  còn ~0 phút
+  nhúng 4992/5172  17.57 chunk/s  còn ~0 phút
+  nhúng 5120/5172  17.51 chunk/s  còn ~0 phút
+  nhúng 5172/5172  17.45 chunk/s  còn ~0 phút
+→ thuc_nghiem\tai_lap_gpu\index\A_s0 (5172×768)
+== NHUNG A_s0 xong: 321 s
+== NHUNG A_s1 12:39:54
+A_s1: 5215 chunk
+  nhúng 128/5212  36.73 chunk/s  còn ~2 phút
+  nhúng 256/5212  23.24 chunk/s  còn ~4 phút
+  nhúng 384/5212  21.26 chunk/s  còn ~4 phút
+  nhúng 512/5212  20.37 chunk/s  còn ~4 phút
+  nhúng 640/5212  20.00 chunk/s  còn ~4 phút
+  nhúng 768/5212  19.57 chunk/s  còn ~4 phút
+  nhúng 896/5212  19.54 chunk/s  còn ~4 phút
+  nhúng 1024/5212  19.39 chunk/s  còn ~4 phút
+  nhúng 1152/5212  19.29 chunk/s  còn ~4 phút
+  nhúng 1280/5212  19.23 chunk/s  còn ~3 phút
+  nhúng 1408/5212  19.28 chunk/s  còn ~3 phút
+  nhúng 1536/5212  19.21 chunk/s  còn ~3 phút
+  nhúng 1664/5212  19.10 chunk/s  còn ~3 phút
+  nhúng 1792/5212  19.09 chunk/s  còn ~3 phút
+  nhúng 1920/5212  19.03 chunk/s  còn ~3 phút
+  nhúng 2048/5212  18.93 chunk/s  còn ~3 phút
+  nhúng 2176/5212  18.88 chunk/s  còn ~3 phút
+  nhúng 2304/5212  18.77 chunk/s  còn ~3 phút
+  nhúng 2432/5212  18.76 chunk/s  còn ~2 phút
+  nhúng 2560/5212  18.81 chunk/s  còn ~2 phút
+  nhúng 2688/5212  18.76 chunk/s  còn ~2 phút
+  nhúng 2816/5212  18.70 chunk/s  còn ~2 phút
+  nhúng 2944/5212  18.59 chunk/s  còn ~2 phút
+  nhúng 3072/5212  18.57 chunk/s  còn ~2 phút
+  nhúng 3200/5212  18.51 chunk/s  còn ~2 phút
+  nhúng 3328/5212  18.48 chunk/s  còn ~2 phút
+  nhúng 3456/5212  18.44 chunk/s  còn ~2 phút
+  nhúng 3584/5212  18.42 chunk/s  còn ~1 phút
+  nhúng 3712/5212  18.37 chunk/s  còn ~1 phút
+  nhúng 3840/5212  18.35 chunk/s  còn ~1 phút
+  nhúng 3968/5212  18.34 chunk/s  còn ~1 phút
+  nhúng 4096/5212  18.23 chunk/s  còn ~1 phút
+  nhúng 4224/5212  18.19 chunk/s  còn ~1 phút
+  nhúng 4352/5212  18.18 chunk/s  còn ~1 phút
+  nhúng 4480/5212  18.14 chunk/s  còn ~1 phút
+  nhúng 4608/5212  18.08 chunk/s  còn ~1 phút
+  nhúng 4736/5212  18.04 chunk/s  còn ~0 phút
+  nhúng 4864/5212  17.98 chunk/s  còn ~0 phút
+  nhúng 4992/5212  17.96 chunk/s  còn ~0 phút
+  nhúng 5120/5212  17.89 chunk/s  còn ~0 phút
+  nhúng 5212/5212  17.79 chunk/s  còn ~0 phút
+→ thuc_nghiem\tai_lap_gpu\index\A_s1 (5215×768)
+== NHUNG A_s1 xong: 315 s
+== NHUNG A_s2 12:45:09
+A_s2: 5215 chunk
+  nhúng 128/5213  38.11 chunk/s  còn ~2 phút
+  nhúng 256/5213  24.56 chunk/s  còn ~3 phút
+  nhúng 384/5213  22.78 chunk/s  còn ~4 phút
+  nhúng 512/5213  21.43 chunk/s  còn ~4 phút
+  nhúng 640/5213  20.80 chunk/s  còn ~4 phút
+  nhúng 768/5213  20.24 chunk/s  còn ~4 phút
+  nhúng 896/5213  20.01 chunk/s  còn ~4 phút
+  nhúng 1024/5213  19.86 chunk/s  còn ~4 phút
+  nhúng 1152/5213  19.50 chunk/s  còn ~3 phút
+  nhúng 1280/5213  19.35 chunk/s  còn ~3 phút
+  nhúng 1408/5213  19.20 chunk/s  còn ~3 phút
+  nhúng 1536/5213  18.98 chunk/s  còn ~3 phút
+  nhúng 1664/5213  18.90 chunk/s  còn ~3 phút
+  nhúng 1792/5213  18.83 chunk/s  còn ~3 phút
+  nhúng 1920/5213  18.82 chunk/s  còn ~3 phút
+  nhúng 2048/5213  18.80 chunk/s  còn ~3 phút
+  nhúng 2176/5213  18.69 chunk/s  còn ~3 phút
+  nhúng 2304/5213  18.66 chunk/s  còn ~3 phút
+  nhúng 2432/5213  18.62 chunk/s  còn ~2 phút
+  nhúng 2560/5213  18.52 chunk/s  còn ~2 phút
+  nhúng 2688/5213  18.47 chunk/s  còn ~2 phút
+  nhúng 2816/5213  18.49 chunk/s  còn ~2 phút
+  nhúng 2944/5213  18.44 chunk/s  còn ~2 phút
+  nhúng 3072/5213  18.41 chunk/s  còn ~2 phút
+  nhúng 3200/5213  18.34 chunk/s  còn ~2 phút
+  nhúng 3328/5213  18.25 chunk/s  còn ~2 phút
+  nhúng 3456/5213  18.29 chunk/s  còn ~2 phút
+  nhúng 3584/5213  18.28 chunk/s  còn ~1 phút
+  nhúng 3712/5213  18.25 chunk/s  còn ~1 phút
+  nhúng 3840/5213  18.26 chunk/s  còn ~1 phút
+  nhúng 3968/5213  18.22 chunk/s  còn ~1 phút
+  nhúng 4096/5213  18.19 chunk/s  còn ~1 phút
+  nhúng 4224/5213  18.13 chunk/s  còn ~1 phút
+  nhúng 4352/5213  18.13 chunk/s  còn ~1 phút
+  nhúng 4480/5213  18.09 chunk/s  còn ~1 phút
+  nhúng 4608/5213  18.07 chunk/s  còn ~1 phút
+  nhúng 4736/5213  18.04 chunk/s  còn ~0 phút
+  nhúng 4864/5213  18.02 chunk/s  còn ~0 phút
+  nhúng 4992/5213  17.97 chunk/s  còn ~0 phút
+  nhúng 5120/5213  17.92 chunk/s  còn ~0 phút
+  nhúng 5213/5213  17.82 chunk/s  còn ~0 phút
+→ thuc_nghiem\tai_lap_gpu\index\A_s2 (5215×768)
+== NHUNG A_s2 xong: 314 s
+== NHUNG A_s3 12:50:23
+A_s3: 5206 chunk
+  nhúng 128/5139  31.63 chunk/s  còn ~3 phút
+  nhúng 256/5139  22.20 chunk/s  còn ~4 phút
+  nhúng 384/5139  20.70 chunk/s  còn ~4 phút
+  nhúng 512/5139  19.98 chunk/s  còn ~4 phút
+  nhúng 640/5139  19.71 chunk/s  còn ~4 phút
+  nhúng 768/5139  19.56 chunk/s  còn ~4 phút
+  nhúng 896/5139  19.32 chunk/s  còn ~4 phút
+  nhúng 1024/5139  19.04 chunk/s  còn ~4 phút
+  nhúng 1152/5139  18.91 chunk/s  còn ~4 phút
+  nhúng 1280/5139  18.95 chunk/s  còn ~3 phút
+  nhúng 1408/5139  18.89 chunk/s  còn ~3 phút
+  nhúng 1536/5139  18.85 chunk/s  còn ~3 phút
+  nhúng 1664/5139  18.80 chunk/s  còn ~3 phút
+  nhúng 1792/5139  18.68 chunk/s  còn ~3 phút
+  nhúng 1920/5139  18.60 chunk/s  còn ~3 phút
+  nhúng 2048/5139  18.61 chunk/s  còn ~3 phút
+  nhúng 2176/5139  18.60 chunk/s  còn ~3 phút
+  nhúng 2304/5139  18.57 chunk/s  còn ~3 phút
+  nhúng 2432/5139  18.53 chunk/s  còn ~2 phút
+  nhúng 2560/5139  18.46 chunk/s  còn ~2 phút
+  nhúng 2688/5139  18.42 chunk/s  còn ~2 phút
+  nhúng 2816/5139  18.39 chunk/s  còn ~2 phút
+  nhúng 2944/5139  18.38 chunk/s  còn ~2 phút
+  nhúng 3072/5139  18.29 chunk/s  còn ~2 phút
+  nhúng 3200/5139  18.23 chunk/s  còn ~2 phút
+  nhúng 3328/5139  18.14 chunk/s  còn ~2 phút
+  nhúng 3456/5139  18.10 chunk/s  còn ~2 phút
+  nhúng 3584/5139  18.09 chunk/s  còn ~1 phút
+  nhúng 3712/5139  18.09 chunk/s  còn ~1 phút
+  nhúng 3840/5139  18.06 chunk/s  còn ~1 phút
+  nhúng 3968/5139  18.00 chunk/s  còn ~1 phút
+  nhúng 4096/5139  18.00 chunk/s  còn ~1 phút
+  nhúng 4224/5139  17.98 chunk/s  còn ~1 phút
+  nhúng 4352/5139  18.01 chunk/s  còn ~1 phút
+  nhúng 4480/5139  17.98 chunk/s  còn ~1 phút
+  nhúng 4608/5139  17.94 chunk/s  còn ~0 phút
+  nhúng 4736/5139  17.89 chunk/s  còn ~0 phút
+  nhúng 4864/5139  17.84 chunk/s  còn ~0 phút
+  nhúng 4992/5139  17.82 chunk/s  còn ~0 phút
+  nhúng 5120/5139  17.70 chunk/s  còn ~0 phút
+  nhúng 5139/5139  17.67 chunk/s  còn ~0 phút
+→ thuc_nghiem\tai_lap_gpu\index\A_s3 (5206×768)
+== NHUNG A_s3 xong: 309 s
+== NHUNG Acong_s0 12:55:33
+Acong_s0: 5172 chunk
+  nhúng 128/5172  22.20 chunk/s  còn ~4 phút
+  nhúng 256/5172  19.14 chunk/s  còn ~4 phút
+  nhúng 384/5172  18.02 chunk/s  còn ~4 phút
+  nhúng 512/5172  17.55 chunk/s  còn ~4 phút
+  nhúng 640/5172  17.45 chunk/s  còn ~4 phút
+  nhúng 768/5172  17.18 chunk/s  còn ~4 phút
+  nhúng 896/5172  16.97 chunk/s  còn ~4 phút
+  nhúng 1024/5172  16.97 chunk/s  còn ~4 phút
+  nhúng 1152/5172  16.98 chunk/s  còn ~4 phút
+  nhúng 1280/5172  16.87 chunk/s  còn ~4 phút
+  nhúng 1408/5172  16.93 chunk/s  còn ~4 phút
+  nhúng 1536/5172  16.70 chunk/s  còn ~4 phút
+  nhúng 1664/5172  16.55 chunk/s  còn ~4 phút
+  nhúng 1792/5172  16.54 chunk/s  còn ~3 phút
+  nhúng 1920/5172  16.51 chunk/s  còn ~3 phút
+  nhúng 2048/5172  16.52 chunk/s  còn ~3 phút
+  nhúng 2176/5172  16.51 chunk/s  còn ~3 phút
+  nhúng 2304/5172  16.55 chunk/s  còn ~3 phút
+  nhúng 2432/5172  16.53 chunk/s  còn ~3 phút
+  nhúng 2560/5172  16.53 chunk/s  còn ~3 phút
+  nhúng 2688/5172  16.50 chunk/s  còn ~3 phút
+  nhúng 2816/5172  16.46 chunk/s  còn ~2 phút
+  nhúng 2944/5172  16.38 chunk/s  còn ~2 phút
+  nhúng 3072/5172  16.35 chunk/s  còn ~2 phút
+  nhúng 3200/5172  16.32 chunk/s  còn ~2 phút
+  nhúng 3328/5172  16.29 chunk/s  còn ~2 phút
+  nhúng 3456/5172  16.26 chunk/s  còn ~2 phút
+  nhúng 3584/5172  16.25 chunk/s  còn ~2 phút
+  nhúng 3712/5172  16.20 chunk/s  còn ~2 phút
+  nhúng 3840/5172  16.14 chunk/s  còn ~1 phút
+  nhúng 3968/5172  16.03 chunk/s  còn ~1 phút
+  nhúng 4096/5172  15.89 chunk/s  còn ~1 phút
+  nhúng 4224/5172  15.84 chunk/s  còn ~1 phút
+  nhúng 4352/5172  15.71 chunk/s  còn ~1 phút
+  nhúng 4480/5172  15.57 chunk/s  còn ~1 phút
+  nhúng 4608/5172  15.48 chunk/s  còn ~1 phút
+  nhúng 4736/5172  15.36 chunk/s  còn ~0 phút
+  nhúng 4864/5172  15.28 chunk/s  còn ~0 phút
+  nhúng 4992/5172  15.21 chunk/s  còn ~0 phút
+  nhúng 5120/5172  15.10 chunk/s  còn ~0 phút
+  nhúng 5172/5172  15.06 chunk/s  còn ~0 phút
+→ thuc_nghiem\tai_lap_gpu\index\Acong_s0 (5172×768)
+== NHUNG Acong_s0 xong: 363 s
+== NHUNG A_H_s0 13:01:37
+A_H_s0: 5172 chunk
+  nhúng 128/5054  18.41 chunk/s  còn ~4 phút
+  nhúng 256/5054  17.52 chunk/s  còn ~5 phút
+  nhúng 384/5054  16.79 chunk/s  còn ~5 phút
+  nhúng 512/5054  16.47 chunk/s  còn ~5 phút
+  nhúng 640/5054  16.48 chunk/s  còn ~4 phút
+  nhúng 768/5054  16.37 chunk/s  còn ~4 phút
+  nhúng 896/5054  16.32 chunk/s  còn ~4 phút
+  nhúng 1024/5054  16.05 chunk/s  còn ~4 phút
+  nhúng 1152/5054  15.86 chunk/s  còn ~4 phút
+  nhúng 1280/5054  15.73 chunk/s  còn ~4 phút
+  nhúng 1408/5054  15.68 chunk/s  còn ~4 phút
+  nhúng 1536/5054  15.69 chunk/s  còn ~4 phút
+  nhúng 1664/5054  15.58 chunk/s  còn ~4 phút
+  nhúng 1792/5054  15.54 chunk/s  còn ~3 phút
+  nhúng 1920/5054  15.50 chunk/s  còn ~3 phút
+  nhúng 2048/5054  15.46 chunk/s  còn ~3 phút
+  nhúng 2176/5054  15.32 chunk/s  còn ~3 phút
+  nhúng 2304/5054  15.27 chunk/s  còn ~3 phút
+  nhúng 2432/5054  15.21 chunk/s  còn ~3 phút
+  nhúng 2560/5054  15.15 chunk/s  còn ~3 phút
+  nhúng 2688/5054  15.07 chunk/s  còn ~3 phút
+  nhúng 2816/5054  15.05 chunk/s  còn ~2 phút
+  nhúng 2944/5054  14.99 chunk/s  còn ~2 phút
+  nhúng 3072/5054  14.94 chunk/s  còn ~2 phút
+  nhúng 3200/5054  14.91 chunk/s  còn ~2 phút
+  nhúng 3328/5054  14.81 chunk/s  còn ~2 phút
+  nhúng 3456/5054  14.71 chunk/s  còn ~2 phút
+  nhúng 3584/5054  14.67 chunk/s  còn ~2 phút
+  nhúng 3712/5054  14.64 chunk/s  còn ~2 phút
+  nhúng 3840/5054  14.58 chunk/s  còn ~1 phút
+  nhúng 3968/5054  14.48 chunk/s  còn ~1 phút
+  nhúng 4096/5054  14.41 chunk/s  còn ~1 phút
+  nhúng 4224/5054  14.33 chunk/s  còn ~1 phút
+  nhúng 4352/5054  14.23 chunk/s  còn ~1 phút
+  nhúng 4480/5054  14.14 chunk/s  còn ~1 phút
+  nhúng 4608/5054  14.10 chunk/s  còn ~1 phút
+  nhúng 4736/5054  14.05 chunk/s  còn ~0 phút
+  nhúng 4864/5054  13.99 chunk/s  còn ~0 phút
+  nhúng 4992/5054  13.89 chunk/s  còn ~0 phút
+  nhúng 5054/5054  13.85 chunk/s  còn ~0 phút
+→ thuc_nghiem\tai_lap_gpu\index\A_H_s0 (5172×768)
+== NHUNG A_H_s0 xong: 386 s
+== NHUNG B_s0 13:08:03
+B_s0: 12718 chunk
+  nhúng 128/12670  138.83 chunk/s  còn ~2 phút
+  nhúng 256/12670  143.74 chunk/s  còn ~1 phút
+  nhúng 384/12670  141.28 chunk/s  còn ~1 phút
+  nhúng 512/12670  139.43 chunk/s  còn ~1 phút
+  nhúng 640/12670  137.93 chunk/s  còn ~1 phút
+  nhúng 768/12670  135.04 chunk/s  còn ~1 phút
+  nhúng 896/12670  133.99 chunk/s  còn ~1 phút
+  nhúng 1024/12670  132.40 chunk/s  còn ~1 phút
+  nhúng 1152/12670  130.95 chunk/s  còn ~1 phút
+  nhúng 1280/12670  129.42 chunk/s  còn ~1 phút
+  nhúng 1408/12670  127.28 chunk/s  còn ~1 phút
+  nhúng 1536/12670  125.39 chunk/s  còn ~1 phút
+  nhúng 1664/12670  123.69 chunk/s  còn ~1 phút
+  nhúng 1792/12670  122.14 chunk/s  còn ~1 phút
+  nhúng 1920/12670  120.59 chunk/s  còn ~1 phút
+  nhúng 2048/12670  119.49 chunk/s  còn ~1 phút
+  nhúng 2176/12670  117.92 chunk/s  còn ~1 phút
+  nhúng 2304/12670  116.38 chunk/s  còn ~1 phút
+  nhúng 2432/12670  114.87 chunk/s  còn ~1 phút
+  nhúng 2560/12670  113.94 chunk/s  còn ~1 phút
+  nhúng 2688/12670  112.59 chunk/s  còn ~1 phút
+  nhúng 2816/12670  111.25 chunk/s  còn ~1 phút
+  nhúng 2944/12670  109.17 chunk/s  còn ~1 phút
+  nhúng 3072/12670  108.15 chunk/s  còn ~1 phút
+  nhúng 3200/12670  106.22 chunk/s  còn ~1 phút
+  nhúng 3328/12670  104.41 chunk/s  còn ~1 phút
+  nhúng 3456/12670  100.13 chunk/s  còn ~2 phút
+  nhúng 3584/12670  97.94 chunk/s  còn ~2 phút
+  nhúng 3712/12670  95.10 chunk/s  còn ~2 phút
+  nhúng 3840/12670  93.30 chunk/s  còn ~2 phút
+  nhúng 3968/12670  90.73 chunk/s  còn ~2 phút
+  nhúng 4096/12670  88.47 chunk/s  còn ~2 phút
+  nhúng 4224/12670  86.51 chunk/s  còn ~2 phút
+  nhúng 4352/12670  84.81 chunk/s  còn ~2 phút
+  nhúng 4480/12670  83.06 chunk/s  còn ~2 phút
+  nhúng 4608/12670  81.15 chunk/s  còn ~2 phút
+  nhúng 4736/12670  79.53 chunk/s  còn ~2 phút
+  nhúng 4864/12670  77.96 chunk/s  còn ~2 phút
+  nhúng 4992/12670  76.76 chunk/s  còn ~2 phút
+  nhúng 5120/12670  75.19 chunk/s  còn ~2 phút
+  nhúng 5248/12670  74.03 chunk/s  còn ~2 phút
+  nhúng 5376/12670  72.60 chunk/s  còn ~2 phút
+  nhúng 5504/12670  71.29 chunk/s  còn ~2 phút
+  nhúng 5632/12670  70.09 chunk/s  còn ~2 phút
+  nhúng 5760/12670  68.79 chunk/s  còn ~2 phút
+  nhúng 5888/12670  67.65 chunk/s  còn ~2 phút
+  nhúng 6016/12670  66.71 chunk/s  còn ~2 phút
+  nhúng 6144/12670  65.59 chunk/s  còn ~2 phút
+  nhúng 6272/12670  64.26 chunk/s  còn ~2 phút
+  nhúng 6400/12670  63.29 chunk/s  còn ~2 phút
+  nhúng 6528/12670  62.33 chunk/s  còn ~2 phút
+  nhúng 6656/12670  61.12 chunk/s  còn ~2 phút
+  nhúng 6784/12670  60.06 chunk/s  còn ~2 phút
+  nhúng 6912/12670  58.93 chunk/s  còn ~2 phút
+  nhúng 7040/12670  58.02 chunk/s  còn ~2 phút
+  nhúng 7168/12670  57.11 chunk/s  còn ~2 phút
+  nhúng 7296/12670  56.06 chunk/s  còn ~2 phút
+  nhúng 7424/12670  55.35 chunk/s  còn ~2 phút
+  nhúng 7552/12670  54.48 chunk/s  còn ~2 phút
+  nhúng 7680/12670  53.65 chunk/s  còn ~2 phút
+  nhúng 7808/12670  52.86 chunk/s  còn ~2 phút
+  nhúng 7936/12670  52.15 chunk/s  còn ~2 phút
+  nhúng 8064/12670  51.35 chunk/s  còn ~1 phút
+  nhúng 8192/12670  50.69 chunk/s  còn ~1 phút
+  nhúng 8320/12670  50.09 chunk/s  còn ~1 phút
+  nhúng 8448/12670  49.30 chunk/s  còn ~1 phút
+  nhúng 8576/12670  48.68 chunk/s  còn ~1 phút
+  nhúng 8704/12670  48.03 chunk/s  còn ~1 phút
+  nhúng 8832/12670  47.31 chunk/s  còn ~1 phút
+  nhúng 8960/12670  46.68 chunk/s  còn ~1 phút
+  nhúng 9088/12670  46.08 chunk/s  còn ~1 phút
+  nhúng 9216/12670  45.46 chunk/s  còn ~1 phút
+  nhúng 9344/12670  44.85 chunk/s  còn ~1 phút
+  nhúng 9472/12670  44.32 chunk/s  còn ~1 phút
+  nhúng 9600/12670  43.78 chunk/s  còn ~1 phút
+  nhúng 9728/12670  43.28 chunk/s  còn ~1 phút
+  nhúng 9856/12670  42.61 chunk/s  còn ~1 phút
+  nhúng 9984/12670  42.07 chunk/s  còn ~1 phút
+  nhúng 10112/12670  41.54 chunk/s  còn ~1 phút
+  nhúng 10240/12670  41.06 chunk/s  còn ~1 phút
+  nhúng 10368/12670  40.56 chunk/s  còn ~1 phút
+  nhúng 10496/12670  40.10 chunk/s  còn ~1 phút
+  nhúng 10624/12670  39.52 chunk/s  còn ~1 phút
+  nhúng 10752/12670  39.05 chunk/s  còn ~1 phút
+  nhúng 10880/12670  38.55 chunk/s  còn ~1 phút
+  nhúng 11008/12670  38.07 chunk/s  còn ~1 phút
+  nhúng 11136/12670  37.55 chunk/s  còn ~1 phút
+  nhúng 11264/12670  37.06 chunk/s  còn ~1 phút
+  nhúng 11392/12670  36.62 chunk/s  còn ~1 phút
+  nhúng 11520/12670  36.06 chunk/s  còn ~1 phút
+  nhúng 11648/12670  35.53 chunk/s  còn ~0 phút
+  nhúng 11776/12670  34.95 chunk/s  còn ~0 phút
+  nhúng 11904/12670  34.34 chunk/s  còn ~0 phút
+  nhúng 12032/12670  33.79 chunk/s  còn ~0 phút
+  nhúng 12160/12670  33.22 chunk/s  còn ~0 phút
+  nhúng 12288/12670  32.66 chunk/s  còn ~0 phút
+  nhúng 12416/12670  32.13 chunk/s  còn ~0 phút
+  nhúng 12544/12670  31.55 chunk/s  còn ~0 phút
+  nhúng 12670/12670  31.01 chunk/s  còn ~0 phút
+→ thuc_nghiem\tai_lap_gpu\index\B_s0 (12718×768)
+== NHUNG B_s0 xong: 433 s
+== NHUNG Btru_s0 13:15:16
+Btru_s0: 12718 chunk
+  nhúng 128/10739  328.21 chunk/s  còn ~1 phút
+  nhúng 256/10739  372.63 chunk/s  còn ~0 phút
+  nhúng 384/10739  372.45 chunk/s  còn ~0 phút
+  nhúng 512/10739  368.35 chunk/s  còn ~0 phút
+  nhúng 640/10739  369.09 chunk/s  còn ~0 phút
+  nhúng 768/10739  361.41 chunk/s  còn ~0 phút
+  nhúng 896/10739  349.73 chunk/s  còn ~0 phút
+  nhúng 1024/10739  341.33 chunk/s  còn ~0 phút
+  nhúng 1152/10739  327.74 chunk/s  còn ~0 phút
+  nhúng 1280/10739  317.54 chunk/s  còn ~0 phút
+  nhúng 1408/10739  309.72 chunk/s  còn ~1 phút
+  nhúng 1536/10739  298.83 chunk/s  còn ~1 phút
+  nhúng 1664/10739  290.20 chunk/s  còn ~1 phút
+  nhúng 1792/10739  283.90 chunk/s  còn ~1 phút
+  nhúng 1920/10739  276.14 chunk/s  còn ~1 phút
+  nhúng 2048/10739  269.15 chunk/s  còn ~1 phút
+  nhúng 2176/10739  261.29 chunk/s  còn ~1 phút
+  nhúng 2304/10739  255.57 chunk/s  còn ~1 phút
+  nhúng 2432/10739  250.26 chunk/s  còn ~1 phút
+  nhúng 2560/10739  243.46 chunk/s  còn ~1 phút
+  nhúng 2688/10739  236.97 chunk/s  còn ~1 phút
+  nhúng 2816/10739  230.48 chunk/s  còn ~1 phút
+  nhúng 2944/10739  225.11 chunk/s  còn ~1 phút
+  nhúng 3072/10739  220.17 chunk/s  còn ~1 phút
+  nhúng 3200/10739  215.13 chunk/s  còn ~1 phút
+  nhúng 3328/10739  210.06 chunk/s  còn ~1 phút
+  nhúng 3456/10739  205.76 chunk/s  còn ~1 phút
+  nhúng 3584/10739  201.75 chunk/s  còn ~1 phút
+  nhúng 3712/10739  198.14 chunk/s  còn ~1 phút
+  nhúng 3840/10739  194.28 chunk/s  còn ~1 phút
+  nhúng 3968/10739  189.95 chunk/s  còn ~1 phút
+  nhúng 4096/10739  186.32 chunk/s  còn ~1 phút
+  nhúng 4224/10739  182.41 chunk/s  còn ~1 phút
+  nhúng 4352/10739  178.54 chunk/s  còn ~1 phút
+  nhúng 4480/10739  175.15 chunk/s  còn ~1 phút
+  nhúng 4608/10739  170.87 chunk/s  còn ~1 phút
+  nhúng 4736/10739  167.84 chunk/s  còn ~1 phút
+  nhúng 4864/10739  164.62 chunk/s  còn ~1 phút
+  nhúng 4992/10739  160.95 chunk/s  còn ~1 phút
+  nhúng 5120/10739  157.39 chunk/s  còn ~1 phút
+  nhúng 5248/10739  152.67 chunk/s  còn ~1 phút
+  nhúng 5376/10739  148.50 chunk/s  còn ~1 phút
+  nhúng 5504/10739  144.78 chunk/s  còn ~1 phút
+  nhúng 5632/10739  139.33 chunk/s  còn ~1 phút
+  nhúng 5760/10739  135.73 chunk/s  còn ~1 phút
+  nhúng 5888/10739  131.62 chunk/s  còn ~1 phút
+  nhúng 6016/10739  127.24 chunk/s  còn ~1 phút
+  nhúng 6144/10739  122.84 chunk/s  còn ~1 phút
+  nhúng 6272/10739  119.01 chunk/s  còn ~1 phút
+  nhúng 6400/10739  115.09 chunk/s  còn ~1 phút
+  nhúng 6528/10739  111.47 chunk/s  còn ~1 phút
+  nhúng 6656/10739  107.98 chunk/s  còn ~1 phút
+  nhúng 6784/10739  104.65 chunk/s  còn ~1 phút
+  nhúng 6912/10739  101.39 chunk/s  còn ~1 phút
+  nhúng 7040/10739  98.51 chunk/s  còn ~1 phút
+  nhúng 7168/10739  95.41 chunk/s  còn ~1 phút
+  nhúng 7296/10739  92.48 chunk/s  còn ~1 phút
+  nhúng 7424/10739  89.77 chunk/s  còn ~1 phút
+  nhúng 7552/10739  87.28 chunk/s  còn ~1 phút
+  nhúng 7680/10739  84.69 chunk/s  còn ~1 phút
+  nhúng 7808/10739  82.30 chunk/s  còn ~1 phút
+  nhúng 7936/10739  80.05 chunk/s  còn ~1 phút
+  nhúng 8064/10739  77.90 chunk/s  còn ~1 phút
+  nhúng 8192/10739  75.48 chunk/s  còn ~1 phút
+  nhúng 8320/10739  73.38 chunk/s  còn ~1 phút
+  nhúng 8448/10739  71.46 chunk/s  còn ~1 phút
+  nhúng 8576/10739  69.69 chunk/s  còn ~1 phút
+  nhúng 8704/10739  67.87 chunk/s  còn ~0 phút
+  nhúng 8832/10739  66.26 chunk/s  còn ~0 phút
+  nhúng 8960/10739  64.37 chunk/s  còn ~0 phút
+  nhúng 9088/10739  62.58 chunk/s  còn ~0 phút
+  nhúng 9216/10739  60.82 chunk/s  còn ~0 phút
+  nhúng 9344/10739  59.45 chunk/s  còn ~0 phút
+  nhúng 9472/10739  58.00 chunk/s  còn ~0 phút
+  nhúng 9600/10739  56.41 chunk/s  còn ~0 phút
+  nhúng 9728/10739  55.20 chunk/s  còn ~0 phút
+  nhúng 9856/10739  53.95 chunk/s  còn ~0 phút
+  nhúng 9984/10739  52.69 chunk/s  còn ~0 phút
+  nhúng 10112/10739  51.37 chunk/s  còn ~0 phút
+  nhúng 10240/10739  50.03 chunk/s  còn ~0 phút
+  nhúng 10368/10739  48.83 chunk/s  còn ~0 phút
+  nhúng 10496/10739  47.60 chunk/s  còn ~0 phút
+  nhúng 10624/10739  46.28 chunk/s  còn ~0 phút
+  nhúng 10739/10739  45.05 chunk/s  còn ~0 phút
+→ thuc_nghiem\tai_lap_gpu\index\Btru_s0 (12718×768)
+== NHUNG Btru_s0 xong: 259 s
+== NHUNG C_s0 13:19:35
+C_s0: 5640 chunk
+  nhúng 128/5348  31.50 chunk/s  còn ~3 phút
+  nhúng 256/5348  27.35 chunk/s  còn ~3 phút
+  nhúng 384/5348  25.08 chunk/s  còn ~3 phút
+  nhúng 512/5348  24.13 chunk/s  còn ~3 phút
+  nhúng 640/5348  23.27 chunk/s  còn ~3 phút
+  nhúng 768/5348  23.14 chunk/s  còn ~3 phút
+  nhúng 896/5348  22.69 chunk/s  còn ~3 phút
+  nhúng 1024/5348  22.41 chunk/s  còn ~3 phút
+  nhúng 1152/5348  22.08 chunk/s  còn ~3 phút
+  nhúng 1280/5348  21.93 chunk/s  còn ~3 phút
+  nhúng 1408/5348  21.68 chunk/s  còn ~3 phút
+  nhúng 1536/5348  21.51 chunk/s  còn ~3 phút
+  nhúng 1664/5348  21.49 chunk/s  còn ~3 phút
+  nhúng 1792/5348  21.37 chunk/s  còn ~3 phút
+  nhúng 1920/5348  21.10 chunk/s  còn ~3 phút
+  nhúng 2048/5348  20.99 chunk/s  còn ~3 phút
+  nhúng 2176/5348  20.87 chunk/s  còn ~3 phút
+  nhúng 2304/5348  20.74 chunk/s  còn ~2 phút
+  nhúng 2432/5348  20.58 chunk/s  còn ~2 phút
+  nhúng 2560/5348  20.51 chunk/s  còn ~2 phút
+  nhúng 2688/5348  20.40 chunk/s  còn ~2 phút
+  nhúng 2816/5348  20.28 chunk/s  còn ~2 phút
+  nhúng 2944/5348  20.18 chunk/s  còn ~2 phút
+  nhúng 3072/5348  20.18 chunk/s  còn ~2 phút
+  nhúng 3200/5348  20.13 chunk/s  còn ~2 phút
+  nhúng 3328/5348  20.01 chunk/s  còn ~2 phút
+  nhúng 3456/5348  19.94 chunk/s  còn ~2 phút
+  nhúng 3584/5348  19.83 chunk/s  còn ~1 phút
+  nhúng 3712/5348  19.68 chunk/s  còn ~1 phút
+  nhúng 3840/5348  19.59 chunk/s  còn ~1 phút
+  nhúng 3968/5348  19.55 chunk/s  còn ~1 phút
+  nhúng 4096/5348  19.50 chunk/s  còn ~1 phút
+  nhúng 4224/5348  19.42 chunk/s  còn ~1 phút
+  nhúng 4352/5348  19.34 chunk/s  còn ~1 phút
+  nhúng 4480/5348  19.29 chunk/s  còn ~1 phút
+  nhúng 4608/5348  19.26 chunk/s  còn ~1 phút
+  nhúng 4736/5348  19.23 chunk/s  còn ~1 phút
+  nhúng 4864/5348  19.20 chunk/s  còn ~0 phút
+  nhúng 4992/5348  19.15 chunk/s  còn ~0 phút
+  nhúng 5120/5348  19.12 chunk/s  còn ~0 phút
+  nhúng 5248/5348  19.01 chunk/s  còn ~0 phút
+  nhúng 5348/5348  18.91 chunk/s  còn ~0 phút
+→ thuc_nghiem\tai_lap_gpu\index\C_s0 (5640×768)
+== NHUNG C_s0 xong: 303 s
+== NHUNG D_s0 13:24:38
+D_s0: 7673 chunk
+  nhúng 128/6193  113.78 chunk/s  còn ~1 phút
+  nhúng 256/6193  119.63 chunk/s  còn ~1 phút
+  nhúng 384/6193  114.32 chunk/s  còn ~1 phút
+  nhúng 512/6193  109.97 chunk/s  còn ~1 phút
+  nhúng 640/6193  103.69 chunk/s  còn ~1 phút
+  nhúng 768/6193  94.71 chunk/s  còn ~1 phút
+  nhúng 896/6193  87.68 chunk/s  còn ~1 phút
+  nhúng 1024/6193  81.21 chunk/s  còn ~1 phút
+  nhúng 1152/6193  75.39 chunk/s  còn ~1 phút
+  nhúng 1280/6193  70.56 chunk/s  còn ~1 phút
+  nhúng 1408/6193  65.83 chunk/s  còn ~1 phút
+  nhúng 1536/6193  62.77 chunk/s  còn ~1 phút
+  nhúng 1664/6193  60.07 chunk/s  còn ~1 phút
+  nhúng 1792/6193  57.09 chunk/s  còn ~1 phút
+  nhúng 1920/6193  54.76 chunk/s  còn ~1 phút
+  nhúng 2048/6193  52.60 chunk/s  còn ~1 phút
+  nhúng 2176/6193  50.57 chunk/s  còn ~1 phút
+  nhúng 2304/6193  48.54 chunk/s  còn ~1 phút
+  nhúng 2432/6193  46.71 chunk/s  còn ~1 phút
+  nhúng 2560/6193  44.90 chunk/s  còn ~1 phút
+  nhúng 2688/6193  43.21 chunk/s  còn ~1 phút
+  nhúng 2816/6193  41.91 chunk/s  còn ~1 phút
+  nhúng 2944/6193  40.65 chunk/s  còn ~1 phút
+  nhúng 3072/6193  39.42 chunk/s  còn ~1 phút
+  nhúng 3200/6193  38.34 chunk/s  còn ~1 phút
+  nhúng 3328/6193  37.36 chunk/s  còn ~1 phút
+  nhúng 3456/6193  36.41 chunk/s  còn ~1 phút
+  nhúng 3584/6193  35.65 chunk/s  còn ~1 phút
+  nhúng 3712/6193  34.82 chunk/s  còn ~1 phút
+  nhúng 3840/6193  34.21 chunk/s  còn ~1 phút
+  nhúng 3968/6193  33.61 chunk/s  còn ~1 phút
+  nhúng 4096/6193  32.97 chunk/s  còn ~1 phút
+  nhúng 4224/6193  32.29 chunk/s  còn ~1 phút
+  nhúng 4352/6193  31.75 chunk/s  còn ~1 phút
+  nhúng 4480/6193  31.24 chunk/s  còn ~1 phút
+  nhúng 4608/6193  30.61 chunk/s  còn ~1 phút
+  nhúng 4736/6193  30.13 chunk/s  còn ~1 phút
+  nhúng 4864/6193  29.62 chunk/s  còn ~1 phút
+  nhúng 4992/6193  28.98 chunk/s  còn ~1 phút
+  nhúng 5120/6193  28.45 chunk/s  còn ~1 phút
+  nhúng 5248/6193  27.94 chunk/s  còn ~1 phút
+  nhúng 5376/6193  27.44 chunk/s  còn ~0 phút
+  nhúng 5504/6193  27.01 chunk/s  còn ~0 phút
+  nhúng 5632/6193  26.49 chunk/s  còn ~0 phút
+  nhúng 5760/6193  26.02 chunk/s  còn ~0 phút
+  nhúng 5888/6193  25.61 chunk/s  còn ~0 phút
+  nhúng 6016/6193  25.20 chunk/s  còn ~0 phút
+  nhúng 6144/6193  24.71 chunk/s  còn ~0 phút
+  nhúng 6193/6193  24.52 chunk/s  còn ~0 phút
+→ thuc_nghiem\tai_lap_gpu\index\D_s0 (7673×768)
+== NHUNG D_s0 xong: 273 s
+== NHUNG Eduoi_s0 13:29:11
+Eduoi_s0: 12753 chunk
+  nhúng 128/2120  106.40 chunk/s  còn ~0 phút
+  nhúng 256/2120  105.70 chunk/s  còn ~0 phút
+  nhúng 384/2120  103.25 chunk/s  còn ~0 phút
+  nhúng 512/2120  98.69 chunk/s  còn ~0 phút
+  nhúng 640/2120  88.47 chunk/s  còn ~0 phút
+  nhúng 768/2120  77.53 chunk/s  còn ~0 phút
+  nhúng 896/2120  68.92 chunk/s  còn ~0 phút
+  nhúng 1024/2120  63.88 chunk/s  còn ~0 phút
+  nhúng 1152/2120  58.98 chunk/s  còn ~0 phút
+  nhúng 1280/2120  54.87 chunk/s  còn ~0 phút
+  nhúng 1408/2120  50.68 chunk/s  còn ~0 phút
+  nhúng 1536/2120  47.10 chunk/s  còn ~0 phút
+  nhúng 1664/2120  43.61 chunk/s  còn ~0 phút
+  nhúng 1792/2120  40.53 chunk/s  còn ~0 phút
+  nhúng 1920/2120  37.56 chunk/s  còn ~0 phút
+  nhúng 2048/2120  33.82 chunk/s  còn ~0 phút
+  nhúng 2120/2120  31.66 chunk/s  còn ~0 phút
+→ thuc_nghiem\tai_lap_gpu\index\Eduoi_s0 (12753×768)
+== NHUNG Eduoi_s0 xong: 88 s
+== NHUNG Etren_s0 13:30:39
+Etren_s0: 12753 chunk
+  nhúng 84/84  16.19 chunk/s  còn ~0 phút
+→ thuc_nghiem\tai_lap_gpu\index\Etren_s0 (12753×768)
+== NHUNG Etren_s0 xong: 27 s
+== NHUNG Etat_d_s0 13:31:06
+Etat_d_s0: 12753 chunk
+  nhúng 13/13  14.61 chunk/s  còn ~0 phút
+→ thuc_nghiem\tai_lap_gpu\index\Etat_d_s0 (12753×768)
+== NHUNG Etat_d_s0 xong: 23 s
+== NHUNG Etat_k_s0 13:31:29
+Etat_k_s0: 12753 chunk
+  nhúng 57/57  16.66 chunk/s  còn ~0 phút
+→ thuc_nghiem\tai_lap_gpu\index\Etat_k_s0 (12753×768)
+== NHUNG Etat_k_s0 xong: 24 s
+== NHUNG Etat_n_s0 13:31:53
+Etat_n_s0: 12753 chunk
+  nhúng 128/285  24.90 chunk/s  còn ~0 phút
+  nhúng 256/285  17.69 chunk/s  còn ~0 phút
+  nhúng 285/285  16.69 chunk/s  còn ~0 phút
+→ thuc_nghiem\tai_lap_gpu\index\Etat_n_s0 (12753×768)
+== NHUNG Etat_n_s0 xong: 39 s
+== NHUNG Etat_s_s0 13:32:32
+Etat_s_s0: 12718 chunk
+  nhúng 128/252  19.23 chunk/s  còn ~0 phút
+  nhúng 252/252  14.89 chunk/s  còn ~0 phút
+→ thuc_nghiem\tai_lap_gpu\index\Etat_s_s0 (12718×768)
+== NHUNG Etat_s_s0 xong: 41 s
+== NHUNG Echi_s_s0 13:33:13
+Echi_s_s0: 12753 chunk
+  nhúng 48/48  17.06 chunk/s  còn ~0 phút
+→ thuc_nghiem\tai_lap_gpu\index\Echi_s_s0 (12753×768)
+== NHUNG Echi_s_s0 xong: 23 s
+== KIEM 13:33:36
+chỉ mục khớp tệp chunk: 17/17 (A_H_s0 A_s0 A_s1 A_s2 A_s3 Acong_s0 B_s0 Btru_s0 C_s0 D_s0 Echi_s_s0 Eduoi_s0 Etat_d_s0 Etat_k_s0 Etat_n_s0 Etat_s_s0 Etren_s0)
+cố ý không nhúng (3): B_s1 — B không phụ thuộc seed — chỉ nhúng seed 0 (chunking/chay.py); B_s2 — B không phụ thuộc seed — chỉ nhúng seed 0 (chunking/chay.py); B_s3 — B không phụ thuộc seed — chỉ nhúng seed 0 (chunking/chay.py)
+== KIEM xong: 7 s
+== TRUY_HOI 13:33:43
+
+— bộ chính —
+  A       R@5=0.691 R@1200t=0.627 MRR=0.486 (0s)
+  C       R@5=0.755 R@1200t=0.745 MRR=0.564 (0s)
+  D       R@5=0.709 R@1200t=0.700 MRR=0.550 (0s)
+  B       R@5=0.791 R@1200t=0.782 MRR=0.579 (0s)
+
+— manh_con —
+  B       R@5=0.629 R@1200t=0.629 MRR=0.492 (0s)
+  Eduoi   R@5=0.600 R@1200t=0.600 MRR=0.460 (0s)
+  Etren   R@5=0.600 R@1200t=0.629 MRR=0.467 (0s)
+  Etat_d  R@5=0.600 R@1200t=0.600 MRR=0.460 (0s)
+  Etat_k  R@5=0.657 R@1200t=0.657 MRR=0.553 (0s)
+  Etat_n  R@5=0.600 R@1200t=0.629 MRR=0.456 (0s)
+  Etat_s  R@5=0.571 R@1200t=0.571 MRR=0.407 (0s)
+  Echi_s  R@5=0.657 R@1200t=0.686 MRR=0.549 (0s)
+
+→ thuc_nghiem\tai_lap_gpu\metrics_truy_hoi.csv (952 dòng)
+→ thuc_nghiem\tai_lap_gpu\metrics_truy_hoi.md
+tổng 26s
+truy_hoi exit=0
+== TRUY_HOI xong: 28 s
+BUOC0_XONG
