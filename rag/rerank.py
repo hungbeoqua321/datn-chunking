@@ -60,6 +60,19 @@ def main() -> None:
             print("Tải", m["repo"], "@", m["revision"][:10])
             snapshot_download(m["repo"], revision=m["revision"], local_dir=thu_muc(ten),
                               allow_patterns=["*.json", "*.safetensors", "*.model", "*.txt"])
+        # Repo AITeamVN không có tokenizer.json, chỉ có sentencepiece.bpe.model — đọc tệp đó cần gói sentencepiece
+        # (không có trong môi trường đã ghim). Mô hình tinh chỉnh từ bge-reranker-v2-m3 và dùng ĐÚNG tokenizer đó
+        # (sentencepiece.bpe.model, special_tokens_map.json trùng sha256; vocab 250002) → chép tokenizer.json của bge.
+        import hashlib
+        import shutil
+
+        da, db = thu_muc("aiteam"), thu_muc("bge")
+        h = [hashlib.sha256((d / "sentencepiece.bpe.model").read_bytes()).hexdigest() for d in (da, db)]
+        if not (da / "tokenizer.json").exists():
+            if h[0] != h[1]:
+                raise SystemExit("Tokenizer của hai reranker khác nhau — không chép tokenizer.json được.")
+            shutil.copyfile(db / "tokenizer.json", da / "tokenizer.json")
+            print("aiteam: chép tokenizer.json từ bge (sentencepiece trùng sha256)")
     if a.kiem:
         q = "Thời hạn của giấy phép lao động tối đa là bao lâu?"
         cs = [{"text": "Thời hạn của giấy phép lao động tối đa là 02 năm."},
