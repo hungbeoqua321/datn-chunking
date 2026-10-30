@@ -51,6 +51,9 @@ def main() -> None:
     CSV_RA, MD_RA = GOC / "ocr" / f"{a.ra}.csv", GOC / "ocr" / f"{a.ra}.md"
     cau_hinh = sorted(p for p in OCR.iterdir() if p.is_dir() and (not a.cau_hinh or p.name in a.cau_hinh))
     chung = set.intersection(*({f.stem for f in p.glob("*.txt")} for p in cau_hinh))
+    # Văn bản mà vbpl không có text (chỉ có PDF) → không có đáp án để chấm; liệt kê ở cuối báo cáo, không bỏ ngầm.
+    rong = sorted(i for i in chung if not chuan((DOCS / f"{i}.txt").read_text()).strip())
+    chung -= set(rong)
     so_hieu = {r["id"]: r["so_hieu"] for r in csv.DictReader(open(MANIFEST))}
     dong, tong = [], {}
     for p in cau_hinh:
@@ -110,6 +113,9 @@ def main() -> None:
             r = next(r for r in dong if r["id"] == i)
             md.append(f"- {r['so_hieu']} (`{i}`): {r['so_trang']} trang, OCR {r['ky_tu_ocr']:,} / "
                       f"chuẩn {r['ky_tu']:,} ký tự")
+    if rong:
+        md += ["", f"Không chấm ({len(rong)}) — vbpl không có text chuẩn, chỉ có PDF (OCR là nguồn chữ duy nhất):", ""]
+        md += [f"- {so_hieu.get(i, '')} (`{i}`)" for i in rong]
     MD_RA.write_text("\n".join(md) + "\n")
     print("\n".join(md))
 
