@@ -73,11 +73,8 @@ def dung_chunk(force: bool = False) -> None:
         print(f"{p.name}: {len(ds)} chunk, trung vị {tu[len(tu) // 2]} từ, lớn nhất {tu[-1]}")
 
 
-def danh_gia(che_do: tuple[str, ...]) -> None:
-    _kiem_thu_muc()
-    ten = [f"{t}_s0" for t in cau_hinh_chunk()]
-    chot_chan(ten)
-    t_all = time.monotonic()
+def chuan_bi() -> tuple[list, list, list]:
+    """(câu hỏi, bản tương đương của gold, vector câu hỏi) — như eval/chay_truy_hoi.py."""
     docs = nap_van_ban()
     van_ban = {d.doc_id: d.text for d in docs}
     so_hieu = {d.doc_id: d.so_hieu for d in docs}
@@ -90,26 +87,39 @@ def danh_gia(che_do: tuple[str, ...]) -> None:
     ds = [json.loads(l) for l in open(CAU_HOI) if l.strip()]
     td = [_td_cho(x["gold"], van_ban, so_hieu, dv, cap, bool(x.get("phien_ban"))) for x in ds]
     vec = [truy_hoi.nhung_cau_hoi(x["question"]) for x in ds]
+    return ds, td, vec
 
+
+def cham_chi_muc(idx: str, che_do: tuple[str, ...], ds, td, vec, diem: dict, thoi_gian: dict) -> None:
+    """Chấm một chỉ mục với từng chế độ rerank, ghi vào diem[(tên, chế độ)] = {độ đo: [điểm từng câu]}."""
+    dense = [[c for c, _ in truy_hoi.tim(idx, vec[i], k=ch.K_UNG_VIEN)] for i in range(len(ds))]
+    for cd in che_do:
+        t0 = time.monotonic()
+        if cd == "khong":
+            kq = dense
+        else:
+            from rag import rerank
+            kq = [[c for c, _ in rerank.xep_lai(cd, x["question"], dense[i])] for i, x in enumerate(ds)]
+        k = (idx.removesuffix("_s0"), cd)
+        thoi_gian[k] = time.monotonic() - t0
+        diem[k] = {d: [] for d in DO_DO}
+        for i, x in enumerate(ds):
+            for d, v in _do(x["gold"], kq[i], td[i]).items():
+                diem[k][d].append(v)
+        print(f"  {k[0]:9s} rerank={cd:7s} R@1={sum(diem[k]['R@1']) / len(ds):.3f} "
+              f"R@5={sum(diem[k]['R@5']) / len(ds):.3f} MRR={sum(diem[k]['MRR']) / len(ds):.3f} "
+              f"({thoi_gian[k]:.0f}s)", flush=True)
+
+
+def danh_gia(che_do: tuple[str, ...]) -> None:
+    _kiem_thu_muc()
+    ten = [f"{t}_s0" for t in cau_hinh_chunk()]
+    chot_chan(ten)
+    t_all = time.monotonic()
+    ds, td, vec = chuan_bi()
     diem, thoi_gian = {}, {}
     for idx in ten:
-        dense = [[c for c, _ in truy_hoi.tim(idx, vec[i], k=ch.K_UNG_VIEN)] for i in range(len(ds))]
-        for cd in che_do:
-            t0 = time.monotonic()
-            if cd == "khong":
-                kq = dense
-            else:
-                from rag import rerank
-                kq = [[c for c, _ in rerank.xep_lai(cd, x["question"], dense[i])] for i, x in enumerate(ds)]
-            k = (idx.removesuffix("_s0"), cd)
-            thoi_gian[k] = time.monotonic() - t0
-            diem[k] = {d: [] for d in DO_DO}
-            for i, x in enumerate(ds):
-                for d, v in _do(x["gold"], kq[i], td[i]).items():
-                    diem[k][d].append(v)
-            print(f"  {k[0]:6s} rerank={cd:7s} R@1={sum(diem[k]['R@1']) / len(ds):.3f} "
-                  f"R@5={sum(diem[k]['R@5']) / len(ds):.3f} MRR={sum(diem[k]['MRR']) / len(ds):.3f} "
-                  f"({thoi_gian[k]:.0f}s)", flush=True)
+        cham_chi_muc(idx, che_do, ds, td, vec, diem, thoi_gian)
 
     nhom = [x["loai"] for x in ds]
     taps = {"tất cả": list(range(len(ds)))}
