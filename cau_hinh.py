@@ -13,8 +13,9 @@ DATA = GOC / "data"
 RAW = DATA / "raw"              # HTML gốc + metadata JSON tải về
 CLEAN = DATA / "clean"          # text đã chuẩn hoá, đã bỏ "Căn cứ…" và nơi nhận/chữ ký
 CLEAN_FULL = DATA / "clean_full"  # text đã chuẩn hoá, CHƯA bỏ gì (để đối chiếu)
-CHUNKS = DATA / "chunks"        # chunk của từng phương pháp (jsonl)
-INDEX = DATA / "index"          # vector nhúng (memmap)
+# Thử nghiệm mở rộng đặt CHUNKS_DIR / INDEX_DIR sang thư mục riêng để không lẫn với chỉ mục gốc (kể cả bộ đệm).
+CHUNKS = Path(os.environ.get("CHUNKS_DIR", DATA / "chunks"))  # chunk của từng phương pháp (jsonl)
+INDEX = Path(os.environ.get("INDEX_DIR", DATA / "index"))     # vector nhúng (memmap)
 RESULTS = Path(os.environ.get("KET_QUA_DIR", GOC / "results"))  # máy cá nhân: chạy tái lập ra thư mục riêng
 MODELS = GOC / "models"
 MANIFEST = DATA / "manifest.csv"
