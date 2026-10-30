@@ -35,9 +35,9 @@ def dung_ngu_canh(khoi: list[dict]) -> str:
     return "\n\n".join(f"[Đoạn {i}] [Nguồn: {k['so_hieu']}]\n{k['text']}" for i, k in enumerate(khoi, 1))
 
 
-def dung_tin_nhan(cau_hoi: str, khoi: list[dict]) -> list[dict]:
+def dung_tin_nhan(cau_hoi: str, khoi: list[dict], he_thong: str = HE_THONG) -> list[dict]:
     return [
-        {"role": "system", "content": HE_THONG},
+        {"role": "system", "content": he_thong},
         {"role": "user", "content": f"NGỮ CẢNH:\n{dung_ngu_canh(khoi)}\n\nCÂU HỎI: {cau_hoi}"},
     ]
 
@@ -59,9 +59,15 @@ def client():
 
 
 def tham_so() -> dict:
-    """Tham số sinh cố định (ghi kèm mỗi câu trả lời trong cache)."""
+    """Tham số sinh cố định (ghi kèm mỗi câu trả lời trong cache).
+
+    LLM_TAT_NGHI=1: tắt chế độ suy nghĩ của mô hình Qwen3 lai (bản 8B dùng ở thử nghiệm mô hình lớn hơn,
+    results/local_gpu/thu_them.md) — bản 4B-Instruct-2507 không có chế độ này nên mặc định không gửi gì thêm."""
+    extra = {"cache_prompt": False}
+    if os.environ.get("LLM_TAT_NGHI"):
+        extra["chat_template_kwargs"] = {"enable_thinking": False}
     return {"model": os.environ["LLM_MODEL"], "temperature": 0, "seed": 42,
-            "max_tokens": ch.MAX_TOKENS_TRA_LOI, "extra_body": {"cache_prompt": False}}
+            "max_tokens": ch.MAX_TOKENS_TRA_LOI, "extra_body": extra}
 
 
 def n_ctx() -> int:
@@ -125,10 +131,11 @@ def goi(tin_nhan: list[dict], nhan: dict, cl=None, **ts):
     return r, ghi
 
 
-def tra_loi(cau_hoi: str, khoi: list[dict], cl=None, nhan: dict | None = None) -> dict:
-    """Sinh câu trả lời cho một câu hỏi từ các khối ngữ cảnh. `nhan` = {qid, bien_the, seed}."""
+def tra_loi(cau_hoi: str, khoi: list[dict], cl=None, nhan: dict | None = None, he_thong: str = HE_THONG) -> dict:
+    """Sinh câu trả lời cho một câu hỏi từ các khối ngữ cảnh. `nhan` = {qid, bien_the, seed}.
+    `he_thong` chỉ đổi ở thử nghiệm lời nhắc (eval/thu_them.py); mọi bảng chính dùng HE_THONG."""
     ts = tham_so()
-    r, ghi = goi(dung_tin_nhan(cau_hoi, khoi),
+    r, ghi = goi(dung_tin_nhan(cau_hoi, khoi, he_thong),
                  {**(nhan or {}), "so_khoi": len(khoi), "so_tu_ngu_canh": sum(len(k["text"].split()) for k in khoi),
                   "khoi_bi_cat": sum(bool(k.get("bi_cat")) for k in khoi)}, cl, **ts)
     return {"tra_loi": r.choices[0].message.content, "usage": r.usage.model_dump(), "finish_reason": ghi["ly_do_dung"],

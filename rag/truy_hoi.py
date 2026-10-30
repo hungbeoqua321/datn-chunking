@@ -7,6 +7,8 @@
 - B+: truy hồi trên chunk của B, rồi MỞ RỘNG mỗi chunk lên cả Điều cha (bỏ trùng Điều); Điều dài hơn phần ngân sách còn
   lại thì giữ một cửa sổ quanh đúng chunk trúng.
 """
+import re
+
 import numpy as np
 
 import cau_hinh as ch
@@ -22,9 +24,14 @@ TEP = {"A": "A_s0", "A+": "Acong_s0", "B": "B_s0", "B+": "B_s0", "A_H": "A_H_s0"
        # E3b = E3 nhưng NỀN LÀ B: không mở rộng lên Điều cha, chỉ chunk truy hồi được cộng
        # các đơn vị đích kéo theo dẫn chiếu. Tách riêng tác động của việc theo dẫn chiếu
        # khỏi tác động của việc mở rộng khối.
-       "E3b": "B_s0"}
+       "E3b": "B_s0",
+       # E2n (thăm dò, results/local_gpu/thu_them.md) = E2 nhưng trong khối đã mở rộng lên Điều, mỗi dòng
+       # khoản được gắn lại nhãn "(Điều N khoản k)". Phân tích lỗi bước 3: E2 dẫn nhầm Điều ở 10 câu B
+       # làm đúng, vì sau khi mở rộng nhãn Điều chỉ còn ở đầu khối dài.
+       "E2n": "Echi_s_s0"}
 # Phương pháp mở rộng khối lên cả Điều cha trước khi đưa cho mô hình sinh.
-MO_RONG_DIEU = ("B+", "E2", "E3")
+MO_RONG_DIEU = ("B+", "E2", "E3", "E2n")
+_RE_KHOAN = re.compile(r"^(\d+)\.\s", re.M)
 _CACHE: dict[str, tuple] = {}
 _VAN_BAN: dict[str, str] = {}
 
@@ -58,6 +65,13 @@ def _tien_to_dieu(c: dict) -> str:
     """Tiền tố tới cấp Điều (bỏ "> Khoản …", "> Điểm …") cho khối B+ đã mở rộng."""
     p = c["tien_to"].split(" > ")
     return " > ".join(x for x in p if not x.startswith(("Khoản ", "Điểm ")))
+
+
+def _gan_nhan_khoan(body: str, dieu_so) -> str:
+    """E2n: "1. Người nào…" → "(Điều 217 khoản 1) 1. Người nào…" cho mọi dòng khoản trong thân Điều."""
+    if dieu_so is None:
+        return body
+    return _RE_KHOAN.sub(lambda m: f"(Điều {dieu_so} khoản {m.group(1)}) {m.group(0)}", body)
 
 
 def _bu_ngu_canh_e2(c: dict, body: str) -> str:
@@ -107,6 +121,8 @@ def ngu_canh(pp: str, ket_qua: list[tuple[dict, float]], ngan_sach: int = ch.NGA
             tt = _tien_to_dieu(c)
             t = vb(c["doc_id"])
             body, bi_cat = t[a:b], False
+            if pp == "E2n":
+                body = _gan_nhan_khoan(body, c.get("dieu_so"))
             n = len(tt.split()) + len(body.split())
             if n > con:
                 if khoi:
@@ -118,13 +134,15 @@ def ngu_canh(pp: str, ket_qua: list[tuple[dict, float]], ngan_sach: int = ch.NGA
                 i0 = max(0, min(giua - du // 3, len(tu) - du))
                 a, b = tu[i0][0], tu[min(len(tu), i0 + du) - 1][1]
                 body, bi_cat = t[a:b], True
+                if pp == "E2n":  # nhãn làm cửa sổ dài thêm vài từ so với ngân sách — ghi trong so_tu
+                    body = _gan_nhan_khoan(body, c.get("dieu_so"))
             da.add(key)
             text = tt + "\n" + body
             khoi.append({"so_hieu": c["so_hieu"], "text": text, "start": a, "end": b, "doc_id": c["doc_id"],
                          "chunk_id": c["chunk_id"], "mo_rong": True, "bi_cat": bi_cat, "so_tu": len(text.split())})
         else:
             body = c["text"]
-            if pp in ("E2", "E3"):
+            if pp in ("E2", "E3", "E2n"):
                 body = _bu_ngu_canh_e2(c, body)
             n = len(body.split())
             if n > con:
