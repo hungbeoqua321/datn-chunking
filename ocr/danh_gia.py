@@ -3,6 +3,9 @@
   CER        khoảng cách Levenshtein ký tự / độ dài text chuẩn (gộp trên mọi văn bản: tổng lỗi / tổng ký tự)
   WER        như trên nhưng đơn vị là từ (tách theo khoảng trắng)
   CER_bo_dau CER sau khi bỏ dấu tiếng Việt ở cả hai bên — phần chênh với CER là lỗi do SAI DẤU
+  CER_khong_chen (thay thế + xoá) / độ dài text chuẩn — bỏ lỗi CHÈN. Bản PDF gốc thường có thêm phụ lục, biểu
+             mẫu, chữ ký số mà text chuẩn không có; CER thô tính hết những chữ đó là lỗi. Độ đo này trả lời:
+             OCR khôi phục được bao nhiêu phần TEXT CHUẨN (cái RAG thật sự cần)
 
 Chuẩn hoá trước khi so: Unicode NFC, bỏ ranh giới trang \\f, gộp mọi khoảng trắng thành một dấu cách.
 Text chuẩn là data/clean_full (giữ cả quốc hiệu, "Căn cứ…", nơi nhận, chữ ký) nên phần chữ trên trang KHÔNG có
@@ -39,25 +42,37 @@ def bo_dau(s: str) -> str:
 
 
 def main() -> None:
-    argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter).parse_args()
-    cau_hinh = sorted(p for p in OCR.iterdir() if p.is_dir())
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--cau-hinh", nargs="*", help="chỉ chấm các cấu hình này (mặc định: mọi thư mục)")
+    ap.add_argument("--ra", default="ket_qua_ocr", help="tên tệp kết quả trong ocr/ (không đuôi)")
+    a = ap.parse_args()
+    global CSV_RA, MD_RA
+    CSV_RA, MD_RA = GOC / "ocr" / f"{a.ra}.csv", GOC / "ocr" / f"{a.ra}.md"
+    cau_hinh = sorted(p for p in OCR.iterdir() if p.is_dir() and (not a.cau_hinh or p.name in a.cau_hinh))
     chung = set.intersection(*({f.stem for f in p.glob("*.txt")} for p in cau_hinh))
     so_hieu = {r["id"]: r["so_hieu"] for r in csv.DictReader(open(MANIFEST))}
     dong, tong = [], {}
     for p in cau_hinh:
         tg = {}
-        for r in csv.DictReader(open(p / "_thoi_gian.csv")):
-            tg.setdefault(r["id"], []).append(float(r["giay_render"]) + float(r["giay_ocr"]))
+        for f in sorted(p.glob("_thoi_gian*.csv")):
+            for r in csv.DictReader(open(f)):
+                tg.setdefault(r["id"], []).append(float(r["giay_render"]) + float(r["giay_ocr"]))
         t = tong.setdefault(p.name, {"loi_c": 0, "c": 0, "loi_w": 0, "w": 0, "loi_bd": 0, "trang": 0, "giay": 0.0})
         for i in sorted(chung):
             ref, hyp = chuan((DOCS / f"{i}.txt").read_text()), chuan((p / f"{i}.txt").read_text())
             lc = Levenshtein.distance(ref, hyp)
             lw = Levenshtein.distance(ref.split(), hyp.split())
             lbd = Levenshtein.distance(bo_dau(ref), bo_dau(hyp))
+            op = Levenshtein.opcodes(ref, hyp)
+            lkc = sum(max(i2 - i1, j2 - j1) if tag == "replace" else i2 - i1
+                      for tag, i1, i2, j1, j2 in op if tag in ("replace", "delete"))
             dong.append({"cau_hinh": p.name, "id": i, "so_hieu": so_hieu.get(i, ""), "so_trang": len(tg[i]),
-                         "ky_tu": len(ref), "CER": round(lc / len(ref), 4), "WER": round(lw / len(ref.split()), 4),
-                         "CER_bo_dau": round(lbd / len(ref), 4), "giay_moi_trang": round(sum(tg[i]) / len(tg[i]), 2)})
+                         "ky_tu": len(ref), "ky_tu_ocr": len(hyp), "CER": round(lc / len(ref), 4),
+                         "WER": round(lw / len(ref.split()), 4), "CER_bo_dau": round(lbd / len(ref), 4),
+                         "CER_khong_chen": round(lkc / len(ref), 4),
+                         "giay_moi_trang": round(sum(tg[i]) / len(tg[i]), 2)})
             t["loi_c"] += lc; t["c"] += len(ref); t["loi_w"] += lw; t["w"] += len(ref.split()); t["loi_bd"] += lbd
+            t["loi_kc"] = t.get("loi_kc", 0) + lkc
             t["trang"] += len(tg[i]); t["giay"] += sum(tg[i])
 
     with open(CSV_RA, "w", newline="") as f:
@@ -67,11 +82,12 @@ def main() -> None:
     md = ["# Chất lượng OCR trên bản scan gốc", "",
           f"{len(chung)} văn bản, {next(iter(tong.values()))['trang']} trang; mọi cấu hình chấm trên cùng tập này. "
           "CER/WER gộp (tổng lỗi / tổng độ dài text chuẩn). Chi tiết từng văn bản: `ocr/ket_qua_ocr.csv`.", "",
-          "| Cấu hình | CER | WER | CER bỏ dấu | Lỗi do dấu | Giây/trang |", "|---|---:|---:|---:|---:|---:|"]
-    for ten, t in sorted(tong.items(), key=lambda x: x[1]["loi_c"] / x[1]["c"]):
+          "| Cấu hình | CER không tính chèn | CER | WER | CER bỏ dấu | Lỗi do dấu | Giây/trang |",
+          "|---|---:|---:|---:|---:|---:|---:|"]
+    for ten, t in sorted(tong.items(), key=lambda x: x[1]["loi_kc"] / x[1]["c"]):
         cer, cbd = t["loi_c"] / t["c"], t["loi_bd"] / t["c"]
-        md.append(f"| {ten} | {cer:.2%} | {t['loi_w'] / t['w']:.2%} | {cbd:.2%} | {cer - cbd:.2%} | "
-                  f"{t['giay'] / t['trang']:.2f} |")
+        md.append(f"| {ten} | {t['loi_kc'] / t['c']:.2%} | {cer:.2%} | {t['loi_w'] / t['w']:.2%} | {cbd:.2%} | "
+                  f"{cer - cbd:.2%} | {t['giay'] / t['trang']:.2f} |")
     md += ["", "CER ở đây là cận trên: số trang, dòng chữ ký số và chữ trong dấu giáp lai có trên bản scan nhưng "
            "không có trong text chuẩn nên bị tính là lỗi chèn."]
     MD_RA.write_text("\n".join(md) + "\n")
