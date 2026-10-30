@@ -17,7 +17,7 @@ tools/mm/
 tools/tesseract-env/
 # bộ OCR thì ĐƯA vào git: PDF scan gốc + text chuẩn tương ứng (nhỏ, không dựng lại được nếu vbpl đổi)
 !ocr/data/
-# 60 PDF gốc (332 MB) phát hành ở GitHub Release ocr-pdf-2026-10-30; trong git chỉ giữ 2 bản mẫu ở ocr/data/mau/
+# 60 PDF gốc (332 MB) phát hành ở GitHub Release du-lieu (pdf.zip); trong git chỉ giữ 2 bản mẫu ở ocr/data/mau/
 ocr/data/pdf/
 
 # Nhật ký chạy và tệp tạm của bước dựng câu hỏi (sinh lại được)

@@ -24,7 +24,7 @@ ocr/data/ocr/<cấu hình>/   text OCR + thời gian từng trang
 ocr/data/manifest_pdf.csv  id, số hiệu, sha256, số trang, số trang có lớp chữ
 ```
 
-60 PDF (332 MB) **không nằm trong git** — tải `datn-ocr-pdf.zip` ở release **`ocr-pdf-2026-10-30`**, giải nén tại
+60 PDF (332 MB) **không nằm trong git** — tải **`pdf.zip`** ở release **`du-lieu`**, giải nén tại
 gốc repo. Trong git có sẵn 2 bản scan mẫu ở `ocr/data/mau/` để xem dấu đỏ.
 
 PDF lấy từ gateway của Bộ Tư pháp (`vbpl-bientap-gateway.moj.gov.vn`, chỉ mở cho IP Việt Nam), **không đụng

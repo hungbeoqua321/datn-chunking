@@ -8,7 +8,7 @@ Chạy lại `python -m eval.chay_truy_hoi` trên máy cá nhân, ghi ra thư m�
 | Máy | aarch64 Neoverse-N1, Ubuntu 22.04 | x86_64 i5-11400H, Windows 11 |
 | Python | 3.12.13 | 3.12.13 (uv, python-build-standalone) |
 | torch | 2.14.1+cpu | 2.14.1+cu130, nhưng nhúng câu hỏi vẫn trên **CPU** (`NHUNG_DEVICE` mặc định) |
-| Chỉ mục | — | chép nguyên từ release `du-lieu-2026-10-29`, `rag.kiem_chi_muc` thoát 0 (17/17) |
+| Chỉ mục | — | chép nguyên từ release dữ liệu (nay là `docs.zip` của release `du-lieu`), `rag.kiem_chi_muc` thoát 0 (17/17) |
 
 Chạy mất 46 s.
 
