@@ -192,3 +192,45 @@ Lỗi này không nằm trong mã, nó nằm trong **cách tường thuật**. M
 báo lại nhiều lần thì mỗi lần là một phép đo mới, không phải một lần trích dẫn. Và khi một con số
 nhỏ được dùng để nói "khớp với dự đoán", đó đúng là lúc phải kiểm lại nó kỹ nhất — vì nó đang
 được dùng để đóng một câu hỏi, chứ không phải để mở một câu hỏi.
+
+---
+
+## 2026-10-30 — Bộ chấm trích dẫn: bảng cặp tương đương chưa được áp; rà gold `dieu_dai`; thêm tiêu chí phụ
+
+### Lệch ở đâu
+
+**(1) Bảng cặp tương đương bị bỏ sót ở tầng trích dẫn.** `eval/cham.py` ghi rõ bản tương đương E(G) "dùng cho cả
+chấm truy hồi lẫn chấm trích dẫn", nhưng `eval/cham_trich_dan.cham_mot` chỉ so với khoá của chính gold. Mô hình dẫn
+`83/2026/VBHN-TT-BXD` (văn bản hợp nhất, cùng Điều/khoản, nguyên văn giống hệt) thay cho `03/2020/TT-BXD` bị chấm sai,
+trong khi ở tầng truy hồi chunk của bản hợp nhất đó được tính là trúng.
+
+**(2) Rà 19 câu `dieu_dai`.** Yêu cầu: đơn vị dẫn là dòng tiêu đề Điều; câu nào có đơn vị gold lấy cả Điều thì sửa
+gold. Kết quả rà: **0/19 câu có đơn vị gold lấy cả Điều** (đơn vị dài nhất 142 từ, là một khoản — q129). Hai câu q122,
+q127 có một đơn vị cấp Điều (không khoản) mà span là **câu dẫn** "Trong Luật này, các từ ngữ dưới đây được hiểu như sau:"
+(12 từ). Không sửa gold câu nào.
+
+Bản phân tích lỗi ngày 30/10 (`results/local_gpu/phan_tich_loi.md` §4) đã viết sai rằng q127 hụt "vì gold là cả Điều 3".
+Kiểm lại: câu dẫn nằm trong chunk B "Điều 3 … Khoản 1", chunk đó đứng hạng 779 (q122: hạng 2.156) nên không vào 50 ứng
+viên. Dòng tiêu đề Điều nằm trong chính chunk đó, nên đổi span sang dòng tiêu đề cũng không đổi kết quả truy hồi; ở tầng
+trích dẫn khoá chấm là (số hiệu, Điều 3), không phụ thuộc span. Câu sai đã được sửa trong `eval/phan_tich_loi.py`.
+
+**(3) Một tiêu chí duy nhất phạt cả trích thừa.** "Đúng toàn phần" = đủ gold *và* không thừa. Thêm tiêu chí phụ
+**đủ gold** (đủ mọi đơn vị gold, cho phép thừa). Mọi bảng trích dẫn báo hai cột: *khớp hoàn toàn* (chính, chính là "đúng
+toàn phần" cũ) và *đủ gold* (phụ).
+
+### Vì sao các lần kiểm trước lọt
+
+Bộ chấm trích dẫn được kiểm bằng 120 nhãn tay — các nhãn đó kiểm **bộ bóc** (regex đọc ra Điều/khoản nào), không kiểm
+**phép so với gold**. Câu dẫn bản hợp nhất bóc đúng, nên nhãn tay khớp; lỗi nằm ở bước so khoá ngay sau đó, nơi không
+có phép kiểm nào. Lỗi (2) là lỗi tường thuật: một nhận định viết từ con số (độ phủ 0 trong 50 ứng viên) mà không mở gold
+ra xem.
+
+### Sửa thế nào
+
+1. `cham_mot(r, muc, td)` nhận `td` từ `eval.chay_truy_hoi._td_cho` (cùng hàm tầng truy hồi dùng, câu phiên bản trả
+   rỗng): trích dẫn trỏ vào bản tương đương được quy về đúng khoá gold.
+2. `eval/bang_day_du.py` ghi cả kết quả trước sửa (`dieu_toan_phan_khong_td`) vào `chi_tiet_cau.jsonl` và in số câu đổi
+   kết quả ở mục 0 của `metrics_trich_dan.md`.
+3. Chấm lại, **không sinh lại**. Số lượt đổi kết quả (mức Điều, khớp hoàn toàn): bộ chính 7 lượt, đều 0 → 1 — q010 ở
+   A, B, B+, E, E2, E3 và q015 ở A; manh_con 7 lượt (mc020 ở B, B+, Etat_k, Echi_s, E2, E3, E3b). Không lượt nào 1 → 0.
+   Sửa (2): 0 lượt. Sửa (3): không đổi cột chính.

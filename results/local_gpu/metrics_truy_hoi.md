@@ -1,6 +1,6 @@
 # Độ đo tầng truy hồi — local GPU
 
-Lượt chạy **local GPU** (RTX 2050, Qwen3-4B Q4_0 CUDA), 2026-10-30 15:06. Cấu hình sinh khoá như VPS: ngân sách 1200 từ, 50 ứng viên, 384 token, nhiệt độ 0, cùng lời nhắc. Sinh bằng `python -m eval.bang_day_du` từ `pilot_tra_loi.jsonl` / `manh_con_tra_loi.jsonl` cùng thư mục. Hiệu số: bootstrap ghép cặp 95% (1000 lần, phân tầng theo nhóm); **đậm** = khoảng tin cậy không chứa 0.
+Lượt chạy **local GPU** (RTX 2050, Qwen3-4B Q4_0 CUDA), 2026-10-30 16:59. Cấu hình sinh khoá như VPS: ngân sách 1200 từ, 50 ứng viên, 384 token, nhiệt độ 0, cùng lời nhắc. Sinh bằng `python -m eval.bang_day_du` từ `pilot_tra_loi.jsonl` / `manh_con_tra_loi.jsonl` cùng thư mục. Hiệu số: bootstrap ghép cặp 95% (1000 lần, phân tầng theo nhóm); **đậm** = khoảng tin cậy không chứa 0.
 
 Hai tầng: *xếp hạng chunk* (R@k, R@1200t, MRR — B+ trùng B, E2/E3 trùng Echi_s ở tầng này) và *gold trong ngữ cảnh* (khối thật sự đưa cho mô hình sau ngân sách, mở rộng Điều, kéo dẫn chiếu). E = E đầy đủ (Eduoi).
 
@@ -144,4 +144,4 @@ Hai tầng: *xếp hạng chunk* (R@k, R@1200t, MRR — B+ trùng B, E2/E3 trùn
 
 `phien_ban`: bản cũ nằm trong bảng tương đương nên lấy về **không phải lỗi**. `ban_cu_nhieu`: bản cũ **ngoài** bảng tương đương — lấy về là nhiễu thật.
 
-Thời gian chấm: 39 s.
+Thời gian chấm: 62 s.

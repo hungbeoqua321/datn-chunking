@@ -236,47 +236,45 @@ def main() -> None:
            f"({cuu['B']['bo_dieu_bia']} câu B, {cuu['E2']['bo_dieu_bia']} câu E2). Đây là lý do cả 8 phương pháp đều "
            "0,000 ở nhóm này (bảng 2 của metrics_trich_dan.md).",
            "- **Dẫn thừa**: mô hình dẫn thêm Điều ở văn bản khác có trong ngữ cảnh (q003 dẫn cả Điều 467 BLTTHS và "
-           "Điều 387 BLTTDS bên cạnh Điều 139 Luật TCTAND đúng). Tiêu chí *đúng toàn phần* phạt mọi trích dẫn thừa.",
+           "Điều 387 BLTTDS bên cạnh Điều 139 Luật TCTAND đúng). Tiêu chí chính *khớp hoàn toàn* phạt mọi trích dẫn thừa (cột phụ *đủ gold* thì không).",
            f"- **E2 thua B chủ yếu vì mở rộng Điều**: {len(sai_e2)} câu B đúng mà E2 rơi vào T4, gần hết là *dẫn nhầm "
            "Điều*. Khối mở rộng lên cả Điều dài làm ngữ cảnh còn 1–2 khối; nhãn \"Điều N\" chỉ ở đầu khối nên mô hình "
            "gán khoản sang Điều khác hoặc lấy số khoản làm số Điều (q120: gold Điều 89 khoản 6 → E2 dẫn \"Điều 6\"; "
            "q039: Điều 46 khoản 3 → \"Điều 3 khoản 3\"). Đây là vấn đề *nhãn trong ngữ cảnh*, không phải truy hồi "
            "(R@5 của E2 = B).",
-           "- **Đúng số Điều, sai văn bản**: dẫn văn bản hợp nhất thay bản gốc (q010: 83/2026/VBHN-TT-BXD thay "
-           "03/2020/TT-BXD, cùng Điều 2 khoản 1). Gold chọn một bản; chấm nghiêm phạt bản kia.",
+           "- **Đúng số Điều, sai văn bản**: dẫn bản khác của cùng văn bản. Từ 30/10 bảng cặp tương đương được áp ở tầng "
+           "trích dẫn, nên q010 (dẫn 83/2026/VBHN-TT-BXD thay 03/2020/TT-BXD, cùng Điều 2 khoản 1) nay tính là đúng; "
+           "các ca còn lại ở thùng này là câu phiên bản (không áp bảng cặp) hoặc cặp văn bản ngoài bảng.",
            "- **T1 đều là hụt một phần** gold nhiều đơn vị: một đơn vị vào 50 ứng viên, đơn vị kia (thường là đích dẫn "
-           "chiếu, nhóm `dan_chieu`) thì không. Riêng q127 hụt vì gold là *cả* Điều 3 \"Giải thích từ ngữ\" — không chunk "
-           "nào phủ ≥ 50% Điều dài đó; đây là giới hạn của định nghĩa gold, không phải của truy hồi.",
+           "chiếu, nhóm `dan_chieu`) thì không. Riêng q127 (và q122, cùng dạng): gold có một đơn vị cấp Điều mà span là "
+           "**câu dẫn** \"Trong Luật này, các từ ngữ dưới đây được hiểu như sau:\" (12 từ, KHÔNG phải cả Điều — bản trước "
+           "ghi sai, xem `results/nhat_ky_sua_loi.md` 30/10). Câu dẫn nằm trong chunk \"Điều 3 … Khoản 1\", chunk đó "
+           "đứng hạng 779 (q122: 2.156) nên không vào 50 ứng viên.",
            f"- **T2**: chunk gold đầu tiên ở hạng ≤ 6 ở {t2_gan['B']}/{dem['B']['T2']} câu B — phần lớn là gold nhiều "
            "đơn vị, một đơn vị đã vào ngữ cảnh, đơn vị kia nằm ngoài 1.200 từ.",
            "- **T5, T6 nhỏ**. q021 cắt trần ở cả 8 phương pháp (câu trả lời liệt kê dài, chạm 384 token) — lỗi của câu "
            "hỏi chứ không của phương pháp.",
-           "", "## 5. Cải tiến đề xuất — xếp theo số câu kỳ vọng cứu được", "",
-           "Số câu: cận trên ước trên câu trả lời đã sinh (mục 3), B / E2. Mọi thay đổi lời nhắc phải áp cho **cả 8 "
-           "phương pháp** và sinh lại; regex chấm **không đổi**.", "",
-           "| # | thùng | cách sửa | câu kỳ vọng (B / E2) | chi phí | rủi ro với tính công bằng |",
-           "|---:|---|---|---|---|---|",
-           f"| 1 | T4 bịa Điều | Lời nhắc: \"khối không có nhãn Điều thì chỉ ghi số hiệu văn bản, KHÔNG tự đặt số Điều\" "
-           f"| ≤ {cuu['B']['bo_dieu_bia']} / ≤ {cuu['E2']['bo_dieu_bia']} | 1 dòng lời nhắc; sinh lại 880 lượt ≈ 1 giờ GPU "
-           "| Trung bình: C và D (chunk không nhãn Điều) sẽ bớt *tự đoán* — số trích dẫn của C/D có thể giảm thật, phải báo "
-           "cả trước/sau |",
-           f"| 2 | T4 dẫn nhầm sau mở rộng | Tầng sinh: khi mở rộng lên Điều, gắn lại nhãn \"Điều N khoản k\" ở đầu mỗi khoản "
-           f"trong khối (không đụng chuỗi nhúng) | 0 / ≤ {len(sai_e2)} | ~20 dòng ở `truy_hoi.ngu_canh`; sinh lại B+, E2, E3 "
-           "≈ 25 phút | Thấp nếu ghi thành biến thể mới (E2′), giữ E2 cũ; B không đổi |",
-           f"| 3 | T2 ngoài ngân sách | Nâng ngân sách 1.800 / 2.400 từ (bước 4.2 đo thật) | ≤ {dem['B']['T2']} / ≤ "
-           f"{dem['E2']['T2']} | Prompt dài hơn; **2.400 từ ≈ 4.000 token, vượt n_ctx 4096** khi cộng 384 token trả lời "
-           "— cần nâng n_ctx, tức đổi cờ server | Thấp nếu mọi phương pháp cùng ngân sách; nhưng đổi n_ctx là đổi cấu "
-           "hình khoá |",
-           f"| 4 | T4 dẫn thừa | Lời nhắc: \"chỉ dẫn Điều/khoản trực tiếp trả lời câu hỏi\" (KHÔNG cắt trích dẫn bằng hậu "
-           f"xử lý) | ≤ {cuu['B']['chi_dau']} / ≤ {cuu['E2']['chi_dau']} | 1 dòng lời nhắc, sinh lại cùng #1 "
-           "| Trung bình: có thể làm thiếu ở `xuyen_khoan` (gold nhiều đơn vị) — phải xem riêng nhóm đó |",
-           f"| 5 | T1 hụt một phần / T3 `dan_chieu` | E3 (theo dẫn chiếu) + rerank | ≤ {dem['B']['T1'] + dem['B']['T3']} / ≤ "
-           f"{dem['E2']['T1'] + dem['E2']['T3']} | rerank đã có (`rag/rerank.py`), thêm một lượt cross-encoder mỗi câu | Thấp — áp đồng đều |",
-           "| 6 | T4 sai văn bản | Không sửa ở chấm (regex đã chốt). Có thể ghi chú bản hợp nhất ≡ bản gốc trong báo cáo "
-           f"| ≤ 3 / ≤ 2 | 0 | **Cao nếu sửa bộ chấm** — đổi luật chấm sau khi thấy kết quả |",
-           f"| 7 | T6 cắt trần | MAX_TOKENS 512 | {dem['B']['T6']} / {dem['E2']['T6']} | +30% thời gian sinh | Cờ khoá — chỉ "
-           "làm như thử nghiệm phụ |",
-           "| 8 | T5 từ chối sai | Lời nhắc bớt thận trọng | 1 / 0 | thấp | Tăng nguy cơ bịa ở câu không có gold |"]
+           "", "## 5. Cải tiến — xếp theo số câu kỳ vọng cứu được", "",
+           "Số câu: cận trên ước trên câu trả lời đã sinh (mục 3), B / E2. Regex chấm **không đổi**. Sau khi duyệt "
+           "(30/10): giữ #1, #2, #3 làm thử nghiệm ở bước 4 (`results/local_gpu/thu_them.md`, mỗi mục có kiểm soát chạy "
+           "cùng lượt); #6 xử lý bằng sửa bộ chấm; **bỏ** bốn đề xuất cũ: chỉ dẫn đơn vị trực tiếp trả lời (dẫn thừa), "
+           "E3 + rerank, MAX_TOKENS 512, lời nhắc bớt thận trọng.", "",
+           "| # | thùng | cách sửa | câu kỳ vọng (B / E2) | chi phí | rủi ro với tính công bằng | trạng thái |",
+           "|---:|---|---|---|---|---|---|",
+           f"| 1 | T4 bịa Điều | Lời nhắc P1: \"đoạn không có 'Điều' thì chỉ ghi số hiệu, không tự đặt số Điều\" "
+           f"| ≤ {cuu['B']['bo_dieu_bia']} / ≤ {cuu['E2']['bo_dieu_bia']} | 1 dòng lời nhắc; sinh lại cả 8 phương pháp "
+           "| Trung bình: C và D sẽ bớt *tự đoán* — báo trước/sau P1 cho C và D ở nhóm `khong_co_dieu` "
+           "| thử nghiệm 4.5: P1 × 8 phương pháp, kiểm soát lời nhắc gốc cùng lượt |",
+           f"| 2 | T4 dẫn nhầm sau mở rộng | Tầng sinh: gắn lại nhãn \"(Điều N khoản k)\" ở đầu mỗi khoản trong khối mở "
+           f"rộng (không đụng chuỗi nhúng) | 0 / ≤ {len(sai_e2)} | ~20 dòng ở `truy_hoi.ngu_canh` "
+           "| Thấp: biến thể riêng E2n, E2 không đổi | thử nghiệm 4.5: E2n so với kiểm soát E2 |",
+           f"| 3 | T2 ngoài ngân sách | Ngân sách 600 / 1.200 / 1.800 / 2.400 từ | ≤ {dem['B']['T2']} / ≤ {dem['E2']['T2']} "
+           "| 2.400 từ vượt n_ctx 4096 → nâng n_ctx 8192 **chỉ cho lượt 2.400 từ** | Thấp nếu mọi phương pháp cùng ngân "
+           "sách | thử nghiệm 4.2 |",
+           "| 6 | T4 sai văn bản | Áp bảng cặp tương đương **đã chốt** (`eval/cap_tuong_duong.csv`) ở tầng trích dẫn như "
+           "tầng truy hồi; câu phiên bản không áp | đã áp: B +1, E2 +1 (q010) | 0 | Thấp: luật tương đương có từ trước, đã "
+           "ghi trong `eval/cham.py` là dùng cho cả hai tầng; trước 30/10 tầng trích dẫn bỏ sót — đây là sửa lỗi cài đặt, "
+           "không phải luật mới | đã làm (`results/nhat_ky_sua_loi.md`) |"]
     md += ["", f"Thời gian chạy: {time.monotonic() - t0:.0f} s."]
     (ch.RESULTS / "phan_tich_loi.md").write_text("\n".join(md) + "\n", encoding="utf-8")
     print("\n".join(md))

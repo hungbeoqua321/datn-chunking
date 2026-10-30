@@ -1,1470 +1,1960 @@
 loai_dong,bo,pp,tap,n,do_do,gia_tri,ci_duoi,ci_tren
-diem,chinh,A,tất cả,110,dieu_toan_phan,0.1909,,
+diem,chinh,A,tất cả,110,dieu_toan_phan,0.2091,,
+diem,chinh,A,tất cả,110,dieu_du_gold,0.2545,,
 diem,chinh,A,tất cả,110,khoan_toan_phan,0.1182,,
-diem,chinh,A,tất cả,110,dieu_phu,0.25,,
-diem,chinh,A,tất cả,110,dieu_chinh_xac,0.2364,,
+diem,chinh,A,tất cả,110,khoan_du_gold,0.1545,,
+diem,chinh,A,tất cả,110,dieu_phu,0.2682,,
+diem,chinh,A,tất cả,110,dieu_chinh_xac,0.2545,,
 diem,chinh,A,tất cả,110,co_trich,0.8545,,
-diem,chinh,A,tất cả,110,thieu,0.7636,,
+diem,chinh,A,tất cả,110,thieu,0.7455,,
 diem,chinh,C,tất cả,110,dieu_toan_phan,0.1727,,
+diem,chinh,C,tất cả,110,dieu_du_gold,0.2182,,
 diem,chinh,C,tất cả,110,khoan_toan_phan,0.0818,,
+diem,chinh,C,tất cả,110,khoan_du_gold,0.1364,,
 diem,chinh,C,tất cả,110,dieu_phu,0.2364,,
 diem,chinh,C,tất cả,110,dieu_chinh_xac,0.2258,,
 diem,chinh,C,tất cả,110,co_trich,0.9091,,
 diem,chinh,C,tất cả,110,thieu,0.7818,,
 diem,chinh,D,tất cả,110,dieu_toan_phan,0.1909,,
+diem,chinh,D,tất cả,110,dieu_du_gold,0.2273,,
 diem,chinh,D,tất cả,110,khoan_toan_phan,0.1182,,
+diem,chinh,D,tất cả,110,khoan_du_gold,0.1545,,
 diem,chinh,D,tất cả,110,dieu_phu,0.2455,,
 diem,chinh,D,tất cả,110,dieu_chinh_xac,0.2377,,
 diem,chinh,D,tất cả,110,co_trich,0.8636,,
 diem,chinh,D,tất cả,110,thieu,0.7727,,
-diem,chinh,B,tất cả,110,dieu_toan_phan,0.5273,,
-diem,chinh,B,tất cả,110,khoan_toan_phan,0.3727,,
-diem,chinh,B,tất cả,110,dieu_phu,0.6682,,
-diem,chinh,B,tất cả,110,dieu_chinh_xac,0.6336,,
+diem,chinh,B,tất cả,110,dieu_toan_phan,0.5364,,
+diem,chinh,B,tất cả,110,dieu_du_gold,0.6455,,
+diem,chinh,B,tất cả,110,khoan_toan_phan,0.3818,,
+diem,chinh,B,tất cả,110,khoan_du_gold,0.4818,,
+diem,chinh,B,tất cả,110,dieu_phu,0.6773,,
+diem,chinh,B,tất cả,110,dieu_chinh_xac,0.6427,,
 diem,chinh,B,tất cả,110,co_trich,0.9364,,
-diem,chinh,B,tất cả,110,thieu,0.3636,,
-diem,chinh,B+,tất cả,110,dieu_toan_phan,0.4273,,
-diem,chinh,B+,tất cả,110,khoan_toan_phan,0.2182,,
-diem,chinh,B+,tất cả,110,dieu_phu,0.5364,,
-diem,chinh,B+,tất cả,110,dieu_chinh_xac,0.5139,,
+diem,chinh,B,tất cả,110,thieu,0.3545,,
+diem,chinh,B+,tất cả,110,dieu_toan_phan,0.4364,,
+diem,chinh,B+,tất cả,110,dieu_du_gold,0.5182,,
+diem,chinh,B+,tất cả,110,khoan_toan_phan,0.2273,,
+diem,chinh,B+,tất cả,110,khoan_du_gold,0.3364,,
+diem,chinh,B+,tất cả,110,dieu_phu,0.5455,,
+diem,chinh,B+,tất cả,110,dieu_chinh_xac,0.523,,
 diem,chinh,B+,tất cả,110,co_trich,0.8636,,
-diem,chinh,B+,tất cả,110,thieu,0.4909,,
-diem,chinh,E,tất cả,110,dieu_toan_phan,0.5545,,
-diem,chinh,E,tất cả,110,khoan_toan_phan,0.4,,
-diem,chinh,E,tất cả,110,dieu_phu,0.6864,,
-diem,chinh,E,tất cả,110,dieu_chinh_xac,0.6606,,
+diem,chinh,B+,tất cả,110,thieu,0.4818,,
+diem,chinh,E,tất cả,110,dieu_toan_phan,0.5636,,
+diem,chinh,E,tất cả,110,dieu_du_gold,0.6636,,
+diem,chinh,E,tất cả,110,khoan_toan_phan,0.4091,,
+diem,chinh,E,tất cả,110,khoan_du_gold,0.5091,,
+diem,chinh,E,tất cả,110,dieu_phu,0.6955,,
+diem,chinh,E,tất cả,110,dieu_chinh_xac,0.6697,,
 diem,chinh,E,tất cả,110,co_trich,0.9455,,
-diem,chinh,E,tất cả,110,thieu,0.3455,,
-diem,chinh,E2,tất cả,110,dieu_toan_phan,0.4273,,
-diem,chinh,E2,tất cả,110,khoan_toan_phan,0.2182,,
-diem,chinh,E2,tất cả,110,dieu_phu,0.5364,,
-diem,chinh,E2,tất cả,110,dieu_chinh_xac,0.5139,,
+diem,chinh,E,tất cả,110,thieu,0.3364,,
+diem,chinh,E2,tất cả,110,dieu_toan_phan,0.4364,,
+diem,chinh,E2,tất cả,110,dieu_du_gold,0.5182,,
+diem,chinh,E2,tất cả,110,khoan_toan_phan,0.2273,,
+diem,chinh,E2,tất cả,110,khoan_du_gold,0.3364,,
+diem,chinh,E2,tất cả,110,dieu_phu,0.5455,,
+diem,chinh,E2,tất cả,110,dieu_chinh_xac,0.523,,
 diem,chinh,E2,tất cả,110,co_trich,0.8636,,
-diem,chinh,E2,tất cả,110,thieu,0.4909,,
-diem,chinh,E3,tất cả,110,dieu_toan_phan,0.4818,,
-diem,chinh,E3,tất cả,110,khoan_toan_phan,0.2636,,
-diem,chinh,E3,tất cả,110,dieu_phu,0.55,,
-diem,chinh,E3,tất cả,110,dieu_chinh_xac,0.5485,,
+diem,chinh,E2,tất cả,110,thieu,0.4818,,
+diem,chinh,E3,tất cả,110,dieu_toan_phan,0.4909,,
+diem,chinh,E3,tất cả,110,dieu_du_gold,0.5364,,
+diem,chinh,E3,tất cả,110,khoan_toan_phan,0.2727,,
+diem,chinh,E3,tất cả,110,khoan_du_gold,0.3455,,
+diem,chinh,E3,tất cả,110,dieu_phu,0.5591,,
+diem,chinh,E3,tất cả,110,dieu_chinh_xac,0.5576,,
 diem,chinh,E3,tất cả,110,co_trich,0.8727,,
-diem,chinh,E3,tất cả,110,thieu,0.4727,,
-hieu,chinh,C − A,tất cả,110,dieu_toan_phan,-0.0182,-0.1091,0.0727
+diem,chinh,E3,tất cả,110,thieu,0.4636,,
+hieu,chinh,C − A,tất cả,110,dieu_toan_phan,-0.0364,-0.1273,0.0545
+hieu,chinh,C − A,tất cả,110,dieu_du_gold,-0.0364,-0.1273,0.0545
 hieu,chinh,C − A,tất cả,110,khoan_toan_phan,-0.0364,-0.1,0.0273
-hieu,chinh,C − A,tất cả,110,dieu_phu,-0.0136,-0.1,0.0773
-hieu,chinh,C − A,tất cả,110,dieu_chinh_xac,-0.0106,-0.0955,0.0712
+hieu,chinh,C − A,tất cả,110,khoan_du_gold,-0.0182,-0.0909,0.0636
+hieu,chinh,C − A,tất cả,110,dieu_phu,-0.0318,-0.1227,0.0591
+hieu,chinh,C − A,tất cả,110,dieu_chinh_xac,-0.0288,-0.1159,0.0568
 hieu,chinh,C − A,tất cả,110,co_trich,0.0545,0.0,0.1091
-hieu,chinh,C − A,tất cả,110,thieu,0.0182,-0.0727,0.1091
-hieu,chinh,D − A,tất cả,110,dieu_toan_phan,0.0,-0.0818,0.0909
+hieu,chinh,C − A,tất cả,110,thieu,0.0364,-0.0545,0.1273
+hieu,chinh,D − A,tất cả,110,dieu_toan_phan,-0.0182,-0.1,0.0636
+hieu,chinh,D − A,tất cả,110,dieu_du_gold,-0.0273,-0.1182,0.0636
 hieu,chinh,D − A,tất cả,110,khoan_toan_phan,0.0,-0.0727,0.0818
-hieu,chinh,D − A,tất cả,110,dieu_phu,-0.0045,-0.0909,0.0818
-hieu,chinh,D − A,tất cả,110,dieu_chinh_xac,0.0013,-0.0851,0.0912
+hieu,chinh,D − A,tất cả,110,khoan_du_gold,0.0,-0.0818,0.0818
+hieu,chinh,D − A,tất cả,110,dieu_phu,-0.0227,-0.1091,0.0591
+hieu,chinh,D − A,tất cả,110,dieu_chinh_xac,-0.0169,-0.101,0.0705
 hieu,chinh,D − A,tất cả,110,co_trich,0.0091,-0.0545,0.0727
-hieu,chinh,D − A,tất cả,110,thieu,0.0091,-0.0818,0.1
-hieu,chinh,B − A,tất cả,110,dieu_toan_phan,0.3364,0.2455,0.4182
-hieu,chinh,B − A,tất cả,110,khoan_toan_phan,0.2545,0.1727,0.3364
-hieu,chinh,B − A,tất cả,110,dieu_phu,0.4182,0.3318,0.4955
-hieu,chinh,B − A,tất cả,110,dieu_chinh_xac,0.3973,0.3117,0.4773
+hieu,chinh,D − A,tất cả,110,thieu,0.0273,-0.0636,0.1182
+hieu,chinh,B − A,tất cả,110,dieu_toan_phan,0.3273,0.2364,0.4091
+hieu,chinh,B − A,tất cả,110,dieu_du_gold,0.3909,0.3,0.4727
+hieu,chinh,B − A,tất cả,110,khoan_toan_phan,0.2636,0.1818,0.3455
+hieu,chinh,B − A,tất cả,110,khoan_du_gold,0.3273,0.2273,0.4182
+hieu,chinh,B − A,tất cả,110,dieu_phu,0.4091,0.3227,0.4909
+hieu,chinh,B − A,tất cả,110,dieu_chinh_xac,0.3882,0.3038,0.4682
 hieu,chinh,B − A,tất cả,110,co_trich,0.0818,0.0273,0.1364
-hieu,chinh,B − A,tất cả,110,thieu,-0.4,-0.4818,-0.3091
-hieu,chinh,B+ − A,tất cả,110,dieu_toan_phan,0.2364,0.1455,0.3182
-hieu,chinh,B+ − A,tất cả,110,khoan_toan_phan,0.1,0.0273,0.1636
-hieu,chinh,B+ − A,tất cả,110,dieu_phu,0.2864,0.2,0.3727
-hieu,chinh,B+ − A,tất cả,110,dieu_chinh_xac,0.2776,0.1909,0.3677
+hieu,chinh,B − A,tất cả,110,thieu,-0.3909,-0.4727,-0.3
+hieu,chinh,B+ − A,tất cả,110,dieu_toan_phan,0.2273,0.1455,0.3182
+hieu,chinh,B+ − A,tất cả,110,dieu_du_gold,0.2636,0.1727,0.3545
+hieu,chinh,B+ − A,tất cả,110,khoan_toan_phan,0.1091,0.0364,0.1727
+hieu,chinh,B+ − A,tất cả,110,khoan_du_gold,0.1818,0.0909,0.2545
+hieu,chinh,B+ − A,tất cả,110,dieu_phu,0.2773,0.1909,0.3636
+hieu,chinh,B+ − A,tất cả,110,dieu_chinh_xac,0.2685,0.1818,0.3594
 hieu,chinh,B+ − A,tất cả,110,co_trich,0.0091,-0.0636,0.0818
-hieu,chinh,B+ − A,tất cả,110,thieu,-0.2727,-0.3636,-0.1818
-hieu,chinh,E − A,tất cả,110,dieu_toan_phan,0.3636,0.2727,0.4455
-hieu,chinh,E − A,tất cả,110,khoan_toan_phan,0.2818,0.1909,0.3545
-hieu,chinh,E − A,tất cả,110,dieu_phu,0.4364,0.35,0.5227
-hieu,chinh,E − A,tất cả,110,dieu_chinh_xac,0.4242,0.3409,0.503
+hieu,chinh,B+ − A,tất cả,110,thieu,-0.2636,-0.3545,-0.1727
+hieu,chinh,E − A,tất cả,110,dieu_toan_phan,0.3545,0.2636,0.4364
+hieu,chinh,E − A,tất cả,110,dieu_du_gold,0.4091,0.3182,0.4909
+hieu,chinh,E − A,tất cả,110,khoan_toan_phan,0.2909,0.2,0.3727
+hieu,chinh,E − A,tất cả,110,khoan_du_gold,0.3545,0.2545,0.4455
+hieu,chinh,E − A,tất cả,110,dieu_phu,0.4273,0.3409,0.5136
+hieu,chinh,E − A,tất cả,110,dieu_chinh_xac,0.4152,0.3318,0.497
 hieu,chinh,E − A,tất cả,110,co_trich,0.0909,0.0364,0.1455
-hieu,chinh,E − A,tất cả,110,thieu,-0.4182,-0.5,-0.3273
-hieu,chinh,E2 − A,tất cả,110,dieu_toan_phan,0.2364,0.1455,0.3182
-hieu,chinh,E2 − A,tất cả,110,khoan_toan_phan,0.1,0.0273,0.1636
-hieu,chinh,E2 − A,tất cả,110,dieu_phu,0.2864,0.2,0.3727
-hieu,chinh,E2 − A,tất cả,110,dieu_chinh_xac,0.2776,0.1909,0.3677
+hieu,chinh,E − A,tất cả,110,thieu,-0.4091,-0.4909,-0.3182
+hieu,chinh,E2 − A,tất cả,110,dieu_toan_phan,0.2273,0.1455,0.3182
+hieu,chinh,E2 − A,tất cả,110,dieu_du_gold,0.2636,0.1727,0.3545
+hieu,chinh,E2 − A,tất cả,110,khoan_toan_phan,0.1091,0.0364,0.1727
+hieu,chinh,E2 − A,tất cả,110,khoan_du_gold,0.1818,0.0909,0.2545
+hieu,chinh,E2 − A,tất cả,110,dieu_phu,0.2773,0.1909,0.3636
+hieu,chinh,E2 − A,tất cả,110,dieu_chinh_xac,0.2685,0.1818,0.3594
 hieu,chinh,E2 − A,tất cả,110,co_trich,0.0091,-0.0636,0.0818
-hieu,chinh,E2 − A,tất cả,110,thieu,-0.2727,-0.3636,-0.1818
-hieu,chinh,E3 − A,tất cả,110,dieu_toan_phan,0.2909,0.2091,0.3818
-hieu,chinh,E3 − A,tất cả,110,khoan_toan_phan,0.1455,0.0727,0.2182
-hieu,chinh,E3 − A,tất cả,110,dieu_phu,0.3,0.2091,0.4
-hieu,chinh,E3 − A,tất cả,110,dieu_chinh_xac,0.3121,0.2265,0.4023
+hieu,chinh,E2 − A,tất cả,110,thieu,-0.2636,-0.3545,-0.1727
+hieu,chinh,E3 − A,tất cả,110,dieu_toan_phan,0.2818,0.2,0.3727
+hieu,chinh,E3 − A,tất cả,110,dieu_du_gold,0.2818,0.1909,0.3727
+hieu,chinh,E3 − A,tất cả,110,khoan_toan_phan,0.1545,0.0818,0.2364
+hieu,chinh,E3 − A,tất cả,110,khoan_du_gold,0.1909,0.1,0.2818
+hieu,chinh,E3 − A,tất cả,110,dieu_phu,0.2909,0.2,0.3818
+hieu,chinh,E3 − A,tất cả,110,dieu_chinh_xac,0.303,0.2167,0.3924
 hieu,chinh,E3 − A,tất cả,110,co_trich,0.0182,-0.0455,0.1
-hieu,chinh,E3 − A,tất cả,110,thieu,-0.2909,-0.3909,-0.2
-hieu,chinh,A − B,tất cả,110,dieu_toan_phan,-0.3364,-0.4182,-0.2455
-hieu,chinh,A − B,tất cả,110,khoan_toan_phan,-0.2545,-0.3364,-0.1727
-hieu,chinh,A − B,tất cả,110,dieu_phu,-0.4182,-0.4955,-0.3318
-hieu,chinh,A − B,tất cả,110,dieu_chinh_xac,-0.3973,-0.4773,-0.3117
+hieu,chinh,E3 − A,tất cả,110,thieu,-0.2818,-0.3727,-0.1909
+hieu,chinh,A − B,tất cả,110,dieu_toan_phan,-0.3273,-0.4091,-0.2364
+hieu,chinh,A − B,tất cả,110,dieu_du_gold,-0.3909,-0.4727,-0.3
+hieu,chinh,A − B,tất cả,110,khoan_toan_phan,-0.2636,-0.3455,-0.1818
+hieu,chinh,A − B,tất cả,110,khoan_du_gold,-0.3273,-0.4182,-0.2273
+hieu,chinh,A − B,tất cả,110,dieu_phu,-0.4091,-0.4909,-0.3227
+hieu,chinh,A − B,tất cả,110,dieu_chinh_xac,-0.3882,-0.4682,-0.3038
 hieu,chinh,A − B,tất cả,110,co_trich,-0.0818,-0.1364,-0.0273
-hieu,chinh,A − B,tất cả,110,thieu,0.4,0.3091,0.4818
-hieu,chinh,C − B,tất cả,110,dieu_toan_phan,-0.3545,-0.4455,-0.2455
-hieu,chinh,C − B,tất cả,110,khoan_toan_phan,-0.2909,-0.3727,-0.2091
-hieu,chinh,C − B,tất cả,110,dieu_phu,-0.4318,-0.5227,-0.3364
-hieu,chinh,C − B,tất cả,110,dieu_chinh_xac,-0.4079,-0.4942,-0.3094
+hieu,chinh,A − B,tất cả,110,thieu,0.3909,0.3,0.4727
+hieu,chinh,C − B,tất cả,110,dieu_toan_phan,-0.3636,-0.4545,-0.2636
+hieu,chinh,C − B,tất cả,110,dieu_du_gold,-0.4273,-0.5182,-0.3273
+hieu,chinh,C − B,tất cả,110,khoan_toan_phan,-0.3,-0.3818,-0.2182
+hieu,chinh,C − B,tất cả,110,khoan_du_gold,-0.3455,-0.4364,-0.2455
+hieu,chinh,C − B,tất cả,110,dieu_phu,-0.4409,-0.5273,-0.3455
+hieu,chinh,C − B,tất cả,110,dieu_chinh_xac,-0.417,-0.5048,-0.3273
 hieu,chinh,C − B,tất cả,110,co_trich,-0.0273,-0.0818,0.0273
-hieu,chinh,C − B,tất cả,110,thieu,0.4182,0.3182,0.5091
-hieu,chinh,D − B,tất cả,110,dieu_toan_phan,-0.3364,-0.4182,-0.2364
-hieu,chinh,D − B,tất cả,110,khoan_toan_phan,-0.2545,-0.3364,-0.1636
-hieu,chinh,D − B,tất cả,110,dieu_phu,-0.4227,-0.5045,-0.3318
-hieu,chinh,D − B,tất cả,110,dieu_chinh_xac,-0.396,-0.4803,-0.3008
+hieu,chinh,C − B,tất cả,110,thieu,0.4273,0.3273,0.5182
+hieu,chinh,D − B,tất cả,110,dieu_toan_phan,-0.3455,-0.4273,-0.2545
+hieu,chinh,D − B,tất cả,110,dieu_du_gold,-0.4182,-0.5,-0.3364
+hieu,chinh,D − B,tất cả,110,khoan_toan_phan,-0.2636,-0.3455,-0.1727
+hieu,chinh,D − B,tất cả,110,khoan_du_gold,-0.3273,-0.4091,-0.2273
+hieu,chinh,D − B,tất cả,110,dieu_phu,-0.4318,-0.5136,-0.3455
+hieu,chinh,D − B,tất cả,110,dieu_chinh_xac,-0.4051,-0.4851,-0.3188
 hieu,chinh,D − B,tất cả,110,co_trich,-0.0727,-0.1273,-0.0182
-hieu,chinh,D − B,tất cả,110,thieu,0.4091,0.3182,0.4909
+hieu,chinh,D − B,tất cả,110,thieu,0.4182,0.3364,0.5
 hieu,chinh,B+ − B,tất cả,110,dieu_toan_phan,-0.1,-0.1727,-0.0182
+hieu,chinh,B+ − B,tất cả,110,dieu_du_gold,-0.1273,-0.2,-0.0455
 hieu,chinh,B+ − B,tất cả,110,khoan_toan_phan,-0.1545,-0.2182,-0.0909
+hieu,chinh,B+ − B,tất cả,110,khoan_du_gold,-0.1455,-0.2182,-0.0727
 hieu,chinh,B+ − B,tất cả,110,dieu_phu,-0.1318,-0.2,-0.0455
 hieu,chinh,B+ − B,tất cả,110,dieu_chinh_xac,-0.1197,-0.1894,-0.0394
 hieu,chinh,B+ − B,tất cả,110,co_trich,-0.0727,-0.1273,-0.0182
 hieu,chinh,B+ − B,tất cả,110,thieu,0.1273,0.0455,0.2
 hieu,chinh,E − B,tất cả,110,dieu_toan_phan,0.0273,-0.0091,0.0727
+hieu,chinh,E − B,tất cả,110,dieu_du_gold,0.0182,-0.0273,0.0636
 hieu,chinh,E − B,tất cả,110,khoan_toan_phan,0.0273,-0.0091,0.0727
+hieu,chinh,E − B,tất cả,110,khoan_du_gold,0.0273,-0.0091,0.0727
 hieu,chinh,E − B,tất cả,110,dieu_phu,0.0182,-0.0273,0.0636
 hieu,chinh,E − B,tất cả,110,dieu_chinh_xac,0.027,-0.0067,0.0652
 hieu,chinh,E − B,tất cả,110,co_trich,0.0091,0.0,0.0273
 hieu,chinh,E − B,tất cả,110,thieu,-0.0182,-0.0636,0.0273
 hieu,chinh,E2 − B,tất cả,110,dieu_toan_phan,-0.1,-0.1727,-0.0182
+hieu,chinh,E2 − B,tất cả,110,dieu_du_gold,-0.1273,-0.2,-0.0455
 hieu,chinh,E2 − B,tất cả,110,khoan_toan_phan,-0.1545,-0.2182,-0.0909
+hieu,chinh,E2 − B,tất cả,110,khoan_du_gold,-0.1455,-0.2182,-0.0727
 hieu,chinh,E2 − B,tất cả,110,dieu_phu,-0.1318,-0.2,-0.0455
 hieu,chinh,E2 − B,tất cả,110,dieu_chinh_xac,-0.1197,-0.1894,-0.0394
 hieu,chinh,E2 − B,tất cả,110,co_trich,-0.0727,-0.1273,-0.0182
 hieu,chinh,E2 − B,tất cả,110,thieu,0.1273,0.0455,0.2
 hieu,chinh,E3 − B,tất cả,110,dieu_toan_phan,-0.0455,-0.1273,0.0364
+hieu,chinh,E3 − B,tất cả,110,dieu_du_gold,-0.1091,-0.1818,-0.0273
 hieu,chinh,E3 − B,tất cả,110,khoan_toan_phan,-0.1091,-0.1727,-0.0455
+hieu,chinh,E3 − B,tất cả,110,khoan_du_gold,-0.1364,-0.2182,-0.0545
 hieu,chinh,E3 − B,tất cả,110,dieu_phu,-0.1182,-0.1909,-0.0318
 hieu,chinh,E3 − B,tất cả,110,dieu_chinh_xac,-0.0852,-0.1564,-0.0045
 hieu,chinh,E3 − B,tất cả,110,co_trich,-0.0636,-0.1182,-0.0182
 hieu,chinh,E3 − B,tất cả,110,thieu,0.1091,0.0273,0.1818
-diem,chinh,A,nhóm don_gian,50,dieu_toan_phan,0.3,,
+diem,chinh,A,nhóm don_gian,50,dieu_toan_phan,0.34,,
+diem,chinh,A,nhóm don_gian,50,dieu_du_gold,0.4,,
 diem,chinh,A,nhóm don_gian,50,khoan_toan_phan,0.22,,
-diem,chinh,A,nhóm don_gian,50,dieu_phu,0.36,,
-diem,chinh,A,nhóm don_gian,50,dieu_chinh_xac,0.32,,
+diem,chinh,A,nhóm don_gian,50,khoan_du_gold,0.28,,
+diem,chinh,A,nhóm don_gian,50,dieu_phu,0.4,,
+diem,chinh,A,nhóm don_gian,50,dieu_chinh_xac,0.36,,
 diem,chinh,A,nhóm don_gian,50,co_trich,0.9,,
-diem,chinh,A,nhóm don_gian,50,thieu,0.64,,
+diem,chinh,A,nhóm don_gian,50,thieu,0.6,,
 diem,chinh,C,nhóm don_gian,50,dieu_toan_phan,0.28,,
+diem,chinh,C,nhóm don_gian,50,dieu_du_gold,0.34,,
 diem,chinh,C,nhóm don_gian,50,khoan_toan_phan,0.18,,
+diem,chinh,C,nhóm don_gian,50,khoan_du_gold,0.26,,
 diem,chinh,C,nhóm don_gian,50,dieu_phu,0.34,,
 diem,chinh,C,nhóm don_gian,50,dieu_chinh_xac,0.3067,,
 diem,chinh,C,nhóm don_gian,50,co_trich,0.92,,
 diem,chinh,C,nhóm don_gian,50,thieu,0.66,,
 diem,chinh,D,nhóm don_gian,50,dieu_toan_phan,0.32,,
+diem,chinh,D,nhóm don_gian,50,dieu_du_gold,0.38,,
 diem,chinh,D,nhóm don_gian,50,khoan_toan_phan,0.24,,
+diem,chinh,D,nhóm don_gian,50,khoan_du_gold,0.32,,
 diem,chinh,D,nhóm don_gian,50,dieu_phu,0.38,,
 diem,chinh,D,nhóm don_gian,50,dieu_chinh_xac,0.3429,,
 diem,chinh,D,nhóm don_gian,50,co_trich,0.86,,
 diem,chinh,D,nhóm don_gian,50,thieu,0.62,,
-diem,chinh,B,nhóm don_gian,50,dieu_toan_phan,0.6,,
-diem,chinh,B,nhóm don_gian,50,khoan_toan_phan,0.46,,
-diem,chinh,B,nhóm don_gian,50,dieu_phu,0.76,,
-diem,chinh,B,nhóm don_gian,50,dieu_chinh_xac,0.6673,,
+diem,chinh,B,nhóm don_gian,50,dieu_toan_phan,0.62,,
+diem,chinh,B,nhóm don_gian,50,dieu_du_gold,0.78,,
+diem,chinh,B,nhóm don_gian,50,khoan_toan_phan,0.48,,
+diem,chinh,B,nhóm don_gian,50,khoan_du_gold,0.66,,
+diem,chinh,B,nhóm don_gian,50,dieu_phu,0.78,,
+diem,chinh,B,nhóm don_gian,50,dieu_chinh_xac,0.6873,,
 diem,chinh,B,nhóm don_gian,50,co_trich,0.92,,
-diem,chinh,B,nhóm don_gian,50,thieu,0.24,,
-diem,chinh,B+,nhóm don_gian,50,dieu_toan_phan,0.56,,
-diem,chinh,B+,nhóm don_gian,50,khoan_toan_phan,0.4,,
-diem,chinh,B+,nhóm don_gian,50,dieu_phu,0.72,,
-diem,chinh,B+,nhóm don_gian,50,dieu_chinh_xac,0.6307,,
+diem,chinh,B,nhóm don_gian,50,thieu,0.22,,
+diem,chinh,B+,nhóm don_gian,50,dieu_toan_phan,0.58,,
+diem,chinh,B+,nhóm don_gian,50,dieu_du_gold,0.74,,
+diem,chinh,B+,nhóm don_gian,50,khoan_toan_phan,0.42,,
+diem,chinh,B+,nhóm don_gian,50,khoan_du_gold,0.62,,
+diem,chinh,B+,nhóm don_gian,50,dieu_phu,0.74,,
+diem,chinh,B+,nhóm don_gian,50,dieu_chinh_xac,0.6507,,
 diem,chinh,B+,nhóm don_gian,50,co_trich,0.88,,
-diem,chinh,B+,nhóm don_gian,50,thieu,0.28,,
-diem,chinh,E,nhóm don_gian,50,dieu_toan_phan,0.66,,
-diem,chinh,E,nhóm don_gian,50,khoan_toan_phan,0.52,,
-diem,chinh,E,nhóm don_gian,50,dieu_phu,0.8,,
-diem,chinh,E,nhóm don_gian,50,dieu_chinh_xac,0.7267,,
+diem,chinh,B+,nhóm don_gian,50,thieu,0.26,,
+diem,chinh,E,nhóm don_gian,50,dieu_toan_phan,0.68,,
+diem,chinh,E,nhóm don_gian,50,dieu_du_gold,0.82,,
+diem,chinh,E,nhóm don_gian,50,khoan_toan_phan,0.54,,
+diem,chinh,E,nhóm don_gian,50,khoan_du_gold,0.72,,
+diem,chinh,E,nhóm don_gian,50,dieu_phu,0.82,,
+diem,chinh,E,nhóm don_gian,50,dieu_chinh_xac,0.7467,,
 diem,chinh,E,nhóm don_gian,50,co_trich,0.94,,
-diem,chinh,E,nhóm don_gian,50,thieu,0.2,,
-diem,chinh,E2,nhóm don_gian,50,dieu_toan_phan,0.56,,
-diem,chinh,E2,nhóm don_gian,50,khoan_toan_phan,0.4,,
-diem,chinh,E2,nhóm don_gian,50,dieu_phu,0.72,,
-diem,chinh,E2,nhóm don_gian,50,dieu_chinh_xac,0.6307,,
+diem,chinh,E,nhóm don_gian,50,thieu,0.18,,
+diem,chinh,E2,nhóm don_gian,50,dieu_toan_phan,0.58,,
+diem,chinh,E2,nhóm don_gian,50,dieu_du_gold,0.74,,
+diem,chinh,E2,nhóm don_gian,50,khoan_toan_phan,0.42,,
+diem,chinh,E2,nhóm don_gian,50,khoan_du_gold,0.62,,
+diem,chinh,E2,nhóm don_gian,50,dieu_phu,0.74,,
+diem,chinh,E2,nhóm don_gian,50,dieu_chinh_xac,0.6507,,
 diem,chinh,E2,nhóm don_gian,50,co_trich,0.88,,
-diem,chinh,E2,nhóm don_gian,50,thieu,0.28,,
-diem,chinh,E3,nhóm don_gian,50,dieu_toan_phan,0.6,,
-diem,chinh,E3,nhóm don_gian,50,khoan_toan_phan,0.42,,
-diem,chinh,E3,nhóm don_gian,50,dieu_phu,0.7,,
-diem,chinh,E3,nhóm don_gian,50,dieu_chinh_xac,0.6467,,
+diem,chinh,E2,nhóm don_gian,50,thieu,0.26,,
+diem,chinh,E3,nhóm don_gian,50,dieu_toan_phan,0.62,,
+diem,chinh,E3,nhóm don_gian,50,dieu_du_gold,0.72,,
+diem,chinh,E3,nhóm don_gian,50,khoan_toan_phan,0.44,,
+diem,chinh,E3,nhóm don_gian,50,khoan_du_gold,0.58,,
+diem,chinh,E3,nhóm don_gian,50,dieu_phu,0.72,,
+diem,chinh,E3,nhóm don_gian,50,dieu_chinh_xac,0.6667,,
 diem,chinh,E3,nhóm don_gian,50,co_trich,0.9,,
-diem,chinh,E3,nhóm don_gian,50,thieu,0.3,,
-hieu,chinh,C − A,nhóm don_gian,50,dieu_toan_phan,-0.02,-0.18,0.16
+diem,chinh,E3,nhóm don_gian,50,thieu,0.28,,
+hieu,chinh,C − A,nhóm don_gian,50,dieu_toan_phan,-0.06,-0.22,0.12
+hieu,chinh,C − A,nhóm don_gian,50,dieu_du_gold,-0.06,-0.24,0.12
 hieu,chinh,C − A,nhóm don_gian,50,khoan_toan_phan,-0.04,-0.18,0.1
-hieu,chinh,C − A,nhóm don_gian,50,dieu_phu,-0.02,-0.2,0.16
-hieu,chinh,C − A,nhóm don_gian,50,dieu_chinh_xac,-0.0133,-0.175,0.165
+hieu,chinh,C − A,nhóm don_gian,50,khoan_du_gold,-0.02,-0.2,0.16
+hieu,chinh,C − A,nhóm don_gian,50,dieu_phu,-0.06,-0.24,0.12
+hieu,chinh,C − A,nhóm don_gian,50,dieu_chinh_xac,-0.0533,-0.2283,0.1333
 hieu,chinh,C − A,nhóm don_gian,50,co_trich,0.02,-0.04,0.1
-hieu,chinh,C − A,nhóm don_gian,50,thieu,0.02,-0.16,0.2
-hieu,chinh,D − A,nhóm don_gian,50,dieu_toan_phan,0.02,-0.14,0.18
+hieu,chinh,C − A,nhóm don_gian,50,thieu,0.06,-0.12,0.24
+hieu,chinh,D − A,nhóm don_gian,50,dieu_toan_phan,-0.02,-0.18,0.14
+hieu,chinh,D − A,nhóm don_gian,50,dieu_du_gold,-0.02,-0.18,0.14
 hieu,chinh,D − A,nhóm don_gian,50,khoan_toan_phan,0.02,-0.14,0.2
-hieu,chinh,D − A,nhóm don_gian,50,dieu_phu,0.02,-0.14,0.18
-hieu,chinh,D − A,nhóm don_gian,50,dieu_chinh_xac,0.0229,-0.135,0.185
+hieu,chinh,D − A,nhóm don_gian,50,khoan_du_gold,0.04,-0.14,0.22
+hieu,chinh,D − A,nhóm don_gian,50,dieu_phu,-0.02,-0.18,0.14
+hieu,chinh,D − A,nhóm don_gian,50,dieu_chinh_xac,-0.0171,-0.175,0.1407
 hieu,chinh,D − A,nhóm don_gian,50,co_trich,-0.04,-0.12,0.04
-hieu,chinh,D − A,nhóm don_gian,50,thieu,-0.02,-0.18,0.14
-hieu,chinh,B − A,nhóm don_gian,50,dieu_toan_phan,0.3,0.16,0.44
-hieu,chinh,B − A,nhóm don_gian,50,khoan_toan_phan,0.24,0.1,0.38
-hieu,chinh,B − A,nhóm don_gian,50,dieu_phu,0.4,0.24,0.54
-hieu,chinh,B − A,nhóm don_gian,50,dieu_chinh_xac,0.3473,0.207,0.4917
+hieu,chinh,D − A,nhóm don_gian,50,thieu,0.02,-0.14,0.18
+hieu,chinh,B − A,nhóm don_gian,50,dieu_toan_phan,0.28,0.14,0.42
+hieu,chinh,B − A,nhóm don_gian,50,dieu_du_gold,0.38,0.24,0.52
+hieu,chinh,B − A,nhóm don_gian,50,khoan_toan_phan,0.26,0.12,0.4
+hieu,chinh,B − A,nhóm don_gian,50,khoan_du_gold,0.38,0.2,0.54
+hieu,chinh,B − A,nhóm don_gian,50,dieu_phu,0.38,0.24,0.52
+hieu,chinh,B − A,nhóm don_gian,50,dieu_chinh_xac,0.3273,0.193,0.464
 hieu,chinh,B − A,nhóm don_gian,50,co_trich,0.02,0.0,0.06
-hieu,chinh,B − A,nhóm don_gian,50,thieu,-0.4,-0.54,-0.24
-hieu,chinh,B+ − A,nhóm don_gian,50,dieu_toan_phan,0.26,0.12,0.42
-hieu,chinh,B+ − A,nhóm don_gian,50,khoan_toan_phan,0.18,0.04,0.32
-hieu,chinh,B+ − A,nhóm don_gian,50,dieu_phu,0.36,0.22,0.52
-hieu,chinh,B+ − A,nhóm don_gian,50,dieu_chinh_xac,0.3107,0.1707,0.454
+hieu,chinh,B − A,nhóm don_gian,50,thieu,-0.38,-0.52,-0.24
+hieu,chinh,B+ − A,nhóm don_gian,50,dieu_toan_phan,0.24,0.1,0.38
+hieu,chinh,B+ − A,nhóm don_gian,50,dieu_du_gold,0.34,0.18,0.5
+hieu,chinh,B+ − A,nhóm don_gian,50,khoan_toan_phan,0.2,0.06,0.34
+hieu,chinh,B+ − A,nhóm don_gian,50,khoan_du_gold,0.34,0.18,0.5
+hieu,chinh,B+ − A,nhóm don_gian,50,dieu_phu,0.34,0.18,0.5
+hieu,chinh,B+ − A,nhóm don_gian,50,dieu_chinh_xac,0.2907,0.154,0.4233
 hieu,chinh,B+ − A,nhóm don_gian,50,co_trich,-0.02,-0.08,0.04
-hieu,chinh,B+ − A,nhóm don_gian,50,thieu,-0.36,-0.52,-0.22
-hieu,chinh,E − A,nhóm don_gian,50,dieu_toan_phan,0.36,0.22,0.5
-hieu,chinh,E − A,nhóm don_gian,50,khoan_toan_phan,0.3,0.16,0.44
-hieu,chinh,E − A,nhóm don_gian,50,dieu_phu,0.44,0.28,0.58
-hieu,chinh,E − A,nhóm don_gian,50,dieu_chinh_xac,0.4067,0.2683,0.54
+hieu,chinh,B+ − A,nhóm don_gian,50,thieu,-0.34,-0.5,-0.18
+hieu,chinh,E − A,nhóm don_gian,50,dieu_toan_phan,0.34,0.2,0.48
+hieu,chinh,E − A,nhóm don_gian,50,dieu_du_gold,0.42,0.26,0.56
+hieu,chinh,E − A,nhóm don_gian,50,khoan_toan_phan,0.32,0.18,0.46
+hieu,chinh,E − A,nhóm don_gian,50,khoan_du_gold,0.44,0.28,0.6
+hieu,chinh,E − A,nhóm don_gian,50,dieu_phu,0.42,0.26,0.56
+hieu,chinh,E − A,nhóm don_gian,50,dieu_chinh_xac,0.3867,0.2583,0.52
 hieu,chinh,E − A,nhóm don_gian,50,co_trich,0.04,0.0,0.1
-hieu,chinh,E − A,nhóm don_gian,50,thieu,-0.44,-0.58,-0.28
-hieu,chinh,E2 − A,nhóm don_gian,50,dieu_toan_phan,0.26,0.12,0.42
-hieu,chinh,E2 − A,nhóm don_gian,50,khoan_toan_phan,0.18,0.04,0.32
-hieu,chinh,E2 − A,nhóm don_gian,50,dieu_phu,0.36,0.22,0.52
-hieu,chinh,E2 − A,nhóm don_gian,50,dieu_chinh_xac,0.3107,0.1707,0.454
+hieu,chinh,E − A,nhóm don_gian,50,thieu,-0.42,-0.56,-0.26
+hieu,chinh,E2 − A,nhóm don_gian,50,dieu_toan_phan,0.24,0.1,0.38
+hieu,chinh,E2 − A,nhóm don_gian,50,dieu_du_gold,0.34,0.18,0.5
+hieu,chinh,E2 − A,nhóm don_gian,50,khoan_toan_phan,0.2,0.06,0.34
+hieu,chinh,E2 − A,nhóm don_gian,50,khoan_du_gold,0.34,0.18,0.5
+hieu,chinh,E2 − A,nhóm don_gian,50,dieu_phu,0.34,0.18,0.5
+hieu,chinh,E2 − A,nhóm don_gian,50,dieu_chinh_xac,0.2907,0.154,0.4233
 hieu,chinh,E2 − A,nhóm don_gian,50,co_trich,-0.02,-0.08,0.04
-hieu,chinh,E2 − A,nhóm don_gian,50,thieu,-0.36,-0.52,-0.22
-hieu,chinh,E3 − A,nhóm don_gian,50,dieu_toan_phan,0.3,0.16,0.44
-hieu,chinh,E3 − A,nhóm don_gian,50,khoan_toan_phan,0.2,0.06,0.34
-hieu,chinh,E3 − A,nhóm don_gian,50,dieu_phu,0.34,0.18,0.5
-hieu,chinh,E3 − A,nhóm don_gian,50,dieu_chinh_xac,0.3267,0.1867,0.4633
+hieu,chinh,E2 − A,nhóm don_gian,50,thieu,-0.34,-0.5,-0.18
+hieu,chinh,E3 − A,nhóm don_gian,50,dieu_toan_phan,0.28,0.14,0.42
+hieu,chinh,E3 − A,nhóm don_gian,50,dieu_du_gold,0.32,0.18,0.48
+hieu,chinh,E3 − A,nhóm don_gian,50,khoan_toan_phan,0.22,0.08,0.36
+hieu,chinh,E3 − A,nhóm don_gian,50,khoan_du_gold,0.3,0.14,0.48
+hieu,chinh,E3 − A,nhóm don_gian,50,dieu_phu,0.32,0.18,0.48
+hieu,chinh,E3 − A,nhóm don_gian,50,dieu_chinh_xac,0.3067,0.1783,0.4433
 hieu,chinh,E3 − A,nhóm don_gian,50,co_trich,0.0,-0.06,0.06
-hieu,chinh,E3 − A,nhóm don_gian,50,thieu,-0.34,-0.5,-0.18
-hieu,chinh,A − B,nhóm don_gian,50,dieu_toan_phan,-0.3,-0.44,-0.16
-hieu,chinh,A − B,nhóm don_gian,50,khoan_toan_phan,-0.24,-0.38,-0.1
-hieu,chinh,A − B,nhóm don_gian,50,dieu_phu,-0.4,-0.54,-0.24
-hieu,chinh,A − B,nhóm don_gian,50,dieu_chinh_xac,-0.3473,-0.4917,-0.207
+hieu,chinh,E3 − A,nhóm don_gian,50,thieu,-0.32,-0.48,-0.18
+hieu,chinh,A − B,nhóm don_gian,50,dieu_toan_phan,-0.28,-0.42,-0.14
+hieu,chinh,A − B,nhóm don_gian,50,dieu_du_gold,-0.38,-0.52,-0.24
+hieu,chinh,A − B,nhóm don_gian,50,khoan_toan_phan,-0.26,-0.4,-0.12
+hieu,chinh,A − B,nhóm don_gian,50,khoan_du_gold,-0.38,-0.54,-0.2
+hieu,chinh,A − B,nhóm don_gian,50,dieu_phu,-0.38,-0.52,-0.24
+hieu,chinh,A − B,nhóm don_gian,50,dieu_chinh_xac,-0.3273,-0.464,-0.193
 hieu,chinh,A − B,nhóm don_gian,50,co_trich,-0.02,-0.06,0.0
-hieu,chinh,A − B,nhóm don_gian,50,thieu,0.4,0.24,0.54
-hieu,chinh,C − B,nhóm don_gian,50,dieu_toan_phan,-0.32,-0.48,-0.14
-hieu,chinh,C − B,nhóm don_gian,50,khoan_toan_phan,-0.28,-0.42,-0.14
-hieu,chinh,C − B,nhóm don_gian,50,dieu_phu,-0.42,-0.56,-0.24
-hieu,chinh,C − B,nhóm don_gian,50,dieu_chinh_xac,-0.3607,-0.5207,-0.1873
+hieu,chinh,A − B,nhóm don_gian,50,thieu,0.38,0.24,0.52
+hieu,chinh,C − B,nhóm don_gian,50,dieu_toan_phan,-0.34,-0.52,-0.16
+hieu,chinh,C − B,nhóm don_gian,50,dieu_du_gold,-0.44,-0.58,-0.26
+hieu,chinh,C − B,nhóm don_gian,50,khoan_toan_phan,-0.3,-0.44,-0.16
+hieu,chinh,C − B,nhóm don_gian,50,khoan_du_gold,-0.4,-0.56,-0.22
+hieu,chinh,C − B,nhóm don_gian,50,dieu_phu,-0.44,-0.58,-0.26
+hieu,chinh,C − B,nhóm don_gian,50,dieu_chinh_xac,-0.3807,-0.538,-0.212
 hieu,chinh,C − B,nhóm don_gian,50,co_trich,0.0,-0.06,0.06
-hieu,chinh,C − B,nhóm don_gian,50,thieu,0.42,0.24,0.56
-hieu,chinh,D − B,nhóm don_gian,50,dieu_toan_phan,-0.28,-0.42,-0.12
-hieu,chinh,D − B,nhóm don_gian,50,khoan_toan_phan,-0.22,-0.36,-0.08
-hieu,chinh,D − B,nhóm don_gian,50,dieu_phu,-0.38,-0.54,-0.22
-hieu,chinh,D − B,nhóm don_gian,50,dieu_chinh_xac,-0.3245,-0.4738,-0.1647
+hieu,chinh,C − B,nhóm don_gian,50,thieu,0.44,0.26,0.58
+hieu,chinh,D − B,nhóm don_gian,50,dieu_toan_phan,-0.3,-0.44,-0.16
+hieu,chinh,D − B,nhóm don_gian,50,dieu_du_gold,-0.4,-0.56,-0.26
+hieu,chinh,D − B,nhóm don_gian,50,khoan_toan_phan,-0.24,-0.38,-0.1
+hieu,chinh,D − B,nhóm don_gian,50,khoan_du_gold,-0.34,-0.5,-0.18
+hieu,chinh,D − B,nhóm don_gian,50,dieu_phu,-0.4,-0.56,-0.26
+hieu,chinh,D − B,nhóm don_gian,50,dieu_chinh_xac,-0.3445,-0.4819,-0.1983
 hieu,chinh,D − B,nhóm don_gian,50,co_trich,-0.06,-0.12,0.0
-hieu,chinh,D − B,nhóm don_gian,50,thieu,0.38,0.22,0.54
+hieu,chinh,D − B,nhóm don_gian,50,thieu,0.4,0.26,0.56
 hieu,chinh,B+ − B,nhóm don_gian,50,dieu_toan_phan,-0.04,-0.12,0.02
+hieu,chinh,B+ − B,nhóm don_gian,50,dieu_du_gold,-0.04,-0.12,0.06
 hieu,chinh,B+ − B,nhóm don_gian,50,khoan_toan_phan,-0.06,-0.14,0.0
+hieu,chinh,B+ − B,nhóm don_gian,50,khoan_du_gold,-0.04,-0.14,0.08
 hieu,chinh,B+ − B,nhóm don_gian,50,dieu_phu,-0.04,-0.12,0.06
 hieu,chinh,B+ − B,nhóm don_gian,50,dieu_chinh_xac,-0.0367,-0.11,0.0233
 hieu,chinh,B+ − B,nhóm don_gian,50,co_trich,-0.04,-0.1,0.0
 hieu,chinh,B+ − B,nhóm don_gian,50,thieu,0.04,-0.06,0.12
 hieu,chinh,E − B,nhóm don_gian,50,dieu_toan_phan,0.06,0.0,0.14
+hieu,chinh,E − B,nhóm don_gian,50,dieu_du_gold,0.04,-0.04,0.12
 hieu,chinh,E − B,nhóm don_gian,50,khoan_toan_phan,0.06,0.0,0.14
+hieu,chinh,E − B,nhóm don_gian,50,khoan_du_gold,0.06,0.0,0.14
 hieu,chinh,E − B,nhóm don_gian,50,dieu_phu,0.04,-0.04,0.12
 hieu,chinh,E − B,nhóm don_gian,50,dieu_chinh_xac,0.0593,0.0093,0.1253
 hieu,chinh,E − B,nhóm don_gian,50,co_trich,0.02,0.0,0.06
 hieu,chinh,E − B,nhóm don_gian,50,thieu,-0.04,-0.12,0.04
 hieu,chinh,E2 − B,nhóm don_gian,50,dieu_toan_phan,-0.04,-0.12,0.02
+hieu,chinh,E2 − B,nhóm don_gian,50,dieu_du_gold,-0.04,-0.12,0.06
 hieu,chinh,E2 − B,nhóm don_gian,50,khoan_toan_phan,-0.06,-0.14,0.0
+hieu,chinh,E2 − B,nhóm don_gian,50,khoan_du_gold,-0.04,-0.14,0.08
 hieu,chinh,E2 − B,nhóm don_gian,50,dieu_phu,-0.04,-0.12,0.06
 hieu,chinh,E2 − B,nhóm don_gian,50,dieu_chinh_xac,-0.0367,-0.11,0.0233
 hieu,chinh,E2 − B,nhóm don_gian,50,co_trich,-0.04,-0.1,0.0
 hieu,chinh,E2 − B,nhóm don_gian,50,thieu,0.04,-0.06,0.12
 hieu,chinh,E3 − B,nhóm don_gian,50,dieu_toan_phan,0.0,-0.1,0.08
+hieu,chinh,E3 − B,nhóm don_gian,50,dieu_du_gold,-0.06,-0.14,0.02
 hieu,chinh,E3 − B,nhóm don_gian,50,khoan_toan_phan,-0.04,-0.12,0.04
+hieu,chinh,E3 − B,nhóm don_gian,50,khoan_du_gold,-0.08,-0.2,0.02
 hieu,chinh,E3 − B,nhóm don_gian,50,dieu_phu,-0.06,-0.14,0.02
 hieu,chinh,E3 − B,nhóm don_gian,50,dieu_chinh_xac,-0.0207,-0.104,0.0487
 hieu,chinh,E3 − B,nhóm don_gian,50,co_trich,-0.02,-0.06,0.0
 hieu,chinh,E3 − B,nhóm don_gian,50,thieu,0.06,-0.02,0.14
 diem,chinh,A,nhóm dieu_dai,19,dieu_toan_phan,0.0,,
+diem,chinh,A,nhóm dieu_dai,19,dieu_du_gold,0.0,,
 diem,chinh,A,nhóm dieu_dai,19,khoan_toan_phan,0.0,,
+diem,chinh,A,nhóm dieu_dai,19,khoan_du_gold,0.0,,
 diem,chinh,A,nhóm dieu_dai,19,dieu_phu,0.0,,
 diem,chinh,A,nhóm dieu_dai,19,dieu_chinh_xac,0.0,,
 diem,chinh,A,nhóm dieu_dai,19,co_trich,0.8421,,
 diem,chinh,A,nhóm dieu_dai,19,thieu,1.0,,
 diem,chinh,C,nhóm dieu_dai,19,dieu_toan_phan,0.0526,,
+diem,chinh,C,nhóm dieu_dai,19,dieu_du_gold,0.0526,,
 diem,chinh,C,nhóm dieu_dai,19,khoan_toan_phan,0.0,,
+diem,chinh,C,nhóm dieu_dai,19,khoan_du_gold,0.0,,
 diem,chinh,C,nhóm dieu_dai,19,dieu_phu,0.0526,,
 diem,chinh,C,nhóm dieu_dai,19,dieu_chinh_xac,0.0526,,
 diem,chinh,C,nhóm dieu_dai,19,co_trich,0.9474,,
 diem,chinh,C,nhóm dieu_dai,19,thieu,0.9474,,
 diem,chinh,D,nhóm dieu_dai,19,dieu_toan_phan,0.0,,
+diem,chinh,D,nhóm dieu_dai,19,dieu_du_gold,0.0,,
 diem,chinh,D,nhóm dieu_dai,19,khoan_toan_phan,0.0,,
+diem,chinh,D,nhóm dieu_dai,19,khoan_du_gold,0.0,,
 diem,chinh,D,nhóm dieu_dai,19,dieu_phu,0.0,,
 diem,chinh,D,nhóm dieu_dai,19,dieu_chinh_xac,0.0,,
 diem,chinh,D,nhóm dieu_dai,19,co_trich,0.9474,,
 diem,chinh,D,nhóm dieu_dai,19,thieu,1.0,,
 diem,chinh,B,nhóm dieu_dai,19,dieu_toan_phan,0.7368,,
+diem,chinh,B,nhóm dieu_dai,19,dieu_du_gold,0.7895,,
 diem,chinh,B,nhóm dieu_dai,19,khoan_toan_phan,0.6316,,
+diem,chinh,B,nhóm dieu_dai,19,khoan_du_gold,0.6842,,
 diem,chinh,B,nhóm dieu_dai,19,dieu_phu,0.7895,,
 diem,chinh,B,nhóm dieu_dai,19,dieu_chinh_xac,0.7632,,
 diem,chinh,B,nhóm dieu_dai,19,co_trich,1.0,,
 diem,chinh,B,nhóm dieu_dai,19,thieu,0.2105,,
 diem,chinh,B+,nhóm dieu_dai,19,dieu_toan_phan,0.3158,,
+diem,chinh,B+,nhóm dieu_dai,19,dieu_du_gold,0.3158,,
 diem,chinh,B+,nhóm dieu_dai,19,khoan_toan_phan,0.0,,
+diem,chinh,B+,nhóm dieu_dai,19,khoan_du_gold,0.0,,
 diem,chinh,B+,nhóm dieu_dai,19,dieu_phu,0.3158,,
 diem,chinh,B+,nhóm dieu_dai,19,dieu_chinh_xac,0.3158,,
 diem,chinh,B+,nhóm dieu_dai,19,co_trich,0.8421,,
 diem,chinh,B+,nhóm dieu_dai,19,thieu,0.6842,,
 diem,chinh,E,nhóm dieu_dai,19,dieu_toan_phan,0.6842,,
+diem,chinh,E,nhóm dieu_dai,19,dieu_du_gold,0.7895,,
 diem,chinh,E,nhóm dieu_dai,19,khoan_toan_phan,0.5789,,
+diem,chinh,E,nhóm dieu_dai,19,khoan_du_gold,0.6842,,
 diem,chinh,E,nhóm dieu_dai,19,dieu_phu,0.7895,,
 diem,chinh,E,nhóm dieu_dai,19,dieu_chinh_xac,0.7368,,
 diem,chinh,E,nhóm dieu_dai,19,co_trich,1.0,,
 diem,chinh,E,nhóm dieu_dai,19,thieu,0.2105,,
 diem,chinh,E2,nhóm dieu_dai,19,dieu_toan_phan,0.3158,,
+diem,chinh,E2,nhóm dieu_dai,19,dieu_du_gold,0.3158,,
 diem,chinh,E2,nhóm dieu_dai,19,khoan_toan_phan,0.0,,
+diem,chinh,E2,nhóm dieu_dai,19,khoan_du_gold,0.0,,
 diem,chinh,E2,nhóm dieu_dai,19,dieu_phu,0.3158,,
 diem,chinh,E2,nhóm dieu_dai,19,dieu_chinh_xac,0.3158,,
 diem,chinh,E2,nhóm dieu_dai,19,co_trich,0.8421,,
 diem,chinh,E2,nhóm dieu_dai,19,thieu,0.6842,,
 diem,chinh,E3,nhóm dieu_dai,19,dieu_toan_phan,0.3158,,
+diem,chinh,E3,nhóm dieu_dai,19,dieu_du_gold,0.3158,,
 diem,chinh,E3,nhóm dieu_dai,19,khoan_toan_phan,0.0,,
+diem,chinh,E3,nhóm dieu_dai,19,khoan_du_gold,0.0,,
 diem,chinh,E3,nhóm dieu_dai,19,dieu_phu,0.3158,,
 diem,chinh,E3,nhóm dieu_dai,19,dieu_chinh_xac,0.3158,,
 diem,chinh,E3,nhóm dieu_dai,19,co_trich,0.8421,,
 diem,chinh,E3,nhóm dieu_dai,19,thieu,0.6842,,
 hieu,chinh,C − A,nhóm dieu_dai,19,dieu_toan_phan,0.0526,0.0,0.1579
+hieu,chinh,C − A,nhóm dieu_dai,19,dieu_du_gold,0.0526,0.0,0.1579
 hieu,chinh,C − A,nhóm dieu_dai,19,khoan_toan_phan,0.0,0.0,0.0
+hieu,chinh,C − A,nhóm dieu_dai,19,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,C − A,nhóm dieu_dai,19,dieu_phu,0.0526,0.0,0.1579
 hieu,chinh,C − A,nhóm dieu_dai,19,dieu_chinh_xac,0.0526,0.0,0.1579
 hieu,chinh,C − A,nhóm dieu_dai,19,co_trich,0.1053,-0.1053,0.3158
 hieu,chinh,C − A,nhóm dieu_dai,19,thieu,-0.0526,-0.1579,0.0
 hieu,chinh,D − A,nhóm dieu_dai,19,dieu_toan_phan,0.0,0.0,0.0
+hieu,chinh,D − A,nhóm dieu_dai,19,dieu_du_gold,0.0,0.0,0.0
 hieu,chinh,D − A,nhóm dieu_dai,19,khoan_toan_phan,0.0,0.0,0.0
+hieu,chinh,D − A,nhóm dieu_dai,19,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,D − A,nhóm dieu_dai,19,dieu_phu,0.0,0.0,0.0
 hieu,chinh,D − A,nhóm dieu_dai,19,dieu_chinh_xac,0.0,0.0,0.0
 hieu,chinh,D − A,nhóm dieu_dai,19,co_trich,0.1053,0.0,0.2632
 hieu,chinh,D − A,nhóm dieu_dai,19,thieu,0.0,0.0,0.0
 hieu,chinh,B − A,nhóm dieu_dai,19,dieu_toan_phan,0.7368,0.5263,0.8947
+hieu,chinh,B − A,nhóm dieu_dai,19,dieu_du_gold,0.7895,0.5789,0.9474
 hieu,chinh,B − A,nhóm dieu_dai,19,khoan_toan_phan,0.6316,0.4211,0.8421
+hieu,chinh,B − A,nhóm dieu_dai,19,khoan_du_gold,0.6842,0.4737,0.8947
 hieu,chinh,B − A,nhóm dieu_dai,19,dieu_phu,0.7895,0.5789,0.9474
 hieu,chinh,B − A,nhóm dieu_dai,19,dieu_chinh_xac,0.7632,0.5789,0.9211
 hieu,chinh,B − A,nhóm dieu_dai,19,co_trich,0.1579,0.0,0.3684
 hieu,chinh,B − A,nhóm dieu_dai,19,thieu,-0.7895,-0.9474,-0.5789
 hieu,chinh,B+ − A,nhóm dieu_dai,19,dieu_toan_phan,0.3158,0.1053,0.5263
+hieu,chinh,B+ − A,nhóm dieu_dai,19,dieu_du_gold,0.3158,0.1053,0.5263
 hieu,chinh,B+ − A,nhóm dieu_dai,19,khoan_toan_phan,0.0,0.0,0.0
+hieu,chinh,B+ − A,nhóm dieu_dai,19,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,B+ − A,nhóm dieu_dai,19,dieu_phu,0.3158,0.1053,0.5263
 hieu,chinh,B+ − A,nhóm dieu_dai,19,dieu_chinh_xac,0.3158,0.1053,0.5263
 hieu,chinh,B+ − A,nhóm dieu_dai,19,co_trich,0.0,-0.2105,0.2632
 hieu,chinh,B+ − A,nhóm dieu_dai,19,thieu,-0.3158,-0.5263,-0.1053
 hieu,chinh,E − A,nhóm dieu_dai,19,dieu_toan_phan,0.6842,0.4737,0.8947
+hieu,chinh,E − A,nhóm dieu_dai,19,dieu_du_gold,0.7895,0.5789,0.9474
 hieu,chinh,E − A,nhóm dieu_dai,19,khoan_toan_phan,0.5789,0.3684,0.7895
+hieu,chinh,E − A,nhóm dieu_dai,19,khoan_du_gold,0.6842,0.4737,0.8947
 hieu,chinh,E − A,nhóm dieu_dai,19,dieu_phu,0.7895,0.5789,0.9474
 hieu,chinh,E − A,nhóm dieu_dai,19,dieu_chinh_xac,0.7368,0.5263,0.9211
 hieu,chinh,E − A,nhóm dieu_dai,19,co_trich,0.1579,0.0,0.3684
 hieu,chinh,E − A,nhóm dieu_dai,19,thieu,-0.7895,-0.9474,-0.5789
 hieu,chinh,E2 − A,nhóm dieu_dai,19,dieu_toan_phan,0.3158,0.1053,0.5263
+hieu,chinh,E2 − A,nhóm dieu_dai,19,dieu_du_gold,0.3158,0.1053,0.5263
 hieu,chinh,E2 − A,nhóm dieu_dai,19,khoan_toan_phan,0.0,0.0,0.0
+hieu,chinh,E2 − A,nhóm dieu_dai,19,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,E2 − A,nhóm dieu_dai,19,dieu_phu,0.3158,0.1053,0.5263
 hieu,chinh,E2 − A,nhóm dieu_dai,19,dieu_chinh_xac,0.3158,0.1053,0.5263
 hieu,chinh,E2 − A,nhóm dieu_dai,19,co_trich,0.0,-0.2105,0.2632
 hieu,chinh,E2 − A,nhóm dieu_dai,19,thieu,-0.3158,-0.5263,-0.1053
 hieu,chinh,E3 − A,nhóm dieu_dai,19,dieu_toan_phan,0.3158,0.1053,0.5263
+hieu,chinh,E3 − A,nhóm dieu_dai,19,dieu_du_gold,0.3158,0.1053,0.5263
 hieu,chinh,E3 − A,nhóm dieu_dai,19,khoan_toan_phan,0.0,0.0,0.0
+hieu,chinh,E3 − A,nhóm dieu_dai,19,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,E3 − A,nhóm dieu_dai,19,dieu_phu,0.3158,0.1053,0.5263
 hieu,chinh,E3 − A,nhóm dieu_dai,19,dieu_chinh_xac,0.3158,0.1053,0.5263
 hieu,chinh,E3 − A,nhóm dieu_dai,19,co_trich,0.0,-0.2105,0.2632
 hieu,chinh,E3 − A,nhóm dieu_dai,19,thieu,-0.3158,-0.5263,-0.1053
 hieu,chinh,A − B,nhóm dieu_dai,19,dieu_toan_phan,-0.7368,-0.8947,-0.5263
+hieu,chinh,A − B,nhóm dieu_dai,19,dieu_du_gold,-0.7895,-0.9474,-0.5789
 hieu,chinh,A − B,nhóm dieu_dai,19,khoan_toan_phan,-0.6316,-0.8421,-0.4211
+hieu,chinh,A − B,nhóm dieu_dai,19,khoan_du_gold,-0.6842,-0.8947,-0.4737
 hieu,chinh,A − B,nhóm dieu_dai,19,dieu_phu,-0.7895,-0.9474,-0.5789
 hieu,chinh,A − B,nhóm dieu_dai,19,dieu_chinh_xac,-0.7632,-0.9211,-0.5789
 hieu,chinh,A − B,nhóm dieu_dai,19,co_trich,-0.1579,-0.3684,0.0
 hieu,chinh,A − B,nhóm dieu_dai,19,thieu,0.7895,0.5789,0.9474
 hieu,chinh,C − B,nhóm dieu_dai,19,dieu_toan_phan,-0.6842,-0.8947,-0.4211
+hieu,chinh,C − B,nhóm dieu_dai,19,dieu_du_gold,-0.7368,-0.9474,-0.4737
 hieu,chinh,C − B,nhóm dieu_dai,19,khoan_toan_phan,-0.6316,-0.8421,-0.4211
+hieu,chinh,C − B,nhóm dieu_dai,19,khoan_du_gold,-0.6842,-0.8947,-0.4737
 hieu,chinh,C − B,nhóm dieu_dai,19,dieu_phu,-0.7368,-0.9474,-0.4737
 hieu,chinh,C − B,nhóm dieu_dai,19,dieu_chinh_xac,-0.7105,-0.9211,-0.4474
 hieu,chinh,C − B,nhóm dieu_dai,19,co_trich,-0.0526,-0.1579,0.0
 hieu,chinh,C − B,nhóm dieu_dai,19,thieu,0.7368,0.4737,0.9474
 hieu,chinh,D − B,nhóm dieu_dai,19,dieu_toan_phan,-0.7368,-0.8947,-0.5263
+hieu,chinh,D − B,nhóm dieu_dai,19,dieu_du_gold,-0.7895,-0.9474,-0.5789
 hieu,chinh,D − B,nhóm dieu_dai,19,khoan_toan_phan,-0.6316,-0.8421,-0.4211
+hieu,chinh,D − B,nhóm dieu_dai,19,khoan_du_gold,-0.6842,-0.8947,-0.4737
 hieu,chinh,D − B,nhóm dieu_dai,19,dieu_phu,-0.7895,-0.9474,-0.5789
 hieu,chinh,D − B,nhóm dieu_dai,19,dieu_chinh_xac,-0.7632,-0.9211,-0.5789
 hieu,chinh,D − B,nhóm dieu_dai,19,co_trich,-0.0526,-0.1579,0.0
 hieu,chinh,D − B,nhóm dieu_dai,19,thieu,0.7895,0.5789,0.9474
 hieu,chinh,B+ − B,nhóm dieu_dai,19,dieu_toan_phan,-0.4211,-0.6842,-0.1053
+hieu,chinh,B+ − B,nhóm dieu_dai,19,dieu_du_gold,-0.4737,-0.7368,-0.1579
 hieu,chinh,B+ − B,nhóm dieu_dai,19,khoan_toan_phan,-0.6316,-0.8421,-0.4211
+hieu,chinh,B+ − B,nhóm dieu_dai,19,khoan_du_gold,-0.6842,-0.8947,-0.4737
 hieu,chinh,B+ − B,nhóm dieu_dai,19,dieu_phu,-0.4737,-0.7368,-0.1579
 hieu,chinh,B+ − B,nhóm dieu_dai,19,dieu_chinh_xac,-0.4474,-0.7105,-0.1316
 hieu,chinh,B+ − B,nhóm dieu_dai,19,co_trich,-0.1579,-0.3158,0.0
 hieu,chinh,B+ − B,nhóm dieu_dai,19,thieu,0.4737,0.1579,0.7368
 hieu,chinh,E − B,nhóm dieu_dai,19,dieu_toan_phan,-0.0526,-0.1579,0.0
+hieu,chinh,E − B,nhóm dieu_dai,19,dieu_du_gold,0.0,-0.1579,0.1579
 hieu,chinh,E − B,nhóm dieu_dai,19,khoan_toan_phan,-0.0526,-0.1579,0.0
+hieu,chinh,E − B,nhóm dieu_dai,19,khoan_du_gold,0.0,-0.1579,0.1579
 hieu,chinh,E − B,nhóm dieu_dai,19,dieu_phu,0.0,-0.1579,0.1579
 hieu,chinh,E − B,nhóm dieu_dai,19,dieu_chinh_xac,-0.0263,-0.1579,0.0789
 hieu,chinh,E − B,nhóm dieu_dai,19,co_trich,0.0,0.0,0.0
 hieu,chinh,E − B,nhóm dieu_dai,19,thieu,0.0,-0.1579,0.1579
 hieu,chinh,E2 − B,nhóm dieu_dai,19,dieu_toan_phan,-0.4211,-0.6842,-0.1053
+hieu,chinh,E2 − B,nhóm dieu_dai,19,dieu_du_gold,-0.4737,-0.7368,-0.1579
 hieu,chinh,E2 − B,nhóm dieu_dai,19,khoan_toan_phan,-0.6316,-0.8421,-0.4211
+hieu,chinh,E2 − B,nhóm dieu_dai,19,khoan_du_gold,-0.6842,-0.8947,-0.4737
 hieu,chinh,E2 − B,nhóm dieu_dai,19,dieu_phu,-0.4737,-0.7368,-0.1579
 hieu,chinh,E2 − B,nhóm dieu_dai,19,dieu_chinh_xac,-0.4474,-0.7105,-0.1316
 hieu,chinh,E2 − B,nhóm dieu_dai,19,co_trich,-0.1579,-0.3158,0.0
 hieu,chinh,E2 − B,nhóm dieu_dai,19,thieu,0.4737,0.1579,0.7368
 hieu,chinh,E3 − B,nhóm dieu_dai,19,dieu_toan_phan,-0.4211,-0.6842,-0.1053
+hieu,chinh,E3 − B,nhóm dieu_dai,19,dieu_du_gold,-0.4737,-0.7368,-0.1579
 hieu,chinh,E3 − B,nhóm dieu_dai,19,khoan_toan_phan,-0.6316,-0.8421,-0.4211
+hieu,chinh,E3 − B,nhóm dieu_dai,19,khoan_du_gold,-0.6842,-0.8947,-0.4737
 hieu,chinh,E3 − B,nhóm dieu_dai,19,dieu_phu,-0.4737,-0.7368,-0.1579
 hieu,chinh,E3 − B,nhóm dieu_dai,19,dieu_chinh_xac,-0.4474,-0.7105,-0.1316
 hieu,chinh,E3 − B,nhóm dieu_dai,19,co_trich,-0.1579,-0.3158,0.0
 hieu,chinh,E3 − B,nhóm dieu_dai,19,thieu,0.4737,0.1579,0.7368
 diem,chinh,A,nhóm xuyen_khoan,17,dieu_toan_phan,0.1765,,
+diem,chinh,A,nhóm xuyen_khoan,17,dieu_du_gold,0.2941,,
 diem,chinh,A,nhóm xuyen_khoan,17,khoan_toan_phan,0.0,,
+diem,chinh,A,nhóm xuyen_khoan,17,khoan_du_gold,0.0588,,
 diem,chinh,A,nhóm xuyen_khoan,17,dieu_phu,0.2941,,
 diem,chinh,A,nhóm xuyen_khoan,17,dieu_chinh_xac,0.2353,,
 diem,chinh,A,nhóm xuyen_khoan,17,co_trich,0.7647,,
 diem,chinh,A,nhóm xuyen_khoan,17,thieu,0.7059,,
 diem,chinh,C,nhóm xuyen_khoan,17,dieu_toan_phan,0.2353,,
+diem,chinh,C,nhóm xuyen_khoan,17,dieu_du_gold,0.2941,,
 diem,chinh,C,nhóm xuyen_khoan,17,khoan_toan_phan,0.0,,
+diem,chinh,C,nhóm xuyen_khoan,17,khoan_du_gold,0.0588,,
 diem,chinh,C,nhóm xuyen_khoan,17,dieu_phu,0.2941,,
 diem,chinh,C,nhóm xuyen_khoan,17,dieu_chinh_xac,0.2647,,
 diem,chinh,C,nhóm xuyen_khoan,17,co_trich,0.7647,,
 diem,chinh,C,nhóm xuyen_khoan,17,thieu,0.7059,,
 diem,chinh,D,nhóm xuyen_khoan,17,dieu_toan_phan,0.2941,,
+diem,chinh,D,nhóm xuyen_khoan,17,dieu_du_gold,0.3529,,
 diem,chinh,D,nhóm xuyen_khoan,17,khoan_toan_phan,0.0588,,
+diem,chinh,D,nhóm xuyen_khoan,17,khoan_du_gold,0.0588,,
 diem,chinh,D,nhóm xuyen_khoan,17,dieu_phu,0.3529,,
 diem,chinh,D,nhóm xuyen_khoan,17,dieu_chinh_xac,0.3235,,
 diem,chinh,D,nhóm xuyen_khoan,17,co_trich,0.8235,,
 diem,chinh,D,nhóm xuyen_khoan,17,thieu,0.6471,,
 diem,chinh,B,nhóm xuyen_khoan,17,dieu_toan_phan,0.7647,,
+diem,chinh,B,nhóm xuyen_khoan,17,dieu_du_gold,0.9412,,
 diem,chinh,B,nhóm xuyen_khoan,17,khoan_toan_phan,0.2941,,
+diem,chinh,B,nhóm xuyen_khoan,17,khoan_du_gold,0.3529,,
 diem,chinh,B,nhóm xuyen_khoan,17,dieu_phu,0.9412,,
 diem,chinh,B,nhóm xuyen_khoan,17,dieu_chinh_xac,0.8529,,
 diem,chinh,B,nhóm xuyen_khoan,17,co_trich,0.9412,,
 diem,chinh,B,nhóm xuyen_khoan,17,thieu,0.0588,,
 diem,chinh,B+,nhóm xuyen_khoan,17,dieu_toan_phan,0.7059,,
+diem,chinh,B+,nhóm xuyen_khoan,17,dieu_du_gold,0.7647,,
 diem,chinh,B+,nhóm xuyen_khoan,17,khoan_toan_phan,0.2353,,
+diem,chinh,B+,nhóm xuyen_khoan,17,khoan_du_gold,0.3529,,
 diem,chinh,B+,nhóm xuyen_khoan,17,dieu_phu,0.7647,,
 diem,chinh,B+,nhóm xuyen_khoan,17,dieu_chinh_xac,0.7353,,
 diem,chinh,B+,nhóm xuyen_khoan,17,co_trich,0.8824,,
 diem,chinh,B+,nhóm xuyen_khoan,17,thieu,0.2353,,
 diem,chinh,E,nhóm xuyen_khoan,17,dieu_toan_phan,0.8235,,
+diem,chinh,E,nhóm xuyen_khoan,17,dieu_du_gold,0.9412,,
 diem,chinh,E,nhóm xuyen_khoan,17,khoan_toan_phan,0.3529,,
+diem,chinh,E,nhóm xuyen_khoan,17,khoan_du_gold,0.3529,,
 diem,chinh,E,nhóm xuyen_khoan,17,dieu_phu,0.9412,,
 diem,chinh,E,nhóm xuyen_khoan,17,dieu_chinh_xac,0.8824,,
 diem,chinh,E,nhóm xuyen_khoan,17,co_trich,0.9412,,
 diem,chinh,E,nhóm xuyen_khoan,17,thieu,0.0588,,
 diem,chinh,E2,nhóm xuyen_khoan,17,dieu_toan_phan,0.7059,,
+diem,chinh,E2,nhóm xuyen_khoan,17,dieu_du_gold,0.7647,,
 diem,chinh,E2,nhóm xuyen_khoan,17,khoan_toan_phan,0.2353,,
+diem,chinh,E2,nhóm xuyen_khoan,17,khoan_du_gold,0.3529,,
 diem,chinh,E2,nhóm xuyen_khoan,17,dieu_phu,0.7647,,
 diem,chinh,E2,nhóm xuyen_khoan,17,dieu_chinh_xac,0.7353,,
 diem,chinh,E2,nhóm xuyen_khoan,17,co_trich,0.8824,,
 diem,chinh,E2,nhóm xuyen_khoan,17,thieu,0.2353,,
 diem,chinh,E3,nhóm xuyen_khoan,17,dieu_toan_phan,0.8235,,
+diem,chinh,E3,nhóm xuyen_khoan,17,dieu_du_gold,0.8235,,
 diem,chinh,E3,nhóm xuyen_khoan,17,khoan_toan_phan,0.4118,,
+diem,chinh,E3,nhóm xuyen_khoan,17,khoan_du_gold,0.4118,,
 diem,chinh,E3,nhóm xuyen_khoan,17,dieu_phu,0.8235,,
 diem,chinh,E3,nhóm xuyen_khoan,17,dieu_chinh_xac,0.8235,,
 diem,chinh,E3,nhóm xuyen_khoan,17,co_trich,0.8824,,
 diem,chinh,E3,nhóm xuyen_khoan,17,thieu,0.1765,,
 hieu,chinh,C − A,nhóm xuyen_khoan,17,dieu_toan_phan,0.0588,-0.1176,0.2941
+hieu,chinh,C − A,nhóm xuyen_khoan,17,dieu_du_gold,0.0,-0.2353,0.2353
 hieu,chinh,C − A,nhóm xuyen_khoan,17,khoan_toan_phan,0.0,0.0,0.0
+hieu,chinh,C − A,nhóm xuyen_khoan,17,khoan_du_gold,0.0,-0.1765,0.1765
 hieu,chinh,C − A,nhóm xuyen_khoan,17,dieu_phu,0.0,-0.2353,0.2353
 hieu,chinh,C − A,nhóm xuyen_khoan,17,dieu_chinh_xac,0.0294,-0.1765,0.2353
 hieu,chinh,C − A,nhóm xuyen_khoan,17,co_trich,0.0,-0.1765,0.1765
 hieu,chinh,C − A,nhóm xuyen_khoan,17,thieu,0.0,-0.2353,0.2353
 hieu,chinh,D − A,nhóm xuyen_khoan,17,dieu_toan_phan,0.1176,-0.0588,0.3529
+hieu,chinh,D − A,nhóm xuyen_khoan,17,dieu_du_gold,0.0588,-0.1765,0.2941
 hieu,chinh,D − A,nhóm xuyen_khoan,17,khoan_toan_phan,0.0588,0.0,0.1765
+hieu,chinh,D − A,nhóm xuyen_khoan,17,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,D − A,nhóm xuyen_khoan,17,dieu_phu,0.0588,-0.1765,0.2941
 hieu,chinh,D − A,nhóm xuyen_khoan,17,dieu_chinh_xac,0.0882,-0.1176,0.3235
 hieu,chinh,D − A,nhóm xuyen_khoan,17,co_trich,0.0588,-0.1176,0.2353
 hieu,chinh,D − A,nhóm xuyen_khoan,17,thieu,-0.0588,-0.2941,0.1765
 hieu,chinh,B − A,nhóm xuyen_khoan,17,dieu_toan_phan,0.5882,0.3529,0.8235
+hieu,chinh,B − A,nhóm xuyen_khoan,17,dieu_du_gold,0.6471,0.4118,0.8824
 hieu,chinh,B − A,nhóm xuyen_khoan,17,khoan_toan_phan,0.2941,0.1176,0.5294
+hieu,chinh,B − A,nhóm xuyen_khoan,17,khoan_du_gold,0.2941,0.0588,0.5294
 hieu,chinh,B − A,nhóm xuyen_khoan,17,dieu_phu,0.6471,0.4118,0.8824
 hieu,chinh,B − A,nhóm xuyen_khoan,17,dieu_chinh_xac,0.6176,0.4118,0.7941
 hieu,chinh,B − A,nhóm xuyen_khoan,17,co_trich,0.1765,0.0,0.4118
 hieu,chinh,B − A,nhóm xuyen_khoan,17,thieu,-0.6471,-0.8824,-0.4118
 hieu,chinh,B+ − A,nhóm xuyen_khoan,17,dieu_toan_phan,0.5294,0.2941,0.7647
+hieu,chinh,B+ − A,nhóm xuyen_khoan,17,dieu_du_gold,0.4706,0.2353,0.7059
 hieu,chinh,B+ − A,nhóm xuyen_khoan,17,khoan_toan_phan,0.2353,0.0588,0.4118
+hieu,chinh,B+ − A,nhóm xuyen_khoan,17,khoan_du_gold,0.2941,0.1176,0.5294
 hieu,chinh,B+ − A,nhóm xuyen_khoan,17,dieu_phu,0.4706,0.2353,0.7059
 hieu,chinh,B+ − A,nhóm xuyen_khoan,17,dieu_chinh_xac,0.5,0.2941,0.7059
 hieu,chinh,B+ − A,nhóm xuyen_khoan,17,co_trich,0.1176,-0.0588,0.3529
 hieu,chinh,B+ − A,nhóm xuyen_khoan,17,thieu,-0.4706,-0.7059,-0.2353
 hieu,chinh,E − A,nhóm xuyen_khoan,17,dieu_toan_phan,0.6471,0.4118,0.8235
+hieu,chinh,E − A,nhóm xuyen_khoan,17,dieu_du_gold,0.6471,0.4118,0.8824
 hieu,chinh,E − A,nhóm xuyen_khoan,17,khoan_toan_phan,0.3529,0.1176,0.5882
+hieu,chinh,E − A,nhóm xuyen_khoan,17,khoan_du_gold,0.2941,0.0588,0.5294
 hieu,chinh,E − A,nhóm xuyen_khoan,17,dieu_phu,0.6471,0.4118,0.8824
 hieu,chinh,E − A,nhóm xuyen_khoan,17,dieu_chinh_xac,0.6471,0.4118,0.8235
 hieu,chinh,E − A,nhóm xuyen_khoan,17,co_trich,0.1765,0.0,0.4118
 hieu,chinh,E − A,nhóm xuyen_khoan,17,thieu,-0.6471,-0.8824,-0.4118
 hieu,chinh,E2 − A,nhóm xuyen_khoan,17,dieu_toan_phan,0.5294,0.2941,0.7647
+hieu,chinh,E2 − A,nhóm xuyen_khoan,17,dieu_du_gold,0.4706,0.2353,0.7059
 hieu,chinh,E2 − A,nhóm xuyen_khoan,17,khoan_toan_phan,0.2353,0.0588,0.4118
+hieu,chinh,E2 − A,nhóm xuyen_khoan,17,khoan_du_gold,0.2941,0.1176,0.5294
 hieu,chinh,E2 − A,nhóm xuyen_khoan,17,dieu_phu,0.4706,0.2353,0.7059
 hieu,chinh,E2 − A,nhóm xuyen_khoan,17,dieu_chinh_xac,0.5,0.2941,0.7059
 hieu,chinh,E2 − A,nhóm xuyen_khoan,17,co_trich,0.1176,-0.0588,0.3529
 hieu,chinh,E2 − A,nhóm xuyen_khoan,17,thieu,-0.4706,-0.7059,-0.2353
 hieu,chinh,E3 − A,nhóm xuyen_khoan,17,dieu_toan_phan,0.6471,0.4118,0.8235
+hieu,chinh,E3 − A,nhóm xuyen_khoan,17,dieu_du_gold,0.5294,0.2941,0.7647
 hieu,chinh,E3 − A,nhóm xuyen_khoan,17,khoan_toan_phan,0.4118,0.1765,0.6471
+hieu,chinh,E3 − A,nhóm xuyen_khoan,17,khoan_du_gold,0.3529,0.1176,0.5882
 hieu,chinh,E3 − A,nhóm xuyen_khoan,17,dieu_phu,0.5294,0.2941,0.7647
 hieu,chinh,E3 − A,nhóm xuyen_khoan,17,dieu_chinh_xac,0.5882,0.3529,0.7941
 hieu,chinh,E3 − A,nhóm xuyen_khoan,17,co_trich,0.1176,-0.0588,0.3529
 hieu,chinh,E3 − A,nhóm xuyen_khoan,17,thieu,-0.5294,-0.7647,-0.2941
 hieu,chinh,A − B,nhóm xuyen_khoan,17,dieu_toan_phan,-0.5882,-0.8235,-0.3529
+hieu,chinh,A − B,nhóm xuyen_khoan,17,dieu_du_gold,-0.6471,-0.8824,-0.4118
 hieu,chinh,A − B,nhóm xuyen_khoan,17,khoan_toan_phan,-0.2941,-0.5294,-0.1176
+hieu,chinh,A − B,nhóm xuyen_khoan,17,khoan_du_gold,-0.2941,-0.5294,-0.0588
 hieu,chinh,A − B,nhóm xuyen_khoan,17,dieu_phu,-0.6471,-0.8824,-0.4118
 hieu,chinh,A − B,nhóm xuyen_khoan,17,dieu_chinh_xac,-0.6176,-0.7941,-0.4118
 hieu,chinh,A − B,nhóm xuyen_khoan,17,co_trich,-0.1765,-0.4118,0.0
 hieu,chinh,A − B,nhóm xuyen_khoan,17,thieu,0.6471,0.4118,0.8824
 hieu,chinh,C − B,nhóm xuyen_khoan,17,dieu_toan_phan,-0.5294,-0.7647,-0.2941
+hieu,chinh,C − B,nhóm xuyen_khoan,17,dieu_du_gold,-0.6471,-0.8824,-0.4118
 hieu,chinh,C − B,nhóm xuyen_khoan,17,khoan_toan_phan,-0.2941,-0.5294,-0.1176
+hieu,chinh,C − B,nhóm xuyen_khoan,17,khoan_du_gold,-0.2941,-0.5294,-0.1176
 hieu,chinh,C − B,nhóm xuyen_khoan,17,dieu_phu,-0.6471,-0.8824,-0.4118
 hieu,chinh,C − B,nhóm xuyen_khoan,17,dieu_chinh_xac,-0.5882,-0.7941,-0.3529
 hieu,chinh,C − B,nhóm xuyen_khoan,17,co_trich,-0.1765,-0.3529,0.0
 hieu,chinh,C − B,nhóm xuyen_khoan,17,thieu,0.6471,0.4118,0.8824
 hieu,chinh,D − B,nhóm xuyen_khoan,17,dieu_toan_phan,-0.4706,-0.7059,-0.2353
+hieu,chinh,D − B,nhóm xuyen_khoan,17,dieu_du_gold,-0.5882,-0.8235,-0.3529
 hieu,chinh,D − B,nhóm xuyen_khoan,17,khoan_toan_phan,-0.2353,-0.4706,-0.0588
+hieu,chinh,D − B,nhóm xuyen_khoan,17,khoan_du_gold,-0.2941,-0.5294,-0.0588
 hieu,chinh,D − B,nhóm xuyen_khoan,17,dieu_phu,-0.5882,-0.8235,-0.3529
 hieu,chinh,D − B,nhóm xuyen_khoan,17,dieu_chinh_xac,-0.5294,-0.7353,-0.3235
 hieu,chinh,D − B,nhóm xuyen_khoan,17,co_trich,-0.1176,-0.2941,0.0
 hieu,chinh,D − B,nhóm xuyen_khoan,17,thieu,0.5882,0.3529,0.8235
 hieu,chinh,B+ − B,nhóm xuyen_khoan,17,dieu_toan_phan,-0.0588,-0.2941,0.1765
+hieu,chinh,B+ − B,nhóm xuyen_khoan,17,dieu_du_gold,-0.1765,-0.4118,0.0588
 hieu,chinh,B+ − B,nhóm xuyen_khoan,17,khoan_toan_phan,-0.0588,-0.2941,0.1765
+hieu,chinh,B+ − B,nhóm xuyen_khoan,17,khoan_du_gold,0.0,-0.2353,0.2353
 hieu,chinh,B+ − B,nhóm xuyen_khoan,17,dieu_phu,-0.1765,-0.4118,0.0588
 hieu,chinh,B+ − B,nhóm xuyen_khoan,17,dieu_chinh_xac,-0.1176,-0.3529,0.1176
 hieu,chinh,B+ − B,nhóm xuyen_khoan,17,co_trich,-0.0588,-0.2941,0.1176
 hieu,chinh,B+ − B,nhóm xuyen_khoan,17,thieu,0.1765,-0.0588,0.4118
 hieu,chinh,E − B,nhóm xuyen_khoan,17,dieu_toan_phan,0.0588,0.0,0.1765
+hieu,chinh,E − B,nhóm xuyen_khoan,17,dieu_du_gold,0.0,0.0,0.0
 hieu,chinh,E − B,nhóm xuyen_khoan,17,khoan_toan_phan,0.0588,0.0,0.1765
+hieu,chinh,E − B,nhóm xuyen_khoan,17,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,E − B,nhóm xuyen_khoan,17,dieu_phu,0.0,0.0,0.0
 hieu,chinh,E − B,nhóm xuyen_khoan,17,dieu_chinh_xac,0.0294,0.0,0.0882
 hieu,chinh,E − B,nhóm xuyen_khoan,17,co_trich,0.0,0.0,0.0
 hieu,chinh,E − B,nhóm xuyen_khoan,17,thieu,0.0,0.0,0.0
 hieu,chinh,E2 − B,nhóm xuyen_khoan,17,dieu_toan_phan,-0.0588,-0.2941,0.1765
+hieu,chinh,E2 − B,nhóm xuyen_khoan,17,dieu_du_gold,-0.1765,-0.4118,0.0588
 hieu,chinh,E2 − B,nhóm xuyen_khoan,17,khoan_toan_phan,-0.0588,-0.2941,0.1765
+hieu,chinh,E2 − B,nhóm xuyen_khoan,17,khoan_du_gold,0.0,-0.2353,0.2353
 hieu,chinh,E2 − B,nhóm xuyen_khoan,17,dieu_phu,-0.1765,-0.4118,0.0588
 hieu,chinh,E2 − B,nhóm xuyen_khoan,17,dieu_chinh_xac,-0.1176,-0.3529,0.1176
 hieu,chinh,E2 − B,nhóm xuyen_khoan,17,co_trich,-0.0588,-0.2941,0.1176
 hieu,chinh,E2 − B,nhóm xuyen_khoan,17,thieu,0.1765,-0.0588,0.4118
 hieu,chinh,E3 − B,nhóm xuyen_khoan,17,dieu_toan_phan,0.0588,-0.1765,0.2941
+hieu,chinh,E3 − B,nhóm xuyen_khoan,17,dieu_du_gold,-0.1176,-0.3529,0.1176
 hieu,chinh,E3 − B,nhóm xuyen_khoan,17,khoan_toan_phan,0.1176,-0.1765,0.4118
+hieu,chinh,E3 − B,nhóm xuyen_khoan,17,khoan_du_gold,0.0588,-0.1765,0.3529
 hieu,chinh,E3 − B,nhóm xuyen_khoan,17,dieu_phu,-0.1176,-0.3529,0.1176
 hieu,chinh,E3 − B,nhóm xuyen_khoan,17,dieu_chinh_xac,-0.0294,-0.2647,0.2059
 hieu,chinh,E3 − B,nhóm xuyen_khoan,17,co_trich,-0.0588,-0.2941,0.1176
 hieu,chinh,E3 − B,nhóm xuyen_khoan,17,thieu,0.1176,-0.1176,0.3529
 diem,chinh,A,nhóm khong_co_dieu,15,dieu_toan_phan,0.0,,
+diem,chinh,A,nhóm khong_co_dieu,15,dieu_du_gold,0.0,,
 diem,chinh,A,nhóm khong_co_dieu,15,khoan_toan_phan,0.0,,
+diem,chinh,A,nhóm khong_co_dieu,15,khoan_du_gold,0.0,,
 diem,chinh,A,nhóm khong_co_dieu,15,dieu_phu,0.0,,
 diem,chinh,A,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0,,
 diem,chinh,A,nhóm khong_co_dieu,15,co_trich,0.8,,
 diem,chinh,A,nhóm khong_co_dieu,15,thieu,1.0,,
 diem,chinh,C,nhóm khong_co_dieu,15,dieu_toan_phan,0.0,,
+diem,chinh,C,nhóm khong_co_dieu,15,dieu_du_gold,0.0,,
 diem,chinh,C,nhóm khong_co_dieu,15,khoan_toan_phan,0.0,,
+diem,chinh,C,nhóm khong_co_dieu,15,khoan_du_gold,0.0,,
 diem,chinh,C,nhóm khong_co_dieu,15,dieu_phu,0.0,,
 diem,chinh,C,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0,,
 diem,chinh,C,nhóm khong_co_dieu,15,co_trich,1.0,,
 diem,chinh,C,nhóm khong_co_dieu,15,thieu,1.0,,
 diem,chinh,D,nhóm khong_co_dieu,15,dieu_toan_phan,0.0,,
+diem,chinh,D,nhóm khong_co_dieu,15,dieu_du_gold,0.0,,
 diem,chinh,D,nhóm khong_co_dieu,15,khoan_toan_phan,0.0,,
+diem,chinh,D,nhóm khong_co_dieu,15,khoan_du_gold,0.0,,
 diem,chinh,D,nhóm khong_co_dieu,15,dieu_phu,0.0,,
 diem,chinh,D,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0,,
 diem,chinh,D,nhóm khong_co_dieu,15,co_trich,0.9333,,
 diem,chinh,D,nhóm khong_co_dieu,15,thieu,1.0,,
 diem,chinh,B,nhóm khong_co_dieu,15,dieu_toan_phan,0.0,,
+diem,chinh,B,nhóm khong_co_dieu,15,dieu_du_gold,0.0,,
 diem,chinh,B,nhóm khong_co_dieu,15,khoan_toan_phan,0.0,,
+diem,chinh,B,nhóm khong_co_dieu,15,khoan_du_gold,0.0,,
 diem,chinh,B,nhóm khong_co_dieu,15,dieu_phu,0.0,,
 diem,chinh,B,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0,,
 diem,chinh,B,nhóm khong_co_dieu,15,co_trich,0.9333,,
 diem,chinh,B,nhóm khong_co_dieu,15,thieu,1.0,,
 diem,chinh,B+,nhóm khong_co_dieu,15,dieu_toan_phan,0.0,,
+diem,chinh,B+,nhóm khong_co_dieu,15,dieu_du_gold,0.0,,
 diem,chinh,B+,nhóm khong_co_dieu,15,khoan_toan_phan,0.0,,
+diem,chinh,B+,nhóm khong_co_dieu,15,khoan_du_gold,0.0,,
 diem,chinh,B+,nhóm khong_co_dieu,15,dieu_phu,0.0,,
 diem,chinh,B+,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0,,
 diem,chinh,B+,nhóm khong_co_dieu,15,co_trich,0.8667,,
 diem,chinh,B+,nhóm khong_co_dieu,15,thieu,1.0,,
 diem,chinh,E,nhóm khong_co_dieu,15,dieu_toan_phan,0.0,,
+diem,chinh,E,nhóm khong_co_dieu,15,dieu_du_gold,0.0,,
 diem,chinh,E,nhóm khong_co_dieu,15,khoan_toan_phan,0.0,,
+diem,chinh,E,nhóm khong_co_dieu,15,khoan_du_gold,0.0,,
 diem,chinh,E,nhóm khong_co_dieu,15,dieu_phu,0.0,,
 diem,chinh,E,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0,,
 diem,chinh,E,nhóm khong_co_dieu,15,co_trich,0.9333,,
 diem,chinh,E,nhóm khong_co_dieu,15,thieu,1.0,,
 diem,chinh,E2,nhóm khong_co_dieu,15,dieu_toan_phan,0.0,,
+diem,chinh,E2,nhóm khong_co_dieu,15,dieu_du_gold,0.0,,
 diem,chinh,E2,nhóm khong_co_dieu,15,khoan_toan_phan,0.0,,
+diem,chinh,E2,nhóm khong_co_dieu,15,khoan_du_gold,0.0,,
 diem,chinh,E2,nhóm khong_co_dieu,15,dieu_phu,0.0,,
 diem,chinh,E2,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0,,
 diem,chinh,E2,nhóm khong_co_dieu,15,co_trich,0.8667,,
 diem,chinh,E2,nhóm khong_co_dieu,15,thieu,1.0,,
 diem,chinh,E3,nhóm khong_co_dieu,15,dieu_toan_phan,0.0667,,
+diem,chinh,E3,nhóm khong_co_dieu,15,dieu_du_gold,0.0667,,
 diem,chinh,E3,nhóm khong_co_dieu,15,khoan_toan_phan,0.0667,,
+diem,chinh,E3,nhóm khong_co_dieu,15,khoan_du_gold,0.0667,,
 diem,chinh,E3,nhóm khong_co_dieu,15,dieu_phu,0.0667,,
 diem,chinh,E3,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0667,,
 diem,chinh,E3,nhóm khong_co_dieu,15,co_trich,0.8667,,
 diem,chinh,E3,nhóm khong_co_dieu,15,thieu,0.9333,,
 hieu,chinh,C − A,nhóm khong_co_dieu,15,dieu_toan_phan,0.0,0.0,0.0
+hieu,chinh,C − A,nhóm khong_co_dieu,15,dieu_du_gold,0.0,0.0,0.0
 hieu,chinh,C − A,nhóm khong_co_dieu,15,khoan_toan_phan,0.0,0.0,0.0
+hieu,chinh,C − A,nhóm khong_co_dieu,15,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,C − A,nhóm khong_co_dieu,15,dieu_phu,0.0,0.0,0.0
 hieu,chinh,C − A,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0,0.0,0.0
 hieu,chinh,C − A,nhóm khong_co_dieu,15,co_trich,0.2,0.0,0.4
 hieu,chinh,C − A,nhóm khong_co_dieu,15,thieu,0.0,0.0,0.0
 hieu,chinh,D − A,nhóm khong_co_dieu,15,dieu_toan_phan,0.0,0.0,0.0
+hieu,chinh,D − A,nhóm khong_co_dieu,15,dieu_du_gold,0.0,0.0,0.0
 hieu,chinh,D − A,nhóm khong_co_dieu,15,khoan_toan_phan,0.0,0.0,0.0
+hieu,chinh,D − A,nhóm khong_co_dieu,15,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,D − A,nhóm khong_co_dieu,15,dieu_phu,0.0,0.0,0.0
 hieu,chinh,D − A,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0,0.0,0.0
 hieu,chinh,D − A,nhóm khong_co_dieu,15,co_trich,0.1333,-0.0667,0.4
 hieu,chinh,D − A,nhóm khong_co_dieu,15,thieu,0.0,0.0,0.0
 hieu,chinh,B − A,nhóm khong_co_dieu,15,dieu_toan_phan,0.0,0.0,0.0
+hieu,chinh,B − A,nhóm khong_co_dieu,15,dieu_du_gold,0.0,0.0,0.0
 hieu,chinh,B − A,nhóm khong_co_dieu,15,khoan_toan_phan,0.0,0.0,0.0
+hieu,chinh,B − A,nhóm khong_co_dieu,15,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,B − A,nhóm khong_co_dieu,15,dieu_phu,0.0,0.0,0.0
 hieu,chinh,B − A,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0,0.0,0.0
 hieu,chinh,B − A,nhóm khong_co_dieu,15,co_trich,0.1333,0.0,0.3333
 hieu,chinh,B − A,nhóm khong_co_dieu,15,thieu,0.0,0.0,0.0
 hieu,chinh,B+ − A,nhóm khong_co_dieu,15,dieu_toan_phan,0.0,0.0,0.0
+hieu,chinh,B+ − A,nhóm khong_co_dieu,15,dieu_du_gold,0.0,0.0,0.0
 hieu,chinh,B+ − A,nhóm khong_co_dieu,15,khoan_toan_phan,0.0,0.0,0.0
+hieu,chinh,B+ − A,nhóm khong_co_dieu,15,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,B+ − A,nhóm khong_co_dieu,15,dieu_phu,0.0,0.0,0.0
 hieu,chinh,B+ − A,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0,0.0,0.0
 hieu,chinh,B+ − A,nhóm khong_co_dieu,15,co_trich,0.0667,-0.1333,0.2667
 hieu,chinh,B+ − A,nhóm khong_co_dieu,15,thieu,0.0,0.0,0.0
 hieu,chinh,E − A,nhóm khong_co_dieu,15,dieu_toan_phan,0.0,0.0,0.0
+hieu,chinh,E − A,nhóm khong_co_dieu,15,dieu_du_gold,0.0,0.0,0.0
 hieu,chinh,E − A,nhóm khong_co_dieu,15,khoan_toan_phan,0.0,0.0,0.0
+hieu,chinh,E − A,nhóm khong_co_dieu,15,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,E − A,nhóm khong_co_dieu,15,dieu_phu,0.0,0.0,0.0
 hieu,chinh,E − A,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0,0.0,0.0
 hieu,chinh,E − A,nhóm khong_co_dieu,15,co_trich,0.1333,0.0,0.3333
 hieu,chinh,E − A,nhóm khong_co_dieu,15,thieu,0.0,0.0,0.0
 hieu,chinh,E2 − A,nhóm khong_co_dieu,15,dieu_toan_phan,0.0,0.0,0.0
+hieu,chinh,E2 − A,nhóm khong_co_dieu,15,dieu_du_gold,0.0,0.0,0.0
 hieu,chinh,E2 − A,nhóm khong_co_dieu,15,khoan_toan_phan,0.0,0.0,0.0
+hieu,chinh,E2 − A,nhóm khong_co_dieu,15,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,E2 − A,nhóm khong_co_dieu,15,dieu_phu,0.0,0.0,0.0
 hieu,chinh,E2 − A,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0,0.0,0.0
 hieu,chinh,E2 − A,nhóm khong_co_dieu,15,co_trich,0.0667,-0.1333,0.2667
 hieu,chinh,E2 − A,nhóm khong_co_dieu,15,thieu,0.0,0.0,0.0
 hieu,chinh,E3 − A,nhóm khong_co_dieu,15,dieu_toan_phan,0.0667,0.0,0.2
+hieu,chinh,E3 − A,nhóm khong_co_dieu,15,dieu_du_gold,0.0667,0.0,0.2
 hieu,chinh,E3 − A,nhóm khong_co_dieu,15,khoan_toan_phan,0.0667,0.0,0.2
+hieu,chinh,E3 − A,nhóm khong_co_dieu,15,khoan_du_gold,0.0667,0.0,0.2
 hieu,chinh,E3 − A,nhóm khong_co_dieu,15,dieu_phu,0.0667,0.0,0.2
 hieu,chinh,E3 − A,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0667,0.0,0.2
 hieu,chinh,E3 − A,nhóm khong_co_dieu,15,co_trich,0.0667,-0.1333,0.2667
 hieu,chinh,E3 − A,nhóm khong_co_dieu,15,thieu,-0.0667,-0.2,0.0
 hieu,chinh,A − B,nhóm khong_co_dieu,15,dieu_toan_phan,0.0,0.0,0.0
+hieu,chinh,A − B,nhóm khong_co_dieu,15,dieu_du_gold,0.0,0.0,0.0
 hieu,chinh,A − B,nhóm khong_co_dieu,15,khoan_toan_phan,0.0,0.0,0.0
+hieu,chinh,A − B,nhóm khong_co_dieu,15,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,A − B,nhóm khong_co_dieu,15,dieu_phu,0.0,0.0,0.0
 hieu,chinh,A − B,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0,0.0,0.0
 hieu,chinh,A − B,nhóm khong_co_dieu,15,co_trich,-0.1333,-0.3333,0.0
 hieu,chinh,A − B,nhóm khong_co_dieu,15,thieu,0.0,0.0,0.0
 hieu,chinh,C − B,nhóm khong_co_dieu,15,dieu_toan_phan,0.0,0.0,0.0
+hieu,chinh,C − B,nhóm khong_co_dieu,15,dieu_du_gold,0.0,0.0,0.0
 hieu,chinh,C − B,nhóm khong_co_dieu,15,khoan_toan_phan,0.0,0.0,0.0
+hieu,chinh,C − B,nhóm khong_co_dieu,15,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,C − B,nhóm khong_co_dieu,15,dieu_phu,0.0,0.0,0.0
 hieu,chinh,C − B,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0,0.0,0.0
 hieu,chinh,C − B,nhóm khong_co_dieu,15,co_trich,0.0667,0.0,0.2
 hieu,chinh,C − B,nhóm khong_co_dieu,15,thieu,0.0,0.0,0.0
 hieu,chinh,D − B,nhóm khong_co_dieu,15,dieu_toan_phan,0.0,0.0,0.0
+hieu,chinh,D − B,nhóm khong_co_dieu,15,dieu_du_gold,0.0,0.0,0.0
 hieu,chinh,D − B,nhóm khong_co_dieu,15,khoan_toan_phan,0.0,0.0,0.0
+hieu,chinh,D − B,nhóm khong_co_dieu,15,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,D − B,nhóm khong_co_dieu,15,dieu_phu,0.0,0.0,0.0
 hieu,chinh,D − B,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0,0.0,0.0
 hieu,chinh,D − B,nhóm khong_co_dieu,15,co_trich,0.0,-0.2,0.2
 hieu,chinh,D − B,nhóm khong_co_dieu,15,thieu,0.0,0.0,0.0
 hieu,chinh,B+ − B,nhóm khong_co_dieu,15,dieu_toan_phan,0.0,0.0,0.0
+hieu,chinh,B+ − B,nhóm khong_co_dieu,15,dieu_du_gold,0.0,0.0,0.0
 hieu,chinh,B+ − B,nhóm khong_co_dieu,15,khoan_toan_phan,0.0,0.0,0.0
+hieu,chinh,B+ − B,nhóm khong_co_dieu,15,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,B+ − B,nhóm khong_co_dieu,15,dieu_phu,0.0,0.0,0.0
 hieu,chinh,B+ − B,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0,0.0,0.0
 hieu,chinh,B+ − B,nhóm khong_co_dieu,15,co_trich,-0.0667,-0.2,0.0
 hieu,chinh,B+ − B,nhóm khong_co_dieu,15,thieu,0.0,0.0,0.0
 hieu,chinh,E − B,nhóm khong_co_dieu,15,dieu_toan_phan,0.0,0.0,0.0
+hieu,chinh,E − B,nhóm khong_co_dieu,15,dieu_du_gold,0.0,0.0,0.0
 hieu,chinh,E − B,nhóm khong_co_dieu,15,khoan_toan_phan,0.0,0.0,0.0
+hieu,chinh,E − B,nhóm khong_co_dieu,15,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,E − B,nhóm khong_co_dieu,15,dieu_phu,0.0,0.0,0.0
 hieu,chinh,E − B,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0,0.0,0.0
 hieu,chinh,E − B,nhóm khong_co_dieu,15,co_trich,0.0,0.0,0.0
 hieu,chinh,E − B,nhóm khong_co_dieu,15,thieu,0.0,0.0,0.0
 hieu,chinh,E2 − B,nhóm khong_co_dieu,15,dieu_toan_phan,0.0,0.0,0.0
+hieu,chinh,E2 − B,nhóm khong_co_dieu,15,dieu_du_gold,0.0,0.0,0.0
 hieu,chinh,E2 − B,nhóm khong_co_dieu,15,khoan_toan_phan,0.0,0.0,0.0
+hieu,chinh,E2 − B,nhóm khong_co_dieu,15,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,E2 − B,nhóm khong_co_dieu,15,dieu_phu,0.0,0.0,0.0
 hieu,chinh,E2 − B,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0,0.0,0.0
 hieu,chinh,E2 − B,nhóm khong_co_dieu,15,co_trich,-0.0667,-0.2,0.0
 hieu,chinh,E2 − B,nhóm khong_co_dieu,15,thieu,0.0,0.0,0.0
 hieu,chinh,E3 − B,nhóm khong_co_dieu,15,dieu_toan_phan,0.0667,0.0,0.2
+hieu,chinh,E3 − B,nhóm khong_co_dieu,15,dieu_du_gold,0.0667,0.0,0.2
 hieu,chinh,E3 − B,nhóm khong_co_dieu,15,khoan_toan_phan,0.0667,0.0,0.2
+hieu,chinh,E3 − B,nhóm khong_co_dieu,15,khoan_du_gold,0.0667,0.0,0.2
 hieu,chinh,E3 − B,nhóm khong_co_dieu,15,dieu_phu,0.0667,0.0,0.2
 hieu,chinh,E3 − B,nhóm khong_co_dieu,15,dieu_chinh_xac,0.0667,0.0,0.2
 hieu,chinh,E3 − B,nhóm khong_co_dieu,15,co_trich,-0.0667,-0.2,0.0
 hieu,chinh,E3 − B,nhóm khong_co_dieu,15,thieu,-0.0667,-0.2,0.0
 diem,chinh,A,nhóm dan_chieu,9,dieu_toan_phan,0.3333,,
+diem,chinh,A,nhóm dan_chieu,9,dieu_du_gold,0.3333,,
 diem,chinh,A,nhóm dan_chieu,9,khoan_toan_phan,0.2222,,
+diem,chinh,A,nhóm dan_chieu,9,khoan_du_gold,0.2222,,
 diem,chinh,A,nhóm dan_chieu,9,dieu_phu,0.5,,
 diem,chinh,A,nhóm dan_chieu,9,dieu_chinh_xac,0.6667,,
 diem,chinh,A,nhóm dan_chieu,9,co_trich,0.8889,,
 diem,chinh,A,nhóm dan_chieu,9,thieu,0.6667,,
 diem,chinh,C,nhóm dan_chieu,9,dieu_toan_phan,0.0,,
+diem,chinh,C,nhóm dan_chieu,9,dieu_du_gold,0.1111,,
 diem,chinh,C,nhóm dan_chieu,9,khoan_toan_phan,0.0,,
+diem,chinh,C,nhóm dan_chieu,9,khoan_du_gold,0.1111,,
 diem,chinh,C,nhóm dan_chieu,9,dieu_phu,0.3333,,
 diem,chinh,C,nhóm dan_chieu,9,dieu_chinh_xac,0.4444,,
 diem,chinh,C,nhóm dan_chieu,9,co_trich,0.8889,,
 diem,chinh,C,nhóm dan_chieu,9,thieu,0.8889,,
 diem,chinh,D,nhóm dan_chieu,9,dieu_toan_phan,0.0,,
+diem,chinh,D,nhóm dan_chieu,9,dieu_du_gold,0.0,,
 diem,chinh,D,nhóm dan_chieu,9,khoan_toan_phan,0.0,,
+diem,chinh,D,nhóm dan_chieu,9,khoan_du_gold,0.0,,
 diem,chinh,D,nhóm dan_chieu,9,dieu_phu,0.2222,,
 diem,chinh,D,nhóm dan_chieu,9,dieu_chinh_xac,0.3889,,
 diem,chinh,D,nhóm dan_chieu,9,co_trich,0.6667,,
 diem,chinh,D,nhóm dan_chieu,9,thieu,1.0,,
 diem,chinh,B,nhóm dan_chieu,9,dieu_toan_phan,0.1111,,
+diem,chinh,B,nhóm dan_chieu,9,dieu_du_gold,0.1111,,
 diem,chinh,B,nhóm dan_chieu,9,khoan_toan_phan,0.1111,,
+diem,chinh,B,nhóm dan_chieu,9,khoan_du_gold,0.1111,,
 diem,chinh,B,nhóm dan_chieu,9,dieu_phu,0.5,,
 diem,chinh,B,nhóm dan_chieu,9,dieu_chinh_xac,0.8148,,
 diem,chinh,B,nhóm dan_chieu,9,co_trich,0.8889,,
 diem,chinh,B,nhóm dan_chieu,9,thieu,0.8889,,
 diem,chinh,B+,nhóm dan_chieu,9,dieu_toan_phan,0.1111,,
+diem,chinh,B+,nhóm dan_chieu,9,dieu_du_gold,0.1111,,
 diem,chinh,B+,nhóm dan_chieu,9,khoan_toan_phan,0.0,,
+diem,chinh,B+,nhóm dan_chieu,9,khoan_du_gold,0.0,,
 diem,chinh,B+,nhóm dan_chieu,9,dieu_phu,0.4444,,
 diem,chinh,B+,nhóm dan_chieu,9,dieu_chinh_xac,0.7222,,
 diem,chinh,B+,nhóm dan_chieu,9,co_trich,0.7778,,
 diem,chinh,B+,nhóm dan_chieu,9,thieu,0.8889,,
 diem,chinh,E,nhóm dan_chieu,9,dieu_toan_phan,0.1111,,
+diem,chinh,E,nhóm dan_chieu,9,dieu_du_gold,0.1111,,
 diem,chinh,E,nhóm dan_chieu,9,khoan_toan_phan,0.1111,,
+diem,chinh,E,nhóm dan_chieu,9,khoan_du_gold,0.1111,,
 diem,chinh,E,nhóm dan_chieu,9,dieu_phu,0.5,,
 diem,chinh,E,nhóm dan_chieu,9,dieu_chinh_xac,0.8148,,
 diem,chinh,E,nhóm dan_chieu,9,co_trich,0.8889,,
 diem,chinh,E,nhóm dan_chieu,9,thieu,0.8889,,
 diem,chinh,E2,nhóm dan_chieu,9,dieu_toan_phan,0.1111,,
+diem,chinh,E2,nhóm dan_chieu,9,dieu_du_gold,0.1111,,
 diem,chinh,E2,nhóm dan_chieu,9,khoan_toan_phan,0.0,,
+diem,chinh,E2,nhóm dan_chieu,9,khoan_du_gold,0.0,,
 diem,chinh,E2,nhóm dan_chieu,9,dieu_phu,0.4444,,
 diem,chinh,E2,nhóm dan_chieu,9,dieu_chinh_xac,0.7222,,
 diem,chinh,E2,nhóm dan_chieu,9,co_trich,0.7778,,
 diem,chinh,E2,nhóm dan_chieu,9,thieu,0.8889,,
 diem,chinh,E3,nhóm dan_chieu,9,dieu_toan_phan,0.2222,,
+diem,chinh,E3,nhóm dan_chieu,9,dieu_du_gold,0.2222,,
 diem,chinh,E3,nhóm dan_chieu,9,khoan_toan_phan,0.0,,
+diem,chinh,E3,nhóm dan_chieu,9,khoan_du_gold,0.1111,,
 diem,chinh,E3,nhóm dan_chieu,9,dieu_phu,0.5,,
 diem,chinh,E3,nhóm dan_chieu,9,dieu_chinh_xac,0.7778,,
 diem,chinh,E3,nhóm dan_chieu,9,co_trich,0.7778,,
 diem,chinh,E3,nhóm dan_chieu,9,thieu,0.7778,,
 hieu,chinh,C − A,nhóm dan_chieu,9,dieu_toan_phan,-0.3333,-0.6667,-0.1111
+hieu,chinh,C − A,nhóm dan_chieu,9,dieu_du_gold,-0.2222,-0.5556,0.0
 hieu,chinh,C − A,nhóm dan_chieu,9,khoan_toan_phan,-0.2222,-0.5556,0.0
+hieu,chinh,C − A,nhóm dan_chieu,9,khoan_du_gold,-0.1111,-0.3333,0.0
 hieu,chinh,C − A,nhóm dan_chieu,9,dieu_phu,-0.1667,-0.4444,0.0
 hieu,chinh,C − A,nhóm dan_chieu,9,dieu_chinh_xac,-0.2222,-0.4444,-0.0556
 hieu,chinh,C − A,nhóm dan_chieu,9,co_trich,0.0,0.0,0.0
 hieu,chinh,C − A,nhóm dan_chieu,9,thieu,0.2222,0.0,0.5556
 hieu,chinh,D − A,nhóm dan_chieu,9,dieu_toan_phan,-0.3333,-0.6667,-0.1111
+hieu,chinh,D − A,nhóm dan_chieu,9,dieu_du_gold,-0.3333,-0.6667,-0.1111
 hieu,chinh,D − A,nhóm dan_chieu,9,khoan_toan_phan,-0.2222,-0.5556,0.0
+hieu,chinh,D − A,nhóm dan_chieu,9,khoan_du_gold,-0.2222,-0.5556,0.0
 hieu,chinh,D − A,nhóm dan_chieu,9,dieu_phu,-0.2778,-0.4444,-0.1111
 hieu,chinh,D − A,nhóm dan_chieu,9,dieu_chinh_xac,-0.2778,-0.5556,-0.0556
 hieu,chinh,D − A,nhóm dan_chieu,9,co_trich,-0.2222,-0.5556,0.0
 hieu,chinh,D − A,nhóm dan_chieu,9,thieu,0.3333,0.1111,0.6667
 hieu,chinh,B − A,nhóm dan_chieu,9,dieu_toan_phan,-0.2222,-0.5556,0.0
+hieu,chinh,B − A,nhóm dan_chieu,9,dieu_du_gold,-0.2222,-0.5556,0.0
 hieu,chinh,B − A,nhóm dan_chieu,9,khoan_toan_phan,-0.1111,-0.4444,0.2222
+hieu,chinh,B − A,nhóm dan_chieu,9,khoan_du_gold,-0.1111,-0.4444,0.2222
 hieu,chinh,B − A,nhóm dan_chieu,9,dieu_phu,0.0,-0.2222,0.2222
 hieu,chinh,B − A,nhóm dan_chieu,9,dieu_chinh_xac,0.1481,-0.1481,0.4815
 hieu,chinh,B − A,nhóm dan_chieu,9,co_trich,0.0,-0.3333,0.3333
 hieu,chinh,B − A,nhóm dan_chieu,9,thieu,0.2222,0.0,0.5556
 hieu,chinh,B+ − A,nhóm dan_chieu,9,dieu_toan_phan,-0.2222,-0.5556,0.0
+hieu,chinh,B+ − A,nhóm dan_chieu,9,dieu_du_gold,-0.2222,-0.5556,0.0
 hieu,chinh,B+ − A,nhóm dan_chieu,9,khoan_toan_phan,-0.2222,-0.5556,0.0
+hieu,chinh,B+ − A,nhóm dan_chieu,9,khoan_du_gold,-0.2222,-0.5556,0.0
 hieu,chinh,B+ − A,nhóm dan_chieu,9,dieu_phu,-0.0556,-0.2778,0.1667
 hieu,chinh,B+ − A,nhóm dan_chieu,9,dieu_chinh_xac,0.0556,-0.3333,0.4444
 hieu,chinh,B+ − A,nhóm dan_chieu,9,co_trich,-0.1111,-0.5556,0.2222
 hieu,chinh,B+ − A,nhóm dan_chieu,9,thieu,0.2222,0.0,0.5556
 hieu,chinh,E − A,nhóm dan_chieu,9,dieu_toan_phan,-0.2222,-0.5556,0.0
+hieu,chinh,E − A,nhóm dan_chieu,9,dieu_du_gold,-0.2222,-0.5556,0.0
 hieu,chinh,E − A,nhóm dan_chieu,9,khoan_toan_phan,-0.1111,-0.4444,0.2222
+hieu,chinh,E − A,nhóm dan_chieu,9,khoan_du_gold,-0.1111,-0.4444,0.2222
 hieu,chinh,E − A,nhóm dan_chieu,9,dieu_phu,0.0,-0.2222,0.2222
 hieu,chinh,E − A,nhóm dan_chieu,9,dieu_chinh_xac,0.1481,-0.1481,0.4815
 hieu,chinh,E − A,nhóm dan_chieu,9,co_trich,0.0,-0.3333,0.3333
 hieu,chinh,E − A,nhóm dan_chieu,9,thieu,0.2222,0.0,0.5556
 hieu,chinh,E2 − A,nhóm dan_chieu,9,dieu_toan_phan,-0.2222,-0.5556,0.0
+hieu,chinh,E2 − A,nhóm dan_chieu,9,dieu_du_gold,-0.2222,-0.5556,0.0
 hieu,chinh,E2 − A,nhóm dan_chieu,9,khoan_toan_phan,-0.2222,-0.5556,0.0
+hieu,chinh,E2 − A,nhóm dan_chieu,9,khoan_du_gold,-0.2222,-0.5556,0.0
 hieu,chinh,E2 − A,nhóm dan_chieu,9,dieu_phu,-0.0556,-0.2778,0.1667
 hieu,chinh,E2 − A,nhóm dan_chieu,9,dieu_chinh_xac,0.0556,-0.3333,0.4444
 hieu,chinh,E2 − A,nhóm dan_chieu,9,co_trich,-0.1111,-0.5556,0.2222
 hieu,chinh,E2 − A,nhóm dan_chieu,9,thieu,0.2222,0.0,0.5556
 hieu,chinh,E3 − A,nhóm dan_chieu,9,dieu_toan_phan,-0.1111,-0.4444,0.2222
+hieu,chinh,E3 − A,nhóm dan_chieu,9,dieu_du_gold,-0.1111,-0.4444,0.2222
 hieu,chinh,E3 − A,nhóm dan_chieu,9,khoan_toan_phan,-0.2222,-0.5556,0.0
+hieu,chinh,E3 − A,nhóm dan_chieu,9,khoan_du_gold,-0.1111,-0.4444,0.2222
 hieu,chinh,E3 − A,nhóm dan_chieu,9,dieu_phu,0.0,-0.2778,0.2778
 hieu,chinh,E3 − A,nhóm dan_chieu,9,dieu_chinh_xac,0.1111,-0.2222,0.4444
 hieu,chinh,E3 − A,nhóm dan_chieu,9,co_trich,-0.1111,-0.5556,0.2222
 hieu,chinh,E3 − A,nhóm dan_chieu,9,thieu,0.1111,-0.2222,0.4444
 hieu,chinh,A − B,nhóm dan_chieu,9,dieu_toan_phan,0.2222,0.0,0.5556
+hieu,chinh,A − B,nhóm dan_chieu,9,dieu_du_gold,0.2222,0.0,0.5556
 hieu,chinh,A − B,nhóm dan_chieu,9,khoan_toan_phan,0.1111,-0.2222,0.4444
+hieu,chinh,A − B,nhóm dan_chieu,9,khoan_du_gold,0.1111,-0.2222,0.4444
 hieu,chinh,A − B,nhóm dan_chieu,9,dieu_phu,0.0,-0.2222,0.2222
 hieu,chinh,A − B,nhóm dan_chieu,9,dieu_chinh_xac,-0.1481,-0.4815,0.1481
 hieu,chinh,A − B,nhóm dan_chieu,9,co_trich,0.0,-0.3333,0.3333
 hieu,chinh,A − B,nhóm dan_chieu,9,thieu,-0.2222,-0.5556,0.0
 hieu,chinh,C − B,nhóm dan_chieu,9,dieu_toan_phan,-0.1111,-0.3333,0.0
+hieu,chinh,C − B,nhóm dan_chieu,9,dieu_du_gold,0.0,-0.3333,0.3333
 hieu,chinh,C − B,nhóm dan_chieu,9,khoan_toan_phan,-0.1111,-0.3333,0.0
+hieu,chinh,C − B,nhóm dan_chieu,9,khoan_du_gold,0.0,-0.3333,0.3333
 hieu,chinh,C − B,nhóm dan_chieu,9,dieu_phu,-0.1667,-0.3889,0.0556
 hieu,chinh,C − B,nhóm dan_chieu,9,dieu_chinh_xac,-0.3704,-0.6481,-0.1111
 hieu,chinh,C − B,nhóm dan_chieu,9,co_trich,0.0,-0.3333,0.3333
 hieu,chinh,C − B,nhóm dan_chieu,9,thieu,0.0,-0.3333,0.3333
 hieu,chinh,D − B,nhóm dan_chieu,9,dieu_toan_phan,-0.1111,-0.3333,0.0
+hieu,chinh,D − B,nhóm dan_chieu,9,dieu_du_gold,-0.1111,-0.3333,0.0
 hieu,chinh,D − B,nhóm dan_chieu,9,khoan_toan_phan,-0.1111,-0.3333,0.0
+hieu,chinh,D − B,nhóm dan_chieu,9,khoan_du_gold,-0.1111,-0.3333,0.0
 hieu,chinh,D − B,nhóm dan_chieu,9,dieu_phu,-0.2778,-0.4444,-0.1111
 hieu,chinh,D − B,nhóm dan_chieu,9,dieu_chinh_xac,-0.4259,-0.7778,-0.0926
 hieu,chinh,D − B,nhóm dan_chieu,9,co_trich,-0.2222,-0.5556,0.0
 hieu,chinh,D − B,nhóm dan_chieu,9,thieu,0.1111,0.0,0.3333
 hieu,chinh,B+ − B,nhóm dan_chieu,9,dieu_toan_phan,0.0,0.0,0.0
+hieu,chinh,B+ − B,nhóm dan_chieu,9,dieu_du_gold,0.0,0.0,0.0
 hieu,chinh,B+ − B,nhóm dan_chieu,9,khoan_toan_phan,-0.1111,-0.3333,0.0
+hieu,chinh,B+ − B,nhóm dan_chieu,9,khoan_du_gold,-0.1111,-0.3333,0.0
 hieu,chinh,B+ − B,nhóm dan_chieu,9,dieu_phu,-0.0556,-0.1667,0.0
 hieu,chinh,B+ − B,nhóm dan_chieu,9,dieu_chinh_xac,-0.0926,-0.3333,0.0556
 hieu,chinh,B+ − B,nhóm dan_chieu,9,co_trich,-0.1111,-0.3333,0.0
 hieu,chinh,B+ − B,nhóm dan_chieu,9,thieu,0.0,0.0,0.0
 hieu,chinh,E − B,nhóm dan_chieu,9,dieu_toan_phan,0.0,0.0,0.0
+hieu,chinh,E − B,nhóm dan_chieu,9,dieu_du_gold,0.0,0.0,0.0
 hieu,chinh,E − B,nhóm dan_chieu,9,khoan_toan_phan,0.0,0.0,0.0
+hieu,chinh,E − B,nhóm dan_chieu,9,khoan_du_gold,0.0,0.0,0.0
 hieu,chinh,E − B,nhóm dan_chieu,9,dieu_phu,0.0,0.0,0.0
 hieu,chinh,E − B,nhóm dan_chieu,9,dieu_chinh_xac,0.0,0.0,0.0
 hieu,chinh,E − B,nhóm dan_chieu,9,co_trich,0.0,0.0,0.0
 hieu,chinh,E − B,nhóm dan_chieu,9,thieu,0.0,0.0,0.0
 hieu,chinh,E2 − B,nhóm dan_chieu,9,dieu_toan_phan,0.0,0.0,0.0
+hieu,chinh,E2 − B,nhóm dan_chieu,9,dieu_du_gold,0.0,0.0,0.0
 hieu,chinh,E2 − B,nhóm dan_chieu,9,khoan_toan_phan,-0.1111,-0.3333,0.0
+hieu,chinh,E2 − B,nhóm dan_chieu,9,khoan_du_gold,-0.1111,-0.3333,0.0
 hieu,chinh,E2 − B,nhóm dan_chieu,9,dieu_phu,-0.0556,-0.1667,0.0
 hieu,chinh,E2 − B,nhóm dan_chieu,9,dieu_chinh_xac,-0.0926,-0.3333,0.0556
 hieu,chinh,E2 − B,nhóm dan_chieu,9,co_trich,-0.1111,-0.3333,0.0
 hieu,chinh,E2 − B,nhóm dan_chieu,9,thieu,0.0,0.0,0.0
 hieu,chinh,E3 − B,nhóm dan_chieu,9,dieu_toan_phan,0.1111,0.0,0.3333
+hieu,chinh,E3 − B,nhóm dan_chieu,9,dieu_du_gold,0.1111,0.0,0.3333
 hieu,chinh,E3 − B,nhóm dan_chieu,9,khoan_toan_phan,-0.1111,-0.3333,0.0
+hieu,chinh,E3 − B,nhóm dan_chieu,9,khoan_du_gold,0.0,-0.3333,0.3333
 hieu,chinh,E3 − B,nhóm dan_chieu,9,dieu_phu,0.0,-0.1667,0.1667
 hieu,chinh,E3 − B,nhóm dan_chieu,9,dieu_chinh_xac,-0.037,-0.3333,0.2222
 hieu,chinh,E3 − B,nhóm dan_chieu,9,co_trich,-0.1111,-0.3333,0.0
 hieu,chinh,E3 − B,nhóm dan_chieu,9,thieu,-0.1111,-0.3333,0.0
 diem,chinh,A,gold trung lập,34,dieu_toan_phan,0.2059,,
+diem,chinh,A,gold trung lập,34,dieu_du_gold,0.2059,,
 diem,chinh,A,gold trung lập,34,khoan_toan_phan,0.1471,,
+diem,chinh,A,gold trung lập,34,khoan_du_gold,0.1765,,
 diem,chinh,A,gold trung lập,34,dieu_phu,0.2353,,
 diem,chinh,A,gold trung lập,34,dieu_chinh_xac,0.2647,,
 diem,chinh,A,gold trung lập,34,co_trich,0.9118,,
 diem,chinh,A,gold trung lập,34,thieu,0.7941,,
 diem,chinh,C,gold trung lập,34,dieu_toan_phan,0.2353,,
+diem,chinh,C,gold trung lập,34,dieu_du_gold,0.2353,,
 diem,chinh,C,gold trung lập,34,khoan_toan_phan,0.1765,,
+diem,chinh,C,gold trung lập,34,khoan_du_gold,0.2059,,
 diem,chinh,C,gold trung lập,34,dieu_phu,0.2647,,
 diem,chinh,C,gold trung lập,34,dieu_chinh_xac,0.2794,,
 diem,chinh,C,gold trung lập,34,co_trich,0.9412,,
 diem,chinh,C,gold trung lập,34,thieu,0.7647,,
 diem,chinh,D,gold trung lập,34,dieu_toan_phan,0.2059,,
+diem,chinh,D,gold trung lập,34,dieu_du_gold,0.2059,,
 diem,chinh,D,gold trung lập,34,khoan_toan_phan,0.1765,,
+diem,chinh,D,gold trung lập,34,khoan_du_gold,0.1765,,
 diem,chinh,D,gold trung lập,34,dieu_phu,0.2206,,
 diem,chinh,D,gold trung lập,34,dieu_chinh_xac,0.2353,,
 diem,chinh,D,gold trung lập,34,co_trich,0.9118,,
 diem,chinh,D,gold trung lập,34,thieu,0.7941,,
 diem,chinh,B,gold trung lập,34,dieu_toan_phan,0.6471,,
+diem,chinh,B,gold trung lập,34,dieu_du_gold,0.7059,,
 diem,chinh,B,gold trung lập,34,khoan_toan_phan,0.5294,,
+diem,chinh,B,gold trung lập,34,khoan_du_gold,0.5882,,
 diem,chinh,B,gold trung lập,34,dieu_phu,0.75,,
 diem,chinh,B,gold trung lập,34,dieu_chinh_xac,0.7647,,
 diem,chinh,B,gold trung lập,34,co_trich,0.9706,,
 diem,chinh,B,gold trung lập,34,thieu,0.2941,,
 diem,chinh,B+,gold trung lập,34,dieu_toan_phan,0.5,,
+diem,chinh,B+,gold trung lập,34,dieu_du_gold,0.5882,,
 diem,chinh,B+,gold trung lập,34,khoan_toan_phan,0.2941,,
+diem,chinh,B+,gold trung lập,34,khoan_du_gold,0.3824,,
 diem,chinh,B+,gold trung lập,34,dieu_phu,0.6176,,
 diem,chinh,B+,gold trung lập,34,dieu_chinh_xac,0.6029,,
 diem,chinh,B+,gold trung lập,34,co_trich,0.8824,,
 diem,chinh,B+,gold trung lập,34,thieu,0.4118,,
 diem,chinh,E,gold trung lập,34,dieu_toan_phan,0.6471,,
+diem,chinh,E,gold trung lập,34,dieu_du_gold,0.6765,,
 diem,chinh,E,gold trung lập,34,khoan_toan_phan,0.5294,,
+diem,chinh,E,gold trung lập,34,khoan_du_gold,0.5588,,
 diem,chinh,E,gold trung lập,34,dieu_phu,0.7206,,
 diem,chinh,E,gold trung lập,34,dieu_chinh_xac,0.75,,
 diem,chinh,E,gold trung lập,34,co_trich,0.9706,,
 diem,chinh,E,gold trung lập,34,thieu,0.3235,,
 diem,chinh,E2,gold trung lập,34,dieu_toan_phan,0.5,,
+diem,chinh,E2,gold trung lập,34,dieu_du_gold,0.5882,,
 diem,chinh,E2,gold trung lập,34,khoan_toan_phan,0.2941,,
+diem,chinh,E2,gold trung lập,34,khoan_du_gold,0.3824,,
 diem,chinh,E2,gold trung lập,34,dieu_phu,0.6176,,
 diem,chinh,E2,gold trung lập,34,dieu_chinh_xac,0.6029,,
 diem,chinh,E2,gold trung lập,34,co_trich,0.8824,,
 diem,chinh,E2,gold trung lập,34,thieu,0.4118,,
 diem,chinh,E3,gold trung lập,34,dieu_toan_phan,0.6471,,
+diem,chinh,E3,gold trung lập,34,dieu_du_gold,0.6765,,
 diem,chinh,E3,gold trung lập,34,khoan_toan_phan,0.3529,,
+diem,chinh,E3,gold trung lập,34,khoan_du_gold,0.4118,,
 diem,chinh,E3,gold trung lập,34,dieu_phu,0.6912,,
 diem,chinh,E3,gold trung lập,34,dieu_chinh_xac,0.6912,,
 diem,chinh,E3,gold trung lập,34,co_trich,0.8824,,
 diem,chinh,E3,gold trung lập,34,thieu,0.3235,,
 hieu,chinh,C − A,gold trung lập,34,dieu_toan_phan,0.0294,-0.1765,0.2059
+hieu,chinh,C − A,gold trung lập,34,dieu_du_gold,0.0294,-0.1765,0.2059
 hieu,chinh,C − A,gold trung lập,34,khoan_toan_phan,0.0294,-0.1176,0.1765
+hieu,chinh,C − A,gold trung lập,34,khoan_du_gold,0.0294,-0.1471,0.2059
 hieu,chinh,C − A,gold trung lập,34,dieu_phu,0.0294,-0.1765,0.2059
 hieu,chinh,C − A,gold trung lập,34,dieu_chinh_xac,0.0147,-0.1765,0.2059
 hieu,chinh,C − A,gold trung lập,34,co_trich,0.0294,-0.0882,0.1471
 hieu,chinh,C − A,gold trung lập,34,thieu,-0.0294,-0.2059,0.1765
 hieu,chinh,D − A,gold trung lập,34,dieu_toan_phan,0.0,-0.1471,0.1471
+hieu,chinh,D − A,gold trung lập,34,dieu_du_gold,0.0,-0.1471,0.1471
 hieu,chinh,D − A,gold trung lập,34,khoan_toan_phan,0.0294,-0.1471,0.2059
+hieu,chinh,D − A,gold trung lập,34,khoan_du_gold,0.0,-0.1765,0.1765
 hieu,chinh,D − A,gold trung lập,34,dieu_phu,-0.0147,-0.1765,0.1471
 hieu,chinh,D − A,gold trung lập,34,dieu_chinh_xac,-0.0294,-0.1765,0.1176
 hieu,chinh,D − A,gold trung lập,34,co_trich,0.0,-0.1176,0.1176
 hieu,chinh,D − A,gold trung lập,34,thieu,0.0,-0.1471,0.1471
 hieu,chinh,B − A,gold trung lập,34,dieu_toan_phan,0.4412,0.3235,0.5588
+hieu,chinh,B − A,gold trung lập,34,dieu_du_gold,0.5,0.3824,0.6176
 hieu,chinh,B − A,gold trung lập,34,khoan_toan_phan,0.3824,0.2647,0.5
+hieu,chinh,B − A,gold trung lập,34,khoan_du_gold,0.4118,0.2647,0.5294
 hieu,chinh,B − A,gold trung lập,34,dieu_phu,0.5147,0.3971,0.6324
 hieu,chinh,B − A,gold trung lập,34,dieu_chinh_xac,0.5,0.3824,0.6176
 hieu,chinh,B − A,gold trung lập,34,co_trich,0.0588,0.0,0.1471
 hieu,chinh,B − A,gold trung lập,34,thieu,-0.5,-0.6176,-0.3824
 hieu,chinh,B+ − A,gold trung lập,34,dieu_toan_phan,0.2941,0.1765,0.4412
+hieu,chinh,B+ − A,gold trung lập,34,dieu_du_gold,0.3824,0.2353,0.5294
 hieu,chinh,B+ − A,gold trung lập,34,khoan_toan_phan,0.1471,0.0588,0.2647
+hieu,chinh,B+ − A,gold trung lập,34,khoan_du_gold,0.2059,0.0882,0.3235
 hieu,chinh,B+ − A,gold trung lập,34,dieu_phu,0.3824,0.2353,0.5294
 hieu,chinh,B+ − A,gold trung lập,34,dieu_chinh_xac,0.3382,0.1912,0.5
 hieu,chinh,B+ − A,gold trung lập,34,co_trich,-0.0294,-0.1471,0.0882
 hieu,chinh,B+ − A,gold trung lập,34,thieu,-0.3824,-0.5294,-0.2353
 hieu,chinh,E − A,gold trung lập,34,dieu_toan_phan,0.4412,0.3235,0.5588
+hieu,chinh,E − A,gold trung lập,34,dieu_du_gold,0.4706,0.3529,0.5882
 hieu,chinh,E − A,gold trung lập,34,khoan_toan_phan,0.3824,0.2647,0.5294
+hieu,chinh,E − A,gold trung lập,34,khoan_du_gold,0.3824,0.2353,0.5294
 hieu,chinh,E − A,gold trung lập,34,dieu_phu,0.4853,0.3529,0.6176
 hieu,chinh,E − A,gold trung lập,34,dieu_chinh_xac,0.4853,0.3529,0.6176
 hieu,chinh,E − A,gold trung lập,34,co_trich,0.0588,0.0,0.1471
 hieu,chinh,E − A,gold trung lập,34,thieu,-0.4706,-0.5882,-0.3529
 hieu,chinh,E2 − A,gold trung lập,34,dieu_toan_phan,0.2941,0.1765,0.4412
+hieu,chinh,E2 − A,gold trung lập,34,dieu_du_gold,0.3824,0.2353,0.5294
 hieu,chinh,E2 − A,gold trung lập,34,khoan_toan_phan,0.1471,0.0588,0.2647
+hieu,chinh,E2 − A,gold trung lập,34,khoan_du_gold,0.2059,0.0882,0.3235
 hieu,chinh,E2 − A,gold trung lập,34,dieu_phu,0.3824,0.2353,0.5294
 hieu,chinh,E2 − A,gold trung lập,34,dieu_chinh_xac,0.3382,0.1912,0.5
 hieu,chinh,E2 − A,gold trung lập,34,co_trich,-0.0294,-0.1471,0.0882
 hieu,chinh,E2 − A,gold trung lập,34,thieu,-0.3824,-0.5294,-0.2353
 hieu,chinh,E3 − A,gold trung lập,34,dieu_toan_phan,0.4412,0.2941,0.5882
+hieu,chinh,E3 − A,gold trung lập,34,dieu_du_gold,0.4706,0.3235,0.6176
 hieu,chinh,E3 − A,gold trung lập,34,khoan_toan_phan,0.2059,0.0588,0.3529
+hieu,chinh,E3 − A,gold trung lập,34,khoan_du_gold,0.2353,0.0882,0.3824
 hieu,chinh,E3 − A,gold trung lập,34,dieu_phu,0.4559,0.3088,0.6029
 hieu,chinh,E3 − A,gold trung lập,34,dieu_chinh_xac,0.4265,0.2647,0.5882
 hieu,chinh,E3 − A,gold trung lập,34,co_trich,-0.0294,-0.1471,0.0882
 hieu,chinh,E3 − A,gold trung lập,34,thieu,-0.4706,-0.6176,-0.3235
 hieu,chinh,A − B,gold trung lập,34,dieu_toan_phan,-0.4412,-0.5588,-0.3235
+hieu,chinh,A − B,gold trung lập,34,dieu_du_gold,-0.5,-0.6176,-0.3824
 hieu,chinh,A − B,gold trung lập,34,khoan_toan_phan,-0.3824,-0.5,-0.2647
+hieu,chinh,A − B,gold trung lập,34,khoan_du_gold,-0.4118,-0.5294,-0.2647
 hieu,chinh,A − B,gold trung lập,34,dieu_phu,-0.5147,-0.6324,-0.3971
 hieu,chinh,A − B,gold trung lập,34,dieu_chinh_xac,-0.5,-0.6176,-0.3824
 hieu,chinh,A − B,gold trung lập,34,co_trich,-0.0588,-0.1471,0.0
 hieu,chinh,A − B,gold trung lập,34,thieu,0.5,0.3824,0.6176
 hieu,chinh,C − B,gold trung lập,34,dieu_toan_phan,-0.4118,-0.5588,-0.2647
+hieu,chinh,C − B,gold trung lập,34,dieu_du_gold,-0.4706,-0.6176,-0.3235
 hieu,chinh,C − B,gold trung lập,34,khoan_toan_phan,-0.3529,-0.5,-0.2059
+hieu,chinh,C − B,gold trung lập,34,khoan_du_gold,-0.3824,-0.5294,-0.2059
 hieu,chinh,C − B,gold trung lập,34,dieu_phu,-0.4853,-0.6324,-0.3235
 hieu,chinh,C − B,gold trung lập,34,dieu_chinh_xac,-0.4853,-0.6324,-0.3235
 hieu,chinh,C − B,gold trung lập,34,co_trich,-0.0294,-0.1176,0.0588
 hieu,chinh,C − B,gold trung lập,34,thieu,0.4706,0.3235,0.6176
 hieu,chinh,D − B,gold trung lập,34,dieu_toan_phan,-0.4412,-0.5588,-0.3235
+hieu,chinh,D − B,gold trung lập,34,dieu_du_gold,-0.5,-0.6176,-0.3824
 hieu,chinh,D − B,gold trung lập,34,khoan_toan_phan,-0.3529,-0.5,-0.2059
+hieu,chinh,D − B,gold trung lập,34,khoan_du_gold,-0.4118,-0.5588,-0.2647
 hieu,chinh,D − B,gold trung lập,34,dieu_phu,-0.5294,-0.6618,-0.3971
 hieu,chinh,D − B,gold trung lập,34,dieu_chinh_xac,-0.5294,-0.6618,-0.3971
 hieu,chinh,D − B,gold trung lập,34,co_trich,-0.0588,-0.1471,0.0
 hieu,chinh,D − B,gold trung lập,34,thieu,0.5,0.3824,0.6176
 hieu,chinh,B+ − B,gold trung lập,34,dieu_toan_phan,-0.1471,-0.2353,-0.0588
+hieu,chinh,B+ − B,gold trung lập,34,dieu_du_gold,-0.1176,-0.2353,0.0
 hieu,chinh,B+ − B,gold trung lập,34,khoan_toan_phan,-0.2353,-0.2941,-0.1471
+hieu,chinh,B+ − B,gold trung lập,34,khoan_du_gold,-0.2059,-0.3235,-0.0882
 hieu,chinh,B+ − B,gold trung lập,34,dieu_phu,-0.1324,-0.2353,-0.0147
 hieu,chinh,B+ − B,gold trung lập,34,dieu_chinh_xac,-0.1618,-0.2647,-0.0588
 hieu,chinh,B+ − B,gold trung lập,34,co_trich,-0.0882,-0.1765,0.0
 hieu,chinh,B+ − B,gold trung lập,34,thieu,0.1176,0.0,0.2353
 hieu,chinh,E − B,gold trung lập,34,dieu_toan_phan,0.0,-0.0588,0.0588
+hieu,chinh,E − B,gold trung lập,34,dieu_du_gold,-0.0294,-0.0882,0.0
 hieu,chinh,E − B,gold trung lập,34,khoan_toan_phan,0.0,-0.0588,0.0588
+hieu,chinh,E − B,gold trung lập,34,khoan_du_gold,-0.0294,-0.0882,0.0
 hieu,chinh,E − B,gold trung lập,34,dieu_phu,-0.0294,-0.0882,0.0
 hieu,chinh,E − B,gold trung lập,34,dieu_chinh_xac,-0.0147,-0.0882,0.0294
 hieu,chinh,E − B,gold trung lập,34,co_trich,0.0,0.0,0.0
 hieu,chinh,E − B,gold trung lập,34,thieu,0.0294,0.0,0.0882
 hieu,chinh,E2 − B,gold trung lập,34,dieu_toan_phan,-0.1471,-0.2353,-0.0588
+hieu,chinh,E2 − B,gold trung lập,34,dieu_du_gold,-0.1176,-0.2353,0.0
 hieu,chinh,E2 − B,gold trung lập,34,khoan_toan_phan,-0.2353,-0.2941,-0.1471
+hieu,chinh,E2 − B,gold trung lập,34,khoan_du_gold,-0.2059,-0.3235,-0.0882
 hieu,chinh,E2 − B,gold trung lập,34,dieu_phu,-0.1324,-0.2353,-0.0147
 hieu,chinh,E2 − B,gold trung lập,34,dieu_chinh_xac,-0.1618,-0.2647,-0.0588
 hieu,chinh,E2 − B,gold trung lập,34,co_trich,-0.0882,-0.1765,0.0
 hieu,chinh,E2 − B,gold trung lập,34,thieu,0.1176,0.0,0.2353
 hieu,chinh,E3 − B,gold trung lập,34,dieu_toan_phan,0.0,-0.1471,0.1471
+hieu,chinh,E3 − B,gold trung lập,34,dieu_du_gold,-0.0294,-0.1471,0.0882
 hieu,chinh,E3 − B,gold trung lập,34,khoan_toan_phan,-0.1765,-0.2941,-0.0588
+hieu,chinh,E3 − B,gold trung lập,34,khoan_du_gold,-0.1765,-0.3235,-0.0294
 hieu,chinh,E3 − B,gold trung lập,34,dieu_phu,-0.0588,-0.1765,0.0588
 hieu,chinh,E3 − B,gold trung lập,34,dieu_chinh_xac,-0.0735,-0.1912,0.0441
 hieu,chinh,E3 − B,gold trung lập,34,co_trich,-0.0882,-0.1765,0.0
 hieu,chinh,E3 − B,gold trung lập,34,thieu,0.0294,-0.0882,0.1471
-diem,chinh,A,gold trùng ranh giới,76,dieu_toan_phan,0.1842,,
+diem,chinh,A,gold trùng ranh giới,76,dieu_toan_phan,0.2105,,
+diem,chinh,A,gold trùng ranh giới,76,dieu_du_gold,0.2763,,
 diem,chinh,A,gold trùng ranh giới,76,khoan_toan_phan,0.1053,,
-diem,chinh,A,gold trùng ranh giới,76,dieu_phu,0.2566,,
-diem,chinh,A,gold trùng ranh giới,76,dieu_chinh_xac,0.2237,,
+diem,chinh,A,gold trùng ranh giới,76,khoan_du_gold,0.1447,,
+diem,chinh,A,gold trùng ranh giới,76,dieu_phu,0.2829,,
+diem,chinh,A,gold trùng ranh giới,76,dieu_chinh_xac,0.25,,
 diem,chinh,A,gold trùng ranh giới,76,co_trich,0.8289,,
-diem,chinh,A,gold trùng ranh giới,76,thieu,0.75,,
+diem,chinh,A,gold trùng ranh giới,76,thieu,0.7237,,
 diem,chinh,C,gold trùng ranh giới,76,dieu_toan_phan,0.1447,,
+diem,chinh,C,gold trùng ranh giới,76,dieu_du_gold,0.2105,,
 diem,chinh,C,gold trùng ranh giới,76,khoan_toan_phan,0.0395,,
+diem,chinh,C,gold trùng ranh giới,76,khoan_du_gold,0.1053,,
 diem,chinh,C,gold trùng ranh giới,76,dieu_phu,0.2237,,
 diem,chinh,C,gold trùng ranh giới,76,dieu_chinh_xac,0.2018,,
 diem,chinh,C,gold trùng ranh giới,76,co_trich,0.8947,,
 diem,chinh,C,gold trùng ranh giới,76,thieu,0.7895,,
 diem,chinh,D,gold trùng ranh giới,76,dieu_toan_phan,0.1842,,
+diem,chinh,D,gold trùng ranh giới,76,dieu_du_gold,0.2368,,
 diem,chinh,D,gold trùng ranh giới,76,khoan_toan_phan,0.0921,,
+diem,chinh,D,gold trùng ranh giới,76,khoan_du_gold,0.1447,,
 diem,chinh,D,gold trùng ranh giới,76,dieu_phu,0.2566,,
 diem,chinh,D,gold trùng ranh giới,76,dieu_chinh_xac,0.2387,,
 diem,chinh,D,gold trùng ranh giới,76,co_trich,0.8421,,
 diem,chinh,D,gold trùng ranh giới,76,thieu,0.7632,,
-diem,chinh,B,gold trùng ranh giới,76,dieu_toan_phan,0.4737,,
-diem,chinh,B,gold trùng ranh giới,76,khoan_toan_phan,0.3026,,
-diem,chinh,B,gold trùng ranh giới,76,dieu_phu,0.6316,,
-diem,chinh,B,gold trùng ranh giới,76,dieu_chinh_xac,0.575,,
+diem,chinh,B,gold trùng ranh giới,76,dieu_toan_phan,0.4868,,
+diem,chinh,B,gold trùng ranh giới,76,dieu_du_gold,0.6184,,
+diem,chinh,B,gold trùng ranh giới,76,khoan_toan_phan,0.3158,,
+diem,chinh,B,gold trùng ranh giới,76,khoan_du_gold,0.4342,,
+diem,chinh,B,gold trùng ranh giới,76,dieu_phu,0.6447,,
+diem,chinh,B,gold trùng ranh giới,76,dieu_chinh_xac,0.5882,,
 diem,chinh,B,gold trùng ranh giới,76,co_trich,0.9211,,
-diem,chinh,B,gold trùng ranh giới,76,thieu,0.3947,,
-diem,chinh,B+,gold trùng ranh giới,76,dieu_toan_phan,0.3947,,
-diem,chinh,B+,gold trùng ranh giới,76,khoan_toan_phan,0.1842,,
-diem,chinh,B+,gold trùng ranh giới,76,dieu_phu,0.5,,
-diem,chinh,B+,gold trùng ranh giới,76,dieu_chinh_xac,0.4741,,
+diem,chinh,B,gold trùng ranh giới,76,thieu,0.3816,,
+diem,chinh,B+,gold trùng ranh giới,76,dieu_toan_phan,0.4079,,
+diem,chinh,B+,gold trùng ranh giới,76,dieu_du_gold,0.4868,,
+diem,chinh,B+,gold trùng ranh giới,76,khoan_toan_phan,0.1974,,
+diem,chinh,B+,gold trùng ranh giới,76,khoan_du_gold,0.3158,,
+diem,chinh,B+,gold trùng ranh giới,76,dieu_phu,0.5132,,
+diem,chinh,B+,gold trùng ranh giới,76,dieu_chinh_xac,0.4873,,
 diem,chinh,B+,gold trùng ranh giới,76,co_trich,0.8553,,
-diem,chinh,B+,gold trùng ranh giới,76,thieu,0.5263,,
-diem,chinh,E,gold trùng ranh giới,76,dieu_toan_phan,0.5132,,
-diem,chinh,E,gold trùng ranh giới,76,khoan_toan_phan,0.3421,,
-diem,chinh,E,gold trùng ranh giới,76,dieu_phu,0.6711,,
-diem,chinh,E,gold trùng ranh giới,76,dieu_chinh_xac,0.6206,,
+diem,chinh,B+,gold trùng ranh giới,76,thieu,0.5132,,
+diem,chinh,E,gold trùng ranh giới,76,dieu_toan_phan,0.5263,,
+diem,chinh,E,gold trùng ranh giới,76,dieu_du_gold,0.6579,,
+diem,chinh,E,gold trùng ranh giới,76,khoan_toan_phan,0.3553,,
+diem,chinh,E,gold trùng ranh giới,76,khoan_du_gold,0.4868,,
+diem,chinh,E,gold trùng ranh giới,76,dieu_phu,0.6842,,
+diem,chinh,E,gold trùng ranh giới,76,dieu_chinh_xac,0.6338,,
 diem,chinh,E,gold trùng ranh giới,76,co_trich,0.9342,,
-diem,chinh,E,gold trùng ranh giới,76,thieu,0.3553,,
-diem,chinh,E2,gold trùng ranh giới,76,dieu_toan_phan,0.3947,,
-diem,chinh,E2,gold trùng ranh giới,76,khoan_toan_phan,0.1842,,
-diem,chinh,E2,gold trùng ranh giới,76,dieu_phu,0.5,,
-diem,chinh,E2,gold trùng ranh giới,76,dieu_chinh_xac,0.4741,,
+diem,chinh,E,gold trùng ranh giới,76,thieu,0.3421,,
+diem,chinh,E2,gold trùng ranh giới,76,dieu_toan_phan,0.4079,,
+diem,chinh,E2,gold trùng ranh giới,76,dieu_du_gold,0.4868,,
+diem,chinh,E2,gold trùng ranh giới,76,khoan_toan_phan,0.1974,,
+diem,chinh,E2,gold trùng ranh giới,76,khoan_du_gold,0.3158,,
+diem,chinh,E2,gold trùng ranh giới,76,dieu_phu,0.5132,,
+diem,chinh,E2,gold trùng ranh giới,76,dieu_chinh_xac,0.4873,,
 diem,chinh,E2,gold trùng ranh giới,76,co_trich,0.8553,,
-diem,chinh,E2,gold trùng ranh giới,76,thieu,0.5263,,
-diem,chinh,E3,gold trùng ranh giới,76,dieu_toan_phan,0.4079,,
-diem,chinh,E3,gold trùng ranh giới,76,khoan_toan_phan,0.2237,,
-diem,chinh,E3,gold trùng ranh giới,76,dieu_phu,0.4868,,
-diem,chinh,E3,gold trùng ranh giới,76,dieu_chinh_xac,0.4846,,
+diem,chinh,E2,gold trùng ranh giới,76,thieu,0.5132,,
+diem,chinh,E3,gold trùng ranh giới,76,dieu_toan_phan,0.4211,,
+diem,chinh,E3,gold trùng ranh giới,76,dieu_du_gold,0.4737,,
+diem,chinh,E3,gold trùng ranh giới,76,khoan_toan_phan,0.2368,,
+diem,chinh,E3,gold trùng ranh giới,76,khoan_du_gold,0.3158,,
+diem,chinh,E3,gold trùng ranh giới,76,dieu_phu,0.5,,
+diem,chinh,E3,gold trùng ranh giới,76,dieu_chinh_xac,0.4978,,
 diem,chinh,E3,gold trùng ranh giới,76,co_trich,0.8684,,
-diem,chinh,E3,gold trùng ranh giới,76,thieu,0.5395,,
-hieu,chinh,C − A,gold trùng ranh giới,76,dieu_toan_phan,-0.0395,-0.1184,0.0395
+diem,chinh,E3,gold trùng ranh giới,76,thieu,0.5263,,
+hieu,chinh,C − A,gold trùng ranh giới,76,dieu_toan_phan,-0.0658,-0.1579,0.0263
+hieu,chinh,C − A,gold trùng ranh giới,76,dieu_du_gold,-0.0658,-0.1711,0.0395
 hieu,chinh,C − A,gold trùng ranh giới,76,khoan_toan_phan,-0.0658,-0.1316,-0.0132
-hieu,chinh,C − A,gold trùng ranh giới,76,dieu_phu,-0.0329,-0.125,0.0658
-hieu,chinh,C − A,gold trùng ranh giới,76,dieu_chinh_xac,-0.0219,-0.1075,0.0691
+hieu,chinh,C − A,gold trùng ranh giới,76,khoan_du_gold,-0.0395,-0.1184,0.0395
+hieu,chinh,C − A,gold trùng ranh giới,76,dieu_phu,-0.0592,-0.1645,0.0395
+hieu,chinh,C − A,gold trùng ranh giới,76,dieu_chinh_xac,-0.0482,-0.1436,0.0471
 hieu,chinh,C − A,gold trùng ranh giới,76,co_trich,0.0658,0.0132,0.1184
-hieu,chinh,C − A,gold trùng ranh giới,76,thieu,0.0395,-0.0658,0.1316
-hieu,chinh,D − A,gold trùng ranh giới,76,dieu_toan_phan,0.0,-0.0921,0.0921
+hieu,chinh,C − A,gold trùng ranh giới,76,thieu,0.0658,-0.0395,0.1711
+hieu,chinh,D − A,gold trùng ranh giới,76,dieu_toan_phan,-0.0263,-0.1316,0.0658
+hieu,chinh,D − A,gold trùng ranh giới,76,dieu_du_gold,-0.0395,-0.1447,0.0526
 hieu,chinh,D − A,gold trùng ranh giới,76,khoan_toan_phan,-0.0132,-0.0921,0.0658
-hieu,chinh,D − A,gold trùng ranh giới,76,dieu_phu,0.0,-0.0987,0.0921
-hieu,chinh,D − A,gold trùng ranh giới,76,dieu_chinh_xac,0.015,-0.0804,0.1053
+hieu,chinh,D − A,gold trùng ranh giới,76,khoan_du_gold,0.0,-0.0921,0.0921
+hieu,chinh,D − A,gold trùng ranh giới,76,dieu_phu,-0.0263,-0.125,0.0658
+hieu,chinh,D − A,gold trùng ranh giới,76,dieu_chinh_xac,-0.0113,-0.1114,0.0813
 hieu,chinh,D − A,gold trùng ranh giới,76,co_trich,0.0132,-0.0658,0.0921
-hieu,chinh,D − A,gold trùng ranh giới,76,thieu,0.0132,-0.0789,0.1184
-hieu,chinh,B − A,gold trùng ranh giới,76,dieu_toan_phan,0.2895,0.1974,0.3947
-hieu,chinh,B − A,gold trùng ranh giới,76,khoan_toan_phan,0.1974,0.0921,0.3158
-hieu,chinh,B − A,gold trùng ranh giới,76,dieu_phu,0.375,0.2697,0.4803
-hieu,chinh,B − A,gold trùng ranh giới,76,dieu_chinh_xac,0.3513,0.2586,0.461
+hieu,chinh,D − A,gold trùng ranh giới,76,thieu,0.0395,-0.0526,0.1447
+hieu,chinh,B − A,gold trùng ranh giới,76,dieu_toan_phan,0.2763,0.1842,0.3816
+hieu,chinh,B − A,gold trùng ranh giới,76,dieu_du_gold,0.3421,0.2368,0.4474
+hieu,chinh,B − A,gold trùng ranh giới,76,khoan_toan_phan,0.2105,0.1053,0.3289
+hieu,chinh,B − A,gold trùng ranh giới,76,khoan_du_gold,0.2895,0.1711,0.4211
+hieu,chinh,B − A,gold trùng ranh giới,76,dieu_phu,0.3618,0.2566,0.4671
+hieu,chinh,B − A,gold trùng ranh giới,76,dieu_chinh_xac,0.3382,0.2458,0.4456
 hieu,chinh,B − A,gold trùng ranh giới,76,co_trich,0.0921,0.0263,0.1579
-hieu,chinh,B − A,gold trùng ranh giới,76,thieu,-0.3553,-0.4605,-0.25
-hieu,chinh,B+ − A,gold trùng ranh giới,76,dieu_toan_phan,0.2105,0.1184,0.3158
-hieu,chinh,B+ − A,gold trùng ranh giới,76,khoan_toan_phan,0.0789,0.0,0.1711
-hieu,chinh,B+ − A,gold trùng ranh giới,76,dieu_phu,0.2434,0.1447,0.3487
-hieu,chinh,B+ − A,gold trùng ranh giới,76,dieu_chinh_xac,0.2504,0.1559,0.3487
+hieu,chinh,B − A,gold trùng ranh giới,76,thieu,-0.3421,-0.4474,-0.2368
+hieu,chinh,B+ − A,gold trùng ranh giới,76,dieu_toan_phan,0.1974,0.1053,0.2895
+hieu,chinh,B+ − A,gold trùng ranh giới,76,dieu_du_gold,0.2105,0.1053,0.3158
+hieu,chinh,B+ − A,gold trùng ranh giới,76,khoan_toan_phan,0.0921,0.0132,0.1974
+hieu,chinh,B+ − A,gold trùng ranh giới,76,khoan_du_gold,0.1711,0.0658,0.2763
+hieu,chinh,B+ − A,gold trùng ranh giới,76,dieu_phu,0.2303,0.1316,0.3355
+hieu,chinh,B+ − A,gold trùng ranh giới,76,dieu_chinh_xac,0.2373,0.1452,0.3355
 hieu,chinh,B+ − A,gold trùng ranh giới,76,co_trich,0.0263,-0.0658,0.1184
-hieu,chinh,B+ − A,gold trùng ranh giới,76,thieu,-0.2237,-0.3289,-0.1184
-hieu,chinh,E − A,gold trùng ranh giới,76,dieu_toan_phan,0.3289,0.2368,0.4342
-hieu,chinh,E − A,gold trùng ranh giới,76,khoan_toan_phan,0.2368,0.1316,0.3553
-hieu,chinh,E − A,gold trùng ranh giới,76,dieu_phu,0.4145,0.3158,0.5197
-hieu,chinh,E − A,gold trùng ranh giới,76,dieu_chinh_xac,0.3969,0.3092,0.4967
+hieu,chinh,B+ − A,gold trùng ranh giới,76,thieu,-0.2105,-0.3158,-0.1053
+hieu,chinh,E − A,gold trùng ranh giới,76,dieu_toan_phan,0.3158,0.2237,0.4211
+hieu,chinh,E − A,gold trùng ranh giới,76,dieu_du_gold,0.3816,0.2763,0.4868
+hieu,chinh,E − A,gold trùng ranh giới,76,khoan_toan_phan,0.25,0.1447,0.3684
+hieu,chinh,E − A,gold trùng ranh giới,76,khoan_du_gold,0.3421,0.2368,0.4605
+hieu,chinh,E − A,gold trùng ranh giới,76,dieu_phu,0.4013,0.2961,0.5132
+hieu,chinh,E − A,gold trùng ranh giới,76,dieu_chinh_xac,0.3838,0.2939,0.4836
 hieu,chinh,E − A,gold trùng ranh giới,76,co_trich,0.1053,0.0395,0.1711
-hieu,chinh,E − A,gold trùng ranh giới,76,thieu,-0.3947,-0.5,-0.2895
-hieu,chinh,E2 − A,gold trùng ranh giới,76,dieu_toan_phan,0.2105,0.1184,0.3158
-hieu,chinh,E2 − A,gold trùng ranh giới,76,khoan_toan_phan,0.0789,0.0,0.1711
-hieu,chinh,E2 − A,gold trùng ranh giới,76,dieu_phu,0.2434,0.1447,0.3487
-hieu,chinh,E2 − A,gold trùng ranh giới,76,dieu_chinh_xac,0.2504,0.1559,0.3487
+hieu,chinh,E − A,gold trùng ranh giới,76,thieu,-0.3816,-0.4868,-0.2763
+hieu,chinh,E2 − A,gold trùng ranh giới,76,dieu_toan_phan,0.1974,0.1053,0.2895
+hieu,chinh,E2 − A,gold trùng ranh giới,76,dieu_du_gold,0.2105,0.1053,0.3158
+hieu,chinh,E2 − A,gold trùng ranh giới,76,khoan_toan_phan,0.0921,0.0132,0.1974
+hieu,chinh,E2 − A,gold trùng ranh giới,76,khoan_du_gold,0.1711,0.0658,0.2763
+hieu,chinh,E2 − A,gold trùng ranh giới,76,dieu_phu,0.2303,0.1316,0.3355
+hieu,chinh,E2 − A,gold trùng ranh giới,76,dieu_chinh_xac,0.2373,0.1452,0.3355
 hieu,chinh,E2 − A,gold trùng ranh giới,76,co_trich,0.0263,-0.0658,0.1184
-hieu,chinh,E2 − A,gold trùng ranh giới,76,thieu,-0.2237,-0.3289,-0.1184
-hieu,chinh,E3 − A,gold trùng ranh giới,76,dieu_toan_phan,0.2237,0.1316,0.3158
-hieu,chinh,E3 − A,gold trùng ranh giới,76,khoan_toan_phan,0.1184,0.0395,0.1974
-hieu,chinh,E3 − A,gold trùng ranh giới,76,dieu_phu,0.2303,0.1184,0.3421
-hieu,chinh,E3 − A,gold trùng ranh giới,76,dieu_chinh_xac,0.261,0.1732,0.3596
+hieu,chinh,E2 − A,gold trùng ranh giới,76,thieu,-0.2105,-0.3158,-0.1053
+hieu,chinh,E3 − A,gold trùng ranh giới,76,dieu_toan_phan,0.2105,0.1184,0.3026
+hieu,chinh,E3 − A,gold trùng ranh giới,76,dieu_du_gold,0.1974,0.0921,0.3026
+hieu,chinh,E3 − A,gold trùng ranh giới,76,khoan_toan_phan,0.1316,0.0526,0.2237
+hieu,chinh,E3 − A,gold trùng ranh giới,76,khoan_du_gold,0.1711,0.0658,0.2763
+hieu,chinh,E3 − A,gold trùng ranh giới,76,dieu_phu,0.2171,0.1118,0.3224
+hieu,chinh,E3 − A,gold trùng ranh giới,76,dieu_chinh_xac,0.2478,0.1579,0.3432
 hieu,chinh,E3 − A,gold trùng ranh giới,76,co_trich,0.0395,-0.0526,0.1184
-hieu,chinh,E3 − A,gold trùng ranh giới,76,thieu,-0.2105,-0.3158,-0.0921
-hieu,chinh,A − B,gold trùng ranh giới,76,dieu_toan_phan,-0.2895,-0.3947,-0.1974
-hieu,chinh,A − B,gold trùng ranh giới,76,khoan_toan_phan,-0.1974,-0.3158,-0.0921
-hieu,chinh,A − B,gold trùng ranh giới,76,dieu_phu,-0.375,-0.4803,-0.2697
-hieu,chinh,A − B,gold trùng ranh giới,76,dieu_chinh_xac,-0.3513,-0.461,-0.2586
+hieu,chinh,E3 − A,gold trùng ranh giới,76,thieu,-0.1974,-0.3026,-0.0921
+hieu,chinh,A − B,gold trùng ranh giới,76,dieu_toan_phan,-0.2763,-0.3816,-0.1842
+hieu,chinh,A − B,gold trùng ranh giới,76,dieu_du_gold,-0.3421,-0.4474,-0.2368
+hieu,chinh,A − B,gold trùng ranh giới,76,khoan_toan_phan,-0.2105,-0.3289,-0.1053
+hieu,chinh,A − B,gold trùng ranh giới,76,khoan_du_gold,-0.2895,-0.4211,-0.1711
+hieu,chinh,A − B,gold trùng ranh giới,76,dieu_phu,-0.3618,-0.4671,-0.2566
+hieu,chinh,A − B,gold trùng ranh giới,76,dieu_chinh_xac,-0.3382,-0.4456,-0.2458
 hieu,chinh,A − B,gold trùng ranh giới,76,co_trich,-0.0921,-0.1579,-0.0263
-hieu,chinh,A − B,gold trùng ranh giới,76,thieu,0.3553,0.25,0.4605
-hieu,chinh,C − B,gold trùng ranh giới,76,dieu_toan_phan,-0.3289,-0.4474,-0.2105
-hieu,chinh,C − B,gold trùng ranh giới,76,khoan_toan_phan,-0.2632,-0.3684,-0.1842
-hieu,chinh,C − B,gold trùng ranh giới,76,dieu_phu,-0.4079,-0.5197,-0.2961
-hieu,chinh,C − B,gold trùng ranh giới,76,dieu_chinh_xac,-0.3732,-0.4873,-0.2588
+hieu,chinh,A − B,gold trùng ranh giới,76,thieu,0.3421,0.2368,0.4474
+hieu,chinh,C − B,gold trùng ranh giới,76,dieu_toan_phan,-0.3421,-0.4605,-0.2237
+hieu,chinh,C − B,gold trùng ranh giới,76,dieu_du_gold,-0.4079,-0.5263,-0.2895
+hieu,chinh,C − B,gold trùng ranh giới,76,khoan_toan_phan,-0.2763,-0.3816,-0.1842
+hieu,chinh,C − B,gold trùng ranh giới,76,khoan_du_gold,-0.3289,-0.4342,-0.2237
+hieu,chinh,C − B,gold trùng ranh giới,76,dieu_phu,-0.4211,-0.5329,-0.3092
+hieu,chinh,C − B,gold trùng ranh giới,76,dieu_chinh_xac,-0.3864,-0.5026,-0.2732
 hieu,chinh,C − B,gold trùng ranh giới,76,co_trich,-0.0263,-0.0789,0.0263
-hieu,chinh,C − B,gold trùng ranh giới,76,thieu,0.3947,0.2763,0.5
-hieu,chinh,D − B,gold trùng ranh giới,76,dieu_toan_phan,-0.2895,-0.4079,-0.1842
-hieu,chinh,D − B,gold trùng ranh giới,76,khoan_toan_phan,-0.2105,-0.3158,-0.1184
-hieu,chinh,D − B,gold trùng ranh giới,76,dieu_phu,-0.375,-0.4868,-0.2632
-hieu,chinh,D − B,gold trùng ranh giới,76,dieu_chinh_xac,-0.3363,-0.4452,-0.2302
+hieu,chinh,C − B,gold trùng ranh giới,76,thieu,0.4079,0.2895,0.5263
+hieu,chinh,D − B,gold trùng ranh giới,76,dieu_toan_phan,-0.3026,-0.4079,-0.2105
+hieu,chinh,D − B,gold trùng ranh giới,76,dieu_du_gold,-0.3816,-0.4868,-0.2763
+hieu,chinh,D − B,gold trùng ranh giới,76,khoan_toan_phan,-0.2237,-0.3158,-0.1447
+hieu,chinh,D − B,gold trùng ranh giới,76,khoan_du_gold,-0.2895,-0.3947,-0.1842
+hieu,chinh,D − B,gold trùng ranh giới,76,dieu_phu,-0.3882,-0.4934,-0.2829
+hieu,chinh,D − B,gold trùng ranh giới,76,dieu_chinh_xac,-0.3494,-0.4566,-0.2537
 hieu,chinh,D − B,gold trùng ranh giới,76,co_trich,-0.0789,-0.1447,-0.0132
-hieu,chinh,D − B,gold trùng ranh giới,76,thieu,0.3684,0.25,0.4868
+hieu,chinh,D − B,gold trùng ranh giới,76,thieu,0.3816,0.2763,0.4868
 hieu,chinh,B+ − B,gold trùng ranh giới,76,dieu_toan_phan,-0.0789,-0.1711,0.0132
+hieu,chinh,B+ − B,gold trùng ranh giới,76,dieu_du_gold,-0.1316,-0.2368,-0.0263
 hieu,chinh,B+ − B,gold trùng ranh giới,76,khoan_toan_phan,-0.1184,-0.1974,-0.0526
+hieu,chinh,B+ − B,gold trùng ranh giới,76,khoan_du_gold,-0.1184,-0.2105,-0.0263
 hieu,chinh,B+ − B,gold trùng ranh giới,76,dieu_phu,-0.1316,-0.2368,-0.0263
 hieu,chinh,B+ − B,gold trùng ranh giới,76,dieu_chinh_xac,-0.1009,-0.1886,-0.0066
 hieu,chinh,B+ − B,gold trùng ranh giới,76,co_trich,-0.0658,-0.1316,0.0
 hieu,chinh,B+ − B,gold trùng ranh giới,76,thieu,0.1316,0.0263,0.2368
 hieu,chinh,E − B,gold trùng ranh giới,76,dieu_toan_phan,0.0395,0.0,0.0789
+hieu,chinh,E − B,gold trùng ranh giới,76,dieu_du_gold,0.0395,-0.0132,0.0921
 hieu,chinh,E − B,gold trùng ranh giới,76,khoan_toan_phan,0.0395,0.0,0.0789
+hieu,chinh,E − B,gold trùng ranh giới,76,khoan_du_gold,0.0526,0.0132,0.1053
 hieu,chinh,E − B,gold trùng ranh giới,76,dieu_phu,0.0395,-0.0132,0.0921
 hieu,chinh,E − B,gold trùng ranh giới,76,dieu_chinh_xac,0.0456,0.0079,0.0899
 hieu,chinh,E − B,gold trùng ranh giới,76,co_trich,0.0132,0.0,0.0395
 hieu,chinh,E − B,gold trùng ranh giới,76,thieu,-0.0395,-0.0921,0.0132
 hieu,chinh,E2 − B,gold trùng ranh giới,76,dieu_toan_phan,-0.0789,-0.1711,0.0132
+hieu,chinh,E2 − B,gold trùng ranh giới,76,dieu_du_gold,-0.1316,-0.2368,-0.0263
 hieu,chinh,E2 − B,gold trùng ranh giới,76,khoan_toan_phan,-0.1184,-0.1974,-0.0526
+hieu,chinh,E2 − B,gold trùng ranh giới,76,khoan_du_gold,-0.1184,-0.2105,-0.0263
 hieu,chinh,E2 − B,gold trùng ranh giới,76,dieu_phu,-0.1316,-0.2368,-0.0263
 hieu,chinh,E2 − B,gold trùng ranh giới,76,dieu_chinh_xac,-0.1009,-0.1886,-0.0066
 hieu,chinh,E2 − B,gold trùng ranh giới,76,co_trich,-0.0658,-0.1316,0.0
 hieu,chinh,E2 − B,gold trùng ranh giới,76,thieu,0.1316,0.0263,0.2368
 hieu,chinh,E3 − B,gold trùng ranh giới,76,dieu_toan_phan,-0.0658,-0.1711,0.0263
+hieu,chinh,E3 − B,gold trùng ranh giới,76,dieu_du_gold,-0.1447,-0.2368,-0.0526
 hieu,chinh,E3 − B,gold trùng ranh giới,76,khoan_toan_phan,-0.0789,-0.1579,-0.0132
+hieu,chinh,E3 − B,gold trùng ranh giới,76,khoan_du_gold,-0.1184,-0.2105,-0.0395
 hieu,chinh,E3 − B,gold trùng ranh giới,76,dieu_phu,-0.1447,-0.2368,-0.0526
 hieu,chinh,E3 − B,gold trùng ranh giới,76,dieu_chinh_xac,-0.0904,-0.182,-0.0022
 hieu,chinh,E3 − B,gold trùng ranh giới,76,co_trich,-0.0526,-0.1184,0.0
 hieu,chinh,E3 − B,gold trùng ranh giới,76,thieu,0.1447,0.0526,0.2368
-diem,manh_con,B,tất cả,35,dieu_toan_phan,0.2571,,
-diem,manh_con,B,tất cả,35,khoan_toan_phan,0.1429,,
-diem,manh_con,B,tất cả,35,dieu_phu,0.4286,,
-diem,manh_con,B,tất cả,35,dieu_chinh_xac,0.3238,,
+diem,manh_con,B,tất cả,35,dieu_toan_phan,0.2857,,
+diem,manh_con,B,tất cả,35,dieu_du_gold,0.4571,,
+diem,manh_con,B,tất cả,35,khoan_toan_phan,0.1714,,
+diem,manh_con,B,tất cả,35,khoan_du_gold,0.3143,,
+diem,manh_con,B,tất cả,35,dieu_phu,0.4571,,
+diem,manh_con,B,tất cả,35,dieu_chinh_xac,0.3524,,
 diem,manh_con,B,tất cả,35,co_trich,0.7429,,
-diem,manh_con,B,tất cả,35,thieu,0.5714,,
-diem,manh_con,B+,tất cả,35,dieu_toan_phan,0.2,,
+diem,manh_con,B,tất cả,35,thieu,0.5429,,
+diem,manh_con,B+,tất cả,35,dieu_toan_phan,0.2286,,
+diem,manh_con,B+,tất cả,35,dieu_du_gold,0.2857,,
 diem,manh_con,B+,tất cả,35,khoan_toan_phan,0.1143,,
-diem,manh_con,B+,tất cả,35,dieu_phu,0.2571,,
-diem,manh_con,B+,tất cả,35,dieu_chinh_xac,0.2238,,
+diem,manh_con,B+,tất cả,35,khoan_du_gold,0.1429,,
+diem,manh_con,B+,tất cả,35,dieu_phu,0.2857,,
+diem,manh_con,B+,tất cả,35,dieu_chinh_xac,0.2524,,
 diem,manh_con,B+,tất cả,35,co_trich,0.6857,,
-diem,manh_con,B+,tất cả,35,thieu,0.7429,,
+diem,manh_con,B+,tất cả,35,thieu,0.7143,,
 diem,manh_con,Eduoi,tất cả,35,dieu_toan_phan,0.2857,,
+diem,manh_con,Eduoi,tất cả,35,dieu_du_gold,0.4,,
 diem,manh_con,Eduoi,tất cả,35,khoan_toan_phan,0.1429,,
+diem,manh_con,Eduoi,tất cả,35,khoan_du_gold,0.2571,,
 diem,manh_con,Eduoi,tất cả,35,dieu_phu,0.4,,
 diem,manh_con,Eduoi,tất cả,35,dieu_chinh_xac,0.3381,,
 diem,manh_con,Eduoi,tất cả,35,co_trich,0.8,,
 diem,manh_con,Eduoi,tất cả,35,thieu,0.6,,
 diem,manh_con,Etren,tất cả,35,dieu_toan_phan,0.2571,,
+diem,manh_con,Etren,tất cả,35,dieu_du_gold,0.4286,,
 diem,manh_con,Etren,tất cả,35,khoan_toan_phan,0.2,,
+diem,manh_con,Etren,tất cả,35,khoan_du_gold,0.3429,,
 diem,manh_con,Etren,tất cả,35,dieu_phu,0.4286,,
 diem,manh_con,Etren,tất cả,35,dieu_chinh_xac,0.3381,,
 diem,manh_con,Etren,tất cả,35,co_trich,0.8286,,
 diem,manh_con,Etren,tất cả,35,thieu,0.5714,,
 diem,manh_con,Etat_d,tất cả,35,dieu_toan_phan,0.3143,,
+diem,manh_con,Etat_d,tất cả,35,dieu_du_gold,0.3714,,
 diem,manh_con,Etat_d,tất cả,35,khoan_toan_phan,0.1714,,
+diem,manh_con,Etat_d,tất cả,35,khoan_du_gold,0.2286,,
 diem,manh_con,Etat_d,tất cả,35,dieu_phu,0.3714,,
 diem,manh_con,Etat_d,tất cả,35,dieu_chinh_xac,0.3429,,
 diem,manh_con,Etat_d,tất cả,35,co_trich,0.8,,
 diem,manh_con,Etat_d,tất cả,35,thieu,0.6286,,
-diem,manh_con,Etat_k,tất cả,35,dieu_toan_phan,0.3143,,
-diem,manh_con,Etat_k,tất cả,35,khoan_toan_phan,0.1714,,
-diem,manh_con,Etat_k,tất cả,35,dieu_phu,0.4571,,
-diem,manh_con,Etat_k,tất cả,35,dieu_chinh_xac,0.3762,,
+diem,manh_con,Etat_k,tất cả,35,dieu_toan_phan,0.3429,,
+diem,manh_con,Etat_k,tất cả,35,dieu_du_gold,0.4857,,
+diem,manh_con,Etat_k,tất cả,35,khoan_toan_phan,0.2,,
+diem,manh_con,Etat_k,tất cả,35,khoan_du_gold,0.3143,,
+diem,manh_con,Etat_k,tất cả,35,dieu_phu,0.4857,,
+diem,manh_con,Etat_k,tất cả,35,dieu_chinh_xac,0.4048,,
 diem,manh_con,Etat_k,tất cả,35,co_trich,0.8571,,
-diem,manh_con,Etat_k,tất cả,35,thieu,0.5429,,
+diem,manh_con,Etat_k,tất cả,35,thieu,0.5143,,
 diem,manh_con,Etat_n,tất cả,35,dieu_toan_phan,0.2857,,
+diem,manh_con,Etat_n,tất cả,35,dieu_du_gold,0.4,,
 diem,manh_con,Etat_n,tất cả,35,khoan_toan_phan,0.1429,,
+diem,manh_con,Etat_n,tất cả,35,khoan_du_gold,0.2571,,
 diem,manh_con,Etat_n,tất cả,35,dieu_phu,0.4,,
 diem,manh_con,Etat_n,tất cả,35,dieu_chinh_xac,0.3381,,
 diem,manh_con,Etat_n,tất cả,35,co_trich,0.8,,
 diem,manh_con,Etat_n,tất cả,35,thieu,0.6,,
 diem,manh_con,Etat_s,tất cả,35,dieu_toan_phan,0.1714,,
+diem,manh_con,Etat_s,tất cả,35,dieu_du_gold,0.2857,,
 diem,manh_con,Etat_s,tất cả,35,khoan_toan_phan,0.1143,,
+diem,manh_con,Etat_s,tất cả,35,khoan_du_gold,0.2286,,
 diem,manh_con,Etat_s,tất cả,35,dieu_phu,0.2857,,
 diem,manh_con,Etat_s,tất cả,35,dieu_chinh_xac,0.2238,,
 diem,manh_con,Etat_s,tất cả,35,co_trich,0.6857,,
 diem,manh_con,Etat_s,tất cả,35,thieu,0.7143,,
-diem,manh_con,Echi_s,tất cả,35,dieu_toan_phan,0.3143,,
-diem,manh_con,Echi_s,tất cả,35,khoan_toan_phan,0.1714,,
-diem,manh_con,Echi_s,tất cả,35,dieu_phu,0.4857,,
-diem,manh_con,Echi_s,tất cả,35,dieu_chinh_xac,0.3786,,
+diem,manh_con,Echi_s,tất cả,35,dieu_toan_phan,0.3429,,
+diem,manh_con,Echi_s,tất cả,35,dieu_du_gold,0.5143,,
+diem,manh_con,Echi_s,tất cả,35,khoan_toan_phan,0.2,,
+diem,manh_con,Echi_s,tất cả,35,khoan_du_gold,0.3143,,
+diem,manh_con,Echi_s,tất cả,35,dieu_phu,0.5143,,
+diem,manh_con,Echi_s,tất cả,35,dieu_chinh_xac,0.4071,,
 diem,manh_con,Echi_s,tất cả,35,co_trich,0.8571,,
-diem,manh_con,Echi_s,tất cả,35,thieu,0.5143,,
-diem,manh_con,E2,tất cả,35,dieu_toan_phan,0.2,,
+diem,manh_con,Echi_s,tất cả,35,thieu,0.4857,,
+diem,manh_con,E2,tất cả,35,dieu_toan_phan,0.2286,,
+diem,manh_con,E2,tất cả,35,dieu_du_gold,0.2857,,
 diem,manh_con,E2,tất cả,35,khoan_toan_phan,0.1143,,
-diem,manh_con,E2,tất cả,35,dieu_phu,0.2571,,
-diem,manh_con,E2,tất cả,35,dieu_chinh_xac,0.2238,,
+diem,manh_con,E2,tất cả,35,khoan_du_gold,0.1429,,
+diem,manh_con,E2,tất cả,35,dieu_phu,0.2857,,
+diem,manh_con,E2,tất cả,35,dieu_chinh_xac,0.2524,,
 diem,manh_con,E2,tất cả,35,co_trich,0.7429,,
-diem,manh_con,E2,tất cả,35,thieu,0.7429,,
-diem,manh_con,E3,tất cả,35,dieu_toan_phan,0.2286,,
+diem,manh_con,E2,tất cả,35,thieu,0.7143,,
+diem,manh_con,E3,tất cả,35,dieu_toan_phan,0.2571,,
+diem,manh_con,E3,tất cả,35,dieu_du_gold,0.2857,,
 diem,manh_con,E3,tất cả,35,khoan_toan_phan,0.1429,,
-diem,manh_con,E3,tất cả,35,dieu_phu,0.2571,,
-diem,manh_con,E3,tất cả,35,dieu_chinh_xac,0.2429,,
+diem,manh_con,E3,tất cả,35,khoan_du_gold,0.1714,,
+diem,manh_con,E3,tất cả,35,dieu_phu,0.2857,,
+diem,manh_con,E3,tất cả,35,dieu_chinh_xac,0.2714,,
 diem,manh_con,E3,tất cả,35,co_trich,0.7143,,
-diem,manh_con,E3,tất cả,35,thieu,0.7429,,
-diem,manh_con,E3b,tất cả,35,dieu_toan_phan,0.2286,,
-diem,manh_con,E3b,tất cả,35,khoan_toan_phan,0.1429,,
-diem,manh_con,E3b,tất cả,35,dieu_phu,0.3143,,
-diem,manh_con,E3b,tất cả,35,dieu_chinh_xac,0.2667,,
+diem,manh_con,E3,tất cả,35,thieu,0.7143,,
+diem,manh_con,E3b,tất cả,35,dieu_toan_phan,0.2571,,
+diem,manh_con,E3b,tất cả,35,dieu_du_gold,0.3429,,
+diem,manh_con,E3b,tất cả,35,khoan_toan_phan,0.1714,,
+diem,manh_con,E3b,tất cả,35,khoan_du_gold,0.2571,,
+diem,manh_con,E3b,tất cả,35,dieu_phu,0.3429,,
+diem,manh_con,E3b,tất cả,35,dieu_chinh_xac,0.2952,,
 diem,manh_con,E3b,tất cả,35,co_trich,0.7429,,
-diem,manh_con,E3b,tất cả,35,thieu,0.6857,,
+diem,manh_con,E3b,tất cả,35,thieu,0.6571,,
 hieu,manh_con,B+ − B,tất cả,35,dieu_toan_phan,-0.0571,-0.2,0.0857
-hieu,manh_con,B+ − B,tất cả,35,khoan_toan_phan,-0.0286,-0.1143,0.0571
+hieu,manh_con,B+ − B,tất cả,35,dieu_du_gold,-0.1714,-0.3143,-0.0286
+hieu,manh_con,B+ − B,tất cả,35,khoan_toan_phan,-0.0571,-0.1714,0.0571
+hieu,manh_con,B+ − B,tất cả,35,khoan_du_gold,-0.1714,-0.3143,-0.0286
 hieu,manh_con,B+ − B,tất cả,35,dieu_phu,-0.1714,-0.3143,-0.0286
 hieu,manh_con,B+ − B,tất cả,35,dieu_chinh_xac,-0.1,-0.2333,0.0238
 hieu,manh_con,B+ − B,tất cả,35,co_trich,-0.0571,-0.1714,0.0571
 hieu,manh_con,B+ − B,tất cả,35,thieu,0.1714,0.0286,0.3143
-hieu,manh_con,Eduoi − B,tất cả,35,dieu_toan_phan,0.0286,-0.1143,0.1714
-hieu,manh_con,Eduoi − B,tất cả,35,khoan_toan_phan,0.0,-0.0857,0.0857
-hieu,manh_con,Eduoi − B,tất cả,35,dieu_phu,-0.0286,-0.2,0.1714
-hieu,manh_con,Eduoi − B,tất cả,35,dieu_chinh_xac,0.0143,-0.1381,0.181
+hieu,manh_con,Eduoi − B,tất cả,35,dieu_toan_phan,0.0,-0.1429,0.1714
+hieu,manh_con,Eduoi − B,tất cả,35,dieu_du_gold,-0.0571,-0.2571,0.1429
+hieu,manh_con,Eduoi − B,tất cả,35,khoan_toan_phan,-0.0286,-0.1143,0.0857
+hieu,manh_con,Eduoi − B,tất cả,35,khoan_du_gold,-0.0571,-0.2,0.0857
+hieu,manh_con,Eduoi − B,tất cả,35,dieu_phu,-0.0571,-0.2571,0.1429
+hieu,manh_con,Eduoi − B,tất cả,35,dieu_chinh_xac,-0.0143,-0.1762,0.1714
 hieu,manh_con,Eduoi − B,tất cả,35,co_trich,0.0571,-0.0857,0.2
-hieu,manh_con,Eduoi − B,tất cả,35,thieu,0.0286,-0.1714,0.2
-hieu,manh_con,Etren − B,tất cả,35,dieu_toan_phan,0.0,-0.1429,0.1714
-hieu,manh_con,Etren − B,tất cả,35,khoan_toan_phan,0.0571,-0.0571,0.1714
-hieu,manh_con,Etren − B,tất cả,35,dieu_phu,0.0,-0.1714,0.1714
-hieu,manh_con,Etren − B,tất cả,35,dieu_chinh_xac,0.0143,-0.1333,0.1762
+hieu,manh_con,Eduoi − B,tất cả,35,thieu,0.0571,-0.1429,0.2571
+hieu,manh_con,Etren − B,tất cả,35,dieu_toan_phan,-0.0286,-0.2,0.1429
+hieu,manh_con,Etren − B,tất cả,35,dieu_du_gold,-0.0286,-0.2,0.1714
+hieu,manh_con,Etren − B,tất cả,35,khoan_toan_phan,0.0286,-0.0857,0.1714
+hieu,manh_con,Etren − B,tất cả,35,khoan_du_gold,0.0286,-0.1143,0.1714
+hieu,manh_con,Etren − B,tất cả,35,dieu_phu,-0.0286,-0.2,0.1714
+hieu,manh_con,Etren − B,tất cả,35,dieu_chinh_xac,-0.0143,-0.1762,0.1619
 hieu,manh_con,Etren − B,tất cả,35,co_trich,0.0857,-0.0571,0.2286
-hieu,manh_con,Etren − B,tất cả,35,thieu,0.0,-0.1714,0.1714
-hieu,manh_con,Etat_d − B,tất cả,35,dieu_toan_phan,0.0571,-0.0857,0.2286
-hieu,manh_con,Etat_d − B,tất cả,35,khoan_toan_phan,0.0286,-0.0571,0.1429
-hieu,manh_con,Etat_d − B,tất cả,35,dieu_phu,-0.0571,-0.2286,0.1143
-hieu,manh_con,Etat_d − B,tất cả,35,dieu_chinh_xac,0.019,-0.1381,0.1857
+hieu,manh_con,Etren − B,tất cả,35,thieu,0.0286,-0.1714,0.2
+hieu,manh_con,Etat_d − B,tất cả,35,dieu_toan_phan,0.0286,-0.1429,0.2
+hieu,manh_con,Etat_d − B,tất cả,35,dieu_du_gold,-0.0857,-0.2571,0.1143
+hieu,manh_con,Etat_d − B,tất cả,35,khoan_toan_phan,0.0,-0.0857,0.1143
+hieu,manh_con,Etat_d − B,tất cả,35,khoan_du_gold,-0.0857,-0.2,0.0286
+hieu,manh_con,Etat_d − B,tất cả,35,dieu_phu,-0.0857,-0.2571,0.1143
+hieu,manh_con,Etat_d − B,tất cả,35,dieu_chinh_xac,-0.0095,-0.1714,0.1667
 hieu,manh_con,Etat_d − B,tất cả,35,co_trich,0.0571,-0.0857,0.2
-hieu,manh_con,Etat_d − B,tất cả,35,thieu,0.0571,-0.1143,0.2286
+hieu,manh_con,Etat_d − B,tất cả,35,thieu,0.0857,-0.1143,0.2571
 hieu,manh_con,Etat_k − B,tất cả,35,dieu_toan_phan,0.0571,-0.0571,0.2
+hieu,manh_con,Etat_k − B,tất cả,35,dieu_du_gold,0.0286,-0.1429,0.2
 hieu,manh_con,Etat_k − B,tất cả,35,khoan_toan_phan,0.0286,0.0,0.1143
+hieu,manh_con,Etat_k − B,tất cả,35,khoan_du_gold,0.0,-0.1143,0.1143
 hieu,manh_con,Etat_k − B,tất cả,35,dieu_phu,0.0286,-0.1429,0.2
 hieu,manh_con,Etat_k − B,tất cả,35,dieu_chinh_xac,0.0524,-0.081,0.2048
 hieu,manh_con,Etat_k − B,tất cả,35,co_trich,0.1143,0.0286,0.2286
 hieu,manh_con,Etat_k − B,tất cả,35,thieu,-0.0286,-0.2,0.1429
-hieu,manh_con,Etat_n − B,tất cả,35,dieu_toan_phan,0.0286,-0.1143,0.1714
-hieu,manh_con,Etat_n − B,tất cả,35,khoan_toan_phan,0.0,-0.0857,0.0857
-hieu,manh_con,Etat_n − B,tất cả,35,dieu_phu,-0.0286,-0.2,0.1714
-hieu,manh_con,Etat_n − B,tất cả,35,dieu_chinh_xac,0.0143,-0.1381,0.181
+hieu,manh_con,Etat_n − B,tất cả,35,dieu_toan_phan,0.0,-0.1429,0.1714
+hieu,manh_con,Etat_n − B,tất cả,35,dieu_du_gold,-0.0571,-0.2571,0.1429
+hieu,manh_con,Etat_n − B,tất cả,35,khoan_toan_phan,-0.0286,-0.1143,0.0857
+hieu,manh_con,Etat_n − B,tất cả,35,khoan_du_gold,-0.0571,-0.2,0.0857
+hieu,manh_con,Etat_n − B,tất cả,35,dieu_phu,-0.0571,-0.2571,0.1429
+hieu,manh_con,Etat_n − B,tất cả,35,dieu_chinh_xac,-0.0143,-0.1762,0.1714
 hieu,manh_con,Etat_n − B,tất cả,35,co_trich,0.0571,-0.0857,0.2
-hieu,manh_con,Etat_n − B,tất cả,35,thieu,0.0286,-0.1714,0.2
-hieu,manh_con,Etat_s − B,tất cả,35,dieu_toan_phan,-0.0857,-0.1714,0.0
-hieu,manh_con,Etat_s − B,tất cả,35,khoan_toan_phan,-0.0286,-0.0857,0.0
-hieu,manh_con,Etat_s − B,tất cả,35,dieu_phu,-0.1429,-0.2857,0.0
-hieu,manh_con,Etat_s − B,tất cả,35,dieu_chinh_xac,-0.1,-0.2048,-0.0048
+hieu,manh_con,Etat_n − B,tất cả,35,thieu,0.0571,-0.1429,0.2571
+hieu,manh_con,Etat_s − B,tất cả,35,dieu_toan_phan,-0.1143,-0.2286,-0.0286
+hieu,manh_con,Etat_s − B,tất cả,35,dieu_du_gold,-0.1714,-0.3143,-0.0286
+hieu,manh_con,Etat_s − B,tất cả,35,khoan_toan_phan,-0.0571,-0.1429,0.0
+hieu,manh_con,Etat_s − B,tất cả,35,khoan_du_gold,-0.0857,-0.2,0.0286
+hieu,manh_con,Etat_s − B,tất cả,35,dieu_phu,-0.1714,-0.3143,-0.0286
+hieu,manh_con,Etat_s − B,tất cả,35,dieu_chinh_xac,-0.1286,-0.2381,-0.019
 hieu,manh_con,Etat_s − B,tất cả,35,co_trich,-0.0571,-0.1429,0.0
-hieu,manh_con,Etat_s − B,tất cả,35,thieu,0.1429,0.0,0.2857
+hieu,manh_con,Etat_s − B,tất cả,35,thieu,0.1714,0.0286,0.3143
 hieu,manh_con,Echi_s − B,tất cả,35,dieu_toan_phan,0.0571,-0.0571,0.2
+hieu,manh_con,Echi_s − B,tất cả,35,dieu_du_gold,0.0571,-0.0571,0.2
 hieu,manh_con,Echi_s − B,tất cả,35,khoan_toan_phan,0.0286,0.0,0.1143
+hieu,manh_con,Echi_s − B,tất cả,35,khoan_du_gold,0.0,-0.0571,0.0857
 hieu,manh_con,Echi_s − B,tất cả,35,dieu_phu,0.0571,-0.0571,0.2
 hieu,manh_con,Echi_s − B,tất cả,35,dieu_chinh_xac,0.0548,-0.069,0.2
 hieu,manh_con,Echi_s − B,tất cả,35,co_trich,0.1143,0.0286,0.2286
 hieu,manh_con,Echi_s − B,tất cả,35,thieu,-0.0571,-0.2,0.0571
 hieu,manh_con,E2 − B,tất cả,35,dieu_toan_phan,-0.0571,-0.2,0.0857
-hieu,manh_con,E2 − B,tất cả,35,khoan_toan_phan,-0.0286,-0.1143,0.0571
+hieu,manh_con,E2 − B,tất cả,35,dieu_du_gold,-0.1714,-0.3143,-0.0286
+hieu,manh_con,E2 − B,tất cả,35,khoan_toan_phan,-0.0571,-0.1714,0.0571
+hieu,manh_con,E2 − B,tất cả,35,khoan_du_gold,-0.1714,-0.3143,-0.0286
 hieu,manh_con,E2 − B,tất cả,35,dieu_phu,-0.1714,-0.3143,-0.0286
 hieu,manh_con,E2 − B,tất cả,35,dieu_chinh_xac,-0.1,-0.2333,0.0238
 hieu,manh_con,E2 − B,tất cả,35,co_trich,0.0,-0.0857,0.0857
 hieu,manh_con,E2 − B,tất cả,35,thieu,0.1714,0.0286,0.3143
 hieu,manh_con,E3 − B,tất cả,35,dieu_toan_phan,-0.0286,-0.1714,0.1143
-hieu,manh_con,E3 − B,tất cả,35,khoan_toan_phan,0.0,-0.1143,0.1143
+hieu,manh_con,E3 − B,tất cả,35,dieu_du_gold,-0.1714,-0.3143,-0.0286
+hieu,manh_con,E3 − B,tất cả,35,khoan_toan_phan,-0.0286,-0.1714,0.0857
+hieu,manh_con,E3 − B,tất cả,35,khoan_du_gold,-0.1429,-0.2857,0.0
 hieu,manh_con,E3 − B,tất cả,35,dieu_phu,-0.1714,-0.3143,-0.0286
 hieu,manh_con,E3 − B,tất cả,35,dieu_chinh_xac,-0.081,-0.2238,0.0429
 hieu,manh_con,E3 − B,tất cả,35,co_trich,-0.0286,-0.1143,0.0571
 hieu,manh_con,E3 − B,tất cả,35,thieu,0.1714,0.0286,0.3143
 hieu,manh_con,E3b − B,tất cả,35,dieu_toan_phan,-0.0286,-0.1143,0.0571
+hieu,manh_con,E3b − B,tất cả,35,dieu_du_gold,-0.1143,-0.2286,-0.0286
 hieu,manh_con,E3b − B,tất cả,35,khoan_toan_phan,0.0,-0.0857,0.0857
+hieu,manh_con,E3b − B,tất cả,35,khoan_du_gold,-0.0571,-0.1714,0.0571
 hieu,manh_con,E3b − B,tất cả,35,dieu_phu,-0.1143,-0.2286,-0.0286
 hieu,manh_con,E3b − B,tất cả,35,dieu_chinh_xac,-0.0571,-0.1619,0.019
 hieu,manh_con,E3b − B,tất cả,35,co_trich,0.0,-0.0857,0.0857
 hieu,manh_con,E3b − B,tất cả,35,thieu,0.1143,0.0286,0.2286
-diem,manh_con,B,mất câu dẫn,15,dieu_toan_phan,0.3333,,
-diem,manh_con,B,mất câu dẫn,15,khoan_toan_phan,0.3333,,
-diem,manh_con,B,mất câu dẫn,15,dieu_phu,0.6,,
-diem,manh_con,B,mất câu dẫn,15,dieu_chinh_xac,0.4333,,
+diem,manh_con,B,mất câu dẫn,15,dieu_toan_phan,0.4,,
+diem,manh_con,B,mất câu dẫn,15,dieu_du_gold,0.6667,,
+diem,manh_con,B,mất câu dẫn,15,khoan_toan_phan,0.4,,
+diem,manh_con,B,mất câu dẫn,15,khoan_du_gold,0.6,,
+diem,manh_con,B,mất câu dẫn,15,dieu_phu,0.6667,,
+diem,manh_con,B,mất câu dẫn,15,dieu_chinh_xac,0.5,,
 diem,manh_con,B,mất câu dẫn,15,co_trich,0.8667,,
-diem,manh_con,B,mất câu dẫn,15,thieu,0.4,,
-diem,manh_con,B+,mất câu dẫn,15,dieu_toan_phan,0.4667,,
+diem,manh_con,B,mất câu dẫn,15,thieu,0.3333,,
+diem,manh_con,B+,mất câu dẫn,15,dieu_toan_phan,0.5333,,
+diem,manh_con,B+,mất câu dẫn,15,dieu_du_gold,0.6,,
 diem,manh_con,B+,mất câu dẫn,15,khoan_toan_phan,0.2667,,
-diem,manh_con,B+,mất câu dẫn,15,dieu_phu,0.5333,,
-diem,manh_con,B+,mất câu dẫn,15,dieu_chinh_xac,0.4889,,
+diem,manh_con,B+,mất câu dẫn,15,khoan_du_gold,0.2667,,
+diem,manh_con,B+,mất câu dẫn,15,dieu_phu,0.6,,
+diem,manh_con,B+,mất câu dẫn,15,dieu_chinh_xac,0.5556,,
 diem,manh_con,B+,mất câu dẫn,15,co_trich,0.8667,,
-diem,manh_con,B+,mất câu dẫn,15,thieu,0.4667,,
+diem,manh_con,B+,mất câu dẫn,15,thieu,0.4,,
 diem,manh_con,Eduoi,mất câu dẫn,15,dieu_toan_phan,0.2667,,
+diem,manh_con,Eduoi,mất câu dẫn,15,dieu_du_gold,0.4667,,
 diem,manh_con,Eduoi,mất câu dẫn,15,khoan_toan_phan,0.2667,,
+diem,manh_con,Eduoi,mất câu dẫn,15,khoan_du_gold,0.4667,,
 diem,manh_con,Eduoi,mất câu dẫn,15,dieu_phu,0.4667,,
 diem,manh_con,Eduoi,mất câu dẫn,15,dieu_chinh_xac,0.3556,,
 diem,manh_con,Eduoi,mất câu dẫn,15,co_trich,0.8,,
 diem,manh_con,Eduoi,mất câu dẫn,15,thieu,0.5333,,
 diem,manh_con,Etren,mất câu dẫn,15,dieu_toan_phan,0.2667,,
+diem,manh_con,Etren,mất câu dẫn,15,dieu_du_gold,0.4667,,
 diem,manh_con,Etren,mất câu dẫn,15,khoan_toan_phan,0.2667,,
+diem,manh_con,Etren,mất câu dẫn,15,khoan_du_gold,0.4667,,
 diem,manh_con,Etren,mất câu dẫn,15,dieu_phu,0.4667,,
 diem,manh_con,Etren,mất câu dẫn,15,dieu_chinh_xac,0.3556,,
 diem,manh_con,Etren,mất câu dẫn,15,co_trich,0.8,,
 diem,manh_con,Etren,mất câu dẫn,15,thieu,0.5333,,
 diem,manh_con,Etat_d,mất câu dẫn,15,dieu_toan_phan,0.3333,,
+diem,manh_con,Etat_d,mất câu dẫn,15,dieu_du_gold,0.4,,
 diem,manh_con,Etat_d,mất câu dẫn,15,khoan_toan_phan,0.3333,,
+diem,manh_con,Etat_d,mất câu dẫn,15,khoan_du_gold,0.4,,
 diem,manh_con,Etat_d,mất câu dẫn,15,dieu_phu,0.4,,
 diem,manh_con,Etat_d,mất câu dẫn,15,dieu_chinh_xac,0.3667,,
 diem,manh_con,Etat_d,mất câu dẫn,15,co_trich,0.8,,
 diem,manh_con,Etat_d,mất câu dẫn,15,thieu,0.6,,
-diem,manh_con,Etat_k,mất câu dẫn,15,dieu_toan_phan,0.3333,,
-diem,manh_con,Etat_k,mất câu dẫn,15,khoan_toan_phan,0.3333,,
-diem,manh_con,Etat_k,mất câu dẫn,15,dieu_phu,0.6,,
-diem,manh_con,Etat_k,mất câu dẫn,15,dieu_chinh_xac,0.4444,,
+diem,manh_con,Etat_k,mất câu dẫn,15,dieu_toan_phan,0.4,,
+diem,manh_con,Etat_k,mất câu dẫn,15,dieu_du_gold,0.6667,,
+diem,manh_con,Etat_k,mất câu dẫn,15,khoan_toan_phan,0.4,,
+diem,manh_con,Etat_k,mất câu dẫn,15,khoan_du_gold,0.6,,
+diem,manh_con,Etat_k,mất câu dẫn,15,dieu_phu,0.6667,,
+diem,manh_con,Etat_k,mất câu dẫn,15,dieu_chinh_xac,0.5111,,
 diem,manh_con,Etat_k,mất câu dẫn,15,co_trich,0.8667,,
-diem,manh_con,Etat_k,mất câu dẫn,15,thieu,0.4,,
+diem,manh_con,Etat_k,mất câu dẫn,15,thieu,0.3333,,
 diem,manh_con,Etat_n,mất câu dẫn,15,dieu_toan_phan,0.2667,,
+diem,manh_con,Etat_n,mất câu dẫn,15,dieu_du_gold,0.4667,,
 diem,manh_con,Etat_n,mất câu dẫn,15,khoan_toan_phan,0.2667,,
+diem,manh_con,Etat_n,mất câu dẫn,15,khoan_du_gold,0.4667,,
 diem,manh_con,Etat_n,mất câu dẫn,15,dieu_phu,0.4667,,
 diem,manh_con,Etat_n,mất câu dẫn,15,dieu_chinh_xac,0.3556,,
 diem,manh_con,Etat_n,mất câu dẫn,15,co_trich,0.8,,
 diem,manh_con,Etat_n,mất câu dẫn,15,thieu,0.5333,,
 diem,manh_con,Etat_s,mất câu dẫn,15,dieu_toan_phan,0.2667,,
+diem,manh_con,Etat_s,mất câu dẫn,15,dieu_du_gold,0.4667,,
 diem,manh_con,Etat_s,mất câu dẫn,15,khoan_toan_phan,0.2667,,
+diem,manh_con,Etat_s,mất câu dẫn,15,khoan_du_gold,0.4667,,
 diem,manh_con,Etat_s,mất câu dẫn,15,dieu_phu,0.4667,,
 diem,manh_con,Etat_s,mất câu dẫn,15,dieu_chinh_xac,0.3556,,
 diem,manh_con,Etat_s,mất câu dẫn,15,co_trich,0.8,,
 diem,manh_con,Etat_s,mất câu dẫn,15,thieu,0.5333,,
-diem,manh_con,Echi_s,mất câu dẫn,15,dieu_toan_phan,0.3333,,
-diem,manh_con,Echi_s,mất câu dẫn,15,khoan_toan_phan,0.3333,,
-diem,manh_con,Echi_s,mất câu dẫn,15,dieu_phu,0.6,,
-diem,manh_con,Echi_s,mất câu dẫn,15,dieu_chinh_xac,0.4333,,
+diem,manh_con,Echi_s,mất câu dẫn,15,dieu_toan_phan,0.4,,
+diem,manh_con,Echi_s,mất câu dẫn,15,dieu_du_gold,0.6667,,
+diem,manh_con,Echi_s,mất câu dẫn,15,khoan_toan_phan,0.4,,
+diem,manh_con,Echi_s,mất câu dẫn,15,khoan_du_gold,0.6,,
+diem,manh_con,Echi_s,mất câu dẫn,15,dieu_phu,0.6667,,
+diem,manh_con,Echi_s,mất câu dẫn,15,dieu_chinh_xac,0.5,,
 diem,manh_con,Echi_s,mất câu dẫn,15,co_trich,0.8667,,
-diem,manh_con,Echi_s,mất câu dẫn,15,thieu,0.4,,
-diem,manh_con,E2,mất câu dẫn,15,dieu_toan_phan,0.4667,,
+diem,manh_con,Echi_s,mất câu dẫn,15,thieu,0.3333,,
+diem,manh_con,E2,mất câu dẫn,15,dieu_toan_phan,0.5333,,
+diem,manh_con,E2,mất câu dẫn,15,dieu_du_gold,0.6,,
 diem,manh_con,E2,mất câu dẫn,15,khoan_toan_phan,0.2667,,
-diem,manh_con,E2,mất câu dẫn,15,dieu_phu,0.5333,,
-diem,manh_con,E2,mất câu dẫn,15,dieu_chinh_xac,0.4889,,
+diem,manh_con,E2,mất câu dẫn,15,khoan_du_gold,0.2667,,
+diem,manh_con,E2,mất câu dẫn,15,dieu_phu,0.6,,
+diem,manh_con,E2,mất câu dẫn,15,dieu_chinh_xac,0.5556,,
 diem,manh_con,E2,mất câu dẫn,15,co_trich,0.8667,,
-diem,manh_con,E2,mất câu dẫn,15,thieu,0.4667,,
-diem,manh_con,E3,mất câu dẫn,15,dieu_toan_phan,0.5333,,
+diem,manh_con,E2,mất câu dẫn,15,thieu,0.4,,
+diem,manh_con,E3,mất câu dẫn,15,dieu_toan_phan,0.6,,
+diem,manh_con,E3,mất câu dẫn,15,dieu_du_gold,0.6,,
 diem,manh_con,E3,mất câu dẫn,15,khoan_toan_phan,0.3333,,
-diem,manh_con,E3,mất câu dẫn,15,dieu_phu,0.5333,,
-diem,manh_con,E3,mất câu dẫn,15,dieu_chinh_xac,0.5333,,
+diem,manh_con,E3,mất câu dẫn,15,khoan_du_gold,0.3333,,
+diem,manh_con,E3,mất câu dẫn,15,dieu_phu,0.6,,
+diem,manh_con,E3,mất câu dẫn,15,dieu_chinh_xac,0.6,,
 diem,manh_con,E3,mất câu dẫn,15,co_trich,0.8667,,
-diem,manh_con,E3,mất câu dẫn,15,thieu,0.4667,,
-diem,manh_con,E3b,mất câu dẫn,15,dieu_toan_phan,0.3333,,
-diem,manh_con,E3b,mất câu dẫn,15,khoan_toan_phan,0.3333,,
-diem,manh_con,E3b,mất câu dẫn,15,dieu_phu,0.4667,,
-diem,manh_con,E3b,mất câu dẫn,15,dieu_chinh_xac,0.3889,,
+diem,manh_con,E3,mất câu dẫn,15,thieu,0.4,,
+diem,manh_con,E3b,mất câu dẫn,15,dieu_toan_phan,0.4,,
+diem,manh_con,E3b,mất câu dẫn,15,dieu_du_gold,0.5333,,
+diem,manh_con,E3b,mất câu dẫn,15,khoan_toan_phan,0.4,,
+diem,manh_con,E3b,mất câu dẫn,15,khoan_du_gold,0.5333,,
+diem,manh_con,E3b,mất câu dẫn,15,dieu_phu,0.5333,,
+diem,manh_con,E3b,mất câu dẫn,15,dieu_chinh_xac,0.4556,,
 diem,manh_con,E3b,mất câu dẫn,15,co_trich,0.8667,,
-diem,manh_con,E3b,mất câu dẫn,15,thieu,0.5333,,
+diem,manh_con,E3b,mất câu dẫn,15,thieu,0.4667,,
 hieu,manh_con,B+ − B,mất câu dẫn,15,dieu_toan_phan,0.1333,0.0,0.3333
-hieu,manh_con,B+ − B,mất câu dẫn,15,khoan_toan_phan,-0.0667,-0.2667,0.1333
+hieu,manh_con,B+ − B,mất câu dẫn,15,dieu_du_gold,-0.0667,-0.3333,0.1333
+hieu,manh_con,B+ − B,mất câu dẫn,15,khoan_toan_phan,-0.1333,-0.4,0.1333
+hieu,manh_con,B+ − B,mất câu dẫn,15,khoan_du_gold,-0.3333,-0.6,-0.0667
 hieu,manh_con,B+ − B,mất câu dẫn,15,dieu_phu,-0.0667,-0.3333,0.1333
 hieu,manh_con,B+ − B,mất câu dẫn,15,dieu_chinh_xac,0.0556,-0.0889,0.2222
 hieu,manh_con,B+ − B,mất câu dẫn,15,co_trich,0.0,0.0,0.0
 hieu,manh_con,B+ − B,mất câu dẫn,15,thieu,0.0667,-0.1333,0.3333
-hieu,manh_con,Eduoi − B,mất câu dẫn,15,dieu_toan_phan,-0.0667,-0.2,0.0
-hieu,manh_con,Eduoi − B,mất câu dẫn,15,khoan_toan_phan,-0.0667,-0.2,0.0
-hieu,manh_con,Eduoi − B,mất câu dẫn,15,dieu_phu,-0.1333,-0.4,0.1333
-hieu,manh_con,Eduoi − B,mất câu dẫn,15,dieu_chinh_xac,-0.0778,-0.2444,0.0667
+hieu,manh_con,Eduoi − B,mất câu dẫn,15,dieu_toan_phan,-0.1333,-0.3333,0.0
+hieu,manh_con,Eduoi − B,mất câu dẫn,15,dieu_du_gold,-0.2,-0.4667,0.0667
+hieu,manh_con,Eduoi − B,mất câu dẫn,15,khoan_toan_phan,-0.1333,-0.3333,0.0
+hieu,manh_con,Eduoi − B,mất câu dẫn,15,khoan_du_gold,-0.1333,-0.4,0.1333
+hieu,manh_con,Eduoi − B,mất câu dẫn,15,dieu_phu,-0.2,-0.4667,0.0667
+hieu,manh_con,Eduoi − B,mất câu dẫn,15,dieu_chinh_xac,-0.1444,-0.3444,0.0444
 hieu,manh_con,Eduoi − B,mất câu dẫn,15,co_trich,-0.0667,-0.2,0.0
-hieu,manh_con,Eduoi − B,mất câu dẫn,15,thieu,0.1333,-0.1333,0.4
-hieu,manh_con,Etren − B,mất câu dẫn,15,dieu_toan_phan,-0.0667,-0.2,0.0
-hieu,manh_con,Etren − B,mất câu dẫn,15,khoan_toan_phan,-0.0667,-0.2,0.0
-hieu,manh_con,Etren − B,mất câu dẫn,15,dieu_phu,-0.1333,-0.4,0.1333
-hieu,manh_con,Etren − B,mất câu dẫn,15,dieu_chinh_xac,-0.0778,-0.2444,0.0667
+hieu,manh_con,Eduoi − B,mất câu dẫn,15,thieu,0.2,-0.0667,0.4667
+hieu,manh_con,Etren − B,mất câu dẫn,15,dieu_toan_phan,-0.1333,-0.3333,0.0
+hieu,manh_con,Etren − B,mất câu dẫn,15,dieu_du_gold,-0.2,-0.4667,0.0667
+hieu,manh_con,Etren − B,mất câu dẫn,15,khoan_toan_phan,-0.1333,-0.3333,0.0
+hieu,manh_con,Etren − B,mất câu dẫn,15,khoan_du_gold,-0.1333,-0.4,0.1333
+hieu,manh_con,Etren − B,mất câu dẫn,15,dieu_phu,-0.2,-0.4667,0.0667
+hieu,manh_con,Etren − B,mất câu dẫn,15,dieu_chinh_xac,-0.1444,-0.3444,0.0444
 hieu,manh_con,Etren − B,mất câu dẫn,15,co_trich,-0.0667,-0.2,0.0
-hieu,manh_con,Etren − B,mất câu dẫn,15,thieu,0.1333,-0.1333,0.4
-hieu,manh_con,Etat_d − B,mất câu dẫn,15,dieu_toan_phan,0.0,-0.2,0.2
-hieu,manh_con,Etat_d − B,mất câu dẫn,15,khoan_toan_phan,0.0,-0.2,0.2
-hieu,manh_con,Etat_d − B,mất câu dẫn,15,dieu_phu,-0.2,-0.4,0.0
-hieu,manh_con,Etat_d − B,mất câu dẫn,15,dieu_chinh_xac,-0.0667,-0.2333,0.1
+hieu,manh_con,Etren − B,mất câu dẫn,15,thieu,0.2,-0.0667,0.4667
+hieu,manh_con,Etat_d − B,mất câu dẫn,15,dieu_toan_phan,-0.0667,-0.3333,0.1333
+hieu,manh_con,Etat_d − B,mất câu dẫn,15,dieu_du_gold,-0.2667,-0.4667,-0.0667
+hieu,manh_con,Etat_d − B,mất câu dẫn,15,khoan_toan_phan,-0.0667,-0.3333,0.1333
+hieu,manh_con,Etat_d − B,mất câu dẫn,15,khoan_du_gold,-0.2,-0.4,0.0
+hieu,manh_con,Etat_d − B,mất câu dẫn,15,dieu_phu,-0.2667,-0.4667,-0.0667
+hieu,manh_con,Etat_d − B,mất câu dẫn,15,dieu_chinh_xac,-0.1333,-0.3444,0.0556
 hieu,manh_con,Etat_d − B,mất câu dẫn,15,co_trich,-0.0667,-0.2,0.0
-hieu,manh_con,Etat_d − B,mất câu dẫn,15,thieu,0.2,0.0,0.4
+hieu,manh_con,Etat_d − B,mất câu dẫn,15,thieu,0.2667,0.0667,0.4667
 hieu,manh_con,Etat_k − B,mất câu dẫn,15,dieu_toan_phan,0.0,0.0,0.0
+hieu,manh_con,Etat_k − B,mất câu dẫn,15,dieu_du_gold,0.0,-0.2,0.2
 hieu,manh_con,Etat_k − B,mất câu dẫn,15,khoan_toan_phan,0.0,0.0,0.0
+hieu,manh_con,Etat_k − B,mất câu dẫn,15,khoan_du_gold,0.0,-0.2,0.2
 hieu,manh_con,Etat_k − B,mất câu dẫn,15,dieu_phu,0.0,-0.2,0.2
 hieu,manh_con,Etat_k − B,mất câu dẫn,15,dieu_chinh_xac,0.0111,-0.0667,0.1
 hieu,manh_con,Etat_k − B,mất câu dẫn,15,co_trich,0.0,0.0,0.0
 hieu,manh_con,Etat_k − B,mất câu dẫn,15,thieu,0.0,-0.2,0.2
-hieu,manh_con,Etat_n − B,mất câu dẫn,15,dieu_toan_phan,-0.0667,-0.2,0.0
-hieu,manh_con,Etat_n − B,mất câu dẫn,15,khoan_toan_phan,-0.0667,-0.2,0.0
-hieu,manh_con,Etat_n − B,mất câu dẫn,15,dieu_phu,-0.1333,-0.4,0.1333
-hieu,manh_con,Etat_n − B,mất câu dẫn,15,dieu_chinh_xac,-0.0778,-0.2444,0.0667
+hieu,manh_con,Etat_n − B,mất câu dẫn,15,dieu_toan_phan,-0.1333,-0.3333,0.0
+hieu,manh_con,Etat_n − B,mất câu dẫn,15,dieu_du_gold,-0.2,-0.4667,0.0667
+hieu,manh_con,Etat_n − B,mất câu dẫn,15,khoan_toan_phan,-0.1333,-0.3333,0.0
+hieu,manh_con,Etat_n − B,mất câu dẫn,15,khoan_du_gold,-0.1333,-0.4,0.1333
+hieu,manh_con,Etat_n − B,mất câu dẫn,15,dieu_phu,-0.2,-0.4667,0.0667
+hieu,manh_con,Etat_n − B,mất câu dẫn,15,dieu_chinh_xac,-0.1444,-0.3444,0.0444
 hieu,manh_con,Etat_n − B,mất câu dẫn,15,co_trich,-0.0667,-0.2,0.0
-hieu,manh_con,Etat_n − B,mất câu dẫn,15,thieu,0.1333,-0.1333,0.4
-hieu,manh_con,Etat_s − B,mất câu dẫn,15,dieu_toan_phan,-0.0667,-0.2,0.0
-hieu,manh_con,Etat_s − B,mất câu dẫn,15,khoan_toan_phan,-0.0667,-0.2,0.0
-hieu,manh_con,Etat_s − B,mất câu dẫn,15,dieu_phu,-0.1333,-0.4,0.1333
-hieu,manh_con,Etat_s − B,mất câu dẫn,15,dieu_chinh_xac,-0.0778,-0.2444,0.0667
+hieu,manh_con,Etat_n − B,mất câu dẫn,15,thieu,0.2,-0.0667,0.4667
+hieu,manh_con,Etat_s − B,mất câu dẫn,15,dieu_toan_phan,-0.1333,-0.3333,0.0
+hieu,manh_con,Etat_s − B,mất câu dẫn,15,dieu_du_gold,-0.2,-0.4667,0.0667
+hieu,manh_con,Etat_s − B,mất câu dẫn,15,khoan_toan_phan,-0.1333,-0.3333,0.0
+hieu,manh_con,Etat_s − B,mất câu dẫn,15,khoan_du_gold,-0.1333,-0.4,0.1333
+hieu,manh_con,Etat_s − B,mất câu dẫn,15,dieu_phu,-0.2,-0.4667,0.0667
+hieu,manh_con,Etat_s − B,mất câu dẫn,15,dieu_chinh_xac,-0.1444,-0.3444,0.0444
 hieu,manh_con,Etat_s − B,mất câu dẫn,15,co_trich,-0.0667,-0.2,0.0
-hieu,manh_con,Etat_s − B,mất câu dẫn,15,thieu,0.1333,-0.1333,0.4
+hieu,manh_con,Etat_s − B,mất câu dẫn,15,thieu,0.2,-0.0667,0.4667
 hieu,manh_con,Echi_s − B,mất câu dẫn,15,dieu_toan_phan,0.0,0.0,0.0
+hieu,manh_con,Echi_s − B,mất câu dẫn,15,dieu_du_gold,0.0,0.0,0.0
 hieu,manh_con,Echi_s − B,mất câu dẫn,15,khoan_toan_phan,0.0,0.0,0.0
+hieu,manh_con,Echi_s − B,mất câu dẫn,15,khoan_du_gold,0.0,0.0,0.0
 hieu,manh_con,Echi_s − B,mất câu dẫn,15,dieu_phu,0.0,0.0,0.0
 hieu,manh_con,Echi_s − B,mất câu dẫn,15,dieu_chinh_xac,0.0,0.0,0.0
 hieu,manh_con,Echi_s − B,mất câu dẫn,15,co_trich,0.0,0.0,0.0
 hieu,manh_con,Echi_s − B,mất câu dẫn,15,thieu,0.0,0.0,0.0
 hieu,manh_con,E2 − B,mất câu dẫn,15,dieu_toan_phan,0.1333,0.0,0.3333
-hieu,manh_con,E2 − B,mất câu dẫn,15,khoan_toan_phan,-0.0667,-0.2667,0.1333
+hieu,manh_con,E2 − B,mất câu dẫn,15,dieu_du_gold,-0.0667,-0.3333,0.1333
+hieu,manh_con,E2 − B,mất câu dẫn,15,khoan_toan_phan,-0.1333,-0.4,0.1333
+hieu,manh_con,E2 − B,mất câu dẫn,15,khoan_du_gold,-0.3333,-0.6,-0.0667
 hieu,manh_con,E2 − B,mất câu dẫn,15,dieu_phu,-0.0667,-0.3333,0.1333
 hieu,manh_con,E2 − B,mất câu dẫn,15,dieu_chinh_xac,0.0556,-0.0889,0.2222
 hieu,manh_con,E2 − B,mất câu dẫn,15,co_trich,0.0,0.0,0.0
 hieu,manh_con,E2 − B,mất câu dẫn,15,thieu,0.0667,-0.1333,0.3333
 hieu,manh_con,E3 − B,mất câu dẫn,15,dieu_toan_phan,0.2,0.0,0.4
-hieu,manh_con,E3 − B,mất câu dẫn,15,khoan_toan_phan,0.0,-0.2667,0.2667
+hieu,manh_con,E3 − B,mất câu dẫn,15,dieu_du_gold,-0.0667,-0.3333,0.1333
+hieu,manh_con,E3 − B,mất câu dẫn,15,khoan_toan_phan,-0.0667,-0.3333,0.2
+hieu,manh_con,E3 − B,mất câu dẫn,15,khoan_du_gold,-0.2667,-0.5333,0.0
 hieu,manh_con,E3 − B,mất câu dẫn,15,dieu_phu,-0.0667,-0.3333,0.1333
 hieu,manh_con,E3 − B,mất câu dẫn,15,dieu_chinh_xac,0.1,-0.0667,0.3
 hieu,manh_con,E3 − B,mất câu dẫn,15,co_trich,0.0,0.0,0.0
 hieu,manh_con,E3 − B,mất câu dẫn,15,thieu,0.0667,-0.1333,0.3333
 hieu,manh_con,E3b − B,mất câu dẫn,15,dieu_toan_phan,0.0,-0.2,0.2
+hieu,manh_con,E3b − B,mất câu dẫn,15,dieu_du_gold,-0.1333,-0.3333,0.0
 hieu,manh_con,E3b − B,mất câu dẫn,15,khoan_toan_phan,0.0,-0.2,0.2
+hieu,manh_con,E3b − B,mất câu dẫn,15,khoan_du_gold,-0.0667,-0.2667,0.1333
 hieu,manh_con,E3b − B,mất câu dẫn,15,dieu_phu,-0.1333,-0.3333,0.0
 hieu,manh_con,E3b − B,mất câu dẫn,15,dieu_chinh_xac,-0.0444,-0.2222,0.1111
 hieu,manh_con,E3b − B,mất câu dẫn,15,co_trich,0.0,0.0,0.0
 hieu,manh_con,E3b − B,mất câu dẫn,15,thieu,0.1333,0.0,0.3333
 diem,manh_con,B,tầng cuối,21,dieu_toan_phan,0.2381,,
+diem,manh_con,B,tầng cuối,21,dieu_du_gold,0.3333,,
 diem,manh_con,B,tầng cuối,21,khoan_toan_phan,0.0476,,
+diem,manh_con,B,tầng cuối,21,khoan_du_gold,0.1429,,
 diem,manh_con,B,tầng cuối,21,dieu_phu,0.3333,,
 diem,manh_con,B,tầng cuối,21,dieu_chinh_xac,0.2778,,
 diem,manh_con,B,tầng cuối,21,co_trich,0.6667,,
 diem,manh_con,B,tầng cuối,21,thieu,0.6667,,
 diem,manh_con,B+,tầng cuối,21,dieu_toan_phan,0.0476,,
+diem,manh_con,B+,tầng cuối,21,dieu_du_gold,0.0952,,
 diem,manh_con,B+,tầng cuối,21,khoan_toan_phan,0.0,,
+diem,manh_con,B+,tầng cuối,21,khoan_du_gold,0.0476,,
 diem,manh_con,B+,tầng cuối,21,dieu_phu,0.0952,,
 diem,manh_con,B+,tầng cuối,21,dieu_chinh_xac,0.0714,,
 diem,manh_con,B+,tầng cuối,21,co_trich,0.5714,,
 diem,manh_con,B+,tầng cuối,21,thieu,0.9048,,
 diem,manh_con,Eduoi,tầng cuối,21,dieu_toan_phan,0.3333,,
+diem,manh_con,Eduoi,tầng cuối,21,dieu_du_gold,0.381,,
 diem,manh_con,Eduoi,tầng cuối,21,khoan_toan_phan,0.0952,,
+diem,manh_con,Eduoi,tầng cuối,21,khoan_du_gold,0.1429,,
 diem,manh_con,Eduoi,tầng cuối,21,dieu_phu,0.381,,
 diem,manh_con,Eduoi,tầng cuối,21,dieu_chinh_xac,0.3571,,
 diem,manh_con,Eduoi,tầng cuối,21,co_trich,0.8095,,
 diem,manh_con,Eduoi,tầng cuối,21,thieu,0.619,,
 diem,manh_con,Etren,tầng cuối,21,dieu_toan_phan,0.2857,,
+diem,manh_con,Etren,tầng cuối,21,dieu_du_gold,0.4286,,
 diem,manh_con,Etren,tầng cuối,21,khoan_toan_phan,0.1905,,
+diem,manh_con,Etren,tầng cuối,21,khoan_du_gold,0.2857,,
 diem,manh_con,Etren,tầng cuối,21,dieu_phu,0.4286,,
 diem,manh_con,Etren,tầng cuối,21,dieu_chinh_xac,0.3571,,
 diem,manh_con,Etren,tầng cuối,21,co_trich,0.8571,,
 diem,manh_con,Etren,tầng cuối,21,thieu,0.5714,,
 diem,manh_con,Etat_d,tầng cuối,21,dieu_toan_phan,0.3333,,
+diem,manh_con,Etat_d,tầng cuối,21,dieu_du_gold,0.381,,
 diem,manh_con,Etat_d,tầng cuối,21,khoan_toan_phan,0.0952,,
+diem,manh_con,Etat_d,tầng cuối,21,khoan_du_gold,0.1429,,
 diem,manh_con,Etat_d,tầng cuối,21,dieu_phu,0.381,,
 diem,manh_con,Etat_d,tầng cuối,21,dieu_chinh_xac,0.3571,,
 diem,manh_con,Etat_d,tầng cuối,21,co_trich,0.8095,,
 diem,manh_con,Etat_d,tầng cuối,21,thieu,0.619,,
 diem,manh_con,Etat_k,tầng cuối,21,dieu_toan_phan,0.3333,,
+diem,manh_con,Etat_k,tầng cuối,21,dieu_du_gold,0.381,,
 diem,manh_con,Etat_k,tầng cuối,21,khoan_toan_phan,0.0952,,
+diem,manh_con,Etat_k,tầng cuối,21,khoan_du_gold,0.1429,,
 diem,manh_con,Etat_k,tầng cuối,21,dieu_phu,0.381,,
 diem,manh_con,Etat_k,tầng cuối,21,dieu_chinh_xac,0.3571,,
 diem,manh_con,Etat_k,tầng cuối,21,co_trich,0.8571,,
 diem,manh_con,Etat_k,tầng cuối,21,thieu,0.619,,
 diem,manh_con,Etat_n,tầng cuối,21,dieu_toan_phan,0.3333,,
+diem,manh_con,Etat_n,tầng cuối,21,dieu_du_gold,0.381,,
 diem,manh_con,Etat_n,tầng cuối,21,khoan_toan_phan,0.0952,,
+diem,manh_con,Etat_n,tầng cuối,21,khoan_du_gold,0.1429,,
 diem,manh_con,Etat_n,tầng cuối,21,dieu_phu,0.381,,
 diem,manh_con,Etat_n,tầng cuối,21,dieu_chinh_xac,0.3571,,
 diem,manh_con,Etat_n,tầng cuối,21,co_trich,0.8095,,
 diem,manh_con,Etat_n,tầng cuối,21,thieu,0.619,,
 diem,manh_con,Etat_s,tầng cuối,21,dieu_toan_phan,0.1429,,
+diem,manh_con,Etat_s,tầng cuối,21,dieu_du_gold,0.1905,,
 diem,manh_con,Etat_s,tầng cuối,21,khoan_toan_phan,0.0476,,
+diem,manh_con,Etat_s,tầng cuối,21,khoan_du_gold,0.0952,,
 diem,manh_con,Etat_s,tầng cuối,21,dieu_phu,0.1905,,
 diem,manh_con,Etat_s,tầng cuối,21,dieu_chinh_xac,0.1667,,
 diem,manh_con,Etat_s,tầng cuối,21,co_trich,0.619,,
 diem,manh_con,Etat_s,tầng cuối,21,thieu,0.8095,,
 diem,manh_con,Echi_s,tầng cuối,21,dieu_toan_phan,0.3333,,
+diem,manh_con,Echi_s,tầng cuối,21,dieu_du_gold,0.4286,,
 diem,manh_con,Echi_s,tầng cuối,21,khoan_toan_phan,0.0952,,
+diem,manh_con,Echi_s,tầng cuối,21,khoan_du_gold,0.1429,,
 diem,manh_con,Echi_s,tầng cuối,21,dieu_phu,0.4286,,
 diem,manh_con,Echi_s,tầng cuối,21,dieu_chinh_xac,0.369,,
 diem,manh_con,Echi_s,tầng cuối,21,co_trich,0.8571,,
 diem,manh_con,Echi_s,tầng cuối,21,thieu,0.5714,,
 diem,manh_con,E2,tầng cuối,21,dieu_toan_phan,0.0476,,
+diem,manh_con,E2,tầng cuối,21,dieu_du_gold,0.0952,,
 diem,manh_con,E2,tầng cuối,21,khoan_toan_phan,0.0,,
+diem,manh_con,E2,tầng cuối,21,khoan_du_gold,0.0476,,
 diem,manh_con,E2,tầng cuối,21,dieu_phu,0.0952,,
 diem,manh_con,E2,tầng cuối,21,dieu_chinh_xac,0.0714,,
 diem,manh_con,E2,tầng cuối,21,co_trich,0.6667,,
 diem,manh_con,E2,tầng cuối,21,thieu,0.9048,,
 diem,manh_con,E3,tầng cuối,21,dieu_toan_phan,0.0476,,
+diem,manh_con,E3,tầng cuối,21,dieu_du_gold,0.0952,,
 diem,manh_con,E3,tầng cuối,21,khoan_toan_phan,0.0,,
+diem,manh_con,E3,tầng cuối,21,khoan_du_gold,0.0476,,
 diem,manh_con,E3,tầng cuối,21,dieu_phu,0.0952,,
 diem,manh_con,E3,tầng cuối,21,dieu_chinh_xac,0.0714,,
 diem,manh_con,E3,tầng cuối,21,co_trich,0.619,,
 diem,manh_con,E3,tầng cuối,21,thieu,0.9048,,
 diem,manh_con,E3b,tầng cuối,21,dieu_toan_phan,0.1905,,
+diem,manh_con,E3b,tầng cuối,21,dieu_du_gold,0.2381,,
 diem,manh_con,E3b,tầng cuối,21,khoan_toan_phan,0.0476,,
+diem,manh_con,E3b,tầng cuối,21,khoan_du_gold,0.0952,,
 diem,manh_con,E3b,tầng cuối,21,dieu_phu,0.2381,,
 diem,manh_con,E3b,tầng cuối,21,dieu_chinh_xac,0.2143,,
 diem,manh_con,E3b,tầng cuối,21,co_trich,0.6667,,
 diem,manh_con,E3b,tầng cuối,21,thieu,0.7619,,
 hieu,manh_con,B+ − B,tầng cuối,21,dieu_toan_phan,-0.1905,-0.381,-0.0476
+hieu,manh_con,B+ − B,tầng cuối,21,dieu_du_gold,-0.2381,-0.4286,-0.0476
 hieu,manh_con,B+ − B,tầng cuối,21,khoan_toan_phan,-0.0476,-0.1429,0.0
+hieu,manh_con,B+ − B,tầng cuối,21,khoan_du_gold,-0.0952,-0.2381,0.0
 hieu,manh_con,B+ − B,tầng cuối,21,dieu_phu,-0.2381,-0.4286,-0.0476
 hieu,manh_con,B+ − B,tầng cuối,21,dieu_chinh_xac,-0.2063,-0.3968,-0.0476
 hieu,manh_con,B+ − B,tầng cuối,21,co_trich,-0.0952,-0.2857,0.0952
 hieu,manh_con,B+ − B,tầng cuối,21,thieu,0.2381,0.0476,0.4286
 hieu,manh_con,Eduoi − B,tầng cuối,21,dieu_toan_phan,0.0952,-0.0952,0.3333
+hieu,manh_con,Eduoi − B,tầng cuối,21,dieu_du_gold,0.0476,-0.1905,0.2857
 hieu,manh_con,Eduoi − B,tầng cuối,21,khoan_toan_phan,0.0476,0.0,0.1429
+hieu,manh_con,Eduoi − B,tầng cuối,21,khoan_du_gold,0.0,-0.1429,0.1429
 hieu,manh_con,Eduoi − B,tầng cuối,21,dieu_phu,0.0476,-0.1905,0.2857
 hieu,manh_con,Eduoi − B,tầng cuối,21,dieu_chinh_xac,0.0794,-0.127,0.3175
 hieu,manh_con,Eduoi − B,tầng cuối,21,co_trich,0.1429,-0.0476,0.3333
 hieu,manh_con,Eduoi − B,tầng cuối,21,thieu,-0.0476,-0.2857,0.1905
 hieu,manh_con,Etren − B,tầng cuối,21,dieu_toan_phan,0.0476,-0.1905,0.2857
+hieu,manh_con,Etren − B,tầng cuối,21,dieu_du_gold,0.0952,-0.1429,0.3333
 hieu,manh_con,Etren − B,tầng cuối,21,khoan_toan_phan,0.1429,0.0,0.2857
+hieu,manh_con,Etren − B,tầng cuối,21,khoan_du_gold,0.1429,0.0,0.2857
 hieu,manh_con,Etren − B,tầng cuối,21,dieu_phu,0.0952,-0.1429,0.3333
 hieu,manh_con,Etren − B,tầng cuối,21,dieu_chinh_xac,0.0794,-0.1587,0.3016
 hieu,manh_con,Etren − B,tầng cuối,21,co_trich,0.1905,0.0,0.4286
 hieu,manh_con,Etren − B,tầng cuối,21,thieu,-0.0952,-0.3333,0.1429
 hieu,manh_con,Etat_d − B,tầng cuối,21,dieu_toan_phan,0.0952,-0.0952,0.3333
+hieu,manh_con,Etat_d − B,tầng cuối,21,dieu_du_gold,0.0476,-0.1905,0.2857
 hieu,manh_con,Etat_d − B,tầng cuối,21,khoan_toan_phan,0.0476,0.0,0.1429
+hieu,manh_con,Etat_d − B,tầng cuối,21,khoan_du_gold,0.0,-0.1429,0.1429
 hieu,manh_con,Etat_d − B,tầng cuối,21,dieu_phu,0.0476,-0.1905,0.2857
 hieu,manh_con,Etat_d − B,tầng cuối,21,dieu_chinh_xac,0.0794,-0.127,0.3175
 hieu,manh_con,Etat_d − B,tầng cuối,21,co_trich,0.1429,-0.0476,0.3333
 hieu,manh_con,Etat_d − B,tầng cuối,21,thieu,-0.0476,-0.2857,0.1905
 hieu,manh_con,Etat_k − B,tầng cuối,21,dieu_toan_phan,0.0952,-0.0952,0.3333
+hieu,manh_con,Etat_k − B,tầng cuối,21,dieu_du_gold,0.0476,-0.1905,0.2857
 hieu,manh_con,Etat_k − B,tầng cuối,21,khoan_toan_phan,0.0476,0.0,0.1429
+hieu,manh_con,Etat_k − B,tầng cuối,21,khoan_du_gold,0.0,-0.1429,0.1429
 hieu,manh_con,Etat_k − B,tầng cuối,21,dieu_phu,0.0476,-0.1905,0.2857
 hieu,manh_con,Etat_k − B,tầng cuối,21,dieu_chinh_xac,0.0794,-0.127,0.3175
 hieu,manh_con,Etat_k − B,tầng cuối,21,co_trich,0.1905,0.0476,0.381
 hieu,manh_con,Etat_k − B,tầng cuối,21,thieu,-0.0476,-0.2857,0.1905
 hieu,manh_con,Etat_n − B,tầng cuối,21,dieu_toan_phan,0.0952,-0.0952,0.3333
+hieu,manh_con,Etat_n − B,tầng cuối,21,dieu_du_gold,0.0476,-0.1905,0.2857
 hieu,manh_con,Etat_n − B,tầng cuối,21,khoan_toan_phan,0.0476,0.0,0.1429
+hieu,manh_con,Etat_n − B,tầng cuối,21,khoan_du_gold,0.0,-0.1429,0.1429
 hieu,manh_con,Etat_n − B,tầng cuối,21,dieu_phu,0.0476,-0.1905,0.2857
 hieu,manh_con,Etat_n − B,tầng cuối,21,dieu_chinh_xac,0.0794,-0.127,0.3175
 hieu,manh_con,Etat_n − B,tầng cuối,21,co_trich,0.1429,-0.0476,0.3333
 hieu,manh_con,Etat_n − B,tầng cuối,21,thieu,-0.0476,-0.2857,0.1905
 hieu,manh_con,Etat_s − B,tầng cuối,21,dieu_toan_phan,-0.0952,-0.2381,0.0
+hieu,manh_con,Etat_s − B,tầng cuối,21,dieu_du_gold,-0.1429,-0.3333,0.0
 hieu,manh_con,Etat_s − B,tầng cuối,21,khoan_toan_phan,0.0,0.0,0.0
+hieu,manh_con,Etat_s − B,tầng cuối,21,khoan_du_gold,-0.0476,-0.1429,0.0
 hieu,manh_con,Etat_s − B,tầng cuối,21,dieu_phu,-0.1429,-0.3333,0.0
 hieu,manh_con,Etat_s − B,tầng cuối,21,dieu_chinh_xac,-0.1111,-0.254,0.0
 hieu,manh_con,Etat_s − B,tầng cuối,21,co_trich,-0.0476,-0.1429,0.0
 hieu,manh_con,Etat_s − B,tầng cuối,21,thieu,0.1429,0.0,0.3333
 hieu,manh_con,Echi_s − B,tầng cuối,21,dieu_toan_phan,0.0952,-0.0952,0.3333
+hieu,manh_con,Echi_s − B,tầng cuối,21,dieu_du_gold,0.0952,-0.1429,0.3333
 hieu,manh_con,Echi_s − B,tầng cuối,21,khoan_toan_phan,0.0476,0.0,0.1429
+hieu,manh_con,Echi_s − B,tầng cuối,21,khoan_du_gold,0.0,-0.1429,0.1429
 hieu,manh_con,Echi_s − B,tầng cuối,21,dieu_phu,0.0952,-0.1429,0.3333
 hieu,manh_con,Echi_s − B,tầng cuối,21,dieu_chinh_xac,0.0913,-0.1071,0.3175
 hieu,manh_con,Echi_s − B,tầng cuối,21,co_trich,0.1905,0.0476,0.381
 hieu,manh_con,Echi_s − B,tầng cuối,21,thieu,-0.0952,-0.3333,0.1429
 hieu,manh_con,E2 − B,tầng cuối,21,dieu_toan_phan,-0.1905,-0.381,-0.0476
+hieu,manh_con,E2 − B,tầng cuối,21,dieu_du_gold,-0.2381,-0.4286,-0.0476
 hieu,manh_con,E2 − B,tầng cuối,21,khoan_toan_phan,-0.0476,-0.1429,0.0
+hieu,manh_con,E2 − B,tầng cuối,21,khoan_du_gold,-0.0952,-0.2381,0.0
 hieu,manh_con,E2 − B,tầng cuối,21,dieu_phu,-0.2381,-0.4286,-0.0476
 hieu,manh_con,E2 − B,tầng cuối,21,dieu_chinh_xac,-0.2063,-0.3968,-0.0476
 hieu,manh_con,E2 − B,tầng cuối,21,co_trich,0.0,-0.1429,0.1429
 hieu,manh_con,E2 − B,tầng cuối,21,thieu,0.2381,0.0476,0.4286
 hieu,manh_con,E3 − B,tầng cuối,21,dieu_toan_phan,-0.1905,-0.381,-0.0476
+hieu,manh_con,E3 − B,tầng cuối,21,dieu_du_gold,-0.2381,-0.4286,-0.0476
 hieu,manh_con,E3 − B,tầng cuối,21,khoan_toan_phan,-0.0476,-0.1429,0.0
+hieu,manh_con,E3 − B,tầng cuối,21,khoan_du_gold,-0.0952,-0.2381,0.0
 hieu,manh_con,E3 − B,tầng cuối,21,dieu_phu,-0.2381,-0.4286,-0.0476
 hieu,manh_con,E3 − B,tầng cuối,21,dieu_chinh_xac,-0.2063,-0.3968,-0.0476
 hieu,manh_con,E3 − B,tầng cuối,21,co_trich,-0.0476,-0.1905,0.0952
 hieu,manh_con,E3 − B,tầng cuối,21,thieu,0.2381,0.0476,0.4286
 hieu,manh_con,E3b − B,tầng cuối,21,dieu_toan_phan,-0.0476,-0.1429,0.0
+hieu,manh_con,E3b − B,tầng cuối,21,dieu_du_gold,-0.0952,-0.2381,0.0
 hieu,manh_con,E3b − B,tầng cuối,21,khoan_toan_phan,0.0,0.0,0.0
+hieu,manh_con,E3b − B,tầng cuối,21,khoan_du_gold,-0.0476,-0.1429,0.0
 hieu,manh_con,E3b − B,tầng cuối,21,dieu_phu,-0.0952,-0.2381,0.0
 hieu,manh_con,E3b − B,tầng cuối,21,dieu_chinh_xac,-0.0635,-0.1746,0.0
 hieu,manh_con,E3b − B,tầng cuối,21,co_trich,0.0,-0.1429,0.1429

@@ -15,11 +15,11 @@ Nguồn: `chi_tiet_cau.jsonl`, `pilot_tra_loi.jsonl` cùng thư mục (bước 1
 
 | thùng | B | E2 |
 |---|---:|---:|
-| đúng | 58 | 47 |
+| đúng | 59 | 48 |
 | T1 truy hồi hụt | 3 | 5 |
 | T2 ngoài ngân sách | 12 | 17 |
 | T3 có mà không dẫn | 4 | 5 |
-| T4 dẫn sai | 31 | 33 |
+| T4 dẫn sai | 30 | 32 |
 | T5 từ chối sai | 1 | 0 |
 | T6 cắt trần | 1 | 3 |
 
@@ -27,7 +27,7 @@ Nguồn: `chi_tiet_cau.jsonl`, `pilot_tra_loi.jsonl` cùng thư mục (bước 1
 
 | nhóm | n | T1 | T2 | T3 | T4 | T5 | T6 |
 |---|---:|---|---|---|---|---|---|
-| don_gian | 50 | 0 / 0 | 4 / 8 | 1 / 0 | 14 / 12 | 0 / 0 | 1 / 2 |
+| don_gian | 50 | 0 / 0 | 4 / 8 | 1 / 0 | 13 / 11 | 0 / 0 | 1 / 2 |
 | dieu_dai | 19 | 1 / 3 | 2 / 3 | 0 / 1 | 2 / 6 | 0 / 0 | 0 / 0 |
 | xuyen_khoan | 17 | 0 / 0 | 1 / 1 | 0 / 0 | 2 / 3 | 1 / 0 | 0 / 1 |
 | khong_co_dieu | 15 | 0 / 0 | 2 / 2 | 0 / 1 | 13 / 12 | 0 / 0 | 0 / 0 |
@@ -40,7 +40,7 @@ Nguồn: `chi_tiet_cau.jsonl`, `pilot_tra_loi.jsonl` cùng thư mục (bước 1
 | bịa Điều cho văn bản không chia Điều | 13 | 12 |
 | dẫn nhầm Điều | 4 | 10 |
 | dẫn thừa (đủ gold, thêm Điều khác) | 11 | 9 |
-| đúng số Điều, sai văn bản (bản hợp nhất / bản khác) | 3 | 2 |
+| đúng số Điều, sai văn bản (bản hợp nhất / bản khác) | 2 | 1 |
 | *trong đó có ≥ 1 Điều không hề có trong ngữ cảnh (tự đoán)* | 14 | 18 |
 
 ### T1 tách nhỏ
@@ -148,7 +148,7 @@ Ngữ cảnh rút gọn: mỗi khối = số hiệu + 30 từ đầu; ★ = kh�
 - trích bóc được: Điều 162 khoản 1, Điều 162 khoản 2, Điều 162 khoản 3
 - lý do: gold ở khối #1 / 8; độ phủ 0.50, độ chính xác 1.00
 
-### T4 — dẫn sai (64 lượt: B 31, E2 33)
+### T4 — dẫn sai (62 lượt: B 30, E2 32)
 
 **q003 · B · don_gian** — Người vi phạm nội quy phiên tòa hoặc phiên hòa giải, đối thoại tại Tòa án có thể bị áp dụng những biện pháp xử lý nào?
 
@@ -166,13 +166,13 @@ Ngữ cảnh rút gọn: mỗi khối = số hiệu + 30 từ đầu; ★ = kh�
 - trích bóc được: Điều 68, Điều 81 khoản 1, Điều 65, Điều 67, Điều 9 khoản 10
 - lý do: gold ở khối #1 / 6; độ phủ 1.00, độ chính xác 0.20; dẫn thừa (đủ gold, thêm Điều khác)
 
-**q010 · B · don_gian** — Hồ sơ thiết kế kiến trúc có vị trí như thế nào trong hồ sơ thiết kế xây dựng và được thẩm định, phê duyệt theo luật nào?
+**q011 · B · don_gian** — Bên chậm thực hiện nghĩa vụ dân sự có trách nhiệm gì đối với bên có quyền?
 
-- gold: 03/2020/TT-BXD Điều 2 khoản 1
-- ngữ cảnh: ★#1 [83/2026/VBHN-TT-BXD] [83/2026/VBHN-TT-BXD] [Văn bản hợp nhất số 83/2026/VBHN-TT-BXD Quy định về hồ sơ thiết kế kiến trúc và mẫu chứng chỉ hành nghề kiến trúc] > Chương I > Điều 2. … ‖ ★#2 [03/2020/TT-BXD] [03/2020/TT-BXD] [Thông tư số 03/2020/TT-BXD Quy định về hồ sơ thiết kế kiến trúc và mẫu chứng chỉ hành nghề kiến trúc] > Chương I > Điều 2. Quy định … ‖ #3 [83/2026/VBHN-TT-BXD] [83/2026/VBHN-TT-BXD] [Văn bản hợp nhất số 83/2026/VBHN-TT-BXD Quy định về hồ sơ thiết kế kiến trúc và mẫu chứng chỉ hành nghề kiến trúc] > Chương II > Điều 6. … ‖ #4 [83/2026/VBHN-TT-BXD] [83/2026/VBHN-TT-BXD] [Văn bản hợp nhất số 83/2026/VBHN-TT-BXD Quy định về hồ sơ thiết kế kiến trúc và mẫu chứng chỉ hành nghề kiến trúc] > Chương I > Điều 2. … ‖ #5 [03/2020/TT-BXD] [03/2020/TT-BXD] [Thông tư số 03/2020/TT-BXD Quy định về hồ sơ thiết kế kiến trúc và mẫu chứng chỉ hành nghề kiến trúc] > Chương II > Điều 6. Hồ sơ … ‖ #6 [03/2020/TT-BXD] [03/2020/TT-BXD] [Thông tư số 03/2020/TT-BXD Quy định về hồ sơ thiết kế kiến trúc và mẫu chứng chỉ hành nghề kiến trúc] > Chương I > Điều 2. Quy định … ‖ #7 [83/2026/VBHN-TT-BXD] [83/2026/VBHN-TT-BXD] [Văn bản hợp nhất số 83/2026/VBHN-TT-BXD Quy định về hồ sơ thiết kế kiến trúc và mẫu chứng chỉ hành nghề kiến trúc] > Chương I > Điều 2. … ‖ #8 [83/2026/VBHN-TT-BXD] [83/2026/VBHN-TT-BXD] [Văn bản hợp nhất số 83/2026/VBHN-TT-BXD Quy định về hồ sơ thiết kế kiến trúc và mẫu chứng chỉ hành nghề kiến trúc] > Chương I > Điều 2. … ‖ #9 [83/2026/VBHN-TT-BXD] [83/2026/VBHN-TT-BXD] [Văn bản hợp nhất số 83/2026/VBHN-TT-BXD Quy định về hồ sơ thiết kế kiến trúc và mẫu chứng chỉ hành nghề kiến trúc] > Chương II > Điều 7. …
-- trả lời: Hồ sơ thiết kế kiến trúc là thành phần của hồ sơ thiết kế xây dựng được thực hiện thẩm định, phê duyệt theo quy định của Luật xây dựng. Căn cứ: Điều 2 khoản 1 của 83/2026/VBHN-TT-BXD.
-- trích bóc được: Điều 2 khoản 1
-- lý do: gold ở khối #1 / 9; độ phủ 0.00, độ chính xác 0.00; đúng số Điều, sai văn bản (bản hợp nhất / bản khác)
+- gold: 33/2005/QH11 Điều 286 khoản 2
+- ngữ cảnh: #1 [33/2005/QH11] [33/2005/QH11] [Bộ luật Dân sự số 33/2005/QH11] > Chương XVII > Mục 3 > Điều 306. Trách nhiệm dân sự do chậm tiếp nhận việc thực hiện nghĩa vụ dân … ‖ ★#2 [33/2005/QH11] [33/2005/QH11] [Bộ luật Dân sự số 33/2005/QH11] > Chương XVII > Mục 2 > Điều 286. Chậm thực hiện nghĩa vụ dân sự Điều 286. Chậm thực hiện nghĩa vụ … ‖ #3 [33/2005/QH11] [33/2005/QH11] [Bộ luật Dân sự số 33/2005/QH11] > Chương XVII > Mục 3 > Điều 305. Trách nhiệm dân sự do chậm thực hiện nghĩa vụ dân sự Điều 305. … ‖ #4 [33/2005/QH11] [33/2005/QH11] [Bộ luật Dân sự số 33/2005/QH11] > Chương XVII > Mục 6 > Điều 376. Hoàn thành nghĩa vụ dân sự trong trường hợp bên có quyền chậm tiếp … ‖ #5 [33/2005/QH11] [33/2005/QH11] [Bộ luật Dân sự số 33/2005/QH11] > Chương XVII > Mục 3 > Điều 302. Trách nhiệm dân sự do vi phạm nghĩa vụ dân sự Mục 3 TRÁCH … ‖ #6 [33/2005/QH11] [33/2005/QH11] [Bộ luật Dân sự số 33/2005/QH11] > Chương XVII > Mục 2 > Điều 288. Chậm tiếp nhận việc thực hiện nghĩa vụ dân sự Điều 288. Chậm tiếp … ‖ #7 [33/2005/QH11] [33/2005/QH11] [Bộ luật Dân sự số 33/2005/QH11] > Chương XVII > Mục 2 > Điều 285. Thời hạn thực hiện nghĩa vụ dân sự Điều 285. Thời hạn thực hiện …
+- trả lời: Bên chậm thực hiện nghĩa vụ dân sự phải: - Thông báo ngay cho bên có quyền về việc không thực hiện nghĩa vụ đúng thời hạn (Điều 286 khoản 1 của 33/2005/QH11). - Nếu quá thời hạn và nghĩa vụ vẫn chưa được hoàn thành, phải thực hiện nghĩa vụ và bồi thường thiệt hại (Điều 305 khoản 1 của 33/2005/QH11). - Trả lãi đối với số tiền chậm trả theo lãi suất cơ bản do Ngân hàng Nhà …
+- trích bóc được: Điều 286 khoản 1, Điều 305 khoản 1, Điều 305 khoản 2
+- lý do: gold ở khối #2 / 7; độ phủ 1.00, độ chính xác 0.50; dẫn thừa (đủ gold, thêm Điều khác)
 
 ### T5 — từ chối sai (1 lượt: B 1, E2 0)
 
@@ -224,27 +224,23 @@ Ngữ cảnh rút gọn: mỗi khối = số hiệu + 30 từ đầu; ★ = kh�
 
 ## 4. Nhận xét (đọc tay các ví dụ trên)
 
-- **T4 là thùng lớn nhất** (B 31, E2 33), và gần một nửa không phải lỗi hiểu luật: ở nhóm `khong_co_dieu` mô hình **bịa số Điều** cho văn bản vốn không chia Điều (thông báo, chỉ thị) — q139 "Điều 5 khoản 2 của 05/TB-VPCP". Nội dung trả lời thường đúng; chỉ cần bỏ số Điều là khớp gold (12 câu B, 11 câu E2). Đây là lý do cả 8 phương pháp đều 0,000 ở nhóm này (bảng 2 của metrics_trich_dan.md).
-- **Dẫn thừa**: mô hình dẫn thêm Điều ở văn bản khác có trong ngữ cảnh (q003 dẫn cả Điều 467 BLTTHS và Điều 387 BLTTDS bên cạnh Điều 139 Luật TCTAND đúng). Tiêu chí *đúng toàn phần* phạt mọi trích dẫn thừa.
+- **T4 là thùng lớn nhất** (B 30, E2 32), và gần một nửa không phải lỗi hiểu luật: ở nhóm `khong_co_dieu` mô hình **bịa số Điều** cho văn bản vốn không chia Điều (thông báo, chỉ thị) — q139 "Điều 5 khoản 2 của 05/TB-VPCP". Nội dung trả lời thường đúng; chỉ cần bỏ số Điều là khớp gold (12 câu B, 11 câu E2). Đây là lý do cả 8 phương pháp đều 0,000 ở nhóm này (bảng 2 của metrics_trich_dan.md).
+- **Dẫn thừa**: mô hình dẫn thêm Điều ở văn bản khác có trong ngữ cảnh (q003 dẫn cả Điều 467 BLTTHS và Điều 387 BLTTDS bên cạnh Điều 139 Luật TCTAND đúng). Tiêu chí chính *khớp hoàn toàn* phạt mọi trích dẫn thừa (cột phụ *đủ gold* thì không).
 - **E2 thua B chủ yếu vì mở rộng Điều**: 10 câu B đúng mà E2 rơi vào T4, gần hết là *dẫn nhầm Điều*. Khối mở rộng lên cả Điều dài làm ngữ cảnh còn 1–2 khối; nhãn "Điều N" chỉ ở đầu khối nên mô hình gán khoản sang Điều khác hoặc lấy số khoản làm số Điều (q120: gold Điều 89 khoản 6 → E2 dẫn "Điều 6"; q039: Điều 46 khoản 3 → "Điều 3 khoản 3"). Đây là vấn đề *nhãn trong ngữ cảnh*, không phải truy hồi (R@5 của E2 = B).
-- **Đúng số Điều, sai văn bản**: dẫn văn bản hợp nhất thay bản gốc (q010: 83/2026/VBHN-TT-BXD thay 03/2020/TT-BXD, cùng Điều 2 khoản 1). Gold chọn một bản; chấm nghiêm phạt bản kia.
-- **T1 đều là hụt một phần** gold nhiều đơn vị: một đơn vị vào 50 ứng viên, đơn vị kia (thường là đích dẫn chiếu, nhóm `dan_chieu`) thì không. Riêng q127 hụt vì gold là *cả* Điều 3 "Giải thích từ ngữ" — không chunk nào phủ ≥ 50% Điều dài đó; đây là giới hạn của định nghĩa gold, không phải của truy hồi.
+- **Đúng số Điều, sai văn bản**: dẫn bản khác của cùng văn bản. Từ 30/10 bảng cặp tương đương được áp ở tầng trích dẫn, nên q010 (dẫn 83/2026/VBHN-TT-BXD thay 03/2020/TT-BXD, cùng Điều 2 khoản 1) nay tính là đúng; các ca còn lại ở thùng này là câu phiên bản (không áp bảng cặp) hoặc cặp văn bản ngoài bảng.
+- **T1 đều là hụt một phần** gold nhiều đơn vị: một đơn vị vào 50 ứng viên, đơn vị kia (thường là đích dẫn chiếu, nhóm `dan_chieu`) thì không. Riêng q127 (và q122, cùng dạng): gold có một đơn vị cấp Điều mà span là **câu dẫn** "Trong Luật này, các từ ngữ dưới đây được hiểu như sau:" (12 từ, KHÔNG phải cả Điều — bản trước ghi sai, xem `results/nhat_ky_sua_loi.md` 30/10). Câu dẫn nằm trong chunk "Điều 3 … Khoản 1", chunk đó đứng hạng 779 (q122: 2.156) nên không vào 50 ứng viên.
 - **T2**: chunk gold đầu tiên ở hạng ≤ 6 ở 7/12 câu B — phần lớn là gold nhiều đơn vị, một đơn vị đã vào ngữ cảnh, đơn vị kia nằm ngoài 1.200 từ.
 - **T5, T6 nhỏ**. q021 cắt trần ở cả 8 phương pháp (câu trả lời liệt kê dài, chạm 384 token) — lỗi của câu hỏi chứ không của phương pháp.
 
-## 5. Cải tiến đề xuất — xếp theo số câu kỳ vọng cứu được
+## 5. Cải tiến — xếp theo số câu kỳ vọng cứu được
 
-Số câu: cận trên ước trên câu trả lời đã sinh (mục 3), B / E2. Mọi thay đổi lời nhắc phải áp cho **cả 8 phương pháp** và sinh lại; regex chấm **không đổi**.
+Số câu: cận trên ước trên câu trả lời đã sinh (mục 3), B / E2. Regex chấm **không đổi**. Sau khi duyệt (30/10): giữ #1, #2, #3 làm thử nghiệm ở bước 4 (`results/local_gpu/thu_them.md`, mỗi mục có kiểm soát chạy cùng lượt); #6 xử lý bằng sửa bộ chấm; **bỏ** bốn đề xuất cũ: chỉ dẫn đơn vị trực tiếp trả lời (dẫn thừa), E3 + rerank, MAX_TOKENS 512, lời nhắc bớt thận trọng.
 
-| # | thùng | cách sửa | câu kỳ vọng (B / E2) | chi phí | rủi ro với tính công bằng |
-|---:|---|---|---|---|---|
-| 1 | T4 bịa Điều | Lời nhắc: "khối không có nhãn Điều thì chỉ ghi số hiệu văn bản, KHÔNG tự đặt số Điều" | ≤ 12 / ≤ 11 | 1 dòng lời nhắc; sinh lại 880 lượt ≈ 1 giờ GPU | Trung bình: C và D (chunk không nhãn Điều) sẽ bớt *tự đoán* — số trích dẫn của C/D có thể giảm thật, phải báo cả trước/sau |
-| 2 | T4 dẫn nhầm sau mở rộng | Tầng sinh: khi mở rộng lên Điều, gắn lại nhãn "Điều N khoản k" ở đầu mỗi khoản trong khối (không đụng chuỗi nhúng) | 0 / ≤ 10 | ~20 dòng ở `truy_hoi.ngu_canh`; sinh lại B+, E2, E3 ≈ 25 phút | Thấp nếu ghi thành biến thể mới (E2′), giữ E2 cũ; B không đổi |
-| 3 | T2 ngoài ngân sách | Nâng ngân sách 1.800 / 2.400 từ (bước 4.2 đo thật) | ≤ 12 / ≤ 17 | Prompt dài hơn; **2.400 từ ≈ 4.000 token, vượt n_ctx 4096** khi cộng 384 token trả lời — cần nâng n_ctx, tức đổi cờ server | Thấp nếu mọi phương pháp cùng ngân sách; nhưng đổi n_ctx là đổi cấu hình khoá |
-| 4 | T4 dẫn thừa | Lời nhắc: "chỉ dẫn Điều/khoản trực tiếp trả lời câu hỏi" (KHÔNG cắt trích dẫn bằng hậu xử lý) | ≤ 6 / ≤ 4 | 1 dòng lời nhắc, sinh lại cùng #1 | Trung bình: có thể làm thiếu ở `xuyen_khoan` (gold nhiều đơn vị) — phải xem riêng nhóm đó |
-| 5 | T1 hụt một phần / T3 `dan_chieu` | E3 (theo dẫn chiếu) + rerank | ≤ 7 / ≤ 10 | rerank đã có (`rag/rerank.py`), thêm một lượt cross-encoder mỗi câu | Thấp — áp đồng đều |
-| 6 | T4 sai văn bản | Không sửa ở chấm (regex đã chốt). Có thể ghi chú bản hợp nhất ≡ bản gốc trong báo cáo | ≤ 3 / ≤ 2 | 0 | **Cao nếu sửa bộ chấm** — đổi luật chấm sau khi thấy kết quả |
-| 7 | T6 cắt trần | MAX_TOKENS 512 | 1 / 3 | +30% thời gian sinh | Cờ khoá — chỉ làm như thử nghiệm phụ |
-| 8 | T5 từ chối sai | Lời nhắc bớt thận trọng | 1 / 0 | thấp | Tăng nguy cơ bịa ở câu không có gold |
+| # | thùng | cách sửa | câu kỳ vọng (B / E2) | chi phí | rủi ro với tính công bằng | trạng thái |
+|---:|---|---|---|---|---|---|
+| 1 | T4 bịa Điều | Lời nhắc P1: "đoạn không có 'Điều' thì chỉ ghi số hiệu, không tự đặt số Điều" | ≤ 12 / ≤ 11 | 1 dòng lời nhắc; sinh lại cả 8 phương pháp | Trung bình: C và D sẽ bớt *tự đoán* — báo trước/sau P1 cho C và D ở nhóm `khong_co_dieu` | thử nghiệm 4.5: P1 × 8 phương pháp, kiểm soát lời nhắc gốc cùng lượt |
+| 2 | T4 dẫn nhầm sau mở rộng | Tầng sinh: gắn lại nhãn "(Điều N khoản k)" ở đầu mỗi khoản trong khối mở rộng (không đụng chuỗi nhúng) | 0 / ≤ 10 | ~20 dòng ở `truy_hoi.ngu_canh` | Thấp: biến thể riêng E2n, E2 không đổi | thử nghiệm 4.5: E2n so với kiểm soát E2 |
+| 3 | T2 ngoài ngân sách | Ngân sách 600 / 1.200 / 1.800 / 2.400 từ | ≤ 12 / ≤ 17 | 2.400 từ vượt n_ctx 4096 → nâng n_ctx 8192 **chỉ cho lượt 2.400 từ** | Thấp nếu mọi phương pháp cùng ngân sách | thử nghiệm 4.2 |
+| 6 | T4 sai văn bản | Áp bảng cặp tương đương **đã chốt** (`eval/cap_tuong_duong.csv`) ở tầng trích dẫn như tầng truy hồi; câu phiên bản không áp | đã áp: B +1, E2 +1 (q010) | 0 | Thấp: luật tương đương có từ trước, đã ghi trong `eval/cham.py` là dùng cho cả hai tầng; trước 30/10 tầng trích dẫn bỏ sót — đây là sửa lỗi cài đặt, không phải luật mới | đã làm (`results/nhat_ky_sua_loi.md`) |
 
-Thời gian chạy: 16 s.
+Thời gian chạy: 25 s.

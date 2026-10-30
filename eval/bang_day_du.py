@@ -35,8 +35,10 @@ from rag.kiem_chi_muc import chot_chan
 NHOM = ("don_gian", "dieu_dai", "xuyen_khoan", "khong_co_dieu", "dan_chieu")
 DO_TH = ("R@1", "R@5", "R@10", "R@1200t", "MRR", "trong_50", "trong_ngu_canh")
 TEN_TH = {"trong_50": "gold trong 50 ứng viên", "trong_ngu_canh": "gold trong ngữ cảnh"}
-DO_TD = ("dieu_toan_phan", "khoan_toan_phan", "dieu_phu", "dieu_chinh_xac", "co_trich", "thieu")
-TEN_TD = {"dieu_toan_phan": "đúng toàn phần (Điều)", "khoan_toan_phan": "đúng toàn phần (khoản)",
+DO_TD = ("dieu_toan_phan", "dieu_du_gold", "khoan_toan_phan", "khoan_du_gold", "dieu_phu", "dieu_chinh_xac", "co_trich",
+         "thieu")
+TEN_TD = {"dieu_toan_phan": "**khớp hoàn toàn (Điều)**", "khoan_toan_phan": "khớp hoàn toàn (khoản)",
+          "dieu_du_gold": "đủ gold (Điều)", "khoan_du_gold": "đủ gold (khoản)",
           "dieu_phu": "độ phủ", "dieu_chinh_xac": "độ chính xác", "co_trich": "có trích dẫn",
           "thieu": "trả lời thiếu"}
 RE_DIEU = re.compile(r"Điều\s+(\d+[a-zđ]?)", re.I)
@@ -76,7 +78,8 @@ def cham_bo(ten, ds, tra_loi, pps, van_ban, so_hieu, dv, cap):
             d["hang_dau"] = next((i + 1 for i, c in enumerate(kq)
                                   if any(cham.do_phu(g, [c], td.get(j)) >= cham.TAU for j, g in enumerate(x["gold"]))),
                                  None)
-            cd, ck = cham_mot(r, "dieu"), cham_mot(r, "khoan")
+            cd, ck = cham_mot(r, "dieu", td), cham_mot(r, "khoan", td)
+            cd_cu = cham_mot(r, "dieu")   # trước sửa (1) — chỉ để đếm số câu đổi kết quả
             n_trich, n_ngoai = _trich_dieu_ngoai_ngu_canh(r, khoi)
             ra.append({"bo": ten, "qid": x["qid"], "pp": pp, "loai": x["loai"],
                        "trung_lap": bool(x.get("trung_lap")), "phien_ban": bool(x.get("phien_ban")),
@@ -84,6 +87,8 @@ def cham_bo(ten, ds, tra_loi, pps, van_ban, so_hieu, dv, cap):
                        "hang_muc": ket_qua.phan_loai(r), **d,
                        "dieu_toan_phan": cd["toan_phan"], "dieu_phu": cd["phu"], "dieu_chinh_xac": cd["chinh_xac"],
                        "khoan_toan_phan": ck["toan_phan"], "co_trich": cd["co_trich"],
+                       "dieu_du_gold": cd["du_gold"], "khoan_du_gold": ck["du_gold"],
+                       "dieu_toan_phan_khong_td": cd_cu["toan_phan"], "dieu_du_gold_khong_td": cd_cu["du_gold"],
                        "thieu": 1.0 if cd["phu"] < 1 else 0.0,
                        "so_dieu_trich": n_trich, "so_dieu_ngoai_ngu_canh": n_ngoai,
                        "so_khoi": len(khoi), "so_tu_ngu_canh": r["so_tu_ngu_canh"],
@@ -282,15 +287,31 @@ def main() -> None:
     (ch.RESULTS / "metrics_truy_hoi.md").write_text("\n".join(L) + "\n", encoding="utf-8")
 
     # ── metrics_trich_dan.md ───────────────────────────────────────────────────
-    DT = ("dieu_toan_phan", "khoan_toan_phan", "dieu_phu", "dieu_chinh_xac", "co_trich")
+    DT = ("dieu_toan_phan", "dieu_du_gold", "khoan_toan_phan", "khoan_du_gold", "dieu_phu", "dieu_chinh_xac", "co_trich")
+    HT = ("dieu_toan_phan", "dieu_du_gold", "khoan_toan_phan", "dieu_phu")
     L = [f"# Độ chính xác trích dẫn — local GPU", "", dau, "",
          "Bộ bóc trích dẫn: regex đã chốt, kiểm với **120 nhãn tay, độ khớp 0,825** (`results/kiem_regex_trich_dan.md`) — "
          "mọi con số mang sẵn sai số đó. Câu **cắt trần** và **từ chối** vẫn nằm trong mẫu số.", "",
+         "Hai tiêu chí, báo song song: **khớp hoàn toàn** (đủ mọi đơn vị gold và không trích thừa — tiêu chí chính) và "
+         "*đủ gold* (đủ mọi đơn vị gold, cho phép trích thừa — tiêu chí phụ). Từ 30/10 trích dẫn trỏ vào **bản tương đương** "
+         "theo bảng cặp đã chốt (`eval/cap_tuong_duong.csv`, cùng số Điều/khoản, nguyên văn giống hệt) được tính là trỏ "
+         "vào gold, như ở tầng truy hồi; câu phiên bản không áp. Số câu đổi kết quả: mục 0.", "",
          f"## 1. Bộ chính — {n_cau(C)} câu × {len(PC)} phương pháp", ""] + bang_hang_muc(C, PC)
     L += [""] + bang_diem(C, PC, DT, TEN_TD)
-    L += ["", "### Hiệu so với A", ""] + bang_hieu(C, PC, "A", ("dieu_toan_phan", "khoan_toan_phan", "dieu_phu"), TEN_TD)
-    L += ["", "### Hiệu so với B", ""] + bang_hieu(C, PC, "B", ("dieu_toan_phan", "khoan_toan_phan", "dieu_phu"), TEN_TD)
-    L += ["", "### Kiểm định McNemar (đúng toàn phần, Điều), Holm trên 28 cặp", "",
+    L += ["", "### 0. Số câu đổi kết quả do sửa bộ chấm ngày 30/10 (bộ chính, mức Điều)", "",
+          "Sửa (1) = áp bảng cặp tương đương ở tầng trích dẫn. Sửa (2) = rà 19 câu `dieu_dai`: không câu nào có đơn vị "
+          "gold lấy cả Điều → không sửa gold, 0 câu đổi (`results/nhat_ky_sua_loi.md`). Sửa (3) = thêm cột *đủ gold*: "
+          "không đổi kết quả nào của cột chính; cột cuối đếm số câu *khớp hoàn toàn* = 0 mà *đủ gold* = 1.", "",
+          "| phương pháp | sửa (1): 0 → 1 | sửa (1): 1 → 0 | sửa (2) | đủ gold nhưng không khớp hoàn toàn |",
+          "|---|---:|---:|---:|---:|"]
+    for p in PC:
+        x = [r for r in C if r["pp"] == p]
+        L.append(f"| {p} | {sum(r['dieu_toan_phan_khong_td'] == 0 and r['dieu_toan_phan'] == 1 for r in x)} "
+                 f"| {sum(r['dieu_toan_phan_khong_td'] == 1 and r['dieu_toan_phan'] == 0 for r in x)} | 0 "
+                 f"| {sum(r['dieu_du_gold'] == 1 and r['dieu_toan_phan'] == 0 for r in x)} |")
+    L += ["", "### Hiệu so với A", ""] + bang_hieu(C, PC, "A", HT, TEN_TD)
+    L += ["", "### Hiệu so với B", ""] + bang_hieu(C, PC, "B", HT, TEN_TD)
+    L += ["", "### Kiểm định McNemar (khớp hoàn toàn, Điều), Holm trên 28 cặp", "",
           "| cặp | p | p sau Holm |", "|---|---:|---:|"]
     def day(p):
         return [r["dieu_toan_phan"] for r in sorted((r for r in C if r["pp"] == p), key=lambda r: r["qid"])]
@@ -298,10 +319,12 @@ def main() -> None:
     ho = cham.holm(pv)
     for k in sorted(pv, key=pv.get):
         L.append(f"| {k} | {pv[k]:.3g} | {'**' if ho[k] < 0.05 else ''}{ho[k]:.3g}{'**' if ho[k] < 0.05 else ''} |")
-    L += ["", "## 2. Tách nhóm — đúng toàn phần (Điều)", ""] + bang_tap(tc, PC, "dieu_toan_phan")
-    L += ["", "### B − A theo từng tập (đúng toàn phần, Điều)", "", "| tập | n | B − A |", "|---|---:|---|"]
+    L += ["", "## 2. Tách nhóm — khớp hoàn toàn (Điều)", ""] + bang_tap(tc, PC, "dieu_toan_phan")
+    L += ["", "### Tách nhóm — đủ gold (Điều), tiêu chí phụ", ""] + bang_tap(tc, PC, "dieu_du_gold")
+    L += ["", "### B − A theo từng tập (Điều)", "", "| tập | n | B − A khớp hoàn toàn | B − A đủ gold |",
+          "|---|---:|---|---|"]
     for t, x in tc.items():
-        L.append(f"| {t} | {n_cau(x)} | {o(bs(x, 'A', 'B', 'dieu_toan_phan'))} |")
+        L.append(f"| {t} | {n_cau(x)} | {o(bs(x, 'A', 'B', 'dieu_toan_phan'))} | {o(bs(x, 'A', 'B', 'dieu_du_gold'))} |")
     L += ["", "### Hạng mục theo nhóm (đạt / từ chối / cắt trần)", "",
           "| nhóm | " + " | ".join(PC) + " |", "|---|" + "---|" * len(PC)]
     for g in NHOM:
@@ -321,9 +344,11 @@ def main() -> None:
     L += [""] + bang_diem(M, PM4, DT, TEN_TD, "cấu hình")
     L += ["", "### Đủ 12 cấu hình (B + 7 cấu hình E + B+, E2, E3, E3b)", ""] + bang_hang_muc(M, PM, "cấu hình")
     L += [""] + bang_diem(M, PM, DT, TEN_TD, "cấu hình")
-    L += ["", "### Hiệu so với B", ""] + bang_hieu(M, PM, "B", ("dieu_toan_phan", "khoan_toan_phan"), TEN_TD)
-    L += ["", "### Theo tập con manh_con — đúng toàn phần (Điều)", ""] + bang_tap(tm, PM, "dieu_toan_phan")
-    L += ["", "## 5. Tập phiên bản và tập nhiễu bản cũ — đúng toàn phần (Điều)", "",
+    L += ["", "### Hiệu so với B", ""] + bang_hieu(M, PM, "B", ("dieu_toan_phan", "dieu_du_gold", "khoan_toan_phan"),
+                                                     TEN_TD)
+    L += ["", "### Theo tập con manh_con — khớp hoàn toàn (Điều)", ""] + bang_tap(tm, PM, "dieu_toan_phan")
+    L += ["", "### Theo tập con manh_con — đủ gold (Điều)", ""] + bang_tap(tm, PM, "dieu_du_gold")
+    L += ["", "## 5. Tập phiên bản và tập nhiễu bản cũ — khớp hoàn toàn (Điều)", "",
           "| tập | n | " + " | ".join(PC) + " |", "|---|---:|" + "---:|" * len(PC)]
     for ten, cu in bc.items():
         x = [r for r in C if r["qid"] in cu]
@@ -334,15 +359,16 @@ def main() -> None:
           "trong thân chunk. *Điều tự đoán* = Điều được trích mà chuỗi \"Điều N\" không xuất hiện ở đâu trong ngữ cảnh của "
           "đúng văn bản đó.", "",
           "| phương pháp | n | từ chối | tỉ lệ từ chối | câu có trích Điều | Điều được trích | Điều tự đoán | "
-          "tỉ lệ tự đoán | đúng toàn phần (Điều) | câu đúng ≥ 1 Điều gold |",
-          "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|"]
+          "tỉ lệ tự đoán | khớp hoàn toàn (Điều) | đủ gold (Điều) | câu đúng ≥ 1 Điều gold |",
+          "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|"]
     for p in PC:
         x = [r for r in C if r["pp"] == p]
         tc_ = sum(r["so_dieu_trich"] for r in x)
         ng = sum(r["so_dieu_ngoai_ngu_canh"] for r in x)
         tu = sum(r["hang_muc"] == "tu_choi" for r in x)
         L.append(f"| {p} | {len(x)} | {tu} | {tu / len(x):.3f} | {sum(r['so_dieu_trich'] > 0 for r in x)} | {tc_} | {ng} | "
-                 f"{(ng / tc_ if tc_ else 0):.3f} | {tb(x, 'dieu_toan_phan'):.3f} | {sum(r['dieu_phu'] > 0 for r in x)} |")
+                 f"{(ng / tc_ if tc_ else 0):.3f} | {tb(x, 'dieu_toan_phan'):.3f} | {tb(x, 'dieu_du_gold'):.3f} "
+                 f"| {sum(r['dieu_phu'] > 0 for r in x)} |")
     L += ["", f"Thời gian chấm: {giay:.0f} s."]
     (ch.RESULTS / "metrics_trich_dan.md").write_text("\n".join(L) + "\n", encoding="utf-8")
     print(f"→ {ch.RESULTS}/metrics_truy_hoi.md, metrics_trich_dan.md, chi_tiet_cau.jsonl ({time.monotonic() - t0:.0f}s)")

@@ -54,17 +54,34 @@ def _b(ten, pp, may="4b", ngan_sach=ch.NGAN_SACH_NGU_CANH_TU, loi_nhac="goc"):
 
 
 # Mỗi thử nghiệm: (biến kiểm soát, danh sách biến). Biến đầu tiên của mỗi nhóm so sánh là kiểm soát.
+# 8 phương pháp của bảng chính: tên → pp truyền cho truy_hoi (E = E đầy đủ, chỉ mục Eduoi_s0).
+PP8 = {"A": "A", "C": "C", "D": "D", "B": "B", "B+": "B+", "E": "Eduoi_s0", "E2": "E2", "E3": "E3"}
 THU_NGHIEM = {
     "seed": [_b(f"A_s{s}", f"A_s{s}") for s in range(4)] + [_b(f"E_s{s}", f"Eduoi_s{s}") for s in range(4)],
-    "loi_nhac": [_b("B", "B"), _b("E2", "E2"), _b("B·P1", "B", loi_nhac="P1"), _b("E2·P1", "E2", loi_nhac="P1"),
-                 _b("E2n", "E2n"), _b("E2n·P1", "E2n", loi_nhac="P1")],
+    # P1 áp cho CẢ TÁM phương pháp, mỗi phương pháp có kiểm soát lời nhắc gốc chạy cùng lượt; E2n là biến thể riêng
+    # (lời nhắc gốc), so với kiểm soát E2 — E2 không đổi.
+    "loi_nhac": [_b(t, p) for t, p in PP8.items()] + [_b(f"{t}·P1", p, loi_nhac="P1") for t, p in PP8.items()]
+                + [_b("E2n", "E2n")],
     "mo_hinh": [_b(f"{p}·{m}", p, may=m) for m in ("4b", "4bkm", "8b") for p in ("B", "E3")],
-    "ngan_sach": [_b(f"{p}·{w}", p, may="4b_8k", ngan_sach=w) for p in ("B", "E2") for w in (600, 1200, 1800, 2400)],
+    # n_ctx nâng lên 8192 CHỈ cho lượt 2.400 từ (vượt 4096). Thêm kiểm soát 1.200 từ trên chính server 8192 để
+    # tách tác động của việc đổi n_ctx khỏi tác động của ngân sách.
+    "ngan_sach": [_b(f"{p}·{w}", p, ngan_sach=w) for p in ("B", "E2") for w in (600, 1200, 1800)]
+                 + [_b(f"{p}·{w}·8k", p, may="4b_8k", ngan_sach=w) for p in ("B", "E2") for w in (1200, 2400)],
 }
-KIEM_SOAT = {"seed": {"A": "A_s0", "E": "E_s0"}, "loi_nhac": {"B": "B", "E2": "E2"},
+KIEM_SOAT = {"seed": {"A": "A_s0", "E": "E_s0"}, "loi_nhac": {t: t for t in PP8},
              "mo_hinh": {"B": "B·4b", "E3": "E3·4b"}, "ngan_sach": {"B": "B·1200", "E2": "E2·1200"}}
 CUM_SAO = ("theo quy định của pháp luật", "trừ trường hợp", "của Luật này", "của Nghị định này")
 RE_SAO = re.compile("|".join(re.escape(c) for c in CUM_SAO), re.I)
+
+
+GIU = ("mô hình Qwen3-4B-Instruct-2507 Q4_0, lời nhắc gốc (HE_THONG), ngân sách 1.200 từ, 50 ứng viên, "
+       "384 token, nhiệt độ 0, seed sinh 42, n_ctx 4096, bộ chấm và 110 câu")
+
+
+def _doi(doi: str, tru: str = "") -> list[str]:
+    """Dòng đầu mỗi mục: biến nào đổi, mọi thứ khác giữ nguyên."""
+    con = GIU if not tru else ", ".join(x for x in GIU.split(", ") if not any(t in x for t in tru.split("|")))
+    return [f"**Biến đổi:** {doi}. **Giữ nguyên:** {con}.", ""]
 
 
 def _hoi():
@@ -190,10 +207,11 @@ def cham_thu(t: str, hoi, nen) -> list[dict]:
                 raise SystemExit(f"LỆCH NGỮ CẢNH {t}/{x['qid']}/{b['ten']} — DỪNG.")
             d = _do(x["gold"], kq, td)
             d["trong_ngu_canh"] = cham.recall_k(x["gold"], khoi, 10 ** 9, td=td)
-            cd, ck = cham_mot(r, "dieu"), cham_mot(r, "khoan")
+            cd, ck = cham_mot(r, "dieu", td), cham_mot(r, "khoan", td)
             n_trich, n_ngoai = _trich_dieu_ngoai_ngu_canh(r, khoi)
             ra.append({"thu": t, "qid": x["qid"], "pp": b["ten"], "loai": x["loai"], **d,
                        "hang_muc": ket_qua.phan_loai(r), "dieu_toan_phan": cd["toan_phan"],
+                       "dieu_du_gold": cd["du_gold"],
                        "khoan_toan_phan": ck["toan_phan"], "so_dieu_trich": n_trich, "so_dieu_ngoai": n_ngoai,
                        "so_tu_ngu_canh": r["so_tu_ngu_canh"], "token_prompt": r.get("token_prompt"),
                        "tra_loi": r["tra_loi"]})
@@ -229,58 +247,176 @@ def _ngoai(rows, p):
     return f"{sum(r['so_dieu_ngoai'] for r in x)}/{n}" if n else "—"
 
 
-def bang_sinh(rows, pps, goc):
-    L = ["| biến | n | R@5 | gold trong ngữ cảnh | đúng toàn phần (Điều) | đúng toàn phần (khoản) "
-         "| đạt / từ chối / **cắt trần** | Điều tự đoán | từ ngữ cảnh TV | Δ Điều so với kiểm soát [95% CI] |",
-         "|---|---:|---:|---:|---:|---:|---|---:|---:|---|"]
-    for p in pps:
-        x = [r for r in rows if r["pp"] == p]
-        h = "*kiểm soát*" if p == goc else o(bs(rows, goc, p, "dieu_toan_phan"))
-        L.append(f"| {p} | {len(x)} | {tb(x, 'R@5'):.3f} | {tb(x, 'trong_ngu_canh'):.3f} | {tb(x, 'dieu_toan_phan'):.3f} "
-                 f"| {tb(x, 'khoan_toan_phan'):.3f} | {_hm(rows, p)} | {_ngoai(rows, p)} "
-                 f"| {st.median(r['so_tu_ngu_canh'] for r in x):.0f} | {h} |")
-    return L
-
-
-def bang_nhom(rows, pps):
-    nhom = ("don_gian", "dieu_dai", "xuyen_khoan", "khong_co_dieu", "dan_chieu")
-    L = ["| nhóm | n | " + " | ".join(pps) + " |", "|---|---:|" + "---:|" * len(pps)]
-    for g in nhom:
-        x = [r for r in rows if r["loai"] == g]
-        L.append(f"| {g} | {len({r['qid'] for r in x})} | "
-                 + " | ".join(f"{tb([r for r in x if r['pp'] == p], 'dieu_toan_phan'):.3f}" for p in pps) + " |")
-    return L
-
-
 def _so_trung(rows, a, b):
     xa = {r["qid"]: r["tra_loi"] for r in rows if r["pp"] == a}
-    return sum(xa[r["qid"]] == r["tra_loi"] for r in rows if r["pp"] == b)
+    return sum(xa.get(r["qid"]) == r["tra_loi"] for r in rows if r["pp"] == b)
+
+
+def bang_sinh(rows, pps, goc):
+    """Một dòng mỗi biến; dòng kiểm soát ghi *kiểm soát*, các dòng khác có hiệu so với kiểm soát chạy cùng lượt."""
+    L = ["| biến | n | R@5 | gold trong ngữ cảnh | **khớp hoàn toàn (Điều)** | đủ gold (Điều) | khớp hoàn toàn (khoản) "
+         "| đạt / từ chối / cắt trần | Điều tự đoán | từ ngữ cảnh TV | Δ khớp hoàn toàn so với kiểm soát [95% CI] "
+         "| Δ đủ gold [95% CI] |",
+         "|---|---:|---:|---:|---:|---:|---:|---|---:|---:|---|---|"]
+    for p in pps:
+        x = [r for r in rows if r["pp"] == p]
+        h1 = "*kiểm soát*" if p == goc else o(bs(rows, goc, p, "dieu_toan_phan"))
+        h2 = "—" if p == goc else o(bs(rows, goc, p, "dieu_du_gold"))
+        L.append(f"| {p} | {len(x)} | {tb(x, 'R@5'):.3f} | {tb(x, 'trong_ngu_canh'):.3f} | {tb(x, 'dieu_toan_phan'):.3f} "
+                 f"| {tb(x, 'dieu_du_gold'):.3f} | {tb(x, 'khoan_toan_phan'):.3f} | {_hm(rows, p)} | {_ngoai(rows, p)} "
+                 f"| {st.median(r['so_tu_ngu_canh'] for r in x):.0f} | {h1} | {h2} |")
+    return L
+
+
+NHOM5 = ("don_gian", "dieu_dai", "xuyen_khoan", "khong_co_dieu", "dan_chieu")
+
+
+def bang_nhom(rows, pps, do="dieu_toan_phan"):
+    L = ["| nhóm | n | " + " | ".join(pps) + " |", "|---|---:|" + "---:|" * len(pps)]
+    for g in NHOM5:
+        x = [r for r in rows if r["loai"] == g]
+        L.append(f"| {g} | {len({r['qid'] for r in x})} | "
+                 + " | ".join(f"{tb([r for r in x if r['pp'] == p], do):.3f}" for p in pps) + " |")
+    return L
+
+
+def hai_bang_nhom(rows, pps):
+    return (["Theo nhóm — khớp hoàn toàn (Điều):", ""] + bang_nhom(rows, pps) + ["", "Theo nhóm — đủ gold (Điều):", ""]
+            + bang_nhom(rows, pps, "dieu_du_gold") + [""])
 
 
 def muc_seed(R) -> list[str]:
     L = ["## 1. Bốn seed phân đoạn cho A và E — ở cả tầng sinh", "",
          "Seed = độ lệch điểm bắt đầu cửa sổ mỗi văn bản (`chunking/base.do_lech`). Với A mọi chunk dịch; với E chỉ "
-         "cửa sổ fallback của văn bản không có Điều dịch. Sinh tham lam, tất định trên GPU — mọi phương sai ở đây "
-         "đến từ phân đoạn. Kiểm soát = seed 0 chạy lại cùng lượt.", ""]
-    for g, pps in (("A", [f"A_s{s}" for s in range(4)]), ("E", [f"E_s{s}" for s in range(4)])):
-        L += [f"### {g}", ""] + bang_sinh(R, pps, KIEM_SOAT["seed"][g]) + [""]
+         "cửa sổ fallback của văn bản không có Điều dịch (≈ 50/12.760 chunk). Sinh tham lam, tất định trên GPU — mọi "
+         "phương sai ở đây đến từ phân đoạn. Kiểm soát = seed 0 chạy lại cùng lượt.", ""]
+    L += _doi("seed phân đoạn 0 / 1 / 2 / 3 (độ lệch cửa sổ), riêng cho A và E")
+    for g in ("A", "E"):
+        L += [f"### {g}", ""] + bang_sinh(R, [f"{g}_s{s}" for s in range(4)], KIEM_SOAT["seed"][g]) + [""]
     L += ["### Phương sai giữa seed so với hiệu giữa phương pháp", "",
-          "| | trung bình 4 seed | độ lệch chuẩn giữa seed | khoảng (min–max) | số câu đổi kết quả giữa các seed |",
-          "|---|---:|---:|---|---:|"]
-    gt = {}
+          "| | tiêu chí | trung bình 4 seed | độ lệch chuẩn giữa seed | khoảng (min–max) "
+          "| số câu đổi kết quả giữa các seed |", "|---|---|---:|---:|---|---:|"]
     for g in ("A", "E"):
         pps = [f"{g}_s{s}" for s in range(4)]
-        v = [tb([r for r in R if r["pp"] == p], "dieu_toan_phan") for p in pps]
-        gt[g] = v
-        theo_cau = collections.defaultdict(set)
-        for r in R:
-            if r["pp"] in pps:
-                theo_cau[r["qid"]].add(r["dieu_toan_phan"])
-        L.append(f"| {g} | {st.mean(v):.3f} | {st.stdev(v):.3f} | {min(v):.3f}–{max(v):.3f} "
-                 f"| {sum(len(s) > 1 for s in theo_cau.values())}/110 |")
-    h = bs(R, "A_s0", "E_s0", "dieu_toan_phan")
-    L += ["", f"Hiệu E − A ở seed 0: {o(h)}. Hiệu theo từng cặp seed cùng chỉ số (E_s{{k}} − A_s{{k}}): "
+        for do, ten in (("dieu_toan_phan", "khớp hoàn toàn"), ("dieu_du_gold", "đủ gold")):
+            v = [tb([r for r in R if r["pp"] == p], do) for p in pps]
+            theo_cau = collections.defaultdict(set)
+            for r in R:
+                if r["pp"] in pps:
+                    theo_cau[r["qid"]].add(r[do])
+            L.append(f"| {g} | {ten} | {st.mean(v):.3f} | {st.stdev(v):.3f} | {min(v):.3f}–{max(v):.3f} "
+                     f"| {sum(len(s) > 1 for s in theo_cau.values())}/110 |")
+    L += ["", "Hiệu E − A cùng seed (khớp hoàn toàn): "
           + ", ".join(f"s{k} {o(bs(R, f'A_s{k}', f'E_s{k}', 'dieu_toan_phan'))}" for k in range(4)) + ".", ""]
+    return L
+
+
+def muc_ngan_sach(x) -> list[str]:
+    L = ["## 2. Quét ngân sách ngữ cảnh — B và E2", "",
+         "600 / 1.200 / 1.800 từ chạy trên server thường (n_ctx 4096) — kiểm soát là 1.200. **Riêng 2.400 từ** vượt "
+         "4096 (≈ 3.500 token ngữ cảnh + 384 trả lời) nên chạy trên server n_ctx **8192** (`tools/chay-llm-gpu-thu.sh`, "
+         "`CTX=8192`, mọi cờ khác giữ nguyên); kèm một kiểm soát 1.200 từ trên chính server 8192 để tách tác động của "
+         "việc đổi n_ctx khỏi tác động của ngân sách.", ""]
+    L += _doi("ngân sách ngữ cảnh 600 / 1.200 / 1.800 / 2.400 từ; n_ctx 8192 CHỈ cho lượt 2.400 từ (và kiểm soát "
+              "1.200 đi kèm nó)", "ngân sách|n_ctx")
+    for g in ("B", "E2"):
+        pps = [f"{g}·600", f"{g}·1200", f"{g}·1800"]
+        L += [f"### {g} — n_ctx 4096", ""] + bang_sinh(x, pps, f"{g}·1200") + [""]
+        L += [f"### {g} — n_ctx 8192", ""] + bang_sinh(x, [f"{g}·1200·8k", f"{g}·2400·8k"], f"{g}·1200·8k") + [""]
+        L += [f"Kiểm soát 1.200 từ trùng từng ký tự giữa hai server: {_so_trung(x, f'{g}·1200', f'{g}·1200·8k')}/110.",
+              ""]
+        L += hai_bang_nhom(x, pps + [f"{g}·1200·8k", f"{g}·2400·8k"])
+        tok = [r["token_prompt"] for r in x if r["pp"] == f"{g}·2400·8k" and r["token_prompt"]]
+        if tok:
+            L += [f"Token prompt ở 2.400 từ: trung vị {st.median(tok):.0f}, lớn nhất {max(tok)}.", ""]
+    L += ["### E2 − B ở từng ngân sách (khớp hoàn toàn)", "", "| ngân sách | E2 − B |", "|---|---|"]
+    L += [f"| {w} | {o(bs(x, f'B·{w}', f'E2·{w}', 'dieu_toan_phan'))} |"
+          for w in ("600", "1200", "1800", "1200·8k", "2400·8k")] + [""]
+    return L
+
+
+def muc_mo_hinh(x) -> list[str]:
+    L = ["## 3. Mô hình sinh lớn hơn — B và E3", "",
+         "Kiểm soát: Qwen3-4B-Instruct-2507 Q4_0 (mô hình của bảng chính), chạy lại cùng đợt. Unsloth không phát hành "
+         "Qwen3-8B bản Q4_0, nên 8B chạy Q4_K_M; thêm 4B Q4_K_M làm đối chứng lượng tử để tách cỡ mô hình khỏi cách "
+         "lượng tử. Qwen3-8B là mô hình lai (có chế độ suy nghĩ), chạy với `enable_thinking=false`. 8B không vừa 4 GB "
+         "VRAM: llama.cpp tự chia lớp GPU/CPU (`NGL=fit`).", ""]
+    L += _doi("tệp mô hình sinh: 4B Q4_0 (kiểm soát) / 4B Q4_K_M / 8B Q4_K_M. Lời nhắc là lời nhắc GỐC, không dùng P1",
+              "mô hình")
+    for g in ("B", "E3"):
+        pps = [f"{g}·{m}" for m in ("4b", "4bkm", "8b")]
+        L += [f"### {g}", ""] + bang_sinh(x, pps, f"{g}·4b") + [""] + hai_bang_nhom(x, pps)
+        L += [f"8B − 4B Q4_K_M (cùng lượng tử, khớp hoàn toàn): {o(bs(x, f'{g}·4bkm', f'{g}·8b', 'dieu_toan_phan'))}",
+              ""]
+    dc = [r for r in x if r["loai"] == "dan_chieu"]
+    L += ["### Nhóm dẫn chiếu riêng (9 câu)", "", "| biến | khớp hoàn toàn | đủ gold | 8B − biến này (khớp hoàn toàn) |",
+          "|---|---:|---:|---|"]
+    for g in ("B", "E3"):
+        for m in ("4b", "4bkm", "8b"):
+            y = [r for r in dc if r["pp"] == f"{g}·{m}"]
+            L.append(f"| {g}·{m} | {tb(y, 'dieu_toan_phan'):.3f} | {tb(y, 'dieu_du_gold'):.3f} | "
+                     + ("—" if m == "8b" else o(bs(dc, f"{g}·{m}", f"{g}·8b", "dieu_toan_phan", phan_tang=False)))
+                     + " |")
+    return L + [""]
+
+
+def muc_loc(y) -> list[str]:
+    dos = ("R@1", "R@5", "R@10", "MRR", "R@1200t", "trong_50", "trong_ngu_canh")
+    L = ["## 4. Lọc cụm sáo khỏi chuỗi nhúng của B — chỉ truy hồi", "",
+         "Bloc = chunk B, bỏ \"" + "\", \"".join(CUM_SAO) + "\" (không phân biệt hoa thường) khỏi CHUỖI ĐEM NHÚNG; "
+         "tiền tố, vị trí chunk và thân đưa cho mô hình sinh giữ nguyên. Kiểm soát B tính lại cùng lượt.", ""]
+    L += _doi("chuỗi đem nhúng của chunk B (bỏ 4 cụm sáo ở 2.673/12.718 chunk); không sinh, chỉ truy hồi")
+    L += ["| biến | n | " + " | ".join(dos) + " |", "|---|---:|" + "---:|" * len(dos)]
+    for p in ("B", "Bloc"):
+        z = [r for r in y if r["pp"] == p]
+        L.append(f"| {p}{' (kiểm soát)' if p == 'B' else ''} | {len(z)} | "
+                 + " | ".join(f"{tb(z, d):.3f}" for d in dos) + " |")
+    t10 = {r["qid"]: r["top10"] for r in y if r["pp"] == "B"}
+    doi = sum(t10[r["qid"]] != r["top10"] for r in y if r["pp"] == "Bloc")
+    L += ["", "| hiệu | " + " | ".join(dos) + " |", "|---|" + "---|" * len(dos),
+          "| Bloc − B | " + " | ".join(o(bs(y, "B", "Bloc", d)) for d in dos) + " |", "",
+          f"Số câu có top-10 khác B (thứ tự hoặc thành phần): {doi}/{len(t10)}.", "",
+          "Theo nhóm (R@5):", "", "| nhóm | n | B (kiểm soát) | Bloc | Bloc − B |", "|---|---:|---:|---:|---|"]
+    for g in NHOM5:
+        z = [r for r in y if r["loai"] == g]
+        L.append(f"| {g} | {len(z) // 2} | {tb([r for r in z if r['pp'] == 'B'], 'R@5'):.3f} | "
+                 f"{tb([r for r in z if r['pp'] == 'Bloc'], 'R@5'):.3f} | {o(bs(z, 'B', 'Bloc', 'R@5', False))} |")
+    return L + [""]
+
+
+def muc_loi_nhac(x) -> list[str]:
+    L = ["## 5. Hai cải tiến từ phân tích lỗi — P1 cho cả tám phương pháp, và E2n", "",
+         "P1 = lời nhắc gốc + quy tắc 4: *\"Chỉ ghi số Điều khi chính đoạn ngữ cảnh đó có chữ 'Điều X'. Đoạn không có "
+         "'Điều' nào thì chỉ ghi '<số hiệu>', tuyệt đối không tự đặt số Điều.\"* Mỗi phương pháp có kiểm soát lời nhắc "
+         "gốc chạy cùng lượt. E2n = biến thể riêng của E2 (lời nhắc gốc): mỗi dòng khoản trong khối đã mở rộng được gắn "
+         "lại nhãn \"(Điều N khoản k)\", nhãn tính vào ngân sách 1.200 từ; E2 không đổi.", ""]
+    L += _doi("lời nhắc (gốc / P1) cho 8 phương pháp; riêng E2n: cách trình bày khối mở rộng", "lời nhắc")
+    L += ["### P1 — từng phương pháp so với kiểm soát của nó", "",
+          "| phương pháp | khớp hoàn toàn gốc → P1 | Δ [95% CI] | đủ gold gốc → P1 | Δ [95% CI] "
+          "| đạt/từ chối/cắt trần gốc → P1 | Điều tự đoán gốc → P1 |", "|---|---|---|---|---|---|---|"]
+    for t in PP8:
+        a, b = [r for r in x if r["pp"] == t], [r for r in x if r["pp"] == f"{t}·P1"]
+        L.append(f"| {t} | {tb(a, 'dieu_toan_phan'):.3f} → {tb(b, 'dieu_toan_phan'):.3f} "
+                 f"| {o(bs(x, t, f'{t}·P1', 'dieu_toan_phan'))} | {tb(a, 'dieu_du_gold'):.3f} → {tb(b, 'dieu_du_gold'):.3f} "
+                 f"| {o(bs(x, t, f'{t}·P1', 'dieu_du_gold'))} | {_hm(x, t)} → {_hm(x, f'{t}·P1')} "
+                 f"| {_ngoai(x, t)} → {_ngoai(x, f'{t}·P1')} |")
+    kc = [r for r in x if r["loai"] == "khong_co_dieu"]
+    L += ["", "### Nhóm `khong_co_dieu` (15 câu) — trước và sau P1", "",
+          "| phương pháp | khớp hoàn toàn gốc → P1 | đủ gold gốc → P1 | đạt/từ chối/cắt trần gốc → P1 "
+          "| Điều tự đoán gốc → P1 | Δ khớp hoàn toàn [95% CI] |", "|---|---|---|---|---|---|"]
+    for t in PP8:
+        a, b = [r for r in kc if r["pp"] == t], [r for r in kc if r["pp"] == f"{t}·P1"]
+        dam = "**" if t in ("C", "D") else ""
+        L.append(f"| {dam}{t}{dam} | {tb(a, 'dieu_toan_phan'):.3f} → {tb(b, 'dieu_toan_phan'):.3f} "
+                 f"| {tb(a, 'dieu_du_gold'):.3f} → {tb(b, 'dieu_du_gold'):.3f} | {_hm(kc, t)} → {_hm(kc, f'{t}·P1')} "
+                 f"| {_ngoai(kc, t)} → {_ngoai(kc, f'{t}·P1')} "
+                 f"| {o(bs(kc, t, f'{t}·P1', 'dieu_toan_phan', phan_tang=False))} |")
+    L += ["", "### Bảng đầy đủ — lời nhắc gốc (kiểm soát)", ""] + bang_sinh(x, list(PP8), "B") + [""]
+    L += ["### Bảng đầy đủ — P1", ""] + bang_sinh(x, [f"{t}·P1" for t in PP8], "B·P1") + [""]
+    L += hai_bang_nhom(x, list(PP8) + [f"{t}·P1" for t in PP8])
+    L += ["### E2n — so với kiểm soát E2 (cùng lượt)", ""] + bang_sinh(x, ["E2", "E2n", "B"], "E2") + [""]
+    L += hai_bang_nhom(x, ["E2", "E2n", "B"])
+    L += [f"E2n − B (khớp hoàn toàn): {o(bs(x, 'B', 'E2n', 'dieu_toan_phan'))}.", ""]
     return L
 
 
@@ -288,104 +424,48 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--dung-chunk", action="store_true")
     ap.add_argument("--sinh", nargs="*", choices=list(THU_NGHIEM))
-    ap.add_argument("--cham", action="store_true")
+    ap.add_argument("--cham", nargs="*", choices=list(THU_NGHIEM) + ["loc"],
+                    help="chấm các thử nghiệm này (để trống = mọi thử nghiệm đã có tệp + loc)")
     a = ap.parse_args()
     if a.dung_chunk:
         dung_chunk()
     if a.sinh:
         sinh_thu(a.sinh)
-    if not a.cham:
+    if a.cham is None:
         return
     t0 = time.monotonic()
     idx = sorted({truy_hoi.TEP.get(b["pp"], b["pp"]) for bs_ in THU_NGHIEM.values() for b in bs_} | {"Bloc_s0"})
     chot_chan(idx)
     nap_so_hieu_chunk(idx)
     hoi, nen = _hoi(), _nen()
-    co = [t for t in THU_NGHIEM if (THU / f"{t}.jsonl").exists()]
-    R = {t: cham_thu(t, hoi, nen) for t in co}
+    chon = a.cham or [t for t in THU_NGHIEM if (THU / f"{t}.jsonl").exists()] + ["loc"]
+    R = {t: cham_thu(t, hoi, nen) for t in chon if t != "loc"}
     with open(THU / "chi_tiet_cau.jsonl", "w", encoding="utf-8") as f:
         for t in R:
             for r in R[t]:
                 f.write(json.dumps({k: v for k, v in r.items() if k != "tra_loi"}, ensure_ascii=False) + "\n")
     L = ["# Thử thêm nhờ GPU — THĂM DÒ, không trộn vào bảng chính", "",
          f"Lượt local GPU, {time.strftime('%Y-%m-%d %H:%M')}. Sinh và chấm: `python -m eval.thu_them`. 110 câu bộ chính. "
-         "Mỗi thử nghiệm có cấu hình gốc chạy lại cùng lượt làm kiểm soát. Hiệu: bootstrap ghép cặp 95% (1000 lần, "
-         "phân tầng theo nhóm); **đậm** = khoảng tin cậy không chứa 0. Cột *đạt / từ chối / cắt trần*: cắt trần vẫn "
-         "nằm trong mẫu số (tính là sai). *Điều tự đoán* = số Điều được trích mà chuỗi \"Điều N\" không có trong ngữ "
-         "cảnh của đúng văn bản đó / số Điều được trích.", ""]
+         "**Mỗi bảng có cột kiểm soát là cấu hình gốc chạy lại cùng lượt, cùng server** — không lấy số bước 1 ra so. "
+         "Hiệu: bootstrap ghép cặp 95% (1000 lần, phân tầng theo nhóm); **đậm** = khoảng tin cậy không chứa 0. Bộ chấm "
+         "sau sửa 30/10: bảng cặp tương đương áp ở tầng trích dẫn; hai tiêu chí *khớp hoàn toàn* (chính) và *đủ gold* "
+         "(phụ). Cột *đạt / từ chối / cắt trần*: cắt trần nằm trong mẫu số (tính là sai). *Điều tự đoán* = Điều được "
+         "trích mà chuỗi \"Điều N\" không có trong ngữ cảnh của đúng văn bản đó / số Điều được trích.", ""]
     if "seed" in R:
         L += muc_seed(R["seed"])
     if "ngan_sach" in R:
-        x = R["ngan_sach"]
-        L += ["## 2. Quét ngân sách ngữ cảnh 600 / 1.200 / 1.800 / 2.400 từ — B và E2", "",
-              "Server riêng n_ctx 8192 (bản sao `tools/chay-llm-gpu-8k.sh`, chỉ đổi `-c`), mọi ngân sách kể cả kiểm "
-              "soát 1.200 chạy trên cùng server này.", ""]
-        for g in ("B", "E2"):
-            pps = [f"{g}·{w}" for w in (600, 1200, 1800, 2400)]
-            L += [f"### {g}", ""] + bang_sinh(x, pps, KIEM_SOAT["ngan_sach"][g]) + ["", "Theo nhóm (Điều):", ""] \
-                + bang_nhom(x, pps) + [""]
-            tok = [r["token_prompt"] for r in x if r["pp"] == f"{g}·2400" and r["token_prompt"]]
-            if tok:
-                L += [f"Token prompt ở 2.400 từ: trung vị {st.median(tok):.0f}, lớn nhất {max(tok)}.", ""]
-        L += ["### E2 − B ở từng ngân sách", "", "| ngân sách | E2 − B (Điều) |", "|---|---|"]
-        L += [f"| {w} | {o(bs(x, f'B·{w}', f'E2·{w}', 'dieu_toan_phan'))} |" for w in (600, 1200, 1800, 2400)] + [""]
+        L += muc_ngan_sach(R["ngan_sach"])
     if "mo_hinh" in R:
-        x = R["mo_hinh"]
-        L += ["## 3. Mô hình sinh lớn hơn — B và E3", "",
-              "Kiểm soát: Qwen3-4B-Instruct-2507 Q4_0 (mô hình của bảng chính). Unsloth không phát hành Qwen3-8B bản "
-              "Q4_0, nên 8B chạy Q4_K_M; thêm 4B Q4_K_M làm đối chứng lượng tử để tách tác động cỡ mô hình khỏi tác "
-              "động cách lượng tử. Qwen3-8B là mô hình lai (có chế độ suy nghĩ), chạy với `enable_thinking=false`, "
-              "cùng lời nhắc, nhiệt độ 0, 384 token. 8B không vừa 4 GB VRAM: một phần lớp chạy CPU.", ""]
-        for g in ("B", "E3"):
-            pps = [f"{g}·{m}" for m in ("4b", "4bkm", "8b")]
-            L += [f"### {g}", ""] + bang_sinh(x, pps, KIEM_SOAT["mo_hinh"][g]) + ["", "Theo nhóm (Điều):", ""] \
-                + bang_nhom(x, pps) + [""]
-            L += [f"8B − 4B Q4_K_M (cùng lượng tử): {o(bs(x, f'{g}·4bkm', f'{g}·8b', 'dieu_toan_phan'))}", ""]
-        dc = [r for r in x if r["loai"] == "dan_chieu"]
-        L += ["### Nhóm dẫn chiếu riêng", "", "| biến | n | Điều | 8B − biến này |", "|---|---:|---:|---|"]
-        for p in [f"{g}·{m}" for g in ("B", "E3") for m in ("4b", "4bkm", "8b")]:
-            y = [r for r in dc if r["pp"] == p]
-            g = p.split("·")[0]
-            L.append(f"| {p} | {len(y)} | {tb(y, 'dieu_toan_phan'):.3f} | "
-                     + ("—" if p.endswith("8b") else o(bs(dc, p, f"{g}·8b", "dieu_toan_phan", phan_tang=False))) + " |")
-        L += [""]
-    if True:  # loc: chỉ truy hồi, không cần sinh
-        y = cham_loc(hoi, nen)
-        dos = ("R@1", "R@5", "R@10", "MRR", "R@1200t", "trong_50", "trong_ngu_canh")
-        L += ["## 4. Lọc cụm sáo khỏi chuỗi nhúng của B — chỉ truy hồi", "",
-              "Bloc = chunk B, bỏ \"" + "\", \"".join(CUM_SAO) + "\" (không phân biệt hoa thường) khỏi CHUỖI ĐEM NHÚNG; "
-              "tiền tố và vị trí chunk giữ nguyên. Kiểm soát B tính lại cùng lượt.", "",
-              "| biến | n | " + " | ".join(dos) + " |", "|---|---:|" + "---:|" * len(dos)]
-        for p in ("B", "Bloc"):
-            z = [r for r in y if r["pp"] == p]
-            L.append(f"| {p} | {len(z)} | " + " | ".join(f"{tb(z, d):.3f}" for d in dos) + " |")
-        t10 = {r["qid"]: r["top10"] for r in y if r["pp"] == "B"}
-        doi = sum(t10[r["qid"]] != r["top10"] for r in y if r["pp"] == "Bloc")
-        L += ["", f"Số câu có top-10 khác B (thứ tự hoặc thành phần): {doi}/{len(t10)}."]
-        L += ["", "| hiệu | " + " | ".join(dos) + " |", "|---|" + "---|" * len(dos),
-              "| Bloc − B | " + " | ".join(o(bs(y, "B", "Bloc", d)) for d in dos) + " |", "",
-              "Theo nhóm (R@5):", "", "| nhóm | n | B | Bloc | Bloc − B |", "|---|---:|---:|---:|---|"]
-        for g in ("don_gian", "dieu_dai", "xuyen_khoan", "khong_co_dieu", "dan_chieu"):
-            z = [r for r in y if r["loai"] == g]
-            L.append(f"| {g} | {len(z) // 2} | {tb([r for r in z if r['pp'] == 'B'], 'R@5'):.3f} | "
-                     f"{tb([r for r in z if r['pp'] == 'Bloc'], 'R@5'):.3f} | {o(bs(z, 'B', 'Bloc', 'R@5', False))} |")
-        L += [""]
+        L += muc_mo_hinh(R["mo_hinh"])
+    if "loc" in chon:
+        L += muc_loc(cham_loc(hoi, nen))
     if "loi_nhac" in R:
-        x = R["loi_nhac"]
-        L += ["## 5. Hai cải tiến từ phân tích lỗi — lời nhắc P1 và E2n", "",
-              "P1 = lời nhắc gốc + quy tắc 4: *\"Chỉ ghi số Điều khi chính đoạn ngữ cảnh đó có chữ 'Điều X'. Đoạn không "
-              "có 'Điều' nào thì chỉ ghi '<số hiệu>', tuyệt đối không tự đặt số Điều.\"* E2n = E2, mỗi dòng khoản trong "
-              "khối đã mở rộng được gắn lại nhãn \"(Điều N khoản k)\" (nhãn tính vào ngân sách 1.200 từ). Bộ chấm "
-              "không đổi.", ""]
-        L += bang_sinh(x, ["B", "B·P1"], "B") + [""] + bang_sinh(x, ["E2", "E2·P1", "E2n", "E2n·P1"], "E2") + [""]
-        L += ["Theo nhóm (Điều):", ""] + bang_nhom(x, ["B", "B·P1", "E2", "E2·P1", "E2n", "E2n·P1"]) + [""]
-        L += [f"E2n·P1 − B: {o(bs(x, 'B', 'E2n·P1', 'dieu_toan_phan'))} · E2n − B: {o(bs(x, 'B', 'E2n', 'dieu_toan_phan'))}"
-              f" · B·P1 − B: {o(bs(x, 'B', 'B·P1', 'dieu_toan_phan'))}", ""]
+        L += muc_loi_nhac(R["loi_nhac"])
     # kiểm soát chạy lại có trùng bước 1 không (sinh trên GPU tất định)
     buoc1 = {(y["qid"], y["pp"]): y["tra_loi"] for y in _nap(ch.RESULTS / "pilot_tra_loi.jsonl")}
     L += ["## Kiểm soát chạy lại so với bước 1", "", "| thử nghiệm | biến kiểm soát | trùng từng ký tự với bước 1 |",
           "|---|---|---:|"]
-    map1 = {"A_s0": "A", "E_s0": "E", "B": "B", "E2": "E2", "B·4b": "B", "E3·4b": "E3", "B·1200": "B", "E2·1200": "E2"}
+    map1 = {"A_s0": "A", "E_s0": "E", "B·4b": "B", "E3·4b": "E3", "B·1200": "B", "E2·1200": "E2", **{t: t for t in PP8}}
     for t, ks in KIEM_SOAT.items():
         if t in R:
             for k in ks.values():

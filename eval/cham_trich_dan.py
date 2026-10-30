@@ -55,14 +55,21 @@ def khoa_trich(t: tuple, muc: str) -> tuple:
     return (sh, dieu, None) if muc == "dieu" else (sh, dieu, khoan)
 
 
-def cham_mot(r: dict, muc: str) -> dict:
+def cham_mot(r: dict, muc: str, td: dict | None = None) -> dict:
+    """`td` = {chỉ số gold: [bản tương đương]} từ eval.chay_truy_hoi._td_cho — bảng cặp tương đương đã chốt
+    (eval/cap_tuong_duong.csv; câu phiên bản: rỗng). Trích dẫn trỏ vào bản tương đương được tính là trỏ vào đúng đơn vị
+    gold đó, như ở tầng truy hồi. Không truyền `td` = chấm như trước ngày 30/10 (chỉ để đếm số câu đổi kết quả).
+
+    Hai tiêu chí: `toan_phan` (khớp hoàn toàn — đủ gold, không thừa; tiêu chí chính) và `du_gold` (đủ gold, cho phép
+    trích thừa; tiêu chí phụ)."""
     gold = {khoa_gold(g, muc) for g in r["gold"]}
+    bi_danh = {khoa_gold(e, muc): khoa_gold(r["gold"][i], muc) for i, es in (td or {}).items() for e in es}
     mac_dinh = _SH_CHUNK.get((r.get("chunk_id") or [None])[0])
     khong_dieu = any(g.get("dieu") is None for g in r["gold"])
     boc = trich_dan.boc(r.get("tra_loi") or "", mac_dinh=mac_dinh,
                         cho_phep_khong_dieu=khong_dieu)
     # ở mức Điều, gold không nêu khoản thì trích dẫn có khoản vẫn tính là trúng
-    lay = {khoa_trich(t, muc) for t in boc}
+    lay = {bi_danh.get(k, k) for k in (khoa_trich(t, muc) for t in boc)}
     if muc == "khoan":
         g_khong_khoan = {k for k in gold if k[2] is None}
         lay |= {(sh, d, None) for sh, d, kh in lay if (sh, d, None) in g_khong_khoan}
@@ -70,6 +77,7 @@ def cham_mot(r: dict, muc: str) -> dict:
     return {"phu": len(trung) / len(gold) if gold else 0.0,
             "chinh_xac": len(trung) / len(lay) if lay else 0.0,
             "toan_phan": float(bool(gold) and trung == gold and len(lay) == len(trung)),
+            "du_gold": float(bool(gold) and trung == gold),
             "co_trich": float(bool(lay))}
 
 
