@@ -124,7 +124,7 @@ gh release download du-lieu -D /tmp/datn-data          # hoặc tải bằng tr�
 unzip /tmp/datn-data/docs.zip                           # tại gốc repo
 ```
 
-`docs.zip` trùng tệp-theo-tệp với các gói `.tar.*` phát hành trước đây (đóng gói bằng `tools/dong_goi_zip.py`).
+`docs.zip` trùng tệp-theo-tệp với các gói `.tar.*` của release cũ `du-lieu-2026-10-29` (release đó đã gỡ, chỉ còn `du-lieu`) (đóng gói bằng `tools/dong_goi_zip.py`).
 
 Hai thứ **cố ý không có** trong release:
 
