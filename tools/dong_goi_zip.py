@@ -1,13 +1,15 @@
-"""Đóng gói data/ thành .zip (Windows bấm đúp là mở được) — cùng nội dung với các tệp .tar.* của release.
+"""Đóng gói bộ dữ liệu thành 2 tệp zip cho release `du-lieu` (Windows bấm đúp là mở, Linux dùng `unzip`).
 
-    python tools/dong_goi_zip.py --ra ../datn-release-zip
+    python tools/dong_goi_zip.py --ra ../datn-du-lieu
 
-  datn-corpus.zip   data/raw, data/clean, data/clean_full, data/manifest.csv, data/ung_vien.jsonl,
-                    data/thong_ke_chuan_hoa.jsonl
-  datn-chunks.zip   data/chunks/
-  datn-index.zip    data/index/<tên>/  (KHÔNG có cache.f32 / cache.keys — bộ đệm lúc dựng, truy hồi không đọc)
+  docs.zip   dữ liệu dạng văn bản để chạy đồ án:
+             data/raw, data/clean, data/clean_full, data/manifest.csv, data/ung_vien.jsonl,
+             data/thong_ke_chuan_hoa.jsonl, data/chunks/, data/index/<tên>/
+             (KHÔNG có data/index/cache.f32, cache.keys — bộ đệm lúc dựng, truy hồi không đọc)
+  pdf.zip    bản PDF gốc (scan có dấu đỏ) cho thử nghiệm OCR: ocr/data/pdf/*.pdf + ocr/data/manifest_pdf.csv
 
-Đường dẫn trong zip dùng "/" và bắt đầu bằng data/, giải nén tại gốc repo là đúng chỗ. Ghi kèm SHA256SUMS-zip.txt.
+Đường dẫn trong zip dùng "/" và bắt đầu bằng data/ hoặc ocr/, giải nén tại gốc repo là đúng chỗ.
+Ghi kèm SHA256SUMS.txt.
 """
 import argparse
 import hashlib
@@ -16,10 +18,9 @@ from pathlib import Path
 
 GOC = Path(__file__).resolve().parent.parent
 GOI = {
-    "datn-corpus.zip": ["data/raw", "data/clean", "data/clean_full", "data/manifest.csv", "data/ung_vien.jsonl",
-                        "data/thong_ke_chuan_hoa.jsonl"],
-    "datn-chunks.zip": ["data/chunks"],
-    "datn-index.zip": ["data/index"],
+    "docs.zip": ["data/raw", "data/clean", "data/clean_full", "data/manifest.csv", "data/ung_vien.jsonl",
+                 "data/thong_ke_chuan_hoa.jsonl", "data/chunks", "data/index"],
+    "pdf.zip": ["ocr/data/pdf", "ocr/data/manifest_pdf.csv"],
 }
 BO_QUA = {"cache.f32", "cache.keys"}
 
@@ -38,14 +39,16 @@ def main() -> None:
     tong = []
     for ten, muc in GOI.items():
         z = ra / ten
+        n = 0
         with zipfile.ZipFile(z, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as f:
             for m in muc:
                 for p in tep(m):
                     f.write(p, p.relative_to(GOC).as_posix())
+                    n += 1
         h = hashlib.sha256(z.read_bytes()).hexdigest()
         tong.append(f"{h}  {ten}")
-        print(f"{ten}: {z.stat().st_size / 1e6:.0f} MB  {h}")
-    (ra / "SHA256SUMS-zip.txt").write_text("\n".join(tong) + "\n")
+        print(f"{ten}: {n} tệp, {z.stat().st_size / 1e6:.0f} MB  {h}")
+    (ra / "SHA256SUMS.txt").write_text("\n".join(tong) + "\n")
 
 
 if __name__ == "__main__":
