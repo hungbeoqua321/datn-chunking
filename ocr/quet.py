@@ -16,6 +16,7 @@ Mỗi trang render 300 dpi. Thời gian từng trang ghi vào <thư mục>/_thoi
 import argparse
 import csv
 import os
+import shutil
 import subprocess
 import tempfile
 import time
@@ -28,8 +29,11 @@ import pymupdf
 GOC = Path(__file__).resolve().parent.parent
 PDF = GOC / "ocr" / "data" / "pdf"
 RA = GOC / "ocr" / "data" / "ocr"
-TESSERACT = Path(os.environ.get("TESSERACT", GOC / "tools/tesseract-env/Library/bin/tesseract.exe"))
-TESSDATA = Path(os.environ.get("TESSDATA_PREFIX", GOC / "tools/tesseract-env/share/tessdata"))
+# Windows: Tesseract cài cục bộ bằng micromamba (tools/tesseract-env); Linux: `apt install tesseract-ocr-vie`, lấy trong PATH.
+_CUC_BO = GOC / "tools/tesseract-env/Library/bin/tesseract.exe"
+TESSERACT = os.environ.get("TESSERACT") or (str(_CUC_BO) if _CUC_BO.exists() else shutil.which("tesseract") or "tesseract")
+_TD = os.environ.get("TESSDATA_PREFIX") or GOC / "tools/tesseract-env/share/tessdata"
+TESSDATA = Path(_TD) if Path(_TD).exists() else None   # None: để Tesseract tự tìm (bản cài hệ thống)
 DPI = 300
 
 
@@ -61,8 +65,8 @@ class Tesseract:
         with tempfile.TemporaryDirectory() as d:
             p = Path(d) / "t.png"
             cv2.imwrite(str(p), g)
-            r = subprocess.run([str(TESSERACT), str(p), "stdout", "--tessdata-dir", str(TESSDATA),
-                                "-l", "vie", "--psm", str(self.psm),
+            td = ["--tessdata-dir", str(TESSDATA)] if TESSDATA else []
+            r = subprocess.run([TESSERACT, str(p), "stdout", *td, "-l", "vie", "--psm", str(self.psm),
                                 "--dpi", str(DPI)], capture_output=True)
         if r.returncode:
             raise RuntimeError(r.stderr.decode("utf-8", "replace"))
