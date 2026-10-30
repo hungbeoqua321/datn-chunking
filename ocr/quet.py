@@ -96,17 +96,23 @@ def main() -> None:
     ap.add_argument("--tien-xu-ly", choices=("goc", "bo_do"), default="bo_do")
     ap.add_argument("--psm", type=int, default=6, help="chế độ phân trang của Tesseract (6: một khối văn bản)")
     ap.add_argument("--chi", nargs="*", metavar="ID", help="chỉ OCR các văn bản này")
+    ap.add_argument("--phan", metavar="i/n", help="chỉ làm phần thứ i trong n phần (chạy song song n tiến trình; "
+                    "Tesseract nên đặt OMP_THREAD_LIMIT=1)")
     a = ap.parse_args()
 
     ten = f"{a.engine}_{a.tien_xu_ly}" + (f"_psm{a.psm}" if a.engine == "tesseract" and a.psm != 6 else "")
     ra = RA / ten
     ra.mkdir(parents=True, exist_ok=True)
-    tg = ra / "_thoi_gian.csv"
-    moi = not tg.exists()
-    eng = Tesseract(a.psm) if a.engine == "tesseract" else EasyOcr()
     ds = sorted(PDF.glob("*.pdf"))
     if a.chi:
         ds = [p for p in ds if p.stem in a.chi]
+    tg = ra / "_thoi_gian.csv"
+    if a.phan:
+        i, n = map(int, a.phan.split("/"))
+        ds = ds[i - 1::n]
+        tg = ra / f"_thoi_gian_{i}.csv"     # mỗi tiến trình một tệp, không ghi chen nhau
+    moi = not tg.exists()
+    eng = Tesseract(a.psm) if a.engine == "tesseract" else EasyOcr()
     t_all = time.monotonic()
     with open(tg, "a", newline="") as f:
         w = csv.writer(f)
