@@ -83,7 +83,9 @@ def n_ctx() -> int:
             m = requests.get(base + "/v1/models", timeout=30).json()
             v = next((x.get("meta", {}).get("n_ctx") for x in m.get("data", [])), None)
         if not v:
-            raise LoiCat("không đọc được n_ctx từ /props hay /v1/models — không chạy khi chưa biết trần ngữ cảnh")
+            # KHÔNG phải LoiCat: LoiCat bị các script sinh ghi thành "cắt trần" (một kết quả hợp lệ trong mẫu). Không
+            # đọc được trần là lỗi hạ tầng → phải dừng cả job (02/11: server chết, 26 lượt E3b bị ghi nhầm là cắt trần).
+            raise RuntimeError("không đọc được n_ctx từ /props hay /v1/models — không chạy khi chưa biết trần ngữ cảnh")
         _N_CTX = int(v)
     return _N_CTX
 
