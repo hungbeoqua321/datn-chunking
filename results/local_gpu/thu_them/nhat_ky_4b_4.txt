@@ -1,0 +1,218 @@
+server 4b: còn 2088 lượt
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  18%|█▊        | 35/199 [00:00<00:00, 346.16it/s]Loading weights:  35%|███▌      | 70/199 [00:00<00:00, 189.48it/s]Loading weights:  47%|████▋     | 93/199 [00:00<00:00, 150.34it/s]Loading weights:  69%|██████▉   | 138/199 [00:00<00:00, 213.74it/s]Loading weights:  85%|████████▍ | 169/199 [00:00<00:00, 234.20it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 248.97it/s]
+  [1/2088] loi_nhac q059 E  9.8s (tb 82.8s)
+  [2/2088] loi_nhac q060 E  5.4s (tb 44.2s)
+  [3/2088] loi_nhac q061 E  5.4s (tb 31.3s)
+  [4/2088] loi_nhac q064 E  7.7s (tb 25.4s)
+  [5/2088] loi_nhac q065 E  12.4s (tb 22.8s)
+  [6/2088] loi_nhac q067 E  6.3s (tb 20.1s)
+  [7/2088] loi_nhac q068 E  3.8s (tb 17.9s)
+  [8/2088] loi_nhac q069 E  4.5s (tb 16.3s)
+  [9/2088] loi_nhac q070 E  2.0s (tb 14.8s)
+  [10/2088] loi_nhac q072 E  6.2s (tb 14.0s)
+  [11/2088] loi_nhac q090 E  3.7s (tb 13.1s)
+  [12/2088] loi_nhac q093 E  10.2s (tb 12.8s)
+  [13/2088] loi_nhac q094 E  3.6s (tb 12.1s)
+  [14/2088] loi_nhac q096 E  4.3s (tb 11.6s)
+  [15/2088] loi_nhac q097 E  6.5s (tb 11.2s)
+  [16/2088] loi_nhac q101 E  1.7s (tb 10.7s)
+  [17/2088] loi_nhac q118 E  2.5s (tb 10.2s)
+  [18/2088] loi_nhac q119 E  4.5s (tb 9.9s)
+  [19/2088] loi_nhac q120 E  3.7s (tb 9.6s)
+  [20/2088] loi_nhac q121 E  3.0s (tb 9.3s)
+  [21/2088] loi_nhac q122 E  3.1s (tb 9.0s)
+  [22/2088] loi_nhac q123 E  3.7s (tb 8.8s)
+  [23/2088] loi_nhac q124 E  3.7s (tb 8.5s)
+  [24/2088] loi_nhac q125 E  5.2s (tb 8.4s)
+  [25/2088] loi_nhac q126 E  5.1s (tb 8.3s)
+  [26/2088] loi_nhac q127 E  3.7s (tb 8.1s)
+  [27/2088] loi_nhac q128 E  3.8s (tb 8.0s)
+  [28/2088] loi_nhac q129 E  5.1s (tb 7.9s)
+  [29/2088] loi_nhac q130 E  4.7s (tb 7.8s)
+  [30/2088] loi_nhac q139 E  3.9s (tb 7.6s)
+  [31/2088] loi_nhac q140 E  3.1s (tb 7.5s)
+  [32/2088] loi_nhac q141 E  8.6s (tb 7.5s)
+  [33/2088] loi_nhac q142 E  1.9s (tb 7.4s)
+  [34/2088] loi_nhac q143 E  3.3s (tb 7.3s)
+  [35/2088] loi_nhac q144 E  6.8s (tb 7.2s)
+  [36/2088] loi_nhac q145 E  2.5s (tb 7.1s)
+  [37/2088] loi_nhac q146 E  1.5s (tb 7.0s)
+  [38/2088] loi_nhac q147 E  3.8s (tb 6.9s)
+  [39/2088] loi_nhac q148 E  7.4s (tb 6.9s)
+  [40/2088] loi_nhac q149 E  6.7s (tb 6.9s)
+  [41/2088] loi_nhac q206 E  8.4s (tb 6.9s)
+  [42/2088] loi_nhac q208 E  6.0s (tb 6.9s)
+  [43/2088] loi_nhac q209 E  6.5s (tb 6.9s)
+  [44/2088] loi_nhac q210 E  5.7s (tb 6.9s)
+  [45/2088] loi_nhac q211 E  7.8s (tb 6.9s)
+  [46/2088] loi_nhac q213 E  18.0s (tb 7.2s)
+  [47/2088] loi_nhac q214 E  4.3s (tb 7.1s)
+  [48/2088] loi_nhac q215 E  5.1s (tb 7.1s)
+  [49/2088] loi_nhac q217 E  4.6s (tb 7.0s)
+  [50/2088] loi_nhac q219 E  9.9s (tb 7.1s)
+  [51/2088] loi_nhac q220 E  4.5s (tb 7.0s)
+  [52/2088] loi_nhac q222 E  6.6s (tb 7.0s)
+  [53/2088] loi_nhac q235 E  6.9s (tb 7.0s)
+  [54/2088] loi_nhac q240 E  4.6s (tb 7.0s)
+  [55/2088] loi_nhac q245 E  4.0s (tb 6.9s)
+  [56/2088] loi_nhac q246 E  6.0s (tb 6.9s)
+  [57/2088] loi_nhac q247 E  3.7s (tb 6.8s)
+  [58/2088] loi_nhac q248 E  3.7s (tb 6.8s)
+  [59/2088] loi_nhac q249 E  4.2s (tb 6.8s)
+  [60/2088] loi_nhac q251 E  4.8s (tb 6.7s)
+  [61/2088] loi_nhac q253 E  5.6s (tb 6.7s)
+  [62/2088] loi_nhac q257 E  14.3s (tb 6.8s)
+  [63/2088] loi_nhac q259 E  3.9s (tb 6.8s)
+  [64/2088] loi_nhac q260 E  2.4s (tb 6.7s)
+  [65/2088] loi_nhac q261 E  6.2s (tb 6.7s)
+  [66/2088] loi_nhac q263 E  4.0s (tb 6.7s)
+  [67/2088] loi_nhac q264 E  3.6s (tb 6.6s)
+  [68/2088] loi_nhac q266 E  13.1s (tb 6.7s)
+  [69/2088] loi_nhac q267 E  3.6s (tb 6.7s)
+  [70/2088] loi_nhac q270 E  12.0s (tb 6.8s)
+  [71/2088] loi_nhac q271 E  2.6s (tb 6.7s)
+  [72/2088] loi_nhac q144 E2  7.6s (tb 6.7s)
+  [73/2088] loi_nhac q145 E2  1.9s (tb 6.7s)
+  [74/2088] loi_nhac q146 E2  1.6s (tb 6.6s)
+  [75/2088] loi_nhac q147 E2  4.5s (tb 6.6s)
+  [76/2088] loi_nhac q148 E2  6.0s (tb 6.6s)
+  [77/2088] loi_nhac q149 E2  4.2s (tb 6.6s)
+  [78/2088] loi_nhac q206 E2  4.8s (tb 6.5s)
+  [79/2088] loi_nhac q208 E2  2.3s (tb 6.5s)
+  [80/2088] loi_nhac q209 E2  4.2s (tb 6.5s)
+  [81/2088] loi_nhac q210 E2  3.4s (tb 6.4s)
+  [82/2088] loi_nhac q211 E2  3.4s (tb 6.4s)
+  [83/2088] loi_nhac q213 E2  13.5s (tb 6.5s)
+  [84/2088] loi_nhac q214 E2  4.7s (tb 6.4s)
+  [85/2088] loi_nhac q215 E2  4.6s (tb 6.4s)
+  [86/2088] loi_nhac q217 E2  4.8s (tb 6.4s)
+  [87/2088] loi_nhac q219 E2  8.5s (tb 6.4s)
+  [88/2088] loi_nhac q220 E2  2.8s (tb 6.4s)
+  [89/2088] loi_nhac q222 E2  3.9s (tb 6.4s)
+  [90/2088] loi_nhac q235 E2  4.7s (tb 6.4s)
+  [91/2088] loi_nhac q240 E2  1.8s (tb 6.3s)
+  [92/2088] loi_nhac q245 E2  3.9s (tb 6.3s)
+  [93/2088] loi_nhac q246 E2  5.6s (tb 6.3s)
+  [94/2088] loi_nhac q247 E2  4.1s (tb 6.3s)
+  [95/2088] loi_nhac q248 E2  3.4s (tb 6.2s)
+  [96/2088] loi_nhac q249 E2  3.7s (tb 6.2s)
+  [97/2088] loi_nhac q251 E2  4.5s (tb 6.2s)
+  [98/2088] loi_nhac q253 E2  5.1s (tb 6.2s)
+  [99/2088] loi_nhac q257 E2  4.0s (tb 6.2s)
+  [100/2088] loi_nhac q259 E2  6.1s (tb 6.2s)
+  [101/2088] loi_nhac q260 E2  1.1s (tb 6.1s)
+  [102/2088] loi_nhac q261 E2  3.9s (tb 6.1s)
+  [103/2088] loi_nhac q263 E2  6.2s (tb 6.1s)
+  [104/2088] loi_nhac q264 E2  2.1s (tb 6.1s)
+  [105/2088] loi_nhac q266 E2  8.0s (tb 6.1s)
+  [106/2088] loi_nhac q267 E2  2.2s (tb 6.0s)
+  [107/2088] loi_nhac q270 E2  9.2s (tb 6.1s)
+  [108/2088] loi_nhac q271 E2  6.0s (tb 6.1s)
+  [109/2088] loi_nhac q001 E3  2.5s (tb 6.1s)
+  [110/2088] loi_nhac q003 E3  10.1s (tb 6.1s)
+  [111/2088] loi_nhac q004 E3  4.2s (tb 6.1s)
+  [112/2088] loi_nhac q005 E3  3.5s (tb 6.1s)
+  [113/2088] loi_nhac q007 E3  3.0s (tb 6.1s)
+  [114/2088] loi_nhac q008 E3  3.4s (tb 6.1s)
+  [115/2088] loi_nhac q009 E3  3.3s (tb 6.0s)
+  [116/2088] loi_nhac q010 E3  4.8s (tb 6.0s)
+  [117/2088] loi_nhac q011 E3  6.6s (tb 6.0s)
+  [118/2088] loi_nhac q014 E3  1.7s (tb 6.0s)
+  [119/2088] loi_nhac q015 E3  3.4s (tb 6.0s)
+  [120/2088] loi_nhac q016 E3  5.6s (tb 6.0s)
+  [121/2088] loi_nhac q018 E3  6.5s (tb 6.0s)
+Traceback (most recent call last):
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\httpx2\_transports\default.py", line 98, in map_httpcore_exceptions
+    yield
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\httpx2\_transports\default.py", line 245, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\httpcore2\_sync\connection_pool.py", line 242, in handle_request
+    raise exc from None
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\httpcore2\_sync\connection_pool.py", line 224, in handle_request
+    response = connection.handle_request(pool_request.request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\httpcore2\_sync\connection.py", line 94, in handle_request
+    raise exc
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\httpcore2\_sync\connection.py", line 74, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\httpcore2\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\httpcore2\_backends\sync.py", line 203, in connect_tcp
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\phamq\AppData\Roaming\uv\python\cpython-3.12.13-windows-x86_64-none\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\httpcore2\_exceptions.py", line 17, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore2.ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\openai\_base_client.py", line 1148, in request
+    response = self._send_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\openai\_client.py", line 609, in _send_request
+    response = self._send_with_auth_retry(request, stream=stream, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\openai\_client.py", line 588, in _send_with_auth_retry
+    response = super()._send_request(request, stream=stream, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\openai\_base_client.py", line 1069, in _send_request
+    return self._client.send(request, stream=stream, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\httpx2\_client.py", line 980, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\httpx2\_client.py", line 1008, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\httpx2\_client.py", line 1043, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\httpx2\_client.py", line 1076, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\httpx2\_transports\default.py", line 244, in handle_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\phamq\AppData\Roaming\uv\python\cpython-3.12.13-windows-x86_64-none\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\httpx2\_transports\default.py", line 115, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx2.ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\WEB\datn-chunking\eval\thu_them.py", line 480, in <module>
+    main()
+  File "E:\WEB\datn-chunking\eval\thu_them.py", line 433, in main
+    sinh_thu(a.sinh)
+  File "E:\WEB\datn-chunking\eval\thu_them.py", line 159, in sinh_thu
+    r = sinh.tra_loi(x["question"], khoi, cl, {"qid": x["qid"], "bien_the": f"thu_{t}_{b['ten']}", "seed": 0},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\rag\sinh.py", line 138, in tra_loi
+    r, ghi = goi(dung_tin_nhan(cau_hoi, khoi, he_thong),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\rag\sinh.py", line 114, in goi
+    r = cl.chat.completions.create(messages=tin_nhan, **ts)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\openai\_utils\_utils.py", line 298, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1318, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\openai\_base_client.py", line 1440, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\openai\_base_client.py", line 1183, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+exit 1 778 s

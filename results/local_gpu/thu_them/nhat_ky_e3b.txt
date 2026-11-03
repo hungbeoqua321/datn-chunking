@@ -1,0 +1,30 @@
+chinh: 26 câu | đã có 0 | còn 26
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:   9%|▉         | 18/199 [00:00<00:01, 165.65it/s]Loading weights:  21%|██        | 41/199 [00:00<00:00, 201.09it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 692.04it/s]
+  [1/26] chinh q057  53s/câu
+  [2/26] chinh q058  29s/câu
+  [3/26] chinh q059  22s/câu
+  [4/26] chinh q060  17s/câu
+  [5/26] chinh q061  15s/câu
+  [6/26] chinh q064  13s/câu
+  [7/26] chinh q065  13s/câu
+  [8/26] chinh q067  12s/câu
+  [9/26] chinh q068  11s/câu
+  [10/26] chinh q069  10s/câu
+  [11/26] chinh q070  9s/câu
+  [12/26] chinh q072  9s/câu
+  [13/26] chinh q090  8s/câu
+  [14/26] chinh q093  8s/câu
+  [15/26] chinh q094  8s/câu
+  [16/26] chinh q096  8s/câu
+  [17/26] chinh q097  8s/câu
+  [18/26] chinh q101  8s/câu
+  [19/26] chinh q235  8s/câu
+  [20/26] chinh q240  7s/câu
+  [21/26] chinh q259  7s/câu
+  [22/26] chinh q264  7s/câu
+  [23/26] chinh q266  7s/câu
+  [24/26] chinh q267  7s/câu
+  [25/26] chinh q270  7s/câu
+  [26/26] chinh q271  7s/câu
+→ xong. Cắt trần: 0 []
+THỐNG KÊ DẪN CHIẾU: {"bo_vi_het_ngan_sach": 26, "cung_vb_theo_duoc": 34, "trong_dieu_theo_duoc": 39}

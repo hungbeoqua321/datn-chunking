@@ -1,0 +1,312 @@
+server 4bkm: còn 220 lượt
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:   7%|▋         | 14/199 [00:00<00:01, 133.55it/s]Loading weights:  15%|█▍        | 29/199 [00:00<00:01, 138.75it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 685.82it/s]
+  [1/220] mo_hinh q001 B·4bkm  3.3s (tb 21.0s)
+  [2/220] mo_hinh q003 B·4bkm  8.1s (tb 14.6s)
+  [3/220] mo_hinh q004 B·4bkm  3.4s (tb 10.9s)
+  [4/220] mo_hinh q005 B·4bkm  2.9s (tb 8.9s)
+  [5/220] mo_hinh q007 B·4bkm  2.3s (tb 7.6s)
+  [6/220] mo_hinh q008 B·4bkm  2.9s (tb 6.8s)
+  [7/220] mo_hinh q009 B·4bkm  3.3s (tb 6.3s)
+  [8/220] mo_hinh q010 B·4bkm  3.1s (tb 5.9s)
+  [9/220] mo_hinh q011 B·4bkm  5.0s (tb 5.8s)
+  [10/220] mo_hinh q014 B·4bkm  4.8s (tb 5.7s)
+  [11/220] mo_hinh q015 B·4bkm  3.3s (tb 5.5s)
+  [12/220] mo_hinh q016 B·4bkm  9.5s (tb 5.9s)
+  [13/220] mo_hinh q018 B·4bkm  4.0s (tb 5.7s)
+  [14/220] mo_hinh q019 B·4bkm  2.5s (tb 5.5s)
+  [15/220] mo_hinh q021 B·4bkm  8.6s (tb 5.7s)
+  [16/220] mo_hinh q022 B·4bkm  3.6s (tb 5.6s)
+  [17/220] mo_hinh q024 B·4bkm  1.8s (tb 5.4s)
+  [18/220] mo_hinh q025 B·4bkm  4.1s (tb 5.3s)
+  [19/220] mo_hinh q028 B·4bkm  2.9s (tb 5.2s)
+  [20/220] mo_hinh q029 B·4bkm  3.2s (tb 5.1s)
+  [21/220] mo_hinh q034 B·4bkm  3.3s (tb 5.0s)
+  [22/220] mo_hinh q035 B·4bkm  3.5s (tb 4.9s)
+  [23/220] mo_hinh q037 B·4bkm  3.0s (tb 4.8s)
+  [24/220] mo_hinh q039 B·4bkm  2.8s (tb 4.8s)
+  [25/220] mo_hinh q040 B·4bkm  3.4s (tb 4.7s)
+  [26/220] mo_hinh q042 B·4bkm  4.5s (tb 4.7s)
+  [27/220] mo_hinh q045 B·4bkm  4.4s (tb 4.7s)
+  [28/220] mo_hinh q046 B·4bkm  6.5s (tb 4.8s)
+  [29/220] mo_hinh q047 B·4bkm  3.3s (tb 4.7s)
+  [30/220] mo_hinh q048 B·4bkm  3.9s (tb 4.7s)
+  [31/220] mo_hinh q049 B·4bkm  3.8s (tb 4.7s)
+  [32/220] mo_hinh q050 B·4bkm  3.5s (tb 4.6s)
+  [33/220] mo_hinh q051 B·4bkm  4.5s (tb 4.6s)
+  [34/220] mo_hinh q052 B·4bkm  3.0s (tb 4.6s)
+  [35/220] mo_hinh q053 B·4bkm  4.0s (tb 4.6s)
+  [36/220] mo_hinh q054 B·4bkm  4.1s (tb 4.5s)
+  [37/220] mo_hinh q055 B·4bkm  12.2s (tb 4.8s)  ← CẮT TRẦN
+  [38/220] mo_hinh q057 B·4bkm  3.2s (tb 4.7s)
+  [39/220] mo_hinh q058 B·4bkm  13.0s (tb 4.9s)  ← CẮT TRẦN
+  [40/220] mo_hinh q059 B·4bkm  8.9s (tb 5.0s)
+  [41/220] mo_hinh q060 B·4bkm  9.3s (tb 5.1s)
+  [42/220] mo_hinh q061 B·4bkm  9.8s (tb 5.2s)
+  [43/220] mo_hinh q064 B·4bkm  9.5s (tb 5.3s)
+  [44/220] mo_hinh q065 B·4bkm  12.7s (tb 5.5s)  ← CẮT TRẦN
+  [45/220] mo_hinh q067 B·4bkm  4.6s (tb 5.5s)
+  [46/220] mo_hinh q068 B·4bkm  3.7s (tb 5.5s)
+  [47/220] mo_hinh q069 B·4bkm  10.6s (tb 5.6s)
+  [48/220] mo_hinh q070 B·4bkm  1.8s (tb 5.5s)
+  [49/220] mo_hinh q072 B·4bkm  5.7s (tb 5.5s)
+  [50/220] mo_hinh q090 B·4bkm  3.0s (tb 5.5s)
+  [51/220] mo_hinh q093 B·4bkm  7.9s (tb 5.5s)
+  [52/220] mo_hinh q094 B·4bkm  3.2s (tb 5.5s)
+  [53/220] mo_hinh q096 B·4bkm  3.8s (tb 5.4s)
+  [54/220] mo_hinh q097 B·4bkm  5.9s (tb 5.4s)
+  [55/220] mo_hinh q101 B·4bkm  1.6s (tb 5.4s)
+  [56/220] mo_hinh q118 B·4bkm  2.4s (tb 5.3s)
+  [57/220] mo_hinh q119 B·4bkm  4.1s (tb 5.3s)
+  [58/220] mo_hinh q120 B·4bkm  2.1s (tb 5.2s)
+  [59/220] mo_hinh q121 B·4bkm  2.7s (tb 5.2s)
+  [60/220] mo_hinh q122 B·4bkm  2.6s (tb 5.2s)
+  [61/220] mo_hinh q123 B·4bkm  3.4s (tb 5.1s)
+  [62/220] mo_hinh q124 B·4bkm  2.1s (tb 5.1s)
+  [63/220] mo_hinh q125 B·4bkm  4.8s (tb 5.1s)
+  [64/220] mo_hinh q126 B·4bkm  4.5s (tb 5.1s)
+  [65/220] mo_hinh q127 B·4bkm  2.1s (tb 5.0s)
+  [66/220] mo_hinh q128 B·4bkm  3.6s (tb 5.0s)
+  [67/220] mo_hinh q129 B·4bkm  5.0s (tb 5.0s)
+  [68/220] mo_hinh q130 B·4bkm  4.3s (tb 5.0s)
+  [69/220] mo_hinh q139 B·4bkm  1.7s (tb 5.0s)
+  [70/220] mo_hinh q140 B·4bkm  3.5s (tb 4.9s)
+  [71/220] mo_hinh q141 B·4bkm  10.9s (tb 5.0s)
+  [72/220] mo_hinh q142 B·4bkm  1.6s (tb 5.0s)
+  [73/220] mo_hinh q143 B·4bkm  3.1s (tb 4.9s)
+  [74/220] mo_hinh q144 B·4bkm  6.3s (tb 5.0s)
+  [75/220] mo_hinh q145 B·4bkm  2.5s (tb 4.9s)
+  [76/220] mo_hinh q146 B·4bkm  1.5s (tb 4.9s)
+  [77/220] mo_hinh q147 B·4bkm  2.1s (tb 4.9s)
+  [78/220] mo_hinh q148 B·4bkm  5.9s (tb 4.9s)
+  [79/220] mo_hinh q149 B·4bkm  3.5s (tb 4.9s)
+  [80/220] mo_hinh q206 B·4bkm  3.9s (tb 4.8s)
+  [81/220] mo_hinh q208 B·4bkm  2.6s (tb 4.8s)
+  [82/220] mo_hinh q209 B·4bkm  3.5s (tb 4.8s)
+  [83/220] mo_hinh q210 B·4bkm  3.0s (tb 4.8s)
+  [84/220] mo_hinh q211 B·4bkm  4.3s (tb 4.8s)
+  [85/220] mo_hinh q213 B·4bkm  8.9s (tb 4.8s)
+  [86/220] mo_hinh q214 B·4bkm  2.8s (tb 4.8s)
+  [87/220] mo_hinh q215 B·4bkm  4.0s (tb 4.8s)
+  [88/220] mo_hinh q217 B·4bkm  3.3s (tb 4.8s)
+  [89/220] mo_hinh q219 B·4bkm  6.0s (tb 4.8s)
+  [90/220] mo_hinh q220 B·4bkm  3.6s (tb 4.8s)
+  [91/220] mo_hinh q222 B·4bkm  3.5s (tb 4.8s)
+  [92/220] mo_hinh q235 B·4bkm  6.5s (tb 4.8s)
+  [93/220] mo_hinh q240 B·4bkm  3.3s (tb 4.8s)
+  [94/220] mo_hinh q245 B·4bkm  3.6s (tb 4.8s)
+  [95/220] mo_hinh q246 B·4bkm  4.2s (tb 4.8s)
+  [96/220] mo_hinh q247 B·4bkm  3.2s (tb 4.7s)
+  [97/220] mo_hinh q248 B·4bkm  3.1s (tb 4.7s)
+  [98/220] mo_hinh q249 B·4bkm  3.1s (tb 4.7s)
+  [99/220] mo_hinh q251 B·4bkm  3.8s (tb 4.7s)
+  [100/220] mo_hinh q253 B·4bkm  4.9s (tb 4.7s)
+  [101/220] mo_hinh q257 B·4bkm  6.2s (tb 4.7s)
+  [102/220] mo_hinh q259 B·4bkm  1.7s (tb 4.7s)
+  [103/220] mo_hinh q260 B·4bkm  3.1s (tb 4.7s)
+  [104/220] mo_hinh q261 B·4bkm  2.6s (tb 4.7s)
+  [105/220] mo_hinh q263 B·4bkm  5.0s (tb 4.7s)
+  [106/220] mo_hinh q264 B·4bkm  2.5s (tb 4.6s)
+  [107/220] mo_hinh q266 B·4bkm  7.7s (tb 4.7s)
+  [108/220] mo_hinh q267 B·4bkm  2.8s (tb 4.6s)
+  [109/220] mo_hinh q270 B·4bkm  5.1s (tb 4.7s)
+  [110/220] mo_hinh q271 B·4bkm  2.9s (tb 4.6s)
+  [111/220] mo_hinh q001 E3·4bkm  2.0s (tb 4.6s)
+  [112/220] mo_hinh q003 E3·4bkm  10.2s (tb 4.7s)
+  [113/220] mo_hinh q004 E3·4bkm  3.4s (tb 4.7s)
+  [114/220] mo_hinh q005 E3·4bkm  3.1s (tb 4.7s)
+  [115/220] mo_hinh q007 E3·4bkm  2.5s (tb 4.6s)
+  [116/220] mo_hinh q008 E3·4bkm  3.0s (tb 4.6s)
+  [117/220] mo_hinh q009 E3·4bkm  2.9s (tb 4.6s)
+  [118/220] mo_hinh q010 E3·4bkm  2.6s (tb 4.6s)
+  [119/220] mo_hinh q011 E3·4bkm  5.1s (tb 4.6s)
+  [120/220] mo_hinh q014 E3·4bkm  1.4s (tb 4.6s)
+  [121/220] mo_hinh q015 E3·4bkm  2.8s (tb 4.6s)
+  [122/220] mo_hinh q016 E3·4bkm  3.4s (tb 4.5s)
+  [123/220] mo_hinh q018 E3·4bkm  3.6s (tb 4.5s)
+  [124/220] mo_hinh q019 E3·4bkm  3.6s (tb 4.5s)
+  [125/220] mo_hinh q021 E3·4bkm  11.9s (tb 4.6s)  ← CẮT TRẦN
+  [126/220] mo_hinh q022 E3·4bkm  3.3s (tb 4.6s)
+  [127/220] mo_hinh q024 E3·4bkm  1.7s (tb 4.6s)
+  [128/220] mo_hinh q025 E3·4bkm  4.9s (tb 4.6s)
+  [129/220] mo_hinh q028 E3·4bkm  4.9s (tb 4.6s)
+  [130/220] mo_hinh q029 E3·4bkm  2.9s (tb 4.6s)
+  [131/220] mo_hinh q034 E3·4bkm  2.8s (tb 4.5s)
+  [132/220] mo_hinh q035 E3·4bkm  3.0s (tb 4.5s)
+  [133/220] mo_hinh q037 E3·4bkm  2.6s (tb 4.5s)
+  [134/220] mo_hinh q039 E3·4bkm  2.9s (tb 4.5s)
+  [135/220] mo_hinh q040 E3·4bkm  2.8s (tb 4.5s)
+  [136/220] mo_hinh q042 E3·4bkm  3.8s (tb 4.5s)
+Traceback (most recent call last):
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\urllib3\connection.py", line 239, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\urllib3\connectionpool.py", line 499, in _make_request
+    conn.request(
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\urllib3\connection.py", line 567, in request
+    self.endheaders()
+  File "C:\Users\phamq\AppData\Roaming\uv\python\cpython-3.12.13-windows-x86_64-none\Lib\http\client.py", line 1353, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\phamq\AppData\Roaming\uv\python\cpython-3.12.13-windows-x86_64-none\Lib\http\client.py", line 1113, in _send_output
+    self.send(msg)
+  File "C:\Users\phamq\AppData\Roaming\uv\python\cpython-3.12.13-windows-x86_64-none\Lib\http\client.py", line 1057, in send
+    self.connect()
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\urllib3\connection.py", line 398, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\urllib3\connection.py", line 254, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=8082): Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\urllib3\util\retry.py", line 555, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8082): Max retries exceeded with url: /tokenize (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8082): Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\WEB\datn-chunking\eval\thu_them.py", line 480, in <module>
+    main()
+  File "E:\WEB\datn-chunking\eval\thu_them.py", line 433, in main
+    sinh_thu(a.sinh)
+  File "E:\WEB\datn-chunking\eval\thu_them.py", line 159, in sinh_thu
+    r = sinh.tra_loi(x["question"], khoi, cl, {"qid": x["qid"], "bien_the": f"thu_{t}_{b['ten']}", "seed": 0},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\rag\sinh.py", line 140, in tra_loi
+    r, ghi = goi(dung_tin_nhan(cau_hoi, khoi, he_thong),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\rag\sinh.py", line 111, in goi
+    dem = sum(dem_token(m["content"]) for m in tin_nhan)  # chưa tính vài token khung chat template
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\rag\sinh.py", line 111, in <genexpr>
+    dem = sum(dem_token(m["content"]) for m in tin_nhan)  # chưa tính vài token khung chat template
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\rag\sinh.py", line 179, in dem_token
+    r = requests.post(base + "/tokenize", json={"content": van_ban}, timeout=60)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\requests\api.py", line 134, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\requests\api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\WEB\datn-chunking\.venv\Lib\site-packages\requests\adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8082): Max retries exceeded with url: /tokenize (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8082): Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions"))
+server 4bkm: còn 84 lượt
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 23/199 [00:00<00:00, 192.45it/s]Loading weights:  22%|██▏       | 43/199 [00:00<00:00, 184.02it/s]Loading weights:  31%|███       | 62/199 [00:00<00:00, 158.18it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 522.90it/s]
+  [1/84] mo_hinh q045 E3·4bkm  4.8s (tb 20.3s)
+  [2/84] mo_hinh q046 E3·4bkm  3.4s (tb 11.9s)
+  [3/84] mo_hinh q047 E3·4bkm  2.3s (tb 8.7s)
+  [4/84] mo_hinh q048 E3·4bkm  4.8s (tb 7.8s)
+  [5/84] mo_hinh q049 E3·4bkm  2.8s (tb 6.8s)
+  [6/84] mo_hinh q050 E3·4bkm  1.6s (tb 6.0s)
+  [7/84] mo_hinh q051 E3·4bkm  3.8s (tb 5.7s)
+  [8/84] mo_hinh q052 E3·4bkm  3.0s (tb 5.3s)
+  [9/84] mo_hinh q053 E3·4bkm  6.3s (tb 5.5s)
+  [10/84] mo_hinh q054 E3·4bkm  4.4s (tb 5.4s)
+  [11/84] mo_hinh q055 E3·4bkm  11.9s (tb 6.0s)
+  [12/84] mo_hinh q057 E3·4bkm  3.6s (tb 5.8s)
+  [13/84] mo_hinh q058 E3·4bkm  9.4s (tb 6.1s)
+  [14/84] mo_hinh q059 E3·4bkm  6.8s (tb 6.1s)
+  [15/84] mo_hinh q060 E3·4bkm  3.4s (tb 6.0s)
+  [16/84] mo_hinh q061 E3·4bkm  1.6s (tb 5.7s)
+  [17/84] mo_hinh q064 E3·4bkm  12.0s (tb 6.1s)  ← CẮT TRẦN
+  [18/84] mo_hinh q065 E3·4bkm  9.2s (tb 6.3s)
+  [19/84] mo_hinh q067 E3·4bkm  4.6s (tb 6.2s)
+  [20/84] mo_hinh q068 E3·4bkm  1.7s (tb 6.0s)
+  [21/84] mo_hinh q069 E3·4bkm  7.0s (tb 6.0s)
+  [22/84] mo_hinh q070 E3·4bkm  1.2s (tb 5.8s)
+  [23/84] mo_hinh q072 E3·4bkm  4.5s (tb 5.7s)
+  [24/84] mo_hinh q090 E3·4bkm  2.7s (tb 5.6s)
+  [25/84] mo_hinh q093 E3·4bkm  3.8s (tb 5.5s)
+  [26/84] mo_hinh q094 E3·4bkm  3.5s (tb 5.5s)
+  [27/84] mo_hinh q096 E3·4bkm  4.0s (tb 5.4s)
+  [28/84] mo_hinh q097 E3·4bkm  6.0s (tb 5.5s)
+  [29/84] mo_hinh q101 E3·4bkm  1.6s (tb 5.3s)
+  [30/84] mo_hinh q118 E3·4bkm  2.1s (tb 5.2s)
+  [31/84] mo_hinh q119 E3·4bkm  1.4s (tb 5.1s)
+  [32/84] mo_hinh q120 E3·4bkm  1.9s (tb 5.0s)
+  [33/84] mo_hinh q121 E3·4bkm  3.0s (tb 4.9s)
+  [34/84] mo_hinh q122 E3·4bkm  2.8s (tb 4.9s)
+  [35/84] mo_hinh q123 E3·4bkm  2.6s (tb 4.8s)
+  [36/84] mo_hinh q124 E3·4bkm  3.5s (tb 4.8s)
+  [37/84] mo_hinh q125 E3·4bkm  4.2s (tb 4.8s)
+  [38/84] mo_hinh q126 E3·4bkm  2.0s (tb 4.7s)
+  [39/84] mo_hinh q127 E3·4bkm  2.0s (tb 4.6s)
+  [40/84] mo_hinh q128 E3·4bkm  4.7s (tb 4.6s)
+  [41/84] mo_hinh q129 E3·4bkm  4.7s (tb 4.6s)
+  [42/84] mo_hinh q130 E3·4bkm  3.0s (tb 4.6s)
+  [43/84] mo_hinh q139 E3·4bkm  1.7s (tb 4.5s)
+  [44/84] mo_hinh q140 E3·4bkm  3.1s (tb 4.5s)
+  [45/84] mo_hinh q141 E3·4bkm  11.0s (tb 4.7s)
+  [46/84] mo_hinh q142 E3·4bkm  1.6s (tb 4.6s)
+  [47/84] mo_hinh q143 E3·4bkm  3.1s (tb 4.6s)
+  [48/84] mo_hinh q144 E3·4bkm  6.3s (tb 4.6s)
+  [49/84] mo_hinh q145 E3·4bkm  1.7s (tb 4.5s)
+  [50/84] mo_hinh q146 E3·4bkm  1.4s (tb 4.5s)
+  [51/84] mo_hinh q147 E3·4bkm  3.2s (tb 4.5s)
+  [52/84] mo_hinh q148 E3·4bkm  4.9s (tb 4.5s)
+  [53/84] mo_hinh q149 E3·4bkm  3.4s (tb 4.4s)
+  [54/84] mo_hinh q206 E3·4bkm  3.7s (tb 4.4s)
+  [55/84] mo_hinh q208 E3·4bkm  2.3s (tb 4.4s)
+  [56/84] mo_hinh q209 E3·4bkm  3.5s (tb 4.4s)
+  [57/84] mo_hinh q210 E3·4bkm  2.9s (tb 4.4s)
+  [58/84] mo_hinh q211 E3·4bkm  3.0s (tb 4.3s)
+  [59/84] mo_hinh q213 E3·4bkm  7.1s (tb 4.4s)
+  [60/84] mo_hinh q214 E3·4bkm  3.2s (tb 4.4s)
+  [61/84] mo_hinh q215 E3·4bkm  3.6s (tb 4.4s)
+  [62/84] mo_hinh q217 E3·4bkm  3.3s (tb 4.3s)
+  [63/84] mo_hinh q219 E3·4bkm  11.3s (tb 4.4s)
+  [64/84] mo_hinh q220 E3·4bkm  2.7s (tb 4.4s)
+  [65/84] mo_hinh q222 E3·4bkm  6.0s (tb 4.4s)
+  [66/84] mo_hinh q235 E3·4bkm  5.5s (tb 4.5s)
+  [67/84] mo_hinh q240 E3·4bkm  1.5s (tb 4.4s)
+  [68/84] mo_hinh q245 E3·4bkm  3.6s (tb 4.4s)
+  [69/84] mo_hinh q246 E3·4bkm  4.6s (tb 4.4s)
+  [70/84] mo_hinh q247 E3·4bkm  3.7s (tb 4.4s)
+  [71/84] mo_hinh q248 E3·4bkm  2.9s (tb 4.4s)
+  [72/84] mo_hinh q249 E3·4bkm  2.0s (tb 4.4s)
+  [73/84] mo_hinh q251 E3·4bkm  3.8s (tb 4.3s)
+  [74/84] mo_hinh q253 E3·4bkm  4.9s (tb 4.4s)
+  [75/84] mo_hinh q257 E3·4bkm  7.6s (tb 4.4s)
+  [76/84] mo_hinh q259 E3·4bkm  3.1s (tb 4.4s)
+  [77/84] mo_hinh q260 E3·4bkm  1.0s (tb 4.3s)
+  [78/84] mo_hinh q261 E3·4bkm  2.6s (tb 4.3s)
+  [79/84] mo_hinh q263 E3·4bkm  3.7s (tb 4.3s)
+  [80/84] mo_hinh q264 E3·4bkm  2.2s (tb 4.3s)
+  [81/84] mo_hinh q266 E3·4bkm  4.2s (tb 4.3s)
+  [82/84] mo_hinh q267 E3·4bkm  2.6s (tb 4.3s)
+  [83/84] mo_hinh q270 E3·4bkm  7.2s (tb 4.3s)
+  [84/84] mo_hinh q271 E3·4bkm  2.2s (tb 4.3s)
+→ xong 84 lượt trong 360s. Cắt trần: 1 [('mo_hinh', 'q064', 'E3·4bkm')]
+thời gian theo biến (s): {"mo_hinh/E3·4bkm": 336}

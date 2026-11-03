@@ -28,3 +28,5 @@ eval/_6vat.jsonl
 # bước 0 trên máy local: chunk + chỉ mục dựng lại (lớn, tái tạo bằng thuc_nghiem/tai_lap_gpu/chay.sh)
 thuc_nghiem/tai_lap_gpu/chunks/
 thuc_nghiem/tai_lap_gpu/index/
+thuc_nghiem/llm_*.log
+thuc_nghiem/tai_8b.log

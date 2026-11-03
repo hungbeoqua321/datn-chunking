@@ -1,0 +1,7 @@
+2026-11-02 20:33:05 lần 1: server lên, VRAM 3578 MiB
+2026-11-02 20:50:55 lần 1: lệnh sinh thoát 1 sau 1051 s
+2026-11-02 20:51:15 lần 2: server lên, VRAM 3480 MiB
+2026-11-02 20:57:27 lần 2: lệnh sinh thoát 1 sau 359 s
+2026-11-02 20:57:46 lần 3: server lên, VRAM 3143 MiB
+2026-11-02 22:59:31 lần 3: lệnh sinh thoát 0 sau 7291 s
+2026-11-02 22:59:34 XONG

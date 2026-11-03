@@ -1,0 +1,4 @@
+2026-11-03 11:12:03 lần 1: VRAM đang dùng '2349' MiB < 2500 — server KHÔNG chạy trên GPU — DỪNG, không sinh
+2026-11-03 11:13:12 lần 1: server lên, VRAM 2093 MiB
+2026-11-03 12:28:09 lần 1: lệnh sinh thoát 0 sau 4488 s
+2026-11-03 12:28:12 XONG

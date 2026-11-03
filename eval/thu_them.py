@@ -340,7 +340,10 @@ def muc_mo_hinh(x) -> list[str]:
          "Kiểm soát: Qwen3-4B-Instruct-2507 Q4_0 (mô hình của bảng chính), chạy lại cùng đợt. Unsloth không phát hành "
          "Qwen3-8B bản Q4_0, nên 8B chạy Q4_K_M; thêm 4B Q4_K_M làm đối chứng lượng tử để tách cỡ mô hình khỏi cách "
          "lượng tử. Qwen3-8B là mô hình lai (có chế độ suy nghĩ), chạy với `enable_thinking=false`. 8B không vừa 4 GB "
-         "VRAM: llama.cpp tự chia lớp GPU/CPU (`NGL=fit`).", ""]
+         "VRAM: `llama-fit-params` (cùng cờ, n_ctx 4096) chọn **12/37 lớp lên GPU** (2.224 MiB), phần còn lại chạy "
+         "CPU 3 luồng; lượt chạy ghim `NGL=12` để số lớp không phụ thuộc VRAM trống lúc khởi động. Nhịp thật 8B: "
+         "17,5 s/câu (10 câu đầu, chỉ tính sinh), cả 220 lượt 4.479 s ≈ 20 s/lượt — dưới 60 s nên chạy đủ 110 câu "
+         "cho cả B và E3.", ""]
     L += _doi("tệp mô hình sinh: 4B Q4_0 (kiểm soát) / 4B Q4_K_M / 8B Q4_K_M. Lời nhắc là lời nhắc GỐC, không dùng P1",
               "mô hình")
     for g in ("B", "E3"):
@@ -416,8 +419,23 @@ def muc_loi_nhac(x) -> list[str]:
     L += hai_bang_nhom(x, list(PP8) + [f"{t}·P1" for t in PP8])
     L += ["### E2n — so với kiểm soát E2 (cùng lượt)", ""] + bang_sinh(x, ["E2", "E2n", "B"], "E2") + [""]
     L += hai_bang_nhom(x, ["E2", "E2n", "B"])
-    L += [f"E2n − B (khớp hoàn toàn): {o(bs(x, 'B', 'E2n', 'dieu_toan_phan'))}.", ""]
-    return L
+    L += [f"E2n − B: khớp hoàn toàn {o(bs(x, 'B', 'E2n', 'dieu_toan_phan'))}; "
+          f"đủ gold {o(bs(x, 'B', 'E2n', 'dieu_du_gold'))}.", ""]
+    # 10 câu "B đúng, E2 dẫn sai (T4)" của phân tích lỗi (bước 1, results/local_gpu/phan_tich_loi.md §2)
+    from eval.phan_tich_loi import loai_t4, thung
+    b1 = {(y["qid"], y["pp"]): y for y in map(json.loads, open(ch.RESULTS / "chi_tiet_cau.jsonl", encoding="utf-8"))
+          if y["bo"] == "chinh" and y["pp"] in ("B", "E2")}
+    tl = {(y["qid"], y["pp"]): y for y in map(json.loads, open(ch.RESULTS / "pilot_tra_loi.jsonl", encoding="utf-8"))}
+    qs = sorted(q for q, p in b1 if p == "B" and thung(b1[(q, "B")]) is None and thung(b1[(q, "E2")]) == "T4")
+    e2n = {r["qid"]: r for r in x if r["pp"] == "E2n"}
+    cuu = [q for q in qs if e2n[q]["dieu_toan_phan"] == 1]
+    L += [f"### E2n trên {len(qs)} câu \"B đúng, E2 dẫn sai (T4)\" của phân tích lỗi", "",
+          f"E2n đúng (khớp hoàn toàn) **{len(cuu)}/{len(qs)}** câu; đủ gold "
+          f"{sum(e2n[q]['dieu_du_gold'] == 1 for q in qs)}/{len(qs)}.", "",
+          "| câu | nhóm | loại T4 của E2 (bước 1) | E2n khớp hoàn toàn | E2n đủ gold |", "|---|---|---|---:|---:|"]
+    L += [f"| {q} | {e2n[q]['loai']} | {loai_t4(b1[(q, 'E2')], tl[(q, 'E2')])} | {e2n[q]['dieu_toan_phan']:.0f} "
+          f"| {e2n[q]['dieu_du_gold']:.0f} |" for q in qs]
+    return L + [""]
 
 
 def main() -> None:
