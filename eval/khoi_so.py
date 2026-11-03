@@ -350,6 +350,9 @@ def khoi9() -> list[str]:
                   f"9.2 Ngân sách — {g}, n_ctx 8192 (chỉ cho 2.400 từ)")
     for g in ("B", "E3"):
         L += bang("mo_hinh", [f"{g}·4b", f"{g}·4bkm", f"{g}·8b"], f"{g}·4b", f"9.3 Mô hình sinh — {g}")
+    L += ["8B (Qwen3-8B Q4_K_M, `enable_thinking=false`): **12/37 lớp trên GPU** (`llama-fit-params`, ghim `NGL=12`), "
+          "phần còn lại CPU 3 luồng; nhịp thật 17,5 s/câu (10 câu đầu, chỉ tính sinh), 220 lượt trong 4.479 s — dưới "
+          "60 s/câu nên chạy đủ 110 câu cho cả B và E3.", ""]
     x = T.get("loi_nhac", [])
     L += ["### 9.4 Lời nhắc P1 — tám phương pháp, mỗi phương pháp so với kiểm soát lời nhắc gốc", "",
           "| phương pháp | khớp hoàn toàn gốc → P1 | Δ [95% CI] | đủ gold gốc → P1 | Δ [95% CI] | cắt trần gốc → P1 |",
@@ -365,9 +368,18 @@ def khoi9() -> list[str]:
                  f"{sum(r['hang_muc'] == 'cat_tran' for r in b)} |")
     L += [""]
     L += bang("loi_nhac", ["E2", "E2n", "B"], "E2", "9.5 E2n — so với kiểm soát E2 (dòng B để so thêm)")
-    L += ["### 9.6 Lọc cụm sáo khỏi chuỗi nhúng của B — chỉ truy hồi", "",
-          "Xem `results/local_gpu/thu_them.md` §4: Bloc − B = +0,000 ở R@1, R@5, R@10, R@1200, gold trong ngữ cảnh; "
-          "MRR −0,001 [−0,005; +0,002].", ""]
+    md = (ch.RESULTS / "thu_them.md").read_text(encoding="utf-8").splitlines()
+    L += [f"E2n − B: khớp hoàn toàn {ci(bs(x, 'B', 'E2n', 'dieu_toan_phan'))}; đủ gold "
+          f"{ci(bs(x, 'B', 'E2n', 'dieu_du_gold'))}.", ""]
+    L += [next(l for l in md if l.startswith("E2n đúng (khớp hoàn toàn)")).replace(
+        "E2n đúng", "Trong 10 câu \"B đúng, E2 dẫn sai (T4)\" của phân tích lỗi, E2n đúng"), ""]
+    # Bloc: bảng truy hồi của thu_them.md §4, đổi dấu thập phân
+    i = md.index("| biến | n | R@1 | R@5 | R@10 | MRR | R@1200t | trong_50 | trong_ngu_canh |")
+    bl = [l.replace(".", ",") for l in md[i:i + 4]]
+    j = next(k for k, l in enumerate(md) if l.startswith("| Bloc − B |"))
+    L += ["### 9.6 Lọc cụm sáo khỏi chuỗi nhúng của B — chỉ truy hồi", ""] + bl + [
+          "| hiệu so với kiểm soát | | " + " | ".join(c.strip().replace(".", ",") for c in md[j].split("|")[2:-1]) + " |",
+          ""]
     return L + nguon("results/local_gpu/thu_them/chi_tiet_cau.jsonl", "results/local_gpu/thu_them.md")
 
 
