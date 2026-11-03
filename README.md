@@ -1,4 +1,4 @@
-#Phân đoạn văn bản quy phạm pháp luật cho RAG
+# Phân đoạn văn bản quy phạm pháp luật cho RAG
 
 ## Cần có
 
@@ -127,7 +127,7 @@ Kiểm tra: `.venv-ocr/Scripts/python -m ocr.doc_pdf ocr/data/mau/70fbb4a0-c0df-
 | Triệu chứng | Nguyên nhân | Cách sửa |
 |---|---|---|
 | `UnicodeEncodeError: 'charmap' codec can't encode character` (Windows) | Python in ra console theo bảng mã cp1252, không có chữ tiếng Việt | `export PYTHONUTF8=1` (hoặc `setx PYTHONUTF8 1` rồi mở terminal mới), chạy lại lệnh |
-| `Python was not found` / `python3.12: command not found` | chưa cài Python, hoặc Windows đang trỏ tới lối tắt Microsoft Store | cài Python 3.12 từ python.org (tích *Add to PATH*), mở lại terminal. Hoặc: `winget install astral-sh.uv && uv python install 3.12` rồi `"$(uv python find 3.12)" -m venv .venv` |
+| `Python was not found` / `python3.12: command not found` / Git Bash báo `python: cannot execute: required file not found` | chưa cài Python, hoặc Windows đang trỏ tới lối tắt Microsoft Store | cài Python 3.12 từ python.org (tích *Add to PATH*), mở lại terminal. Hoặc: `winget install astral-sh.uv && uv python install 3.12` rồi `"$(uv python find 3.12)" -m venv .venv` |
 | `No module named ensurepip` khi tạo venv (Ubuntu/Debian) | thiếu gói venv | `sudo apt install python3.12-venv` |
 | PowerShell báo `running scripts is disabled` khi bật venv | chính sách chặn script | dùng Git Bash, hoặc chạy 1 lần `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` rồi `.venv\Scripts\Activate.ps1` |
 | `pip` báo `No matching distribution found for torch==2.14.1+...` | Python không phải 3.12 64-bit | `python --version` phải ra `3.12.x`; xoá `.venv`, tạo lại bằng đúng Python 3.12 |
